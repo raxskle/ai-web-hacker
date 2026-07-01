@@ -894,7 +894,7 @@ def render_host_detail(lines: List[str], idx: int, item: dict, with_rise: bool =
     keywords_sw = item.get("keywords_similarweb") if isinstance(item.get("keywords_similarweb"), list) else []
     keywords_page = item.get("keywords_page") if isinstance(item.get("keywords_page"), list) else []
 
-    lines.append(f"{idx}. **{host}**")
+    lines.append(f"{idx}. {host}")
     lines.append(f"   - 点击量：{clicks}")
     lines.append(f"   - 趋势判断：{trend_status}（最新/峰值：{trend}）")
     if with_rise:
@@ -956,9 +956,22 @@ def render_report(
     source_stamp = (current_snapshot.get("meta") or {}).get("sourceStamp", "-")
     start_date, end_date = infer_trend_window(current_hosts)
 
+    new_hosts_csv = ", ".join(
+        escape_md_cell(item.get("host", ""))
+        for item in enriched_new_hosts
+        if isinstance(item, dict) and isinstance(item.get("host"), str) and item.get("host")
+    )
+    rising_hosts_csv = ", ".join(
+        escape_md_cell(item.get("host", ""))
+        for item in enriched_rising_hosts
+        if isinstance(item, dict) and isinstance(item.get("host"), str) and item.get("host")
+    )
+
     lines: List[str] = []
     lines.append(f"# 新增子域名监控报告（{source_stamp}）")
     lines.append("")
+    lines.append(f"- 新增域名汇总：{new_hosts_csv or '-'}")
+    lines.append(f"- 持续上涨（非新增）域名汇总：{rising_hosts_csv or '-'}")
     lines.append(f"- 本次新增子域名数量：**{len(enriched_new_hosts)}**")
     lines.append(f"- 新增子域名总点击量：**{to_clicks_str(total_new_clicks)}**")
     lines.append(f"- 本次持续上涨（非新增）子域名数量：**{len(enriched_rising_hosts)}**")

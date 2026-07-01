@@ -37,7 +37,7 @@ python3 monitor-new-sub-domain/_internal/scripts/monitor_new_subdomain.py rebuil
 
 报告固定包含：
 
-1. 标题与摘要（新增数量、持续上涨数量、两类总点击量、趋势窗口、对比基线）
+1. 标题与摘要（新增域名汇总、持续上涨域名汇总；新增数量、持续上涨数量、两类总点击量、趋势窗口、对比基线）
 2. `新增子域名详情（关键词趋势 + 网站用途）`（列表形式，非表格，直接合并原“清单信息+详情信息”）：
    - `#`
    - `新增子域名`
@@ -64,6 +64,7 @@ python3 monitor-new-sub-domain/_internal/scripts/monitor_new_subdomain.py rebuil
    - `关键词（SimilarWeb）`
    - `关键词（网站发现）`
 
+> 样式约定：报告中的域名行使用纯文本，不使用 `**` 包裹。
 > 注意：不再输出 `## 示例页面（Top N）` 区块。
 
 ## 关键约束
