@@ -52,7 +52,7 @@ python3 monitor-new-sub-domain/_internal/scripts/monitor_new_subdomain.py rebuil
    - 用途判断依据
    - 关键词（SimilarWeb / 页面候选 / 融合，非穷尽）
 
-> 样式约定：报告中的域名行使用纯文本，不使用 `**` 包裹。
+> 样式约定：报告内容使用纯文本，不使用 Markdown 粗体（`**...**`）。
 > 注意：不再输出 `## 示例页面（Top N）` 区块。
 
 ## 关键约束

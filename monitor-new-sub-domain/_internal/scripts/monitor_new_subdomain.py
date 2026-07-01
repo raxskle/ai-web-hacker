@@ -972,17 +972,17 @@ def render_report(
     lines.append("")
     lines.append(f"- 新增域名汇总：{new_hosts_csv or '-'}")
     lines.append(f"- 持续上涨（非新增）域名汇总：{rising_hosts_csv or '-'}")
-    lines.append(f"- 本次新增子域名数量：**{len(enriched_new_hosts)}**")
-    lines.append(f"- 新增子域名总点击量：**{to_clicks_str(total_new_clicks)}**")
-    lines.append(f"- 本次持续上涨（非新增）子域名数量：**{len(enriched_rising_hosts)}**")
-    lines.append(f"- 持续上涨（非新增）子域名总点击量：**{to_clicks_str(total_rising_clicks)}**")
+    lines.append(f"- 本次新增子域名数量：{len(enriched_new_hosts)}")
+    lines.append(f"- 新增子域名总点击量：{to_clicks_str(total_new_clicks)}")
+    lines.append(f"- 本次持续上涨（非新增）子域名数量：{len(enriched_rising_hosts)}")
+    lines.append(f"- 持续上涨（非新增）子域名总点击量：{to_clicks_str(total_rising_clicks)}")
     if start_date and end_date:
-        lines.append(f"- 趋势统计窗口：**{start_date} ~ {end_date}**")
+        lines.append(f"- 趋势统计窗口：{start_date} ~ {end_date}")
     lines.append(
-        f"- 持续上涨判定口径：**最近{RISING_WINDOW_POINTS}周连续上涨 + 窗口涨幅≥{int(RISING_MIN_GROWTH_RATIO * 100)}% + 最新值≥{to_clicks_str(RISING_MIN_LATEST_CLICKS)}**"
+        f"- 持续上涨判定口径：最近{RISING_WINDOW_POINTS}周连续上涨 + 窗口涨幅≥{int(RISING_MIN_GROWTH_RATIO * 100)}% + 最新值≥{to_clicks_str(RISING_MIN_LATEST_CLICKS)}"
     )
     if previous_stamp:
-        lines.append(f"- 对比基线：**{previous_stamp}**")
+        lines.append(f"- 对比基线：{previous_stamp}")
     else:
         lines.append("- 说明：首次运行，无历史基线，本次按当前全量结果展示。")
     lines.append("")
