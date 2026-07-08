@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-08T23:58:56",
+    "stamp": "20260708-235852",
+    "baselineMode": false,
+    "site": {
+      "id": "playhop_com",
+      "displayName": "playhop",
+      "sitemapUrls": [
+        "https://playhop.com/sitemap.xml"
+      ],
+      "includeHosts": [
+        "playhop.com",
+        "www.playhop.com"
+      ]
+    },
+    "crawl": {
+      "sitemapsFetched": 1,
+      "sitemapUrlsDiscovered": 0,
+      "ignoredByDepthLimit": 0,
+      "rawPageUrlCount": 40,
+      "dedupedPageUrlCount": 40
+    },
+    "normalize": {
+      "rawUrls": 40,
+      "invalidUrls": 0,
+      "nonTargetHostUrls": 0,
+      "excludedByPathRules": 39,
+      "dedupedUrls": 1
+    },
+    "effectiveUrlCount": 1,
+    "patternCount": 1,
+    "baselineStamp": "20260708-234758"
+  },
+  "urls": [
+    {
+      "url": "https://playhop.com/battle-arena",
+      "host": "playhop.com",
+      "path": "/battle-arena",
+      "segments": [
+        "battle-arena"
+      ],
+      "slug": "battle-arena",
+      "depth": 1
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "/{token}-{token}/",
+      "count": 1,
+      "exampleUrls": [
+        "https://playhop.com/battle-arena"
+      ]
+    }
+  ],
+  "comparison": {
+    "baselineStamp": "20260708-234758",
+    "newlyAddedUrls": [],
+    "removedUrls": [],
+    "newPatterns": []
+  },
+  "keywords": {
+    "topKeywordsFromNewUrls": [],
+    "counters": {
+      "phrase": [],
+      "bigram": [],
+      "token": []
+    }
+  }
+}

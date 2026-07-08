@@ -1,0 +1,66 @@
+{
+  "sites": [
+    {
+      "id": "onlinegames_io",
+      "enabled": true,
+      "displayName": "onlinegames",
+      "sitemapUrls": [
+        "https://www.onlinegames.io/sitemap.xml"
+      ],
+      "includeHosts": [
+        "www.onlinegames.io",
+        "onlinegames.io"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/(about|contact|privacy-policy|terms-and-conditions|best-free-online-games|ai-chat)/?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "online",
+          "games",
+          "game",
+          "play",
+          "free",
+          "the",
+          "and",
+          "io"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "playhop_com",
+      "enabled": true,
+      "displayName": "playhop",
+      "sitemapUrls": [
+        "https://playhop.com/sitemap.xml"
+      ],
+      "includeHosts": [
+        "playhop.com",
+        "www.playhop.com"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/blog(?:/.*)?$",
+        "^/(about|faq|jobs|developers|publishers|advertisers)/?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "playhop",
+          "play",
+          "game",
+          "games",
+          "online",
+          "free",
+          "the",
+          "and",
+          "io"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    }
+  ]
+}
