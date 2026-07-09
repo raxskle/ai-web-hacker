@@ -38,7 +38,6 @@ PAGE_RISING_MIN_GROWTH = 0.20
 SUBDOMAIN_NEW_MIN_CLICKS = 150.0
 SUBDOMAIN_RISING_MIN_CLICKS = 150.0
 SUBDOMAIN_RISING_MIN_DELTA = 50.0
-SUBDOMAIN_RISING_MIN_GROWTH = 0.20
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
 
@@ -475,7 +474,6 @@ def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains
         if (
             today_clicks >= SUBDOMAIN_RISING_MIN_CLICKS
             and delta >= SUBDOMAIN_RISING_MIN_DELTA
-            and growth >= SUBDOMAIN_RISING_MIN_GROWTH
         ):
             item = dict(row)
             item.update(

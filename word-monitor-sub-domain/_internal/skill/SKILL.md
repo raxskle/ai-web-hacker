@@ -69,8 +69,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - newlyObservedSubdomain：今天有、基线无、observedSubdomainClicks >= 150
 - risingSubdomain：今天和基线都有，且
   - today.observedSubdomainClicks >= 150
-  - deltaClicks >= 50
-  - growthRate >= 20%
+  - deltaClicks >= 50（不限制增长率）
 
 ## 失败策略（已确认）
 

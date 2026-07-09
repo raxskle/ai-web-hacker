@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-09T17:28:59",
+    "stamp": "20260709-172859",
+    "target": {
+      "keywords": [
+        "what is this movie"
+      ],
+      "keywordCount": 1
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "avgScore": 20.6,
+      "cachedHitRate": 0.0,
+      "levelDistribution": {
+        "容易": 1
+      },
+      "keywordTypeDistribution": {
+        "brand": 1
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/report-20260709-172859.md"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/latest.md"
+  },
+  "rows": [
+    {
+      "keyword": "what is this movie",
+      "score": 20.6,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 12.7,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 55,
+          "mid": 90,
+          "high": 140
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 20.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 whatsatmovie.com（DR 1）"
+      },
+      "detailsCount": 9,
+      "cached": false,
+      "computedAt": 1783589341,
+      "reasons": [
+        "品牌词口径：难度估算为 20.6/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 12.7/100（极易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 whatisthismovie.com 是与关键词同名的官方域名首页，whatisthismovie.com 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 2 个平台型结果（reddit.com、youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 2 名 whatsatmovie.com（DR 1，首页，域名 2.7 年，月流量 1.4 万、搜索占比 0%）、第 4 名 aimoviefinder.com（DR 10，首页，域名 12 个月，月流量 14.0 万、搜索占比 86%）、第 5 名 movie-identifier.com（DR 3，首页，域名 17 个月，月流量 3.9 万、搜索占比 57%）、第 6 名 vidscio.com（DR 0，内页）、第 7 名 whatismymovie.com（DR 44，首页，域名 11.2 年，月流量 9.9 万、搜索占比 59%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "关键证据：aimoviefinder.com 注册仅约 12 个月，已月获 14.0 万 流量 —— 品牌词截流打法在这个词上确实可行、路径已被验证。",
+        "衍生内容进入此 SERP 的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 20.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 whatsatmovie.com（DR 1））；目录/收录型外链为主时约 55–140 个。对应域名权重量级约 DR 19。"
+      ]
+    }
+  ],
+  "failures": []
+}

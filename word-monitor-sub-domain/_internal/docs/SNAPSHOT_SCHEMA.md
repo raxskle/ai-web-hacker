@@ -85,6 +85,6 @@
 - `newlyObservedPage`: today 有、baseline 无、`clicks>=100`
 - `risingPage`: 两边都有，且 `today.clicks>=100`、`delta>=30`、`growth>=20%`
 - `newlyObservedSubdomain`: today 有、baseline 无、`observedSubdomainClicks>=150`
-- `risingSubdomain`: 两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`、`growth>=20%`
+- `risingSubdomain`: 两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`（不限制增长率）
 
 首次运行（`baselineMode=true`）：四类结果数组均为空。

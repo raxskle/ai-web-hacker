@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-09T17:13:28",
+    "stamp": "20260709-171328",
+    "target": {
+      "keywords": [
+        "test keyword"
+      ],
+      "keywordCount": 1
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "--api-key",
+      "minIntervalSeconds": 0.1,
+      "maxRetries": 0,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 1,
+      "successCount": 0,
+      "failureCount": 1,
+      "avgScore": null,
+      "cachedHitRate": null,
+      "levelDistribution": {},
+      "keywordTypeDistribution": {}
+    },
+    "globalError": {
+      "keyword": "test keyword",
+      "httpStatus": 401,
+      "errorCode": "auth",
+      "error": "未授权：需要有效令牌。在 https://seo.web.cafe/kd/ 登录后页脚自助获取"
+    },
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/report-20260709-171328.md"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/latest.md"
+  },
+  "rows": [],
+  "failures": [
+    {
+      "keyword": "test keyword",
+      "keywordNormalized": "test keyword",
+      "attempts": 1,
+      "error": "未授权：需要有效令牌。在 https://seo.web.cafe/kd/ 登录后页脚自助获取",
+      "errorCode": "auth",
+      "httpStatus": 401
+    }
+  ]
+}

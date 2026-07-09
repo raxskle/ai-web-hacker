@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-09T17:09:09",
+    "stamp": "20260709-170909",
+    "summary": {
+      "inputCount": 1,
+      "successCount": 0,
+      "failureCount": 1,
+      "avgScore": null,
+      "cachedHitRate": null,
+      "levelDistribution": {},
+      "keywordTypeDistribution": {}
+    },
+    "request": {
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "--api-key",
+      "minIntervalSeconds": 0.1,
+      "maxRetries": 0,
+      "timeoutSeconds": 60
+    }
+  },
+  "requests": [
+    {
+      "ok": false,
+      "keyword": "test keyword",
+      "keywordNormalized": "test keyword",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": 401,
+          "errorCode": "未授权：需要有效令牌。在 https://seo.web.cafe/kd/ 登录后页脚自助获取",
+          "error": "API 认证失败（auth）",
+          "retryable": false,
+          "fatalGlobal": true,
+          "waitedSeconds": 0.0,
+          "rawBody": "{\"error\":\"未授权：需要有效令牌。在 https://seo.web.cafe/kd/ 登录后页脚自助获取\",\"code\":\"auth\"}"
+        }
+      ],
+      "error": "API 认证失败（auth）",
+      "errorCode": "未授权：需要有效令牌。在 https://seo.web.cafe/kd/ 登录后页脚自助获取",
+      "httpStatus": 401,
+      "fatalGlobal": true
+    }
+  ]
+}

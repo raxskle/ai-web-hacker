@@ -2,10 +2,29 @@
 
 本仓库包含 AI 出海工具、Skill、工作流等
 
-## monitor-new-sub-domain
+## word-monitor-sub-domain
 
-基于 similarWeb 的子域名监控工具，搭配 hacker-extension 插件使用。
+监控 vercel.app 新增的和点击量上涨的子域名，并从而得到关键词
 
-工作原理：通过 hacker-extension 插件获取 SimilarWeb 前几页的请求数据，拿到目标域名最新的点击量上涨的子域名列表，每天跑一次，对比前一天的数据，自动发现新出现在前面的子域名，以及点击量上涨的子域名。
+## word-monitor-sitemap
 
-报告分析得出有机会的子域名列表后，可以后续 AI 深入分析，或者再将这些子域名列表，回到 SimilarWeb 查看关键词、目标网站等。
+监控游戏站的sitemap，发现新游戏
+
+## word-from-root
+
+根据词根，获取相关关键词
+
+## analyze-word
+
+验证关键词是否可做，检查kd
+
+## check-gefei-kd
+
+调用哥飞KD api
+
+## 组合使用
+
+vercel.app和sitemap只能得到词，而且是偏新词，所以要搭配analyze-words和check-gefei-kd，然后再人工看
+
+word-from-root拿到的词带数据，搭配check-gefei-kd，然后人工看
+
