@@ -1,7 +1,7 @@
 ---
 name: word-monitor-sub-domain
 version: 0.1.0
-description: "抓取 vercel.app 的 Landing Pages 前5页样本，输出新增/上涨页面与子域名监控报告。"
+description: "抓取 vercel.app 的 Landing Pages 前8页样本，输出新增/上涨页面与子域名监控报告。"
 ---
 
 # word-monitor-sub-domain
@@ -33,7 +33,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 ## 规则摘要（MVP）
 
-- 固定抓取参数：`key=vercel.app`，`page=1..5`，`sort=ClicksShare` 等
+- 固定抓取参数：`key=vercel.app`，`page=1..8`，`sort=ClicksShare` 等
 - 每页失败重试 2 次；仍失败则整次失败，不落快照/报告
 - 基线取最近一次历史快照（同 key/country/latest/sourceType）
 - 首次运行仅建立基线，不输出新增/上涨结论

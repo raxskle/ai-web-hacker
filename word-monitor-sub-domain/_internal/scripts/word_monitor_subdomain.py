@@ -43,7 +43,7 @@ SUBDOMAIN_RISING_MIN_GROWTH = 0.20
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
 
 REQUIRED_REMARKS = [
-    "当前监控仅覆盖 ClicksShare 排序下前5页样本",
+    "当前监控仅覆盖 ClicksShare 排序下前8页样本",
     "“新进入样本”不等于全站首次出现",
     "子域名流量是样本内观测值，不代表全站完整总量",
 ]
@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--is-window", action="store_true", default=True)
     run_parser.add_argument("--search-type", default="domain")
     run_parser.add_argument("--start-page", type=int, default=1)
-    run_parser.add_argument("--end-page", type=int, default=5)
+    run_parser.add_argument("--end-page", type=int, default=8)
 
     run_parser.add_argument("--data-dir", default=str(PROJECT_DIR / "data"))
     run_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
@@ -382,12 +382,16 @@ def list_snapshot_files(snapshot_dir: Path) -> List[Path]:
 
 
 def snapshot_matches_target(snapshot: dict, target: dict) -> bool:
-    meta_target = ((snapshot.get("meta") or {}).get("target") or {})
+    meta = snapshot.get("meta") or {}
+    meta_target = meta.get("target") or {}
+    meta_request = meta.get("request") or {}
     return (
         str(meta_target.get("key", "")) == str(target.get("key", ""))
         and str(meta_target.get("country", "")) == str(target.get("country", ""))
         and str(meta_target.get("latest", "")) == str(target.get("latest", ""))
         and str(meta_target.get("sourceType", "")) == str(target.get("sourceType", ""))
+        and int(meta_request.get("startPage", 1) or 1) == int(target.get("startPage", 1) or 1)
+        and int(meta_request.get("endPage", 5) or 5) == int(target.get("endPage", 5) or 5)
     )
 
 
@@ -707,6 +711,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "country": args.country,
         "latest": args.latest,
         "sourceType": args.source_type,
+        "startPage": args.start_page,
+        "endPage": args.end_page,
     }
     baseline_snapshot, baseline_path = find_latest_baseline(snapshot_dir, target, current_stamp=stamp)
     baseline_rows = baseline_snapshot.get("rows", []) if baseline_snapshot else []
