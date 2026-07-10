@@ -138,11 +138,11 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
     run_parser.add_argument(
         "--latest-standard-word-table-json",
-        default=str(PROJECT_DIR / "report" / "latest-standard-word-table.json"),
+        default=str(PROJECT_DIR / "report" / "latest.json"),
     )
     run_parser.add_argument(
         "--latest-standard-word-table-xlsx",
-        default=str(PROJECT_DIR / "report" / "latest-standard-word-table.xlsx"),
+        default=str(PROJECT_DIR / "report" / "latest.xlsx"),
     )
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建历史报告与标准词表")
@@ -151,11 +151,11 @@ def parse_args() -> argparse.Namespace:
     rebuild_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
     rebuild_parser.add_argument(
         "--latest-standard-word-table-json",
-        default=str(PROJECT_DIR / "report" / "latest-standard-word-table.json"),
+        default=str(PROJECT_DIR / "report" / "latest.json"),
     )
     rebuild_parser.add_argument(
         "--latest-standard-word-table-xlsx",
-        default=str(PROJECT_DIR / "report" / "latest-standard-word-table.xlsx"),
+        default=str(PROJECT_DIR / "report" / "latest.xlsx"),
     )
     rebuild_parser.add_argument("--no-xlsx", action="store_true")
 
@@ -310,13 +310,34 @@ def _read_keywords_from_file(path: Path) -> List[str]:
 def _require_openpyxl():
     try:
         from openpyxl import Workbook, load_workbook
-        from openpyxl.styles import Font
+        from openpyxl.styles import Alignment, Font
         from openpyxl.utils import get_column_letter
     except ImportError as exc:
         raise RuntimeError(
             "缺少依赖 openpyxl。请先执行 `pip3 install openpyxl` 再运行。"
         ) from exc
-    return Workbook, Font, get_column_letter, load_workbook
+    return Workbook, Font, Alignment, get_column_letter, load_workbook
+
+
+MULTILINE_EXPORT_FIELDS = {
+    "group",
+    "correspondingDomain",
+}
+
+
+def _format_multiline_export_text(field: str, value):
+    if value is None:
+        return value
+    text = str(value).strip()
+    if not text:
+        return text
+    if field not in MULTILINE_EXPORT_FIELDS:
+        return text
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"\s*\|\s*", "\n", normalized)
+    normalized = normalized.replace(" / ", "\n")
+    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
+    return "\n".join(lines) if lines else ""
 
 
 def _coerce_cell(value, field: str):
@@ -342,6 +363,7 @@ def _coerce_cell(value, field: str):
     if isinstance(value, float) and value.is_integer():
         return int(value)
     return value
+
 
 
 def read_standard_word_table_file(path: Path) -> List[dict]:
@@ -376,7 +398,7 @@ def read_standard_word_table_file(path: Path) -> List[dict]:
         return rows
 
     if suffix in (".xlsx", ".xlsm"):
-        _, _, _, load_workbook = _require_openpyxl()
+        _, _, _, _, load_workbook = _require_openpyxl()
         wb = load_workbook(path, data_only=True)
         # 优先使用 keywords 表，其次第一个 sheet
         ws = wb["keywords"] if "keywords" in wb.sheetnames else wb[wb.sheetnames[0]]
@@ -622,6 +644,28 @@ def build_standard_word_table(
 # --------------------------------------------------------------------------- #
 # Markdown 报告
 # --------------------------------------------------------------------------- #
+def _fmt_md_cell(value) -> str:
+    if value is None:
+        text = "-"
+    else:
+        text = str(value).strip()
+    if not text:
+        text = "-"
+
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"\s*\|\s*", "\n", normalized)
+    normalized = normalized.replace(" / ", "\n")
+    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
+    if not lines:
+        lines = ["-"]
+
+    escaped: List[str] = []
+    for line in lines:
+        line = re.sub(r"([/?&#=_-])", r"\1<wbr>", line)
+        escaped.append(line.replace("|", "\\|"))
+    return "<br>".join(escaped)
+
+
 def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str]:
     if not rows:
         return ["（无）"]
@@ -630,7 +674,7 @@ def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str
         "| " + " | ".join(["---"] * len(headers)) + " |",
     ]
     for row in rows:
-        lines.append("| " + " | ".join(row) + " |")
+        lines.append("| " + " | ".join(_fmt_md_cell(cell) for cell in row) + " |")
     return lines
 
 
@@ -814,8 +858,11 @@ def _transform_export_value(column_def: dict, value, row: Optional[dict] = None)
             "sim_only": "sim_only（仅 SIM）",
             "sem_only": "sem_only（仅 SEM）",
         }
-        return mapping.get(str(value or ""), value)
-    return value
+        transformed = mapping.get(str(value or ""), value)
+    else:
+        transformed = value
+    field = str(column_def.get("field") or "")
+    return _format_multiline_export_text(field, transformed)
 
 
 def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] = None) -> float:
@@ -823,7 +870,15 @@ def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] =
     fixed = profile.get("fixed")
     if fixed is not None:
         return float(fixed)
-    max_length = max((len(v) for v in values), default=0)
+
+    max_length = 0
+    for raw in values:
+        text = "" if raw is None else str(raw)
+        parts = text.splitlines() or [text]
+        longest_line = max((len(part) for part in parts), default=0)
+        if longest_line > max_length:
+            max_length = longest_line
+
     width = max_length + DEFAULT_COLUMN_PADDING
     min_width = int(profile.get("min", DEFAULT_COLUMN_MIN_WIDTH))
     max_width = int(profile.get("max", DEFAULT_COLUMN_MAX_WIDTH))
@@ -831,7 +886,7 @@ def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] =
 
 
 def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path) -> None:
-    Workbook, Font, get_column_letter, _ = _require_openpyxl()
+    Workbook, Font, Alignment, get_column_letter, _ = _require_openpyxl()
 
     meta = standard_word_table.get("meta") or {}
     rows = standard_word_table.get("rows") or []
@@ -860,6 +915,7 @@ def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path)
     keywords_sheet.append(headers)
     for cell in keywords_sheet[1]:
         cell.font = Font(bold=True)
+        cell.alignment = Alignment(wrap_text=True, vertical="top")
 
     for row in rows:
         export_row = []
@@ -868,6 +924,10 @@ def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path)
             raw_value = row.get(field)
             export_row.append(_transform_export_value(column, raw_value, row))
         keywords_sheet.append(export_row)
+
+    for row_cells in keywords_sheet.iter_rows(min_row=2, max_row=keywords_sheet.max_row, min_col=1, max_col=len(headers)):
+        for cell in row_cells:
+            cell.alignment = Alignment(wrap_text=True, vertical="top")
 
     keywords_sheet.freeze_panes = "A2"
     keywords_sheet.auto_filter.ref = (
@@ -987,8 +1047,8 @@ def write_artifacts(
     fetch_archive_path = data_dir / f"fetch-{stamp}.json"
     snapshot_path = snapshot_dir / f"snapshot-{stamp}.json"
     report_history_path = report_dir / f"report-{stamp}.md"
-    swt_json_history_path = report_dir / f"standard-word-table-{stamp}.json"
-    swt_xlsx_history_path = report_dir / f"standard-word-table-{stamp}.xlsx"
+    swt_json_history_path = report_dir / f"keyword-table-{stamp}.json"
+    swt_xlsx_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
 
     snapshot_meta = snapshot.setdefault("meta", {})
     output_meta = snapshot_meta.setdefault("output", {})
@@ -1039,8 +1099,8 @@ def rebuild_history_artifact(snapshot: dict, report_dir: Path, no_xlsx: bool) ->
         raise RuntimeError("snapshot 缺少 meta.stamp")
 
     report_history_path = report_dir / f"report-{stamp}.md"
-    swt_json_history_path = report_dir / f"standard-word-table-{stamp}.json"
-    swt_xlsx_history_path = report_dir / f"standard-word-table-{stamp}.xlsx"
+    swt_json_history_path = report_dir / f"keyword-table-{stamp}.json"
+    swt_xlsx_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
 
     snapshot_meta = snapshot.setdefault("meta", {})
     output_meta = snapshot_meta.setdefault("output", {})
@@ -1148,8 +1208,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
     )
 
     report_history_path = report_dir / f"report-{stamp}.md"
-    swt_json_history_path = report_dir / f"standard-word-table-{stamp}.json"
-    swt_xlsx_history_path = report_dir / f"standard-word-table-{stamp}.xlsx"
+    swt_json_history_path = report_dir / f"keyword-table-{stamp}.json"
+    swt_xlsx_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
 
     snapshot = build_snapshot(
         stamp=stamp,

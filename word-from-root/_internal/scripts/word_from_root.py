@@ -1322,6 +1322,28 @@ def build_summary_counts(*, sim_raw_rows: List[dict], sem_raw_rows: List[dict], 
     return counts
 
 
+def _fmt_md_cell(value) -> str:
+    if value is None:
+        text = "-"
+    else:
+        text = str(value).strip()
+    if not text:
+        text = "-"
+
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"\s*\|\s*", "\n", normalized)
+    normalized = normalized.replace(" / ", "\n")
+    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
+    if not lines:
+        lines = ["-"]
+
+    escaped: List[str] = []
+    for line in lines:
+        line = re.sub(r"([/?&#=_-])", r"\1<wbr>", line)
+        escaped.append(line.replace("|", "\\|"))
+    return "<br>".join(escaped)
+
+
 def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str]:
     if not rows:
         return ["（无）"]
@@ -1330,7 +1352,7 @@ def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str
         "| " + " | ".join(["---"] * len(headers)) + " |",
     ]
     for row in rows:
-        lines.append("| " + " | ".join(row) + " |")
+        lines.append("| " + " | ".join(_fmt_md_cell(cell) for cell in row) + " |")
     return lines
 
 
@@ -1496,13 +1518,35 @@ def render_report(snapshot: dict) -> str:
 def _require_openpyxl():
     try:
         from openpyxl import Workbook, load_workbook
-        from openpyxl.styles import Font
+        from openpyxl.styles import Alignment, Font
         from openpyxl.utils import get_column_letter
     except ImportError as exc:
         raise RuntimeError(
             "缺少依赖 openpyxl。请先执行 `pip3 install -r word-from-root/requirements.txt` 再运行。"
         ) from exc
-    return Workbook, Font, get_column_letter, load_workbook
+    return Workbook, Font, Alignment, get_column_letter, load_workbook
+
+
+MULTILINE_EXPORT_FIELDS = {
+    "group",
+    "correspondingDomain",
+}
+
+
+def _format_multiline_export_text(field: str, value):
+    if value is None:
+        return value
+    text = str(value).strip()
+    if not text:
+        return text
+    if field not in MULTILINE_EXPORT_FIELDS:
+        return text
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"\s*\|\s*", "\n", normalized)
+    normalized = normalized.replace(" / ", "\n")
+    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
+    return "\n".join(lines) if lines else ""
+
 
 
 def _transform_export_value(column_def: dict, value, row: Optional[dict] = None):
@@ -1513,27 +1557,36 @@ def _transform_export_value(column_def: dict, value, row: Optional[dict] = None)
             "sim_only": "sim_only（仅 SIM）",
             "sem_only": "sem_only（仅 SEM）",
         }
-        return mapping.get(str(value or ""), value)
-    if transform == "sim_score":
-        return compute_sim_score(row or {})
-    if transform == "sem_trend_json":
+        transformed = mapping.get(str(value or ""), value)
+    elif transform == "sim_score":
+        transformed = compute_sim_score(row or {})
+    elif transform == "sem_trend_json":
         if isinstance(value, list):
-            return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
-        if value in (None, ""):
-            return "[]"
-        if isinstance(value, str):
+            transformed = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+        elif value in (None, ""):
+            transformed = "[]"
+        elif isinstance(value, str):
             text = value.strip()
             if not text:
-                return "[]"
-            try:
-                parsed = json.loads(text)
-            except json.JSONDecodeError:
-                return text
-            if isinstance(parsed, list):
-                return json.dumps(parsed, ensure_ascii=False, separators=(",", ":"))
-            return text
-        return json.dumps(value, ensure_ascii=False)
-    return value
+                transformed = "[]"
+            else:
+                try:
+                    parsed = json.loads(text)
+                except json.JSONDecodeError:
+                    transformed = text
+                else:
+                    if isinstance(parsed, list):
+                        transformed = json.dumps(parsed, ensure_ascii=False, separators=(",", ":"))
+                    else:
+                        transformed = text
+        else:
+            transformed = json.dumps(value, ensure_ascii=False)
+    else:
+        transformed = value
+
+    field = str(column_def.get("field") or "")
+    return _format_multiline_export_text(field, transformed)
+
 
 
 def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] = None) -> float:
@@ -1542,7 +1595,14 @@ def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] =
     if fixed is not None:
         return float(fixed)
 
-    max_length = max((len(v) for v in values), default=0)
+    max_length = 0
+    for raw in values:
+        text = "" if raw is None else str(raw)
+        parts = text.splitlines() or [text]
+        longest_line = max((len(part) for part in parts), default=0)
+        if longest_line > max_length:
+            max_length = longest_line
+
     width = max_length + DEFAULT_COLUMN_PADDING
     min_width = int(profile.get("min", DEFAULT_COLUMN_MIN_WIDTH))
     max_width = int(profile.get("max", DEFAULT_COLUMN_MAX_WIDTH))
@@ -1550,7 +1610,7 @@ def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] =
 
 
 def write_excel(snapshot: dict, output_path: Path) -> None:
-    Workbook, Font, get_column_letter, _ = _require_openpyxl()
+    Workbook, Font, Alignment, get_column_letter, _ = _require_openpyxl()
 
     meta = snapshot.get("meta") or {}
     target = meta.get("target") or {}
@@ -1589,6 +1649,7 @@ def write_excel(snapshot: dict, output_path: Path) -> None:
     keywords_sheet.append(headers)
     for cell in keywords_sheet[1]:
         cell.font = Font(bold=True)
+        cell.alignment = Alignment(wrap_text=True, vertical="top")
 
     for row in merged_rows:
         export_row = []
@@ -1596,6 +1657,10 @@ def write_excel(snapshot: dict, output_path: Path) -> None:
             raw_value = row.get(column["field"])
             export_row.append(_transform_export_value(column, raw_value, row))
         keywords_sheet.append(export_row)
+
+    for row_cells in keywords_sheet.iter_rows(min_row=2, max_row=keywords_sheet.max_row, min_col=1, max_col=len(headers)):
+        for cell in row_cells:
+            cell.alignment = Alignment(wrap_text=True, vertical="top")
 
     keywords_sheet.freeze_panes = "A2"
     keywords_sheet.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{max(keywords_sheet.max_row, 1)}"
@@ -1833,7 +1898,7 @@ def validate_report(args: argparse.Namespace) -> int:
     if not xlsx_path.exists():
         raise SystemExit(f"Excel 不存在: {xlsx_path}")
 
-    _Workbook, _Font, _get_column_letter, load_workbook = _require_openpyxl()
+    _Workbook, _Font, _Alignment, _get_column_letter, load_workbook = _require_openpyxl()
     workbook = load_workbook(xlsx_path, data_only=True)
     try:
         if "keywords" not in workbook.sheetnames:

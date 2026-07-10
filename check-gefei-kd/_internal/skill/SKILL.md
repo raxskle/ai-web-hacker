@@ -53,8 +53,8 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 - 标准化快照：`check-gefei-kd/_internal/snapshots/snapshot-YYYYMMDD-HHMMSS.json`
 - 历史报告：`check-gefei-kd/report/history/report-YYYYMMDD-HHMMSS.md`
 - 最新报告：`check-gefei-kd/report/latest.md`
-- 标准词表 JSON：`check-gefei-kd/report/history/standard-word-table-YYYYMMDD-HHMMSS.json` + `check-gefei-kd/report/latest-standard-word-table.json`
-- 标准词表 XLSX：`check-gefei-kd/report/history/standard-word-table-YYYYMMDD-HHMMSS.xlsx` + `check-gefei-kd/report/latest-standard-word-table.xlsx`
+- 标准词表 JSON：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.json` + `check-gefei-kd/report/latest.json`
+- 标准词表 XLSX：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx` + `check-gefei-kd/report/latest.xlsx`
 
 ## 固定参数默认值
 

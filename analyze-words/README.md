@@ -87,6 +87,8 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
   - 当 SIM 指标缺失或 <=0 时，`score` 为空
 - `sourcePresence(SIM/SEM)` 按 SIM/SEM 是否存在自动重算：
   - `both` / `sim_only` / `sem_only`
+- 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
+- `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 
 ## 输入输出
 

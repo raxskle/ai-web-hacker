@@ -113,6 +113,8 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - 相同 `keyword` 按词去重，仅保留一行
 - `对应域名` 聚合同词命中的全部域名 / 页面上下文，使用 ` | ` 连接
 - `gefeiKD` 使用哥飞 KD API 返回的 `score`
+- 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
+- `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 - 其他指标列允许为空
 
 ## 报告备注（固定输出）

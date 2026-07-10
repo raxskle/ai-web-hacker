@@ -77,6 +77,8 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
   - 其他列允许为空
   - 相同 keyword 会去重后保留一行
   - `对应域名` 聚合命中该关键词的完整 URL
+  - 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
+  - `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 ### Markdown 报告
 
 `report/latest.md` 会输出：
@@ -102,3 +104,4 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 ```bash
 pip3 install openpyxl
 ```
+

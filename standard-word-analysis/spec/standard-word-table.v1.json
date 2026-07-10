@@ -33,8 +33,8 @@
       "type": "string",
       "nullable": false,
       "width_profile": {
-        "min": 24,
-        "max": 72
+        "min": 30,
+        "max": 90
       }
     },
     {
@@ -43,8 +43,8 @@
       "type": "string",
       "nullable": true,
       "width_profile": {
-        "min": 20,
-        "max": 48
+        "min": 28,
+        "max": 64
       }
     },
     {
@@ -53,8 +53,8 @@
       "type": "string",
       "nullable": true,
       "width_profile": {
-        "min": 28,
-        "max": 96
+        "min": 36,
+        "max": 110
       }
     },
     {

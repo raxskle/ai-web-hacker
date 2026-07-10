@@ -75,8 +75,8 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 - 快照归档：`check-gefei-kd/_internal/snapshots/snapshot-YYYYMMDD-HHMMSS.json`
 - 历史 Markdown：`check-gefei-kd/report/history/report-YYYYMMDD-HHMMSS.md`
 - 最新 Markdown：`check-gefei-kd/report/latest.md`
-- **标准词表 JSON**：`check-gefei-kd/report/history/standard-word-table-YYYYMMDD-HHMMSS.json` + `check-gefei-kd/report/latest-standard-word-table.json`
-- **标准词表 XLSX**：`check-gefei-kd/report/history/standard-word-table-YYYYMMDD-HHMMSS.xlsx` + `check-gefei-kd/report/latest-standard-word-table.xlsx`
+- **标准词表 JSON**：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.json` + `check-gefei-kd/report/latest.json`
+- **标准词表 XLSX**：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx` + `check-gefei-kd/report/latest.xlsx`
 
 标准词表结构对齐 `standard-word-analysis` v1（`version` / `meta` / `rows`，列顺序与 `spec/standard-word-table.v1.json` 一致）：
 

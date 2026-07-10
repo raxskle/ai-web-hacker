@@ -114,6 +114,8 @@ python3 word-from-root/_internal/scripts/word_from_root.py run   --keyword "imag
 - 本版 score 公式：`simWindowVolume * simCpc / simKd`
 - `word-from-root` 当前会输出 `对应域名` 空列，供其它 skill 保持统一表头
 - `gefeiKD` 使用哥飞 KD API 返回的 `score`
+- 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
+- `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 
 因此 `word-from-root` 产物可直接作为后续 skill（如 analyze/check）的输入交换表。
 

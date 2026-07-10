@@ -14,7 +14,7 @@
 4. 归档抓取原始结果到 `data/fetch-*.json`
 5. 标准化写入快照到 `_internal/snapshots/snapshot-*.json`
 6. 生成报告到 `report/history/report-*.md` 与 `report/latest.md`
-7. 产出标准词表到 `report/history/standard-word-table-*.{json,xlsx}` 与 `report/latest-standard-word-table.{json,xlsx}`，回填 `gefeiKD`
+7. 产出标准词表到 `report/history/keyword-table-*.{json,xlsx}` 与 `report/latest.{json,xlsx}`，回填 `gefeiKD`
 
 ### 标准词表输入的特别规则
 
@@ -25,9 +25,9 @@
 - `api_key.txt`：API Key 文件（默认读取）
 - `data/`：抓取归档（`fetch-YYYYMMDD-HHMMSS.json`）
 - `_internal/snapshots/`：标准化快照（`snapshot-YYYYMMDD-HHMMSS.json`）
-- `report/history/`：历史 Markdown 报告与历史标准词表（`standard-word-table-*.{json,xlsx}`）
+- `report/history/`：历史 Markdown 报告与历史标准词表（`keyword-table-*.{json,xlsx}`）
 - `report/latest.md`：最新报告
-- `report/latest-standard-word-table.json` / `.xlsx`：最新标准词表
+- `report/latest.json` / `.xlsx`：最新标准词表
 - `_internal/scripts/check_gefei_kd.py`：主脚本
 - `_internal/skill/SKILL.md`：技能内部说明
 - `_internal/docs/SNAPSHOT_SCHEMA.md`：快照字段说明
@@ -94,6 +94,8 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 
 - 自由关键词输入：每行只有 `keyword` 与 `gefeiKD` 有值，其余列为空。
 - 标准词表输入：保留原行所有字段，仅覆盖 `gefeiKD`；查不到的词 `gefeiKD` 留空。
+- 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列。
+- `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性。
 
 ## 报告字段
 

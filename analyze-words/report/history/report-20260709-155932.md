@@ -31,8 +31,8 @@
 
 | keyword | sourcePresence | score(sim) | volume(sim) | volume(sem) |
 | --- | --- | --- | --- | --- |
-| image to text | sem_only | - | - | 621040 |
-| ocr online | sem_only | - | - | 86640 |
+| image to text | sem_<wbr>only | -<wbr> | -<wbr> | 621040 |
+| ocr online | sem_<wbr>only | -<wbr> | -<wbr> | 86640 |
 
 ## 失败关键词
 
