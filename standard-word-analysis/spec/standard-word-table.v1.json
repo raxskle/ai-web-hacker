@@ -1,17 +1,17 @@
 {
   "name": "standard-word-table",
   "version": "v1",
-  "description": "标准词表（数据交换层）v1，兼容当前 word-from-root Excel 输出",
+  "description": "标准词表（数据交换层）v1，当前版本包含【对应域名】与【gefeiKD】列，兼容 word-from-root 与 word-monitor-sub-domain 的 Excel 输出",
   "scope": {
     "includes": [
       "keyword seeds",
+      "corresponding domain mapping",
       "sim metrics",
       "sem metrics",
-      "score based on sim fields"
+      "score based on sim fields",
+      "gefei kd"
     ],
-    "excludes": [
-      "gefeiKD"
-    ]
+    "excludes": []
   },
   "scoreFormula": "simWindowVolume * simCpc / simKd",
   "scoreField": "score",
@@ -22,7 +22,7 @@
     "sem_only": "关键词仅来自 SEM"
   },
   "compatibility": {
-    "guarantee": "v1 严格兼容 word-from-root 现有 Excel 表头",
+    "guarantee": "v1 当前严格兼容仓库内 word-from-root 与 word-monitor-sub-domain 的标准词表 Excel 表头",
     "headerOrderLocked": true,
     "breakingChangePolicy": "列名或顺序变更必须升级版本（如 v2）"
   },
@@ -32,22 +32,40 @@
       "field": "keyword",
       "type": "string",
       "nullable": false,
-      "width_profile": { "min": 24, "max": 72 }
+      "width_profile": {
+        "min": 24,
+        "max": 72
+      }
+    },
+    {
+      "header": "对应域名",
+      "field": "correspondingDomain",
+      "type": "string",
+      "nullable": true,
+      "width_profile": {
+        "min": 20,
+        "max": 48
+      }
     },
     {
       "header": "group",
       "field": "group",
       "type": "string",
       "nullable": true,
-      "width_profile": { "min": 28, "max": 96 }
+      "width_profile": {
+        "min": 28,
+        "max": 96
+      }
     },
     {
       "header": "sourcePresence(SIM/SEM)",
       "field": "sourcePresence",
       "type": "enum",
-      "nullable": false,
+      "nullable": true,
       "transform": "source_presence_label",
-      "width_profile": { "fixed": 24 }
+      "width_profile": {
+        "fixed": 24
+      }
     },
     {
       "header": "score(simWindowVolume*cpc/kd)",
@@ -56,7 +74,10 @@
       "nullable": true,
       "transform": "sim_score",
       "number_format": "0.000000",
-      "width_profile": { "min": 28, "max": 36 }
+      "width_profile": {
+        "min": 28,
+        "max": 36
+      }
     },
     {
       "header": "volume(sim)",
@@ -64,7 +85,10 @@
       "type": "number",
       "nullable": true,
       "number_format": "0",
-      "width_profile": { "min": 14, "max": 20 }
+      "width_profile": {
+        "min": 14,
+        "max": 20
+      }
     },
     {
       "header": "kd(sim)",
@@ -72,7 +96,10 @@
       "type": "number",
       "nullable": true,
       "number_format": "0.00",
-      "width_profile": { "min": 12, "max": 18 }
+      "width_profile": {
+        "min": 12,
+        "max": 18
+      }
     },
     {
       "header": "cpc(sim)",
@@ -80,7 +107,10 @@
       "type": "number",
       "nullable": true,
       "number_format": "0.00",
-      "width_profile": { "min": 12, "max": 18 }
+      "width_profile": {
+        "min": 12,
+        "max": 18
+      }
     },
     {
       "header": "volume(sem)",
@@ -88,7 +118,10 @@
       "type": "number",
       "nullable": true,
       "number_format": "0",
-      "width_profile": { "min": 14, "max": 20 }
+      "width_profile": {
+        "min": 14,
+        "max": 20
+      }
     },
     {
       "header": "kd(sem)",
@@ -96,7 +129,10 @@
       "type": "number",
       "nullable": true,
       "number_format": "0.00",
-      "width_profile": { "min": 12, "max": 18 }
+      "width_profile": {
+        "min": 12,
+        "max": 18
+      }
     },
     {
       "header": "cpc(sem)",
@@ -104,7 +140,21 @@
       "type": "number",
       "nullable": true,
       "number_format": "0.00",
-      "width_profile": { "min": 12, "max": 18 }
+      "width_profile": {
+        "min": 12,
+        "max": 18
+      }
+    },
+    {
+      "header": "gefeiKD",
+      "field": "gefeiKD",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0.00",
+      "width_profile": {
+        "min": 12,
+        "max": 18
+      }
     }
   ]
 }

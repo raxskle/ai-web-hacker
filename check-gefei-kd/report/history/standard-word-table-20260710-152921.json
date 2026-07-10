@@ -1,0 +1,36 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-10T15:29:21",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "free_keywords",
+    "inputPaths": [],
+    "gefeiKdSummary": {
+      "inputCount": 1,
+      "requestCount": 1,
+      "successCount": 1,
+      "successWithScoreCount": 1,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 1
+  },
+  "rows": [
+    {
+      "keyword": "image to text",
+      "correspondingDomain": "",
+      "group": "",
+      "sourcePresence": null,
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": null,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 43.2
+    }
+  ]
+}

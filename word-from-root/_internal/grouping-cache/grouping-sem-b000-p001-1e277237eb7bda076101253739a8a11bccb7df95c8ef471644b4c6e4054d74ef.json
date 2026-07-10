@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "confidence": 0.97,
+      "memberKeys": [
+        "what is this movie",
+        "what movie is this",
+        "what movies is this"
+      ],
+      "reason": "Same core query with only word-order variation between the first two and a singular/plural variation in the third; intent remains identifying the movie shown."
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "what movie is this picture from"
+      ],
+      "reason": "Contains the extra constraint 'picture from', which changes the phrasing beyond allowed word-order/singular-plural normalization, so it should remain separate."
+    }
+  ]
+}

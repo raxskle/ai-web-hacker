@@ -11,8 +11,9 @@
 3. 标准化两路关键词结果
 4. 分别对 SIM / SEM 做 AI 近义合并（词序、空格/`-`、单复数、无意义重复）
 5. 按分组后的关键词进行两路合并并计算排序值
-6. 归档原始抓取结果与标准化快照
-7. 生成 Markdown 摘要与标准词表 Excel 明细
+6. 批量查询哥飞 KD，补齐 `gefeiKD`
+7. 归档原始抓取结果与标准化快照
+8. 生成 Markdown 摘要与标准词表 Excel 明细
 
 ## 目录说明
 
@@ -93,11 +94,7 @@ python3 word-from-root/_internal/scripts/word_from_root.py validate-report
 可通过参数控制分组调用：
 
 ```bash
-python3 word-from-root/_internal/scripts/word_from_root.py run \
-  --keyword "image to text" \
-  --grouping-model "" \
-  --grouping-temperature 0 \
-  --grouping-timeout-seconds 120
+python3 word-from-root/_internal/scripts/word_from_root.py run   --keyword "image to text"   --grouping-model ""   --grouping-temperature 0   --grouping-timeout-seconds 120
 ```
 
 ### 合并与排序
@@ -106,14 +103,17 @@ python3 word-from-root/_internal/scripts/word_from_root.py run \
 - `sourcePresence`：`both / sim_only / sem_only`
 - 排序值：`score = simWindowVolume * simCpc / simKd`
 - 若缺失完整 SIM 指标，`score` 为空并排在已评分结果之后
+- `gefeiKD` 只作为补充字段，不参与排序
 
 ## 标准词表（数据交换层）
 
 `report/latest.xlsx` 对齐 `standard-word-analysis` 的 v1 标准词表：
 
 - 规范路径：`standard-word-analysis/spec/standard-word-table.v1.json`
+- 当前列包含：`对应域名`、`gefeiKD`
 - 本版 score 公式：`simWindowVolume * simCpc / simKd`
-- 本版范围：不包含 `gefeiKD`
+- `word-from-root` 当前会输出 `对应域名` 空列，供其它 skill 保持统一表头
+- `gefeiKD` 使用哥飞 KD API 返回的 `score`
 
 因此 `word-from-root` 产物可直接作为后续 skill（如 analyze/check）的输入交换表。
 
@@ -124,4 +124,3 @@ python3 word-from-root/_internal/scripts/word_from_root.py run \
 - 快照结构：`word-from-root/_internal/docs/SNAPSHOT_SCHEMA.md`
 - 标准词表规范：`standard-word-analysis/spec/standard-word-table.v1.json`
 - 主脚本：`word-from-root/_internal/scripts/word_from_root.py`
-

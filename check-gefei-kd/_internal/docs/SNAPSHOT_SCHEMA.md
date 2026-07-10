@@ -14,9 +14,12 @@
 {
   "meta": {},
   "rows": [],
-  "failures": []
+  "failures": [],
+  "standardWordTable": {}
 }
 ```
+
+`standardWordTable` 为本快照对应的标准词表产物（`version` / `meta` / `rows`），`rows` 中每行的 `gefeiKD` 已回填。`rebuild-reports` 会基于该字段重建 JSON / XLSX 标准词表；旧快照若无此字段，则仅重建 Markdown 报告。
 
 ---
 
@@ -26,6 +29,12 @@
 {
   "generatedAt": "2026-07-09T18:00:00",
   "stamp": "20260709-180000",
+  "input": {
+    "mode": "free_keywords",
+    "paths": [],
+    "standardWordTableVersion": "v1",
+    "keywordCount": 2
+  },
   "target": {
     "keywords": ["image to text", "ocr online"],
     "keywordCount": 2
@@ -87,6 +96,7 @@
 {
   "keyword": "image to text",
   "score": 58,
+  "gefeiKD": 58,
   "level": "中等",
   "keywordType": "generic",
   "genericScore": null,
@@ -108,6 +118,7 @@
 关键字段：
 
 - `score`: KD 分值（0~100）
+- `gefeiKD`: 与 `score` 同源，回填到标准词表 `gefeiKD` 列
 - `level`: 难度等级
 - `keywordType`: 关键词类型（如 `generic` / `brand`）
 - `keywordVolume`: 搜索量

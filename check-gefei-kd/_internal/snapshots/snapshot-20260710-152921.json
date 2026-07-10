@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-10T15:29:21",
+    "stamp": "20260710-152921",
+    "input": {
+      "mode": "free_keywords",
+      "paths": [],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 1
+    },
+    "target": {
+      "keywords": [
+        "image to text"
+      ],
+      "keywordCount": 1
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "avgScore": 43.2,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "中等": 1
+      },
+      "keywordTypeDistribution": {
+        "brand": 1
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/report-20260710-152921.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-152921.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-152921.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/latest-standard-word-table.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/latest-standard-word-table.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "image to text",
+      "score": 43.2,
+      "gefeiKD": 43.2,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 76.1,
+      "keywordVolume": 909540,
+      "keywordTrend": {
+        "ratio": 1.1171141456120677,
+        "estimatedValue": 1016060,
+        "volume": 909540,
+        "domain": "imagetotext.info"
+      },
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 260,
+          "high": 390
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783352018,
+      "reasons": [
+        "品牌词口径：难度估算为 43.2/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 76.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 imagetotext.info 是与关键词同名的官方域名首页，imagetotext.info 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 1 个平台型结果（youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 8 个：第 2 名 imagetotext.io（DR 58，首页，域名 5.5 年，月流量 94.1 万、搜索占比 60%，此词正是其主力流量词）、第 3 名 transkribus.org（DR 71，内页，域名 3.2 年，月流量 46.0 万、搜索占比 55%，此词正是其主力流量词）、第 4 名 support.apple.com（DR 97，内页，域名 39.4 年，月流量 6015.3 万、搜索占比 60%）、第 5 名 imagetotext.cc（DR 28，首页，域名 3.4 年，月流量 16.2 万、搜索占比 63%，此词正是其主力流量词）、第 6 名 klippa.com（DR 66，内页，域名 18.1 年，月流量 23.6 万、搜索占比 64%，此词正是其主力流量词）、第 7 名 imgocr.com（DR 12，首页，域名 3.1 年，月流量 48.3 万、搜索占比 64%，此词正是其主力流量词）、第 9 名 tinywow.com（DR 71，内页，域名 13.5 年，月流量 242.7 万、搜索占比 36%）、第 10 名 chromewebstore.google.com（DR 99，内页，域名 28.8 年，月流量 2.1 亿、搜索占比 30%） —— 这些才是衍生内容真正要对位的对手。",
+        "趋势信号：imagetotext.info 当月从该词获得约 101.6 万 流量，超过该词 12 个月平均搜索量（91.0 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 91.0 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28））；目录/收录型外链为主时约 160–390 个。对应域名权重量级约 DR 29。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-10T15:29:21",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "free_keywords",
+      "inputPaths": [],
+      "gefeiKdSummary": {
+        "inputCount": 1,
+        "requestCount": 1,
+        "successCount": 1,
+        "successWithScoreCount": 1,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 1
+    },
+    "rows": [
+      {
+        "keyword": "image to text",
+        "correspondingDomain": "",
+        "group": "",
+        "sourcePresence": null,
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": null,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 43.2
+      }
+    ]
+  }
+}

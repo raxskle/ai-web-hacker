@@ -16,6 +16,7 @@ import gzip
 import json
 import re
 import shutil
+import sys
 import time
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
@@ -27,6 +28,11 @@ from urllib.parse import urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 PROJECT_DIR = Path(__file__).resolve().parents[2]
+REPO_ROOT = PROJECT_DIR.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from shared_gefei_kd import normalize_keyword_text
 
 DEFAULT_SITES_CONFIG = PROJECT_DIR / "data" / "sites.json"
 DEFAULT_DATA_ROOT = PROJECT_DIR / "data"
@@ -43,6 +49,14 @@ MAX_SITEMAPS_PER_SITE = 300
 TOP_NEW_URLS_IN_REPORT = 80
 TOP_NEW_PATTERNS_IN_REPORT = 40
 TOP_KEYWORDS_IN_REPORT = 60
+
+STANDARD_WORD_TABLE_VERSION = "v1"
+STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
+DEFAULT_COLUMN_MIN_WIDTH = 12
+DEFAULT_COLUMN_MAX_WIDTH = 72
+DEFAULT_COLUMN_PADDING = 2
+MERGED_LATEST_FILE = "latest.md"
+MERGED_LATEST_XLSX = "latest.xlsx"
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
 TOKEN_SPLIT_RE = re.compile(r"[^a-z0-9]+")
@@ -64,8 +78,6 @@ REQUIRED_REMARKS = [
     "新增内页基于与最近一次同站点快照对比得出",
     "关键词候选来自新增 URL slug 分词，为机会线索而非搜索引擎全量词库",
 ]
-
-MERGED_LATEST_FILE = "latest.md"
 
 
 def parse_args() -> argparse.Namespace:
@@ -95,10 +107,13 @@ def parse_args() -> argparse.Namespace:
         default=str(DEFAULT_REPORT_LATEST_ROOT / MERGED_LATEST_FILE),
         help="报告路径（默认校验 report/latest.md）",
     )
+    validate_parser.add_argument(
+        "--xlsx",
+        default=str(DEFAULT_REPORT_LATEST_ROOT / MERGED_LATEST_XLSX),
+        help="Excel 路径（默认校验 report/latest.xlsx）",
+    )
 
     return parser.parse_args()
-
-
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
@@ -122,10 +137,18 @@ def safe_int(value) -> int:
         return 0
 
 
+def safe_float(value) -> float:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def to_int_if_possible(v: float) -> str:
-    if abs(v - round(v)) < 1e-9:
-        return str(int(round(v)))
-    return f"{v:.2f}"
+    value = safe_float(v)
+    if abs(value - round(value)) < 1e-9:
+        return str(int(round(value)))
+    return f"{value:.2f}"
 
 
 def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str]:
@@ -138,6 +161,152 @@ def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str
     for row in rows:
         lines.append("| " + " | ".join(row) + " |")
     return lines
+
+
+def _normalize_export_column(raw: dict) -> dict:
+    if not isinstance(raw, dict):
+        raise RuntimeError("标准词表列定义必须是对象")
+
+    header = str(raw.get("header") or "").strip()
+    field = str(raw.get("field") or "").strip()
+    if not header or not field:
+        raise RuntimeError("标准词表列定义缺少 header 或 field")
+
+    column = {
+        "header": header,
+        "field": field,
+        "type": str(raw.get("type") or "string").strip() or "string",
+        "nullable": bool(raw.get("nullable", True)),
+    }
+
+    transform = raw.get("transform")
+    if transform not in (None, ""):
+        column["transform"] = str(transform)
+
+    number_format = raw.get("number_format")
+    if number_format not in (None, ""):
+        column["number_format"] = str(number_format)
+
+    width_profile = raw.get("width_profile")
+    if isinstance(width_profile, dict):
+        normalized_width: dict = {}
+        if width_profile.get("fixed") is not None:
+            normalized_width["fixed"] = width_profile.get("fixed")
+        if width_profile.get("min") is not None:
+            normalized_width["min"] = width_profile.get("min")
+        if width_profile.get("max") is not None:
+            normalized_width["max"] = width_profile.get("max")
+        if normalized_width:
+            column["width_profile"] = normalized_width
+
+    return column
+
+
+def load_standard_word_table_spec() -> dict:
+    if not STANDARD_WORD_TABLE_SPEC_PATH.exists():
+        raise RuntimeError(
+            "标准词表规范缺失: "
+            f"{STANDARD_WORD_TABLE_SPEC_PATH}。"
+            "请先补齐 standard-word-analysis/spec/standard-word-table.v1.json。"
+        )
+
+    spec = load_json(STANDARD_WORD_TABLE_SPEC_PATH)
+    if not isinstance(spec, dict):
+        raise RuntimeError("标准词表规范格式错误：顶层必须是对象")
+
+    version = str(spec.get("version") or "").strip()
+    if version != STANDARD_WORD_TABLE_VERSION:
+        raise RuntimeError(
+            f"标准词表版本不匹配：expected={STANDARD_WORD_TABLE_VERSION} actual={version or '-'}"
+        )
+
+    raw_columns = spec.get("excelColumns")
+    if not isinstance(raw_columns, list) or not raw_columns:
+        raise RuntimeError("标准词表规范缺少 excelColumns 数组")
+
+    columns = [_normalize_export_column(item) for item in raw_columns]
+    fields = [str(column.get("field") or "") for column in columns]
+    if len(fields) != len(set(fields)):
+        raise RuntimeError("标准词表规范字段重复：excelColumns.field 必须唯一")
+
+    return {
+        "version": version,
+        "columns": columns,
+    }
+
+
+STANDARD_WORD_TABLE_SPEC = load_standard_word_table_spec()
+
+
+def get_standard_word_table_spec() -> dict:
+    return STANDARD_WORD_TABLE_SPEC
+
+
+def get_keywords_export_columns() -> List[dict]:
+    return list(get_standard_word_table_spec()["columns"])
+
+
+def get_keywords_export_headers() -> List[str]:
+    return [column["header"] for column in get_keywords_export_columns()]
+
+
+def get_header_for_field(field_name: str) -> str:
+    for column in get_keywords_export_columns():
+        if column.get("field") == field_name:
+            return str(column.get("header") or "")
+    raise RuntimeError(f"标准词表缺少字段: {field_name}")
+
+
+def _require_openpyxl():
+    try:
+        from openpyxl import Workbook, load_workbook
+        from openpyxl.styles import Font
+        from openpyxl.utils import get_column_letter
+    except ImportError as exc:
+        raise RuntimeError(
+            "缺少依赖 openpyxl。请先执行 `pip3 install openpyxl` 再运行。"
+        ) from exc
+    return Workbook, Font, get_column_letter, load_workbook
+
+
+def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] = None) -> float:
+    profile = width_profile or {}
+    fixed = profile.get("fixed")
+    if fixed is not None:
+        return float(fixed)
+
+    max_length = max((len(v) for v in values), default=0)
+    width = max_length + DEFAULT_COLUMN_PADDING
+    min_width = int(profile.get("min", DEFAULT_COLUMN_MIN_WIDTH))
+    max_width = int(profile.get("max", DEFAULT_COLUMN_MAX_WIDTH))
+    return float(max(min_width, min(width, max_width)))
+
+
+def _transform_export_value(column_def: dict, value):
+    transform = column_def.get("transform")
+    if transform == "source_presence_label":
+        mapping = {
+            "both": "both（SIM+SEM）",
+            "sim_only": "sim_only（仅 SIM）",
+            "sem_only": "sem_only（仅 SEM）",
+        }
+        return mapping.get(str(value or ""), value)
+    return value
+
+
+def stable_unique_texts(values: Sequence[str]) -> List[str]:
+    seen: set[str] = set()
+    result: List[str] = []
+    for value in values:
+        item = str(value or "").strip()
+        if not item:
+            continue
+        key = normalize_keyword_text(item)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(item)
+    return result
 
 
 def _local_name(tag: str) -> str:
@@ -581,15 +750,12 @@ def build_comparison(today_rows: List[dict], baseline_rows: List[dict], today_pa
 
 
 def _clean_tokens(slug_text: str, keyword_rules: dict) -> List[str]:
-    stop_tokens = set(keyword_rules.get("stopTokens") or [])
     min_token_length = safe_int(keyword_rules.get("minTokenLength") or 2)
     drop_numeric_only = bool(keyword_rules.get("dropNumericOnlyToken", True))
 
     raw_tokens = [t for t in TOKEN_SPLIT_RE.split((slug_text or "").lower()) if t]
     cleaned = []
     for t in raw_tokens:
-        if t in stop_tokens:
-            continue
         if drop_numeric_only and NUMERIC_RE.match(t):
             continue
         if len(t) < min_token_length:
@@ -600,12 +766,8 @@ def _clean_tokens(slug_text: str, keyword_rules: dict) -> List[str]:
 
 def extract_keywords(new_urls: List[dict], keyword_rules: dict) -> dict:
     phrase_counter: Counter = Counter()
-    token_counter: Counter = Counter()
-    bigram_counter: Counter = Counter()
-
     phrase_urls: Dict[str, set] = defaultdict(set)
-    token_urls: Dict[str, set] = defaultdict(set)
-    bigram_urls: Dict[str, set] = defaultdict(set)
+    display_phrase_by_key: Dict[str, str] = {}
 
     for row in new_urls:
         slug = str(row.get("slug") or "").strip().lower()
@@ -616,52 +778,42 @@ def extract_keywords(new_urls: List[dict], keyword_rules: dict) -> dict:
         if not cleaned:
             continue
 
-        source_url = row.get("url", "")
+        phrase = " ".join(cleaned).strip()
+        normalized_phrase = normalize_keyword_text(phrase)
+        if not normalized_phrase:
+            continue
 
-        phrase = " ".join(cleaned)
-        if phrase:
-            phrase_counter[phrase] += 1
-            phrase_urls[phrase].add(source_url)
-
-        for token in cleaned:
-            token_counter[token] += 1
-            token_urls[token].add(source_url)
-
-        for i in range(len(cleaned) - 1):
-            bigram = f"{cleaned[i]} {cleaned[i + 1]}"
-            bigram_counter[bigram] += 1
-            bigram_urls[bigram].add(source_url)
+        source_url = str(row.get("url") or "").strip()
+        display_phrase_by_key.setdefault(normalized_phrase, phrase)
+        phrase_counter[normalized_phrase] += 1
+        if source_url:
+            phrase_urls[normalized_phrase].add(source_url)
 
     entries = []
-
-    def append_entries(kind: str, counter: Counter, url_map: Dict[str, set], weight: float) -> None:
-        for kw, count in counter.items():
-            urls = sorted({u for u in url_map.get(kw, set()) if u})
-            url_count = len(urls)
-            score = round(float(count) * weight + float(url_count) * 0.3, 3)
-            entries.append(
-                {
-                    "type": kind,
-                    "keyword": kw,
-                    "count": int(count),
-                    "urlCount": url_count,
-                    "score": score,
-                    "exampleUrls": urls[:3],
-                }
-            )
-
-    append_entries("phrase", phrase_counter, phrase_urls, 1.2)
-    append_entries("bigram", bigram_counter, bigram_urls, 1.0)
-    append_entries("token", token_counter, token_urls, 0.8)
+    for key, count in phrase_counter.items():
+        urls = sorted({u for u in phrase_urls.get(key, set()) if u})
+        url_count = len(urls)
+        score = round(float(count) * 1.2 + float(url_count) * 0.3, 3)
+        entries.append(
+            {
+                "type": "phrase",
+                "keyword": display_phrase_by_key.get(key, key),
+                "count": int(count),
+                "urlCount": url_count,
+                "score": score,
+                "exampleUrls": urls[:3],
+            }
+        )
 
     entries.sort(key=lambda x: (-float(x.get("score", 0.0)), -safe_int(x.get("urlCount")), x.get("keyword", ""), x.get("type", "")))
 
     return {
         "topKeywordsFromNewUrls": entries[:TOP_KEYWORDS_IN_REPORT],
+        "allKeywordsFromNewUrls": entries,
         "counters": {
-            "phrase": phrase_counter.most_common(120),
-            "bigram": bigram_counter.most_common(120),
-            "token": token_counter.most_common(200),
+            "phrase": [(display_phrase_by_key.get(key, key), count) for key, count in phrase_counter.most_common(120)],
+            "bigram": [],
+            "token": [],
         },
     }
 
@@ -679,6 +831,7 @@ def build_snapshot(
     comparison: dict,
     keyword_result: dict,
 ) -> dict:
+    standard_word = keyword_result.get("standardWord") or {}
     return {
         "meta": {
             "generatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -701,6 +854,7 @@ def build_snapshot(
             "effectiveUrlCount": len(rows),
             "patternCount": len(patterns),
             "baselineStamp": baseline_stamp,
+            "standardWordTableVersion": STANDARD_WORD_TABLE_VERSION,
         },
         "urls": rows,
         "patterns": patterns,
@@ -713,6 +867,10 @@ def build_snapshot(
         "keywords": {
             "topKeywordsFromNewUrls": keyword_result.get("topKeywordsFromNewUrls", []),
             "counters": keyword_result.get("counters", {}),
+        },
+        "standardWord": {
+            "rows": standard_word.get("rows", []),
+            "summary": standard_word.get("summary", {}),
         },
     }
 
@@ -828,7 +986,6 @@ def render_report(snapshot: dict) -> str:
         lines.append(f"- {remark}")
     lines.append("")
 
-    # 方便排查：附主模式 Top 10（不作为必需 section）
     lines.append("## 附录：主路由模式（Top 10）")
     lines.append("")
     rows = []
@@ -943,6 +1100,147 @@ def render_merged_report(*, stamp: str, site_results: List[dict]) -> str:
     return "\n".join(lines)
 
 
+def _make_standard_word_row(keyword: str, corresponding_domain: str) -> dict:
+    return {
+        "keyword": keyword,
+        "correspondingDomain": corresponding_domain,
+        "group": "",
+        "sourcePresence": "",
+        "score": None,
+        "simWindowVolume": None,
+        "simKd": None,
+        "simCpc": None,
+        "semVolume": None,
+        "semKd": None,
+        "semCpc": None,
+        "gefeiKD": None,
+    }
+
+
+def build_standard_word_rows(top_keywords: List[dict], newly_added_urls: List[dict], keyword_rules: dict) -> Tuple[List[dict], dict]:
+    url_map: Dict[str, List[str]] = defaultdict(list)
+    for row in newly_added_urls:
+        source_url = str(row.get("url") or "").strip()
+        phrase = normalize_keyword_text(" ".join(_clean_tokens(str(row.get("slug") or ""), keyword_rules)))
+        if source_url and phrase:
+            url_map[phrase].append(source_url)
+
+    rows: List[dict] = []
+    for entry in top_keywords:
+        keyword = str(entry.get("keyword") or "").strip()
+        normalized_keyword = normalize_keyword_text(keyword)
+        if not normalized_keyword:
+            continue
+        urls = " | ".join(stable_unique_texts(url_map.get(normalized_keyword, [])))
+        rows.append(_make_standard_word_row(keyword, urls))
+
+    return rows, {
+        "rowCount": len(rows),
+    }
+
+
+def write_standard_word_excel(*, stamp: str, site_results: List[dict], output_path: Path) -> None:
+    Workbook, Font, get_column_letter, _ = _require_openpyxl()
+
+    workbook = Workbook()
+    summary_sheet = workbook.active
+    summary_sheet.title = "summary"
+    keywords_sheet = workbook.create_sheet("keywords")
+
+    merged_rows = build_merged_standard_word_rows(site_results)
+    standard_word_rows = merged_rows.get("rows") or []
+    summary_rows = [
+        ("generatedAt", datetime.now().isoformat(timespec="seconds")),
+        ("stamp", stamp),
+        ("siteCount", len(site_results)),
+        ("standardWordRows", len(standard_word_rows)),
+        ("standardWordTableVersion", STANDARD_WORD_TABLE_VERSION),
+    ]
+    for idx, (name, value) in enumerate(summary_rows, start=1):
+        summary_sheet.cell(row=idx, column=1, value=name)
+        summary_sheet.cell(row=idx, column=2, value=value)
+    summary_sheet.freeze_panes = "A2"
+
+    export_columns = get_keywords_export_columns()
+    headers = get_keywords_export_headers()
+    keywords_sheet.append(headers)
+    for cell in keywords_sheet[1]:
+        cell.font = Font(bold=True)
+
+    for row in standard_word_rows:
+        export_row = []
+        for column in export_columns:
+            raw_value = row.get(column["field"])
+            export_row.append(_transform_export_value(column, raw_value))
+        keywords_sheet.append(export_row)
+
+    keywords_sheet.freeze_panes = "A2"
+    keywords_sheet.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{max(keywords_sheet.max_row, 1)}"
+
+    for index, column in enumerate(export_columns, start=1):
+        number_format = column.get("number_format")
+        if not number_format:
+            continue
+        col_letter = get_column_letter(index)
+        for cell in keywords_sheet[col_letter][1:]:
+            cell.number_format = number_format
+
+    for column_index, column in enumerate(export_columns, start=1):
+        column_letter = get_column_letter(column_index)
+        values = []
+        for row_index in range(1, keywords_sheet.max_row + 1):
+            value = keywords_sheet.cell(row=row_index, column=column_index).value
+            values.append("" if value is None else str(value))
+        keywords_sheet.column_dimensions[column_letter].width = _compute_column_width(values, column.get("width_profile"))
+
+    for column_cells in summary_sheet.columns:
+        values = ["" if cell.value is None else str(cell.value) for cell in column_cells]
+        summary_sheet.column_dimensions[column_cells[0].column_letter].width = _compute_column_width(
+            values,
+            {"min": 14, "max": 64},
+        )
+
+    ensure_dir(output_path.parent)
+    workbook.save(output_path)
+
+
+def build_merged_standard_word_rows(site_results: List[dict]) -> dict:
+    keyword_map: Dict[str, dict] = {}
+    for site_result in site_results:
+        for row in site_result.get("standardWordRows") or []:
+            keyword = str(row.get("keyword") or "").strip()
+            normalized_keyword = normalize_keyword_text(keyword)
+            if not normalized_keyword:
+                continue
+            domains = stable_unique_texts(str(row.get("correspondingDomain") or "").split("|"))
+            if normalized_keyword not in keyword_map:
+                keyword_map[normalized_keyword] = _make_standard_word_row(keyword, " | ".join(domains))
+                continue
+            merged_domains = stable_unique_texts(
+                keyword_map[normalized_keyword]["correspondingDomain"].split("|") + domains
+            )
+            keyword_map[normalized_keyword]["correspondingDomain"] = " | ".join(merged_domains)
+
+    rows = list(keyword_map.values())
+    rows.sort(key=lambda item: normalize_keyword_text(str(item.get("keyword") or "")))
+    return {
+        "rows": rows,
+        "summary": {
+            "rowCount": len(rows),
+        },
+    }
+
+
+def write_merged_standard_word_table(*, stamp: str, site_results: List[dict], report_history_root: Path, report_latest_root: Path) -> Tuple[Path, Path]:
+    history_path = report_history_root / f"keyword-table-{stamp}.xlsx"
+    latest_path = report_latest_root / MERGED_LATEST_XLSX
+    ensure_dir(history_path.parent)
+    ensure_dir(latest_path.parent)
+    write_standard_word_excel(stamp=stamp, site_results=site_results, output_path=history_path)
+    shutil.copyfile(history_path, latest_path)
+    return history_path, latest_path
+
+
 def write_merged_report(*, stamp: str, site_results: List[dict], report_history_root: Path, report_latest_root: Path) -> Tuple[Path, Path]:
     merged_history_dir = report_history_root
     merged_latest_path = report_latest_root / MERGED_LATEST_FILE
@@ -1034,16 +1332,21 @@ def build_site_result_from_snapshot(site_id: str, site: Optional[dict], snapshot
             "newlyAddedUrls": [],
             "newPatterns": [],
             "topKeywords": [],
+            "standardWordRows": [],
+            "standardWordSummary": {"rowCount": 0},
         }
 
     meta = snapshot.get("meta") or {}
     comparison = snapshot.get("comparison") or {}
     keywords = snapshot.get("keywords") or {}
+    standard_word = snapshot.get("standardWord") or {}
 
     newly = comparison.get("newlyAddedUrls") or []
     removed = comparison.get("removedUrls") or []
     new_patterns = comparison.get("newPatterns") or []
     top_keywords = keywords.get("topKeywordsFromNewUrls") or []
+    standard_word_rows = standard_word.get("rows") or []
+    standard_word_summary = standard_word.get("summary") or {"rowCount": len(standard_word_rows)}
 
     return {
         "siteId": site_id,
@@ -1053,12 +1356,14 @@ def build_site_result_from_snapshot(site_id: str, site: Optional[dict], snapshot
         "newlyAddedCount": len(newly),
         "removedCount": len(removed),
         "newPatternCount": len(new_patterns),
-        "keywordCount": len(top_keywords),
+        "keywordCount": safe_int(standard_word_summary.get("rowCount", len(standard_word_rows))),
         "baselineMode": bool(meta.get("baselineMode", False)),
         "baselineStamp": meta.get("baselineStamp"),
         "newlyAddedUrls": newly,
         "newPatterns": new_patterns,
         "topKeywords": top_keywords,
+        "standardWordRows": standard_word_rows,
+        "standardWordSummary": standard_word_summary,
     }
 
 
@@ -1098,6 +1403,7 @@ def run_single_site(
 
     baseline_snapshot, baseline_path = find_latest_baseline(site_snapshot_dir, stamp)
     baseline_mode = baseline_snapshot is None
+    keyword_rules = site.get("keywordRules") or {}
 
     raw_urls, crawl_meta = crawl_sitemaps(site)
     rows, normalize_stats = filter_and_normalize_urls(raw_urls, site)
@@ -1109,15 +1415,31 @@ def run_single_site(
             "removedUrls": [],
             "newPatterns": [],
         }
-        keyword_result = {"topKeywordsFromNewUrls": [], "counters": {}}
+        standard_word_rows: List[dict] = []
+        standard_word_summary = {"rowCount": 0}
+        keyword_result = {
+            "topKeywordsFromNewUrls": [],
+            "allKeywordsFromNewUrls": [],
+            "counters": {"phrase": [], "bigram": [], "token": []},
+        }
         baseline_stamp = None
     else:
         baseline_rows = (baseline_snapshot.get("urls") or [])
         baseline_patterns = (baseline_snapshot.get("patterns") or [])
 
         comparison = build_comparison(rows, baseline_rows, patterns, baseline_patterns)
-        keyword_result = extract_keywords(comparison.get("newlyAddedUrls") or [], site.get("keywordRules") or {})
+        keyword_result = extract_keywords(comparison.get("newlyAddedUrls") or [], keyword_rules)
+        standard_word_rows, standard_word_summary = build_standard_word_rows(
+            keyword_result.get("allKeywordsFromNewUrls") or [],
+            comparison.get("newlyAddedUrls") or [],
+            keyword_rules,
+        )
         baseline_stamp = ((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None)
+
+    keyword_result["standardWord"] = {
+        "rows": standard_word_rows,
+        "summary": standard_word_summary,
+    }
 
     snapshot = build_snapshot(
         stamp=stamp,
@@ -1132,7 +1454,6 @@ def run_single_site(
         keyword_result=keyword_result,
     )
 
-    # 全流程内存完成后再落盘，避免部分失败污染。
     fetch_archive_path = site_data_dir / f"fetch-{stamp}.json"
     snapshot_path = site_snapshot_dir / f"snapshot-{stamp}.json"
 
@@ -1150,7 +1471,6 @@ def run_single_site(
     )
     dump_json(snapshot_path, snapshot)
 
-    # 仅输出 merged 报告，不再落盘分站报告。
     site_latest_path.unlink(missing_ok=True)
 
     return {
@@ -1172,6 +1492,8 @@ def run_single_site(
         "newlyAddedUrls": comparison.get("newlyAddedUrls") or [],
         "newPatterns": comparison.get("newPatterns") or [],
         "topKeywords": keyword_result.get("topKeywordsFromNewUrls") or [],
+        "standardWordRows": standard_word_rows,
+        "standardWordSummary": standard_word_summary,
     }
 
 
@@ -1236,6 +1558,12 @@ def run_pipeline(args: argparse.Namespace) -> int:
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
     )
+    excel_history_path, excel_latest_path = write_merged_standard_word_table(
+        stamp=stamp,
+        site_results=results,
+        report_history_root=report_history_root,
+        report_latest_root=report_latest_root,
+    )
 
     purge_per_site_reports(
         site_ids=[site["id"] for site in selected],
@@ -1245,6 +1573,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
 
     print(f"[done] merged history: {merged_history_path}")
     print(f"[done] merged latest : {merged_latest_path}")
+    print(f"[done] excel history : {excel_history_path}")
+    print(f"[done] excel latest  : {excel_latest_path}")
     print(f"[done] sites total: {len(results)}")
     return 0
 
@@ -1267,13 +1597,13 @@ def rebuild_single_site_reports(
     files = list_snapshot_files(snapshot_dir)
     if not files:
         print(f"[skip] site={site_id} 无快照: {snapshot_dir}")
-        # 即使无快照，也清理历史分站报告文件
         if history_dir.exists():
             for p in history_dir.glob("report-*.md"):
                 p.unlink(missing_ok=True)
         latest_path.unlink(missing_ok=True)
         return
 
+    keyword_rules = (site or {}).get("keywordRules") or {}
     baseline_snapshot: Optional[dict] = None
 
     for path in files:
@@ -1290,7 +1620,13 @@ def rebuild_single_site_reports(
                 "removedUrls": [],
                 "newPatterns": [],
             }
-            keyword_result = {"topKeywordsFromNewUrls": [], "counters": {}}
+            standard_word_rows = []
+            standard_word_summary = {"rowCount": 0}
+            keyword_result = {
+                "topKeywordsFromNewUrls": [],
+                "allKeywordsFromNewUrls": [],
+                "counters": {"phrase": [], "bigram": [], "token": []},
+            }
         else:
             baseline_mode = False
             baseline_stamp = (baseline_snapshot.get("meta") or {}).get("stamp")
@@ -1300,12 +1636,22 @@ def rebuild_single_site_reports(
                 today_patterns,
                 baseline_snapshot.get("patterns") or [],
             )
-            keyword_rules = (site or {}).get("keywordRules") or {}
             keyword_result = extract_keywords(comparison.get("newlyAddedUrls") or [], keyword_rules)
+            standard_word_rows, standard_word_summary = build_standard_word_rows(
+                keyword_result.get("allKeywordsFromNewUrls") or [],
+                comparison.get("newlyAddedUrls") or [],
+                keyword_rules,
+            )
+
+        keyword_result["standardWord"] = {
+            "rows": standard_word_rows,
+            "summary": standard_word_summary,
+        }
 
         meta = snapshot.get("meta") or {}
         meta["baselineMode"] = baseline_mode
         meta["baselineStamp"] = baseline_stamp
+        meta["standardWordTableVersion"] = STANDARD_WORD_TABLE_VERSION
         snapshot["meta"] = meta
         snapshot["comparison"] = {
             "baselineStamp": baseline_stamp,
@@ -1317,11 +1663,14 @@ def rebuild_single_site_reports(
             "topKeywordsFromNewUrls": keyword_result.get("topKeywordsFromNewUrls") or [],
             "counters": keyword_result.get("counters") or {},
         }
+        snapshot["standardWord"] = {
+            "rows": standard_word_rows,
+            "summary": standard_word_summary,
+        }
 
         dump_json(path, snapshot)
         baseline_snapshot = snapshot
 
-    # 仅保留 merged 报告，清理分站报告产物
     if history_dir.exists():
         for p in history_dir.glob("report-*.md"):
             p.unlink(missing_ok=True)
@@ -1347,7 +1696,6 @@ def rebuild_reports(args: argparse.Namespace) -> int:
             raise SystemExit(f"未找到 site: {args.site}")
         selected_ids = [args.site]
     else:
-        # 重建包含：配置中所有 site + snapshot 目录里已有 site（防止配置调整后历史丢失）。
         selected_ids = sorted(set(list(sites.keys()) + [p.name for p in snapshot_root.iterdir() if p.is_dir()]))
 
     for site_id in selected_ids:
@@ -1363,8 +1711,6 @@ def rebuild_reports(args: argparse.Namespace) -> int:
     merged_results: List[dict] = []
     merged_stamps: List[str] = []
 
-    # 合并报告默认覆盖当前配置中的所有站点（无论 enabled），
-    # 若某站还没有快照则在合并结果中显示为 0。
     merged_site_ids = sorted(sites.keys())
     for site_id in merged_site_ids:
         site = sites.get(site_id)
@@ -1380,14 +1726,23 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
     )
+    excel_history_path, excel_latest_path = write_merged_standard_word_table(
+        stamp=merged_stamp,
+        site_results=merged_results,
+        report_history_root=report_history_root,
+        report_latest_root=report_latest_root,
+    )
     print(f"[done] rebuilt merged history: {merged_history_path}")
     print(f"[done] rebuilt merged latest : {merged_latest_path}")
+    print(f"[done] rebuilt excel history : {excel_history_path}")
+    print(f"[done] rebuilt excel latest  : {excel_latest_path}")
 
     return 0
 
 
 def validate_report(args: argparse.Namespace) -> int:
     report_path = Path(args.report).resolve()
+    xlsx_path = Path(args.xlsx).resolve()
 
     if not report_path.exists():
         raise SystemExit(f"报告不存在: {report_path}")
@@ -1403,7 +1758,43 @@ def validate_report(args: argparse.Namespace) -> int:
             print(f"- {item}")
         return 1
 
-    print(f"[ok] 报告结构校验通过: {report_path}")
+    if not xlsx_path.exists():
+        raise SystemExit(f"Excel 不存在: {xlsx_path}")
+
+    _Workbook, _Font, _get_column_letter, load_workbook = _require_openpyxl()
+    workbook = load_workbook(xlsx_path, data_only=True)
+    try:
+        if "keywords" not in workbook.sheetnames:
+            raise SystemExit("Excel 缺少 keywords sheet")
+        sheet = workbook["keywords"]
+
+        expected_headers = get_keywords_export_headers()
+        actual_headers = [sheet.cell(row=1, column=index).value for index in range(1, sheet.max_column + 1)]
+        if actual_headers != expected_headers:
+            print("Excel 表头不匹配：")
+            max_len = max(len(expected_headers), len(actual_headers))
+            for index in range(1, max_len + 1):
+                expected = expected_headers[index - 1] if index <= len(expected_headers) else None
+                actual = actual_headers[index - 1] if index <= len(actual_headers) else None
+                if expected != actual:
+                    print(f"- 第 {index} 列 expected={expected!r} actual={actual!r}")
+            raise SystemExit(1)
+
+        keyword_col = expected_headers.index(get_header_for_field("keyword")) + 1
+        domain_col = expected_headers.index(get_header_for_field("correspondingDomain")) + 1
+        for row_index in range(2, sheet.max_row + 1):
+            keyword = sheet.cell(row=row_index, column=keyword_col).value
+            domain = sheet.cell(row=row_index, column=domain_col).value
+            if keyword in (None, ""):
+                raise SystemExit(f"keyword 列为空（row={row_index}）")
+            if domain in (None, ""):
+                raise SystemExit(f"对应域名 列为空（row={row_index}）")
+    finally:
+        workbook.close()
+
+    print(f"[ok] report validated: {report_path}")
+    print(f"[ok] xlsx exists      : {xlsx_path}")
+    print("[ok] xlsx headers / keyword / 对应域名 validated")
     return 0
 
 

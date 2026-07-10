@@ -12,16 +12,27 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from shutil import copyfile
+from typing import Dict, List, Optional, Sequence, Tuple
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 PROJECT_DIR = Path(__file__).resolve().parents[2]
+REPO_ROOT = PROJECT_DIR.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from shared_gefei_kd import fetch_gefei_kd_rows
+
 LOCAL_SERVICE_TOKEN_PATH = PROJECT_DIR / "local-service" / "bridge_token.txt"
+
+STANDARD_WORD_TABLE_VERSION = "v1"
+STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
 
 DEFAULT_API_BASE = "http://127.0.0.1:17311"
 DEFAULT_ENDPOINT = "/sim/api/websiteOrganicLandingPagesV2"
@@ -41,6 +52,11 @@ SUBDOMAIN_RISING_MIN_DELTA = 50.0
 SUBDOMAIN_RISING_MIN_GROWTH = 0.05
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
+SPACE_RE = re.compile(r"\s+")
+
+DEFAULT_COLUMN_PADDING = 4
+DEFAULT_COLUMN_MIN_WIDTH = 12
+DEFAULT_COLUMN_MAX_WIDTH = 72
 
 REQUIRED_REMARKS = [
     "当前监控仅覆盖 ClicksShare 排序下前8页样本",
@@ -75,14 +91,17 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
     run_parser.add_argument("--report-dir", default=str(PROJECT_DIR / "report" / "history"))
     run_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
+    run_parser.add_argument("--latest-xlsx-path", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建历史报告")
     rebuild_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
     rebuild_parser.add_argument("--report-dir", default=str(PROJECT_DIR / "report" / "history"))
     rebuild_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
+    rebuild_parser.add_argument("--latest-xlsx-path", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
 
-    validate_parser = subparsers.add_parser("validate-report", help="校验 Markdown 报告结构")
+    validate_parser = subparsers.add_parser("validate-report", help="校验 Markdown 报告结构与 latest.xlsx")
     validate_parser.add_argument("--report", default=str(PROJECT_DIR / "report" / "latest.md"))
+    validate_parser.add_argument("--xlsx", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
 
     return parser.parse_args()
 
@@ -93,7 +112,7 @@ def ensure_dir(path: Path) -> None:
 
 def safe_float(value) -> float:
     try:
-        if value is None:
+        if value is None or value == "":
             return 0.0
         return float(value)
     except (TypeError, ValueError):
@@ -127,6 +146,157 @@ def load_json(path: Path) -> dict:
 
 def dump_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def normalize_keyword_text(text: str) -> str:
+    if not isinstance(text, str):
+        return ""
+    return SPACE_RE.sub(" ", text.strip().lower())
+
+
+def compute_sim_score(row: dict) -> Optional[float]:
+    sim_window_volume = safe_float(row.get("simWindowVolume"))
+    sim_cpc = safe_float(row.get("simCpc"))
+    sim_kd = safe_float(row.get("simKd"))
+    if sim_window_volume <= 0 or sim_cpc <= 0 or sim_kd <= 0:
+        return None
+    return sim_window_volume * sim_cpc / sim_kd
+
+
+def _normalize_export_column(raw: dict) -> dict:
+    if not isinstance(raw, dict):
+        raise RuntimeError("标准词表列配置项必须是对象")
+
+    header = str(raw.get("header") or "").strip()
+    field = str(raw.get("field") or "").strip()
+    if not header or not field:
+        raise RuntimeError("标准词表列配置缺少 header/field")
+
+    column = {
+        "header": header,
+        "field": field,
+    }
+
+    transform = raw.get("transform")
+    if transform not in (None, ""):
+        column["transform"] = str(transform)
+
+    number_format = raw.get("number_format")
+    if number_format not in (None, ""):
+        column["number_format"] = str(number_format)
+
+    width_profile = raw.get("width_profile")
+    if isinstance(width_profile, dict):
+        normalized_width: dict = {}
+        if width_profile.get("fixed") is not None:
+            normalized_width["fixed"] = width_profile.get("fixed")
+        if width_profile.get("min") is not None:
+            normalized_width["min"] = width_profile.get("min")
+        if width_profile.get("max") is not None:
+            normalized_width["max"] = width_profile.get("max")
+        if normalized_width:
+            column["width_profile"] = normalized_width
+
+    return column
+
+
+def load_standard_word_table_spec() -> dict:
+    if not STANDARD_WORD_TABLE_SPEC_PATH.exists():
+        raise RuntimeError(
+            "标准词表规范缺失: "
+            f"{STANDARD_WORD_TABLE_SPEC_PATH}。"
+            "请先补齐 standard-word-analysis/spec/standard-word-table.v1.json。"
+        )
+
+    spec = load_json(STANDARD_WORD_TABLE_SPEC_PATH)
+    if not isinstance(spec, dict):
+        raise RuntimeError("标准词表规范格式错误：顶层必须是对象")
+
+    version = str(spec.get("version") or "").strip()
+    if version != STANDARD_WORD_TABLE_VERSION:
+        raise RuntimeError(
+            f"标准词表版本不匹配：expected={STANDARD_WORD_TABLE_VERSION} actual={version or '-'}"
+        )
+
+    raw_columns = spec.get("excelColumns")
+    if not isinstance(raw_columns, list) or not raw_columns:
+        raise RuntimeError("标准词表规范缺少 excelColumns 数组")
+
+    columns = [_normalize_export_column(item) for item in raw_columns]
+    fields = [str(column.get("field") or "") for column in columns]
+    if len(fields) != len(set(fields)):
+        raise RuntimeError("标准词表规范字段重复：excelColumns.field 必须唯一")
+
+    return {
+        "version": version,
+        "columns": columns,
+    }
+
+
+def get_standard_word_table_spec() -> dict:
+    return STANDARD_WORD_TABLE_SPEC
+
+
+def get_keywords_export_columns() -> List[dict]:
+    return list(get_standard_word_table_spec()["columns"])
+
+
+def get_keywords_export_headers() -> List[str]:
+    return [column["header"] for column in get_keywords_export_columns()]
+
+
+def get_header_for_field(field_name: str) -> str:
+    for column in get_keywords_export_columns():
+        if column.get("field") == field_name:
+            return str(column.get("header") or "")
+    raise RuntimeError(f"标准词表缺少字段: {field_name}")
+
+
+def enrich_standard_word_rows_with_gefei_kd(rows: List[dict]) -> dict:
+    keywords = [str(row.get("keyword") or "").strip() for row in rows if str(row.get("keyword") or "").strip()]
+    result = fetch_gefei_kd_rows(keywords=keywords)
+    score_by_keyword = result.get("scoreByKeyword") or {}
+    for row in rows:
+        keyword = normalize_keyword_text(str(row.get("keyword") or ""))
+        row["gefeiKD"] = score_by_keyword.get(keyword)
+    return result
+
+
+def normalize_context_item(*, hostname: str, landing_page_url: str) -> str:
+    host = str(hostname or "").strip().lower()
+    url = str(landing_page_url or "").strip()
+    if host and url:
+        return f"{host} {url}"
+    return host or url
+
+
+def stable_unique_texts(values: Sequence[str]) -> List[str]:
+    seen: set[str] = set()
+    result: List[str] = []
+    for value in values:
+        item = str(value or "").strip()
+        if not item:
+            continue
+        key = normalize_keyword_text(item)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(item)
+    return result
+
+
+def aggregate_keyword_contexts(rows: List[dict]) -> str:
+    values = [
+        normalize_context_item(
+            hostname=str(row.get("hostname") or ""),
+            landing_page_url=str(row.get("landingPageUrl") or ""),
+        )
+        for row in rows
+    ]
+    return " | ".join(stable_unique_texts(values))
+
+
+STANDARD_WORD_TABLE_SPEC = load_standard_word_table_spec()
 
 
 def normalize_landing_page_url(raw_url: str) -> Optional[Tuple[str, str]]:
@@ -510,7 +680,7 @@ def _path_from_url(raw_url: str) -> str:
     return path
 
 
-def build_subdomain_keywords_map(rows: List[dict], *, max_keywords: int = 3) -> Dict[str, str]:
+def build_subdomain_keyword_entries(rows: List[dict], *, max_keywords: int = 3) -> Dict[str, List[dict]]:
     grouped: Dict[str, List[dict]] = {}
     for row in rows:
         subdomain = row.get("subdomain") or ""
@@ -518,24 +688,37 @@ def build_subdomain_keywords_map(rows: List[dict], *, max_keywords: int = 3) -> 
             continue
         grouped.setdefault(subdomain, []).append(row)
 
-    result: Dict[str, str] = {}
+    result: Dict[str, List[dict]] = {}
     for subdomain, items in grouped.items():
         sorted_items = sorted(
             items,
             key=lambda item: (-safe_float(item.get("clicks")), item.get("landingPageUrl", "")),
         )
-        keywords: List[str] = []
+        keywords: List[dict] = []
         seen = set()
         for item in sorted_items:
             keyword = (item.get("topKeyword") or "").strip()
             if not keyword or keyword in seen:
                 continue
             seen.add(keyword)
-            keywords.append(keyword)
+            keywords.append(
+                {
+                    "keyword": keyword,
+                    "correspondingDomain": (item.get("hostname") or "").strip().lower(),
+                }
+            )
             if len(keywords) >= max_keywords:
                 break
-        result[subdomain] = " / ".join(keywords) if keywords else "-"
+        result[subdomain] = keywords
 
+    return result
+
+
+def build_subdomain_keywords_map(subdomain_keyword_entries: Dict[str, List[dict]]) -> Dict[str, str]:
+    result: Dict[str, str] = {}
+    for subdomain, entries in subdomain_keyword_entries.items():
+        keywords = [str(entry.get("keyword") or "").strip() for entry in entries if str(entry.get("keyword") or "").strip()]
+        result[subdomain] = " / ".join(keywords) if keywords else "-"
     return result
 
 
@@ -568,16 +751,104 @@ def _subdomain_report_row(row: dict, *, trend: str, subdomain_keywords: Dict[str
     }
 
 
-def build_report_rows(
+def _make_standard_word_row(keyword: str, corresponding_domain: str) -> dict:
+    return {
+        "keyword": keyword,
+        "correspondingDomain": corresponding_domain,
+        "group": "",
+        "sourcePresence": "",
+        "score": None,
+        "simWindowVolume": None,
+        "simKd": None,
+        "simCpc": None,
+        "semVolume": None,
+        "semKd": None,
+        "semCpc": None,
+    }
+
+
+def build_standard_word_rows(
+    *,
+    new_page_rows: List[dict],
+    new_subdomain_rows: List[dict],
+    subdomain_keyword_entries: Dict[str, List[dict]],
+    all_today_rows: List[dict],
+) -> Tuple[List[dict], dict]:
+    rows: List[dict] = []
+    keyword_map: Dict[str, dict] = {}
+    new_page_keyword_rows = 0
+    new_subdomain_keyword_rows = 0
+
+    rows_by_keyword: Dict[str, List[dict]] = {}
+    for item in all_today_rows:
+        keyword = str(item.get("topKeyword") or "").strip()
+        normalized_keyword = normalize_keyword_text(keyword)
+        if not normalized_keyword:
+            continue
+        rows_by_keyword.setdefault(normalized_keyword, []).append(item)
+
+    def add_keyword(keyword: str) -> bool:
+        normalized_keyword = normalize_keyword_text(keyword)
+        if not normalized_keyword:
+            return False
+        if normalized_keyword in keyword_map:
+            return False
+        source_rows = rows_by_keyword.get(normalized_keyword, [])
+        keyword_map[normalized_keyword] = _make_standard_word_row(
+            keyword.strip(),
+            aggregate_keyword_contexts(source_rows),
+        )
+        rows.append(keyword_map[normalized_keyword])
+        return True
+
+    for row in new_subdomain_rows:
+        subdomain = str(row.get("subdomain") or "").strip()
+        for entry in subdomain_keyword_entries.get(subdomain, []):
+            if add_keyword(str(entry.get("keyword") or "")):
+                new_subdomain_keyword_rows += 1
+
+    for row in new_page_rows:
+        if add_keyword(str(row.get("topKeyword") or "")):
+            new_page_keyword_rows += 1
+
+    return rows, {
+        "rowCount": len(rows),
+        "newPageKeywordRows": new_page_keyword_rows,
+        "newSubdomainKeywordRows": new_subdomain_keyword_rows,
+    }
+
+
+def build_comparison(
     *,
     today_rows: List[dict],
     today_subdomains: List[dict],
     baseline_rows: List[dict],
     baseline_subdomains: List[dict],
-) -> List[dict]:
+    baseline_stamp: Optional[str],
+    enrich_gefei_kd: bool = True,
+) -> dict:
     new_page, rising_page = build_page_comparison(today_rows, baseline_rows)
     new_sub, rising_sub = build_subdomain_comparison(today_subdomains, baseline_subdomains)
-    subdomain_keywords = build_subdomain_keywords_map(today_rows)
+    subdomain_keyword_entries = build_subdomain_keyword_entries(today_rows)
+    subdomain_keywords = build_subdomain_keywords_map(subdomain_keyword_entries)
+    standard_word_rows, standard_word_summary = build_standard_word_rows(
+        new_page_rows=new_page,
+        new_subdomain_rows=new_sub,
+        subdomain_keyword_entries=subdomain_keyword_entries,
+        all_today_rows=today_rows,
+    )
+    gefei_kd_fetch = enrich_standard_word_rows_with_gefei_kd(standard_word_rows) if enrich_gefei_kd else {
+        "summary": {
+            "inputCount": 0,
+            "requestCount": 0,
+            "successCount": 0,
+            "successWithScoreCount": 0,
+            "missingScoreCount": 0,
+            "failedCount": 0,
+        },
+        "failures": [],
+        "api": {},
+    }
 
     report_rows: List[dict] = []
     report_rows.extend(_subdomain_report_row(row, trend="新增", subdomain_keywords=subdomain_keywords) for row in new_sub)
@@ -596,7 +867,18 @@ def build_report_rows(
             row.get("path", ""),
         )
     )
-    return report_rows
+
+    return {
+        "baselineStamp": baseline_stamp,
+        "reportRows": report_rows,
+        "standardWordRows": standard_word_rows,
+        "standardWordSummary": standard_word_summary,
+        "gefeiKD": {
+            "summary": gefei_kd_fetch.get("summary") or {},
+            "failures": gefei_kd_fetch.get("failures") or [],
+            "api": gefei_kd_fetch.get("api") or {},
+        },
+    }
 
 
 def _md_table(headers: List[str], rows: List[List[str]]) -> List[str]:
@@ -615,6 +897,7 @@ def render_report(snapshot: dict) -> str:
     meta = snapshot.get("meta") or {}
     target = meta.get("target") or {}
     comparison = snapshot.get("comparison") or {}
+    standard_word_summary = comparison.get("standardWordSummary") or {}
 
     report_rows = comparison.get("reportRows") or []
     rising_count = sum(1 for row in report_rows if row.get("trend") == "上涨")
@@ -637,6 +920,8 @@ def render_report(snapshot: dict) -> str:
 
     lines.append(f"- 新增数量：{new_count}")
     lines.append(f"- 上涨数量：{rising_count}")
+    lines.append(f"- 标准词表行数：{standard_word_summary.get('rowCount', 0)}（仅新增页面/子域名）")
+    lines.append("- 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文")
     lines.append("")
 
     lines.append("## 监控结果")
@@ -661,6 +946,8 @@ def render_report(snapshot: dict) -> str:
 
     lines.append("## 备注")
     lines.append("")
+    lines.append("- 标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空")
+    lines.append("- 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文，`gefeiKD` 为哥飞 KD score")
     for remark in REQUIRED_REMARKS:
         lines.append(f"- {remark}")
     lines.append("")
@@ -678,6 +965,10 @@ def build_snapshot(
     baseline_mode: bool,
     fetch_meta: dict,
     normalize_stats: dict,
+    report_history_path: Path,
+    excel_history_path: Path,
+    latest_report_path: Path,
+    latest_xlsx_path: Path,
 ) -> dict:
     return {
         "meta": {
@@ -699,8 +990,18 @@ def build_snapshot(
                 "searchType": args.search_type,
                 "startPage": args.start_page,
                 "endPage": args.end_page,
+                "standardWordTableVersion": STANDARD_WORD_TABLE_VERSION,
             },
-            "api": fetch_meta,
+            "api": {
+                **fetch_meta,
+                "gefeiKD": ((comparison.get("gefeiKD") or {}).get("api") or {}),
+            },
+            "output": {
+                "reportHistoryPath": str(report_history_path),
+                "excelHistoryPath": str(excel_history_path),
+            },
+            "latestReportPath": str(latest_report_path),
+            "latestExcelPath": str(latest_xlsx_path),
             "pagesFetched": args.end_page - args.start_page + 1,
             "startPage": args.start_page,
             "endPage": args.end_page,
@@ -709,6 +1010,10 @@ def build_snapshot(
             "subdomainCount": len(subdomains),
             "invalidUrlRows": normalize_stats["invalidUrlRows"],
             "nonTargetRows": normalize_stats["nonTargetRows"],
+            "gefeiKD": {
+                "summary": ((comparison.get("gefeiKD") or {}).get("summary") or {}),
+                "failures": ((comparison.get("gefeiKD") or {}).get("failures") or []),
+            },
         },
         "rows": rows,
         "subdomains": subdomains,
@@ -716,19 +1021,212 @@ def build_snapshot(
     }
 
 
+def _require_openpyxl():
+    try:
+        from openpyxl import Workbook, load_workbook
+        from openpyxl.styles import Font
+        from openpyxl.utils import get_column_letter
+    except ImportError as exc:
+        raise RuntimeError(
+            "缺少依赖 openpyxl。请先执行 `pip3 install openpyxl` 再运行。"
+        ) from exc
+    return Workbook, Font, get_column_letter, load_workbook
+
+
+def _transform_export_value(column_def: dict, value, row: Optional[dict] = None):
+    transform = column_def.get("transform")
+    if transform == "source_presence_label":
+        mapping = {
+            "both": "both（SIM+SEM）",
+            "sim_only": "sim_only（仅 SIM）",
+            "sem_only": "sem_only（仅 SEM）",
+        }
+        return mapping.get(str(value or ""), value)
+    if transform == "sim_score":
+        return compute_sim_score(row or {})
+    return value
+
+
+def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] = None) -> float:
+    profile = width_profile or {}
+    fixed = profile.get("fixed")
+    if fixed is not None:
+        return float(fixed)
+
+    max_length = max((len(v) for v in values), default=0)
+    width = max_length + DEFAULT_COLUMN_PADDING
+    min_width = int(profile.get("min", DEFAULT_COLUMN_MIN_WIDTH))
+    max_width = int(profile.get("max", DEFAULT_COLUMN_MAX_WIDTH))
+    return float(max(min_width, min(width, max_width)))
+
+
+def write_excel(snapshot: dict, output_path: Path) -> None:
+    Workbook, Font, get_column_letter, _ = _require_openpyxl()
+
+    meta = snapshot.get("meta") or {}
+    target = meta.get("target") or {}
+    request = meta.get("request") or {}
+    comparison = snapshot.get("comparison") or {}
+    output = meta.get("output") or {}
+    standard_word_rows = comparison.get("standardWordRows") or []
+    standard_word_summary = comparison.get("standardWordSummary") or {}
+
+    workbook = Workbook()
+    summary_sheet = workbook.active
+    summary_sheet.title = "summary"
+    keywords_sheet = workbook.create_sheet("keywords")
+
+    summary_rows = [
+        ("key", target.get("key", "")),
+        ("generatedAt", meta.get("generatedAt", "")),
+        ("stamp", meta.get("stamp", "")),
+        ("baselineMode", meta.get("baselineMode", False)),
+        ("baselineStamp", comparison.get("baselineStamp", "")),
+        ("pagesFetched", meta.get("pagesFetched", 0)),
+        ("dedupedRows", meta.get("dedupedRows", 0)),
+        ("subdomainCount", meta.get("subdomainCount", 0)),
+        ("reportRows", len(comparison.get("reportRows") or [])),
+        ("standardWordRows", standard_word_summary.get("rowCount", len(standard_word_rows))),
+        ("newPageKeywordRows", standard_word_summary.get("newPageKeywordRows", 0)),
+        ("newSubdomainKeywordRows", standard_word_summary.get("newSubdomainKeywordRows", 0)),
+        ("standardWordTableVersion", request.get("standardWordTableVersion", STANDARD_WORD_TABLE_VERSION)),
+        ("reportHistoryPath", output.get("reportHistoryPath", "")),
+        ("excelHistoryPath", output.get("excelHistoryPath", "")),
+    ]
+    for idx, (name, value) in enumerate(summary_rows, start=1):
+        summary_sheet.cell(row=idx, column=1, value=name)
+        summary_sheet.cell(row=idx, column=2, value=value)
+    summary_sheet.freeze_panes = "A2"
+
+    export_columns = get_keywords_export_columns()
+    headers = get_keywords_export_headers()
+    keywords_sheet.append(headers)
+    for cell in keywords_sheet[1]:
+        cell.font = Font(bold=True)
+
+    for row in standard_word_rows:
+        export_row = []
+        for column in export_columns:
+            raw_value = row.get(column["field"])
+            export_row.append(_transform_export_value(column, raw_value, row))
+        keywords_sheet.append(export_row)
+
+    keywords_sheet.freeze_panes = "A2"
+    keywords_sheet.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{max(keywords_sheet.max_row, 1)}"
+
+    for index, column in enumerate(export_columns, start=1):
+        number_format = column.get("number_format")
+        if not number_format:
+            continue
+        col_letter = get_column_letter(index)
+        for cell in keywords_sheet[col_letter][1:]:
+            cell.number_format = number_format
+
+    for column_index, column in enumerate(export_columns, start=1):
+        column_letter = get_column_letter(column_index)
+        values = []
+        for row_index in range(1, keywords_sheet.max_row + 1):
+            value = keywords_sheet.cell(row=row_index, column=column_index).value
+            values.append("" if value is None else str(value))
+        keywords_sheet.column_dimensions[column_letter].width = _compute_column_width(values, column.get("width_profile"))
+
+    for column_cells in summary_sheet.columns:
+        values = ["" if cell.value is None else str(cell.value) for cell in column_cells]
+        summary_sheet.column_dimensions[column_cells[0].column_letter].width = _compute_column_width(
+            values,
+            {"min": 14, "max": 64},
+        )
+
+    ensure_dir(output_path.parent)
+    workbook.save(output_path)
+
+
+def write_artifacts(
+    *,
+    stamp: str,
+    snapshot: dict,
+    fetch_archive: dict,
+    data_dir: Path,
+    snapshot_dir: Path,
+    report_dir: Path,
+    latest_report_path: Path,
+    latest_xlsx_path: Path,
+) -> dict:
+    ensure_dir(data_dir)
+    ensure_dir(snapshot_dir)
+    ensure_dir(report_dir)
+    ensure_dir(latest_report_path.parent)
+    ensure_dir(latest_xlsx_path.parent)
+
+    fetch_archive_path = data_dir / f"fetch-{stamp}.json"
+    snapshot_path = snapshot_dir / f"snapshot-{stamp}.json"
+    report_history_path = report_dir / f"report-{stamp}.md"
+    excel_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
+
+    snapshot_meta = snapshot.setdefault("meta", {})
+    output_meta = snapshot_meta.setdefault("output", {})
+    output_meta["reportHistoryPath"] = str(report_history_path)
+    output_meta["excelHistoryPath"] = str(excel_history_path)
+    snapshot_meta["latestReportPath"] = str(latest_report_path)
+    snapshot_meta["latestExcelPath"] = str(latest_xlsx_path)
+
+    report_text = render_report(snapshot)
+    dump_json(fetch_archive_path, fetch_archive)
+    dump_json(snapshot_path, snapshot)
+    report_history_path.write_text(report_text, encoding="utf-8")
+    latest_report_path.write_text(report_text, encoding="utf-8")
+    write_excel(snapshot, excel_history_path)
+    copyfile(excel_history_path, latest_xlsx_path)
+
+    return {
+        "fetchArchivePath": fetch_archive_path,
+        "snapshotPath": snapshot_path,
+        "reportHistoryPath": report_history_path,
+        "excelHistoryPath": excel_history_path,
+    }
+
+
+def rebuild_history_artifacts(snapshot: dict, report_dir: Path, latest_report_path: Path, latest_xlsx_path: Path) -> Tuple[Path, Path, str]:
+    ensure_dir(report_dir)
+    meta = snapshot.get("meta") or {}
+    stamp = str(meta.get("stamp") or "")
+    if not stamp:
+        raise RuntimeError("snapshot 缺少 meta.stamp")
+
+    report_history_path = report_dir / f"report-{stamp}.md"
+    excel_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
+
+    output_meta = meta.setdefault("output", {})
+    output_meta["reportHistoryPath"] = str(report_history_path)
+    output_meta["excelHistoryPath"] = str(excel_history_path)
+    meta["latestReportPath"] = str(latest_report_path)
+    meta["latestExcelPath"] = str(latest_xlsx_path)
+    request = meta.setdefault("request", {})
+    request["standardWordTableVersion"] = STANDARD_WORD_TABLE_VERSION
+
+    report_text = render_report(snapshot)
+    report_history_path.write_text(report_text, encoding="utf-8")
+    write_excel(snapshot, excel_history_path)
+    return report_history_path, excel_history_path, report_text
+
+
 def run_pipeline(args: argparse.Namespace) -> int:
     data_dir = Path(args.data_dir).resolve()
     snapshot_dir = Path(args.snapshot_dir).resolve()
     report_dir = Path(args.report_dir).resolve()
     latest_report_path = Path(args.latest_report_path).resolve()
+    latest_xlsx_path = Path(args.latest_xlsx_path).resolve()
     token_path = Path(args.token_path).resolve()
 
     ensure_dir(data_dir)
     ensure_dir(snapshot_dir)
     ensure_dir(report_dir)
     ensure_dir(latest_report_path.parent)
+    ensure_dir(latest_xlsx_path.parent)
 
     stamp = now_stamp()
+    report_history_path = report_dir / f"report-{stamp}.md"
+    excel_history_path = report_dir / f"keyword-table-{stamp}.xlsx"
 
     target = {
         "key": args.key,
@@ -756,17 +1254,21 @@ def run_pipeline(args: argparse.Namespace) -> int:
         comparison = {
             "baselineStamp": None,
             "reportRows": [],
+            "standardWordRows": [],
+            "standardWordSummary": {
+                "rowCount": 0,
+                "newPageKeywordRows": 0,
+                "newSubdomainKeywordRows": 0,
+            },
         }
     else:
-        comparison = {
-            "baselineStamp": ((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None),
-            "reportRows": build_report_rows(
-                today_rows=deduped_rows,
-                today_subdomains=subdomains,
-                baseline_rows=baseline_rows,
-                baseline_subdomains=baseline_subs,
-            ),
-        }
+        comparison = build_comparison(
+            today_rows=deduped_rows,
+            today_subdomains=subdomains,
+            baseline_rows=baseline_rows,
+            baseline_subdomains=baseline_subs,
+            baseline_stamp=((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None),
+        )
 
     snapshot = build_snapshot(
         stamp=stamp,
@@ -777,14 +1279,11 @@ def run_pipeline(args: argparse.Namespace) -> int:
         baseline_mode=baseline_mode,
         fetch_meta=fetch_meta,
         normalize_stats=normalize_stats,
+        report_history_path=report_history_path,
+        excel_history_path=excel_history_path,
+        latest_report_path=latest_report_path,
+        latest_xlsx_path=latest_xlsx_path,
     )
-
-    report = render_report(snapshot)
-
-    # 到这里才落盘，保证抓取失败不会产生污染文件。
-    fetch_archive_path = data_dir / f"fetch-{stamp}.json"
-    snapshot_path = snapshot_dir / f"snapshot-{stamp}.json"
-    report_history_path = report_dir / f"report-{stamp}.md"
 
     fetch_archive_payload = {
         "meta": {
@@ -796,17 +1295,26 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "pages": page_results,
     }
 
-    dump_json(fetch_archive_path, fetch_archive_payload)
-    dump_json(snapshot_path, snapshot)
-    report_history_path.write_text(report, encoding="utf-8")
-    latest_report_path.write_text(report, encoding="utf-8")
+    artifact_paths = write_artifacts(
+        stamp=stamp,
+        snapshot=snapshot,
+        fetch_archive=fetch_archive_payload,
+        data_dir=data_dir,
+        snapshot_dir=snapshot_dir,
+        report_dir=report_dir,
+        latest_report_path=latest_report_path,
+        latest_xlsx_path=latest_xlsx_path,
+    )
 
-    print(f"[done] fetch archive : {fetch_archive_path}")
-    print(f"[done] snapshot      : {snapshot_path}")
-    print(f"[done] report history: {report_history_path}")
+    print(f"[done] fetch archive : {artifact_paths['fetchArchivePath']}")
+    print(f"[done] snapshot      : {artifact_paths['snapshotPath']}")
+    print(f"[done] report history: {artifact_paths['reportHistoryPath']}")
     print(f"[done] report latest : {latest_report_path}")
+    print(f"[done] excel history : {artifact_paths['excelHistoryPath']}")
+    print(f"[done] excel latest  : {latest_xlsx_path}")
     print(f"[done] deduped rows  : {len(deduped_rows)}")
     print(f"[done] subdomains    : {len(subdomains)}")
+    print(f"[done] keyword rows  : {comparison.get('standardWordSummary', {}).get('rowCount', 0)}")
     if baseline_mode:
         print("[done] baseline      : none (first run)")
     else:
@@ -819,23 +1327,26 @@ def rebuild_reports(args: argparse.Namespace) -> int:
     snapshot_dir = Path(args.snapshot_dir).resolve()
     report_dir = Path(args.report_dir).resolve()
     latest_report_path = Path(args.latest_report_path).resolve()
+    latest_xlsx_path = Path(args.latest_xlsx_path).resolve()
 
     ensure_dir(snapshot_dir)
     ensure_dir(report_dir)
     ensure_dir(latest_report_path.parent)
+    ensure_dir(latest_xlsx_path.parent)
 
     files = list_snapshot_files(snapshot_dir)
     if not files:
         raise SystemExit(f"未找到快照文件: {snapshot_dir}")
 
-    latest_content = ""
+    latest_report_text = ""
+    latest_excel_path: Optional[Path] = None
     last_for_target: Dict[str, dict] = {}
 
     for path in files:
         snapshot = load_json(path)
-        meta = snapshot.get("meta") or {}
+        meta = snapshot.setdefault("meta", {})
         target = meta.get("target") or {}
-        request_meta = meta.get("request") or {}
+        request_meta = meta.setdefault("request", {})
         target_key = json.dumps(
             {
                 "key": target.get("key"),
@@ -854,43 +1365,69 @@ def rebuild_reports(args: argparse.Namespace) -> int:
             comparison = {
                 "baselineStamp": None,
                 "reportRows": [],
+                "standardWordRows": [],
+                "standardWordSummary": {
+                    "rowCount": 0,
+                    "newPageKeywordRows": 0,
+                    "newSubdomainKeywordRows": 0,
+                },
+                "gefeiKD": {
+                    "summary": {
+                        "inputCount": 0,
+                        "requestCount": 0,
+                        "successCount": 0,
+                        "successWithScoreCount": 0,
+                        "missingScoreCount": 0,
+                        "failedCount": 0,
+                    },
+                    "failures": [],
+                    "api": {},
+                },
             }
-            snapshot["meta"]["baselineMode"] = True
+            meta["baselineMode"] = True
         else:
-            comparison = {
-                "baselineStamp": (baseline.get("meta") or {}).get("stamp"),
-                "reportRows": build_report_rows(
-                    today_rows=snapshot.get("rows", []),
-                    today_subdomains=snapshot.get("subdomains", []),
-                    baseline_rows=baseline.get("rows", []),
-                    baseline_subdomains=baseline.get("subdomains", []),
-                ),
-            }
-            snapshot["meta"]["baselineMode"] = False
+            comparison = build_comparison(
+                today_rows=snapshot.get("rows", []),
+                today_subdomains=snapshot.get("subdomains", []),
+                baseline_rows=baseline.get("rows", []),
+                baseline_subdomains=baseline.get("subdomains", []),
+                baseline_stamp=(baseline.get("meta") or {}).get("stamp"),
+                enrich_gefei_kd=False,
+            )
+            meta["baselineMode"] = False
 
+        request_meta["standardWordTableVersion"] = STANDARD_WORD_TABLE_VERSION
         snapshot["comparison"] = comparison
+        report_history_path, excel_history_path, report_text = rebuild_history_artifacts(
+            snapshot,
+            report_dir,
+            latest_report_path,
+            latest_xlsx_path,
+        )
         dump_json(path, snapshot)
 
-        stamp = meta.get("stamp", path.stem)
-        report_content = render_report(snapshot)
-        out = report_dir / f"report-{stamp}.md"
-        out.write_text(report_content, encoding="utf-8")
-        print(f"[done] rebuilt: {out}")
-
-        latest_content = report_content
+        latest_report_text = report_text
+        latest_excel_path = excel_history_path
+        print(f"[rebuild] report: {report_history_path}")
+        print(f"[rebuild] excel : {excel_history_path}")
         last_for_target[target_key] = snapshot
 
-    latest_report_path.write_text(latest_content, encoding="utf-8")
-    print(f"[done] latest : {latest_report_path}")
+    latest_report_path.write_text(latest_report_text, encoding="utf-8")
+    if latest_excel_path is not None:
+        copyfile(latest_excel_path, latest_xlsx_path)
+
+    print(f"[done] latest report: {latest_report_path}")
+    print(f"[done] latest excel : {latest_xlsx_path}")
     return 0
 
 
 def validate_report(args: argparse.Namespace) -> int:
-    path = Path(args.report).resolve()
-    if not path.exists():
-        raise SystemExit(f"报告不存在: {path}")
+    report_path = Path(args.report).resolve()
+    xlsx_path = Path(args.xlsx).resolve()
+    if not report_path.exists():
+        raise SystemExit(f"报告不存在: {report_path}")
+    text = report_path.read_text(encoding="utf-8")
 
-    text = path.read_text(encoding="utf-8")
     required_sections = [
         "## 摘要",
         "## 监控结果",
@@ -899,6 +1436,8 @@ def validate_report(args: argparse.Namespace) -> int:
 
     missing = [item for item in required_sections if item not in text]
     missing += [item for item in REQUIRED_REMARKS if item not in text]
+    if "标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空" not in text:
+        missing.append("标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空")
 
     if (
         "无历史快照（本次仅建立基线）" not in text
@@ -911,9 +1450,53 @@ def validate_report(args: argparse.Namespace) -> int:
         print("[failed] 报告校验失败，缺少内容：")
         for item in missing:
             print(f"- {item}")
-        return 1
+        raise SystemExit(1)
 
-    print(f"[ok] 报告结构校验通过: {path}")
+    if not xlsx_path.exists():
+        raise SystemExit(f"Excel 不存在: {xlsx_path}")
+
+    _Workbook, _Font, _get_column_letter, load_workbook = _require_openpyxl()
+    workbook = load_workbook(xlsx_path, data_only=True)
+    try:
+        if "keywords" not in workbook.sheetnames:
+            raise SystemExit("Excel 缺少 keywords sheet")
+        sheet = workbook["keywords"]
+
+        expected_headers = get_keywords_export_headers()
+        actual_headers = [sheet.cell(row=1, column=index).value for index in range(1, sheet.max_column + 1)]
+        if actual_headers != expected_headers:
+            print("Excel 表头不匹配：")
+            max_len = max(len(expected_headers), len(actual_headers))
+            for index in range(1, max_len + 1):
+                expected = expected_headers[index - 1] if index <= len(expected_headers) else None
+                actual = actual_headers[index - 1] if index <= len(actual_headers) else None
+                if expected != actual:
+                    print(f"- 第 {index} 列 expected={expected!r} actual={actual!r}")
+            raise SystemExit(1)
+
+        keyword_col = expected_headers.index(get_header_for_field("keyword")) + 1
+        domain_col = expected_headers.index(get_header_for_field("correspondingDomain")) + 1
+        gefei_kd_col = expected_headers.index(get_header_for_field("gefeiKD")) + 1
+        for row_index in range(2, sheet.max_row + 1):
+            keyword = sheet.cell(row=row_index, column=keyword_col).value
+            domain = sheet.cell(row=row_index, column=domain_col).value
+            gefei_kd_value = sheet.cell(row=row_index, column=gefei_kd_col).value
+            if keyword in (None, ""):
+                raise SystemExit(f"keyword 列为空（row={row_index}）")
+            if domain in (None, ""):
+                raise SystemExit(f"对应域名 列为空（row={row_index}）")
+            if gefei_kd_value in (None, ""):
+                continue
+            try:
+                float(gefei_kd_value)
+            except (TypeError, ValueError) as exc:
+                raise SystemExit(f"gefeiKD 列不是数字（row={row_index}）") from exc
+    finally:
+        workbook.close()
+
+    print(f"[ok] report validated: {report_path}")
+    print(f"[ok] xlsx exists      : {xlsx_path}")
+    print("[ok] xlsx headers / keyword / 对应域名 validated")
     return 0
 
 

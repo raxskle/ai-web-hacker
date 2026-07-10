@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-10T15:29:21",
+    "stamp": "20260710-152921",
+    "input": {
+      "mode": "free_keywords",
+      "paths": [],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 1
+    },
+    "summary": {
+      "inputCount": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "avgScore": 43.2,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "中等": 1
+      },
+      "keywordTypeDistribution": {
+        "brand": 1
+      }
+    },
+    "request": {
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    }
+  },
+  "requests": [
+    {
+      "keyword": "image to text",
+      "keywordNormalized": "image to text",
+      "gefeiKD": 43.2,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 76.1,
+      "keywordVolume": 909540,
+      "keywordTrend": {
+        "ratio": 1.1171141456120677,
+        "estimatedValue": 1016060,
+        "volume": 909540,
+        "domain": "imagetotext.info"
+      },
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 260,
+          "high": 390
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28）"
+      },
+      "cached": true,
+      "computedAt": 1783352018,
+      "reasons": [
+        "品牌词口径：难度估算为 43.2/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 76.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 imagetotext.info 是与关键词同名的官方域名首页，imagetotext.info 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 1 个平台型结果（youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 8 个：第 2 名 imagetotext.io（DR 58，首页，域名 5.5 年，月流量 94.1 万、搜索占比 60%，此词正是其主力流量词）、第 3 名 transkribus.org（DR 71，内页，域名 3.2 年，月流量 46.0 万、搜索占比 55%，此词正是其主力流量词）、第 4 名 support.apple.com（DR 97，内页，域名 39.4 年，月流量 6015.3 万、搜索占比 60%）、第 5 名 imagetotext.cc（DR 28，首页，域名 3.4 年，月流量 16.2 万、搜索占比 63%，此词正是其主力流量词）、第 6 名 klippa.com（DR 66，内页，域名 18.1 年，月流量 23.6 万、搜索占比 64%，此词正是其主力流量词）、第 7 名 imgocr.com（DR 12，首页，域名 3.1 年，月流量 48.3 万、搜索占比 64%，此词正是其主力流量词）、第 9 名 tinywow.com（DR 71，内页，域名 13.5 年，月流量 242.7 万、搜索占比 36%）、第 10 名 chromewebstore.google.com（DR 99，内页，域名 28.8 年，月流量 2.1 亿、搜索占比 30%） —— 这些才是衍生内容真正要对位的对手。",
+        "趋势信号：imagetotext.info 当月从该词获得约 101.6 万 流量，超过该词 12 个月平均搜索量（91.0 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 91.0 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28））；目录/收录型外链为主时约 160–390 个。对应域名权重量级约 DR 29。"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "ok",
+          "httpStatus": 200,
+          "waitedSeconds": 5.713,
+          "response": {
+            "score": 43.2,
+            "level": "中等",
+            "reasons": [
+              "品牌词口径：难度估算为 43.2/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 76.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+              "品牌词判定：第 1 名 imagetotext.info 是与关键词同名的官方域名首页，imagetotext.info 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 1 个平台型结果（youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+              "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 8 个：第 2 名 imagetotext.io（DR 58，首页，域名 5.5 年，月流量 94.1 万、搜索占比 60%，此词正是其主力流量词）、第 3 名 transkribus.org（DR 71，内页，域名 3.2 年，月流量 46.0 万、搜索占比 55%，此词正是其主力流量词）、第 4 名 support.apple.com（DR 97，内页，域名 39.4 年，月流量 6015.3 万、搜索占比 60%）、第 5 名 imagetotext.cc（DR 28，首页，域名 3.4 年，月流量 16.2 万、搜索占比 63%，此词正是其主力流量词）、第 6 名 klippa.com（DR 66，内页，域名 18.1 年，月流量 23.6 万、搜索占比 64%，此词正是其主力流量词）、第 7 名 imgocr.com（DR 12，首页，域名 3.1 年，月流量 48.3 万、搜索占比 64%，此词正是其主力流量词）、第 9 名 tinywow.com（DR 71，内页，域名 13.5 年，月流量 242.7 万、搜索占比 36%）、第 10 名 chromewebstore.google.com（DR 99，内页，域名 28.8 年，月流量 2.1 亿、搜索占比 30%） —— 这些才是衍生内容真正要对位的对手。",
+              "趋势信号：imagetotext.info 当月从该词获得约 101.6 万 流量，超过该词 12 个月平均搜索量（91.0 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+              "该词月搜索量约 91.0 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+              "衍生内容进入此 SERP 的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28））；目录/收录型外链为主时约 160–390 个。对应域名权重量级约 DR 29。"
+            ],
+            "details": [
+              {
+                "position": 1,
+                "domain": "imagetotext.info",
+                "url": "https://www.imagetotext.info/",
+                "title": "Image to Text (Extract Text From Image)",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 66,
+                "visits": 5808433,
+                "visitsLabel": "580.8 万",
+                "strength": 73.1,
+                "contribution": 73.1,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 1016060,
+                "searchShare": 0.7165741145632393,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": true,
+                "ageYears": 5.1,
+                "ageLabel": "5.1 年",
+                "eng": {
+                  "timeOnSite": 108.39743583864491,
+                  "pagePerVisit": 2.4009922226168356,
+                  "bounceRate": 0.662805298434477,
+                  "pct": 33
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 2,
+                "domain": "imagetotext.io",
+                "url": "https://www.imagetotext.io/",
+                "title": "Image to Text Converter - Extract Text From Image",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 58,
+                "visits": 940960,
+                "visitsLabel": "94.1 万",
+                "strength": 61.2,
+                "contribution": 61.2,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 84730,
+                "searchShare": 0.598360615626931,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 5.5,
+                "ageLabel": "5.5 年",
+                "eng": {
+                  "timeOnSite": 50.974410008992685,
+                  "pagePerVisit": 2.274771505347378,
+                  "bounceRate": 0.5759148216856125,
+                  "pct": 29
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 3,
+                "domain": "transkribus.org",
+                "url": "https://www.transkribus.org/image-to-text",
+                "title": "Image to Text – Free AI Converter | Transkribus",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 71,
+                "visits": 459631,
+                "visitsLabel": "46.0 万",
+                "strength": 66.3,
+                "contribution": 43.1,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 17930,
+                "searchShare": 0.5515388412058014,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 3.2,
+                "ageLabel": "3.2 年",
+                "eng": {
+                  "timeOnSite": 133.19401448811317,
+                  "pagePerVisit": 4.312415299562228,
+                  "bounceRate": 0.4490391229662794,
+                  "pct": 79
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 4,
+                "domain": "support.apple.com",
+                "url": "https://support.apple.com/en-us/120004",
+                "title": "Copy and translate text from photos on your iPhone or iPad",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 97,
+                "visits": 60153164,
+                "visitsLabel": "6015.3 万",
+                "strength": 98.2,
+                "contribution": 44.2,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": 0.6028093644366309,
+                "titleHit": false,
+                "dedicated": false,
+                "sitelinks": false,
+                "ageYears": 39.4,
+                "ageLabel": "39.4 年",
+                "eng": {
+                  "timeOnSite": 121.73747711826178,
+                  "pagePerVisit": 2.0398558805671554,
+                  "bounceRate": 0.6324312304210858,
+                  "pct": 33
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 5,
+                "domain": "imagetotext.cc",
+                "url": "https://www.imagetotext.cc/",
+                "title": "Image to Text Converter (Check 50 images at once)",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 28,
+                "visits": 162002,
+                "visitsLabel": "16.2 万",
+                "strength": 36.4,
+                "contribution": 36.4,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 10030,
+                "searchShare": 0.6300433415842466,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 3.4,
+                "ageLabel": "3.4 年",
+                "eng": {
+                  "timeOnSite": 17.54040631625078,
+                  "pagePerVisit": 1.6120981318613985,
+                  "bounceRate": 0.4191572957993236,
+                  "pct": 29
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 6,
+                "domain": "klippa.com",
+                "url": "https://www.klippa.com/en/ocr/image-to-text/",
+                "title": "Free Image to Text Converter - Extract Text From Images Online",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 66,
+                "visits": 236002,
+                "visitsLabel": "23.6 万",
+                "strength": 60.7,
+                "contribution": 39.5,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 20020,
+                "searchShare": 0.6375473447921093,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 18.1,
+                "ageLabel": "18.1 年",
+                "eng": {
+                  "timeOnSite": 39.82607831216127,
+                  "pagePerVisit": 7.201159170385282,
+                  "bounceRate": 0.5267786278526438,
+                  "pct": 54
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 7,
+                "domain": "imgocr.com",
+                "url": "https://www.imgocr.com/",
+                "title": "Image to Text AI Converter (#1 Accurate, No Login)",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 12,
+                "visits": 483199,
+                "visitsLabel": "48.3 万",
+                "strength": 31.1,
+                "contribution": 31.1,
+                "kwHit": true,
+                "kwHitTerm": "image to text",
+                "kwDataKnown": true,
+                "kwHitTraffic": 22570,
+                "searchShare": 0.641789335461845,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 3.1,
+                "ageLabel": "3.1 年",
+                "eng": {
+                  "timeOnSite": 84.39362538461599,
+                  "pagePerVisit": 2.1710996720002247,
+                  "bounceRate": 0.5159277414959288,
+                  "pct": 42
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 8,
+                "domain": "youtube.com",
+                "url": "https://www.youtube.com/watch?v=uohmrgn5Fu0",
+                "title": "3 Easy Ways to Extract Text from Images in Windows - YouTube",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 99,
+                "visits": 29883440708,
+                "visitsLabel": "298.8 亿",
+                "strength": 99.4,
+                "contribution": 64.6,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": 0.11687571039020091,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 21.4,
+                "ageLabel": "21.4 年",
+                "eng": {
+                  "timeOnSite": 1124.0286430132244,
+                  "pagePerVisit": 11.399327490059443,
+                  "bounceRate": 0.23405724396097347,
+                  "pct": null
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 9,
+                "domain": "tinywow.com",
+                "url": "https://tinywow.com/image/to-text",
+                "title": "Free Tool To OCR & Extract Image Text - TinyWow",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 71,
+                "visits": 2426818,
+                "visitsLabel": "242.7 万",
+                "strength": 72.7,
+                "contribution": 47.2,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": 0.35916307497060923,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 13.5,
+                "ageLabel": "13.5 年",
+                "eng": {
+                  "timeOnSite": 1319.494575827144,
+                  "pagePerVisit": 4.662699183316045,
+                  "bounceRate": 0.41196743488138005,
+                  "pct": 96
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 10,
+                "domain": "chromewebstore.google.com",
+                "url": "https://chromewebstore.google.com/detail/image-to-text-ocr/jgjlejdhmfpimggbicpffmpbnalcnhoo?hl=en",
+                "title": "Image to Text (OCR) - Chrome Web Store",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 99,
+                "visits": 211028204,
+                "visitsLabel": "2.1 亿",
+                "strength": 99.4,
+                "contribution": 64.6,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": 0.2978797024640524,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 28.8,
+                "ageLabel": "28.8 年",
+                "eng": {
+                  "timeOnSite": 111.9594992693403,
+                  "pagePerVisit": 2.718502381097409,
+                  "bounceRate": 0.5558075291036161,
+                  "pct": 54
+                },
+                "dataNote": ""
+              }
+            ],
+            "linkBudget": {
+              "targetDr": 29,
+              "quality": {
+                "low": 45,
+                "mid": 65,
+                "high": 95
+              },
+              "directory": {
+                "low": 160,
+                "mid": 260,
+                "high": 390
+              },
+              "low": 45,
+              "mid": 65,
+              "high": 95,
+              "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 imagetotext.cc（DR 28）"
+            },
+            "keywordVolume": 909540,
+            "keywordTrend": {
+              "ratio": 1.1171141456120677,
+              "estimatedValue": 1016060,
+              "volume": 909540,
+              "domain": "imagetotext.info"
+            },
+            "keywordType": "brand",
+            "genericScore": 76.1,
+            "computedAt": 1783352018,
+            "keyword": "image to text",
+            "gl": "us",
+            "hl": "en",
+            "cached": true
+          }
+        }
+      ]
+    }
+  ]
+}

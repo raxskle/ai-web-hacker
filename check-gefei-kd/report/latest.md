@@ -1,13 +1,14 @@
-# 哥飞KD批量查询报告（20260709-172859）
+# 哥飞KD批量查询报告（20260710-153032）
 
 ## 摘要
 
+- 输入模式：standard_word_table
 - 输入关键词数：1
 - 成功关键词数：1
 - 失败关键词数：0
-- 平均 score：20.60
-- cached 命中率：0%
-- level 分布：容易:1
+- 平均 score：43.20
+- cached 命中率：100%
+- level 分布：中等:1
 
 ## 请求参数
 
@@ -20,18 +21,32 @@
 
 | keyword | score | level | keywordType | genericScore | keywordVolume | keywordTrend(domain/ratio) | linkBudget(targetDr) | cached | computedAt | reasons |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| what is this movie | 21 | 容易 | brand | 13 | - | - / - | 19 | False | 2026-07-09T17:29:01 | 品牌词口径：难度估算为 20.6/100（容易）。该分数衡量的是第三方以衍生内…；品牌词判定：第 1 名 whatisthismovie.com 是与关键词同名…；剔除品牌本尊与平台生态页（共 4 … |
+| image to text | 43 | 中等 | brand | 76 | 909540 | imagetotext.info / 1.1171141456120677 | 29 | True | 2026-07-06T23:33:38 | 品牌词口径：难度估算为 43.2/100（中等）。该分数衡量的是第三方以衍生内…；品牌词判定：第 1 名 imagetotext.info 是与关键词同名的官方…；剔除品牌本尊与平台生态页（共 2 … |
 
 ## 失败明细
 
 （无）
 
+## 标准词表
+
+- 版本：v1
+- 行数：1
+- JSON：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-153032.json
+- XLSX：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-153032.xlsx
+
+| keyword | 对应域名 | group | gefeiKD |
+| --- | --- | --- | --- |
+| image to text | example.com | image to text | image-t… | 43.20 |
+
 ## 产物路径
 
-- Markdown：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/report-20260709-172859.md
+- Markdown 报告：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/report-20260710-153032.md
+- 标准词表 JSON：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-153032.json
+- 标准词表 XLSX：/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/report/history/standard-word-table-20260710-153032.xlsx
 
 ## 备注
 
 - API 默认使用 Header 鉴权（Authorization: Bearer <token>），可通过参数切换为 query token。
 - MCP/API 频率限制：每分钟最多约 10 次请求，默认最小请求间隔为 6.2 秒。
 - 7 天内同词命中缓存会更快返回，但仍计入当日额度。
+- 当输入为标准词表时，仅回填 gefeiKD，其余字段保持原值不动。

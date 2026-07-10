@@ -7,7 +7,7 @@
   "meta": {
     "generatedAt": "2026-07-08T21:00:01",
     "stamp": "20260708-210001",
-    "baselineMode": true,
+    "baselineMode": false,
     "target": {
       "key": "vercel.app",
       "country": "999",
@@ -22,13 +22,25 @@
       "isWindow": true,
       "searchType": "domain",
       "startPage": 1,
-      "endPage": 8
+      "endPage": 8,
+      "standardWordTableVersion": "v1"
     },
     "api": {
       "apiUrl": "http://127.0.0.1:17311/sim/api/websiteOrganicLandingPagesV2",
       "pagesRequested": [1, 2, 3, 4, 5, 6, 7, 8],
-      "basePayload": {}
+      "basePayload": {},
+      "gefeiKD": {
+        "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+        "authMode": "header",
+        "apiKeySource": ".../check-gefei-kd/api_key.txt"
+      }
     },
+    "output": {
+      "reportHistoryPath": ".../report/history/report-20260708-210001.md",
+      "excelHistoryPath": ".../report/history/keyword-table-20260708-210001.xlsx"
+    },
+    "latestReportPath": ".../report/latest.md",
+    "latestExcelPath": ".../report/latest.xlsx",
     "pagesFetched": 8,
     "startPage": 1,
     "endPage": 8,
@@ -36,7 +48,18 @@
     "dedupedRows": 420,
     "subdomainCount": 220,
     "invalidUrlRows": 0,
-    "nonTargetRows": 80
+    "nonTargetRows": 80,
+    "gefeiKD": {
+      "summary": {
+        "inputCount": 20,
+        "requestCount": 20,
+        "successCount": 18,
+        "successWithScoreCount": 17,
+        "missingScoreCount": 1,
+        "failedCount": 2
+      },
+      "failures": []
+    }
   },
   "rows": [
     {
@@ -79,7 +102,44 @@
         "clicks": 123,
         "topKeywords": "foo keyword"
       }
-    ]
+    ],
+    "standardWordRows": [
+      {
+        "keyword": "foo keyword",
+        "correspondingDomain": "foo.vercel.app https://foo.vercel.app/path | foo.vercel.app https://foo.vercel.app/other",
+        "group": "",
+        "sourcePresence": "",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": null,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 18
+      }
+    ],
+    "standardWordSummary": {
+      "rowCount": 1,
+      "newPageKeywordRows": 1,
+      "newSubdomainKeywordRows": 0
+    },
+    "gefeiKD": {
+      "summary": {
+        "inputCount": 1,
+        "requestCount": 1,
+        "successCount": 1,
+        "successWithScoreCount": 1,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "failures": [],
+      "api": {
+        "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+        "authMode": "header",
+        "apiKeySource": ".../check-gefei-kd/api_key.txt"
+      }
+    }
   }
 }
 ```
@@ -106,10 +166,38 @@
 - `clicks`：页面取页面 clicks，子域名取 `observedSubdomainClicks`
 - `topKeywords`：页面取 `topKeyword`，子域名取样本内高点击页面关键词拼接预览
 
+`comparison.standardWordRows[]`（用于标准词表 Excel `keywords` sheet）包含：
+- `keyword`
+- `correspondingDomain`
+- `group`
+- `sourcePresence`
+- `score`
+- `simWindowVolume`
+- `simKd`
+- `simCpc`
+- `semVolume`
+- `semKd`
+- `semCpc`
+- `gefeiKD`
+
+其中：
+- 当前仅导出新增页面 / 新增子域名对应的 top keywords
+- 相同 `keyword` 只保留一行
+- `correspondingDomain` 聚合该 keyword 命中的全部域名 / 页面上下文，使用 ` | ` 连接
+- 其余指标列允许为空，以兼容标准词表统一结构
+- `gefeiKD` 为哥飞 KD API 返回的 `score`；查不到时允许为空
+
+额外元信息：
+- `comparison.gefeiKD.summary`：本次标准词表 enrichment 的输入量 / 成功量 / 失败量
+- `comparison.gefeiKD.failures[]`：失败关键词及错误信息
+- `meta.api.gefeiKD`：本次查询使用的 API 地址、鉴权方式与 key 来源
+
 判定规则：
 - 页面新增：today 有、baseline 无、`clicks>=100`
 - 页面上涨：两边都有，且 `today.clicks>=100`、`delta>=30`、`growthRate>5%`
 - 子域名新增：today 有、baseline 无、`observedSubdomainClicks>=150`
 - 子域名上涨：两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`、`growthRate>5%`
 
-首次运行（`baselineMode=true`）：`comparison.reportRows` 为空。
+首次运行（`baselineMode=true`）：
+- `comparison.reportRows` 为空
+- `comparison.standardWordRows` 为空

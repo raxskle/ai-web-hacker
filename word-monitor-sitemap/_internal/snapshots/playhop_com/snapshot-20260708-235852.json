@@ -30,7 +30,8 @@
     },
     "effectiveUrlCount": 1,
     "patternCount": 1,
-    "baselineStamp": "20260708-234758"
+    "baselineStamp": "20260708-234758",
+    "standardWordTableVersion": "v1"
   },
   "urls": [
     {
@@ -65,6 +66,12 @@
       "phrase": [],
       "bigram": [],
       "token": []
+    }
+  },
+  "standardWord": {
+    "rows": [],
+    "summary": {
+      "rowCount": 0
     }
   }
 }

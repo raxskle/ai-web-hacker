@@ -15,6 +15,7 @@ import json
 import math
 import re
 import subprocess
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -25,6 +26,11 @@ from urllib.request import Request, urlopen
 
 PROJECT_DIR = Path(__file__).resolve().parents[2]
 REPO_ROOT = PROJECT_DIR.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from shared_gefei_kd import fetch_gefei_kd_rows
+
 LOCAL_SERVICE_TOKEN_PATH = PROJECT_DIR / "local-service" / "bridge_token.txt"
 LOCAL_SERVICE_GMITM_PATH = PROJECT_DIR / "local-service" / "__gmitm.txt"
 LEGACY_LOCAL_SERVICE_GMITM_PATH = PROJECT_DIR / "local-service" / "gmitm.txt"
@@ -281,6 +287,25 @@ def get_score_column_index_from_headers(headers: Sequence[str]) -> int:
         return list(headers).index(score_header)
     except ValueError as exc:
         raise RuntimeError(f"标准词表缺少 score 列: {score_header}") from exc
+
+
+def get_header_for_field(field_name: str) -> str:
+    for column in get_keywords_export_columns():
+        if column.get("field") == field_name:
+            return str(column.get("header") or "")
+    raise RuntimeError(f"标准词表缺少字段: {field_name}")
+
+
+def enrich_rows_with_gefei_kd(merged_rows: List[dict]) -> dict:
+    keywords = [str(row.get("keyword") or "").strip() for row in merged_rows if str(row.get("keyword") or "").strip()]
+    result = fetch_gefei_kd_rows(keywords=keywords)
+    score_by_keyword = result.get("scoreByKeyword") or {}
+
+    for row in merged_rows:
+        keyword = str(row.get("keyword") or "").strip().lower()
+        row["gefeiKD"] = score_by_keyword.get(keyword)
+
+    return result
 
 
 STANDARD_WORD_TABLE_SPEC = load_standard_word_table_spec()
@@ -1214,6 +1239,7 @@ def merge_rows(sim_rows: List[dict], sem_rows: List[dict]) -> List[dict]:
                 "keyword": row.get("keyword"),
                 "keywordNormalized": row.get("keywordNormalized") or key,
                 "mergeKey": key,
+                "correspondingDomain": "",
                 "sourcePresence": "sim_only",
                 "score": None,
                 "groupMembers": list(row.get("groupMembers") or []),
@@ -1232,6 +1258,7 @@ def merge_rows(sim_rows: List[dict], sem_rows: List[dict]) -> List[dict]:
                 "keyword": row.get("keyword"),
                 "keywordNormalized": row.get("keywordNormalized") or key,
                 "mergeKey": key,
+                "correspondingDomain": "",
                 "sourcePresence": "sem_only",
                 "score": None,
                 "groupMembers": list(row.get("groupMembers") or []),
@@ -1307,7 +1334,7 @@ def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str
     return lines
 
 
-def build_snapshot(*, stamp: str, args: argparse.Namespace, sim_fetch: dict, sem_fetch: dict, sim_raw_rows: List[dict], sem_raw_rows: List[dict], sim_rows: List[dict], sem_rows: List[dict], merged_rows: List[dict], summary_counts: dict, grouping_meta: dict, excel_history_path: Path, report_history_path: Path) -> dict:
+def build_snapshot(*, stamp: str, args: argparse.Namespace, sim_fetch: dict, sem_fetch: dict, sim_raw_rows: List[dict], sem_raw_rows: List[dict], sim_rows: List[dict], sem_rows: List[dict], merged_rows: List[dict], summary_counts: dict, grouping_meta: dict, gefei_kd_fetch: dict, excel_history_path: Path, report_history_path: Path) -> dict:
     return {
         "meta": {
             "generatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -1345,6 +1372,7 @@ def build_snapshot(*, stamp: str, args: argparse.Namespace, sim_fetch: dict, sem
                 "baseUrl": args.api_base,
                 "sim": sim_fetch["meta"],
                 "sem": sem_fetch["meta"],
+                "gefeiKD": gefei_kd_fetch.get("api") or {},
             },
             "grouping": grouping_meta,
             "output": {
@@ -1352,6 +1380,10 @@ def build_snapshot(*, stamp: str, args: argparse.Namespace, sim_fetch: dict, sem
                 "excelHistoryPath": str(excel_history_path),
             },
             "summary": summary_counts,
+            "gefeiKD": {
+                "summary": gefei_kd_fetch.get("summary") or {},
+                "failures": gefei_kd_fetch.get("failures") or [],
+            },
         },
         "sim": {
             "rawRows": sim_raw_rows,
@@ -1393,6 +1425,7 @@ def render_report(snapshot: dict) -> str:
                 to_display_number(row.get("semVolume")),
                 to_display_number(row.get("semKd")),
                 to_display_number(row.get("semCpc")),
+                to_display_number(row.get("gefeiKD")),
             ]
         )
 
@@ -1438,6 +1471,7 @@ def render_report(snapshot: dict) -> str:
                 "volume(sem)",
                 "kd(sem)",
                 "cpc(sem)",
+                "gefeiKD",
             ],
             preview_rows,
         )
@@ -1457,6 +1491,7 @@ def render_report(snapshot: dict) -> str:
     lines.append("")
 
     return "\n".join(lines)
+
 
 def _require_openpyxl():
     try:
@@ -1668,6 +1703,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     sem_rows, sem_grouping_meta = group_source_rows_with_ai(sem_raw_rows, source="sem", args=args)
 
     merged_rows = merge_rows(sim_rows, sem_rows)
+    gefei_kd_fetch = enrich_rows_with_gefei_kd(merged_rows)
     summary_counts = build_summary_counts(
         sim_raw_rows=sim_raw_rows,
         sem_raw_rows=sem_raw_rows,
@@ -1693,6 +1729,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "sim": sim_grouping_meta,
             "sem": sem_grouping_meta,
         },
+        gefei_kd_fetch=gefei_kd_fetch,
         excel_history_path=placeholder_excel_history_path,
         report_history_path=placeholder_report_history_path,
     )
@@ -1817,14 +1854,24 @@ def validate_report(args: argparse.Namespace) -> int:
 
         if sheet.max_row >= 2:
             score_index = get_score_column_index_from_headers(expected_headers) + 1
+            gefei_kd_index = expected_headers.index(get_header_for_field("gefeiKD")) + 1
             for row_index in range(2, sheet.max_row + 1):
                 value = sheet.cell(row=row_index, column=score_index).value
                 if value in (None, ""):
+                    pass
+                else:
+                    try:
+                        float(value)
+                    except (TypeError, ValueError) as exc:
+                        raise SystemExit(f"score 列不是数字（row={row_index}）") from exc
+
+                gefei_kd_value = sheet.cell(row=row_index, column=gefei_kd_index).value
+                if gefei_kd_value in (None, ""):
                     continue
                 try:
-                    float(value)
+                    float(gefei_kd_value)
                 except (TypeError, ValueError) as exc:
-                    raise SystemExit(f"score 列不是数字（row={row_index}）") from exc
+                    raise SystemExit(f"gefeiKD 列不是数字（row={row_index}）") from exc
     finally:
         workbook.close()
 

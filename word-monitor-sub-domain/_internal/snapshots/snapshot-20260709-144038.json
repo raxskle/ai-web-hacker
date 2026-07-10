@@ -17,7 +17,8 @@
       "isWindow": true,
       "searchType": "domain",
       "startPage": 1,
-      "endPage": 8
+      "endPage": 8,
+      "standardWordTableVersion": "v1"
     },
     "api": {
       "apiUrl": "http://127.0.0.1:17311/sim/api/websiteOrganicLandingPagesV2",
@@ -51,7 +52,13 @@
     "dedupedRows": 800,
     "subdomainCount": 725,
     "invalidUrlRows": 0,
-    "nonTargetRows": 0
+    "nonTargetRows": 0,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/report/history/report-20260709-144038.md",
+      "excelHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/report/history/keyword-table-20260709-144038.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/report/latest.md",
+    "latestExcelPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/report/latest.xlsx"
   },
   "rows": [
     {
@@ -12484,6 +12491,24 @@
   ],
   "comparison": {
     "baselineStamp": "20260709-124819",
-    "reportRows": []
+    "reportRows": [],
+    "standardWordRows": [],
+    "standardWordSummary": {
+      "rowCount": 0,
+      "newPageKeywordRows": 0,
+      "newSubdomainKeywordRows": 0
+    },
+    "gefeiKD": {
+      "summary": {
+        "inputCount": 0,
+        "requestCount": 0,
+        "successCount": 0,
+        "successWithScoreCount": 0,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "failures": [],
+      "api": {}
+    }
   }
 }

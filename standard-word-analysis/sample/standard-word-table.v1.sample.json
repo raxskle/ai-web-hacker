@@ -8,6 +8,7 @@
   "rows": [
     {
       "keyword": "image to text",
+      "correspondingDomain": "",
       "group": "image to text | image-to-text",
       "sourcePresence": "both",
       "score": 96,
@@ -16,10 +17,12 @@
       "simCpc": 0.4,
       "semVolume": 18100,
       "semKd": 68,
-      "semCpc": 1.88
+      "semCpc": 1.88,
+      "gefeiKD": 42
     },
     {
       "keyword": "free image parser",
+      "correspondingDomain": "",
       "group": "free image parser | free images parser",
       "sourcePresence": "sim_only",
       "score": 12.766667,
@@ -28,19 +31,22 @@
       "simCpc": 0.166522,
       "semVolume": null,
       "semKd": null,
-      "semCpc": null
+      "semCpc": null,
+      "gefeiKD": null
     },
     {
-      "keyword": "ocr screenshot online",
-      "group": "ocr screenshot online",
-      "sourcePresence": "sem_only",
+      "keyword": "anime nexus",
+      "correspondingDomain": "animexus.vercel.app | https://animexus.vercel.app/",
+      "group": "",
+      "sourcePresence": null,
       "score": null,
       "simWindowVolume": null,
       "simKd": null,
       "simCpc": null,
-      "semVolume": 540,
-      "semKd": 47,
-      "semCpc": 0.62
+      "semVolume": null,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 18
     }
   ]
 }

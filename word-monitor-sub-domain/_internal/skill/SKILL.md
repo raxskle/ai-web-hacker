@@ -1,7 +1,7 @@
 ---
 name: word-monitor-sub-domain
 version: 0.1.0
-description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归档快照并输出新增/上涨统一监控报告。"
+description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归档快照并输出新增/上涨统一监控报告与标准词表 Excel。"
 ---
 
 # word-monitor-sub-domain（MVP）
@@ -13,6 +13,8 @@ description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归
 3. 保存抓取归档与标准化快照
 4. 对比最近一次历史快照
 5. 输出 Markdown 报告（单表合并展示页面与子域名结果）
+6. 输出标准词表 Excel（仅新增页面/子域名的 top keywords）
+7. 查询哥飞 KD，补齐 `gefeiKD`
 
 ## 执行方式
 
@@ -22,10 +24,10 @@ description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归
 # 执行一次完整监控
 python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py run
 
-# 基于快照重建历史报告
+# 基于快照重建历史 Markdown / Excel
 python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py rebuild-reports
 
-# 校验报告结构
+# 校验 Markdown / Excel
 python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py validate-report
 ```
 
@@ -36,7 +38,9 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - 抓取归档：`word-monitor-sub-domain/data/fetch-YYYYMMDD-HHMMSS.json`
 - 标准化快照：`word-monitor-sub-domain/_internal/snapshots/snapshot-YYYYMMDD-HHMMSS.json`
 - 历史报告：`word-monitor-sub-domain/report/history/report-YYYYMMDD-HHMMSS.md`
+- 历史 Excel：`word-monitor-sub-domain/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`
 - 最新报告：`word-monitor-sub-domain/report/latest.md`
+- 最新 Excel：`word-monitor-sub-domain/report/latest.xlsx`
 
 ## 固定抓取参数（默认）
 
@@ -72,14 +76,11 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
   - deltaClicks >= 50
   - growthRate > 5%
 
-## 报告输出
+## 产物说明
 
-- 页面和子域名结果合并为同一个 Markdown 表格
-- 仅区分 `新增` 与 `上涨`
-- 表格列为：`subdomain`、`path`、`clicks`、`trend`、`top keywords`
-- 页面行展示真实 path；子域名行的 `path` 固定为 `-`
-
-## 失败策略（已确认）
-
-- 每页最多重试2次
-- 任一页最终失败：整次分析失败，不落快照、不出报告
+- Markdown 报告合并展示页面与子域名结果
+- 标准词表 Excel 仅导出新增页面/子域名对应的 top keywords
+- 相同 `keyword` 按词去重，仅保留一行
+- `对应域名` 聚合同词命中的全部域名 / 页面上下文
+- `gefeiKD` 使用哥飞 KD API 返回的 `score`
+- 其余标准词表指标列可为空

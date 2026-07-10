@@ -1,0 +1,39 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-09T15:59:32",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260709-155932"
+  },
+  "rows": [
+    {
+      "keyword": "image to text",
+      "correspondingDomain": null,
+      "group": "image to text",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 621040.0,
+      "semKd": 73.0,
+      "semCpc": 1.91,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "ocr online",
+      "correspondingDomain": null,
+      "group": "ocr online",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 86640.0,
+      "semKd": 71.0,
+      "semCpc": 1.36,
+      "gefeiKD": null
+    }
+  ]
+}

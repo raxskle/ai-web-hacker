@@ -63,6 +63,11 @@
         "totalRecords": 549,
         "effectiveTotal": 300,
         "pagesFetched": 3
+      },
+      "gefeiKD": {
+        "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+        "authMode": "header",
+        "apiKeySource": ".../check-gefei-kd/api_key.txt"
       }
     },
     "output": {
@@ -81,6 +86,17 @@
       "simOnlyCount": 110,
       "semOnlyCount": 140,
       "scoredCount": 180
+    },
+    "gefeiKD": {
+      "summary": {
+        "inputCount": 320,
+        "requestCount": 320,
+        "successCount": 300,
+        "successWithScoreCount": 280,
+        "missingScoreCount": 20,
+        "failedCount": 20
+      },
+      "failures": []
     }
   },
   "sim": {
@@ -125,6 +141,7 @@
   "mergedRows": [
     {
       "keyword": "image to text converter",
+      "correspondingDomain": "",
       "keywordNormalized": "image to text converter",
       "mergeKey": "image to text converter",
       "groupMembers": [
@@ -141,7 +158,8 @@
       "simKd": 50,
       "semVolume": 18100,
       "semCpc": 1.88,
-      "semKd": 68
+      "semKd": 68,
+      "gefeiKD": 42
     }
   ]
 }
@@ -159,6 +177,7 @@
 `mergedRows[]` 必须至少包含：
 
 - `keyword`
+- `correspondingDomain`
 - `group`
 - `sourcePresence`（`both` / `sim_only` / `sem_only`）
 - `score`
@@ -168,8 +187,17 @@
 - `semVolume`
 - `semKd`
 - `semCpc`
+- `gefeiKD`
 
-> 以上字段会映射到标准词表 v1 的 10 列。
+> 以上字段会映射到标准词表 v1 的 12 列。
+> `correspondingDomain` 当前由 `word-from-root` 保留为空字符串，以兼容统一表头。
+> `gefeiKD` 为导出前查询哥飞 KD API 后回填的 score；查不到时允许为空。
+
+### 哥飞 KD 元信息
+
+- `meta.api.gefeiKD`：记录 Gefei KD 请求地址、鉴权方式与 key 来源
+- `meta.gefeiKD.summary`：记录本次 enrichment 的输入量、成功量、失败量
+- `meta.gefeiKD.failures[]`：记录失败关键词与错误信息，供排查使用
 
 ### source 内分组结果
 
@@ -190,9 +218,9 @@
 - 公式：`simWindowVolume * simCpc / simKd`
 - `score` 为空的行排在已评分行之后
 - 其后按 `simWindowVolume` 降序、`keyword` 升序
+- `gefeiKD` 只作为补充字段，不参与排序
 
 ## 兼容性约束
 
 - `rebuild-reports` 必须仅依赖 snapshot 重建 Markdown 与 Excel，不重新请求 API，不重新执行 AI 分组
-- v1 阶段不改标准词表列名和顺序
-- 本版不包含 `gefeiKD`
+- v1 当前表头包含 `对应域名` 与 `gefeiKD`

@@ -5,6 +5,8 @@
 - 输入关键词数：2
 - 成功关键词数：2
 - 失败关键词数：0
+- 标准词表行数：2
+- 有效 score 行数：0
 
 ## 抓取概览
 
@@ -25,6 +27,13 @@
 | image to text | 621040 | 1.91 | 73 | 121 |
 | ocr online | 86640 | 1.36 | 71 | 120 |
 
+## 标准词表预览
+
+| keyword | sourcePresence | score(sim) | volume(sim) | volume(sem) |
+| --- | --- | --- | --- | --- |
+| image to text | sem_only | - | - | 621040 |
+| ocr online | sem_only | - | - | 86640 |
+
 ## 失败关键词
 
 （无）
@@ -32,9 +41,12 @@
 ## 产物路径
 
 - Markdown：/Users/bytedance/work/raxskle/sitte/ai/analyze-words/report/history/report-20260709-155932.md
+- Excel：/Users/bytedance/work/raxskle/sitte/ai/analyze-words/report/history/keyword-table-20260709-155932.xlsx
+- JSON：/Users/bytedance/work/raxskle/sitte/ai/analyze-words/report/history/keyword-table-20260709-155932.json
 
 ## 备注
 
 - globalVolume = sum(volume)
 - globalCpcAvg / globalDifficultyAvg 仅统计非 null 项
+- 标准词表 score 仅由 SIM 字段计算：simWindowVolume * simCpc / simKd
 - 任一关键词抓取失败时默认整次失败，不落任何新产物

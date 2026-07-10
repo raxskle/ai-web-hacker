@@ -30,7 +30,8 @@
     },
     "effectiveUrlCount": 3610,
     "patternCount": 37,
-    "baselineStamp": null
+    "baselineStamp": null,
+    "standardWordTableVersion": "v1"
   },
   "urls": [
     {
@@ -37617,6 +37618,16 @@
   },
   "keywords": {
     "topKeywordsFromNewUrls": [],
-    "counters": {}
+    "counters": {
+      "phrase": [],
+      "bigram": [],
+      "token": []
+    }
+  },
+  "standardWord": {
+    "rows": [],
+    "summary": {
+      "rowCount": 0
+    }
   }
 }

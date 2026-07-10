@@ -1,0 +1,38 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-10T15:30:32",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/private/tmp/swt_input.json"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 1,
+      "requestCount": 1,
+      "successCount": 1,
+      "successWithScoreCount": 1,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 1
+  },
+  "rows": [
+    {
+      "keyword": "image to text",
+      "correspondingDomain": "example.com",
+      "group": "image to text | image-to-text",
+      "sourcePresence": "sim_only",
+      "score": 96,
+      "simWindowVolume": 12000,
+      "simKd": 50,
+      "simCpc": 0.4,
+      "semVolume": null,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 43.2
+    }
+  ]
+}

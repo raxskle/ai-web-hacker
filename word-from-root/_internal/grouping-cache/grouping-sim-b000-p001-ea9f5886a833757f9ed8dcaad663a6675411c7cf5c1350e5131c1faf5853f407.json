@@ -1,0 +1,75 @@
+{
+  "groups": [
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "what movie came out this year",
+        "what movies came out this year"
+      ],
+      "reason": "仅有单复数差异（movie/movies），其余词序与语义一致，符合合并规则。"
+    },
+    {
+      "confidence": 0.96,
+      "memberKeys": [
+        "what movies are coming out this month"
+      ],
+      "reason": "与其他词相比仅共享部分时间范围，但时态表达不同（are coming out），不属于允许合并的词序/空格/单复数/重复差异。"
+    },
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "what movies are coming out this summer"
+      ],
+      "reason": "时间范围为 this summer，未出现仅由词序、空格、单复数或无意义重复造成的等价变体，单独保留。"
+    },
+    {
+      "confidence": 0.97,
+      "memberKeys": [
+        "what movies are coming out this weekend"
+      ],
+      "reason": "虽与其他词共享 this weekend，但 are coming out 与 came out/come out 不是允许合并的表面变体，单独保留。"
+    },
+    {
+      "confidence": 0.97,
+      "memberKeys": [
+        "what movies are coming out this year"
+      ],
+      "reason": "与 this year 相关其他词相比，are coming out 与 came out/come out 的表达差异超出允许合并范围，单独保留。"
+    },
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "what movies came out this weekend"
+      ],
+      "reason": "与其他 this weekend 词组相比，came out 为不同表达，不属于词序、空格、单复数或无意义重复差异。"
+    },
+    {
+      "confidence": 0.95,
+      "memberKeys": [
+        "what movies come out this month"
+      ],
+      "reason": "与 are coming out this month 存在表达差异（come out vs are coming out），不满足严格合并条件。"
+    },
+    {
+      "confidence": 0.97,
+      "memberKeys": [
+        "what movies come out this weekend"
+      ],
+      "reason": "与其他 this weekend 词仅时间范围相同，但 come out 与 came out/are coming out 不是允许合并的表面差异。"
+    },
+    {
+      "confidence": 0.97,
+      "memberKeys": [
+        "what movies come out this year"
+      ],
+      "reason": "与其他 this year 词相比，come out 与 came out/are coming out 的差异超出允许范围，单独保留。"
+    },
+    {
+      "confidence": 0.96,
+      "memberKeys": [
+        "what new movies are coming out this weekend"
+      ],
+      "reason": "包含额外修饰词 new，这不是词序、空格、单复数或无意义重复差异，不能与无 new 的词合并。"
+    }
+  ]
+}
