@@ -1,0 +1,919 @@
+{
+  "groups": [
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "add text to image",
+        "add text to images"
+      ],
+      "reason": "单复数变体（image/images），语义与方向一致。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "add text to image free",
+        "free add text to image"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "add text to image online"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "add text to image online free"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "adobe image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "ai image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "ai to remove text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "ai to replace text in image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "alt text generator for images"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "apagar texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "añadir texto a imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "chinese image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "colocar texto em imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "convert image pdf to text pdf"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "convert image text to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "convert pdf image to word text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "convert pdf with images to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "converter imagem em texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertidor de imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertir de imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertir imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertir imagen a texto word"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertir imagen en texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "convertir imagen pdf a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "copiar texto de imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "copiar texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "de imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "de imagen a texto online"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "editar texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "editor de texto em imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "eliminar texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "escanear texto de imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "escanear texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "extension to copy text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "extension to extract text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "extraer texto de imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "extraer texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "extraer texto imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "extrair texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "extrair texto de imagem gratis"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "free image text editor"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "google docs image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "hindi ocr image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "hindi text extractor from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to change text in image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to convert image pdf to text pdf"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to convert image to text in word"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to copy text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to edit image text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to edit text in image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to edit text in jpeg image online"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to extract text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to remove text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to remove text from image without removing background"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to translate text from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "how to turn image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image alt text generator"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image based pdf to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "image editor text",
+        "image text editor"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "image editor text online",
+        "image text editor online",
+        "online image text editor"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "image in text editor",
+        "text editor in image"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "image on text editor"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image pdf to text pdf"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image pdf to text pdf converter"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image text editor ai"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "image text editor online free",
+        "online image text editor free"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image text selector extension"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image text translator"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to hindi text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text ai free"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "image to text chrome extension",
+        "image to text extension chrome"
+      ],
+      "reason": "词集合相同，仅顺序不同。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text copy extension"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text editor"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text extension"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text extractor"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text prompt"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text prompt generator"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to text remover"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "image to texte"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem de texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem em texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem para texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem para texto online"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem pra texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagem to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "imagen a texto",
+        "imagenes a texto"
+      ],
+      "reason": "单复数变体（imagen/imagenes），方向一致（image→text）。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagen a texto online"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.93,
+      "memberKeys": [
+        "imagen atexto"
+      ],
+      "reason": "空格并写变体（a texto→atexto）且方向一致。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "imagenes con texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.82,
+      "memberKeys": [
+        "imagetotext.io"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "japanese image text translator"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "japanese image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.74,
+      "memberKeys": [
+        "mejorar calidad de imagen con texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "nsfw text to image",
+        "text to image nsfw"
+      ],
+      "reason": "词集合相同，仅顺序不同；且同为 text→image，未与 image→text 混合。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "ocr imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "online text extractor from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "pasar a texto una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "pasar de imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "pasar imagen a texto",
+        "pasar imagenes a texto"
+      ],
+      "reason": "单复数变体（imagen/imagenes），方向一致。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "pdf image to text free"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "pdf imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "pdf scanned image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "quitar texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "quitar texto de una imagen online gratis"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "removedor de texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "remover texto da imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "remover texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "retirar texto da imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "sacar texto de imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "sacar texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "text adder to image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "text extractor from image"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "text extractor from image extension"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.99,
+      "memberKeys": [
+        "texto a imagen"
+      ],
+      "reason": "与“imagen a texto”方向相反（text→image），必须独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "texto de imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "texto em imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "traduzir imagem para texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transcrever imagem em texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transcrever texto de imagem"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transcribir texto de una imagen"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transcribir una imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "transcript image to text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transcriptor de imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transformar imagem em texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.76,
+      "memberKeys": [
+        "transformar imagen a texto"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    },
+    {
+      "confidence": 0.98,
+      "memberKeys": [
+        "turn image into text",
+        "turn images into text"
+      ],
+      "reason": "单复数变体（image/images），语义与方向一致。"
+    },
+    {
+      "confidence": 0.78,
+      "memberKeys": [
+        "turn pdf image into text"
+      ],
+      "reason": "未发现满足规则的近义变体，保留独立。"
+    }
+  ]
+}

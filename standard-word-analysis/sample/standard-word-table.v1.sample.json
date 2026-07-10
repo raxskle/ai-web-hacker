@@ -1,0 +1,46 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-10T00:00:00",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd"
+  },
+  "rows": [
+    {
+      "keyword": "image to text",
+      "group": "image to text | image-to-text",
+      "sourcePresence": "both",
+      "score": 96,
+      "simWindowVolume": 12000,
+      "simKd": 50,
+      "simCpc": 0.4,
+      "semVolume": 18100,
+      "semKd": 68,
+      "semCpc": 1.88
+    },
+    {
+      "keyword": "free image parser",
+      "group": "free image parser | free images parser",
+      "sourcePresence": "sim_only",
+      "score": 12.766667,
+      "simWindowVolume": 2300,
+      "simKd": 30,
+      "simCpc": 0.166522,
+      "semVolume": null,
+      "semKd": null,
+      "semCpc": null
+    },
+    {
+      "keyword": "ocr screenshot online",
+      "group": "ocr screenshot online",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 540,
+      "semKd": 47,
+      "semCpc": 0.62
+    }
+  ]
+}

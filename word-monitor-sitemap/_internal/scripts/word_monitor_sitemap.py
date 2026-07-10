@@ -39,7 +39,6 @@ SITEMAP_RETRY = 2
 RETRY_BACKOFF_SECONDS = [0.8, 1.6]
 SITEMAP_TIMEOUT_SECONDS = 30
 MAX_SITEMAPS_PER_SITE = 300
-MAX_SITEMAP_DEPTH = 4
 
 TOP_NEW_URLS_IN_REPORT = 80
 TOP_NEW_PATTERNS_IN_REPORT = 40
@@ -66,7 +65,6 @@ REQUIRED_REMARKS = [
     "关键词候选来自新增 URL slug 分词，为机会线索而非搜索引擎全量词库",
 ]
 
-REQUIRED_RUN_SITES = ["onlinegames_io", "playhop_com"]
 MERGED_LATEST_FILE = "latest.md"
 
 
@@ -74,10 +72,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="监控 sitemap 并输出新增内页关键词报告")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    run_parser = subparsers.add_parser("run", help="抓 sitemap + 快照 + 对比 + 报告（固定运行 onlinegames_io + playhop_com）")
+    run_parser = subparsers.add_parser("run", help="抓 sitemap + 快照 + 对比 + 报告（默认运行 sites.json 中 enabled=true 的站点）")
     run_group = run_parser.add_mutually_exclusive_group(required=False)
-    run_group.add_argument("--site", help="兼容参数：当前会忽略并仍运行固定双站")
-    run_group.add_argument("--all-sites", action="store_true", help="兼容参数：当前会忽略并仍运行固定双站")
+    run_group.add_argument("--site", help="仅运行单站（site id）")
+    run_group.add_argument("--all-sites", action="store_true", help="运行 sites.json 中全部站点（包含 enabled=false）")
     run_parser.add_argument("--sites-config", default=str(DEFAULT_SITES_CONFIG))
     run_parser.add_argument("--data-root", default=str(DEFAULT_DATA_ROOT))
     run_parser.add_argument("--snapshot-root", default=str(DEFAULT_SNAPSHOT_ROOT))
@@ -296,12 +294,11 @@ def crawl_sitemaps(site: dict) -> Tuple[List[str], dict]:
         raise RuntimeError(f"站点 {site_id} 的 sitemapUrls 无有效 URL")
 
     discovered_sitemap_urls = 0
-    ignored_depth = 0
 
     while queue:
         if len(fetches) >= MAX_SITEMAPS_PER_SITE:
             raise RuntimeError(
-                f"站点 {site_id} sitemap 数量超过上限 {MAX_SITEMAPS_PER_SITE}，请检查 sitemapindex 递归配置"
+                f"站点 {site_id} sitemap 数量超过上限 {MAX_SITEMAPS_PER_SITE}，可能存在异常膨胀或循环引用"
             )
 
         sitemap_url, depth, parent = queue.pop(0)
@@ -325,9 +322,6 @@ def crawl_sitemaps(site: dict) -> Tuple[List[str], dict]:
             for raw in locs:
                 normalized = normalize_url_for_queue(raw)
                 if not normalized or normalized in visited:
-                    continue
-                if depth + 1 > MAX_SITEMAP_DEPTH:
-                    ignored_depth += 1
                     continue
                 queue.append((normalized, depth + 1, sitemap_url))
                 visited.add(normalized)
@@ -360,13 +354,12 @@ def crawl_sitemaps(site: dict) -> Tuple[List[str], dict]:
         "startSitemapUrls": start_urls,
         "sitemapsFetched": len(fetches),
         "sitemapUrlsDiscovered": discovered_sitemap_urls,
-        "ignoredByDepthLimit": ignored_depth,
+        "ignoredByDepthLimit": 0,
         "rawPageUrlCount": len(page_urls),
         "dedupedPageUrlCount": len(deduped),
         "fetches": fetches,
         "limits": {
             "maxSitemapsPerSite": MAX_SITEMAPS_PER_SITE,
-            "maxSitemapDepth": MAX_SITEMAP_DEPTH,
         },
     }
     return deduped, crawl_meta
@@ -1198,14 +1191,17 @@ def run_pipeline(args: argparse.Namespace) -> int:
 
     sites = load_sites_config(sites_config)
 
-    missing = [sid for sid in REQUIRED_RUN_SITES if sid not in sites]
-    if missing:
-        raise SystemExit(f"sites 配置缺少必需站点: {', '.join(missing)}")
+    if args.site:
+        if args.site not in sites:
+            raise SystemExit(f"未找到 site: {args.site}")
+        selected = [sites[args.site]]
+    elif args.all_sites:
+        selected = [site for site in sites.values()]
+    else:
+        selected = [site for site in sites.values() if site.get("enabled", True)]
 
-    selected = [sites[sid] for sid in REQUIRED_RUN_SITES]
-
-    if args.site or args.all_sites:
-        print("[warn] run 参数 --site/--all-sites 为兼容保留，当前固定运行 onlinegames_io + playhop_com")
+    if not selected:
+        raise SystemExit("没有可运行的站点：请检查 sites.json 的 enabled 配置")
 
     stamp = now_stamp()
 
@@ -1366,7 +1362,11 @@ def rebuild_reports(args: argparse.Namespace) -> int:
 
     merged_results: List[dict] = []
     merged_stamps: List[str] = []
-    for site_id in REQUIRED_RUN_SITES:
+
+    # 合并报告默认覆盖当前配置中的所有站点（无论 enabled），
+    # 若某站还没有快照则在合并结果中显示为 0。
+    merged_site_ids = sorted(sites.keys())
+    for site_id in merged_site_ids:
         site = sites.get(site_id)
         latest_snapshot, stamp = load_latest_snapshot_for_site(snapshot_root, site_id)
         if stamp:

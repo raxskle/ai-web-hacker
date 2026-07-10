@@ -9,9 +9,10 @@
 1. 调用 SIM `KeywordGenerator/google/suggest`
 2. 调用 SEM `ideas.GetKeywordsSummary` 与 `ideas.GetKeywords`
 3. 标准化两路关键词结果
-4. 按关键词合并并计算排序值
-5. 归档原始抓取结果与标准化快照
-6. 生成 Markdown 摘要与 Excel 明细
+4. 分别对 SIM / SEM 做 AI 近义合并（词序、空格/`-`、单复数、无意义重复）
+5. 按分组后的关键词进行两路合并并计算排序值
+6. 归档原始抓取结果与标准化快照
+7. 生成 Markdown 摘要与标准词表 Excel 明细
 
 ## 目录说明
 
@@ -68,7 +69,7 @@ python3 word-from-root/_internal/scripts/word_from_root.py validate-report
 - `country=999`
 - `sort=windowVolume`
 - `rowsPerPage=100`
-- `rangeFilter=cpc,0.1,|difficulty,1,80`
+- `rangeFilter=cpc,0.1,|difficulty,1,70`
 - 最多抓取 300 个词
 
 ### SEM
@@ -77,25 +78,50 @@ python3 word-from-root/_internal/scripts/word_from_root.py validate-report
 - `currency=USD`
 - `page.size=100`
 - `cpc > 0.1`
-- `difficulty < 90`
+- `difficulty < 70`
 - 最多抓取 300 个词
+
+### 分源近义合并（AI）
+
+- 在 SIM/SEM 各自内部先做 AI 近义分组，再进行跨源合并
+- canonical 词：组内 `volume` 最大的词（并列按字典序）
+- `group` 列：组内全部原词（` | ` 拼接）
+- volume：组内求和
+- CPC / KD：按各词 volume 占比加权平均
+- 分组结果会缓存到 `word-from-root/_internal/grouping-cache/`
+
+可通过参数控制分组调用：
+
+```bash
+python3 word-from-root/_internal/scripts/word_from_root.py run \
+  --keyword "image to text" \
+  --grouping-model "" \
+  --grouping-temperature 0 \
+  --grouping-timeout-seconds 120
+```
 
 ### 合并与排序
 
-- 关键词 join key：小写 + trim + 压缩空格
+- 关键词 join key：source 内分组后的 `mergeKey`
 - `sourcePresence`：`both / sim_only / sem_only`
-- 排序值：`score = semVolume * semCpc / semKd`
-- 若缺失完整 SEM 指标，`score` 为空并排在已评分结果之后
+- 排序值：`score = simWindowVolume * simCpc / simKd`
+- 若缺失完整 SIM 指标，`score` 为空并排在已评分结果之后
 
-## 报告说明
+## 标准词表（数据交换层）
 
-- Markdown 只展示摘要与 Top 关键词预览
-- Excel 为完整结果表
-- 建议在 Excel 中按 `sourcePresence` 过滤查看两路差异
+`report/latest.xlsx` 对齐 `standard-word-analysis` 的 v1 标准词表：
+
+- 规范路径：`standard-word-analysis/spec/standard-word-table.v1.json`
+- 本版 score 公式：`simWindowVolume * simCpc / simKd`
+- 本版范围：不包含 `gefeiKD`
+
+因此 `word-from-root` 产物可直接作为后续 skill（如 analyze/check）的输入交换表。
 
 ## 相关文件
 
 - 外层 skill 入口：`.claude/skills/word-from-root/SKILL.md`
 - 内部说明：`word-from-root/_internal/skill/SKILL.md`
 - 快照结构：`word-from-root/_internal/docs/SNAPSHOT_SCHEMA.md`
+- 标准词表规范：`standard-word-analysis/spec/standard-word-table.v1.json`
 - 主脚本：`word-from-root/_internal/scripts/word_from_root.py`
+

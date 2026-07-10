@@ -12484,9 +12484,6 @@
   ],
   "comparison": {
     "baselineStamp": null,
-    "newlyObservedPage": [],
-    "risingPage": [],
-    "newlyObservedSubdomain": [],
-    "risingSubdomain": []
+    "reportRows": []
   }
 }

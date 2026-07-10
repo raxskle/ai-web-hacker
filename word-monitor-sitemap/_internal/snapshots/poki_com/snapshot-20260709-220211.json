@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-09T22:06:36",
+    "stamp": "20260709-220211",
+    "baselineMode": true,
+    "site": {
+      "id": "poki_com",
+      "displayName": "poki",
+      "sitemapUrls": [
+        "https://poki.com/en/sitemaps/index.xml"
+      ],
+      "includeHosts": [
+        "poki.com",
+        "www.poki.com"
+      ]
+    },
+    "crawl": {
+      "sitemapsFetched": 5,
+      "sitemapUrlsDiscovered": 4,
+      "ignoredByDepthLimit": 0,
+      "rawPageUrlCount": 1658,
+      "dedupedPageUrlCount": 1658
+    },
+    "normalize": {
+      "rawUrls": 1658,
+      "invalidUrls": 0,
+      "nonTargetHostUrls": 0,
+      "excludedByPathRules": 1658,
+      "dedupedUrls": 0
+    },
+    "effectiveUrlCount": 0,
+    "patternCount": 0,
+    "baselineStamp": null
+  },
+  "urls": [],
+  "patterns": [],
+  "comparison": {
+    "baselineStamp": null,
+    "newlyAddedUrls": [],
+    "removedUrls": [],
+    "newPatterns": []
+  },
+  "keywords": {
+    "topKeywordsFromNewUrls": [],
+    "counters": {}
+  }
+}

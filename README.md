@@ -28,3 +28,4 @@ vercel.app和sitemap只能得到词，而且是偏新词，所以要搭配analyz
 
 word-from-root拿到的词带数据，搭配check-gefei-kd，然后人工看
 
+标准词表，所有skill的输入和输出都是符合这个规范的，最终人工审查这一份完整的表

@@ -33,11 +33,12 @@ REQUEST_TIMEOUT_SECONDS = 180
 PAGE_NEW_MIN_CLICKS = 100.0
 PAGE_RISING_MIN_CLICKS = 100.0
 PAGE_RISING_MIN_DELTA = 30.0
-PAGE_RISING_MIN_GROWTH = 0.20
+PAGE_RISING_MIN_GROWTH = 0.05
 
 SUBDOMAIN_NEW_MIN_CLICKS = 150.0
 SUBDOMAIN_RISING_MIN_CLICKS = 150.0
 SUBDOMAIN_RISING_MIN_DELTA = 50.0
+SUBDOMAIN_RISING_MIN_GROWTH = 0.05
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
 
@@ -390,7 +391,7 @@ def snapshot_matches_target(snapshot: dict, target: dict) -> bool:
         and str(meta_target.get("latest", "")) == str(target.get("latest", ""))
         and str(meta_target.get("sourceType", "")) == str(target.get("sourceType", ""))
         and int(meta_request.get("startPage", 1) or 1) == int(target.get("startPage", 1) or 1)
-        and int(meta_request.get("endPage", 5) or 5) == int(target.get("endPage", 5) or 5)
+        and int(meta_request.get("endPage", 8) or 8) == int(target.get("endPage", 8) or 8)
     )
 
 
@@ -433,7 +434,7 @@ def build_page_comparison(today_rows: List[dict], baseline_rows: List[dict]) -> 
         if (
             today_clicks >= PAGE_RISING_MIN_CLICKS
             and delta >= PAGE_RISING_MIN_DELTA
-            and growth >= PAGE_RISING_MIN_GROWTH
+            and growth > PAGE_RISING_MIN_GROWTH
         ):
             item = dict(row)
             item.update(
@@ -474,6 +475,7 @@ def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains
         if (
             today_clicks >= SUBDOMAIN_RISING_MIN_CLICKS
             and delta >= SUBDOMAIN_RISING_MIN_DELTA
+            and growth > SUBDOMAIN_RISING_MIN_GROWTH
         ):
             item = dict(row)
             item.update(
@@ -488,6 +490,113 @@ def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains
     newly.sort(key=lambda x: (-safe_float(x.get("observedSubdomainClicks")), x.get("subdomain", "")))
     rising.sort(key=lambda x: (-safe_float(x.get("deltaClicks")), x.get("subdomain", "")))
     return newly, rising
+
+
+def _path_from_url(raw_url: str) -> str:
+    if not isinstance(raw_url, str) or not raw_url:
+        return "-"
+    try:
+        parsed = urlsplit(raw_url)
+    except ValueError:
+        return "-"
+
+    path = parsed.path or "/"
+    if path != "/":
+        path = "/" + path.lstrip("/")
+        path = path.rstrip("/") or "/"
+
+    if parsed.query:
+        return f"{path}?{parsed.query}"
+    return path
+
+
+def build_subdomain_keywords_map(rows: List[dict], *, max_keywords: int = 3) -> Dict[str, str]:
+    grouped: Dict[str, List[dict]] = {}
+    for row in rows:
+        subdomain = row.get("subdomain") or ""
+        if not subdomain:
+            continue
+        grouped.setdefault(subdomain, []).append(row)
+
+    result: Dict[str, str] = {}
+    for subdomain, items in grouped.items():
+        sorted_items = sorted(
+            items,
+            key=lambda item: (-safe_float(item.get("clicks")), item.get("landingPageUrl", "")),
+        )
+        keywords: List[str] = []
+        seen = set()
+        for item in sorted_items:
+            keyword = (item.get("topKeyword") or "").strip()
+            if not keyword or keyword in seen:
+                continue
+            seen.add(keyword)
+            keywords.append(keyword)
+            if len(keywords) >= max_keywords:
+                break
+        result[subdomain] = " / ".join(keywords) if keywords else "-"
+
+    return result
+
+
+def _page_report_row(row: dict, *, trend: str) -> dict:
+    growth = safe_float(row.get("growthRate")) if trend == "上涨" else None
+    trend_label = trend if growth is None else f"{trend}（+{to_pct(growth)}）"
+    return {
+        "entityType": "page",
+        "trend": trend,
+        "trendLabel": trend_label,
+        "subdomain": row.get("subdomain", "-") or "-",
+        "path": _path_from_url(row.get("landingPageUrl", "")),
+        "clicks": safe_float(row.get("clicks")),
+        "topKeywords": (row.get("topKeyword") or "-").strip() or "-",
+    }
+
+
+def _subdomain_report_row(row: dict, *, trend: str, subdomain_keywords: Dict[str, str]) -> dict:
+    growth = safe_float(row.get("growthRate")) if trend == "上涨" else None
+    trend_label = trend if growth is None else f"{trend}（+{to_pct(growth)}）"
+    subdomain = row.get("subdomain", "-") or "-"
+    return {
+        "entityType": "subdomain",
+        "trend": trend,
+        "trendLabel": trend_label,
+        "subdomain": subdomain,
+        "path": "-",
+        "clicks": safe_float(row.get("observedSubdomainClicks")),
+        "topKeywords": subdomain_keywords.get(subdomain, "-"),
+    }
+
+
+def build_report_rows(
+    *,
+    today_rows: List[dict],
+    today_subdomains: List[dict],
+    baseline_rows: List[dict],
+    baseline_subdomains: List[dict],
+) -> List[dict]:
+    new_page, rising_page = build_page_comparison(today_rows, baseline_rows)
+    new_sub, rising_sub = build_subdomain_comparison(today_subdomains, baseline_subdomains)
+    subdomain_keywords = build_subdomain_keywords_map(today_rows)
+
+    report_rows: List[dict] = []
+    report_rows.extend(_subdomain_report_row(row, trend="新增", subdomain_keywords=subdomain_keywords) for row in new_sub)
+    report_rows.extend(_subdomain_report_row(row, trend="上涨", subdomain_keywords=subdomain_keywords) for row in rising_sub)
+    report_rows.extend(_page_report_row(row, trend="新增") for row in new_page)
+    report_rows.extend(_page_report_row(row, trend="上涨") for row in rising_page)
+
+    trend_order = {"上涨": 0, "新增": 1}
+    entity_order = {"subdomain": 0, "page": 1}
+    report_rows.sort(
+        key=lambda row: (
+            trend_order.get(row.get("trend", ""), 9),
+            entity_order.get(row.get("entityType", ""), 9),
+            -safe_float(row.get("clicks")),
+            row.get("subdomain", ""),
+            row.get("path", ""),
+        )
+    )
+    return report_rows
 
 
 def _md_table(headers: List[str], rows: List[List[str]]) -> List[str]:
@@ -507,20 +616,16 @@ def render_report(snapshot: dict) -> str:
     target = meta.get("target") or {}
     comparison = snapshot.get("comparison") or {}
 
-    rows_today = snapshot.get("rows") or []
-    subs_today = snapshot.get("subdomains") or []
-
-    newly_page = comparison.get("newlyObservedPage") or []
-    rising_page = comparison.get("risingPage") or []
-    newly_sub = comparison.get("newlyObservedSubdomain") or []
-    rising_sub = comparison.get("risingSubdomain") or []
+    report_rows = comparison.get("reportRows") or []
+    rising_count = sum(1 for row in report_rows if row.get("trend") == "上涨")
+    new_count = sum(1 for row in report_rows if row.get("trend") == "新增")
 
     lines: List[str] = []
     lines.append(f"# 子域名落地页监控报告（{target.get('key', '-') }｜{meta.get('stamp', '-') }）")
     lines.append("")
     lines.append("## 摘要")
     lines.append("")
-    lines.append(f"- 抓取页数：{meta.get('pagesFetched', 0)}（page={meta.get('startPage', 1)}..{meta.get('endPage', 5)}）")
+    lines.append(f"- 抓取页数：{meta.get('pagesFetched', 0)}（page={meta.get('startPage', 1)}..{meta.get('endPage', 8)}）")
     lines.append(f"- 原始行数：{meta.get('rawRows', 0)}")
     lines.append(f"- 去重后页面数：{meta.get('dedupedRows', 0)}")
     lines.append(f"- 观测子域名数：{meta.get('subdomainCount', 0)}")
@@ -530,107 +635,28 @@ def render_report(snapshot: dict) -> str:
     else:
         lines.append(f"- 基线：{comparison.get('baselineStamp', '-')}")
 
-    lines.append(f"- newlyObservedPage 数量：{len(newly_page)}")
-    lines.append(f"- risingPage 数量：{len(rising_page)}")
-    lines.append(f"- newlyObservedSubdomain 数量：{len(newly_sub)}")
-    lines.append(f"- risingSubdomain 数量：{len(rising_sub)}")
+    lines.append(f"- 新增数量：{new_count}")
+    lines.append(f"- 上涨数量：{rising_count}")
     lines.append("")
 
-    lines.append("## 页面级结果")
-    lines.append("")
-
-    if meta.get("baselineMode"):
-        lines.append("本次仅建立基线，不输出新增/上涨结论。")
-        lines.append("")
-    else:
-        lines.append("### newlyObservedPage")
-        lines.append("")
-        page_new_rows = [
-            [
-                r.get("landingPageUrl", "-"),
-                r.get("subdomain", "-"),
-                to_int_if_possible(safe_float(r.get("clicks"))),
-                r.get("topKeyword", "-") or "-",
-                str(r.get("page", "-")),
-                str(r.get("rankInPage", "-")),
-            ]
-            for r in newly_page
-        ]
-        lines.extend(
-            _md_table(
-                ["landingPageUrl", "subdomain", "clicks", "topKeyword", "page", "rankInPage"],
-                page_new_rows,
-            )
-        )
-        lines.append("")
-
-        lines.append("### risingPage")
-        lines.append("")
-        page_rising_rows = [
-            [
-                r.get("landingPageUrl", "-"),
-                r.get("subdomain", "-"),
-                to_int_if_possible(safe_float(r.get("baseClicks"))),
-                to_int_if_possible(safe_float(r.get("clicks"))),
-                to_int_if_possible(safe_float(r.get("deltaClicks"))),
-                to_pct(safe_float(r.get("growthRate"))),
-            ]
-            for r in rising_page
-        ]
-        lines.extend(
-            _md_table(
-                ["landingPageUrl", "subdomain", "baseClicks", "todayClicks", "deltaClicks", "growthRate"],
-                page_rising_rows,
-            )
-        )
-        lines.append("")
-
-    lines.append("## 子域名级结果")
+    lines.append("## 监控结果")
     lines.append("")
 
     if meta.get("baselineMode"):
         lines.append("本次仅建立基线，不输出新增/上涨结论。")
         lines.append("")
     else:
-        lines.append("### newlyObservedSubdomain")
-        lines.append("")
-        sub_new_rows = [
+        table_rows = [
             [
-                r.get("subdomain", "-"),
-                to_int_if_possible(safe_float(r.get("observedSubdomainClicks"))),
-                str(r.get("landingPagesCount", 0)),
+                row.get("subdomain", "-"),
+                row.get("path", "-"),
+                to_int_if_possible(safe_float(row.get("clicks"))),
+                row.get("trendLabel", row.get("trend", "-")) or "-",
+                row.get("topKeywords", "-") or "-",
             ]
-            for r in newly_sub
+            for row in report_rows
         ]
-        lines.extend(_md_table(["subdomain", "observedSubdomainClicks", "landingPagesCount"], sub_new_rows))
-        lines.append("")
-
-        lines.append("### risingSubdomain")
-        lines.append("")
-        sub_rising_rows = [
-            [
-                r.get("subdomain", "-"),
-                to_int_if_possible(safe_float(r.get("baseObservedSubdomainClicks"))),
-                to_int_if_possible(safe_float(r.get("observedSubdomainClicks"))),
-                to_int_if_possible(safe_float(r.get("deltaClicks"))),
-                to_pct(safe_float(r.get("growthRate"))),
-                str(r.get("landingPagesCount", 0)),
-            ]
-            for r in rising_sub
-        ]
-        lines.extend(
-            _md_table(
-                [
-                    "subdomain",
-                    "baseObservedSubdomainClicks",
-                    "todayObservedSubdomainClicks",
-                    "deltaClicks",
-                    "growthRate",
-                    "landingPagesCount",
-                ],
-                sub_rising_rows,
-            )
-        )
+        lines.extend(_md_table(["subdomain", "path", "clicks", "trend", "top keywords"], table_rows))
         lines.append("")
 
     lines.append("## 备注")
@@ -729,20 +755,17 @@ def run_pipeline(args: argparse.Namespace) -> int:
     if baseline_mode:
         comparison = {
             "baselineStamp": None,
-            "newlyObservedPage": [],
-            "risingPage": [],
-            "newlyObservedSubdomain": [],
-            "risingSubdomain": [],
+            "reportRows": [],
         }
     else:
-        new_page, rising_page = build_page_comparison(deduped_rows, baseline_rows)
-        new_sub, rising_sub = build_subdomain_comparison(subdomains, baseline_subs)
         comparison = {
             "baselineStamp": ((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None),
-            "newlyObservedPage": new_page,
-            "risingPage": rising_page,
-            "newlyObservedSubdomain": new_sub,
-            "risingSubdomain": rising_sub,
+            "reportRows": build_report_rows(
+                today_rows=deduped_rows,
+                today_subdomains=subdomains,
+                baseline_rows=baseline_rows,
+                baseline_subdomains=baseline_subs,
+            ),
         }
 
     snapshot = build_snapshot(
@@ -812,12 +835,15 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         snapshot = load_json(path)
         meta = snapshot.get("meta") or {}
         target = meta.get("target") or {}
+        request_meta = meta.get("request") or {}
         target_key = json.dumps(
             {
                 "key": target.get("key"),
                 "country": target.get("country"),
                 "latest": target.get("latest"),
                 "sourceType": target.get("sourceType"),
+                "startPage": request_meta.get("startPage", meta.get("startPage", 1)),
+                "endPage": request_meta.get("endPage", meta.get("endPage", 8)),
             },
             sort_keys=True,
             ensure_ascii=False,
@@ -827,24 +853,18 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         if baseline is None:
             comparison = {
                 "baselineStamp": None,
-                "newlyObservedPage": [],
-                "risingPage": [],
-                "newlyObservedSubdomain": [],
-                "risingSubdomain": [],
+                "reportRows": [],
             }
             snapshot["meta"]["baselineMode"] = True
         else:
-            new_page, rising_page = build_page_comparison(snapshot.get("rows", []), baseline.get("rows", []))
-            new_sub, rising_sub = build_subdomain_comparison(
-                snapshot.get("subdomains", []),
-                baseline.get("subdomains", []),
-            )
             comparison = {
                 "baselineStamp": (baseline.get("meta") or {}).get("stamp"),
-                "newlyObservedPage": new_page,
-                "risingPage": rising_page,
-                "newlyObservedSubdomain": new_sub,
-                "risingSubdomain": rising_sub,
+                "reportRows": build_report_rows(
+                    today_rows=snapshot.get("rows", []),
+                    today_subdomains=snapshot.get("subdomains", []),
+                    baseline_rows=baseline.get("rows", []),
+                    baseline_subdomains=baseline.get("subdomains", []),
+                ),
             }
             snapshot["meta"]["baselineMode"] = False
 
@@ -873,13 +893,19 @@ def validate_report(args: argparse.Namespace) -> int:
     text = path.read_text(encoding="utf-8")
     required_sections = [
         "## 摘要",
-        "## 页面级结果",
-        "## 子域名级结果",
+        "## 监控结果",
         "## 备注",
     ]
 
     missing = [item for item in required_sections if item not in text]
     missing += [item for item in REQUIRED_REMARKS if item not in text]
+
+    if (
+        "无历史快照（本次仅建立基线）" not in text
+        and "| subdomain | path | clicks | trend | top keywords |" not in text
+        and "## 监控结果\n\n（无）" not in text
+    ):
+        missing.append("| subdomain | path | clicks | trend | top keywords |")
 
     if missing:
         print("[failed] 报告校验失败，缺少内容：")

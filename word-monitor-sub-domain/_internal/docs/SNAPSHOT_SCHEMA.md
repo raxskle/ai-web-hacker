@@ -22,17 +22,17 @@
       "isWindow": true,
       "searchType": "domain",
       "startPage": 1,
-      "endPage": 5
+      "endPage": 8
     },
     "api": {
       "apiUrl": "http://127.0.0.1:17311/sim/api/websiteOrganicLandingPagesV2",
-      "pagesRequested": [1, 2, 3, 4, 5],
+      "pagesRequested": [1, 2, 3, 4, 5, 6, 7, 8],
       "basePayload": {}
     },
-    "pagesFetched": 5,
+    "pagesFetched": 8,
     "startPage": 1,
-    "endPage": 5,
-    "rawRows": 500,
+    "endPage": 8,
+    "rawRows": 800,
     "dedupedRows": 420,
     "subdomainCount": 220,
     "invalidUrlRows": 0,
@@ -60,10 +60,26 @@
   ],
   "comparison": {
     "baselineStamp": "20260707-210001",
-    "newlyObservedPage": [],
-    "risingPage": [],
-    "newlyObservedSubdomain": [],
-    "risingSubdomain": []
+    "reportRows": [
+      {
+        "entityType": "subdomain",
+        "trend": "上涨",
+        "trendLabel": "上涨（+18.2%）",
+        "subdomain": "foo",
+        "path": "-",
+        "clicks": 260,
+        "topKeywords": "foo keyword / bar keyword"
+      },
+      {
+        "entityType": "page",
+        "trend": "新增",
+        "trendLabel": "新增",
+        "subdomain": "foo",
+        "path": "/path",
+        "clicks": 123,
+        "topKeywords": "foo keyword"
+      }
+    ]
   }
 }
 ```
@@ -81,10 +97,19 @@
 - `page`
 - `rankInPage`
 
-`comparison` 规则：
-- `newlyObservedPage`: today 有、baseline 无、`clicks>=100`
-- `risingPage`: 两边都有，且 `today.clicks>=100`、`delta>=30`、`growth>=20%`
-- `newlyObservedSubdomain`: today 有、baseline 无、`observedSubdomainClicks>=150`
-- `risingSubdomain`: 两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`（不限制增长率）
+`comparison.reportRows[]`（统一报告行）包含：
+- `entityType`：`page` 或 `subdomain`
+- `trend`：`新增` 或 `上涨`
+- `trendLabel`：展示用趋势文本；上涨时附带涨幅
+- `subdomain`
+- `path`：页面行为真实 path，子域名行为 `-`
+- `clicks`：页面取页面 clicks，子域名取 `observedSubdomainClicks`
+- `topKeywords`：页面取 `topKeyword`，子域名取样本内高点击页面关键词拼接预览
 
-首次运行（`baselineMode=true`）：四类结果数组均为空。
+判定规则：
+- 页面新增：today 有、baseline 无、`clicks>=100`
+- 页面上涨：两边都有，且 `today.clicks>=100`、`delta>=30`、`growthRate>5%`
+- 子域名新增：today 有、baseline 无、`observedSubdomainClicks>=150`
+- 子域名上涨：两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`、`growthRate>5%`
+
+首次运行（`baselineMode=true`）：`comparison.reportRows` 为空。

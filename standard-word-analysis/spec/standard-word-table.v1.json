@@ -1,0 +1,110 @@
+{
+  "name": "standard-word-table",
+  "version": "v1",
+  "description": "标准词表（数据交换层）v1，兼容当前 word-from-root Excel 输出",
+  "scope": {
+    "includes": [
+      "keyword seeds",
+      "sim metrics",
+      "sem metrics",
+      "score based on sim fields"
+    ],
+    "excludes": [
+      "gefeiKD"
+    ]
+  },
+  "scoreFormula": "simWindowVolume * simCpc / simKd",
+  "scoreField": "score",
+  "scoreColumnHeader": "score(simWindowVolume*cpc/kd)",
+  "sourcePresenceEnum": {
+    "both": "关键词同时来自 SIM 与 SEM",
+    "sim_only": "关键词仅来自 SIM",
+    "sem_only": "关键词仅来自 SEM"
+  },
+  "compatibility": {
+    "guarantee": "v1 严格兼容 word-from-root 现有 Excel 表头",
+    "headerOrderLocked": true,
+    "breakingChangePolicy": "列名或顺序变更必须升级版本（如 v2）"
+  },
+  "excelColumns": [
+    {
+      "header": "keyword",
+      "field": "keyword",
+      "type": "string",
+      "nullable": false,
+      "width_profile": { "min": 24, "max": 72 }
+    },
+    {
+      "header": "group",
+      "field": "group",
+      "type": "string",
+      "nullable": true,
+      "width_profile": { "min": 28, "max": 96 }
+    },
+    {
+      "header": "sourcePresence(SIM/SEM)",
+      "field": "sourcePresence",
+      "type": "enum",
+      "nullable": false,
+      "transform": "source_presence_label",
+      "width_profile": { "fixed": 24 }
+    },
+    {
+      "header": "score(simWindowVolume*cpc/kd)",
+      "field": "score",
+      "type": "number",
+      "nullable": true,
+      "transform": "sim_score",
+      "number_format": "0.000000",
+      "width_profile": { "min": 28, "max": 36 }
+    },
+    {
+      "header": "volume(sim)",
+      "field": "simWindowVolume",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0",
+      "width_profile": { "min": 14, "max": 20 }
+    },
+    {
+      "header": "kd(sim)",
+      "field": "simKd",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0.00",
+      "width_profile": { "min": 12, "max": 18 }
+    },
+    {
+      "header": "cpc(sim)",
+      "field": "simCpc",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0.00",
+      "width_profile": { "min": 12, "max": 18 }
+    },
+    {
+      "header": "volume(sem)",
+      "field": "semVolume",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0",
+      "width_profile": { "min": 14, "max": 20 }
+    },
+    {
+      "header": "kd(sem)",
+      "field": "semKd",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0.00",
+      "width_profile": { "min": 12, "max": 18 }
+    },
+    {
+      "header": "cpc(sem)",
+      "field": "semCpc",
+      "type": "number",
+      "nullable": true,
+      "number_format": "0.00",
+      "width_profile": { "min": 12, "max": 18 }
+    }
+  ]
+}

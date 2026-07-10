@@ -1,68 +1,49 @@
-# 词根扩词报告（image to text｜20260709-172450）
+# 词根扩词报告（image to text｜20260709-205733）
 
 ## 摘要
 
-- 词根：image to text
-- 合并后唯一关键词数：355
-- 可计算 score 的关键词数：300
-- 来源分布：both=45 / sim_only=55 / sem_only=255
+- 关键词总数：453（可计算 score：208）
+- 分组后来源词数：SIM=216 / SEM=300
+- 来源分布：both=63 / sim_only=153 / sem_only=237
+- 排序公式：simWindowVolume * simCpc / simKd
+- 来源说明：SIM = Similarweb Keyword Generator；SEM = Semrush Keyword Magic
 
 ## 抓取概览
 
-- SIM totalRecords：216
-- SIM 实际抓取：100（pages=3）
-- SEM totalRecords：549
-- SEM 实际抓取：300（pages=3）
+- SIM：totalRecords=216，raw=0，grouped=216
+- SEM：totalRecords=483，raw=0，grouped=300
 
 ## 合并结果概览
 
-- both：45
-- sim_only：55
-- sem_only：255
-- 排序公式：semVolume * semCpc / semKd
-
+- 近义合并按 source 内先分组，再做 SIM/SEM 合并；group 列记录组内全部原词
 ## Top 关键词预览
 
-| keyword | sourcePresence | score | simWindowVolume | semVolume | semCpc | semKd |
-| --- | --- | --- | --- | --- | --- | --- |
-| image to text | sem_only | 2180.28 | - | 60500 | 1.91 | 53 |
-| image to text converter | sem_only | 500.41 | - | 18100 | 1.88 | 68 |
-| image text to text | both | 203.32 | 8640 | 6600 | 1.91 | 62 |
-| convert image to text | both | 160.80 | 17450 | 4400 | 2.01 | 55 |
-| text to image generator | sem_only | 102.45 | - | 6600 | 1.04 | 67 |
-| text to image ai | sem_only | 102.25 | - | 6600 | 1.10 | 71 |
-| perchance text to image | both | 89.85 | 7610 | 1600 | 1.46 | 26 |
-| convert text in image to text | sem_only | 59.56 | - | 1600 | 2.01 | 54 |
-| image to text image | sem_only | 57 | - | 1900 | 1.74 | 58 |
-| images to text | sem_only | 56.70 | - | 1900 | 1.91 | 64 |
-| text to image | sem_only | 56.19 | - | 9900 | 0.42 | 74 |
-| image to text ocr | sem_only | 50.32 | - | 1300 | 2.40 | 62 |
-| free text to image api | sem_only | 47.80 | - | 140 | 2.39 | 7 |
-| how to extract text from image | both | 47.69 | 7350 | 1000 | 1.86 | 39 |
-| add text to image | both | 45.38 | 31330 | 6600 | 0.44 | 64 |
-| adobe firefly text to image | sem_only | 44.73 | - | 1600 | 1.37 | 49 |
-| text image to text | sem_only | 42.81 | - | 1300 | 1.91 | 58 |
-| google keep image to text | sem_only | 39.02 | - | 720 | 1.68 | 31 |
-| text to image ai generator | sem_only | 34.78 | - | 1900 | 1.19 | 65 |
-| ocr image to text | sem_only | 31.75 | - | 1000 | 2 | 63 |
-| https://perchance.org/ai-text-to-image-generator | sem_only | 31.42 | - | 480 | 1.44 | 22 |
-| text in image to text | sem_only | 31.31 | - | 1000 | 1.91 | 61 |
-| how to edit text in image | sem_only | 31.02 | - | 390 | 1.75 | 22 |
-| image to text ai | both | 30.17 | 10700 | 1300 | 1.23 | 53 |
-| how to remove text in image | sem_only | 30.15 | - | 1300 | 1.09 | 47 |
-| ai image generator text to image | sem_only | 29.64 | - | 90 | 24.70 | 75 |
-| ai text to image | sem_only | 26.76 | - | 1900 | 1 | 71 |
-| image-text-to-text | sem_only | 26.68 | - | 880 | 1.91 | 63 |
-| ai text to image generator | sem_only | 25.11 | - | 1600 | 1.13 | 72 |
-| convert images to text | sem_only | 24.12 | - | 720 | 2.01 | 60 |
+| keyword | group | source | score(sim) | volume(sim) | kd(sim) | cpc(sim) | volume(sem) | kd(sem) | cpc(sem) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| imagen a texto | - | sim_only（仅 SIM） | 313.52 | 78380 | 50 | 0.20 | - | - | - |
+| image text editor | - | sim_only（仅 SIM） | 235.52 | 56740 | 53 | 0.22 | - | - | - |
+| perchance text to image | - | both（SIM+SEM） | 207.16 | 7610 | 72 | 1.96 | 1600 | 26 | 1.46 |
+| image text to text | - | both（SIM+SEM） | 187.00 | 8640 | 73 | 1.58 | 6600 | 62 | 1.91 |
+| de imagen a texto | - | sim_only（仅 SIM） | 172.96 | 50870 | 50 | 0.17 | - | - | - |
+| add text to image | - | both（SIM+SEM） | 170.47 | 31330 | 68 | 0.37 | 6600 | 64 | 0.44 |
+| text extractor from image | - | sim_only（仅 SIM） | 138.03 | 20130 | 70 | 0.48 | - | - | - |
+| chinese image to text | - | both（SIM+SEM） | 111.86 | 1580 | 25 | 1.77 | 110 | 32 | 1.47 |
+| convert image text to text | - | both（SIM+SEM） | 87.91 | 6540 | 61 | 0.82 | 480 | 51 | 2.56 |
+| transcribe image to text | - | both（SIM+SEM） | 86.13 | 3230 | 75 | 2 | 390 | 55 | 2.37 |
+| convert image to text | - | both（SIM+SEM） | 85.07 | 17450 | 80 | 0.39 | 4400 | 55 | 2.01 |
+| image to text ai | - | both（SIM+SEM） | 79.87 | 10700 | 71 | 0.53 | 1300 | 53 | 1.23 |
+| image text extractor | - | sim_only（仅 SIM） | 78.58 | 12300 | 72 | 0.46 | - | - | - |
+| image text editor online | - | sim_only（仅 SIM） | 73.31 | 15710 | 30 | 0.14 | - | - | - |
+| turn image to text | - | both（SIM+SEM） | 72.71 | 4010 | 75 | 1.36 | 170 | 56 | 2.59 |
 
 ## 产物路径
 
-- Markdown：/Users/bytedance/work/raxskle/sitte/ai/word-from-root/report/history/report-20260709-172450.md
-- Excel：/Users/bytedance/work/raxskle/sitte/ai/word-from-root/report/history/keyword-table-20260709-172450.xlsx
+- Markdown：/Users/bytedance/work/raxskle/sitte/ai/word-from-root/report/history/report-20260709-205733.md
+- Excel：/Users/bytedance/work/raxskle/sitte/ai/word-from-root/report/history/keyword-table-20260709-205733.xlsx
 
 ## 备注
 
 - Excel 是完整结果，Markdown 仅做预览
-- 排序值仅基于 SEM 的 volume * cpc / kd
-- sim_only 关键词由于缺少完整 SEM 指标，score 可能为空
+- 排序值仅基于 SIM 的 windowVolume * cpc / kd
+- sem_only 关键词由于缺少完整 SIM 指标，score 可能为空
+- 近义合并按 source 内先分组，再做 SIM/SEM 合并；group 列记录组内全部原词

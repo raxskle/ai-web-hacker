@@ -1,18 +1,18 @@
 ---
 name: word-monitor-sub-domain
 version: 0.1.0
-description: "抓取 vercel.app 在 Similarweb Landing Pages 前5页样本，归档快照并输出新增/上涨页面与子域名报告。"
+description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归档快照并输出新增/上涨统一监控报告。"
 ---
 
 # word-monitor-sub-domain（MVP）
 
 用于每天执行一次监控流程：
 
-1. 通过本地服务抓取 `/sim/api/websiteOrganicLandingPagesV2` 的 page=1..5
+1. 通过本地服务抓取 `/sim/api/websiteOrganicLandingPagesV2` 的 page=1..8
 2. 标准化并去重页面样本
 3. 保存抓取归档与标准化快照
 4. 对比最近一次历史快照
-5. 输出 Markdown 报告（页面级 + 子域名级）
+5. 输出 Markdown 报告（单表合并展示页面与子域名结果）
 
 ## 执行方式
 
@@ -50,26 +50,34 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - includeSubDomains=true
 - isWindow=true
 - searchType=domain
-- page=1..5
+- page=1..8
 
 ## 对比逻辑（MVP）
 
-- 基线：最近一次历史快照（同 key/country/latest/sourceType）
+- 基线：最近一次历史快照（同 key/country/latest/sourceType/startPage/endPage）
 - 首次运行：仅建立基线，不输出新增/上涨结论
 
 页面级：
 - newlyObservedPage：今天有、基线无、clicks >= 100
-- risingPage：今天和基线都有，且
+- 页面上涨：今天和基线都有，且
   - today.clicks >= 100
   - deltaClicks >= 30
-  - growthRate >= 20%
+  - growthRate > 5%
 
 子域名级：
 - observedSubdomainClicks = 样本内该子域名页面 clicks 求和
 - newlyObservedSubdomain：今天有、基线无、observedSubdomainClicks >= 150
-- risingSubdomain：今天和基线都有，且
+- 子域名上涨：今天和基线都有，且
   - today.observedSubdomainClicks >= 150
-  - deltaClicks >= 50（不限制增长率）
+  - deltaClicks >= 50
+  - growthRate > 5%
+
+## 报告输出
+
+- 页面和子域名结果合并为同一个 Markdown 表格
+- 仅区分 `新增` 与 `上涨`
+- 表格列为：`subdomain`、`path`、`clicks`、`trend`、`top keywords`
+- 页面行展示真实 path；子域名行的 `path` 固定为 `-`
 
 ## 失败策略（已确认）
 

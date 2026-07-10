@@ -1,16 +1,16 @@
 # word-monitor-sub-domain
 
-用于监控 `vercel.app` 在 Similarweb Organic Landing Pages（`ClicksShare` 排序）前 5 页样本，按天归档并输出“新增/上涨”报告。
+用于监控 `vercel.app` 在 Similarweb Organic Landing Pages（`ClicksShare` 排序）前 8 页样本，按天归档并输出“新增/上涨”统一报告。
 
 ## 功能概览
 
 每次运行会执行：
 
-1. 调用本地服务抓取 `page=1..5`
+1. 调用本地服务抓取 `page=1..8`
 2. 标准化并去重页面数据
 3. 归档抓取结果与快照
 4. 与最近一次历史快照对比
-5. 生成 Markdown 报告（页面级 + 子域名级）
+5. 生成 Markdown 报告（单表合并展示页面与子域名结果）
 
 ## 目录说明
 
@@ -66,7 +66,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - `includeSubDomains=true`
 - `isWindow=true`
 - `searchType=domain`
-- `page=1..5`
+- `page=1..8`
 
 ### 失败策略
 
@@ -75,29 +75,37 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 ### 对比基线
 
-- 使用最近一次历史快照（同 `key/country/latest/sourceType`）
+- 使用最近一次历史快照（同 `key/country/latest/sourceType/startPage/endPage`）
 - 首次运行仅建立基线，不输出新增/上涨结论
 
 ### 判定阈值
 
 页面级：
 - `newlyObservedPage`：今天有、基线无，且 `clicks >= 100`
-- `risingPage`：今天和基线都有，且
+- 页面上涨：今天和基线都有，且
   - `today.clicks >= 100`
   - `deltaClicks >= 30`
-  - `growthRate >= 20%`
+  - `growthRate > 5%`
 
 子域名级：
 - `newlyObservedSubdomain`：今天有、基线无，且 `observedSubdomainClicks >= 150`
-- `risingSubdomain`：今天和基线都有，且
+- 子域名上涨：今天和基线都有，且
   - `today.observedSubdomainClicks >= 150`
-  - `deltaClicks >= 50`（不限制增长率）
+  - `deltaClicks >= 50`
+  - `growthRate > 5%`
+
+### 报告输出
+
+- 页面和子域名结果合并为同一个 Markdown 表格
+- 仅区分 `新增` 与 `上涨`
+- 表格列为：`subdomain`、`path`、`clicks`、`trend`、`top keywords`
+- 页面行展示真实 path；子域名行的 `path` 固定为 `-`
 
 ## 报告备注（固定输出）
 
 报告中会固定包含以下声明：
 
-1. 当前监控仅覆盖 ClicksShare 排序下前5页样本
+1. 当前监控仅覆盖 ClicksShare 排序下前8页样本
 2. “新进入样本”不等于全站首次出现
 3. 子域名流量是样本内观测值，不代表全站完整总量
 

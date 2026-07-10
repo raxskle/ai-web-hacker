@@ -61,6 +61,163 @@
         "minTokenLength": 2,
         "dropNumericOnlyToken": true
       }
+    },
+    {
+      "id": "suikagame_io",
+      "enabled": true,
+      "displayName": "suikagame",
+      "sitemapUrls": [
+        "https://suikagame.io/sitemap.xml"
+      ],
+      "includeHosts": [
+        "suikagame.io",
+        "www.suikagame.io"
+      ],
+      "excludePathRegexes": [
+        "^/$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "suika",
+          "game",
+          "games",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "io"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "crazygames_com",
+      "enabled": true,
+      "displayName": "crazygames",
+      "sitemapUrls": [
+        "https://www.crazygames.com/sitemap-index.xml"
+      ],
+      "includeHosts": [
+        "www.crazygames.com",
+        "crazygames.com"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/(developers|distribution|jobs|privacy|terms|contact|about)/?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "crazy",
+          "games",
+          "game",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "com"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "coolmathgames_com",
+      "enabled": true,
+      "displayName": "coolmathgames",
+      "sitemapUrls": [
+        "https://www.coolmathgames.com/sitemap.xml"
+      ],
+      "includeHosts": [
+        "www.coolmathgames.com",
+        "coolmathgames.com"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/(about|contact-us|privacy-policy|terms-of-use|subscription-faq)/?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "coolmath",
+          "coolmathgames",
+          "games",
+          "game",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "com"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "poki_com",
+      "enabled": true,
+      "displayName": "poki",
+      "sitemapUrls": [
+        "https://poki.com/en/sitemaps/index.xml"
+      ],
+      "includeHosts": [
+        "poki.com",
+        "www.poki.com"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/blog(?:/.*)?$",
+        "^/(about|privacy|terms|jobs|developers)(?:/.*)?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "poki",
+          "games",
+          "game",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "com",
+          "en"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "gamejolt_com",
+      "enabled": false,
+      "displayName": "gamejolt",
+      "sitemapUrls": [
+        "https://gamejolt.com/sitemap.xml"
+      ],
+      "includeHosts": [
+        "gamejolt.com",
+        "www.gamejolt.com"
+      ],
+      "excludePathRegexes": [
+        "^/$",
+        "^/(about|contact|privacy|terms|jobs)(?:/.*)?$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "gamejolt",
+          "games",
+          "game",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "com"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
     }
   ]
 }
