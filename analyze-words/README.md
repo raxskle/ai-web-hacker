@@ -1,6 +1,6 @@
 # analyze-words
 
-批量分析关键词可行性：调用本地服务 `Keyword Info（SEM · keywords.GetInfo）`，输出每个关键词的聚合指标，并生成标准词表结果文档（Excel + JSON）。
+批量分析关键词可行性：调用本地服务 `Keyword Info（SEM · keywords.GetInfo）` + `Keyword Generator Suggest（SIM）`，输出每个关键词的聚合指标，并生成标准词表结果文档（Excel + JSON）。
 
 ## 快速开始
 
@@ -56,6 +56,7 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 
 - API Base：`http://127.0.0.1:17311`
 - Endpoint：`/sem/kwogw/v2/webapi/keywords.GetInfo`
+- SIM Endpoint：`/sim/api/KeywordGenerator/google/suggest`
 - JSON-RPC：
   - `method=keywords.GetInfo`
   - `device=0`
@@ -66,8 +67,18 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 - 本地服务附加参数：
   - `timeoutMs=45000`
   - `waitTimeoutMs=120000`
+- SIM 固定请求参数：
+  - `country=999`
+  - `latest=28d`
+  - `isWindow=true`
+  - `webSource=Total`
+  - `rowsPerPage=5`
+  - `page=1`
+  - `sort=score`
+  - `asc=false`
+  - `type=Related`
 
-仅会按关键词动态修改 `params.phrase`（以及请求追踪 id）。
+仅会按关键词动态修改 `params.phrase`（SEM）与 `keyword`（SIM，及请求追踪 id）。
 
 ## 聚合口径
 
@@ -80,8 +91,13 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 ## 标准词表补全规则（v1）
 
 - 标准词表规范：`standard-word-analysis/spec/standard-word-table.v1.json`
-- 当前流程只补 SEM 字段：
-  - `volume(sem)` / `kd(sem)` / `cpc(sem)`
+- 当前流程会补以下字段：
+  - SIM：`volume(sim)` / `kd(sim)` / `cpc(sim)`
+  - SEM：`volume(sem)` / `kd(sem)` / `cpc(sem)`
+- SIM 匹配规则：
+  - 对每个输入关键词调用 Suggest（top 5）
+  - 仅在返回 5 条中，按归一化后与输入词**精确相等**匹配对应关键词
+  - 命中后使用该记录的 `windowVolume` / `difficulty` / `cpc` 回填 SIM 列
 - `score(simWindowVolume*cpc/kd)` 只由 SIM 字段计算：
   - `score = simWindowVolume * simCpc / simKd`
   - 当 SIM 指标缺失或 <=0 时，`score` 为空
@@ -107,5 +123,6 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 ## 失败策略
 
 - token/gmitm 缺失：直接失败
-- 单关键词请求失败：最多重试 2 次（0.8s / 1.6s）
-- 任一关键词最终失败：整次失败，不写入新产物
+- 单关键词 SEM 请求失败：最多重试 2 次（0.8s / 1.6s）
+- 任一关键词 SEM 最终失败：整次失败，不写入新产物
+- 单关键词 SIM 请求失败或 top5 未命中对应关键词：整次继续，该词 SIM 字段置空

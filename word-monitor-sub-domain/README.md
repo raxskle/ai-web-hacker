@@ -1,6 +1,6 @@
 # word-monitor-sub-domain
 
-用于监控 `vercel.app` 在 Similarweb Organic Landing Pages（`ClicksShare` 排序）前 8 页样本，按天归档并输出“新增/上涨”统一报告，以及配套标准词表 Excel。
+用于监控 `vercel.app` 在 Similarweb Organic Landing Pages（`ClicksShare` 排序）前 8 页样本，按天归档并输出“新增/上涨”统一报告，以及配套标准词表。
 
 ## 功能概览
 
@@ -11,16 +11,19 @@
 3. 归档抓取结果与快照
 4. 与最近一次历史快照对比
 5. 生成 Markdown 报告（单表合并展示页面与子域名结果）
-6. 生成标准词表 Excel（仅输出新增页面/子域名的 top keywords）
-7. 对导出关键词批量查询哥飞 KD，补齐 `gefeiKD`
+6. 生成初始标准词表 Excel（仅输出新增页面/子域名的 top keywords）
+7. 串联 `analyze-words` 补全 SIM/SEM
+8. 串联 `check-gefei-kd` 回填/刷新 `gefeiKD`
+9. 发布最终完整标准词表到 `words/sub-domain-YYYYMMDD-HHMMSS.xlsx`
 
 ## 目录说明
 
 - `data/`：每次抓取归档（`fetch-YYYYMMDD-HHMMSS.json`）
 - `_internal/snapshots/`：标准化快照（`snapshot-YYYYMMDD-HHMMSS.json`）
-- `report/history/`：历史报告与 Excel
-- `report/latest.md`：最新报告
-- `report/latest.xlsx`：最新标准词表 Excel
+- `report/history/`：历史报告与最终完整标准词表 Excel
+- `report/latest.md`：最新报告（最终词表口径）
+- `report/latest.xlsx`：最新最终完整标准词表 Excel
+- `words/`（仓库根目录）：最终完整标准词表（`sub-domain-YYYYMMDD-HHMMSS.xlsx`）
 - `local-service/`：本地服务接口文档与 token 文件
 
 ## 运行前准备
@@ -82,6 +85,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - 任意一页最终失败：整次运行失败，不落快照、不出结论（避免污染数据）
 - 哥飞 KD 认证/全局额度错误：整次运行失败，不落半残标准词表
 - 单关键词哥飞 KD 查询失败：该行 `gefeiKD` 留空，并写入 snapshot 失败明细
+- 串联补全链路（analyze/check）任一步失败：本次 run 返回失败
 
 ### 对比基线
 
@@ -108,11 +112,16 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 - 页面和子域名结果合并为同一个 Markdown 表格
 - Markdown 仍仅区分 `新增` 与 `上涨`
-- 标准词表仅导出 `新增` 页面/子域名的 top keywords
+- 标准词表种子先导出 `新增` 页面/子域名的 top keywords
 - 标准词表表头对齐 `standard-word-analysis/spec/standard-word-table.v1.json`
 - 相同 `keyword` 按词去重，仅保留一行
 - `对应域名` 聚合同词命中的全部域名 / 页面上下文，使用 ` | ` 连接
-- `gefeiKD` 使用哥飞 KD API 返回的 `score`
+- 种子词表会继续串联 `analyze-words` 与 `check-gefei-kd`，并将最终完整结果同步覆盖到：
+  - `word-monitor-sub-domain/report/history/report-[timestamp].md`
+  - `word-monitor-sub-domain/report/latest.md`
+  - `word-monitor-sub-domain/report/history/keyword-table-[timestamp].xlsx`
+  - `word-monitor-sub-domain/report/latest.xlsx`
+  - `words/sub-domain-[timestamp].xlsx`（仓库根目录）
 - 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
 - `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 - 其他指标列允许为空

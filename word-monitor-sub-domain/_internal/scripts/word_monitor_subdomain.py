@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import sys
 import time
 from datetime import datetime
@@ -33,6 +34,8 @@ LOCAL_SERVICE_TOKEN_PATH = PROJECT_DIR / "local-service" / "bridge_token.txt"
 
 STANDARD_WORD_TABLE_VERSION = "v1"
 STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
+ANALYZE_WORDS_SCRIPT_PATH = REPO_ROOT / "analyze-words" / "_internal" / "scripts" / "analyze_words.py"
+CHECK_GEFEI_KD_SCRIPT_PATH = REPO_ROOT / "check-gefei-kd" / "_internal" / "scripts" / "check_gefei_kd.py"
 
 DEFAULT_API_BASE = "http://127.0.0.1:17311"
 DEFAULT_ENDPOINT = "/sim/api/websiteOrganicLandingPagesV2"
@@ -92,6 +95,8 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--report-dir", default=str(PROJECT_DIR / "report" / "history"))
     run_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
     run_parser.add_argument("--latest-xlsx-path", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
+    run_parser.add_argument("--words-dir", default=str(REPO_ROOT / "words"))
+    run_parser.add_argument("--chain-work-dir", default=str(PROJECT_DIR / "_internal" / "chained"))
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建历史报告")
     rebuild_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
@@ -919,11 +924,42 @@ def render_report(snapshot: dict) -> str:
     meta = snapshot.get("meta") or {}
     target = meta.get("target") or {}
     comparison = snapshot.get("comparison") or {}
+    standard_word_rows = comparison.get("standardWordRows") or []
     standard_word_summary = comparison.get("standardWordSummary") or {}
 
     report_rows = comparison.get("reportRows") or []
     rising_count = sum(1 for row in report_rows if row.get("trend") == "上涨")
     new_count = sum(1 for row in report_rows if row.get("trend") == "新增")
+
+    def has_sim_metrics(row: dict) -> bool:
+        return (
+            safe_float(row.get("simWindowVolume")) > 0
+            and safe_float(row.get("simCpc")) > 0
+            and safe_float(row.get("simKd")) > 0
+        )
+
+    def has_sem_metrics(row: dict) -> bool:
+        return (
+            safe_float(row.get("semVolume")) > 0
+            and safe_float(row.get("semCpc")) > 0
+            and safe_float(row.get("semKd")) > 0
+        )
+
+    def has_gefei_kd(row: dict) -> bool:
+        value = row.get("gefeiKD")
+        return value not in (None, "")
+
+    def _display_optional_number(value) -> str:
+        if value in (None, ""):
+            return "-"
+        number = safe_float(value)
+        if abs(number - round(number)) < 1e-9:
+            return str(int(round(number)))
+        return f"{number:.2f}"
+
+    sim_ready_count = sum(1 for row in standard_word_rows if has_sim_metrics(row))
+    sem_ready_count = sum(1 for row in standard_word_rows if has_sem_metrics(row))
+    gefei_kd_ready_count = sum(1 for row in standard_word_rows if has_gefei_kd(row))
 
     lines: List[str] = []
     lines.append(f"# 子域名落地页监控报告（{target.get('key', '-') }｜{meta.get('stamp', '-') }）")
@@ -942,7 +978,10 @@ def render_report(snapshot: dict) -> str:
 
     lines.append(f"- 新增数量：{new_count}")
     lines.append(f"- 上涨数量：{rising_count}")
-    lines.append(f"- 标准词表行数：{standard_word_summary.get('rowCount', 0)}（仅新增页面/子域名）")
+    lines.append(f"- 标准词表行数：{standard_word_summary.get('rowCount', len(standard_word_rows))}（最终完整词表）")
+    lines.append(f"- SIM 指标完整行数：{sim_ready_count}")
+    lines.append(f"- SEM 指标完整行数：{sem_ready_count}")
+    lines.append(f"- gefeiKD 已回填行数：{gefei_kd_ready_count}")
     lines.append("- 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文")
     lines.append("")
 
@@ -966,9 +1005,24 @@ def render_report(snapshot: dict) -> str:
         lines.extend(_md_table(["subdomain", "path", "clicks", "trend", "top keywords"], table_rows))
         lines.append("")
 
+    lines.append("## 最终标准词表摘要")
+    lines.append("")
+    final_table_rows = [
+        [
+            row.get("keyword", "-") or "-",
+            _display_optional_number(row.get("simWindowVolume")),
+            _display_optional_number(row.get("semVolume")),
+            _display_optional_number(row.get("gefeiKD")),
+            _display_optional_number(compute_sim_score(row)),
+        ]
+        for row in standard_word_rows[:20]
+    ]
+    lines.extend(_md_table(["keyword", "simVolume", "semVolume", "gefeiKD", "score(sim)"], final_table_rows))
+    lines.append("")
+
     lines.append("## 备注")
     lines.append("")
-    lines.append("- 标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空")
+    lines.append("- 标准词表为最终口径：种子词表经 analyze-words（SIM/SEM）与 check-gefei-kd（gefeiKD）补全后写入 report 与 words 目录")
     lines.append("- 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文，`gefeiKD` 为哥飞 KD score")
     for remark in REQUIRED_REMARKS:
         lines.append(f"- {remark}")
@@ -1270,6 +1324,117 @@ def rebuild_history_artifacts(snapshot: dict, report_dir: Path, latest_report_pa
     return report_history_path, excel_history_path, report_text
 
 
+def _run_python_stage(*, stage_name: str, script_path: Path, extra_args: Sequence[str]) -> None:
+    if not script_path.exists():
+        raise RuntimeError(f"{stage_name} 脚本不存在: {script_path}")
+
+    command = [sys.executable, str(script_path), *list(extra_args)]
+    print(f"[stage] {stage_name}: {' '.join(command)}")
+
+    try:
+        subprocess.run(command, cwd=str(REPO_ROOT), check=True)
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(f"{stage_name} 执行失败，退出码: {exc.returncode}") from exc
+
+
+def _run_analyze_words_stage(*, seed_table_xlsx: Path, chain_root: Path) -> dict:
+    stage_root = chain_root / "analyze-words"
+    data_dir = stage_root / "data"
+    snapshot_dir = stage_root / "_internal" / "snapshots"
+    report_dir = stage_root / "report" / "history"
+    latest_report_path = stage_root / "report" / "latest.md"
+    latest_xlsx_path = stage_root / "report" / "latest.xlsx"
+    latest_table_json_path = stage_root / "report" / "latest.json"
+
+    _run_python_stage(
+        stage_name="analyze-words",
+        script_path=ANALYZE_WORDS_SCRIPT_PATH,
+        extra_args=[
+            "run",
+            "--input-table",
+            str(seed_table_xlsx),
+            "--data-dir",
+            str(data_dir),
+            "--snapshot-dir",
+            str(snapshot_dir),
+            "--report-dir",
+            str(report_dir),
+            "--latest-report-path",
+            str(latest_report_path),
+            "--latest-xlsx-path",
+            str(latest_xlsx_path),
+            "--latest-table-json-path",
+            str(latest_table_json_path),
+        ],
+    )
+
+    if not latest_xlsx_path.exists():
+        raise RuntimeError(f"analyze-words 未产出 latest xlsx: {latest_xlsx_path}")
+    if not latest_table_json_path.exists():
+        raise RuntimeError(f"analyze-words 未产出 latest json: {latest_table_json_path}")
+
+    return {
+        "latestReportPath": latest_report_path,
+        "latestXlsxPath": latest_xlsx_path,
+        "latestJsonPath": latest_table_json_path,
+        "root": stage_root,
+    }
+
+
+def _run_check_gefei_kd_stage(*, input_table_xlsx: Path, chain_root: Path) -> dict:
+    stage_root = chain_root / "check-gefei-kd"
+    data_dir = stage_root / "data"
+    snapshot_dir = stage_root / "_internal" / "snapshots"
+    report_dir = stage_root / "report" / "history"
+    latest_report_path = stage_root / "report" / "latest.md"
+    latest_standard_word_table_json = stage_root / "report" / "latest.json"
+    latest_standard_word_table_xlsx = stage_root / "report" / "latest.xlsx"
+
+    _run_python_stage(
+        stage_name="check-gefei-kd",
+        script_path=CHECK_GEFEI_KD_SCRIPT_PATH,
+        extra_args=[
+            "run",
+            "--standard-word-table",
+            str(input_table_xlsx),
+            "--data-dir",
+            str(data_dir),
+            "--snapshot-dir",
+            str(snapshot_dir),
+            "--report-dir",
+            str(report_dir),
+            "--latest-report-path",
+            str(latest_report_path),
+            "--latest-standard-word-table-json",
+            str(latest_standard_word_table_json),
+            "--latest-standard-word-table-xlsx",
+            str(latest_standard_word_table_xlsx),
+        ],
+    )
+
+    if not latest_standard_word_table_xlsx.exists():
+        raise RuntimeError(f"check-gefei-kd 未产出 latest xlsx: {latest_standard_word_table_xlsx}")
+    if not latest_standard_word_table_json.exists():
+        raise RuntimeError(f"check-gefei-kd 未产出 latest json: {latest_standard_word_table_json}")
+
+    return {
+        "latestReportPath": latest_report_path,
+        "latestXlsxPath": latest_standard_word_table_xlsx,
+        "latestJsonPath": latest_standard_word_table_json,
+        "root": stage_root,
+    }
+
+
+def _publish_final_words_xlsx(*, final_xlsx: Path, words_dir: Path, stamp: str) -> Path:
+    if not final_xlsx.exists():
+        raise RuntimeError(f"最终标准词表不存在: {final_xlsx}")
+
+    ensure_dir(words_dir)
+    target = words_dir / f"sub-domain-{stamp}.xlsx"
+    copyfile(final_xlsx, target)
+    return target
+
+
 def run_pipeline(args: argparse.Namespace) -> int:
     data_dir = Path(args.data_dir).resolve()
     snapshot_dir = Path(args.snapshot_dir).resolve()
@@ -1366,12 +1531,83 @@ def run_pipeline(args: argparse.Namespace) -> int:
         latest_xlsx_path=latest_xlsx_path,
     )
 
+    words_dir = Path(args.words_dir).resolve()
+    chain_work_dir = Path(args.chain_work_dir).resolve()
+    keyword_row_count = comparison.get("standardWordSummary", {}).get("rowCount", 0)
+
+    chain_stage_outputs: dict = {}
+    if keyword_row_count > 0:
+        chain_root = chain_work_dir / stamp
+        ensure_dir(chain_root)
+
+        analyze_outputs = _run_analyze_words_stage(
+            seed_table_xlsx=Path(artifact_paths["excelHistoryPath"]),
+            chain_root=chain_root,
+        )
+        check_outputs = _run_check_gefei_kd_stage(
+            input_table_xlsx=Path(analyze_outputs["latestXlsxPath"]),
+            chain_root=chain_root,
+        )
+
+        final_words_xlsx_path = _publish_final_words_xlsx(
+            final_xlsx=Path(check_outputs["latestXlsxPath"]),
+            words_dir=words_dir,
+            stamp=stamp,
+        )
+
+        final_table_payload = load_json(Path(check_outputs["latestJsonPath"]))
+        final_rows = final_table_payload.get("rows") if isinstance(final_table_payload, dict) else None
+        if isinstance(final_rows, list):
+            comparison.setdefault("standardWordSummary", {})["rowCount"] = len(final_rows)
+            comparison["standardWordRows"] = final_rows
+
+        chain_stage_outputs = {
+            "status": "completed",
+            "chainRoot": str(chain_root),
+            "analyzeWords": {
+                "latestXlsxPath": str(analyze_outputs["latestXlsxPath"]),
+                "latestJsonPath": str(analyze_outputs["latestJsonPath"]),
+            },
+            "checkGefeiKd": {
+                "latestXlsxPath": str(check_outputs["latestXlsxPath"]),
+                "latestJsonPath": str(check_outputs["latestJsonPath"]),
+            },
+        }
+    else:
+        final_words_xlsx_path = _publish_final_words_xlsx(
+            final_xlsx=Path(artifact_paths["excelHistoryPath"]),
+            words_dir=words_dir,
+            stamp=stamp,
+        )
+        chain_stage_outputs = {
+            "status": "skipped",
+            "reason": "standardWordRows=0",
+        }
+
+    report_excel_history_path = Path(artifact_paths["excelHistoryPath"])
+    copyfile(final_words_xlsx_path, report_excel_history_path)
+    copyfile(final_words_xlsx_path, latest_xlsx_path)
+
+    snapshot_meta = snapshot.setdefault("meta", {})
+    output_meta = snapshot_meta.setdefault("output", {})
+    output_meta["excelHistoryPath"] = str(report_excel_history_path)
+    output_meta["finalWordsXlsxPath"] = str(final_words_xlsx_path)
+    output_meta["chainStages"] = chain_stage_outputs
+
+    report_history_path = Path(artifact_paths["reportHistoryPath"])
+    final_report_text = render_report(snapshot)
+    report_history_path.write_text(final_report_text, encoding="utf-8")
+    latest_report_path.write_text(final_report_text, encoding="utf-8")
+
+    dump_json(Path(artifact_paths["snapshotPath"]), snapshot)
+
     print(f"[done] fetch archive : {artifact_paths['fetchArchivePath']}")
     print(f"[done] snapshot      : {artifact_paths['snapshotPath']}")
     print(f"[done] report history: {artifact_paths['reportHistoryPath']}")
     print(f"[done] report latest : {latest_report_path}")
     print(f"[done] excel history : {artifact_paths['excelHistoryPath']}")
     print(f"[done] excel latest  : {latest_xlsx_path}")
+    print(f"[done] words final   : {final_words_xlsx_path}")
     print(f"[done] deduped rows  : {len(deduped_rows)}")
     print(f"[done] subdomains    : {len(subdomains)}")
     print(f"[done] keyword rows  : {comparison.get('standardWordSummary', {}).get('rowCount', 0)}")
@@ -1496,8 +1732,8 @@ def validate_report(args: argparse.Namespace) -> int:
 
     missing = [item for item in required_sections if item not in text]
     missing += [item for item in REQUIRED_REMARKS if item not in text]
-    if "标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空" not in text:
-        missing.append("标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空")
+    if "- 标准词表为最终口径：种子词表经 analyze-words（SIM/SEM）与 check-gefei-kd（gefeiKD）补全后写入 report 与 words 目录" not in text:
+        missing.append("- 标准词表为最终口径：种子词表经 analyze-words（SIM/SEM）与 check-gefei-kd（gefeiKD）补全后写入 report 与 words 目录")
 
     if (
         "无历史快照（本次仅建立基线）" not in text

@@ -1,7 +1,7 @@
 ---
 name: analyze-words
-version: 0.2.0
-description: "输入任意形态关键词（文本/txt/标准词表），调用 SEM keywords.GetInfo 批量补全并输出标准词表结果。"
+version: 0.3.0
+description: "输入任意形态关键词（文本/txt/标准词表），调用 SEM keywords.GetInfo + SIM suggest 批量补全并输出标准词表结果。"
 ---
 
 # analyze-words
@@ -9,10 +9,12 @@ description: "输入任意形态关键词（文本/txt/标准词表），调用 
 根据你提供的关键词输入，批量调用本地服务接口：
 
 - `POST /sem/kwogw/v2/webapi/keywords.GetInfo`
+- `POST /sim/api/KeywordGenerator/google/suggest`
 
 并输出：
 
 - 关键词级 SEM 聚合指标（`globalVolume` / `globalCpcAvg` / `globalDifficultyAvg`）
+- 关键词级 SIM 命中指标（`simWindowVolume` / `simCpc` / `simKd`）
 - 标准词表（v1）结果文档（Excel + JSON）
 
 ## 执行方式
@@ -70,16 +72,21 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 
 ## 规则摘要（MVP）
 
-- 请求参数默认遵循 API 文档 Keyword Info 示例：
+- SEM 请求参数默认遵循 Keyword Info 示例：
   - `device=0`、`currency=USD`、`database=us`、`locati0n=0`、`date=""`
-- 每个关键词仅替换 `params.phrase`
+- SIM 请求固定参数：
+  - `rowsPerPage=5`、`type=Related`、`sort=score`、`asc=false`（其余参数使用接口默认）
 - 聚合口径：
   - `globalVolume = sum(volume)`
   - `globalCpcAvg = avg(cpc, 忽略 null)`
   - `globalDifficultyAvg = avg(difficulty, 忽略 null)`
 - 标准词表补全口径：
-  - 只补 SEM 字段：`volume(sem)` / `kd(sem)` / `cpc(sem)`
+  - 回填 SEM 字段：`volume(sem)` / `kd(sem)` / `cpc(sem)`
+  - 回填 SIM 字段：`volume(sim)` / `kd(sim)` / `cpc(sim)`
+  - SIM 匹配规则：仅在返回 top5 中按归一化后与输入词精确相等匹配
   - `score(simWindowVolume*cpc/kd)` 仅由 SIM 字段计算
   - 当缺失完整 SIM 指标（任一缺失或 <= 0）时，`score` 允许为空
   - `sourcePresence(SIM/SEM)` 根据 SIM/SEM 是否存在自动重算
-- 任一关键词抓取失败：整次失败，不写入新产物
+- 失败策略：
+  - SEM 任一关键词最终失败：整次失败，不写入新产物
+  - SIM 请求失败或未命中：整次继续，该词 SIM 字段置空

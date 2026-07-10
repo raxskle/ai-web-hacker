@@ -1,4 +1,4 @@
-# 子域名落地页监控报告（vercel.app｜20260710-154302）
+# 子域名落地页监控报告（vercel.app｜20260711-004842）
 
 ## 摘要
 
@@ -9,7 +9,10 @@
 - 基线：20260709-210821
 - 新增数量：76
 - 上涨数量：262
-- 标准词表行数：42（仅新增页面/子域名）
+- 标准词表行数：42（最终完整词表）
+- SIM 指标完整行数：7
+- SEM 指标完整行数：3
+- gefeiKD 已回填行数：42
 - 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文
 
 ## 监控结果
@@ -355,9 +358,34 @@
 | descent | /<wbr> | 560 | 新增 | tod calc |
 | heatstroke-<wbr>navi | /<wbr>articles/<wbr>heatstroke-<wbr>reporting-<wbr>system-<wbr>template | 560 | 新增 | 熱中症 緊急連絡先 テンプレート |
 
+## 最终标准词表摘要
+
+| keyword | simVolume | semVolume | gefeiKD | score(sim) |
+| --- | --- | --- | --- | --- |
+| cinemana | 89720 | 19770 | 45 | 1058.70 |
+| digibouquet | 44880 | 2030 | 55.40 | 555.29 |
+| memento mori calendar | 2860 | 1950 | 51.70 | 429 |
+| imagine explainers | 27960 | 16110 | 50.90 | 391.44 |
+| シス単 | 8680 | 27190 | 41.60 | 289.33 |
+| random key generator | 3990 | 3480 | 48.60 | 31.69 |
+| seabank login | 4220 | 110 | 56.20 | 10.41 |
+| 福岡 貯水率 | 24800 | 5400 | 34.30 | -<wbr> |
+| intel graphics control panel | 5900 | 4430 | 73.70 | -<wbr> |
+| rhyme game | 21140 | 3330 | 33.60 | -<wbr> |
+| проверка реакции | 5030 | 2810 | 10.50 | -<wbr> |
+| vit placement tracker | 5410 | 2420 | 69.90 | -<wbr> |
+| animovie | 2950 | 970 | 70.90 | -<wbr> |
+| shadcn map | 2130 | 360 | 53.10 | -<wbr> |
+| mermaid to excalidraw | 1590 | 270 | 65.40 | -<wbr> |
+| once human character preset | 820 | 60 | 76.90 | -<wbr> |
+| download google drive restricted pdf | 540 | 10 | 32.20 | -<wbr> |
+| คํานวนไทยช่วยไทยพลัส | 21450 | 0 | 42.10 | -<wbr> |
+| pagame rata | 2800 | 0 | 12.10 | -<wbr> |
+| تصحيح عربية باك 2026 | 2400 | 0 | 46.70 | -<wbr> |
+
 ## 备注
 
-- 标准词表仅导出新增页面/子域名对应的 top keywords，其他指标列允许为空
+- 标准词表为最终口径：种子词表经 analyze-words（SIM/SEM）与 check-gefei-kd（gefeiKD）补全后写入 report 与 words 目录
 - 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文，`gefeiKD` 为哥飞 KD score
 - 当前监控仅覆盖 ClicksShare 排序下前8页样本
 - “新进入样本”不等于全站首次出现

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""批量分析关键词指标（SEM keywords.GetInfo）并输出标准词表。
+"""批量分析关键词指标（SEM keywords.GetInfo + SIM suggest）并输出标准词表。
 
 Usage:
   python3 analyze-words/_internal/scripts/analyze_words.py run --keyword "image to text"
@@ -31,6 +31,17 @@ LEGACY_LOCAL_SERVICE_GMITM_PATH = PROJECT_DIR / "local-service" / "gmitm.txt"
 
 DEFAULT_API_BASE = "http://127.0.0.1:17311"
 DEFAULT_ENDPOINT = "/sem/kwogw/v2/webapi/keywords.GetInfo"
+DEFAULT_SIM_ENDPOINT = "/sim/api/KeywordGenerator/google/suggest"
+
+SIM_ROWS_PER_PAGE = 5
+SIM_TYPE = "Related"
+SIM_SORT_FIELD = "score"
+SIM_ASC = False
+SIM_COUNTRY = "999"
+SIM_LATEST = "28d"
+SIM_WEB_SOURCE = "Total"
+SIM_IS_WINDOW = True
+SIM_PAGE = 1
 
 STANDARD_WORD_TABLE_VERSION = "v1"
 STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
@@ -65,7 +76,9 @@ REQUIRED_REMARKS = [
     "globalVolume = sum(volume)",
     "globalCpcAvg / globalDifficultyAvg 仅统计非 null 项",
     "标准词表 score 仅由 SIM 字段计算：simWindowVolume * simCpc / simKd",
-    "任一关键词抓取失败时默认整次失败，不落任何新产物",
+    "SIM Suggest 使用 rowsPerPage=5、type=Related、sort=score、asc=false（其它参数走默认口径）",
+    "SIM 请求失败或未命中对应关键词时：继续执行并将 SIM 字段置空",
+    "任一关键词 SEM 抓取失败时默认整次失败，不落任何新产物",
 ]
 
 SOURCE_PRESENCE_LABEL_TO_ENUM = {
@@ -85,7 +98,7 @@ SOURCE_PRESENCE_ENUM_TO_LABEL = {
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="批量调用 keywords.GetInfo 并聚合关键词指标")
+    parser = argparse.ArgumentParser(description="批量调用 keywords.GetInfo + SIM Suggest 并聚合关键词指标")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     run_parser = subparsers.add_parser("run", help="抓取 + 聚合 + 快照 + 报告 + 标准词表")
@@ -111,6 +124,7 @@ def parse_args() -> argparse.Namespace:
 
     run_parser.add_argument("--api-base", default=DEFAULT_API_BASE)
     run_parser.add_argument("--endpoint", default=DEFAULT_ENDPOINT)
+    run_parser.add_argument("--sim-endpoint", default=DEFAULT_SIM_ENDPOINT)
     run_parser.add_argument("--token-path", default=str(LOCAL_SERVICE_TOKEN_PATH))
     run_parser.add_argument("--gmitm-path", default=str(LOCAL_SERVICE_GMITM_PATH))
 
@@ -717,6 +731,100 @@ def build_payload(*, keyword: str, index: int, gmitm: str, args: argparse.Namesp
     }
 
 
+def build_sim_payload(*, keyword: str, args: argparse.Namespace) -> dict:
+    return {
+        "keyword": keyword,
+        "country": SIM_COUNTRY,
+        "latest": SIM_LATEST,
+        "isWindow": SIM_IS_WINDOW,
+        "webSource": SIM_WEB_SOURCE,
+        "rowsPerPage": SIM_ROWS_PER_PAGE,
+        "asc": SIM_ASC,
+        "sort": SIM_SORT_FIELD,
+        "page": SIM_PAGE,
+        "type": SIM_TYPE,
+        "timeoutMs": args.timeout_ms,
+        "waitTimeoutMs": args.wait_timeout_ms,
+    }
+
+
+def match_sim_record_for_keyword(records: Sequence[dict], keyword_normalized: str) -> Optional[dict]:
+    target = str(keyword_normalized or "").strip()
+    if not target:
+        return None
+
+    for item in list(records)[:SIM_ROWS_PER_PAGE]:
+        if not isinstance(item, dict):
+            continue
+        candidate = normalize_keyword_text(item.get("keyword") or "")
+        if candidate == target:
+            return item
+    return None
+
+
+def fetch_sim_keyword_data(*, api_url: str, headers: dict, keyword: str, keyword_normalized: str, args: argparse.Namespace) -> dict:
+    payload = build_sim_payload(keyword=keyword, args=args)
+    try:
+        result = post_local_service(
+            api_url=api_url,
+            headers=headers,
+            payload=payload,
+            expect_jsonrpc=False,
+        )
+        upstream = result.get("upstream")
+        if not isinstance(upstream, dict):
+            raise RuntimeError("SIM 上游响应不是对象")
+
+        records = upstream.get("records") or []
+        if not isinstance(records, list):
+            raise RuntimeError("SIM 上游 records 非数组")
+
+        matched_record = match_sim_record_for_keyword(records, keyword_normalized)
+        if matched_record is None:
+            return {
+                "ok": True,
+                "status": "no_match",
+                "keyword": keyword,
+                "keywordNormalized": keyword_normalized,
+                "requestPayload": payload,
+                "wrapper": result.get("wrapper"),
+                "upstream": upstream,
+                "recordsCount": len(records),
+                "simWindowVolume": None,
+                "simCpc": None,
+                "simKd": None,
+                "matchedKeyword": None,
+            }
+
+        return {
+            "ok": True,
+            "status": "matched",
+            "keyword": keyword,
+            "keywordNormalized": keyword_normalized,
+            "requestPayload": payload,
+            "wrapper": result.get("wrapper"),
+            "upstream": upstream,
+            "recordsCount": len(records),
+            "simWindowVolume": _coerce_optional_number(matched_record.get("windowVolume")),
+            "simCpc": _coerce_optional_number(matched_record.get("cpc")),
+            "simKd": _coerce_optional_number(matched_record.get("difficulty")),
+            "matchedKeyword": str(matched_record.get("keyword") or "").strip() or None,
+        }
+    except (RuntimeError, URLError, ValueError, json.JSONDecodeError) as exc:
+        return {
+            "ok": False,
+            "status": "request_error",
+            "keyword": keyword,
+            "keywordNormalized": keyword_normalized,
+            "requestPayload": payload,
+            "error": str(exc),
+            "simWindowVolume": None,
+            "simCpc": None,
+            "simKd": None,
+            "matchedKeyword": None,
+        }
+
+
 def fetch_keyword_with_retry(
     *,
     api_url: str,
@@ -838,7 +946,15 @@ def aggregate_keyword_metrics(keyword_rows: List[dict]) -> dict:
     }
 
 
-def summarize_success_rows(rows: List[dict], input_count: int, failure_count: int) -> dict:
+def summarize_success_rows(
+    rows: List[dict],
+    input_count: int,
+    failure_count: int,
+    *,
+    sim_matched_count: int = 0,
+    sim_no_match_count: int = 0,
+    sim_failure_count: int = 0,
+) -> dict:
     total_global_volume = sum(safe_float(row.get("globalVolume")) for row in rows)
 
     cpc_values = [safe_float(row.get("globalCpcAvg")) for row in rows if row.get("globalCpcAvg") is not None]
@@ -848,10 +964,14 @@ def summarize_success_rows(rows: List[dict], input_count: int, failure_count: in
         "inputCount": input_count,
         "successCount": len(rows),
         "failureCount": failure_count,
+        "simMatchedCount": sim_matched_count,
+        "simNoMatchCount": sim_no_match_count,
+        "simFailureCount": sim_failure_count,
         "totalGlobalVolume": int(round(total_global_volume)) if abs(total_global_volume - round(total_global_volume)) < 1e-9 else round(total_global_volume, 4),
         "avgGlobalCpc": round(sum(cpc_values) / len(cpc_values), 6) if cpc_values else None,
         "avgGlobalDifficulty": round(sum(kd_values) / len(kd_values), 6) if kd_values else None,
     }
+
 
 
 def sort_rows(rows: List[dict]) -> List[dict]:
@@ -914,6 +1034,15 @@ def _build_standard_word_rows(input_keywords: List[dict], success_rows: List[dic
             seed["semVolume"] = _coerce_int_if_whole(_coerce_optional_number(sem_metrics.get("globalVolume")))
             seed["semCpc"] = _coerce_optional_number(sem_metrics.get("globalCpcAvg"))
             seed["semKd"] = _coerce_optional_number(sem_metrics.get("globalDifficultyAvg"))
+            sim_window_volume = _coerce_optional_number(sem_metrics.get("simWindowVolume"))
+            sim_cpc = _coerce_optional_number(sem_metrics.get("simCpc"))
+            sim_kd = _coerce_optional_number(sem_metrics.get("simKd"))
+            if sim_window_volume is not None:
+                seed["simWindowVolume"] = _coerce_int_if_whole(sim_window_volume)
+            if sim_cpc is not None:
+                seed["simCpc"] = sim_cpc
+            if sim_kd is not None:
+                seed["simKd"] = sim_kd
 
         row = {
             "keyword": keyword,
@@ -1049,6 +1178,16 @@ def build_snapshot(
             "request": {
                 "apiBase": args.api_base,
                 "endpoint": args.endpoint,
+                "simEndpoint": args.sim_endpoint,
+                "simRowsPerPage": SIM_ROWS_PER_PAGE,
+                "simType": SIM_TYPE,
+                "simSort": SIM_SORT_FIELD,
+                "simAsc": SIM_ASC,
+                "simCountry": SIM_COUNTRY,
+                "simLatest": SIM_LATEST,
+                "simWebSource": SIM_WEB_SOURCE,
+                "simIsWindow": SIM_IS_WINDOW,
+                "simPage": SIM_PAGE,
                 "device": args.device,
                 "currency": args.currency,
                 "database": args.database,
@@ -1131,6 +1270,9 @@ def render_report(snapshot: dict) -> str:
     lines.append(f"- 输入关键词数：{summary.get('inputCount', 0)}")
     lines.append(f"- 成功关键词数：{summary.get('successCount', 0)}")
     lines.append(f"- 失败关键词数：{summary.get('failureCount', 0)}")
+    lines.append(f"- SIM 匹配成功数：{summary.get('simMatchedCount', 0)}")
+    lines.append(f"- SIM 未命中数：{summary.get('simNoMatchCount', 0)}")
+    lines.append(f"- SIM 请求失败数：{summary.get('simFailureCount', 0)}")
     lines.append(f"- 标准词表行数：{summary.get('standardWordRowCount', len(standard_word_rows))}")
     lines.append(f"- 有效 score 行数：{summary.get('scoredCount', 0)}")
     lines.append("")
@@ -1138,6 +1280,15 @@ def render_report(snapshot: dict) -> str:
     lines.append("## 抓取概览")
     lines.append("")
     lines.append(f"- API：{request.get('apiBase', '-')}{request.get('endpoint', '-')}")
+    lines.append(f"- SIM API：{request.get('apiBase', '-')}{request.get('simEndpoint', '-')}")
+    lines.append(
+        f"- SIM 固定参数：rowsPerPage={request.get('simRowsPerPage', '-')}, type={request.get('simType', '-')}, "
+        f"sort={request.get('simSort', '-')}, asc={request.get('simAsc', '-')}"
+    )
+    lines.append(
+        f"- SIM 默认口径：country={request.get('simCountry', '-')}, latest={request.get('simLatest', '-')}, "
+        f"webSource={request.get('simWebSource', '-')}, isWindow={request.get('simIsWindow', '-')}, page={request.get('simPage', '-')}"
+    )
     lines.append(f"- 默认参数：device={request.get('device', '-')} currency={request.get('currency', '-')} database={request.get('database', '-')} locati0n={request.get('locati0n', '-')} date={request.get('date', '')!r}")
     lines.append(f"- timeoutMs={request.get('timeoutMs', '-')} / waitTimeoutMs={request.get('waitTimeoutMs', '-')} / maxRetries={request.get('maxRetries', '-')}")
     lines.append("")
@@ -1257,6 +1408,9 @@ def write_excel(snapshot: dict, output_path: Path) -> None:
         ("inputCount", summary.get("inputCount", 0)),
         ("successCount", summary.get("successCount", 0)),
         ("failureCount", summary.get("failureCount", 0)),
+        ("simMatchedCount", summary.get("simMatchedCount", 0)),
+        ("simNoMatchCount", summary.get("simNoMatchCount", 0)),
+        ("simFailureCount", summary.get("simFailureCount", 0)),
         ("standardWordRows", summary.get("standardWordRowCount", len(standard_word_rows))),
         ("scoredCount", summary.get("scoredCount", 0)),
         ("scoreFormula", request.get("scoreFormula", SCORE_FORMULA)),
@@ -1431,18 +1585,23 @@ def run_pipeline(args: argparse.Namespace) -> int:
     headers = build_headers(token)
 
     keywords, input_overview = collect_keywords(args)
-    api_url = args.api_base.rstrip("/") + args.endpoint
+    sem_api_url = args.api_base.rstrip("/") + args.endpoint
+    sim_api_url = args.api_base.rstrip("/") + args.sim_endpoint
 
     success_rows: List[dict] = []
     failures: List[dict] = []
     raw_results: List[dict] = []
 
+    sim_matched_count = 0
+    sim_no_match_count = 0
+    sim_failure_count = 0
+
     for index, item in enumerate(keywords, start=1):
         keyword = item["keyword"]
         keyword_normalized = item["keywordNormalized"]
 
-        fetch_result = fetch_keyword_with_retry(
-            api_url=api_url,
+        sem_fetch_result = fetch_keyword_with_retry(
+            api_url=sem_api_url,
             headers=headers,
             gmitm=gmitm,
             keyword=keyword,
@@ -1450,32 +1609,83 @@ def run_pipeline(args: argparse.Namespace) -> int:
             index=index,
             args=args,
         )
-        raw_results.append(fetch_result)
 
-        if not fetch_result.get("ok"):
-            attempts = fetch_result.get("attempts") or []
+        if not sem_fetch_result.get("ok"):
+            attempts = sem_fetch_result.get("attempts") or []
             failures.append(
                 {
                     "keyword": keyword,
                     "keywordNormalized": keyword_normalized,
                     "attempts": len(attempts),
-                    "error": str(fetch_result.get("error") or "未知错误"),
+                    "error": str(sem_fetch_result.get("error") or "未知错误"),
+                }
+            )
+            raw_results.append(
+                {
+                    "keyword": keyword,
+                    "keywordNormalized": keyword_normalized,
+                    "sem": sem_fetch_result,
+                    "sim": {
+                        "ok": True,
+                        "status": "skipped_due_to_sem_failure",
+                        "keyword": keyword,
+                        "keywordNormalized": keyword_normalized,
+                        "simWindowVolume": None,
+                        "simCpc": None,
+                        "simKd": None,
+                    },
                 }
             )
             continue
 
-        keyword_rows = fetch_result.get("keywordsRows") or []
+        sim_fetch_result = fetch_sim_keyword_data(
+            api_url=sim_api_url,
+            headers=headers,
+            keyword=keyword,
+            keyword_normalized=keyword_normalized,
+            args=args,
+        )
+
+        sim_status = str(sim_fetch_result.get("status") or "")
+        if sim_status == "matched":
+            sim_matched_count += 1
+        elif sim_status == "no_match":
+            sim_no_match_count += 1
+        else:
+            sim_failure_count += 1
+
+        raw_results.append(
+            {
+                "keyword": keyword,
+                "keywordNormalized": keyword_normalized,
+                "sem": sem_fetch_result,
+                "sim": sim_fetch_result,
+            }
+        )
+
+        keyword_rows = sem_fetch_result.get("keywordsRows") or []
         metrics = aggregate_keyword_metrics(keyword_rows)
         success_rows.append(
             {
                 "keyword": keyword,
                 "keywordNormalized": keyword_normalized,
                 **metrics,
+                "simWindowVolume": _coerce_optional_number(sim_fetch_result.get("simWindowVolume")),
+                "simCpc": _coerce_optional_number(sim_fetch_result.get("simCpc")),
+                "simKd": _coerce_optional_number(sim_fetch_result.get("simKd")),
+                "simStatus": sim_status or "request_error",
             }
         )
 
     sorted_rows = sort_rows(success_rows)
-    summary = summarize_success_rows(sorted_rows, input_count=len(keywords), failure_count=len(failures))
+    summary = summarize_success_rows(
+        sorted_rows,
+        input_count=len(keywords),
+        failure_count=len(failures),
+        sim_matched_count=sim_matched_count,
+        sim_no_match_count=sim_no_match_count,
+        sim_failure_count=sim_failure_count,
+    )
 
     if failures:
         print("以下关键词抓取失败：")
@@ -1510,7 +1720,17 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "stamp": stamp,
             "summary": summary,
             "request": {
-                "apiUrl": api_url,
+                "semApiUrl": sem_api_url,
+                "simApiUrl": sim_api_url,
+                "simRowsPerPage": SIM_ROWS_PER_PAGE,
+                "simType": SIM_TYPE,
+                "simSort": SIM_SORT_FIELD,
+                "simAsc": SIM_ASC,
+                "simCountry": SIM_COUNTRY,
+                "simLatest": SIM_LATEST,
+                "simWebSource": SIM_WEB_SOURCE,
+                "simIsWindow": SIM_IS_WINDOW,
+                "simPage": SIM_PAGE,
                 "maxRetries": MAX_RETRIES,
             },
             "inputOverview": input_overview,

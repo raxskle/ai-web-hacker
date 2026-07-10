@@ -1,21 +1,21 @@
 {
   "version": "v1",
   "meta": {
-    "generatedAt": "2026-07-10T21:56:34",
+    "generatedAt": "2026-07-10T21:10:58",
     "standardWordTableVersion": "v1",
     "scoreFormula": "simWindowVolume * simCpc / simKd",
-    "stamp": "20260710-215634"
+    "stamp": "20260710-211058"
   },
   "rows": [
     {
       "keyword": "image",
       "correspondingDomain": null,
       "group": "image",
-      "sourcePresence": "both",
-      "score": 15577.004211,
-      "simWindowVolume": 1072330.0,
-      "simKd": 95.0,
-      "simCpc": 1.38,
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
       "semVolume": 2198880.0,
       "semKd": 100.0,
       "semCpc": 2.01,

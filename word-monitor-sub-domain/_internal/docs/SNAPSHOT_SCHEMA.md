@@ -37,7 +37,20 @@
     },
     "output": {
       "reportHistoryPath": ".../report/history/report-20260708-210001.md",
-      "excelHistoryPath": ".../report/history/keyword-table-20260708-210001.xlsx"
+      "excelHistoryPath": ".../report/history/keyword-table-20260708-210001.xlsx",
+      "finalWordsXlsxPath": ".../words/sub-domain-20260708-210001.xlsx",
+      "chainStages": {
+        "status": "completed",
+        "chainRoot": ".../_internal/chained/20260708-210001",
+        "analyzeWords": {
+          "latestXlsxPath": ".../_internal/chained/20260708-210001/analyze-words/report/latest.xlsx",
+          "latestJsonPath": ".../_internal/chained/20260708-210001/analyze-words/report/latest.json"
+        },
+        "checkGefeiKd": {
+          "latestXlsxPath": ".../_internal/chained/20260708-210001/check-gefei-kd/report/latest.xlsx",
+          "latestJsonPath": ".../_internal/chained/20260708-210001/check-gefei-kd/report/latest.json"
+        }
+      }
     },
     "latestReportPath": ".../report/latest.md",
     "latestExcelPath": ".../report/latest.xlsx",
@@ -191,6 +204,10 @@
 - `comparison.gefeiKD.summary`：本次标准词表 enrichment 的输入量 / 成功量 / 失败量
 - `comparison.gefeiKD.failures[]`：失败关键词及错误信息
 - `meta.api.gefeiKD`：本次查询使用的 API 地址、鉴权方式与 key 来源
+- `meta.output.finalWordsXlsxPath`：发布到 `words/sub-domain-[timestamp].xlsx` 的最终完整标准词表路径
+- `meta.output.chainStages`：后置串联链路执行结果
+  - `status=completed`：成功执行 analyze-words 与 check-gefei-kd
+  - `status=skipped`：本次 `standardWordRows=0`，跳过串联，最终词表直接来自历史 `keyword-table-{stamp}.xlsx`
 
 判定规则：
 - 页面新增：today 有、baseline 无、`clicks>=100`

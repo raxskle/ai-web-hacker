@@ -1,7 +1,7 @@
 ---
 name: word-monitor-sub-domain
-version: 0.1.0
-description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归档快照并输出新增/上涨统一监控报告与标准词表 Excel。"
+version: 0.2.0
+description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归档快照并输出新增/上涨统一监控报告，串联 analyze-words + check-gefei-kd 产出完整标准词表。"
 ---
 
 # word-monitor-sub-domain（MVP）
@@ -13,8 +13,9 @@ description: "抓取 vercel.app 在 Similarweb Landing Pages 前8页样本，归
 3. 保存抓取归档与标准化快照
 4. 对比最近一次历史快照
 5. 输出 Markdown 报告（单表合并展示页面与子域名结果）
-6. 输出标准词表 Excel（仅新增页面/子域名的 top keywords）
-7. 查询哥飞 KD，补齐 `gefeiKD`
+6. 输出初始标准词表 Excel（仅新增页面/子域名的 top keywords）
+7. 按顺序串联 `analyze-words` 与 `check-gefei-kd`，得到完整标准词表
+8. 发布最终词表到 `words/sub-domain-YYYYMMDD-HHMMSS.xlsx`
 
 ## 执行方式
 
@@ -37,10 +38,11 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - token 文件：`word-monitor-sub-domain/local-service/bridge_token.txt`
 - 抓取归档：`word-monitor-sub-domain/data/fetch-YYYYMMDD-HHMMSS.json`
 - 标准化快照：`word-monitor-sub-domain/_internal/snapshots/snapshot-YYYYMMDD-HHMMSS.json`
-- 历史报告：`word-monitor-sub-domain/report/history/report-YYYYMMDD-HHMMSS.md`
-- 历史 Excel：`word-monitor-sub-domain/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`
-- 最新报告：`word-monitor-sub-domain/report/latest.md`
-- 最新 Excel：`word-monitor-sub-domain/report/latest.xlsx`
+- 历史报告：`word-monitor-sub-domain/report/history/report-YYYYMMDD-HHMMSS.md`（最终词表口径）
+- 历史 Excel：`word-monitor-sub-domain/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`（最终完整词表）
+- 最新报告：`word-monitor-sub-domain/report/latest.md`（最终词表口径）
+- 最新 Excel：`word-monitor-sub-domain/report/latest.xlsx`（最终完整词表）
+- 最终完整标准词表：`words/sub-domain-YYYYMMDD-HHMMSS.xlsx`（仓库根目录）
 
 ## 固定抓取参数（默认）
 
@@ -79,8 +81,11 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 ## 产物说明
 
 - Markdown 报告合并展示页面与子域名结果
-- 标准词表 Excel 仅导出新增页面/子域名对应的 top keywords
-- 相同 `keyword` 按词去重，仅保留一行
-- `对应域名` 聚合同词命中的全部域名 / 页面上下文
-- `gefeiKD` 使用哥飞 KD API 返回的 `score`
-- 其余标准词表指标列可为空
+- 标准词表种子先导出新增页面/子域名对应的 top keywords
+- 种子词表会继续串联：
+  - `analyze-words`：补全 SIM/SEM
+  - `check-gefei-kd`：回填/刷新 `gefeiKD`
+- `report/history/report-YYYYMMDD-HHMMSS.md` 与 `report/latest.md` 会按最终词表口径重写，确保与最终词表一致
+- 最终完整词表写入：`words/sub-domain-[timestamp].xlsx`（仓库根目录）
+- 相同 `keyword` 按词去重，仅保留一行；`对应域名` 聚合同词命中的全部域名 / 页面上下文
+- 其余标准词表指标列按接口返回结果允许为空
