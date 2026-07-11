@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-11T16:00:13",
+    "stamp": "20260711-160008",
+    "siteId": "playhop_com"
+  },
+  "crawl": {
+    "siteId": "playhop_com",
+    "startSitemapUrls": [
+      "https://playhop.com/sitemap.xml"
+    ],
+    "sitemapsFetched": 1,
+    "sitemapUrlsDiscovered": 0,
+    "ignoredByDepthLimit": 0,
+    "rawPageUrlCount": 40,
+    "dedupedPageUrlCount": 40,
+    "fetches": [
+      {
+        "url": "https://playhop.com/sitemap.xml",
+        "finalUrl": "https://playhop.com/sitemap.xml",
+        "status": 200,
+        "attempt": 1,
+        "depth": 0,
+        "parent": null,
+        "type": "urlset",
+        "locCount": 40,
+        "childSitemaps": 0,
+        "bytes": 5042
+      }
+    ],
+    "limits": {
+      "maxSitemapsPerSite": 300
+    }
+  },
+  "rawUrls": [
+    "https://playhop.com/about",
+    "https://playhop.com/advertisers",
+    "https://playhop.com/battle-arena",
+    "https://playhop.com/blog",
+    "https://playhop.com/blog/guides",
+    "https://playhop.com/blog/guides/2048-strategy-guide",
+    "https://playhop.com/blog/guides/best-hangman-words",
+    "https://playhop.com/blog/guides/bubble-shooter-scoring-guide",
+    "https://playhop.com/blog/guides/hexanaut-guide",
+    "https://playhop.com/blog/guides/knights-and-brides-energy-guide",
+    "https://playhop.com/blog/guides/poppy-playtime",
+    "https://playhop.com/blog/guides/quick-start-guide-for-klondike",
+    "https://playhop.com/blog/guides/slice-master",
+    "https://playhop.com/blog/guides/snake-world-record",
+    "https://playhop.com/blog/guides/solitaire-strategy-guide",
+    "https://playhop.com/blog/guides/spider-solitaire-strategy",
+    "https://playhop.com/blog/guides/tiny-fishing",
+    "https://playhop.com/blog/guides/toilet-tower-defense-value-guide",
+    "https://playhop.com/blog/guides/trace-walkthrough",
+    "https://playhop.com/blog/guides/video-game-genres",
+    "https://playhop.com/blog/reviews",
+    "https://playhop.com/blog/reviews/best-battle-royale-games",
+    "https://playhop.com/blog/reviews/best-browser-games",
+    "https://playhop.com/blog/reviews/best-building-games",
+    "https://playhop.com/blog/reviews/best-free-browser-games",
+    "https://playhop.com/blog/reviews/best-horror-games",
+    "https://playhop.com/blog/reviews/best-indie-games",
+    "https://playhop.com/blog/reviews/best-old-games-classic-games",
+    "https://playhop.com/blog/reviews/best-online-team-building-games",
+    "https://playhop.com/blog/reviews/best-territory-capture-games",
+    "https://playhop.com/blog/reviews/best-unblocked-games-for-school-chromebook",
+    "https://playhop.com/blog/reviews/best-zombie-games",
+    "https://playhop.com/blog/reviews/clicker-games-unblocked",
+    "https://playhop.com/blog/reviews/facts-about-the-video-game-industry",
+    "https://playhop.com/blog/reviews/games-like-retro-bowl",
+    "https://playhop.com/blog/reviews/generative-ai-video-games",
+    "https://playhop.com/developers",
+    "https://playhop.com/faq",
+    "https://playhop.com/jobs",
+    "https://playhop.com/publishers"
+  ]
+}

@@ -16,6 +16,7 @@ import gzip
 import json
 import re
 import shutil
+import subprocess
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -52,6 +53,10 @@ TOP_KEYWORDS_IN_REPORT = 60
 
 STANDARD_WORD_TABLE_VERSION = "v1"
 STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
+ANALYZE_WORDS_SCRIPT_PATH = REPO_ROOT / "analyze-words" / "_internal" / "scripts" / "analyze_words.py"
+CHECK_GEFEI_KD_SCRIPT_PATH = REPO_ROOT / "check-gefei-kd" / "_internal" / "scripts" / "check_gefei_kd.py"
+DEFAULT_WORDS_DIR = REPO_ROOT / "words"
+DEFAULT_CHAIN_WORK_DIR = PROJECT_DIR / "_internal" / "chained"
 DEFAULT_COLUMN_MIN_WIDTH = 12
 DEFAULT_COLUMN_MAX_WIDTH = 72
 DEFAULT_COLUMN_PADDING = 2
@@ -93,6 +98,8 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--snapshot-root", default=str(DEFAULT_SNAPSHOT_ROOT))
     run_parser.add_argument("--report-history-root", default=str(DEFAULT_REPORT_HISTORY_ROOT))
     run_parser.add_argument("--report-latest-root", default=str(DEFAULT_REPORT_LATEST_ROOT))
+    run_parser.add_argument("--words-dir", default=str(DEFAULT_WORDS_DIR))
+    run_parser.add_argument("--chain-work-dir", default=str(DEFAULT_CHAIN_WORK_DIR))
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建历史报告")
     rebuild_parser.add_argument("--site", help="仅重建单站（默认重建所有）")
@@ -100,6 +107,8 @@ def parse_args() -> argparse.Namespace:
     rebuild_parser.add_argument("--snapshot-root", default=str(DEFAULT_SNAPSHOT_ROOT))
     rebuild_parser.add_argument("--report-history-root", default=str(DEFAULT_REPORT_HISTORY_ROOT))
     rebuild_parser.add_argument("--report-latest-root", default=str(DEFAULT_REPORT_LATEST_ROOT))
+    rebuild_parser.add_argument("--words-dir", default=str(DEFAULT_WORDS_DIR))
+    rebuild_parser.add_argument("--chain-work-dir", default=str(DEFAULT_CHAIN_WORK_DIR))
 
     validate_parser = subparsers.add_parser("validate-report", help="校验 Markdown 报告结构")
     validate_parser.add_argument(
@@ -144,11 +153,51 @@ def safe_float(value) -> float:
         return 0.0
 
 
+
 def to_int_if_possible(v: float) -> str:
     value = safe_float(v)
     if abs(value - round(value)) < 1e-9:
         return str(int(round(value)))
     return f"{value:.2f}"
+
+
+def compute_sim_score(row: dict) -> Optional[float]:
+    sim_window_volume = safe_float(row.get("simWindowVolume"))
+    sim_cpc = safe_float(row.get("simCpc"))
+    sim_kd = safe_float(row.get("simKd"))
+    if sim_window_volume <= 0 or sim_cpc <= 0 or sim_kd <= 0:
+        return None
+    return sim_window_volume * sim_cpc / sim_kd
+
+
+def has_sim_metrics(row: dict) -> bool:
+    return (
+        safe_float(row.get("simWindowVolume")) > 0
+        and safe_float(row.get("simCpc")) > 0
+        and safe_float(row.get("simKd")) > 0
+    )
+
+
+def has_sem_metrics(row: dict) -> bool:
+    return (
+        safe_float(row.get("semVolume")) > 0
+        and safe_float(row.get("semCpc")) > 0
+        and safe_float(row.get("semKd")) > 0
+    )
+
+
+def has_gefei_kd(row: dict) -> bool:
+    value = row.get("gefeiKD")
+    return value not in (None, "")
+
+
+def _display_optional_number(value) -> str:
+    if value in (None, ""):
+        return "-"
+    number = safe_float(value)
+    if abs(number - round(number)) < 1e-9:
+        return str(int(round(number)))
+    return f"{number:.2f}"
 
 
 def _fmt_md_cell(value) -> str:
@@ -174,6 +223,7 @@ def _fmt_md_cell(value) -> str:
 
 
 def _md_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> List[str]:
+
     if not rows:
         return ["（无）"]
     lines = [
@@ -1055,12 +1105,21 @@ def render_report(snapshot: dict) -> str:
     return "\n".join(lines)
 
 
-def render_merged_report(*, stamp: str, site_results: List[dict]) -> str:
+def render_merged_report(*, stamp: str, site_results: List[dict], final_standard_word_rows: Optional[List[dict]] = None) -> str:
     total_effective = sum(safe_int(r.get("effectiveUrlCount")) for r in site_results)
     total_new = sum(safe_int(r.get("newlyAddedCount")) for r in site_results)
     total_removed = sum(safe_int(r.get("removedCount")) for r in site_results)
     total_patterns = sum(safe_int(r.get("newPatternCount")) for r in site_results)
     total_keywords = sum(safe_int(r.get("keywordCount")) for r in site_results)
+
+    if final_standard_word_rows is None:
+        merged_standard_word_rows = build_merged_standard_word_rows(site_results).get("rows") or []
+    else:
+        merged_standard_word_rows = final_standard_word_rows
+
+    sim_ready_count = sum(1 for row in merged_standard_word_rows if has_sim_metrics(row))
+    sem_ready_count = sum(1 for row in merged_standard_word_rows if has_sem_metrics(row))
+    gefei_kd_ready_count = sum(1 for row in merged_standard_word_rows if has_gefei_kd(row))
 
     lines: List[str] = []
     lines.append(f"# Sitemap 合并监控报告（{stamp}）")
@@ -1075,6 +1134,10 @@ def render_merged_report(*, stamp: str, site_results: List[dict]) -> str:
     lines.append(f"- 移除内页总数：{total_removed}")
     lines.append(f"- 新增路由模式总数：{total_patterns}")
     lines.append(f"- 新关键词候选总数：{total_keywords}")
+    lines.append(f"- 标准词表行数：{len(merged_standard_word_rows)}（最终完整词表）")
+    lines.append(f"- SIM 指标完整行数：{sim_ready_count}")
+    lines.append(f"- SEM 指标完整行数：{sem_ready_count}")
+    lines.append(f"- gefeiKD 已回填行数：{gefei_kd_ready_count}")
     lines.append("")
 
     lines.append("## Sitemap 概览")
@@ -1143,8 +1206,24 @@ def render_merged_report(*, stamp: str, site_results: List[dict]) -> str:
     lines.extend(_md_table(["siteId", "type", "keyword", "score", "urlCount", "examples"], keyword_rows))
     lines.append("")
 
+    lines.append("## 最终标准词表摘要")
+    lines.append("")
+    final_table_rows = [
+        [
+            row.get("keyword", "-") or "-",
+            _display_optional_number(row.get("simWindowVolume")),
+            _display_optional_number(row.get("semVolume")),
+            _display_optional_number(row.get("gefeiKD")),
+            _display_optional_number(compute_sim_score(row)),
+        ]
+        for row in merged_standard_word_rows[:20]
+    ]
+    lines.extend(_md_table(["keyword", "simVolume", "semVolume", "gefeiKD", "score(sim)"], final_table_rows))
+    lines.append("")
+
     lines.append("## 备注")
     lines.append("")
+    lines.append("- 标准词表为最终口径：种子词表经 analyze-words（SIM/SEM）与 check-gefei-kd（gefeiKD）补全后写入 report 与 words 目录")
     for remark in REQUIRED_REMARKS:
         lines.append(f"- {remark}")
     lines.append("")
@@ -1298,20 +1377,191 @@ def write_merged_standard_word_table(*, stamp: str, site_results: List[dict], re
     return history_path, latest_path
 
 
-def write_merged_report(*, stamp: str, site_results: List[dict], report_history_root: Path, report_latest_root: Path) -> Tuple[Path, Path]:
+def write_merged_report(
+    *,
+    stamp: str,
+    site_results: List[dict],
+    report_history_root: Path,
+    report_latest_root: Path,
+    final_standard_word_rows: Optional[List[dict]] = None,
+) -> Tuple[Path, Path]:
     merged_history_dir = report_history_root
     merged_latest_path = report_latest_root / MERGED_LATEST_FILE
 
     ensure_dir(merged_history_dir)
     ensure_dir(merged_latest_path.parent)
 
-    merged_text = render_merged_report(stamp=stamp, site_results=site_results)
+    merged_text = render_merged_report(
+        stamp=stamp,
+        site_results=site_results,
+        final_standard_word_rows=final_standard_word_rows,
+    )
     history_path = merged_history_dir / f"report-{stamp}.md"
 
     history_path.write_text(merged_text, encoding="utf-8")
     merged_latest_path.write_text(merged_text, encoding="utf-8")
 
     return history_path, merged_latest_path
+
+
+def _run_python_stage(*, stage_name: str, script_path: Path, extra_args: Sequence[str]) -> None:
+    if not script_path.exists():
+        raise RuntimeError(f"{stage_name} 脚本不存在: {script_path}")
+
+    command = [sys.executable, str(script_path), *list(extra_args)]
+    print(f"[stage] {stage_name}: {' '.join(command)}")
+
+    try:
+        subprocess.run(command, cwd=str(REPO_ROOT), check=True)
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(f"{stage_name} 执行失败，退出码: {exc.returncode}") from exc
+
+
+def _run_analyze_words_stage(*, seed_table_xlsx: Path, chain_root: Path) -> dict:
+    stage_root = chain_root / "analyze-words"
+    data_dir = stage_root / "data"
+    snapshot_dir = stage_root / "_internal" / "snapshots"
+    report_dir = stage_root / "report" / "history"
+    latest_report_path = stage_root / "report" / "latest.md"
+    latest_xlsx_path = stage_root / "report" / "latest.xlsx"
+    latest_table_json_path = stage_root / "report" / "latest.json"
+
+    _run_python_stage(
+        stage_name="analyze-words",
+        script_path=ANALYZE_WORDS_SCRIPT_PATH,
+        extra_args=[
+            "run",
+            "--input-table",
+            str(seed_table_xlsx),
+            "--data-dir",
+            str(data_dir),
+            "--snapshot-dir",
+            str(snapshot_dir),
+            "--report-dir",
+            str(report_dir),
+            "--latest-report-path",
+            str(latest_report_path),
+            "--latest-xlsx-path",
+            str(latest_xlsx_path),
+            "--latest-table-json-path",
+            str(latest_table_json_path),
+        ],
+    )
+
+    if not latest_xlsx_path.exists():
+        raise RuntimeError(f"analyze-words 未产出 latest xlsx: {latest_xlsx_path}")
+    if not latest_table_json_path.exists():
+        raise RuntimeError(f"analyze-words 未产出 latest json: {latest_table_json_path}")
+
+    return {
+        "latestReportPath": latest_report_path,
+        "latestXlsxPath": latest_xlsx_path,
+        "latestJsonPath": latest_table_json_path,
+        "root": stage_root,
+    }
+
+
+def _run_check_gefei_kd_stage(*, input_table_xlsx: Path, chain_root: Path) -> dict:
+    stage_root = chain_root / "check-gefei-kd"
+    data_dir = stage_root / "data"
+    snapshot_dir = stage_root / "_internal" / "snapshots"
+    report_dir = stage_root / "report" / "history"
+    latest_report_path = stage_root / "report" / "latest.md"
+    latest_standard_word_table_json = stage_root / "report" / "latest.json"
+    latest_standard_word_table_xlsx = stage_root / "report" / "latest.xlsx"
+
+    _run_python_stage(
+        stage_name="check-gefei-kd",
+        script_path=CHECK_GEFEI_KD_SCRIPT_PATH,
+        extra_args=[
+            "run",
+            "--standard-word-table",
+            str(input_table_xlsx),
+            "--data-dir",
+            str(data_dir),
+            "--snapshot-dir",
+            str(snapshot_dir),
+            "--report-dir",
+            str(report_dir),
+            "--latest-report-path",
+            str(latest_report_path),
+            "--latest-standard-word-table-json",
+            str(latest_standard_word_table_json),
+            "--latest-standard-word-table-xlsx",
+            str(latest_standard_word_table_xlsx),
+        ],
+    )
+
+    if not latest_standard_word_table_xlsx.exists():
+        raise RuntimeError(f"check-gefei-kd 未产出 latest xlsx: {latest_standard_word_table_xlsx}")
+    if not latest_standard_word_table_json.exists():
+        raise RuntimeError(f"check-gefei-kd 未产出 latest json: {latest_standard_word_table_json}")
+
+    return {
+        "latestReportPath": latest_report_path,
+        "latestXlsxPath": latest_standard_word_table_xlsx,
+        "latestJsonPath": latest_standard_word_table_json,
+        "root": stage_root,
+    }
+
+
+def _publish_final_words_xlsx(*, final_xlsx: Path, words_dir: Path, stamp: str) -> Path:
+    if not final_xlsx.exists():
+        raise RuntimeError(f"最终标准词表不存在: {final_xlsx}")
+
+    ensure_dir(words_dir)
+    target = words_dir / f"sitemap-{stamp}.xlsx"
+    shutil.copyfile(final_xlsx, target)
+    return target
+
+
+def run_keyword_enrichment_chain(
+    *,
+    stamp: str,
+    seed_table_xlsx: Path,
+    chain_work_dir: Path,
+    words_dir: Path,
+    publish_stamp: Optional[str] = None,
+) -> dict:
+    chain_root = chain_work_dir / stamp
+    ensure_dir(chain_root)
+
+    analyze_outputs = _run_analyze_words_stage(
+        seed_table_xlsx=seed_table_xlsx,
+        chain_root=chain_root,
+    )
+    check_outputs = _run_check_gefei_kd_stage(
+        input_table_xlsx=Path(analyze_outputs["latestXlsxPath"]),
+        chain_root=chain_root,
+    )
+
+    final_words_xlsx_path = _publish_final_words_xlsx(
+        final_xlsx=Path(check_outputs["latestXlsxPath"]),
+        words_dir=words_dir,
+        stamp=publish_stamp or stamp,
+    )
+
+    final_table_payload = load_json(Path(check_outputs["latestJsonPath"]))
+    final_rows = final_table_payload.get("rows") if isinstance(final_table_payload, dict) else []
+    if not isinstance(final_rows, list):
+        final_rows = []
+
+    return {
+        "rows": final_rows,
+        "finalWordsXlsxPath": final_words_xlsx_path,
+        "chainStages": {
+            "status": "completed",
+            "chainRoot": str(chain_root),
+            "analyzeWords": {
+                "latestXlsxPath": str(analyze_outputs["latestXlsxPath"]),
+                "latestJsonPath": str(analyze_outputs["latestJsonPath"]),
+            },
+            "checkGefeiKd": {
+                "latestXlsxPath": str(check_outputs["latestXlsxPath"]),
+                "latestJsonPath": str(check_outputs["latestJsonPath"]),
+            },
+        },
+    }
 
 
 def cleanup_legacy_report_layout(*, report_history_root: Path, report_latest_root: Path) -> None:
@@ -1560,11 +1810,14 @@ def run_pipeline(args: argparse.Namespace) -> int:
     snapshot_root = Path(args.snapshot_root).resolve()
     report_history_root = Path(args.report_history_root).resolve()
     report_latest_root = Path(args.report_latest_root).resolve()
+    words_dir = Path(args.words_dir).resolve()
+    chain_work_dir = Path(args.chain_work_dir).resolve()
 
     ensure_dir(data_root)
     ensure_dir(snapshot_root)
     ensure_dir(report_history_root)
     ensure_dir(report_latest_root)
+    ensure_dir(words_dir)
 
     cleanup_legacy_report_layout(report_history_root=report_history_root, report_latest_root=report_latest_root)
 
@@ -1609,17 +1862,44 @@ def run_pipeline(args: argparse.Namespace) -> int:
         else:
             print(f"[done] baseline      : {result['baselinePath']}")
 
-    merged_history_path, merged_latest_path = write_merged_report(
-        stamp=stamp,
-        site_results=results,
-        report_history_root=report_history_root,
-        report_latest_root=report_latest_root,
-    )
     excel_history_path, excel_latest_path = write_merged_standard_word_table(
         stamp=stamp,
         site_results=results,
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
+    )
+
+    merged_standard_word_rows = build_merged_standard_word_rows(results).get("rows") or []
+    final_standard_word_rows = merged_standard_word_rows
+
+    keyword_row_count = len(merged_standard_word_rows)
+    if keyword_row_count > 0:
+        chain_result = run_keyword_enrichment_chain(
+            stamp=stamp,
+            seed_table_xlsx=excel_history_path,
+            chain_work_dir=chain_work_dir,
+            words_dir=words_dir,
+        )
+        final_words_xlsx_path = Path(chain_result["finalWordsXlsxPath"])
+        candidate_rows = chain_result.get("rows")
+        if isinstance(candidate_rows, list):
+            final_standard_word_rows = candidate_rows
+    else:
+        final_words_xlsx_path = _publish_final_words_xlsx(
+            final_xlsx=excel_history_path,
+            words_dir=words_dir,
+            stamp=stamp,
+        )
+
+    shutil.copyfile(final_words_xlsx_path, excel_history_path)
+    shutil.copyfile(final_words_xlsx_path, excel_latest_path)
+
+    merged_history_path, merged_latest_path = write_merged_report(
+        stamp=stamp,
+        site_results=results,
+        report_history_root=report_history_root,
+        report_latest_root=report_latest_root,
+        final_standard_word_rows=final_standard_word_rows,
     )
 
     purge_per_site_reports(
@@ -1632,10 +1912,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
     print(f"[done] merged latest : {merged_latest_path}")
     print(f"[done] excel history : {excel_history_path}")
     print(f"[done] excel latest  : {excel_latest_path}")
+    print(f"[done] words final   : {final_words_xlsx_path}")
     print(f"[done] sites total: {len(results)}")
     return 0
-
-
 def rebuild_single_site_reports(
     *,
     site: Optional[dict],
@@ -1739,10 +2018,13 @@ def rebuild_reports(args: argparse.Namespace) -> int:
     snapshot_root = Path(args.snapshot_root).resolve()
     report_history_root = Path(args.report_history_root).resolve()
     report_latest_root = Path(args.report_latest_root).resolve()
+    words_dir = Path(args.words_dir).resolve()
+    chain_work_dir = Path(args.chain_work_dir).resolve()
 
     ensure_dir(snapshot_root)
     ensure_dir(report_history_root)
     ensure_dir(report_latest_root)
+    ensure_dir(words_dir)
 
     cleanup_legacy_report_layout(report_history_root=report_history_root, report_latest_root=report_latest_root)
 
@@ -1777,22 +2059,52 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         merged_results.append(build_site_result_from_snapshot(site_id, site, latest_snapshot))
 
     merged_stamp = max(merged_stamps) if merged_stamps else now_stamp()
-    merged_history_path, merged_latest_path = write_merged_report(
-        stamp=merged_stamp,
-        site_results=merged_results,
-        report_history_root=report_history_root,
-        report_latest_root=report_latest_root,
-    )
+    publish_stamp = now_stamp()
     excel_history_path, excel_latest_path = write_merged_standard_word_table(
         stamp=merged_stamp,
         site_results=merged_results,
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
     )
+
+    merged_standard_word_rows = build_merged_standard_word_rows(merged_results).get("rows") or []
+    final_standard_word_rows = merged_standard_word_rows
+
+    keyword_row_count = len(merged_standard_word_rows)
+    if keyword_row_count > 0:
+        chain_result = run_keyword_enrichment_chain(
+            stamp=merged_stamp,
+            seed_table_xlsx=excel_history_path,
+            chain_work_dir=chain_work_dir,
+            words_dir=words_dir,
+            publish_stamp=publish_stamp,
+        )
+        final_words_xlsx_path = Path(chain_result["finalWordsXlsxPath"])
+        candidate_rows = chain_result.get("rows")
+        if isinstance(candidate_rows, list):
+            final_standard_word_rows = candidate_rows
+    else:
+        final_words_xlsx_path = _publish_final_words_xlsx(
+            final_xlsx=excel_history_path,
+            words_dir=words_dir,
+            stamp=publish_stamp,
+        )
+
+    shutil.copyfile(final_words_xlsx_path, excel_history_path)
+    shutil.copyfile(final_words_xlsx_path, excel_latest_path)
+
+    merged_history_path, merged_latest_path = write_merged_report(
+        stamp=merged_stamp,
+        site_results=merged_results,
+        report_history_root=report_history_root,
+        report_latest_root=report_latest_root,
+        final_standard_word_rows=final_standard_word_rows,
+    )
     print(f"[done] rebuilt merged history: {merged_history_path}")
     print(f"[done] rebuilt merged latest : {merged_latest_path}")
     print(f"[done] rebuilt excel history : {excel_history_path}")
     print(f"[done] rebuilt excel latest  : {excel_latest_path}")
+    print(f"[done] words final           : {final_words_xlsx_path}")
 
     return 0
 

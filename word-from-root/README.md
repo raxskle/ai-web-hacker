@@ -11,9 +11,10 @@
 3. 标准化两路关键词结果
 4. 分别对 SIM / SEM 做 AI 近义合并（词序、空格/`-`、单复数、无意义重复）
 5. 按分组后的关键词进行两路合并并计算排序值
-6. 批量查询哥飞 KD，补齐 `gefeiKD`
-7. 归档原始抓取结果与标准化快照
-8. 生成 Markdown 摘要与标准词表 Excel 明细
+6. 先生成基础标准词表（history/latest）
+7. 调用 `check-gefei-kd` 对标准词表执行后置分析（默认最多前 50 词）
+8. 将 `gefeiKD` 回填到最终标准词表并重写 Markdown/Excel
+9. 额外同步最终 Excel 到仓库根目录 `words/root-[关键词根]-[time].xlsx`
 
 ## 目录说明
 
@@ -51,6 +52,8 @@ curl -s http://127.0.0.1:17311/health
 # 执行一次完整抓取
 python3 word-from-root/_internal/scripts/word_from_root.py run --keyword "image to text"
 ```
+
+> 默认后置分析只处理标准词表前 50 个关键词，可用 `--gefei-kd-max-keywords` 调整（传 `0` 表示不限制）。
 
 可选命令：
 
@@ -118,6 +121,22 @@ python3 word-from-root/_internal/scripts/word_from_root.py run   --keyword "imag
 - `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
 
 因此 `word-from-root` 产物可直接作为后续 skill（如 analyze/check）的输入交换表。
+
+### 后置 KD 分析与发布
+
+- `check-gefei-kd` 后置分析默认仅处理标准词表前 50 个关键词（可通过 `--gefei-kd-max-keywords` 调整，`0` 表示不限制）。
+- 最终标准词表 Excel 会额外同步到仓库根目录 `words/`。
+- 命名规则：`root-[关键词根]-[YYYYMMDD-HHMMSS].xlsx`（关键词会做文件名安全清洗）。
+
+### 常用新增参数
+
+```bash
+python3 word-from-root/_internal/scripts/word_from_root.py run \
+  --keyword "image to text" \
+  --gefei-kd-max-keywords 50 \
+  --words-dir "$(pwd)/words" \
+  --chain-work-dir "word-from-root/_internal/chained"
+```
 
 ## 相关文件
 

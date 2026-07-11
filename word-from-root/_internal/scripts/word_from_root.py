@@ -29,7 +29,7 @@ REPO_ROOT = PROJECT_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from shared_gefei_kd import fetch_gefei_kd_rows
+
 
 LOCAL_SERVICE_TOKEN_PATH = PROJECT_DIR / "local-service" / "bridge_token.txt"
 LOCAL_SERVICE_GMITM_PATH = PROJECT_DIR / "local-service" / "__gmitm.txt"
@@ -37,6 +37,7 @@ LEGACY_LOCAL_SERVICE_GMITM_PATH = PROJECT_DIR / "local-service" / "gmitm.txt"
 
 STANDARD_WORD_TABLE_VERSION = "v1"
 STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
+CHECK_GEFEI_KD_SCRIPT_PATH = REPO_ROOT / "check-gefei-kd" / "_internal" / "scripts" / "check_gefei_kd.py"
 
 DEFAULT_API_BASE = "http://127.0.0.1:17311"
 SIM_ENDPOINT = "/sim/api/KeywordGenerator/google/suggest"
@@ -143,6 +144,9 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--report-dir", default=str(PROJECT_DIR / "report" / "history"))
     run_parser.add_argument("--latest-report-path", default=str(PROJECT_DIR / "report" / "latest.md"))
     run_parser.add_argument("--latest-xlsx-path", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
+    run_parser.add_argument("--gefei-kd-max-keywords", type=int, default=50)
+    run_parser.add_argument("--words-dir", default=str(REPO_ROOT / "words"))
+    run_parser.add_argument("--chain-work-dir", default=str(PROJECT_DIR / "_internal" / "chained"))
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建 Markdown 和 Excel")
     rebuild_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
@@ -296,16 +300,117 @@ def get_header_for_field(field_name: str) -> str:
     raise RuntimeError(f"标准词表缺少字段: {field_name}")
 
 
-def enrich_rows_with_gefei_kd(merged_rows: List[dict]) -> dict:
-    keywords = [str(row.get("keyword") or "").strip() for row in merged_rows if str(row.get("keyword") or "").strip()]
-    result = fetch_gefei_kd_rows(keywords=keywords)
-    score_by_keyword = result.get("scoreByKeyword") or {}
+def _run_python_stage(*, stage_name: str, script_path: Path, extra_args: Sequence[str]) -> None:
+    if not script_path.exists():
+        raise RuntimeError(f"{stage_name} 脚本不存在: {script_path}")
 
+    command = [sys.executable, str(script_path), *list(extra_args)]
+    print(f"[stage] {stage_name}: {' '.join(command)}")
+
+    try:
+        subprocess.run(command, cwd=str(REPO_ROOT), check=True)
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(f"{stage_name} 执行失败，退出码: {exc.returncode}") from exc
+
+
+
+def _run_check_gefei_kd_stage(*, input_table_xlsx: Path, chain_root: Path, max_keywords: int) -> dict:
+    stage_root = chain_root / "check-gefei-kd"
+    data_dir = stage_root / "data"
+    snapshot_dir = stage_root / "_internal" / "snapshots"
+    report_dir = stage_root / "report" / "history"
+    latest_report_path = stage_root / "report" / "latest.md"
+    latest_standard_word_table_json = stage_root / "report" / "latest.json"
+    latest_standard_word_table_xlsx = stage_root / "report" / "latest.xlsx"
+
+    _run_python_stage(
+        stage_name="check-gefei-kd",
+        script_path=CHECK_GEFEI_KD_SCRIPT_PATH,
+        extra_args=[
+            "run",
+            "--standard-word-table",
+            str(input_table_xlsx),
+            "--max-keywords",
+            str(max(int(max_keywords or 0), 0)),
+            "--data-dir",
+            str(data_dir),
+            "--snapshot-dir",
+            str(snapshot_dir),
+            "--report-dir",
+            str(report_dir),
+            "--latest-report-path",
+            str(latest_report_path),
+            "--latest-standard-word-table-json",
+            str(latest_standard_word_table_json),
+            "--latest-standard-word-table-xlsx",
+            str(latest_standard_word_table_xlsx),
+        ],
+    )
+
+    if not latest_standard_word_table_json.exists():
+        raise RuntimeError(f"check-gefei-kd 未产出 latest json: {latest_standard_word_table_json}")
+
+    return {
+        "latestReportPath": latest_report_path,
+        "latestXlsxPath": latest_standard_word_table_xlsx,
+        "latestJsonPath": latest_standard_word_table_json,
+        "root": stage_root,
+    }
+
+
+
+def _apply_gefei_kd_from_standard_rows(merged_rows: List[dict], standard_rows: List[dict]) -> dict:
+    score_by_keyword: Dict[str, Optional[float]] = {}
+    for row in standard_rows:
+        if not isinstance(row, dict):
+            continue
+        keyword = normalize_keyword_text(str(row.get("keyword") or ""))
+        if not keyword:
+            continue
+        score_by_keyword[keyword] = row.get("gefeiKD")
+
+    updated = 0
+    non_empty = 0
     for row in merged_rows:
-        keyword = str(row.get("keyword") or "").strip().lower()
-        row["gefeiKD"] = score_by_keyword.get(keyword)
+        keyword = normalize_keyword_text(str(row.get("keyword") or ""))
+        if not keyword:
+            continue
+        if keyword not in score_by_keyword:
+            continue
+        value = score_by_keyword.get(keyword)
+        row["gefeiKD"] = value
+        updated += 1
+        if value not in (None, ""):
+            non_empty += 1
 
-    return result
+    return {
+        "mappedKeywordCount": len(score_by_keyword),
+        "updatedMergedRows": updated,
+        "nonEmptyGefeiKdRows": non_empty,
+    }
+
+
+
+def _sanitize_keyword_for_filename(keyword: str) -> str:
+    text = str(keyword or "").strip()
+    if not text:
+        return "keyword"
+    text = re.sub(r"[\\/:*?\"<>|]", "-", text)
+    text = re.sub(r"\s+", "-", text)
+    text = re.sub(r"-+", "-", text).strip("-._")
+    return text or "keyword"
+
+
+
+def _publish_final_words_xlsx(*, final_xlsx: Path, words_dir: Path, keyword: str, stamp: str) -> Path:
+    if not final_xlsx.exists():
+        raise RuntimeError(f"最终标准词表不存在: {final_xlsx}")
+
+    ensure_dir(words_dir)
+    safe_keyword = _sanitize_keyword_for_filename(keyword)
+    target = words_dir / f"root-{safe_keyword}-{stamp}.xlsx"
+    copyfile(final_xlsx, target)
+    return target
 
 
 STANDARD_WORD_TABLE_SPEC = load_standard_word_table_spec()
@@ -1748,6 +1853,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
     report_dir = Path(args.report_dir).resolve()
     latest_report_path = Path(args.latest_report_path).resolve()
     latest_xlsx_path = Path(args.latest_xlsx_path).resolve()
+    words_dir = Path(args.words_dir).resolve()
+    chain_work_dir = Path(args.chain_work_dir).resolve()
     token_path = Path(args.token_path).resolve()
     gmitm_path = Path(args.gmitm_path).resolve()
 
@@ -1768,7 +1875,6 @@ def run_pipeline(args: argparse.Namespace) -> int:
     sem_rows, sem_grouping_meta = group_source_rows_with_ai(sem_raw_rows, source="sem", args=args)
 
     merged_rows = merge_rows(sim_rows, sem_rows)
-    gefei_kd_fetch = enrich_rows_with_gefei_kd(merged_rows)
     summary_counts = build_summary_counts(
         sim_raw_rows=sim_raw_rows,
         sem_raw_rows=sem_raw_rows,
@@ -1794,7 +1900,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "sim": sim_grouping_meta,
             "sem": sem_grouping_meta,
         },
-        gefei_kd_fetch=gefei_kd_fetch,
+        gefei_kd_fetch={"summary": {}, "failures": [], "api": {}},
         excel_history_path=placeholder_excel_history_path,
         report_history_path=placeholder_report_history_path,
     )
@@ -1825,18 +1931,82 @@ def run_pipeline(args: argparse.Namespace) -> int:
         latest_xlsx_path=latest_xlsx_path,
     )
 
+    chain_root = chain_work_dir / stamp
+    ensure_dir(chain_root)
+    check_outputs = _run_check_gefei_kd_stage(
+        input_table_xlsx=Path(artifact_paths["excelHistoryPath"]),
+        chain_root=chain_root,
+        max_keywords=max(int(args.gefei_kd_max_keywords or 0), 0),
+    )
+
+    check_table_payload = load_json(Path(check_outputs["latestJsonPath"]))
+    check_rows = check_table_payload.get("rows") if isinstance(check_table_payload, dict) else None
+    if not isinstance(check_rows, list):
+        raise RuntimeError(f"check-gefei-kd 输出格式异常，缺少 rows 数组: {check_outputs['latestJsonPath']}")
+
+    kd_apply_stats = _apply_gefei_kd_from_standard_rows(merged_rows, check_rows)
+    check_meta = check_table_payload.get("meta") if isinstance(check_table_payload, dict) else {}
+    gefei_kd_summary = (check_meta or {}).get("gefeiKdSummary") or {}
+
+    snapshot_meta = snapshot.setdefault("meta", {})
+    api_meta = snapshot_meta.setdefault("api", {})
+    api_meta["gefeiKD"] = {
+        "source": "check-gefei-kd",
+        "latestJsonPath": str(check_outputs["latestJsonPath"]),
+        "latestReportPath": str(check_outputs["latestReportPath"]),
+        "summary": gefei_kd_summary,
+        "applyStats": kd_apply_stats,
+    }
+    snapshot_meta["gefeiKD"] = {
+        "summary": gefei_kd_summary,
+        "failures": [],
+    }
+
+    output_meta = snapshot_meta.setdefault("output", {})
+    output_meta["chainStages"] = {
+        "status": "completed",
+        "chainRoot": str(chain_root),
+        "checkGefeiKd": {
+            "latestReportPath": str(check_outputs["latestReportPath"]),
+            "latestJsonPath": str(check_outputs["latestJsonPath"]),
+            "latestXlsxPath": str(check_outputs["latestXlsxPath"]),
+            "maxKeywords": max(int(args.gefei_kd_max_keywords or 0), 0),
+        },
+    }
+
+    report_history_path = Path(artifact_paths["reportHistoryPath"])
+    excel_history_path = Path(artifact_paths["excelHistoryPath"])
+    snapshot_path = Path(artifact_paths["snapshotPath"])
+
+    final_report_text = render_report(snapshot)
+    report_history_path.write_text(final_report_text, encoding="utf-8")
+    latest_report_path.write_text(final_report_text, encoding="utf-8")
+    write_excel(snapshot, excel_history_path)
+    copyfile(excel_history_path, latest_xlsx_path)
+
+    final_words_xlsx_path = _publish_final_words_xlsx(
+        final_xlsx=excel_history_path,
+        words_dir=words_dir,
+        keyword=keyword,
+        stamp=stamp,
+    )
+    output_meta["finalWordsXlsxPath"] = str(final_words_xlsx_path)
+    dump_json(snapshot_path, snapshot)
+
     print(f"[done] fetch archive : {artifact_paths['fetchArchivePath']}")
     print(f"[done] snapshot      : {artifact_paths['snapshotPath']}")
     print(f"[done] report history: {artifact_paths['reportHistoryPath']}")
     print(f"[done] report latest : {latest_report_path}")
     print(f"[done] excel history : {artifact_paths['excelHistoryPath']}")
     print(f"[done] excel latest  : {latest_xlsx_path}")
+    print(f"[done] words final   : {final_words_xlsx_path}")
     print(f"[done] sim rows(raw) : {len(sim_raw_rows)}")
     print(f"[done] sim rows(grp) : {len(sim_rows)}")
     print(f"[done] sem rows(raw) : {len(sem_raw_rows)}")
     print(f"[done] sem rows(grp) : {len(sem_rows)}")
     print(f"[done] merged rows   : {len(merged_rows)}")
     print(f"[done] scored rows   : {summary_counts['scoredCount']}")
+    print(f"[done] gefeiKD apply : updated={kd_apply_stats['updatedMergedRows']} nonEmpty={kd_apply_stats['nonEmptyGefeiKdRows']}")
     return 0
 
 

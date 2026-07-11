@@ -1,0 +1,150 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-11T16:04:37",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 9,
+      "requestCount": 9,
+      "successCount": 9,
+      "successWithScoreCount": 9,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 9
+  },
+  "rows": [
+    {
+      "keyword": "green",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/green\nhttps://www.crazygames.com/br/game/green\nhttps://www.crazygames.com/cz/game/green\nhttps://www.crazygames.com/de/game/green\nhttps://www.crazygames.com/dk/game/green\nhttps://www.crazygames.com/es/game/green\nhttps://www.crazygames.com/fi/game/green\nhttps://www.crazygames.com/fr/game/green\nhttps://www.crazygames.com/game/green\nhttps://www.crazygames.com/gr/game/green\nhttps://www.crazygames.com/hu/game/green\nhttps://www.crazygames.com/id/game/green\nhttps://www.crazygames.com/it/game/green\nhttps://www.crazygames.com/jp/game/green\nhttps://www.crazygames.com/kr/game/green\nhttps://www.crazygames.com/nl/game/green\nhttps://www.crazygames.com/no/game/green\nhttps://www.crazygames.com/pl/game/green\nhttps://www.crazygames.com/ro/game/green\nhttps://www.crazygames.com/ru/game/green\nhttps://www.crazygames.com/se/game/green\nhttps://www.crazygames.com/th/game/green\nhttps://www.crazygames.com/tr/game/green\nhttps://www.crazygames.com/ua/game/green\nhttps://www.crazygames.com/vn/game/green",
+      "group": "green",
+      "sourcePresence": "both（SIM+SEM）",
+      "score": 54518.094,
+      "simWindowVolume": 833610.0,
+      "simKd": 50.0,
+      "simCpc": 3.27,
+      "semVolume": 1257960.0,
+      "semKd": 47.0,
+      "semCpc": 4.74,
+      "gefeiKD": 66.3
+    },
+    {
+      "keyword": "unscrambled",
+      "correspondingDomain": "https://www.crazygames.com/br/game/unscrambled\nhttps://www.crazygames.com/dk/game/unscrambled\nhttps://www.crazygames.com/fr/game/unscrambled\nhttps://www.crazygames.com/game/unscrambled\nhttps://www.crazygames.com/hu/game/unscrambled\nhttps://www.crazygames.com/id/game/unscrambled\nhttps://www.crazygames.com/it/game/unscrambled\nhttps://www.crazygames.com/jp/game/unscrambled\nhttps://www.crazygames.com/nl/game/unscrambled\nhttps://www.crazygames.com/no/game/unscrambled\nhttps://www.crazygames.com/ro/game/unscrambled\nhttps://www.crazygames.com/th/game/unscrambled\nhttps://www.crazygames.com/tr/game/unscrambled\nhttps://www.crazygames.com/ua/game/unscrambled\nhttps://www.crazygames.com/vn/game/unscrambled",
+      "group": "unscrambled",
+      "sourcePresence": "both（SIM+SEM）",
+      "score": 36.685106,
+      "simWindowVolume": 4660.0,
+      "simKd": 47.0,
+      "simCpc": 0.37,
+      "semVolume": 183690.0,
+      "semKd": 76.0,
+      "semCpc": 0.01,
+      "gefeiKD": 70.5
+    },
+    {
+      "keyword": "dd 2k shoot",
+      "correspondingDomain": "https://www.coolmathgames.com/0-dd-2k-shoot",
+      "group": "dd 2k shoot",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 30.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 23.1
+    },
+    {
+      "keyword": "backrooms recovery",
+      "correspondingDomain": "https://poki.com/en/g/backrooms-recovery",
+      "group": "backrooms recovery",
+      "sourcePresence": "both（SIM+SEM）",
+      "score": null,
+      "simWindowVolume": 1260.0,
+      "simKd": 79.0,
+      "simCpc": 0.0,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 47.3
+    },
+    {
+      "keyword": "block sort jigsaw puzzle journey",
+      "correspondingDomain": "https://www.crazygames.com/br/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/dk/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/fr/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/hu/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/id/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/it/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/jp/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/nl/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/no/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/ro/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/th/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/tr/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/ua/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/vn/game/block-sort---jigsaw-puzzle-journey",
+      "group": "block sort jigsaw puzzle journey",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 63.6
+    },
+    {
+      "keyword": "downhill racer bvk",
+      "correspondingDomain": "https://www.crazygames.com/br/game/downhill-racer-bvk\nhttps://www.crazygames.com/cz/game/downhill-racer-bvk\nhttps://www.crazygames.com/de/game/downhill-racer-bvk\nhttps://www.crazygames.com/dk/game/downhill-racer-bvk\nhttps://www.crazygames.com/fr/game/downhill-racer-bvk\nhttps://www.crazygames.com/game/downhill-racer-bvk\nhttps://www.crazygames.com/hu/game/downhill-racer-bvk\nhttps://www.crazygames.com/id/game/downhill-racer-bvk\nhttps://www.crazygames.com/it/game/downhill-racer-bvk\nhttps://www.crazygames.com/jp/game/downhill-racer-bvk\nhttps://www.crazygames.com/nl/game/downhill-racer-bvk\nhttps://www.crazygames.com/no/game/downhill-racer-bvk\nhttps://www.crazygames.com/ro/game/downhill-racer-bvk\nhttps://www.crazygames.com/ru/game/downhill-racer-bvk\nhttps://www.crazygames.com/th/game/downhill-racer-bvk\nhttps://www.crazygames.com/tr/game/downhill-racer-bvk\nhttps://www.crazygames.com/ua/game/downhill-racer-bvk\nhttps://www.crazygames.com/vn/game/downhill-racer-bvk",
+      "group": "downhill racer bvk",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 33.8
+    },
+    {
+      "keyword": "nightfall survivors imo",
+      "correspondingDomain": "https://www.crazygames.com/dk/game/nightfall-survivors-imo\nhttps://www.crazygames.com/fr/game/nightfall-survivors-imo\nhttps://www.crazygames.com/game/nightfall-survivors-imo\nhttps://www.crazygames.com/id/game/nightfall-survivors-imo\nhttps://www.crazygames.com/it/game/nightfall-survivors-imo\nhttps://www.crazygames.com/jp/game/nightfall-survivors-imo\nhttps://www.crazygames.com/nl/game/nightfall-survivors-imo\nhttps://www.crazygames.com/no/game/nightfall-survivors-imo\nhttps://www.crazygames.com/th/game/nightfall-survivors-imo\nhttps://www.crazygames.com/tr/game/nightfall-survivors-imo\nhttps://www.crazygames.com/ua/game/nightfall-survivors-imo\nhttps://www.crazygames.com/vn/game/nightfall-survivors-imo",
+      "group": "nightfall survivors imo",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 32.6
+    },
+    {
+      "keyword": "pixel world uyv",
+      "correspondingDomain": "https://www.crazygames.com/br/game/pixel-world-uyv\nhttps://www.crazygames.com/cz/game/pixel-world-uyv\nhttps://www.crazygames.com/de/game/pixel-world-uyv\nhttps://www.crazygames.com/dk/game/pixel-world-uyv\nhttps://www.crazygames.com/fr/game/pixel-world-uyv\nhttps://www.crazygames.com/game/pixel-world-uyv\nhttps://www.crazygames.com/hu/game/pixel-world-uyv\nhttps://www.crazygames.com/id/game/pixel-world-uyv\nhttps://www.crazygames.com/it/game/pixel-world-uyv\nhttps://www.crazygames.com/jp/game/pixel-world-uyv\nhttps://www.crazygames.com/nl/game/pixel-world-uyv\nhttps://www.crazygames.com/no/game/pixel-world-uyv\nhttps://www.crazygames.com/ro/game/pixel-world-uyv\nhttps://www.crazygames.com/ru/game/pixel-world-uyv\nhttps://www.crazygames.com/th/game/pixel-world-uyv\nhttps://www.crazygames.com/tr/game/pixel-world-uyv\nhttps://www.crazygames.com/ua/game/pixel-world-uyv\nhttps://www.crazygames.com/vn/game/pixel-world-uyv",
+      "group": "pixel world uyv",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 33.6
+    },
+    {
+      "keyword": "the flowers merge and sell bouquets",
+      "correspondingDomain": "https://www.crazygames.com/br/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/dk/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/fr/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/hu/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/id/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/it/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/jp/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/nl/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/no/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/ro/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/th/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/tr/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/ua/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/vn/game/the-flowers-merge-and-sell-bouquets",
+      "group": "the flowers merge and sell bouquets",
+      "sourcePresence": "sem_only（仅 SEM）",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 47.3
+    }
+  ]
+}

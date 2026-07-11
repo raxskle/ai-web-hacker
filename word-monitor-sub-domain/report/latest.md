@@ -1,387 +1,246 @@
-# 子域名落地页监控报告（vercel.app｜20260711-004842）
+# 子域名落地页监控报告（vercel.app｜20260711-160824）
 
 ## 摘要
 
 - 抓取页数：8（page=1..8）
 - 原始行数：800
 - 去重后页面数：800
-- 观测子域名数：723
-- 基线：20260709-210821
-- 新增数量：76
-- 上涨数量：262
-- 标准词表行数：42（最终完整词表）
-- SIM 指标完整行数：7
-- SEM 指标完整行数：3
-- gefeiKD 已回填行数：42
+- 观测子域名数：728
+- 基线：20260711-004842
+- 新增数量：53
+- 上涨数量：144
+- 标准词表行数：28（最终完整词表）
+- SIM 指标完整行数：2
+- SEM 指标完整行数：2
+- gefeiKD 已回填行数：28
 - 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文
 
 ## 监控结果
 
 | subdomain | path | clicks | trend | top keywords |
 | --- | --- | --- | --- | --- |
-| rule34dle | -<wbr> | 155330 | 上涨（+9.1%） | rule34dle |
-| studyreps | -<wbr> | 13760 | 上涨（+25.3%） | study panda.in |
-| opt-<wbr>pulse | -<wbr> | 9650 | 上涨（+15.4%） | opt pulse |
-| badpig | -<wbr> | 8020 | 上涨（+13.4%） | bad piggies unity mod |
-| proxybay | -<wbr> | 7490 | 上涨（+20.2%） | piratebay proxy |
-| caseohdle | -<wbr> | 7340 | 上涨（+6.2%） | caseohdle |
-| animexus | -<wbr> | 6150 | 上涨（+12.0%） | anime nexus |
-| verity-<wbr>mod | -<wbr> | 6070 | 上涨（+28.1%） | verity mod |
-| name-<wbr>100-<wbr>women | -<wbr> | 4950 | 上涨（+5.3%） | name 100 women |
-| burn-<wbr>cd | -<wbr> | 4930 | 上涨（+30.4%） | burn cd |
-| anymex | -<wbr> | 4640 | 上涨（+13.2%） | anymex |
-| ping-<wbr>vpn | -<wbr> | 4620 | 上涨（+5.7%） | ping vpn |
-| orkut-<wbr>login | -<wbr> | 4500 | 上涨（+6.6%） | orkut |
-| filmpire-<wbr>page | -<wbr> | 4410 | 上涨（+9.4%） | filmpire |
-| arcadepoints | -<wbr> | 4080 | 上涨（+5.7%） | arcade points calculator |
-| worldcup-<wbr>chi-<wbr>six | -<wbr> | 3690 | 上涨（+25.9%） | ワールドカップ 速報 リアルタイム |
-| vnuhcm-<wbr>calculator | -<wbr> | 3450 | 上涨（+5.5%） | tính điểm hcmus |
-| averis-<wbr>inky | -<wbr> | 3420 | 上涨（+8.2%） | averis.co.uk |
-| ytp-<wbr>length | -<wbr> | 3390 | 上涨（+29.9%） | youtube playlist length calculator<br>calculate total length of content on a channel youtube |
-| motokvadro | -<wbr> | 3090 | 上涨（+6.9%） | китайский шоссер<br>где в москве продавали явы в 70-<wbr>е годы<br>gjl,jh gjrhsirb gj hfpvthe j,jlf |
-| movix-<wbr>app-<wbr>murex | -<wbr> | 3090 | 上涨（+20.7%） | movix |
-| youtube-<wbr>2 | -<wbr> | 3060 | 上涨（+19.1%） | youtube 2 |
-| sf6-<wbr>diag | -<wbr> | 2940 | 上涨（+26.7%） | 格ゲー認知診断 |
-| anitube | -<wbr> | 2860 | 上涨（+10.4%） | anitube |
-| ipuresult | -<wbr> | 2860 | 上涨（+10.4%） | ipu result |
-| thespinearchive | -<wbr> | 2850 | 上涨（+70.7%） | thespinearchive |
-| reanimeweb | -<wbr> | 2830 | 上涨（+18.9%） | reanime |
-| saveiluenp | -<wbr> | 2710 | 上涨（+5.9%） | iluenp |
-| nissan-<wbr>expert | -<wbr> | 2680 | 上涨（+27.0%） | как отсоеденить авс на задних колесах ниссан-<wbr>жук12г<br>модели ниссан собираемые в китае<br>как китайский ноутбук использовать без аккумуляторной батареи |
-| warp-<wbr>generator | -<wbr> | 2660 | 上涨（+5.6%） | варп генератор |
-| d2-<wbr>armor-<wbr>calc-<wbr>lac | -<wbr> | 2510 | 上涨（+9.6%） | destiny 2 armor calculator |
-| asia-<wbr>motors-<wbr>hub | -<wbr> | 2500 | 上涨（+32.3%） | какой уровень антифриза должен быть в расширительном бачке на нексии н150<br>tiggo 4 2026<br>pandora geely-<wbr>link инструкция |
-| 1c-<wbr>expert | -<wbr> | 2470 | 上涨（+19.3%） | как в 1с отразить почасовую зарплату<br>изменить нумерацию реализаций в 1с<br>1с добавить команду создать на основании |
-| lkzstream | -<wbr> | 2370 | 上涨（+20.9%） | lkz |
-| keshavaieducation | -<wbr> | 2170 | 上涨（+8.5%） | keshav ai test |
-| motto-<wbr>immortal | -<wbr> | 2140 | 上涨（+14.4%） | motto immortal tier list |
-| obozone | -<wbr> | 2130 | 上涨（+166.2%） | как добавить в приложении сбера озон банк в новый перевод<br>как открыть мультибрендовый пвз в одном месте<br>где посмотреть привязку карты на озоне на сайте |
-| streamcup | -<wbr> | 2120 | 上涨（+9.8%） | streamcup |
-| butterstream | -<wbr> | 1990 | 上涨（+48.5%） | butterstream |
-| cube-<wbr>baby-<wbr>presets | -<wbr> | 1940 | 上涨（+5.4%） | cuvave presets<br>cuvave cube baby presets |
-| codashopbysdr | -<wbr> | 1880 | 上涨（+49.2%） | codashop |
-| vitv | -<wbr> | 1800 | 上涨（+5.3%） | vit faculty review |
-| fastfileconvert | -<wbr> | 1790 | 上涨（+6.5%） | изменить размер фото |
-| petbodyw101 | -<wbr> | 1780 | 上涨（+17.1%） | w101 pet calculator |
-| hiphopkit | -<wbr> | 1700 | 上涨（+19.7%） | hiphopkit |
-| supermium | -<wbr> | 1640 | 上涨（+12.3%） | supermium |
-| trustified-<wbr>simplified-<wbr>frontend | -<wbr> | 1620 | 上涨（+15.7%） | trustified |
-| deltaprophecy | -<wbr> | 1440 | 上涨（+21.0%） | deltarune prophecy maker |
-| vegaapp | -<wbr> | 1410 | 上涨（+28.2%） | vega app |
-| spidyuniverserwa | -<wbr> | 1400 | 上涨（+11.1%） | spidey universe |
-| kmitlnova | -<wbr> | 1390 | 上涨（+13.9%） | kmitl nova |
-| shonenx | -<wbr> | 1390 | 上涨（+19.8%） | shonenx |
-| scrapperdiscord | -<wbr> | 1380 | 上涨（+7.8%） | discord server copier |
-| otoware-<wbr>maker | -<wbr> | 1370 | 上涨（+7.0%） | 音割れメーカー |
-| fastmock | -<wbr> | 1360 | 上涨（+5.4%） | fast university |
-| fn-<wbr>archive | -<wbr> | 1320 | 上涨（+13.8%） | helix bulid |
-| animex-<wbr>fawn | -<wbr> | 1280 | 上涨（+10.3%） | animex |
-| githublb | -<wbr> | 1280 | 上涨（+16.4%） | github top 100 |
-| videostv3 | -<wbr> | 1270 | 上涨（+6.7%） | descarregar videos tv3 |
-| cursor-<wbr>x | -<wbr> | 1210 | 上涨（+23.5%） | курсоры для роблокс |
-| charisma-<wbr>trainer | -<wbr> | 1190 | 上涨（+10.2%） | charisma trainer deepwoken |
-| acpc-<wbr>master | -<wbr> | 1180 | 上涨（+8.3%） | acpc |
-| fast-<wbr>flags-<wbr>by-<wbr>omhackz | -<wbr> | 1180 | 上涨（+5.4%） | fast flag editor скачать |
-| squoosh-<wbr>desktop | -<wbr> | 1180 | 上涨（+13.5%） | squoosh |
-| zanime | -<wbr> | 1170 | 上涨（+15.8%） | zanime |
-| war-<wbr>thunder-<wbr>ground-<wbr>map-<wbr>distance-<wbr>tool | -<wbr> | 1100 | 上涨（+6.8%） | war thunder distance calculator |
-| tritype-<wbr>test | -<wbr> | 1070 | 上涨（+8.1%） | tritype test |
-| solar-<wbr>sys-<wbr>simulation | -<wbr> | 1050 | 上涨（+20.7%） | orbit creating solar system games |
-| site-<wbr>banda-<wbr>jg | -<wbr> | 1040 | 上涨（+8.3%） | joao gomes |
-| valokda-<wbr>amnezia | -<wbr> | 1040 | 上涨（+19.5%） | amnezia wg config |
-| fabfree-<wbr>hopandshop | -<wbr> | 1020 | 上涨（+14.6%） | sl23b shop and hop |
-| logosmith | -<wbr> | 1020 | 上涨（+24.4%） | logosmith |
-| mytube-<wbr>a-<wbr>youtube-<wbr>clone | -<wbr> | 1020 | 上涨（+10.9%） | mytube |
-| vue-<wbr>sonner | -<wbr> | 1020 | 上涨（+8.5%） | vue sonner |
-| hidden-<wbr>cinemeta | -<wbr> | 1010 | 上涨（+6.3%） | stremio authkey |
-| bloxlabs | -<wbr> | 1000 | 上涨（+7.5%） | games copier zombie tools |
-| itchanalytics | -<wbr> | 1000 | 上涨（+9.9%） | itch io analytics vercel |
-| bate-<wbr>papo-<wbr>uol-<wbr>gamma | -<wbr> | 980 | 上涨（+18.1%） | bate papo uol |
-| mess-<wbr>menu-<wbr>iitm | -<wbr> | 980 | 上涨（+7.7%） | iit m mess menu |
-| printer-<wbr>e | -<wbr> | 970 | 上涨（+21.2%） | epson l805ni reset qiladigan dastur |
-| data-<wbr>enrich | -<wbr> | 950 | 上涨（+11.8%） | dataenrich.co |
-| fake-<wbr>pengumuman-<wbr>snbt-<wbr>2023 | -<wbr> | 950 | 上涨（+14.5%） | snbt generator |
-| hsr-<wbr>mdc | -<wbr> | 940 | 上涨（+10.6%） | hsr dps calculator |
-| rbxrotools | -<wbr> | 940 | 上涨（+6.8%） | how to hack roblox accounts no 2fa |
-| textures-<wbr>skyonfire | -<wbr> | 940 | 上涨（+9.3%） | finnish ww2 plane sky on fire texture |
-| portfolio-<wbr>ideas | -<wbr> | 920 | 上涨（+5.7%） | portfolio ideas |
-| fitgirl-<wbr>download-<wbr>link-<wbr>extractor | -<wbr> | 910 | 上涨（+24.7%） | fitgirl link extractor |
-| results-<wbr>scrapper | -<wbr> | 910 | 上涨（+11.0%） | vtu results |
-| t20ac | -<wbr> | 910 | 上涨（+11.0%） | calculadora t20 |
-| homers-<wbr>webpage | -<wbr> | 880 | 上涨（+6.0%） | homer web page |
-| music-<wbr>waves-<wbr>visualizer | -<wbr> | 870 | 上涨（+7.4%） | 音　波形　可視化 |
-| tibia-<wbr>wheel | -<wbr> | 860 | 上涨（+8.9%） | jak w tibii zminic raz zadana specjalizacje rozdki |
-| cfx-<wbr>id | -<wbr> | 850 | 上涨（+11.8%） | cfx username availabilty |
-| diagram-<wbr>adjacency-<wbr>matrix | -<wbr> | 850 | 上涨（+7.6%） | criteria matrix template interior design |
-| idleon-<wbr>justice | -<wbr> | 850 | 上涨（+10.4%） | idleon justice app |
-| anime-<wbr>nexus-<wbr>central | -<wbr> | 840 | 上涨（+12.0%） | anime nexus |
-| gacharevenue | -<wbr> | 830 | 上涨（+13.7%） | gacha revenue |
-| khamsat | -<wbr> | 830 | 上涨（+6.4%） | خمسات |
-| silksong-<wbr>save-<wbr>viewer | -<wbr> | 830 | 上涨（+10.7%） | silksong save check |
-| sv-<wbr>iuh | -<wbr> | 820 | 上涨（+13.9%） | iuh |
-| nategaeg | -<wbr> | 810 | 上涨（+8.0%） | نتيجه الثانويه العامه |
-| the-<wbr>criterion-<wbr>closet | -<wbr> | 790 | 上涨（+17.9%） | criterion closet |
-| fnavit | -<wbr> | 780 | 上涨（+9.9%） | mi cuenta infonavit |
-| languagemap | -<wbr> | 760 | 上涨（+16.9%） | карта языков мира |
-| fwc2026-<wbr>calendar | -<wbr> | 750 | 上涨（+10.3%） | world cup 2026 google calendar |
-| karar-<wbr>carki | -<wbr> | 740 | 上涨（+21.3%） | karar çarkı |
-| dhbvn | -<wbr> | 710 | 上涨（+7.6%） | dhbvn vercel |
-| valheim-<wbr>traders-<wbr>finder | -<wbr> | 710 | 上涨（+9.2%） | tracker selers valheim |
-| ito-<wbr>odai-<wbr>lab | -<wbr> | 700 | 上涨（+7.7%） | ito お題 |
-| mstzsite | -<wbr> | 690 | 上涨（+7.8%） | 캄몬 |
-| running-<wbr>text-<wbr>generator | -<wbr> | 690 | 上涨（+9.5%） | running text |
-| rbxtwo | -<wbr> | 680 | 上涨（+15.3%） | генератор робуков |
-| tasca | -<wbr> | 670 | 上涨（+9.8%） | tasca tv |
-| dbc-<wbr>front-<wbr>green | -<wbr> | 660 | 上涨（+10.0%） | dbc |
-| docs-<wbr>trinity | -<wbr> | 660 | 上涨（+10.0%） | trinity launcher |
-| fast-<wbr>past-<wbr>papers | -<wbr> | 660 | 上涨（+13.8%） | fast past papers |
-| shopify-<wbr>order-<wbr>tracking-<wbr>frontend | -<wbr> | 650 | 上涨（+8.3%） | shopify order tracking |
-| recruitment-<wbr>data | -<wbr> | 640 | 上涨（+8.5%） | מפת גיוס |
-| relink-<wbr>damage | -<wbr> | 630 | 上涨（+8.6%） | relink calculator |
-| rule34dle | /<wbr> | 149780 | 上涨（+9.1%） | rule34dle |
-| studyreps | /<wbr> | 13760 | 上涨（+25.3%） | study panda.in |
-| opt-<wbr>pulse | /<wbr> | 9650 | 上涨（+15.4%） | opt pulse |
-| badpig | /<wbr> | 8020 | 上涨（+13.4%） | bad piggies unity mod |
-| proxybay | /<wbr> | 7490 | 上涨（+20.2%） | piratebay proxy |
-| caseohdle | /<wbr> | 7340 | 上涨（+6.2%） | caseohdle |
-| animexus | /<wbr>explore | 6150 | 上涨（+12.0%） | anime nexus |
-| verity-<wbr>mod | /<wbr> | 6070 | 上涨（+28.1%） | verity mod |
-| rule34dle | /<wbr>daily.html | 5550 | 上涨（+11.2%） | rule34dle |
-| name-<wbr>100-<wbr>women | /<wbr> | 4950 | 上涨（+5.3%） | name 100 women |
-| burn-<wbr>cd | /<wbr> | 4930 | 上涨（+30.4%） | burn cd |
-| anymex | /<wbr> | 4640 | 上涨（+13.2%） | anymex |
-| ping-<wbr>vpn | /<wbr> | 4620 | 上涨（+5.7%） | ping vpn |
-| orkut-<wbr>login | /<wbr> | 4500 | 上涨（+6.6%） | orkut |
-| filmpire-<wbr>page | /<wbr> | 4410 | 上涨（+9.4%） | filmpire |
-| arcadepoints | /<wbr>calculator | 4080 | 上涨（+5.7%） | arcade points calculator |
-| worldcup-<wbr>chi-<wbr>six | /<wbr> | 3690 | 上涨（+25.9%） | ワールドカップ 速報 リアルタイム |
-| vnuhcm-<wbr>calculator | /<wbr> | 3450 | 上涨（+5.5%） | tính điểm hcmus |
-| averis-<wbr>inky | /<wbr>faq | 3420 | 上涨（+8.2%） | averis.co.uk |
-| movix-<wbr>app-<wbr>murex | /<wbr> | 3090 | 上涨（+20.7%） | movix |
-| youtube-<wbr>2 | /<wbr> | 3060 | 上涨（+19.1%） | youtube 2 |
-| sf6-<wbr>diag | /<wbr> | 2940 | 上涨（+26.7%） | 格ゲー認知診断 |
-| anitube | /<wbr> | 2860 | 上涨（+10.4%） | anitube |
-| ipuresult | /<wbr> | 2860 | 上涨（+10.4%） | ipu result |
-| thespinearchive | /<wbr> | 2850 | 上涨（+70.7%） | thespinearchive |
-| reanimeweb | /<wbr> | 2830 | 上涨（+18.9%） | reanime |
-| ytp-<wbr>length | /<wbr> | 2800 | 上涨（+7.3%） | youtube playlist length calculator |
-| saveiluenp | /<wbr> | 2710 | 上涨（+5.9%） | iluenp |
-| warp-<wbr>generator | /<wbr> | 2660 | 上涨（+5.6%） | варп генератор |
-| d2-<wbr>armor-<wbr>calc-<wbr>lac | /<wbr> | 2510 | 上涨（+9.6%） | destiny 2 armor calculator |
-| mcsrrankedtracker | /<wbr> | 2420 | 上涨（+6.1%） | mscr tracker |
-| lkzstream | /<wbr> | 2370 | 上涨（+20.9%） | lkz |
-| ctust | /<wbr> | 2190 | 上涨（+11.7%） | ctu tools |
-| keshavaieducation | /<wbr> | 2170 | 上涨（+8.5%） | keshav ai test |
-| motto-<wbr>immortal | /<wbr> | 2140 | 上涨（+14.4%） | motto immortal tier list |
-| streamcup | /<wbr> | 2120 | 上涨（+9.8%） | streamcup |
-| butterstream | /<wbr> | 1990 | 上涨（+48.5%） | butterstream |
-| codashopbysdr | /<wbr> | 1880 | 上涨（+49.2%） | codashop |
-| vitv | /<wbr>faculty | 1800 | 上涨（+5.3%） | vit faculty review |
-| fastfileconvert | /<wbr>ru/<wbr>tools/<wbr>image-<wbr>resizer | 1790 | 上涨（+6.5%） | изменить размер фото |
-| petbodyw101 | /<wbr> | 1780 | 上涨（+17.1%） | w101 pet calculator |
-| hiphopkit | /<wbr> | 1700 | 上涨（+19.7%） | hiphopkit |
-| supermium | /<wbr> | 1640 | 上涨（+12.3%） | supermium |
-| trustified-<wbr>simplified-<wbr>frontend | /<wbr> | 1620 | 上涨（+15.7%） | trustified |
-| deltaprophecy | /<wbr> | 1440 | 上涨（+21.0%） | deltarune prophecy maker |
-| vegaapp | /<wbr> | 1410 | 上涨（+28.2%） | vega app |
-| spidyuniverserwa | /<wbr> | 1400 | 上涨（+11.1%） | spidey universe |
-| cuongphim | /<wbr> | 1390 | 上涨（+6.9%） | cuongphim |
-| kmitlnova | /<wbr> | 1390 | 上涨（+13.9%） | kmitl nova |
-| shonenx | /<wbr> | 1390 | 上涨（+19.8%） | shonenx |
-| scrapperdiscord | /<wbr> | 1380 | 上涨（+7.8%） | discord server copier |
-| otoware-<wbr>maker | /<wbr> | 1370 | 上涨（+7.0%） | 音割れメーカー |
-| fastmock | /<wbr> | 1360 | 上涨（+5.4%） | fast university |
-| fn-<wbr>archive | /<wbr> | 1320 | 上涨（+13.8%） | helix bulid |
-| animex-<wbr>fawn | /<wbr> | 1280 | 上涨（+10.3%） | animex |
-| githublb | /<wbr> | 1280 | 上涨（+16.4%） | github top 100 |
-| videostv3 | /<wbr> | 1270 | 上涨（+6.7%） | descarregar videos tv3 |
-| cursor-<wbr>x | /<wbr> | 1210 | 上涨（+23.5%） | курсоры для роблокс |
-| charisma-<wbr>trainer | /<wbr> | 1190 | 上涨（+10.2%） | charisma trainer deepwoken |
-| acpc-<wbr>master | /<wbr>recommendations | 1180 | 上涨（+8.3%） | acpc |
-| fast-<wbr>flags-<wbr>by-<wbr>omhackz | /<wbr> | 1180 | 上涨（+5.4%） | fast flag editor скачать |
-| squoosh-<wbr>desktop | /<wbr> | 1180 | 上涨（+13.5%） | squoosh |
-| zanime | /<wbr>home | 1170 | 上涨（+15.8%） | zanime |
-| war-<wbr>thunder-<wbr>ground-<wbr>map-<wbr>distance-<wbr>tool | /<wbr> | 1100 | 上涨（+6.8%） | war thunder distance calculator |
-| tritype-<wbr>test | /<wbr> | 1070 | 上涨（+8.1%） | tritype test |
-| solar-<wbr>sys-<wbr>simulation | /<wbr>builder | 1050 | 上涨（+20.7%） | orbit creating solar system games |
-| site-<wbr>banda-<wbr>jg | /<wbr> | 1040 | 上涨（+8.3%） | joao gomes |
-| valokda-<wbr>amnezia | /<wbr> | 1040 | 上涨（+19.5%） | amnezia wg config |
-| fabfree-<wbr>hopandshop | /<wbr> | 1020 | 上涨（+14.6%） | sl23b shop and hop |
-| logosmith | /<wbr> | 1020 | 上涨（+24.4%） | logosmith |
-| mytube-<wbr>a-<wbr>youtube-<wbr>clone | /<wbr> | 1020 | 上涨（+10.9%） | mytube |
-| vue-<wbr>sonner | /<wbr> | 1020 | 上涨（+8.5%） | vue sonner |
-| hidden-<wbr>cinemeta | /<wbr> | 1010 | 上涨（+6.3%） | stremio authkey |
-| bloxlabs | /<wbr> | 1000 | 上涨（+7.5%） | games copier zombie tools |
-| itchanalytics | /<wbr> | 1000 | 上涨（+9.9%） | itch io analytics vercel |
-| bate-<wbr>papo-<wbr>uol-<wbr>gamma | /<wbr> | 980 | 上涨（+18.1%） | bate papo uol |
-| mess-<wbr>menu-<wbr>iitm | /<wbr> | 980 | 上涨（+7.7%） | iit m mess menu |
-| printer-<wbr>e | /<wbr>articles/<wbr>e/<wbr>ep/<wbr>epson-<wbr>l805-<wbr>kak-<wbr>sbrosit-<wbr>nastrojki.html | 970 | 上涨（+21.2%） | epson l805ni reset qiladigan dastur |
-| data-<wbr>enrich | /<wbr> | 950 | 上涨（+11.8%） | dataenrich.co |
-| fake-<wbr>pengumuman-<wbr>snbt-<wbr>2023 | /<wbr> | 950 | 上涨（+14.5%） | snbt generator |
-| hsr-<wbr>mdc | /<wbr> | 940 | 上涨（+10.6%） | hsr dps calculator |
-| rbxrotools | /<wbr>?<wbr>tool=<wbr>account-<wbr>stealer | 940 | 上涨（+6.8%） | how to hack roblox accounts no 2fa |
-| textures-<wbr>skyonfire | /<wbr> | 940 | 上涨（+9.3%） | finnish ww2 plane sky on fire texture |
-| portfolio-<wbr>ideas | /<wbr> | 920 | 上涨（+5.7%） | portfolio ideas |
-| fitgirl-<wbr>download-<wbr>link-<wbr>extractor | /<wbr> | 910 | 上涨（+24.7%） | fitgirl link extractor |
-| results-<wbr>scrapper | /<wbr> | 910 | 上涨（+11.0%） | vtu results |
-| t20ac | /<wbr>pt-<wbr>BR | 910 | 上涨（+11.0%） | calculadora t20 |
-| homers-<wbr>webpage | /<wbr> | 880 | 上涨（+6.0%） | homer web page |
-| cube-<wbr>baby-<wbr>presets | /<wbr> | 870 | 上涨（+17.6%） | cuvave cube baby presets |
-| music-<wbr>waves-<wbr>visualizer | /<wbr> | 870 | 上涨（+7.4%） | 音　波形　可視化 |
-| tibia-<wbr>wheel | /<wbr> | 860 | 上涨（+8.9%） | jak w tibii zminic raz zadana specjalizacje rozdki |
-| cfx-<wbr>id | /<wbr> | 850 | 上涨（+11.8%） | cfx username availabilty |
-| diagram-<wbr>adjacency-<wbr>matrix | /<wbr> | 850 | 上涨（+7.6%） | criteria matrix template interior design |
-| idleon-<wbr>justice | /<wbr> | 850 | 上涨（+10.4%） | idleon justice app |
-| anime-<wbr>nexus-<wbr>central | /<wbr> | 840 | 上涨（+12.0%） | anime nexus |
-| gacharevenue | /<wbr>revenue | 830 | 上涨（+13.7%） | gacha revenue |
-| khamsat | /<wbr> | 830 | 上涨（+6.4%） | خمسات |
-| silksong-<wbr>save-<wbr>viewer | /<wbr> | 830 | 上涨（+10.7%） | silksong save check |
-| keysim | /<wbr> | 820 | 上涨（+5.1%） | keyboard simulator |
-| motokvadro | /<wbr>articles/<wbr>l/<wbr>lu/<wbr>luchshie-<wbr>kitajskie-<wbr>shossejnye-<wbr>velosipedy.html | 820 | 上涨（+7.9%） | китайский шоссер |
-| nextjs-<wbr>ja-<wbr>translation-<wbr>docs | /<wbr>docs/<wbr>getting-<wbr>started | 820 | 上涨（+5.1%） | next.js |
-| sv-<wbr>iuh | /<wbr> | 820 | 上涨（+13.9%） | iuh |
-| ai-<wbr>photo-<wbr>translate | /<wbr>ru | 810 | 上涨（+5.2%） | переводчик по фото |
-| nategaeg | /<wbr> | 810 | 上涨（+8.0%） | نتيجه الثانويه العامه |
-| generative-<wbr>manim | /<wbr> | 790 | 上涨（+5.3%） | manim ai generator |
-| motokvadro | /<wbr>articles/<wbr>s/<wbr>sk/<wbr>skolko-<wbr>stoil-<wbr>mototsikl-<wbr>yava-<wbr>v-<wbr>sovetskoe-<wbr>vremya.html | 790 | 上涨（+9.7%） | где в москве продавали явы в 70-<wbr>е годы |
-| the-<wbr>criterion-<wbr>closet | /<wbr> | 790 | 上涨（+17.9%） | criterion closet |
-| fnavit | /<wbr> | 780 | 上涨（+9.9%） | mi cuenta infonavit |
-| douyin-<wbr>creator | /<wbr> | 760 | 上涨（+5.6%） | 抖音创作者中心网页版 |
-| languagemap | /<wbr> | 760 | 上涨（+16.9%） | карта языков мира |
-| nico-<wbr>live-<wbr>journal | /<wbr> | 760 | 上涨（+5.6%） | ニコ生ai新聞 |
-| convert3d | /<wbr>glb-<wbr>to-<wbr>obj | 750 | 上涨（+10.3%） | glb to obj |
-| fwc2026-<wbr>calendar | /<wbr> | 750 | 上涨（+10.3%） | world cup 2026 google calendar |
-| hero-<wbr>siege-<wbr>helper | /<wbr>runewords | 740 | 上涨（+17.5%） | hero siege runewords |
-| karar-<wbr>carki | /<wbr> | 740 | 上涨（+21.3%） | karar çarkı |
-| motokvadro | /<wbr>articles/<wbr>s/<wbr>sh/<wbr>shirina-<wbr>oboda-<wbr>i-<wbr>pokryshki-<wbr>velosipeda-<wbr>sovmestimost.html | 740 | 上涨（+8.8%） | gjl,jh gjrhsirb gj hfpvthe j,jlf |
-| react-<wbr>ui-<wbr>libraries | /<wbr> | 740 | 上涨（+5.7%） | react ui libraries |
-| asia-<wbr>motors-<wbr>hub | /<wbr>articles/<wbr>s/<wbr>sk/<wbr>skolko-<wbr>antifriza-<wbr>v-<wbr>deu-<wbr>neksiya-<wbr>8-<wbr>klapanov-<wbr>n150.html | 730 | 上涨（+7.4%） | какой уровень антифриза должен быть в расширительном бачке на нексии н150 |
-| headroom-<wbr>docs | /<wbr>docs | 730 | 上涨（+5.8%） | headroom |
-| dhbvn | /<wbr> | 710 | 上涨（+7.6%） | dhbvn vercel |
-| valheim-<wbr>traders-<wbr>finder | /<wbr> | 710 | 上涨（+9.2%） | tracker selers valheim |
-| venezuela-<wbr>ayuda | /<wbr> | 710 | 上涨（+6.0%） | hazlo hoy |
-| ito-<wbr>odai-<wbr>lab | /<wbr> | 700 | 上涨（+7.7%） | ito お題 |
-| kaido | /<wbr> | 700 | 上涨（+6.1%） | kaido |
-| map2cad | /<wbr> | 690 | 上涨（+6.2%） | free dwg locati0n site |
-| mstzsite | /<wbr> | 690 | 上涨（+7.8%） | 캄몬 |
-| running-<wbr>text-<wbr>generator | /<wbr> | 690 | 上涨（+9.5%） | running text |
-| med-<wbr>qas | /<wbr> | 680 | 上涨（+6.2%） | medqas |
-| rbxtwo | /<wbr> | 680 | 上涨（+15.3%） | генератор робуков |
-| sc-<wbr>exechang | /<wbr> | 680 | 上涨（+6.2%） | star citizen executive hangar ships |
-| stardew-<wbr>planner | /<wbr> | 670 | 上涨（+6.3%） | stardew planner |
-| tasca | /<wbr> | 670 | 上涨（+9.8%） | tasca tv |
-| toontone | /<wbr>ru | 670 | 上涨（+13.6%） | сайт угадай цвет |
-| amnezia-<wbr>warp | /<wbr> | 660 | 上涨（+6.5%） | anmesia warp |
-| dbc-<wbr>front-<wbr>green | /<wbr>fr/<wbr>stores | 660 | 上涨（+10.0%） | dbc |
-| docs-<wbr>trinity | /<wbr> | 660 | 上涨（+10.0%） | trinity launcher |
-| fast-<wbr>past-<wbr>papers | /<wbr> | 660 | 上涨（+13.8%） | fast past papers |
-| vercel-<wbr>domain | /<wbr> | 660 | 上涨（+6.5%） | vercel domains |
-| shopify-<wbr>order-<wbr>tracking-<wbr>frontend | /<wbr> | 650 | 上涨（+8.3%） | shopify order tracking |
-| recruitment-<wbr>data | /<wbr> | 640 | 上涨（+8.5%） | מפת גיוס |
-| relink-<wbr>damage | /<wbr>en | 630 | 上涨（+8.6%） | relink calculator |
-| theoldllm | /<wbr> | 630 | 上涨（+6.8%） | old llm |
-| theparadisemovie | /<wbr> | 630 | 上涨（+6.8%） | the paradise |
-| sakuraze | -<wbr> | 1300 | 新增 | im a young god novel<br>sakuraze |
-| admission-<wbr>calculator-<wbr>taupe | -<wbr> | 910 | 新增 | tính điểm học bạ tmu |
-| fifaphy | -<wbr> | 710 | 新增 | fifaphy |
-| rhyme-<wbr>game2026 | -<wbr> | 710 | 新增 | rhyme game |
-| memento-<wbr>mori-<wbr>calendar | -<wbr> | 680 | 新增 | memento mori calendar |
-| uth-<wbr>calculator-<wbr>2026 | -<wbr> | 670 | 新增 | uth tính điểm |
-| cinemana-<wbr>two | -<wbr> | 660 | 新增 | cinemana |
-| fwc2026-<wbr>knockout | -<wbr> | 650 | 新增 | fwc2026 knockout vercel |
-| once-<wbr>human-<wbr>library | -<wbr> | 640 | 新增 | once human character preset |
-| system-<wbr>english-<wbr>quiz | -<wbr> | 640 | 新增 | シス単 |
-| placement-<wbr>tracker-<wbr>vit-<wbr>2026 | -<wbr> | 630 | 新增 | vit placement tracker |
-| reactiontimetest | -<wbr> | 630 | 新增 | проверка реакции |
-| shadcn-<wbr>map | -<wbr> | 610 | 新增 | shadcn map |
-| mermaid-<wbr>to-<wbr>excalidraw | -<wbr> | 600 | 新增 | mermaid to excalidraw |
-| click-<wbr>me-<wbr>site | -<wbr> | 590 | 新增 | 福岡 貯水率 |
-| laravel-<wbr>seabank | -<wbr> | 590 | 新增 | seabank login |
-| monstarznew | -<wbr> | 590 | 新增 | 캄몬 |
-| swe-<wbr>marathon | -<wbr> | 590 | 新增 | swe marathon |
-| bluecpu | -<wbr> | 580 | 新增 | intel graphics control panel |
-| caioalessi | -<wbr> | 580 | 新增 | curso caio alessi preço |
-| cutting-<wbr>mat-<wbr>generator | -<wbr> | 580 | 新增 | cutting mat bg |
-| digitalbouquet | -<wbr> | 580 | 新增 | digibouquet |
-| sos-<wbr>pylesos | -<wbr> | 580 | 新增 | ремонт робота пылесоса медея м7 своими руками |
-| animovie-<wbr>green | -<wbr> | 570 | 新增 | animovie |
-| fancy-<wbr>notes | -<wbr> | 570 | 新增 | download google drive restricted pdf |
-| pagamerata | -<wbr> | 570 | 新增 | pagame rata |
-| promchaitang | -<wbr> | 570 | 新增 | คํานวนไทยช่วยไทยพลัส |
-| secretkeygen | -<wbr> | 570 | 新增 | random key generator |
-| sharkpools-<wbr>extensions | -<wbr> | 570 | 新增 | better input sharkpool |
-| spidyway | -<wbr> | 570 | 新增 | selection way e leak spidey |
-| calc-<wbr>tg-<wbr>stars | -<wbr> | 560 | 新增 | стоисть 260 еудупкфь ыефкы |
-| descent | -<wbr> | 560 | 新增 | tod calc |
-| heatstroke-<wbr>navi | -<wbr> | 560 | 新增 | 熱中症 緊急連絡先 テンプレート |
-| admission-<wbr>calculator-<wbr>taupe | /<wbr> | 910 | 新增 | tính điểm học bạ tmu |
-| fifaphy | /<wbr> | 710 | 新增 | fifaphy |
-| obozone | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>otkryt-<wbr>valberis-<wbr>i-<wbr>ozon-<wbr>v-<wbr>odnom-<wbr>meste.html | 710 | 新增 | как открыть мультибрендовый пвз в одном месте |
-| rhyme-<wbr>game2026 | /<wbr> | 710 | 新增 | rhyme game |
-| memento-<wbr>mori-<wbr>calendar | /<wbr> | 680 | 新增 | memento mori calendar |
-| obozone | /<wbr>articles/<wbr>o/<wbr>oz/<wbr>ozon-<wbr>sokhranennye-<wbr>karty-<wbr>gde.html | 680 | 新增 | где посмотреть привязку карты на озоне на сайте |
-| sakuraze | /<wbr>novel/<wbr>im-<wbr>a-<wbr>young-<wbr>god-<wbr>wont-<wbr>you-<wbr>raise-<wbr>me | 680 | 新增 | im a young god novel |
-| uth-<wbr>calculator-<wbr>2026 | /<wbr> | 670 | 新增 | uth tính điểm |
-| cinemana-<wbr>two | /<wbr> | 660 | 新增 | cinemana |
-| fwc2026-<wbr>knockout | /<wbr> | 650 | 新增 | fwc2026 knockout vercel |
-| once-<wbr>human-<wbr>library | /<wbr> | 640 | 新增 | once human character preset |
-| system-<wbr>english-<wbr>quiz | /<wbr> | 640 | 新增 | シス単 |
-| placement-<wbr>tracker-<wbr>vit-<wbr>2026 | /<wbr> | 630 | 新增 | vit placement tracker |
-| reactiontimetest | /<wbr> | 630 | 新增 | проверка реакции |
-| explainers-<wbr>site | /<wbr>videos | 620 | 新增 | imagine explainers |
-| sakuraze | /<wbr> | 620 | 新增 | sakuraze |
-| shadcn-<wbr>map | /<wbr> | 610 | 新增 | shadcn map |
-| mermaid-<wbr>to-<wbr>excalidraw | /<wbr> | 600 | 新增 | mermaid to excalidraw |
-| click-<wbr>me-<wbr>site | /<wbr>dam-<wbr>fukuoka-<wbr>mizu | 590 | 新增 | 福岡 貯水率 |
-| laravel-<wbr>seabank | /<wbr> | 590 | 新增 | seabank login |
-| monstarznew | /<wbr> | 590 | 新增 | 캄몬 |
-| swe-<wbr>marathon | /<wbr> | 590 | 新增 | swe marathon |
-| ytp-<wbr>length | /<wbr>tools/<wbr>youtube-<wbr>channel-<wbr>length | 590 | 新增 | calculate total length of content on a channel youtube |
-| 1c-<wbr>expert | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>dobavit-<wbr>knopku-<wbr>vvoda-<wbr>na-<wbr>osnovanii-<wbr>v-<wbr>dokument-<wbr>1s.html | 580 | 新增 | 1с добавить команду создать на основании |
-| 1c-<wbr>expert | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>dobavit-<wbr>komandu-<wbr>sozdat-<wbr>na-<wbr>osnovanii-<wbr>1s.html | 580 | 新增 | 1с добавить команду создать на основании |
-| bluecpu | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>ustanovit-<wbr>intel-<wbr>graphics-<wbr>control-<wbr>panel-<wbr>na-<wbr>windows-<wbr>10.html | 580 | 新增 | intel graphics control panel |
-| caioalessi | /<wbr>contato | 580 | 新增 | curso caio alessi preço |
-| cutting-<wbr>mat-<wbr>generator | /<wbr> | 580 | 新增 | cutting mat bg |
-| digitalbouquet | /<wbr> | 580 | 新增 | digibouquet |
-| sos-<wbr>pylesos | /<wbr>articles/<wbr>m/<wbr>mi/<wbr>midea-<wbr>robot-<wbr>pylesos-<wbr>kak-<wbr>perezagruzit.html | 580 | 新增 | ремонт робота пылесоса медея м7 своими руками |
-| animovie-<wbr>green | /<wbr> | 570 | 新增 | animovie |
-| bacstory | /<wbr>bac-<wbr>2026-<wbr>sci-<wbr>arabe-<wbr>corrige | 570 | 新增 | تصحيح عربية باك 2026 |
-| fancy-<wbr>notes | /<wbr>230304_<wbr>2057 | 570 | 新增 | download google drive restricted pdf |
-| nissan-<wbr>expert | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>razobrat-<wbr>noutbuk-<wbr>dns.html | 570 | 新增 | как извлечь жесткий диск из нетбука днс модель dns 0121597 |
-| pagamerata | /<wbr> | 570 | 新增 | pagame rata |
-| promchaitang | /<wbr> | 570 | 新增 | คํานวนไทยช่วยไทยพลัส |
-| secretkeygen | /<wbr> | 570 | 新增 | random key generator |
-| sharkpools-<wbr>extensions | /<wbr> | 570 | 新增 | better input sharkpool |
-| spidyway | /<wbr> | 570 | 新增 | selection way e leak spidey |
-| asia-<wbr>motors-<wbr>hub | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>vynut-<wbr>yashchik-<wbr>iz-<wbr>napravlyayushchikh-<wbr>komoda.html | 560 | 新增 | как вытащить ящик с шариковыми направляющими |
-| calc-<wbr>tg-<wbr>stars | /<wbr> | 560 | 新增 | стоисть 260 еудупкфь ыефкы |
-| descent | /<wbr> | 560 | 新增 | tod calc |
-| heatstroke-<wbr>navi | /<wbr>articles/<wbr>heatstroke-<wbr>reporting-<wbr>system-<wbr>template | 560 | 新增 | 熱中症 緊急連絡先 テンプレート |
+| studyreps | -<wbr> | 15070 | 上涨（+9.5%） | study panda.in |
+| badpig | -<wbr> | 8460 | 上涨（+5.5%） | bad piggies unity mod |
+| proxybay | -<wbr> | 8030 | 上涨（+7.2%） | piratebay proxy |
+| verity-<wbr>mod | -<wbr> | 6750 | 上涨（+11.2%） | verity mod |
+| piracy | -<wbr> | 5460 | 上涨（+13.3%） | free courses download<br>audiobook pirating<br>mangapiracy |
+| burn-<wbr>cd | -<wbr> | 5430 | 上涨（+10.1%） | burn cd |
+| anymex | -<wbr> | 5070 | 上涨（+9.3%） | anymex |
+| orkut-<wbr>login | -<wbr> | 4730 | 上涨（+5.1%） | orkut |
+| averis-<wbr>inky | -<wbr> | 3990 | 上涨（+16.7%） | averis.co.uk |
+| worldcup-<wbr>chi-<wbr>six | -<wbr> | 3970 | 上涨（+7.6%） | ワールドカップ 速報 リアルタイム |
+| movix-<wbr>app-<wbr>murex | -<wbr> | 3310 | 上涨（+7.1%） | movix |
+| thespinearchive | -<wbr> | 3300 | 上涨（+15.8%） | thespinearchive |
+| youtube-<wbr>2 | -<wbr> | 3260 | 上涨（+6.5%） | youtube 2 |
+| markdownvisualizer | -<wbr> | 3130 | 上涨（+19.0%） | markdown to word<br>md to pdf<br>md editor |
+| ipuresult | -<wbr> | 3100 | 上涨（+8.4%） | ipu result |
+| reanimeweb | -<wbr> | 2980 | 上涨（+5.3%） | reanime |
+| warp-<wbr>generator | -<wbr> | 2810 | 上涨（+5.6%） | варп генератор |
+| lkzstream | -<wbr> | 2520 | 上涨（+6.3%） | lkz |
+| butterstream | -<wbr> | 2270 | 上涨（+14.1%） | butterstream |
+| goldenchocobotracker | -<wbr> | 2230 | 上涨（+5.2%） | golden chocobo tracker |
+| annasgarden | -<wbr> | 2200 | 上涨（+6.3%） | annas secret garden |
+| codashopbysdr | -<wbr> | 2200 | 上涨（+17.0%） | codashop |
+| petbodyw101 | -<wbr> | 1890 | 上涨（+6.2%） | w101 pet calculator |
+| hiphopkit | -<wbr> | 1840 | 上涨（+8.2%） | hiphopkit |
+| ccltranslationattempt | -<wbr> | 1830 | 上涨（+5.2%） | consistency challenge list |
+| supermium | -<wbr> | 1730 | 上涨（+5.5%） | supermium |
+| trustified-<wbr>simplified-<wbr>frontend | -<wbr> | 1730 | 上涨（+6.8%） | trustified |
+| deltaprophecy | -<wbr> | 1610 | 上涨（+11.8%） | deltarune prophecy maker |
+| faculty-<wbr>rating | -<wbr> | 1600 | 上涨（+6.7%） | vit faculty review |
+| dab-<wbr>music | -<wbr> | 1570 | 上涨（+5.4%） | dab music player |
+| vegaapp | -<wbr> | 1570 | 上涨（+11.3%） | vega app |
+| spidyuniverserwa | -<wbr> | 1500 | 上涨（+7.1%） | spidey universe |
+| shonenx | -<wbr> | 1480 | 上涨（+6.5%） | shonenx |
+| hollywoodle | -<wbr> | 1460 | 上涨（+5.0%） | hollywoodle |
+| sakuraze | -<wbr> | 1380 | 上涨（+6.2%） | im a young god novel<br>sakuraze |
+| cursor-<wbr>x | -<wbr> | 1310 | 上涨（+8.3%） | курсоры для роблокс |
+| nothanks | -<wbr> | 1250 | 上涨（+6.8%） | no thanks |
+| acpc-<wbr>master | -<wbr> | 1240 | 上涨（+5.1%） | acpc |
+| zanime | -<wbr> | 1240 | 上涨（+6.0%） | zanime |
+| mess-<wbr>menu-<wbr>iitm | -<wbr> | 1080 | 上涨（+10.2%） | iit m mess menu |
+| roulette-<wbr>rush | -<wbr> | 1080 | 上涨（+9.1%） | roulete rush |
+| bate-<wbr>papo-<wbr>uol-<wbr>gamma | -<wbr> | 1040 | 上涨（+6.1%） | bate papo uol |
+| burnedwebsite | -<wbr> | 1040 | 上涨（+5.1%） | pizza tower gamemaker project |
+| data-<wbr>enrich | -<wbr> | 1040 | 上涨（+9.5%） | dataenrich.co |
+| printer-<wbr>e | -<wbr> | 1040 | 上涨（+7.2%） | epson l805ni reset qiladigan dastur |
+| admission-<wbr>calculator-<wbr>taupe | -<wbr> | 1030 | 上涨（+13.2%） | tính điểm học bạ tmu |
+| fake-<wbr>pengumuman-<wbr>snbt-<wbr>2023 | -<wbr> | 1000 | 上涨（+5.3%） | snbt generator |
+| fitgirl-<wbr>download-<wbr>link-<wbr>extractor | -<wbr> | 1000 | 上涨（+9.9%） | fitgirl link extractor |
+| shadcn-<wbr>multi-<wbr>select-<wbr>component | -<wbr> | 940 | 上涨（+10.6%） | shadcn multi select |
+| cfx-<wbr>id | -<wbr> | 910 | 上涨（+7.1%） | cfx username availabilty |
+| gacharevenue | -<wbr> | 880 | 上涨（+6.0%） | gacha revenue |
+| sv-<wbr>iuh | -<wbr> | 870 | 上涨（+6.1%） | iuh |
+| discordlanding | -<wbr> | 860 | 上涨（+6.2%） | создать акк guscord |
+| nategaeg | -<wbr> | 860 | 上涨（+6.2%） | نتيجه الثانويه العامه |
+| the-<wbr>criterion-<wbr>closet | -<wbr> | 850 | 上涨（+7.6%） | criterion closet |
+| rhyme-<wbr>game2026 | -<wbr> | 780 | 上涨（+9.9%） | rhyme game |
+| fifaphy | -<wbr> | 770 | 上涨（+8.5%） | fifaphy |
+| uth-<wbr>calculator-<wbr>2026 | -<wbr> | 740 | 上涨（+10.4%） | uth tính điểm |
+| recruitment-<wbr>data | -<wbr> | 710 | 上涨（+10.9%） | מפת גיוס |
+| fwc2026-<wbr>knockout | -<wbr> | 700 | 上涨（+7.7%） | fwc2026 knockout vercel |
+| placement-<wbr>tracker-<wbr>vit-<wbr>2026 | -<wbr> | 690 | 上涨（+9.5%） | vit placement tracker |
+| system-<wbr>english-<wbr>quiz | -<wbr> | 690 | 上涨（+7.8%） | シス単 |
+| sos-<wbr>pylesos | -<wbr> | 670 | 上涨（+15.5%） | ремонт робота пылесоса медея м7 своими руками |
+| d2-<wbr>ttk-<wbr>cheatsheet | -<wbr> | 660 | 上涨（+8.2%） | destiny 2 ttk chart |
+| heatstroke-<wbr>navi | -<wbr> | 660 | 上涨（+17.9%） | 熱中症 緊急連絡先 テンプレート |
+| shadcn-<wbr>map | -<wbr> | 660 | 上涨（+8.2%） | shadcn map |
+| studyreps | /<wbr> | 15070 | 上涨（+9.5%） | study panda.in |
+| badpig | /<wbr> | 8460 | 上涨（+5.5%） | bad piggies unity mod |
+| proxybay | /<wbr> | 8030 | 上涨（+7.2%） | piratebay proxy |
+| verity-<wbr>mod | /<wbr> | 6750 | 上涨（+11.2%） | verity mod |
+| burn-<wbr>cd | /<wbr> | 5430 | 上涨（+10.1%） | burn cd |
+| anymex | /<wbr> | 5070 | 上涨（+9.3%） | anymex |
+| orkut-<wbr>login | /<wbr> | 4730 | 上涨（+5.1%） | orkut |
+| averis-<wbr>inky | /<wbr>faq | 3990 | 上涨（+16.7%） | averis.co.uk |
+| worldcup-<wbr>chi-<wbr>six | /<wbr> | 3970 | 上涨（+7.6%） | ワールドカップ 速報 リアルタイム |
+| movix-<wbr>app-<wbr>murex | /<wbr> | 3310 | 上涨（+7.1%） | movix |
+| thespinearchive | /<wbr> | 3300 | 上涨（+15.8%） | thespinearchive |
+| youtube-<wbr>2 | /<wbr> | 3260 | 上涨（+6.5%） | youtube 2 |
+| ipuresult | /<wbr> | 3100 | 上涨（+8.4%） | ipu result |
+| reanimeweb | /<wbr> | 2980 | 上涨（+5.3%） | reanime |
+| warp-<wbr>generator | /<wbr> | 2810 | 上涨（+5.6%） | варп генератор |
+| lkzstream | /<wbr> | 2520 | 上涨（+6.3%） | lkz |
+| butterstream | /<wbr> | 2270 | 上涨（+14.1%） | butterstream |
+| goldenchocobotracker | /<wbr> | 2230 | 上涨（+5.2%） | golden chocobo tracker |
+| annasgarden | /<wbr> | 2200 | 上涨（+6.3%） | annas secret garden |
+| codashopbysdr | /<wbr> | 2200 | 上涨（+17.0%） | codashop |
+| petbodyw101 | /<wbr> | 1890 | 上涨（+6.2%） | w101 pet calculator |
+| hiphopkit | /<wbr> | 1840 | 上涨（+8.2%） | hiphopkit |
+| ccltranslationattempt | /<wbr> | 1830 | 上涨（+5.2%） | consistency challenge list |
+| supermium | /<wbr> | 1730 | 上涨（+5.5%） | supermium |
+| trustified-<wbr>simplified-<wbr>frontend | /<wbr> | 1730 | 上涨（+6.8%） | trustified |
+| deltaprophecy | /<wbr> | 1610 | 上涨（+11.8%） | deltarune prophecy maker |
+| faculty-<wbr>rating | /<wbr> | 1600 | 上涨（+6.7%） | vit faculty review |
+| dab-<wbr>music | /<wbr> | 1570 | 上涨（+5.4%） | dab music player |
+| vegaapp | /<wbr> | 1570 | 上涨（+11.3%） | vega app |
+| spidyuniverserwa | /<wbr> | 1500 | 上涨（+7.1%） | spidey universe |
+| shonenx | /<wbr> | 1480 | 上涨（+6.5%） | shonenx |
+| hollywoodle | /<wbr> | 1460 | 上涨（+5.0%） | hollywoodle |
+| cursor-<wbr>x | /<wbr> | 1310 | 上涨（+8.3%） | курсоры для роблокс |
+| nothanks | /<wbr> | 1250 | 上涨（+6.8%） | no thanks |
+| acpc-<wbr>master | /<wbr>recommendations | 1240 | 上涨（+5.1%） | acpc |
+| zanime | /<wbr>home | 1240 | 上涨（+6.0%） | zanime |
+| mess-<wbr>menu-<wbr>iitm | /<wbr> | 1080 | 上涨（+10.2%） | iit m mess menu |
+| roulette-<wbr>rush | /<wbr> | 1080 | 上涨（+9.1%） | roulete rush |
+| bate-<wbr>papo-<wbr>uol-<wbr>gamma | /<wbr> | 1040 | 上涨（+6.1%） | bate papo uol |
+| burnedwebsite | /<wbr>projects | 1040 | 上涨（+5.1%） | pizza tower gamemaker project |
+| data-<wbr>enrich | /<wbr> | 1040 | 上涨（+9.5%） | dataenrich.co |
+| printer-<wbr>e | /<wbr>articles/<wbr>e/<wbr>ep/<wbr>epson-<wbr>l805-<wbr>kak-<wbr>sbrosit-<wbr>nastrojki.html | 1040 | 上涨（+7.2%） | epson l805ni reset qiladigan dastur |
+| admission-<wbr>calculator-<wbr>taupe | /<wbr> | 1030 | 上涨（+13.2%） | tính điểm học bạ tmu |
+| fake-<wbr>pengumuman-<wbr>snbt-<wbr>2023 | /<wbr> | 1000 | 上涨（+5.3%） | snbt generator |
+| fitgirl-<wbr>download-<wbr>link-<wbr>extractor | /<wbr> | 1000 | 上涨（+9.9%） | fitgirl link extractor |
+| shadcn-<wbr>multi-<wbr>select-<wbr>component | /<wbr> | 940 | 上涨（+10.6%） | shadcn multi select |
+| cfx-<wbr>id | /<wbr> | 910 | 上涨（+7.1%） | cfx username availabilty |
+| gacharevenue | /<wbr>revenue | 880 | 上涨（+6.0%） | gacha revenue |
+| sv-<wbr>iuh | /<wbr> | 870 | 上涨（+6.1%） | iuh |
+| discordlanding | /<wbr>signup.html | 860 | 上涨（+6.2%） | создать акк guscord |
+| nategaeg | /<wbr> | 860 | 上涨（+6.2%） | نتيجه الثانويه العامه |
+| the-<wbr>criterion-<wbr>closet | /<wbr> | 850 | 上涨（+7.6%） | criterion closet |
+| fnavit | /<wbr> | 820 | 上涨（+5.1%） | mi cuenta infonavit |
+| hero-<wbr>siege-<wbr>helper | /<wbr>runewords | 800 | 上涨（+8.1%） | hero siege runewords |
+| languagemap | /<wbr> | 800 | 上涨（+5.3%） | карта языков мира |
+| obozone | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>otkryt-<wbr>valberis-<wbr>i-<wbr>ozon-<wbr>v-<wbr>odnom-<wbr>meste.html | 780 | 上涨（+9.9%） | как открыть мультибрендовый пвз в одном месте |
+| rhyme-<wbr>game2026 | /<wbr> | 780 | 上涨（+9.9%） | rhyme game |
+| fifaphy | /<wbr> | 770 | 上涨（+8.5%） | fifaphy |
+| uth-<wbr>calculator-<wbr>2026 | /<wbr> | 740 | 上涨（+10.4%） | uth tính điểm |
+| order-<wbr>web-<wbr>jp | /<wbr> | 730 | 上涨（+5.8%） | misumi |
+| rbxtwo | /<wbr> | 720 | 上涨（+5.9%） | генератор робуков |
+| sakuraze | /<wbr>novel/<wbr>im-<wbr>a-<wbr>young-<wbr>god-<wbr>wont-<wbr>you-<wbr>raise-<wbr>me | 720 | 上涨（+5.9%） | im a young god novel |
+| recruitment-<wbr>data | /<wbr> | 710 | 上涨（+10.9%） | מפת גיוס |
+| stardew-<wbr>planner | /<wbr> | 710 | 上涨（+6.0%） | stardew planner |
+| cinemana-<wbr>two | /<wbr> | 700 | 上涨（+6.1%） | cinemana |
+| fwc2026-<wbr>knockout | /<wbr> | 700 | 上涨（+7.7%） | fwc2026 knockout vercel |
+| vercel-<wbr>domain | /<wbr> | 700 | 上涨（+6.1%） | vercel domains |
+| placement-<wbr>tracker-<wbr>vit-<wbr>2026 | /<wbr> | 690 | 上涨（+9.5%） | vit placement tracker |
+| reactjs-<wbr>tiptap-<wbr>editor | /<wbr> | 690 | 上涨（+6.2%） | tiptap editor |
+| system-<wbr>english-<wbr>quiz | /<wbr> | 690 | 上涨（+7.8%） | シス単 |
+| sos-<wbr>pylesos | /<wbr>articles/<wbr>m/<wbr>mi/<wbr>midea-<wbr>robot-<wbr>pylesos-<wbr>kak-<wbr>perezagruzit.html | 670 | 上涨（+15.5%） | ремонт робота пылесоса медея м7 своими руками |
+| d2-<wbr>ttk-<wbr>cheatsheet | /<wbr> | 660 | 上涨（+8.2%） | destiny 2 ttk chart |
+| heatstroke-<wbr>navi | /<wbr>articles/<wbr>heatstroke-<wbr>reporting-<wbr>system-<wbr>template | 660 | 上涨（+17.9%） | 熱中症 緊急連絡先 テンプレート |
+| sakuraze | /<wbr> | 660 | 上涨（+6.5%） | sakuraze |
+| shadcn-<wbr>map | /<wbr> | 660 | 上涨（+8.2%） | shadcn map |
+| ytp-<wbr>length | /<wbr>tools/<wbr>youtube-<wbr>channel-<wbr>length | 630 | 上涨（+6.8%） | calculate total length of content on a channel youtube |
+| bluecpu | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kak-<wbr>ustanovit-<wbr>intel-<wbr>graphics-<wbr>control-<wbr>panel-<wbr>na-<wbr>windows-<wbr>10.html | 610 | 上涨（+5.2%） | intel graphics control panel |
+| cutting-<wbr>mat-<wbr>generator | /<wbr> | 610 | 上涨（+5.2%） | cutting mat bg |
+| line-<wbr>ranger-<wbr>kiwi | -<wbr> | 710 | 新增 | line ranger kiwi |
+| dutamovie21org | -<wbr> | 620 | 新增 | dutamovie21 |
+| ajcastillo | -<wbr> | 590 | 新增 | aeron james castillo |
+| fuck-<wbr>claude | -<wbr> | 590 | 新增 | fuck claude vercel.app |
+| rocket-<wbr>presets | -<wbr> | 590 | 新增 | fennec presets |
+| game-<wbr>of-<wbr>thrones-<wbr>tree | -<wbr> | 580 | 新增 | game of thrones family tree |
+| salary-<wbr>calc-<wbr>fe | -<wbr> | 580 | 新增 | 인상율 |
+| sns-<wbr>profile-<wbr>site | -<wbr> | 580 | 新增 | チームみらい |
+| thanawaya-<wbr>results | -<wbr> | 580 | 新增 | نتيجه ثانويه عامه 2024 |
+| wha-<wbr>spell-<wbr>simulator | -<wbr> | 580 | 新增 | witch hat atelier spell maker |
+| ar-<wbr>webcam | -<wbr> | 570 | 新增 | camera with filters |
+| gtabrowser | -<wbr> | 570 | 新增 | download gta vice city free online |
+| gtav-<wbr>radio-<wbr>nine | -<wbr> | 570 | 新增 | gta5 radio site |
+| iphone-<wbr>info | -<wbr> | 570 | 新增 | почему плохо грузит вк на 11 айфоне |
+| josephchio | -<wbr> | 570 | 新增 | joseph chio portfolio |
+| master-<wbr>elektriki | -<wbr> | 570 | 新增 | как установить стеклоподъемник на ваз 21214 |
+| air-<wbr>draw-<wbr>one | -<wbr> | 560 | 新增 | air draw gesture |
+| cricfusion | -<wbr> | 560 | 新增 | cricfusion |
+| cursortokens | -<wbr> | 560 | 新增 | cursor token usage |
+| dados-<wbr>enamed | -<wbr> | 560 | 新增 | enamed ranking |
+| kira-<wbr>website | -<wbr> | 560 | 新增 | kira website death note |
+| lodkamaster | -<wbr> | 560 | 新增 | какие лодки пвх не подлежат регистрации |
+| maplestory-<wbr>jp | -<wbr> | 560 | 新增 | ジェネシスパス |
+| markel-<wbr>links | -<wbr> | 560 | 新增 | dazn mundial acestream |
+| mirexa | -<wbr> | 560 | 新增 | mirexa vercel app |
+| line-<wbr>ranger-<wbr>kiwi | /<wbr> | 710 | 新增 | line ranger kiwi |
+| dutamovie21org | /<wbr> | 620 | 新增 | dutamovie21 |
+| ajcastillo | /<wbr> | 590 | 新增 | aeron james castillo |
+| fuck-<wbr>claude | /<wbr> | 590 | 新增 | fuck claude vercel.app |
+| rocket-<wbr>presets | /<wbr>index.html | 590 | 新增 | fennec presets |
+| game-<wbr>of-<wbr>thrones-<wbr>tree | /<wbr> | 580 | 新增 | game of thrones family tree |
+| salary-<wbr>calc-<wbr>fe | /<wbr>salary3 | 580 | 新增 | 인상율 |
+| sns-<wbr>profile-<wbr>site | /<wbr> | 580 | 新增 | チームみらい |
+| thanawaya-<wbr>results | /<wbr> | 580 | 新增 | نتيجه ثانويه عامه 2024 |
+| wha-<wbr>spell-<wbr>simulator | /<wbr> | 580 | 新增 | witch hat atelier spell maker |
+| ar-<wbr>webcam | /<wbr> | 570 | 新增 | camera with filters |
+| gtabrowser | /<wbr> | 570 | 新增 | download gta vice city free online |
+| gtav-<wbr>radio-<wbr>nine | /<wbr> | 570 | 新增 | gta5 radio site |
+| iphone-<wbr>info | /<wbr>messendzhery-<wbr>i-<wbr>sotsseti/<wbr>p/<wbr>po/<wbr>pochemu-<wbr>tupit-<wbr>vk-<wbr>na-<wbr>ajfone-<wbr>11.html | 570 | 新增 | почему плохо грузит вк на 11 айфоне |
+| josephchio | /<wbr> | 570 | 新增 | joseph chio portfolio |
+| master-<wbr>elektriki | /<wbr>articles/<wbr>u/<wbr>us/<wbr>ustanovka-<wbr>steklopodemnikov-<wbr>na-<wbr>nivu-<wbr>21214.html?<wbr>ysclid=<wbr>mr5on9kw6r118625617 | 570 | 新增 | как установить стеклоподъемник на ваз 21214 |
+| piracy | /<wbr>type/<wbr>comics-<wbr>and-<wbr>manga | 570 | 新增 | mangapiracy |
+| air-<wbr>draw-<wbr>one | /<wbr> | 560 | 新增 | air draw gesture |
+| cricfusion | /<wbr> | 560 | 新增 | cricfusion |
+| cursortokens | /<wbr> | 560 | 新增 | cursor token usage |
+| dados-<wbr>enamed | /<wbr> | 560 | 新增 | enamed ranking |
+| kira-<wbr>website | /<wbr> | 560 | 新增 | kira website death note |
+| lodkamaster | /<wbr>articles/<wbr>k/<wbr>ka/<wbr>kakie-<wbr>lodki-<wbr>nado-<wbr>registrirovat.html | 560 | 新增 | какие лодки пвх не подлежат регистрации |
+| maplestory-<wbr>jp | /<wbr>genesis | 560 | 新增 | ジェネシスパス |
+| markdownvisualizer | /<wbr>word-<wbr>to-<wbr>markdown | 560 | 新增 | docx в markdown |
+| markel-<wbr>links | /<wbr> | 560 | 新增 | dazn mundial acestream |
+| maslo-<wbr>wiki | /<wbr>articles/<wbr>m/<wbr>ma/<wbr>maslo-<wbr>dlya-<wbr>britvennoj-<wbr>mashinki.html | 560 | 新增 | лучшие масла для смазки электробритвы |
+| mirexa | /<wbr> | 560 | 新增 | mirexa vercel app |
 
 ## 最终标准词表摘要
 
 | keyword | simVolume | semVolume | gefeiKD | score(sim) |
 | --- | --- | --- | --- | --- |
-| cinemana | 89720 | 19770 | 45 | 1058.70 |
-| digibouquet | 44880 | 2030 | 55.40 | 555.29 |
-| memento mori calendar | 2860 | 1950 | 51.70 | 429 |
-| imagine explainers | 27960 | 16110 | 50.90 | 391.44 |
-| シス単 | 8680 | 27190 | 41.60 | 289.33 |
-| random key generator | 3990 | 3480 | 48.60 | 31.69 |
-| seabank login | 4220 | 110 | 56.20 | 10.41 |
-| 福岡 貯水率 | 24800 | 5400 | 34.30 | -<wbr> |
-| intel graphics control panel | 5900 | 4430 | 73.70 | -<wbr> |
-| rhyme game | 21140 | 3330 | 33.60 | -<wbr> |
-| проверка реакции | 5030 | 2810 | 10.50 | -<wbr> |
-| vit placement tracker | 5410 | 2420 | 69.90 | -<wbr> |
-| animovie | 2950 | 970 | 70.90 | -<wbr> |
-| shadcn map | 2130 | 360 | 53.10 | -<wbr> |
-| mermaid to excalidraw | 1590 | 270 | 65.40 | -<wbr> |
-| once human character preset | 820 | 60 | 76.90 | -<wbr> |
-| download google drive restricted pdf | 540 | 10 | 32.20 | -<wbr> |
-| คํานวนไทยช่วยไทยพลัส | 21450 | 0 | 42.10 | -<wbr> |
-| pagame rata | 2800 | 0 | 12.10 | -<wbr> |
-| تصحيح عربية باك 2026 | 2400 | 0 | 46.70 | -<wbr> |
+| game of thrones family tree | 28690 | 34950 | 33.30 | 808.54 |
+| enamed ranking | 580 | 100 | 42.30 | 8.49 |
+| チームみらい | 61400 | 52270 | 61 | -<wbr> |
+| camera with filters | 1280 | 23460 | 38.80 | -<wbr> |
+| dutamovie21 | 209930 | 21580 | 48.60 | -<wbr> |
+| نتيجه ثانويه عامه 2024 | 2100 | 8150 | 44.20 | -<wbr> |
+| mangapiracy | 910 | 570 | 45 | -<wbr> |
+| fennec presets | 170 | 340 | 32.30 | -<wbr> |
+| kira website death note | 1710 | 230 | 60.70 | -<wbr> |
+| mirexa vercel app | 580 | 90 | 65.80 | -<wbr> |
+| cursor token usage | 1900 | 80 | 72.30 | -<wbr> |
+| какие лодки пвх не подлежат регистрации | 0 | 10 | 1.80 | -<wbr> |
+| witch hat atelier spell maker | 20110 | 0 | 27.70 | -<wbr> |
+| dazn mundial acestream | 6200 | 0 | 39.40 | -<wbr> |
+| joseph chio portfolio | 1480 | 0 | 31.60 | -<wbr> |
+| line ranger kiwi | 1310 | 0 | 51.20 | -<wbr> |
+| ジェネシスパス | 1290 | 0 | 60.20 | -<wbr> |
+| gta5 radio site | 1080 | 0 | 39.10 | -<wbr> |
+| aeron james castillo | 1040 | 0 | 48.70 | -<wbr> |
+| cricfusion | 910 | 0 | 49.90 | -<wbr> |
 
 ## 备注
 

@@ -125,6 +125,12 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--min-interval-seconds", type=float, default=6.2)
     run_parser.add_argument("--max-retries", type=int, default=2)
     run_parser.add_argument("--timeout-seconds", type=int, default=REQUEST_TIMEOUT_SECONDS)
+    run_parser.add_argument(
+        "--max-keywords",
+        type=int,
+        default=0,
+        help="最多分析前 N 个关键词（0 表示不限制）",
+    )
     run_parser.add_argument("--dry-run", action="store_true")
     run_parser.add_argument(
         "--no-xlsx",
@@ -492,12 +498,20 @@ def collect_input(args: argparse.Namespace) -> dict:
             "未获取到有效关键词。请使用 --keyword / --keyword-file / --keywords-csv / --standard-word-table 提供关键词。"
         )
 
+    keyword_count_before_limit = len(keyword_items)
+    max_keywords = max(int(getattr(args, "max_keywords", 0) or 0), 0)
+    if max_keywords > 0:
+        keyword_items = keyword_items[:max_keywords]
+
     return {
         "mode": mode,
         "keywords": keyword_items,
         "standardRows": standard_rows,
         "inputPaths": input_paths,
+        "maxKeywords": max_keywords,
+        "keywordCountBeforeLimit": keyword_count_before_limit,
     }
+
 
 
 # --------------------------------------------------------------------------- #
@@ -990,6 +1004,8 @@ def build_snapshot(
                 "paths": input_info["inputPaths"],
                 "standardWordTableVersion": STANDARD_WORD_TABLE_VERSION,
                 "keywordCount": len(input_info["keywords"]),
+                "keywordCountBeforeLimit": int(input_info.get("keywordCountBeforeLimit") or len(input_info["keywords"])),
+                "maxKeywords": int(input_info.get("maxKeywords") or 0),
             },
             "target": {
                 "keywords": [item["keyword"] for item in input_info["keywords"]],
@@ -1145,8 +1161,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
     if args.dry_run:
         print("[dry-run] 配置检查通过，不发起网络请求。")
         print(f"[dry-run] input-mode: {input_info['mode']}")
-        print(f"[dry-run] keywords: {len(input_info['keywords'])}")
-        print(f"[dry-run] standard-word-table-rows: {len(input_info['standardRows'])}")
+        print(f"[dry-run] keywords(before-limit): {input_info.get('keywordCountBeforeLimit', len(input_info['keywords']))}")
+        print(f"[dry-run] keywords(after-limit): {len(input_info['keywords'])}")
+        print(f"[dry-run] max-keywords: {input_info.get('maxKeywords', 0)}")
         print(f"[dry-run] api: {api_url}")
         print(f"[dry-run] auth-mode: {args.auth_mode}")
         print(f"[dry-run] api-key-source: {api_key_source}")

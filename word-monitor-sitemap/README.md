@@ -22,18 +22,21 @@
 2. 标准化 URL 并按站点规则过滤
 3. 生成路由模式统计
 4. 与最近一次同站点快照对比，识别新增内页/新增模式
-5. 从新增 URL 提取关键词候选
-6. 输出最终合并报告（Markdown）与标准词表（Excel）
+5. 从新增 URL 提取关键词候选并生成种子标准词表
+6. 串行调用 `analyze-words`（补齐 SIM/SEM）与 `check-gefei-kd`（补齐 gefeiKD）
+7. 输出最终合并报告（Markdown）与最终标准词表（Excel），并同步一份到 `words/sitemap-YYYYMMDD-HHMMSS.xlsx`
 
 ## 目录说明
 
 - `data/sites.json`：站点配置
 - `data/<site-id>/`：抓取归档（`fetch-YYYYMMDD-HHMMSS.json`）
 - `_internal/snapshots/<site-id>/`：标准化快照（`snapshot-YYYYMMDD-HHMMSS.json`）
+- `_internal/chained/<stamp>/`：链式阶段产物（`analyze-words` / `check-gefei-kd`）
 - `report/history/report-YYYYMMDD-HHMMSS.md`：历史合并报告
-- `report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`：历史标准词表
+- `report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`：历史标准词表（最终口径）
 - `report/latest.md`：最新合并报告
-- `report/latest.xlsx`：最新标准词表
+- `report/latest.xlsx`：最新标准词表（最终口径）
+- `../words/sitemap-YYYYMMDD-HHMMSS.xlsx`：同步出的最终标准词表副本
 
 ## 使用方式
 
@@ -61,6 +64,11 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
   --xlsx word-monitor-sitemap/report/latest.xlsx
 ```
 
+### 额外参数
+
+- `--words-dir`：最终标准词表同步目录（默认仓库根目录 `words/`）
+- `--chain-work-dir`：链式阶段临时工作目录（默认 `word-monitor-sitemap/_internal/chained/`）
+
 ## 当前规则（MVP）
 
 - 每个站点由配置驱动（sitemap、host 白名单、path 过滤、关键词规则）
@@ -73,8 +81,8 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
   - 例如：`travel-merge -> travel merge`
   - 停用词（如 `the`）不再被过滤，尽量保留原始 slug 词序
 - 标准词表遵循 `standard-word-analysis/spec/standard-word-table.v1.json`
-  - 当前只填 `keyword` 与 `对应域名`
-  - 其他列允许为空
+  - sitemap 阶段先生成种子表（`keyword` + `对应域名`）
+  - 之后由 `analyze-words` / `check-gefei-kd` 补齐 SIM/SEM/gefeiKD 等字段
   - 相同 keyword 会去重后保留一行
   - `对应域名` 聚合命中该关键词的完整 URL
   - 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
@@ -86,15 +94,15 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 新增内页
 - 新增路由模式
 - 新关键词候选（phrase-only）
+- 最终标准词表摘要（含 SIM/SEM/gefeiKD 回填统计与预览）
 
 ### 标准词表 Excel
 
 `report/latest.xlsx` 与 `report/history/keyword-table-*.xlsx`：
 - 表头严格对齐标准词表 v1
-- 当前用于给后续找词/分析流程提供关键词种子
-- 本 skill 仅填：
-  - `keyword`
-  - `对应域名`
+- 先生成 sitemap 种子词表，再串行经 `analyze-words` + `check-gefei-kd` 补齐指标
+- 最终版本会回写到 `report/latest.xlsx` / `report/history/keyword-table-*.xlsx`
+- 并同步一份到 `words/sitemap-YYYYMMDD-HHMMSS.xlsx`
 
 ## 依赖
 
