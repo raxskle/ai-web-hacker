@@ -60,6 +60,9 @@ DEFAULT_CHAIN_WORK_DIR = PROJECT_DIR / "_internal" / "chained"
 DEFAULT_COLUMN_MIN_WIDTH = 12
 DEFAULT_COLUMN_MAX_WIDTH = 72
 DEFAULT_COLUMN_PADDING = 2
+
+SIM_COLUMN_FILL_COLOR = "FFEAF4FF"
+SEM_COLUMN_FILL_COLOR = "FFF4EAFF"
 MERGED_LATEST_FILE = "latest.md"
 MERGED_LATEST_XLSX = "latest.xlsx"
 
@@ -329,16 +332,26 @@ def get_header_for_field(field_name: str) -> str:
     raise RuntimeError(f"标准词表缺少字段: {field_name}")
 
 
+def get_score_column_index_from_headers(headers: Sequence[str]) -> int:
+    score_header = str(get_standard_word_table_spec().get("scoreColumnHeader") or "").strip()
+    if not score_header:
+        score_header = "score(simWindowVolume*cpc/kd)"
+    try:
+        return list(headers).index(score_header)
+    except ValueError as exc:
+        raise RuntimeError(f"标准词表缺少 score 列: {score_header}") from exc
+
+
 def _require_openpyxl():
     try:
         from openpyxl import Workbook, load_workbook
-        from openpyxl.styles import Alignment, Font
+        from openpyxl.styles import Alignment, Font, PatternFill
         from openpyxl.utils import get_column_letter
     except ImportError as exc:
         raise RuntimeError(
             "缺少依赖 openpyxl。请先执行 `pip3 install openpyxl` 再运行。"
         ) from exc
-    return Workbook, Font, Alignment, get_column_letter, load_workbook
+    return Workbook, Font, Alignment, PatternFill, get_column_letter, load_workbook
 
 
 MULTILINE_EXPORT_FIELDS = {
@@ -350,10 +363,10 @@ MULTILINE_EXPORT_FIELDS = {
 def _format_multiline_export_text(field: str, value):
     if value is None:
         return value
+    if field not in MULTILINE_EXPORT_FIELDS:
+        return value
     text = str(value).strip()
     if not text:
-        return text
-    if field not in MULTILINE_EXPORT_FIELDS:
         return text
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     normalized = re.sub(r"\s*\|\s*", "\n", normalized)
@@ -1271,7 +1284,7 @@ def build_standard_word_rows(top_keywords: List[dict], newly_added_urls: List[di
 
 
 def write_standard_word_excel(*, stamp: str, site_results: List[dict], output_path: Path) -> None:
-    Workbook, Font, Alignment, get_column_letter, _ = _require_openpyxl()
+    Workbook, Font, Alignment, PatternFill, get_column_letter, _ = _require_openpyxl()
 
     workbook = Workbook()
     summary_sheet = workbook.active
@@ -1299,6 +1312,20 @@ def write_standard_word_excel(*, stamp: str, site_results: List[dict], output_pa
         cell.font = Font(bold=True)
         cell.alignment = Alignment(wrap_text=True, vertical="top")
 
+    field_to_index = {str(column.get("field") or ""): index for index, column in enumerate(export_columns, start=1)}
+    sim_fill = PatternFill(fill_type="solid", fgColor=SIM_COLUMN_FILL_COLOR)
+    sem_fill = PatternFill(fill_type="solid", fgColor=SEM_COLUMN_FILL_COLOR)
+    sim_field_indexes = [
+        field_to_index[field]
+        for field in ("simWindowVolume", "simKd", "simCpc")
+        if field in field_to_index
+    ]
+    sem_field_indexes = [
+        field_to_index[field]
+        for field in ("semVolume", "semKd", "semCpc")
+        if field in field_to_index
+    ]
+
     for row in standard_word_rows:
         export_row = []
         for column in export_columns:
@@ -1309,6 +1336,12 @@ def write_standard_word_excel(*, stamp: str, site_results: List[dict], output_pa
     for row_cells in keywords_sheet.iter_rows(min_row=2, max_row=keywords_sheet.max_row, min_col=1, max_col=len(headers)):
         for cell in row_cells:
             cell.alignment = Alignment(wrap_text=True, vertical="top")
+
+    for row_index in range(2, keywords_sheet.max_row + 1):
+        for col_index in sim_field_indexes:
+            keywords_sheet.cell(row=row_index, column=col_index).fill = sim_fill
+        for col_index in sem_field_indexes:
+            keywords_sheet.cell(row=row_index, column=col_index).fill = sem_fill
 
     keywords_sheet.freeze_panes = "A2"
     keywords_sheet.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{max(keywords_sheet.max_row, 1)}"
@@ -2130,7 +2163,7 @@ def validate_report(args: argparse.Namespace) -> int:
     if not xlsx_path.exists():
         raise SystemExit(f"Excel 不存在: {xlsx_path}")
 
-    _Workbook, _Font, _Alignment, _get_column_letter, load_workbook = _require_openpyxl()
+    _Workbook, _Font, _Alignment, _PatternFill, _get_column_letter, load_workbook = _require_openpyxl()
     workbook = load_workbook(xlsx_path, data_only=True)
     try:
         if "keywords" not in workbook.sheetnames:
@@ -2151,13 +2184,39 @@ def validate_report(args: argparse.Namespace) -> int:
 
         keyword_col = expected_headers.index(get_header_for_field("keyword")) + 1
         domain_col = expected_headers.index(get_header_for_field("correspondingDomain")) + 1
+        score_col = get_score_column_index_from_headers(expected_headers) + 1
+        numeric_fields = [
+            "simWindowVolume",
+            "simKd",
+            "simCpc",
+            "semVolume",
+            "semKd",
+            "semCpc",
+            "gefeiKD",
+        ]
+        numeric_indexes = [expected_headers.index(get_header_for_field(field)) + 1 for field in numeric_fields]
+
+        def _is_numeric_cell(value) -> bool:
+            return isinstance(value, (int, float)) and not isinstance(value, bool)
+
         for row_index in range(2, sheet.max_row + 1):
             keyword = sheet.cell(row=row_index, column=keyword_col).value
             domain = sheet.cell(row=row_index, column=domain_col).value
+            score_value = sheet.cell(row=row_index, column=score_col).value
             if keyword in (None, ""):
                 raise SystemExit(f"keyword 列为空（row={row_index}）")
             if domain in (None, ""):
                 raise SystemExit(f"对应域名 列为空（row={row_index}）")
+
+            if score_value not in (None, "") and not _is_numeric_cell(score_value):
+                raise SystemExit(f"score 列应为数值类型而非文本（row={row_index}）")
+
+            for col_index in numeric_indexes:
+                value = sheet.cell(row=row_index, column=col_index).value
+                if value in (None, ""):
+                    continue
+                if not _is_numeric_cell(value):
+                    raise SystemExit(f"数字列应为数值类型而非文本（row={row_index}, col={col_index}）")
     finally:
         workbook.close()
 

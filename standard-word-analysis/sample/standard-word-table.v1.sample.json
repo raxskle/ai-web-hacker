@@ -9,8 +9,6 @@
     {
       "keyword": "image to text",
       "correspondingDomain": "",
-      "group": "image to text | image-to-text",
-      "sourcePresence": "both",
       "score": 96,
       "simWindowVolume": 12000,
       "simKd": 50,
@@ -18,13 +16,13 @@
       "semVolume": 18100,
       "semKd": 68,
       "semCpc": 1.88,
-      "gefeiKD": 42
+      "gefeiKD": 42,
+      "group": "image to text | image-to-text",
+      "sourcePresence": "both"
     },
     {
       "keyword": "free image parser",
       "correspondingDomain": "",
-      "group": "free image parser | free images parser",
-      "sourcePresence": "sim_only",
       "score": 12.766667,
       "simWindowVolume": 2300,
       "simKd": 30,
@@ -32,13 +30,13 @@
       "semVolume": null,
       "semKd": null,
       "semCpc": null,
-      "gefeiKD": null
+      "gefeiKD": null,
+      "group": "free image parser | free images parser",
+      "sourcePresence": "sim_only"
     },
     {
       "keyword": "anime nexus",
-      "correspondingDomain": "animexus.vercel.app | https://animexus.vercel.app/",
-      "group": "",
-      "sourcePresence": null,
+      "correspondingDomain": "https://animexus.vercel.app/ | https://animexus.vercel.app/path",
       "score": null,
       "simWindowVolume": null,
       "simKd": null,
@@ -46,7 +44,9 @@
       "semVolume": null,
       "semKd": null,
       "semCpc": null,
-      "gefeiKD": 18
+      "gefeiKD": 18,
+      "group": "",
+      "sourcePresence": null
     }
   ]
 }

@@ -87,6 +87,9 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
   - `score(simWindowVolume*cpc/kd)` 仅由 SIM 字段计算
   - 当缺失完整 SIM 指标（任一缺失或 <= 0）时，`score` 允许为空
   - `sourcePresence(SIM/SEM)` 根据 SIM/SEM 是否存在自动重算
+- `keywords` sheet 列顺序固定为：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，避免“数字存为文本”
+- `keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 - 失败策略：
   - SEM 任一关键词最终失败：整次失败，不写入新产物
   - SIM 请求失败或未命中：整次继续，该词 SIM 字段置空

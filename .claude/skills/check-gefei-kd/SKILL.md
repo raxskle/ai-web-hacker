@@ -63,7 +63,7 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py run --keyword "image 
 # 基于快照重建历史报告 + 标准词表（不请求 API）
 python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py rebuild-reports
 
-# 校验 latest.md 结构
+# 校验 latest.md 与 latest.xlsx
 python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 ```
 
@@ -82,6 +82,8 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 
 - 自由关键词输入：每行只有 `keyword` 与 `gefeiKD` 有值，其余列为空。
 - 标准词表输入：保留原行所有字段，仅覆盖 `gefeiKD`。
+- `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫。
 
 ## 规则摘要
 

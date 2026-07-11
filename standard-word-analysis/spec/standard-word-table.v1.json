@@ -48,26 +48,6 @@
       }
     },
     {
-      "header": "group",
-      "field": "group",
-      "type": "string",
-      "nullable": true,
-      "width_profile": {
-        "min": 36,
-        "max": 110
-      }
-    },
-    {
-      "header": "sourcePresence(SIM/SEM)",
-      "field": "sourcePresence",
-      "type": "enum",
-      "nullable": true,
-      "transform": "source_presence_label",
-      "width_profile": {
-        "fixed": 24
-      }
-    },
-    {
       "header": "score(simWindowVolume*cpc/kd)",
       "field": "score",
       "type": "number",
@@ -154,6 +134,26 @@
       "width_profile": {
         "min": 12,
         "max": 18
+      }
+    },
+    {
+      "header": "group",
+      "field": "group",
+      "type": "string",
+      "nullable": true,
+      "width_profile": {
+        "min": 36,
+        "max": 110
+      }
+    },
+    {
+      "header": "sourcePresence(SIM/SEM)",
+      "field": "sourcePresence",
+      "type": "enum",
+      "nullable": true,
+      "transform": "source_presence_label",
+      "width_profile": {
+        "fixed": 24
       }
     }
   ]

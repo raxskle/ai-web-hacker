@@ -10,9 +10,9 @@
 - 新增数量：53
 - 上涨数量：144
 - 标准词表行数：28（最终完整词表）
-- SIM 指标完整行数：2
-- SEM 指标完整行数：2
-- gefeiKD 已回填行数：28
+- SIM 指标完整行数：0
+- SEM 指标完整行数：0
+- gefeiKD 已回填行数：0
 - 标准词表按 keyword 去重，`对应域名` 聚合同词命中的全部域名 / 页面上下文
 
 ## 监控结果
@@ -221,26 +221,26 @@
 
 | keyword | simVolume | semVolume | gefeiKD | score(sim) |
 | --- | --- | --- | --- | --- |
-| game of thrones family tree | 28690 | 34950 | 33.30 | 808.54 |
-| enamed ranking | 580 | 100 | 42.30 | 8.49 |
-| チームみらい | 61400 | 52270 | 61 | -<wbr> |
-| camera with filters | 1280 | 23460 | 38.80 | -<wbr> |
-| dutamovie21 | 209930 | 21580 | 48.60 | -<wbr> |
-| نتيجه ثانويه عامه 2024 | 2100 | 8150 | 44.20 | -<wbr> |
-| mangapiracy | 910 | 570 | 45 | -<wbr> |
-| fennec presets | 170 | 340 | 32.30 | -<wbr> |
-| kira website death note | 1710 | 230 | 60.70 | -<wbr> |
-| mirexa vercel app | 580 | 90 | 65.80 | -<wbr> |
-| cursor token usage | 1900 | 80 | 72.30 | -<wbr> |
-| какие лодки пвх не подлежат регистрации | 0 | 10 | 1.80 | -<wbr> |
-| witch hat atelier spell maker | 20110 | 0 | 27.70 | -<wbr> |
-| dazn mundial acestream | 6200 | 0 | 39.40 | -<wbr> |
-| joseph chio portfolio | 1480 | 0 | 31.60 | -<wbr> |
-| line ranger kiwi | 1310 | 0 | 51.20 | -<wbr> |
-| ジェネシスパス | 1290 | 0 | 60.20 | -<wbr> |
-| gta5 radio site | 1080 | 0 | 39.10 | -<wbr> |
-| aeron james castillo | 1040 | 0 | 48.70 | -<wbr> |
-| cricfusion | 910 | 0 | 49.90 | -<wbr> |
+| line ranger kiwi | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| dutamovie21 | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| aeron james castillo | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| fuck claude vercel.app | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| fennec presets | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| game of thrones family tree | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| 인상율 | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| チームみらい | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| نتيجه ثانويه عامه 2024 | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| witch hat atelier spell maker | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| camera with filters | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| download gta vice city free online | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| gta5 radio site | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| почему плохо грузит вк на 11 айфоне | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| joseph chio portfolio | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| как установить стеклоподъемник на ваз 21214 | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| air draw gesture | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| cricfusion | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| cursor token usage | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
+| enamed ranking | -<wbr> | -<wbr> | -<wbr> | -<wbr> |
 
 ## 备注
 

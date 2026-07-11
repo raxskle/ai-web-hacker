@@ -115,7 +115,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - 标准词表种子先导出 `新增` 页面/子域名的 top keywords
 - 标准词表表头对齐 `standard-word-analysis/spec/standard-word-table.v1.json`
 - 相同 `keyword` 按词去重，仅保留一行
-- `对应域名` 聚合同词命中的全部域名 / 页面上下文，使用 ` | ` 连接
+- `对应域名` 聚合同词命中的全部域名 / 页面上下文，使用 ` | ` 连接；若同 host 已存在完整 URL（无论来自 `host url` 组合项还是独立 URL 项），则移除该 host 的裸子域名项
 - 种子词表会继续串联 `analyze-words` 与 `check-gefei-kd`，并将最终完整结果同步覆盖到：
   - `word-monitor-sub-domain/report/history/report-[timestamp].md`
   - `word-monitor-sub-domain/report/latest.md`
@@ -124,6 +124,8 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
   - `words/sub-domain-[timestamp].xlsx`（仓库根目录）
 - 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
 - `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
+- 最终 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 - 其他指标列允许为空
 
 ## 报告备注（固定输出）

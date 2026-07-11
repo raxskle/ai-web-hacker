@@ -63,3 +63,5 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 首次运行仅建立基线，不输出新增与关键词结论
 - 关键词候选来自新增 URL slug 的清洗 phrase（保留完整 slug 词序，不再拆分单词/bigram；相同 keyword 去重后保留一行）
 - 合并词表会在 sitemap 阶段先产出“种子表”，再通过 analyze/check 链路补齐 SIM/SEM/gefeiKD，最终回写到 report 与 words 目录
+- 最终 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫

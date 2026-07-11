@@ -87,5 +87,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
   - `check-gefei-kd`：回填/刷新 `gefeiKD`
 - `report/history/report-YYYYMMDD-HHMMSS.md` 与 `report/latest.md` 会按最终词表口径重写，确保与最终词表一致
 - 最终完整词表写入：`words/sub-domain-[timestamp].xlsx`（仓库根目录）
-- 相同 `keyword` 按词去重，仅保留一行；`对应域名` 聚合同词命中的全部域名 / 页面上下文
+- 相同 `keyword` 按词去重，仅保留一行；`对应域名` 聚合同词命中的全部域名 / 页面上下文（若同 host 已存在完整 URL，无论来自 `host url` 组合项还是独立 URL 项，均移除该 host 裸子域名项）
+- 最终 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 - 其余标准词表指标列按接口返回结果允许为空

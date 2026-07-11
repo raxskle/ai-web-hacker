@@ -167,6 +167,11 @@ def parse_args() -> argparse.Namespace:
 
     validate_parser = subparsers.add_parser("validate-report", help="校验 Markdown 报告结构")
     validate_parser.add_argument("--report", default=str(PROJECT_DIR / "report" / "latest.md"))
+    validate_parser.add_argument(
+        "--xlsx",
+        default=str(PROJECT_DIR / "report" / "latest.xlsx"),
+        help="标准词表 Excel 路径（默认 report/latest.xlsx）",
+    )
 
     return parser.parse_args()
 
@@ -277,12 +282,26 @@ def spec_columns() -> List[dict]:
     return load_standard_word_table_spec()["columns"]
 
 
-def spec_field_to_header() -> Dict[str, str]:
-    return {str(col.get("field")): str(col.get("header")) for col in spec_columns()}
-
-
 def spec_header_to_field() -> Dict[str, str]:
     return {str(col.get("header")): str(col.get("field")) for col in spec_columns()}
+
+
+def get_header_for_field(field_name: str) -> str:
+    for column in spec_columns():
+        if str(column.get("field")) == field_name:
+            return str(column.get("header") or "")
+    raise RuntimeError(f"标准词表缺少字段: {field_name}")
+
+
+def get_score_column_index_from_headers(headers: Sequence[str]) -> int:
+    score_header = str(load_standard_word_table_spec().get("scoreColumnHeader") or "").strip()
+    if not score_header:
+        score_header = "score(simWindowVolume*cpc/kd)"
+    try:
+        return list(headers).index(score_header)
+    except ValueError as exc:
+        raise RuntimeError(f"标准词表缺少 score 列: {score_header}") from exc
+
 
 
 def empty_standard_word_row(keyword: str) -> dict:
@@ -316,13 +335,13 @@ def _read_keywords_from_file(path: Path) -> List[str]:
 def _require_openpyxl():
     try:
         from openpyxl import Workbook, load_workbook
-        from openpyxl.styles import Alignment, Font
+        from openpyxl.styles import Alignment, Font, PatternFill
         from openpyxl.utils import get_column_letter
     except ImportError as exc:
         raise RuntimeError(
             "缺少依赖 openpyxl。请先执行 `pip3 install openpyxl` 再运行。"
         ) from exc
-    return Workbook, Font, Alignment, get_column_letter, load_workbook
+    return Workbook, Font, Alignment, PatternFill, get_column_letter, load_workbook
 
 
 MULTILINE_EXPORT_FIELDS = {
@@ -334,10 +353,10 @@ MULTILINE_EXPORT_FIELDS = {
 def _format_multiline_export_text(field: str, value):
     if value is None:
         return value
+    if field not in MULTILINE_EXPORT_FIELDS:
+        return value
     text = str(value).strip()
     if not text:
-        return text
-    if field not in MULTILINE_EXPORT_FIELDS:
         return text
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     normalized = re.sub(r"\s*\|\s*", "\n", normalized)
@@ -404,7 +423,7 @@ def read_standard_word_table_file(path: Path) -> List[dict]:
         return rows
 
     if suffix in (".xlsx", ".xlsm"):
-        _, _, _, _, load_workbook = _require_openpyxl()
+        _, _, _, _, _, load_workbook = _require_openpyxl()
         wb = load_workbook(path, data_only=True)
         # 优先使用 keywords 表，其次第一个 sheet
         ws = wb["keywords"] if "keywords" in wb.sheetnames else wb[wb.sheetnames[0]]
@@ -863,6 +882,9 @@ DEFAULT_COLUMN_PADDING = 2
 DEFAULT_COLUMN_MIN_WIDTH = 12
 DEFAULT_COLUMN_MAX_WIDTH = 64
 
+SIM_COLUMN_FILL_COLOR = "FFEAF4FF"
+SEM_COLUMN_FILL_COLOR = "FFF4EAFF"
+
 
 def _transform_export_value(column_def: dict, value, row: Optional[dict] = None):
     transform = column_def.get("transform")
@@ -900,7 +922,7 @@ def _compute_column_width(values: Sequence[str], width_profile: Optional[dict] =
 
 
 def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path) -> None:
-    Workbook, Font, Alignment, get_column_letter, _ = _require_openpyxl()
+    Workbook, Font, Alignment, PatternFill, get_column_letter, _ = _require_openpyxl()
 
     meta = standard_word_table.get("meta") or {}
     rows = standard_word_table.get("rows") or []
@@ -931,6 +953,20 @@ def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path)
         cell.font = Font(bold=True)
         cell.alignment = Alignment(wrap_text=True, vertical="top")
 
+    field_to_index = {str(column.get("field") or ""): index for index, column in enumerate(columns, start=1)}
+    sim_fill = PatternFill(fill_type="solid", fgColor=SIM_COLUMN_FILL_COLOR)
+    sem_fill = PatternFill(fill_type="solid", fgColor=SEM_COLUMN_FILL_COLOR)
+    sim_field_indexes = [
+        field_to_index[field]
+        for field in ("simWindowVolume", "simKd", "simCpc")
+        if field in field_to_index
+    ]
+    sem_field_indexes = [
+        field_to_index[field]
+        for field in ("semVolume", "semKd", "semCpc")
+        if field in field_to_index
+    ]
+
     for row in rows:
         export_row = []
         for column in columns:
@@ -942,6 +978,12 @@ def write_standard_word_table_xlsx(standard_word_table: dict, output_path: Path)
     for row_cells in keywords_sheet.iter_rows(min_row=2, max_row=keywords_sheet.max_row, min_col=1, max_col=len(headers)):
         for cell in row_cells:
             cell.alignment = Alignment(wrap_text=True, vertical="top")
+
+    for row_index in range(2, keywords_sheet.max_row + 1):
+        for col_index in sim_field_indexes:
+            keywords_sheet.cell(row=row_index, column=col_index).fill = sim_fill
+        for col_index in sem_field_indexes:
+            keywords_sheet.cell(row=row_index, column=col_index).fill = sem_fill
 
     keywords_sheet.freeze_panes = "A2"
     keywords_sheet.auto_filter.ref = (
@@ -1351,6 +1393,7 @@ def rebuild_reports(args: argparse.Namespace) -> int:
 
 def validate_report(args: argparse.Namespace) -> int:
     report_path = Path(args.report).resolve()
+    xlsx_path = Path(args.xlsx).resolve()
     if not report_path.exists():
         raise SystemExit(f"报告不存在: {report_path}")
 
@@ -1369,7 +1412,64 @@ def validate_report(args: argparse.Namespace) -> int:
                 print(f"- {item}")
         raise SystemExit(1)
 
+    if not xlsx_path.exists():
+        raise SystemExit(f"Excel 不存在: {xlsx_path}")
+
+    _Workbook, _Font, _Alignment, _PatternFill, _get_column_letter, load_workbook = _require_openpyxl()
+    workbook = load_workbook(xlsx_path, data_only=True)
+    try:
+        if "keywords" not in workbook.sheetnames:
+            raise SystemExit("Excel 缺少 keywords sheet")
+        sheet = workbook["keywords"]
+
+        expected_headers = [str(col.get("header") or "") for col in spec_columns()]
+        actual_headers = [sheet.cell(row=1, column=index).value for index in range(1, sheet.max_column + 1)]
+        if actual_headers != expected_headers:
+            print("Excel 表头不匹配：")
+            max_len = max(len(expected_headers), len(actual_headers))
+            for index in range(1, max_len + 1):
+                expected = expected_headers[index - 1] if index <= len(expected_headers) else None
+                actual = actual_headers[index - 1] if index <= len(actual_headers) else None
+                if expected != actual:
+                    print(f"- 第 {index} 列 expected={expected!r} actual={actual!r}")
+            raise SystemExit(1)
+
+        keyword_col = expected_headers.index(get_header_for_field("keyword")) + 1
+        score_col = get_score_column_index_from_headers(expected_headers) + 1
+        numeric_fields = [
+            "simWindowVolume",
+            "simKd",
+            "simCpc",
+            "semVolume",
+            "semKd",
+            "semCpc",
+            "gefeiKD",
+        ]
+        numeric_indexes = [expected_headers.index(get_header_for_field(field)) + 1 for field in numeric_fields]
+
+        def _is_numeric_cell(value) -> bool:
+            return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+        for row_index in range(2, sheet.max_row + 1):
+            keyword = sheet.cell(row=row_index, column=keyword_col).value
+            if keyword in (None, ""):
+                raise SystemExit(f"keyword 列为空（row={row_index}）")
+
+            score_value = sheet.cell(row=row_index, column=score_col).value
+            if score_value not in (None, "") and not _is_numeric_cell(score_value):
+                raise SystemExit(f"score 列应为数值类型而非文本（row={row_index}）")
+
+            for col_index in numeric_indexes:
+                value = sheet.cell(row=row_index, column=col_index).value
+                if value in (None, ""):
+                    continue
+                if not _is_numeric_cell(value):
+                    raise SystemExit(f"数字列应为数值类型而非文本（row={row_index}, col={col_index}）")
+    finally:
+        workbook.close()
+
     print(f"[ok] report validated: {report_path}")
+    print(f"[ok] xlsx validated  : {xlsx_path}")
     return 0
 
 

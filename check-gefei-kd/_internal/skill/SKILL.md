@@ -42,7 +42,7 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py run --keyword-file /t
 # 基于快照重建历史报告 + 标准词表
 python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py rebuild-reports
 
-# 校验报告结构
+# 校验报告结构（latest.md + latest.xlsx）
 python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 ```
 
@@ -55,6 +55,8 @@ python3 check-gefei-kd/_internal/scripts/check_gefei_kd.py validate-report
 - 最新报告：`check-gefei-kd/report/latest.md`
 - 标准词表 JSON：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.json` + `check-gefei-kd/report/latest.json`
 - 标准词表 XLSX：`check-gefei-kd/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx` + `check-gefei-kd/report/latest.xlsx`
+- `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 
 ## 固定参数默认值
 

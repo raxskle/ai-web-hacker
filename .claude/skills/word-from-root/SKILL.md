@@ -69,10 +69,12 @@ python3 word-from-root/_internal/scripts/word_from_root.py run \
 
 - 规范：`standard-word-analysis/spec/standard-word-table.v1.json`
 - 当前导出 Excel 与该契约严格对齐
-- v1 当前列包含：`对应域名`、`gefeiKD`
+- v1 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
 - `word-from-root` 当前 `对应域名` 默认留空
 - 排序公式：`simWindowVolume * simCpc / simKd`
 - `gefeiKD` 为后置 `check-gefei-kd` 回填结果（默认仅前 50 词参与分析）
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，避免“数字存为文本”
+- `keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 
 ## 规则摘要（MVP）
 

@@ -119,9 +119,7 @@
     "standardWordRows": [
       {
         "keyword": "foo keyword",
-        "correspondingDomain": "foo.vercel.app https://foo.vercel.app/path | foo.vercel.app https://foo.vercel.app/other",
-        "group": "",
-        "sourcePresence": "",
+        "correspondingDomain": "https://foo.vercel.app/path | https://foo.vercel.app/other",
         "score": null,
         "simWindowVolume": null,
         "simKd": null,
@@ -129,7 +127,9 @@
         "semVolume": null,
         "semKd": null,
         "semCpc": null,
-        "gefeiKD": 18
+        "gefeiKD": 18,
+        "group": "",
+        "sourcePresence": ""
       }
     ],
     "standardWordSummary": {
@@ -182,8 +182,6 @@
 `comparison.standardWordRows[]`（用于标准词表 Excel `keywords` sheet）包含：
 - `keyword`
 - `correspondingDomain`
-- `group`
-- `sourcePresence`
 - `score`
 - `simWindowVolume`
 - `simKd`
@@ -192,11 +190,13 @@
 - `semKd`
 - `semCpc`
 - `gefeiKD`
+- `group`
+- `sourcePresence`
 
 其中：
 - 当前仅导出新增页面 / 新增子域名对应的 top keywords
 - 相同 `keyword` 只保留一行
-- `correspondingDomain` 聚合该 keyword 命中的全部域名 / 页面上下文，使用 ` | ` 连接
+- `correspondingDomain` 聚合该 keyword 命中的全部域名 / 页面上下文，使用 ` | ` 连接；若同 host 已存在完整 URL（无论来自 `host url` 组合项还是独立 URL 项），则移除该 host 的裸子域名项
 - 其余指标列允许为空，以兼容标准词表统一结构
 - `gefeiKD` 为哥飞 KD API 返回的 `score`；查不到时允许为空
 

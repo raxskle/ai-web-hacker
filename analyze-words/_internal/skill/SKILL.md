@@ -68,6 +68,9 @@ python3 analyze-words/_internal/scripts/analyze_words.py validate-report
 - SIM 命中规则：在返回 top5 中，按归一化后关键词精确匹配输入词
 - `score` 只依赖 SIM 字段：`simWindowVolume * simCpc / simKd`
 - `sourcePresence` 根据 SIM/SEM 是否存在自动重算（`both/sim_only/sem_only`）
+- `keywords` sheet 列顺序固定为：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，避免“数字存为文本”
+- `keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 
 ## 失败策略
 

@@ -55,4 +55,6 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 最新合并报告：`word-monitor-sitemap/report/latest.md`
 - 历史最终词表：`word-monitor-sitemap/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`
 - 最新最终词表：`word-monitor-sitemap/report/latest.xlsx`
+- 最终 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
+- Excel 数值列按数字类型写入，`keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 - 同步词表副本：`words/sitemap-YYYYMMDD-HHMMSS.xlsx`

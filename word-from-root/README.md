@@ -113,12 +113,14 @@ python3 word-from-root/_internal/scripts/word_from_root.py run   --keyword "imag
 `report/latest.xlsx` 对齐 `standard-word-analysis` 的 v1 标准词表：
 
 - 规范路径：`standard-word-analysis/spec/standard-word-table.v1.json`
-- 当前列包含：`对应域名`、`gefeiKD`
+- `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`
 - 本版 score 公式：`simWindowVolume * simCpc / simKd`
 - `word-from-root` 当前会输出 `对应域名` 空列，供其它 skill 保持统一表头
 - `gefeiKD` 使用哥飞 KD API 返回的 `score`
 - 文本列导出采用自动换行（wrap）+ 顶对齐，避免长内容遮挡相邻列
 - `group` / `对应域名` 在展示层按多值分行（单元格内换行）以提升可读性
+- Excel 数值列（`score/sim*/sem*/gefeiKD`）按数字类型写入，避免“数字存为文本”
+- `keywords` 数据区配色：SIM 列浅蓝、SEM 列浅紫
 
 因此 `word-from-root` 产物可直接作为后续 skill（如 analyze/check）的输入交换表。
 

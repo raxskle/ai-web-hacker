@@ -2,8 +2,8 @@
 
 ## 摘要
 
-- 站点数：6
-- 站点列表：onlinegames_io, playhop_com, suikagame_io, crazygames_com, coolmathgames_com, poki_com
+- 站点数：7
+- 站点列表：coolmathgames_com, crazygames_com, gamejolt_com, onlinegames_io, playhop_com, poki_com, suikagame_io
 - 有效内页总数：131486
 - 新增内页总数：138
 - 移除内页总数：19
@@ -18,17 +18,19 @@
 
 | siteId | effectiveUrls | patterns | baseline |
 | --- | --- | --- | --- |
+| coolmathgames_<wbr>com | 3611 | 37 | 20260710-<wbr>133103 |
+| crazygames_<wbr>com | 122449 | 30 | 20260710-<wbr>133103 |
+| gamejolt_<wbr>com | 0 | 0 | yes |
 | onlinegames_<wbr>io | 1268 | 16 | 20260710-<wbr>133103 |
 | playhop_<wbr>com | 1 | 1 | 20260710-<wbr>133103 |
-| suikagame_<wbr>io | 2530 | 14 | 20260710-<wbr>133103 |
-| crazygames_<wbr>com | 122449 | 30 | 20260710-<wbr>133103 |
-| coolmathgames_<wbr>com | 3611 | 37 | 20260710-<wbr>133103 |
 | poki_<wbr>com | 1627 | 10 | 20260710-<wbr>133103 |
+| suikagame_<wbr>io | 2530 | 14 | 20260710-<wbr>133103 |
 
 ## 新增内页
 
 | siteId | url | path | slug | depth |
 | --- | --- | --- | --- | --- |
+| coolmathgames_<wbr>com | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot | /<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot | 0-<wbr>dd-<wbr>2k-<wbr>shoot | 1 |
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>green | /<wbr>ar/<wbr>game/<wbr>green | green | 3 |
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>block-<wbr>sort-<wbr>-<wbr>-<wbr>jigsaw-<wbr>puzzle-<wbr>journey | /<wbr>br/<wbr>game/<wbr>block-<wbr>sort-<wbr>-<wbr>-<wbr>jigsaw-<wbr>puzzle-<wbr>journey | block-<wbr>sort-<wbr>-<wbr>-<wbr>jigsaw-<wbr>puzzle-<wbr>journey | 3 |
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>downhill-<wbr>racer-<wbr>bvk | /<wbr>br/<wbr>game/<wbr>downhill-<wbr>racer-<wbr>bvk | downhill-<wbr>racer-<wbr>bvk | 3 |
@@ -109,7 +111,6 @@
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>nl/<wbr>game/<wbr>nightfall-<wbr>survivors-<wbr>imo | /<wbr>nl/<wbr>game/<wbr>nightfall-<wbr>survivors-<wbr>imo | nightfall-<wbr>survivors-<wbr>imo | 3 |
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>nl/<wbr>game/<wbr>pixel-<wbr>world-<wbr>uyv | /<wbr>nl/<wbr>game/<wbr>pixel-<wbr>world-<wbr>uyv | pixel-<wbr>world-<wbr>uyv | 3 |
 | crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>nl/<wbr>game/<wbr>the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets | /<wbr>nl/<wbr>game/<wbr>the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets | the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets | 3 |
-| coolmathgames_<wbr>com | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot | /<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot | 0-<wbr>dd-<wbr>2k-<wbr>shoot | 1 |
 | poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>backrooms-<wbr>recovery | /<wbr>en/<wbr>g/<wbr>backrooms-<wbr>recovery | backrooms-<wbr>recovery | 3 |
 
 ## 新增路由模式
@@ -120,6 +121,7 @@
 
 | siteId | type | keyword | score | urlCount | examples |
 | --- | --- | --- | --- | --- | --- |
+| coolmathgames_<wbr>com | phrase | dd 2k shoot | 1.50 | 1 | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot |
 | crazygames_<wbr>com | phrase | green | 37.50 | 25 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>green<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>green<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>green |
 | crazygames_<wbr>com | phrase | downhill racer bvk | 27.00 | 18 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>downhill-<wbr>racer-<wbr>bvk<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>downhill-<wbr>racer-<wbr>bvk<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>downhill-<wbr>racer-<wbr>bvk |
 | crazygames_<wbr>com | phrase | pixel world uyv | 27.00 | 18 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>pixel-<wbr>world-<wbr>uyv<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>pixel-<wbr>world-<wbr>uyv<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>pixel-<wbr>world-<wbr>uyv |
@@ -127,7 +129,6 @@
 | crazygames_<wbr>com | phrase | the flowers merge and sell bouquets | 22.50 | 15 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>the-<wbr>flowers-<wbr>merge-<wbr>and-<wbr>sell-<wbr>bouquets |
 | crazygames_<wbr>com | phrase | unscrambled | 22.50 | 15 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>unscrambled<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>unscrambled<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>unscrambled |
 | crazygames_<wbr>com | phrase | nightfall survivors imo | 18.00 | 12 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>nightfall-<wbr>survivors-<wbr>imo<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>nightfall-<wbr>survivors-<wbr>imo<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>nightfall-<wbr>survivors-<wbr>imo |
-| coolmathgames_<wbr>com | phrase | dd 2k shoot | 1.50 | 1 | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>0-<wbr>dd-<wbr>2k-<wbr>shoot |
 | poki_<wbr>com | phrase | backrooms recovery | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>backrooms-<wbr>recovery |
 
 ## 最终标准词表摘要

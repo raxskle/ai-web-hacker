@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-11T20:57:52",
+    "stamp": "20260711-205752",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 9,
+      "keywordCountBeforeLimit": 9,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "green",
+        "unscrambled",
+        "dd 2k shoot",
+        "backrooms recovery",
+        "block sort jigsaw puzzle journey",
+        "downhill racer bvk",
+        "nightfall survivors imo",
+        "pixel world uyv",
+        "the flowers merge and sell bouquets"
+      ],
+      "keywordCount": 9
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 9,
+      "successCount": 9,
+      "failureCount": 0,
+      "avgScore": 46.4556,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "困难": 3,
+        "中等": 2,
+        "容易": 4
+      },
+      "keywordTypeDistribution": {
+        "generic": 5,
+        "brand": 4
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/history/report-20260711-205752.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/history/keyword-table-20260711-205752.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/history/keyword-table-20260711-205752.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "unscrambled",
+      "score": 70.5,
+      "gefeiKD": 70.5,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 40,
+        "quality": {
+          "low": 150,
+          "mid": 210,
+          "high": 310
+        },
+        "directory": {
+          "low": 520,
+          "mid": 840,
+          "high": 1300
+        },
+        "low": 150,
+        "mid": 210,
+        "high": 310,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 70.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 unscramble.com（DR 15）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783675388,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 70.5/100（困难）。",
+        "前 10 名中有 6 个首页排名（wordunscrambler.me、wordsies.com、unscrambled-words.com、unscramble.com、content.allscrabblewords.com、wordunscrambler.net），首页平均站点强度 45/100。",
+        "7/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面用户粘性强：前十站点行为中位数达到停留 4分26秒、跳出率仅 37% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "第 4 名 unscramble.com DR 仅 15，弱站已能进前十；但盘面是多站正面争夺的红海，易做信号大幅打折。且其体验分垫底（29/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-3）",
+        "第 2 名 wordsies.com（DR 34）是低 DR 站点的首页排名，小站靠首页就能排进来；但盘面是多站正面争夺的红海，易做信号大幅打折。且其体验分垫底（25/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-3）",
+        "有 2 个强首页（wordunscrambler.me 强度69、wordunscrambler.net 强度65）占坑，词已被多个专门站点重兵把守。（+4）",
+        "前十中有 6 个站点把整个首页押在这个词上（wordunscrambler.me、wordsies.com、unscrambled-words.com、unscramble.com、content.allscrabblewords.com、wordunscrambler.net）—— 这是各站的核心词、不是顺带排名，红海正面争夺，新站要在产品力与外链上同时超越多个专做站。（+8）",
+        "6 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 150–310 个引用域（中值 210，按 Ahrefs 官方 KD→引用域曲线由难度分 70.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 unscramble.com（DR 15））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 520–1300 个。对应的域名权重量级约为 DR 40。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "green",
+      "score": 66.3,
+      "gefeiKD": 66.3,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 39,
+        "quality": {
+          "low": 120,
+          "mid": 170,
+          "high": 260
+        },
+        "directory": {
+          "low": 440,
+          "mid": 700,
+          "high": 1000
+        },
+        "low": 120,
+        "mid": 170,
+        "high": 260,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 66.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 reforestaction.com（DR 75，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757032,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 66.3/100（困难）。",
+        "前 8 名全部是内页排名，但无一弱位 —— 这不是\"没人认真打\"，而是该词的搜索意图被权威平台的文档/内容页锁定（搜索者要的是方案与对比，不是某个产品首页）。无首页在此不构成机会；新站的现实路径是高质量评测/对比内容页，正面对位盘面中外链最薄的内容位。",
+        "8/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 120–260 个引用域（中值 170，按 Ahrefs 官方 KD→引用域曲线由难度分 66.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 reforestaction.com（DR 75，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 440–1000 个。对应的域名权重量级约为 DR 39。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "block sort jigsaw puzzle journey",
+      "score": 63.6,
+      "gefeiKD": 63.6,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 42.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 110,
+          "mid": 160,
+          "high": 230
+        },
+        "directory": {
+          "low": 390,
+          "mid": 620,
+          "high": 930
+        },
+        "low": 110,
+        "mid": 160,
+        "high": 230,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 63.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 crazygames.com（DR 81，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757053,
+      "reasons": [
+        "品牌词口径：难度估算为 63.6/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 42.8/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（apps.apple.com、play.google.com、facebook.com、youtube.com、tiktok.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 9 个固定位）后，可竞争位仅 1 个：第 1 名 crazygames.com（DR 81，内页，域名 22.1 年，月流量 1.1 亿、搜索占比 42%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 110–230 个引用域（中值 160，按 Ahrefs 官方 KD→引用域曲线由难度分 63.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 crazygames.com（DR 81，内页））；目录/收录型外链为主时约 390–930 个。对应域名权重量级约 DR 38。"
+      ]
+    },
+    {
+      "keyword": "backrooms recovery",
+      "score": 47.3,
+      "gefeiKD": 47.3,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 55.3,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 190,
+          "mid": 310,
+          "high": 460
+        },
+        "low": 55,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 esquire.com（DR 88，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757051,
+      "reasons": [
+        "品牌词口径：难度估算为 47.3/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 55.3/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com、reddit.com、en.wikipedia.org、tiktok.com）。",
+        "剔除品牌本尊与平台生态页（共 7 个固定位）后，可竞争位仅 3 个：第 2 名 backrooms.fandom.com（DR 92，内页）、第 5 名 esquire.com（DR 88，内页，域名 31.6 年，月流量 1566.4 万、搜索占比 47%）、第 10 名 store.steampowered.com（DR 92，内页，域名 25.9 年，月流量 2.2 亿、搜索占比 44%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 55–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 47.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 esquire.com（DR 88，内页））；目录/收录型外链为主时约 190–460 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "the flowers merge and sell bouquets",
+      "score": 47.3,
+      "gefeiKD": 47.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 190,
+          "mid": 310,
+          "high": 460
+        },
+        "low": 55,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bouqs.com（DR 73）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783729924,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 47.3/100（中等）【纯 DR 模式】。",
+        "前 8 名中有 1 个首页排名（bouqs.com），首页平均站点强度 73/100。",
+        "6/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 3 名 allwebgames.com DR 仅 16，弱站已能进前十。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "本次有 4/8 个域名按纯 DR 模式估算（无流量数据）。DR 与流量相关性高，结果整体可用；但纯 DR 无法识别\"低 DR 高流量\"的新锐竞争者，新兴热门领域的实际难度可能略高于估算值。",
+        "进入前十的链接预算：约 55–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 47.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bouqs.com（DR 73））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 190–460 个。对应的域名权重量级约为 DR 31。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "downhill racer bvk",
+      "score": 33.8,
+      "gefeiKD": 33.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 21.2,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 65
+        },
+        "directory": {
+          "low": 110,
+          "mid": 170,
+          "high": 260
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 33.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 retro-skiing.com（DR 5，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757063,
+      "reasons": [
+        "品牌词口径：难度估算为 33.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 21.2/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（en.wikipedia.org、reddit.com、facebook.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 6 个：第 2 名 apnews.com（DR 92，内页，域名 35 年，月流量 7866.0 万、搜索占比 26%）、第 4 名 retro-skiing.com（DR 5，内页）、第 6 名 rottentomatoes.com（DR 87，内页，域名 27.2 年，月流量 8163.7 万、搜索占比 68%）、第 7 名 tcm.com（DR 77，内页，域名 31.7 年，月流量 158.8 万、搜索占比 30%）、第 8 名 amazon.com（DR 96，内页，域名 31.7 年，月流量 26.5 亿、搜索占比 22%）、第 10 名 aperturecinema.com（DR 47，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 30–65 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 33.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 retro-skiing.com（DR 5，内页））；目录/收录型外链为主时约 110–260 个。对应域名权重量级约 DR 25。"
+      ]
+    },
+    {
+      "keyword": "pixel world uyv",
+      "score": 33.6,
+      "gefeiKD": 33.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 65
+        },
+        "directory": {
+          "low": 110,
+          "mid": 170,
+          "high": 260
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 33.6 插值（该口径为进入前十所需）。前十唯一首页 pixelworlds.pw（DR 3）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757074,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 33.6/100（容易）。",
+        "前 10 名中有 1 个首页排名（pixelworlds.pw），首页平均站点强度 3/100。",
+        "9 个高 DR 大站（play.google.com、youtube.com、crazygames.com、youtube.com、youtube.com、pixelworlds.fandom.com、steamcommunity.com、youtube.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 9 名 pixelworlds.pw（DR 3，首页排名）证明弱站可进前十，但位次靠后、属于高流动区，可能是新站蜜月期的临时排名，信号打折。（-4）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–65 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 33.6 插值（该口径为进入前十所需）。前十唯一首页 pixelworlds.pw（DR 3）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照）。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 110–260 个。对应的域名权重量级约为 DR 25。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "nightfall survivors imo",
+      "score": 32.6,
+      "gefeiKD": 32.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 40,
+          "high": 60
+        },
+        "directory": {
+          "low": 100,
+          "mid": 160,
+          "high": 250
+        },
+        "low": 30,
+        "mid": 40,
+        "high": 60,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 32.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 seaverse.ai（DR 38，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757069,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 32.6/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 9 名 seaverse.ai，难度贡献仅 17.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "9 个高 DR 大站（crazygames.com、store.steampowered.com、steamcommunity.com、youtube.com、survivethenight.fandom.com、play.google.com、store.steampowered.com、help.nightfall.ai、survivethenight.fandom.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 7 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–60 个引用域（中值 40，按 Ahrefs 官方 KD→引用域曲线由难度分 32.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 seaverse.ai（DR 38，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 100–250 个。对应的域名权重量级约为 DR 25。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "dd 2k shoot",
+      "score": 23.1,
+      "gefeiKD": 23.1,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 31.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 20,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 65,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 logiflowgrid.com（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1783757044,
+      "reasons": [
+        "品牌词口径：难度估算为 23.1/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 31.8/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（apps.apple.com、facebook.com、youtube.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 6 个：第 3 名 logiflowgrid.com（DR 0，内页）、第 5 名 nba.2k.com（DR 80，内页）、第 6 名 coolmathgames.com（DR 76，内页，域名 24.5 年，月流量 1377.8 万、搜索占比 43%）、第 8 名 theshootinggames.shop（DR 0，内页）、第 9 名 bubbleshooter.com（DR 50，内页）、第 10 名 appiergame.com（DR 0，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 logiflowgrid.com（DR 0，内页））；目录/收录型外链为主时约 65–160 个。对应域名权重量级约 DR 20。",
+        "本次有 5/10 个域名按纯 DR 模式估算。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-11T20:57:52",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260711-160008/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 9,
+        "requestCount": 9,
+        "successCount": 9,
+        "successWithScoreCount": 9,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 9
+    },
+    "rows": [
+      {
+        "keyword": "green",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/green\nhttps://www.crazygames.com/br/game/green\nhttps://www.crazygames.com/cz/game/green\nhttps://www.crazygames.com/de/game/green\nhttps://www.crazygames.com/dk/game/green\nhttps://www.crazygames.com/es/game/green\nhttps://www.crazygames.com/fi/game/green\nhttps://www.crazygames.com/fr/game/green\nhttps://www.crazygames.com/game/green\nhttps://www.crazygames.com/gr/game/green\nhttps://www.crazygames.com/hu/game/green\nhttps://www.crazygames.com/id/game/green\nhttps://www.crazygames.com/it/game/green\nhttps://www.crazygames.com/jp/game/green\nhttps://www.crazygames.com/kr/game/green\nhttps://www.crazygames.com/nl/game/green\nhttps://www.crazygames.com/no/game/green\nhttps://www.crazygames.com/pl/game/green\nhttps://www.crazygames.com/ro/game/green\nhttps://www.crazygames.com/ru/game/green\nhttps://www.crazygames.com/se/game/green\nhttps://www.crazygames.com/th/game/green\nhttps://www.crazygames.com/tr/game/green\nhttps://www.crazygames.com/ua/game/green\nhttps://www.crazygames.com/vn/game/green",
+        "score": 54518.094,
+        "simWindowVolume": 833610.0,
+        "simKd": 50.0,
+        "simCpc": 3.27,
+        "semVolume": 1257960.0,
+        "semKd": 47.0,
+        "semCpc": 4.74,
+        "gefeiKD": 66.3,
+        "group": "green",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "unscrambled",
+        "correspondingDomain": "https://www.crazygames.com/br/game/unscrambled\nhttps://www.crazygames.com/dk/game/unscrambled\nhttps://www.crazygames.com/fr/game/unscrambled\nhttps://www.crazygames.com/game/unscrambled\nhttps://www.crazygames.com/hu/game/unscrambled\nhttps://www.crazygames.com/id/game/unscrambled\nhttps://www.crazygames.com/it/game/unscrambled\nhttps://www.crazygames.com/jp/game/unscrambled\nhttps://www.crazygames.com/nl/game/unscrambled\nhttps://www.crazygames.com/no/game/unscrambled\nhttps://www.crazygames.com/ro/game/unscrambled\nhttps://www.crazygames.com/th/game/unscrambled\nhttps://www.crazygames.com/tr/game/unscrambled\nhttps://www.crazygames.com/ua/game/unscrambled\nhttps://www.crazygames.com/vn/game/unscrambled",
+        "score": 36.685106,
+        "simWindowVolume": 4660.0,
+        "simKd": 47.0,
+        "simCpc": 0.37,
+        "semVolume": 183690.0,
+        "semKd": 76.0,
+        "semCpc": 0.01,
+        "gefeiKD": 70.5,
+        "group": "unscrambled",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "dd 2k shoot",
+        "correspondingDomain": "https://www.coolmathgames.com/0-dd-2k-shoot",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 30.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 23.1,
+        "group": "dd 2k shoot",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "backrooms recovery",
+        "correspondingDomain": "https://poki.com/en/g/backrooms-recovery",
+        "score": null,
+        "simWindowVolume": 1260.0,
+        "simKd": 79.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 47.3,
+        "group": "backrooms recovery",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "block sort jigsaw puzzle journey",
+        "correspondingDomain": "https://www.crazygames.com/br/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/dk/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/fr/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/hu/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/id/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/it/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/jp/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/nl/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/no/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/ro/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/th/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/tr/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/ua/game/block-sort---jigsaw-puzzle-journey\nhttps://www.crazygames.com/vn/game/block-sort---jigsaw-puzzle-journey",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 63.6,
+        "group": "block sort jigsaw puzzle journey",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "downhill racer bvk",
+        "correspondingDomain": "https://www.crazygames.com/br/game/downhill-racer-bvk\nhttps://www.crazygames.com/cz/game/downhill-racer-bvk\nhttps://www.crazygames.com/de/game/downhill-racer-bvk\nhttps://www.crazygames.com/dk/game/downhill-racer-bvk\nhttps://www.crazygames.com/fr/game/downhill-racer-bvk\nhttps://www.crazygames.com/game/downhill-racer-bvk\nhttps://www.crazygames.com/hu/game/downhill-racer-bvk\nhttps://www.crazygames.com/id/game/downhill-racer-bvk\nhttps://www.crazygames.com/it/game/downhill-racer-bvk\nhttps://www.crazygames.com/jp/game/downhill-racer-bvk\nhttps://www.crazygames.com/nl/game/downhill-racer-bvk\nhttps://www.crazygames.com/no/game/downhill-racer-bvk\nhttps://www.crazygames.com/ro/game/downhill-racer-bvk\nhttps://www.crazygames.com/ru/game/downhill-racer-bvk\nhttps://www.crazygames.com/th/game/downhill-racer-bvk\nhttps://www.crazygames.com/tr/game/downhill-racer-bvk\nhttps://www.crazygames.com/ua/game/downhill-racer-bvk\nhttps://www.crazygames.com/vn/game/downhill-racer-bvk",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 33.8,
+        "group": "downhill racer bvk",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "nightfall survivors imo",
+        "correspondingDomain": "https://www.crazygames.com/dk/game/nightfall-survivors-imo\nhttps://www.crazygames.com/fr/game/nightfall-survivors-imo\nhttps://www.crazygames.com/game/nightfall-survivors-imo\nhttps://www.crazygames.com/id/game/nightfall-survivors-imo\nhttps://www.crazygames.com/it/game/nightfall-survivors-imo\nhttps://www.crazygames.com/jp/game/nightfall-survivors-imo\nhttps://www.crazygames.com/nl/game/nightfall-survivors-imo\nhttps://www.crazygames.com/no/game/nightfall-survivors-imo\nhttps://www.crazygames.com/th/game/nightfall-survivors-imo\nhttps://www.crazygames.com/tr/game/nightfall-survivors-imo\nhttps://www.crazygames.com/ua/game/nightfall-survivors-imo\nhttps://www.crazygames.com/vn/game/nightfall-survivors-imo",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 32.6,
+        "group": "nightfall survivors imo",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "pixel world uyv",
+        "correspondingDomain": "https://www.crazygames.com/br/game/pixel-world-uyv\nhttps://www.crazygames.com/cz/game/pixel-world-uyv\nhttps://www.crazygames.com/de/game/pixel-world-uyv\nhttps://www.crazygames.com/dk/game/pixel-world-uyv\nhttps://www.crazygames.com/fr/game/pixel-world-uyv\nhttps://www.crazygames.com/game/pixel-world-uyv\nhttps://www.crazygames.com/hu/game/pixel-world-uyv\nhttps://www.crazygames.com/id/game/pixel-world-uyv\nhttps://www.crazygames.com/it/game/pixel-world-uyv\nhttps://www.crazygames.com/jp/game/pixel-world-uyv\nhttps://www.crazygames.com/nl/game/pixel-world-uyv\nhttps://www.crazygames.com/no/game/pixel-world-uyv\nhttps://www.crazygames.com/ro/game/pixel-world-uyv\nhttps://www.crazygames.com/ru/game/pixel-world-uyv\nhttps://www.crazygames.com/th/game/pixel-world-uyv\nhttps://www.crazygames.com/tr/game/pixel-world-uyv\nhttps://www.crazygames.com/ua/game/pixel-world-uyv\nhttps://www.crazygames.com/vn/game/pixel-world-uyv",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 33.6,
+        "group": "pixel world uyv",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "the flowers merge and sell bouquets",
+        "correspondingDomain": "https://www.crazygames.com/br/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/dk/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/fr/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/hu/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/id/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/it/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/jp/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/nl/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/no/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/ro/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/th/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/tr/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/ua/game/the-flowers-merge-and-sell-bouquets\nhttps://www.crazygames.com/vn/game/the-flowers-merge-and-sell-bouquets",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 47.3,
+        "group": "the flowers merge and sell bouquets",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}
