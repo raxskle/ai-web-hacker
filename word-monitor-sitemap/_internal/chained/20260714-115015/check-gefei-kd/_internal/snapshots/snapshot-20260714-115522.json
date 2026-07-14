@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-14T11:55:22",
+    "stamp": "20260714-115522",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 5,
+      "keywordCountBeforeLimit": 5,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "voxiom io",
+        "noob archer",
+        "merge clash",
+        "fishing anomaly",
+        "digworm io"
+      ],
+      "keywordCount": 5
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 5,
+      "successCount": 5,
+      "failureCount": 0,
+      "avgScore": 48.3,
+      "cachedHitRate": 0.0,
+      "levelDistribution": {
+        "困难": 1,
+        "中等": 3,
+        "容易": 1
+      },
+      "keywordTypeDistribution": {
+        "brand": 3,
+        "generic": 2
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/history/report-20260714-115522.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/history/keyword-table-20260714-115522.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/history/keyword-table-20260714-115522.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "merge clash",
+      "score": 65.2,
+      "gefeiKD": 65.2,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 68.4,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 120,
+          "mid": 170,
+          "high": 250
+        },
+        "directory": {
+          "low": 420,
+          "mid": 670,
+          "high": 1000
+        },
+        "low": 120,
+        "mid": 170,
+        "high": 250,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 65.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 supercell.com（DR 81，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784001310,
+      "reasons": [
+        "品牌词口径：难度估算为 65.2/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 68.4/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、apps.apple.com、reddit.com、youtube.com、facebook.com）。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 4 个：第 4 名 mergeclash.fandom.com（DR 92，内页）、第 6 名 discord.com（DR 94，内页，域名 25.7 年，月流量 6.4 亿、搜索占比 8%）、第 7 名 supercell.com（DR 81，内页，域名 27.4 年，月流量 7045.1 万、搜索占比 22%）、第 9 名 merge-clash-tower-defense-td.en.uptodown.com（DR 83，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 120–250 个引用域（中值 170，按 Ahrefs 官方 KD→引用域曲线由难度分 65.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 supercell.com（DR 81，内页））；目录/收录型外链为主时约 420–1000 个。对应域名权重量级约 DR 38。"
+      ]
+    },
+    {
+      "keyword": "voxiom io",
+      "score": 49.5,
+      "gefeiKD": 49.5,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 57.2,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 60,
+          "mid": 85,
+          "high": 120
+        },
+        "directory": {
+          "low": 210,
+          "mid": 330,
+          "high": 500
+        },
+        "low": 60,
+        "mid": 85,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 49.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 zapgames.io（DR 53，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784001298,
+      "reasons": [
+        "品牌词口径：难度估算为 49.5/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 57.2/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 voxiom.io 是与关键词同名的官方域名首页，voxiom.io 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 1 个平台型结果（youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 5 个：第 2 名 crazygames.com（DR 80，内页，域名 22.1 年，月流量 1.1 亿、搜索占比 42%）、第 3 名 zapgames.io（DR 53，内页，域名 13 个月，月流量 69.8 万、搜索占比 53%）、第 4 名 voxiomio.fandom.com（DR 92，内页）、第 6 名 twoplayergames.org（DR 69，内页，域名 17.9 年，月流量 242.5 万、搜索占比 66%）、第 7 名 iogames.space（DR 72，内页，域名 10.2 年，月流量 43.8 万、搜索占比 39%） —— 这些才是衍生内容真正要对位的对手。",
+        "关键证据：zapgames.io 注册仅约 13 个月，已月获 69.8 万 流量 —— 品牌词截流打法在这个词上确实可行、路径已被验证。注意其 DR 已达 53（如此年轻的域名通常意味着购入老域名或激进外链投入）。",
+        "衍生内容进入此 SERP 的链接预算：约 60–120 个引用域（中值 85，按 Ahrefs 官方 KD→引用域曲线由难度分 49.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 zapgames.io（DR 53，内页））；目录/收录型外链为主时约 210–500 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "fishing anomaly",
+      "score": 45.9,
+      "gefeiKD": 45.9,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 290,
+          "high": 440
+        },
+        "low": 50,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 45.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 playhop.com（DR 61，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784001317,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 45.9/100（中等）。",
+        "第 6 名虽是 reddit.com 的论坛帖，但盘面已有 5 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 meegle.com，难度贡献仅 28.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 50–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 45.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 playhop.com（DR 61，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 180–440 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "digworm io",
+      "score": 42.6,
+      "gefeiKD": 42.6,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 38.1,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 250,
+          "high": 380
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 42.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 skich.app（DR 36，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784001322,
+      "reasons": [
+        "品牌词口径：难度估算为 42.6/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 38.1/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com、reddit.com），且 digworm.io 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 6 个：第 1 名 crazygames.com（DR 80，内页，域名 22.1 年，月流量 1.1 亿、搜索占比 42%）、第 4 名 titotu.io（DR 42，内页，域名 9.4 年，月流量 10.8 万、搜索占比 63%）、第 5 名 slithergame.io（DR 53，内页，域名 2.4 年，月流量 65.7 万、搜索占比 74%）、第 7 名 slitheriogame.io（DR 53，内页，域名 2.8 年，月流量 9.7 万、搜索占比 48%）、第 9 名 iogames.onl（DR 45，内页，月流量 26.1 万、搜索占比 54%）、第 10 名 skich.app（DR 36，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 42.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 skich.app（DR 36，内页））；目录/收录型外链为主时约 160–380 个。对应域名权重量级约 DR 29。"
+      ]
+    },
+    {
+      "keyword": "noob archer",
+      "score": 38.3,
+      "gefeiKD": 38.3,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 130,
+          "mid": 210,
+          "high": 320
+        },
+        "low": 35,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 38.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 startgamer.net（DR 4，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784001304,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 38.3/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 fuzigames.com，难度贡献仅 3.9）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面用户粘性强：前十站点行为中位数达到停留 5分14秒、跳出率仅 37% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "第 3 名 startgamer.net DR 仅 4，弱站已能进前十。且其体验分垫底（8/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 38.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 startgamer.net（DR 4，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–320 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-14T11:55:22",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 5,
+        "requestCount": 5,
+        "successCount": 5,
+        "successWithScoreCount": 5,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 5
+    },
+    "rows": [
+      {
+        "keyword": "voxiom io",
+        "correspondingDomain": "https://www.crazygames.com/es/game/voxiom-io\nhttps://www.crazygames.com/hu/game/voxiom-io\nhttps://www.crazygames.com/kr/game/voxiom-io\nhttps://www.crazygames.com/no/game/voxiom-io\nhttps://www.crazygames.com/pl/game/voxiom-io\nhttps://www.crazygames.com/tr/game/voxiom-io",
+        "score": 339.28125,
+        "simWindowVolume": 9870.0,
+        "simKd": 16.0,
+        "simCpc": 0.55,
+        "semVolume": 11400.0,
+        "semKd": 39.0,
+        "semCpc": 0.0,
+        "gefeiKD": 49.5,
+        "group": "voxiom io",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "noob archer",
+        "correspondingDomain": "https://poki.com/en/g/noob-archer-2",
+        "score": null,
+        "simWindowVolume": 120.0,
+        "simKd": 0.0,
+        "simCpc": 0.33,
+        "semVolume": 500.0,
+        "semKd": 14.0,
+        "semCpc": 0.11,
+        "gefeiKD": 38.3,
+        "group": "noob archer",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "merge clash",
+        "correspondingDomain": "https://www.crazygames.com/es/game/merge-clash\nhttps://www.crazygames.com/hu/game/merge-clash\nhttps://www.crazygames.com/kr/game/merge-clash\nhttps://www.crazygames.com/no/game/merge-clash\nhttps://www.crazygames.com/pl/game/merge-clash\nhttps://www.crazygames.com/tr/game/merge-clash",
+        "score": null,
+        "simWindowVolume": 1570.0,
+        "simKd": 0.0,
+        "simCpc": 12.29,
+        "semVolume": 150.0,
+        "semKd": 29.0,
+        "semCpc": 1.14,
+        "gefeiKD": 65.2,
+        "group": "merge clash",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "fishing anomaly",
+        "correspondingDomain": "https://www.crazygames.com/es/game/fishing-anomaly\nhttps://www.crazygames.com/hu/game/fishing-anomaly",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 50.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 45.9,
+        "group": "fishing anomaly",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "digworm io",
+        "correspondingDomain": "https://www.crazygames.com/es/game/digworm-io\nhttps://www.crazygames.com/hu/game/digworm-io",
+        "score": null,
+        "simWindowVolume": 450.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 40.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 42.6,
+        "group": "digworm io",
+        "sourcePresence": "both（SIM+SEM）"
+      }
+    ]
+  }
+}

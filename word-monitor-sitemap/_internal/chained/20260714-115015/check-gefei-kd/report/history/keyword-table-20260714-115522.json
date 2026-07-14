@@ -1,0 +1,94 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-14T11:55:22",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260714-115015/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 5,
+      "requestCount": 5,
+      "successCount": 5,
+      "successWithScoreCount": 5,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 5
+  },
+  "rows": [
+    {
+      "keyword": "voxiom io",
+      "correspondingDomain": "https://www.crazygames.com/es/game/voxiom-io\nhttps://www.crazygames.com/hu/game/voxiom-io\nhttps://www.crazygames.com/kr/game/voxiom-io\nhttps://www.crazygames.com/no/game/voxiom-io\nhttps://www.crazygames.com/pl/game/voxiom-io\nhttps://www.crazygames.com/tr/game/voxiom-io",
+      "score": 339.28125,
+      "simWindowVolume": 9870.0,
+      "simKd": 16.0,
+      "simCpc": 0.55,
+      "semVolume": 11400.0,
+      "semKd": 39.0,
+      "semCpc": 0.0,
+      "gefeiKD": 49.5,
+      "group": "voxiom io",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "noob archer",
+      "correspondingDomain": "https://poki.com/en/g/noob-archer-2",
+      "score": null,
+      "simWindowVolume": 120.0,
+      "simKd": 0.0,
+      "simCpc": 0.33,
+      "semVolume": 500.0,
+      "semKd": 14.0,
+      "semCpc": 0.11,
+      "gefeiKD": 38.3,
+      "group": "noob archer",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "merge clash",
+      "correspondingDomain": "https://www.crazygames.com/es/game/merge-clash\nhttps://www.crazygames.com/hu/game/merge-clash\nhttps://www.crazygames.com/kr/game/merge-clash\nhttps://www.crazygames.com/no/game/merge-clash\nhttps://www.crazygames.com/pl/game/merge-clash\nhttps://www.crazygames.com/tr/game/merge-clash",
+      "score": null,
+      "simWindowVolume": 1570.0,
+      "simKd": 0.0,
+      "simCpc": 12.29,
+      "semVolume": 150.0,
+      "semKd": 29.0,
+      "semCpc": 1.14,
+      "gefeiKD": 65.2,
+      "group": "merge clash",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "fishing anomaly",
+      "correspondingDomain": "https://www.crazygames.com/es/game/fishing-anomaly\nhttps://www.crazygames.com/hu/game/fishing-anomaly",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 50.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 45.9,
+      "group": "fishing anomaly",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "digworm io",
+      "correspondingDomain": "https://www.crazygames.com/es/game/digworm-io\nhttps://www.crazygames.com/hu/game/digworm-io",
+      "score": null,
+      "simWindowVolume": 450.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 40.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 42.6,
+      "group": "digworm io",
+      "sourcePresence": "both（SIM+SEM）"
+    }
+  ]
+}

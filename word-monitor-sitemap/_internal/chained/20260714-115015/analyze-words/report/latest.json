@@ -1,0 +1,81 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-14T11:54:46",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260714-115446"
+  },
+  "rows": [
+    {
+      "keyword": "voxiom io",
+      "correspondingDomain": "https://www.crazygames.com/es/game/voxiom-io\nhttps://www.crazygames.com/hu/game/voxiom-io\nhttps://www.crazygames.com/kr/game/voxiom-io\nhttps://www.crazygames.com/no/game/voxiom-io\nhttps://www.crazygames.com/pl/game/voxiom-io\nhttps://www.crazygames.com/tr/game/voxiom-io",
+      "group": "voxiom io",
+      "sourcePresence": "both",
+      "score": 339.28125,
+      "simWindowVolume": 9870.0,
+      "simKd": 16.0,
+      "simCpc": 0.55,
+      "semVolume": 11400.0,
+      "semKd": 39.0,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "noob archer",
+      "correspondingDomain": "https://poki.com/en/g/noob-archer-2",
+      "group": "noob archer",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 120.0,
+      "simKd": 0.0,
+      "simCpc": 0.33,
+      "semVolume": 500.0,
+      "semKd": 14.0,
+      "semCpc": 0.11,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "merge clash",
+      "correspondingDomain": "https://www.crazygames.com/es/game/merge-clash\nhttps://www.crazygames.com/hu/game/merge-clash\nhttps://www.crazygames.com/kr/game/merge-clash\nhttps://www.crazygames.com/no/game/merge-clash\nhttps://www.crazygames.com/pl/game/merge-clash\nhttps://www.crazygames.com/tr/game/merge-clash",
+      "group": "merge clash",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 1570.0,
+      "simKd": 0.0,
+      "simCpc": 12.29,
+      "semVolume": 150.0,
+      "semKd": 29.0,
+      "semCpc": 1.14,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "fishing anomaly",
+      "correspondingDomain": "https://www.crazygames.com/es/game/fishing-anomaly\nhttps://www.crazygames.com/hu/game/fishing-anomaly",
+      "group": "fishing anomaly",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 50.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "digworm io",
+      "correspondingDomain": "https://www.crazygames.com/es/game/digworm-io\nhttps://www.crazygames.com/hu/game/digworm-io",
+      "group": "digworm io",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 450.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 40.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    }
+  ]
+}
