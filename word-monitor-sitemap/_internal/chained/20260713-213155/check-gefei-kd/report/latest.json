@@ -1,0 +1,150 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-13T21:37:37",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 9,
+      "requestCount": 9,
+      "successCount": 8,
+      "successWithScoreCount": 8,
+      "missingScoreCount": 0,
+      "failedCount": 1
+    },
+    "rowCount": 9
+  },
+  "rows": [
+    {
+      "keyword": "om nom run",
+      "correspondingDomain": "https://www.onlinegames.io/om-nom-run",
+      "score": 64.4,
+      "simWindowVolume": 13570.0,
+      "simKd": 59.0,
+      "simCpc": 0.28,
+      "semVolume": 12830.0,
+      "semKd": 59.0,
+      "semCpc": 0.1,
+      "gefeiKD": 60,
+      "group": "om nom run",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "jelly run",
+      "correspondingDomain": "https://www.onlinegames.io/jelly-run-2048",
+      "score": 36.625926,
+      "simWindowVolume": 6380.0,
+      "simKd": 54.0,
+      "simCpc": 0.31,
+      "semVolume": 7300.0,
+      "semKd": 32.0,
+      "semCpc": 0.04,
+      "gefeiKD": 60.5,
+      "group": "jelly run",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "divine clash",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/divine-clash\nhttps://www.crazygames.com/br/game/divine-clash\nhttps://www.crazygames.com/cz/game/divine-clash\nhttps://www.crazygames.com/de/game/divine-clash\nhttps://www.crazygames.com/dk/game/divine-clash\nhttps://www.crazygames.com/es/game/divine-clash\nhttps://www.crazygames.com/fi/game/divine-clash\nhttps://www.crazygames.com/fr/game/divine-clash\nhttps://www.crazygames.com/game/divine-clash\nhttps://www.crazygames.com/gr/game/divine-clash\nhttps://www.crazygames.com/hu/game/divine-clash\nhttps://www.crazygames.com/id/game/divine-clash\nhttps://www.crazygames.com/it/game/divine-clash\nhttps://www.crazygames.com/jp/game/divine-clash\nhttps://www.crazygames.com/kr/game/divine-clash\nhttps://www.crazygames.com/nl/game/divine-clash\nhttps://www.crazygames.com/no/game/divine-clash\nhttps://www.crazygames.com/pl/game/divine-clash\nhttps://www.crazygames.com/ro/game/divine-clash\nhttps://www.crazygames.com/ru/game/divine-clash\nhttps://www.crazygames.com/se/game/divine-clash\nhttps://www.crazygames.com/th/game/divine-clash\nhttps://www.crazygames.com/tr/game/divine-clash\nhttps://www.crazygames.com/ua/game/divine-clash\nhttps://www.crazygames.com/vn/game/divine-clash",
+      "score": null,
+      "simWindowVolume": 1330.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 10.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 65.5,
+      "group": "divine clash",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "alphablitz wty",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/alphablitz-wty\nhttps://www.crazygames.com/br/game/alphablitz-wty\nhttps://www.crazygames.com/cz/game/alphablitz-wty\nhttps://www.crazygames.com/de/game/alphablitz-wty\nhttps://www.crazygames.com/dk/game/alphablitz-wty\nhttps://www.crazygames.com/es/game/alphablitz-wty\nhttps://www.crazygames.com/fi/game/alphablitz-wty\nhttps://www.crazygames.com/fr/game/alphablitz-wty\nhttps://www.crazygames.com/game/alphablitz-wty\nhttps://www.crazygames.com/gr/game/alphablitz-wty\nhttps://www.crazygames.com/hu/game/alphablitz-wty\nhttps://www.crazygames.com/id/game/alphablitz-wty\nhttps://www.crazygames.com/it/game/alphablitz-wty\nhttps://www.crazygames.com/jp/game/alphablitz-wty\nhttps://www.crazygames.com/kr/game/alphablitz-wty\nhttps://www.crazygames.com/nl/game/alphablitz-wty\nhttps://www.crazygames.com/no/game/alphablitz-wty\nhttps://www.crazygames.com/pl/game/alphablitz-wty\nhttps://www.crazygames.com/ro/game/alphablitz-wty\nhttps://www.crazygames.com/ru/game/alphablitz-wty\nhttps://www.crazygames.com/se/game/alphablitz-wty\nhttps://www.crazygames.com/th/game/alphablitz-wty\nhttps://www.crazygames.com/tr/game/alphablitz-wty\nhttps://www.crazygames.com/ua/game/alphablitz-wty\nhttps://www.crazygames.com/vn/game/alphablitz-wty",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 12.8,
+      "group": "alphablitz wty",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "farm mayhem merge",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/farm-mayhem-merge\nhttps://www.crazygames.com/br/game/farm-mayhem-merge\nhttps://www.crazygames.com/cz/game/farm-mayhem-merge\nhttps://www.crazygames.com/de/game/farm-mayhem-merge\nhttps://www.crazygames.com/dk/game/farm-mayhem-merge\nhttps://www.crazygames.com/es/game/farm-mayhem-merge\nhttps://www.crazygames.com/fi/game/farm-mayhem-merge\nhttps://www.crazygames.com/fr/game/farm-mayhem-merge\nhttps://www.crazygames.com/game/farm-mayhem-merge\nhttps://www.crazygames.com/gr/game/farm-mayhem-merge\nhttps://www.crazygames.com/hu/game/farm-mayhem-merge\nhttps://www.crazygames.com/id/game/farm-mayhem-merge\nhttps://www.crazygames.com/it/game/farm-mayhem-merge\nhttps://www.crazygames.com/jp/game/farm-mayhem-merge\nhttps://www.crazygames.com/kr/game/farm-mayhem-merge\nhttps://www.crazygames.com/nl/game/farm-mayhem-merge\nhttps://www.crazygames.com/no/game/farm-mayhem-merge\nhttps://www.crazygames.com/pl/game/farm-mayhem-merge\nhttps://www.crazygames.com/ro/game/farm-mayhem-merge\nhttps://www.crazygames.com/ru/game/farm-mayhem-merge\nhttps://www.crazygames.com/se/game/farm-mayhem-merge\nhttps://www.crazygames.com/th/game/farm-mayhem-merge\nhttps://www.crazygames.com/tr/game/farm-mayhem-merge\nhttps://www.crazygames.com/ua/game/farm-mayhem-merge\nhttps://www.crazygames.com/vn/game/farm-mayhem-merge",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 56.2,
+      "group": "farm mayhem merge",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "lafufu blind box dress up",
+      "correspondingDomain": "https://poki.com/en/g/lafufu-blind-box-dress-up",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null,
+      "group": "lafufu blind box dress up",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "orecrusher",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/orecrusher-2\nhttps://www.crazygames.com/br/game/orecrusher-2\nhttps://www.crazygames.com/cz/game/orecrusher-2\nhttps://www.crazygames.com/de/game/orecrusher-2\nhttps://www.crazygames.com/dk/game/orecrusher-2\nhttps://www.crazygames.com/es/game/orecrusher-2\nhttps://www.crazygames.com/fi/game/orecrusher-2\nhttps://www.crazygames.com/fr/game/orecrusher-2\nhttps://www.crazygames.com/game/orecrusher-2\nhttps://www.crazygames.com/gr/game/orecrusher-2\nhttps://www.crazygames.com/hu/game/orecrusher-2\nhttps://www.crazygames.com/id/game/orecrusher-2\nhttps://www.crazygames.com/it/game/orecrusher-2\nhttps://www.crazygames.com/jp/game/orecrusher-2\nhttps://www.crazygames.com/kr/game/orecrusher-2\nhttps://www.crazygames.com/nl/game/orecrusher-2\nhttps://www.crazygames.com/no/game/orecrusher-2\nhttps://www.crazygames.com/pl/game/orecrusher-2\nhttps://www.crazygames.com/ro/game/orecrusher-2\nhttps://www.crazygames.com/ru/game/orecrusher-2\nhttps://www.crazygames.com/se/game/orecrusher-2\nhttps://www.crazygames.com/th/game/orecrusher-2\nhttps://www.crazygames.com/tr/game/orecrusher-2\nhttps://www.crazygames.com/ua/game/orecrusher-2\nhttps://www.crazygames.com/vn/game/orecrusher-2",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 34.6,
+      "group": "orecrusher",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "panic patrol",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/panic-patrol\nhttps://www.crazygames.com/br/game/panic-patrol\nhttps://www.crazygames.com/cz/game/panic-patrol\nhttps://www.crazygames.com/de/game/panic-patrol\nhttps://www.crazygames.com/dk/game/panic-patrol\nhttps://www.crazygames.com/es/game/panic-patrol\nhttps://www.crazygames.com/fi/game/panic-patrol\nhttps://www.crazygames.com/fr/game/panic-patrol\nhttps://www.crazygames.com/game/panic-patrol\nhttps://www.crazygames.com/gr/game/panic-patrol\nhttps://www.crazygames.com/hu/game/panic-patrol\nhttps://www.crazygames.com/id/game/panic-patrol\nhttps://www.crazygames.com/it/game/panic-patrol\nhttps://www.crazygames.com/jp/game/panic-patrol\nhttps://www.crazygames.com/kr/game/panic-patrol\nhttps://www.crazygames.com/nl/game/panic-patrol\nhttps://www.crazygames.com/no/game/panic-patrol\nhttps://www.crazygames.com/pl/game/panic-patrol\nhttps://www.crazygames.com/ro/game/panic-patrol\nhttps://www.crazygames.com/ru/game/panic-patrol\nhttps://www.crazygames.com/se/game/panic-patrol\nhttps://www.crazygames.com/th/game/panic-patrol\nhttps://www.crazygames.com/tr/game/panic-patrol\nhttps://www.crazygames.com/ua/game/panic-patrol\nhttps://www.crazygames.com/vn/game/panic-patrol",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 67.1,
+      "group": "panic patrol",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "recoil rumble knp",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/recoil-rumble-knp\nhttps://www.crazygames.com/br/game/recoil-rumble-knp\nhttps://www.crazygames.com/cz/game/recoil-rumble-knp\nhttps://www.crazygames.com/de/game/recoil-rumble-knp\nhttps://www.crazygames.com/dk/game/recoil-rumble-knp\nhttps://www.crazygames.com/es/game/recoil-rumble-knp\nhttps://www.crazygames.com/fi/game/recoil-rumble-knp\nhttps://www.crazygames.com/fr/game/recoil-rumble-knp\nhttps://www.crazygames.com/game/recoil-rumble-knp\nhttps://www.crazygames.com/gr/game/recoil-rumble-knp\nhttps://www.crazygames.com/hu/game/recoil-rumble-knp\nhttps://www.crazygames.com/id/game/recoil-rumble-knp\nhttps://www.crazygames.com/it/game/recoil-rumble-knp\nhttps://www.crazygames.com/jp/game/recoil-rumble-knp\nhttps://www.crazygames.com/kr/game/recoil-rumble-knp\nhttps://www.crazygames.com/nl/game/recoil-rumble-knp\nhttps://www.crazygames.com/no/game/recoil-rumble-knp\nhttps://www.crazygames.com/pl/game/recoil-rumble-knp\nhttps://www.crazygames.com/ro/game/recoil-rumble-knp\nhttps://www.crazygames.com/ru/game/recoil-rumble-knp\nhttps://www.crazygames.com/se/game/recoil-rumble-knp\nhttps://www.crazygames.com/th/game/recoil-rumble-knp\nhttps://www.crazygames.com/tr/game/recoil-rumble-knp\nhttps://www.crazygames.com/ua/game/recoil-rumble-knp\nhttps://www.crazygames.com/vn/game/recoil-rumble-knp",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 16.2,
+      "group": "recoil rumble knp",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

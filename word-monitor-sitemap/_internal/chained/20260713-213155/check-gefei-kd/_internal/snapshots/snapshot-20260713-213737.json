@@ -1,0 +1,548 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-13T21:37:37",
+    "stamp": "20260713-213737",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 9,
+      "keywordCountBeforeLimit": 9,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "om nom run",
+        "jelly run",
+        "divine clash",
+        "alphablitz wty",
+        "farm mayhem merge",
+        "lafufu blind box dress up",
+        "orecrusher",
+        "panic patrol",
+        "recoil rumble knp"
+      ],
+      "keywordCount": 9
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 9,
+      "successCount": 8,
+      "failureCount": 1,
+      "avgScore": 46.6125,
+      "cachedHitRate": 0.0,
+      "levelDistribution": {
+        "困难": 4,
+        "中等": 1,
+        "容易": 1,
+        "极易": 2
+      },
+      "keywordTypeDistribution": {
+        "generic": 7,
+        "brand": 1
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/history/report-20260713-213737.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/history/keyword-table-20260713-213737.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/history/keyword-table-20260713-213737.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "panic patrol",
+      "score": 67.1,
+      "gefeiKD": 67.1,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 39,
+        "quality": {
+          "low": 130,
+          "mid": 180,
+          "high": 270
+        },
+        "directory": {
+          "low": 450,
+          "mid": 720,
+          "high": 1100
+        },
+        "low": 130,
+        "mid": 180,
+        "high": 270,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 67.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 crazygames.com（DR 80，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949829,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 67.1/100（困难）。",
+        "第 6 名虽是 reddit.com 的论坛帖，但盘面已有 8 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 10 名全部是内页排名，但无一弱位 —— 这不是\"没人认真打\"，而是该词的搜索意图被权威平台的文档/内容页锁定（搜索者要的是方案与对比，不是某个产品首页）。无首页在此不构成机会；新站的现实路径是高质量评测/对比内容页，正面对位盘面中外链最薄的内容位。",
+        "8/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 130–270 个引用域（中值 180，按 Ahrefs 官方 KD→引用域曲线由难度分 67.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 crazygames.com（DR 80，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 450–1100 个。对应的域名权重量级约为 DR 39。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "divine clash",
+      "score": 65.5,
+      "gefeiKD": 65.5,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 120,
+          "mid": 170,
+          "high": 250
+        },
+        "directory": {
+          "low": 420,
+          "mid": 680,
+          "high": 1000
+        },
+        "low": 120,
+        "mid": 170,
+        "high": 250,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 65.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 dcm.gamehollywood.com（DR 56）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949783,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 65.5/100（困难）。",
+        "前 10 名中有 2 个首页排名（dcm.gamehollywood.com、dc.gamehollywood.com），首页平均站点强度 56/100。",
+        "首页打内页：第 3 名 dcm.gamehollywood.com（DR 56，首页）排在了 DR 更高的内页第 8 名 gameideas.fandom.com（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 7 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 120–250 个引用域（中值 170，按 Ahrefs 官方 KD→引用域曲线由难度分 65.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 dcm.gamehollywood.com（DR 56））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 420–1000 个。对应的域名权重量级约为 DR 38。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "jelly run",
+      "score": 60.5,
+      "gefeiKD": 60.5,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 2770,
+      "keywordTrend": {
+        "ratio": 0.1624548736462094,
+        "estimatedValue": 450,
+        "volume": 2770,
+        "domain": "famobi.com"
+      },
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 95,
+          "mid": 130,
+          "high": 200
+        },
+        "directory": {
+          "low": 330,
+          "mid": 530,
+          "high": 800
+        },
+        "low": 95,
+        "mid": 130,
+        "high": 200,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 60.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 izzygames.com（DR 28，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949774,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 60.5/100（困难）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 izzygames.com，难度贡献仅 24.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "该词月搜索量约 2770（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 95–200 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 60.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 izzygames.com（DR 28，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 330–800 个。对应的域名权重量级约为 DR 36。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "om nom run",
+      "score": 60,
+      "gefeiKD": 60,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 190
+        },
+        "directory": {
+          "low": 320,
+          "mid": 520,
+          "high": 770
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 190,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 60 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 gamesnacks.com（DR 51，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949770,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 60/100（困难）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 gamesnacks.com，难度贡献仅 38）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 90–190 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 60 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 gamesnacks.com（DR 51，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 320–770 个。对应的域名权重量级约为 DR 36。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "farm mayhem merge",
+      "score": 56.2,
+      "gefeiKD": 56.2,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 38.2,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 34,
+        "quality": {
+          "low": 80,
+          "mid": 110,
+          "high": 170
+        },
+        "directory": {
+          "low": 280,
+          "mid": 450,
+          "high": 670
+        },
+        "low": 80,
+        "mid": 110,
+        "high": 170,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 56.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 zynga.com（DR 77，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949793,
+      "reasons": [
+        "品牌词口径：难度估算为 56.2/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 38.2/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、play.google.com、facebook.com、youtube.com、instagram.com、apps.apple.com）。",
+        "剔除品牌本尊与平台生态页（共 7 个固定位）后，可竞争位仅 3 个：第 1 名 crazygames.com（DR 80，内页，域名 22.1 年，月流量 1.1 亿、搜索占比 42%）、第 7 名 msn.com（DR 92，内页，域名 31.7 年，月流量 4.5 亿、搜索占比 17%）、第 9 名 zynga.com（DR 77，内页，域名 18.7 年，月流量 293.6 万、搜索占比 12%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 80–170 个引用域（中值 110，按 Ahrefs 官方 KD→引用域曲线由难度分 56.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 zynga.com（DR 77，内页））；目录/收录型外链为主时约 280–670 个。对应域名权重量级约 DR 34。"
+      ]
+    },
+    {
+      "keyword": "orecrusher",
+      "score": 34.6,
+      "gefeiKD": 34.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "directory": {
+          "low": 110,
+          "mid": 180,
+          "high": 270
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 34.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 orecrusher.co.za（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949823,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 34.6/100（容易）。",
+        "前 9 名中有 2 个首页排名（orecrusher.co.za、52.34.112.16），首页平均站点强度 0/100。",
+        "首页打内页：第 1 名 orecrusher.co.za（域名直拼关键词、DR 0，首页）排在了 DR 更高的内页第 3 名 planet-crafter.fandom.com（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "6/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 1 名 orecrusher.co.za（DR 0，首页排名）证明弱站可进前十。（-8）",
+        "前十中 5 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–70 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 34.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 orecrusher.co.za（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 110–270 个。对应的域名权重量级约为 DR 26。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "recoil rumble knp",
+      "score": 16.2,
+      "gefeiKD": 16.2,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 16,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 25
+        },
+        "directory": {
+          "low": 45,
+          "mid": 70,
+          "high": 100
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 25,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 16.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 rpegelectronics.com（DR 5，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949857,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 16.2/100（极易）。",
+        "内容真空信号：第 7 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置。（-4）",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 rpegelectronics.com，难度贡献仅 2.3）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "8 个高 DR 大站（crazygames.com、youtube.com、youtube.com、youtube.com、reddit.com、youtube.com、tiktok.com、amazon.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 5 名 rpegelectronics.com DR 仅 5，弱站已能进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–25 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 16.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 rpegelectronics.com（DR 5，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 45–100 个。对应的域名权重量级约为 DR 16。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "alphablitz wty",
+      "score": 12.8,
+      "gefeiKD": 12.8,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 14,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 20
+        },
+        "directory": {
+          "low": 35,
+          "mid": 55,
+          "high": 80
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 20,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 12.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 zoom.alphawarranty.com（DR 38）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1783949790,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 12.8/100（极易）【纯 DR 模式】。",
+        "前 10 名中有 2 个首页排名（zoom.alphawarranty.com、alphaboronj.org），首页平均站点强度 23/100。",
+        "首页打内页：第 5 名 zoom.alphawarranty.com（DR 38，首页）排在了 DR 更高的内页第 6 名 boardgamegeek.com（DR 87）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个高 DR 大站（crazygames.com、youtube.com、boardgamegeek.com、alpha1.org）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 3 名 brandiraae.com DR 仅 5，弱站已能进前十。（-8）",
+        "第 5 名 zoom.alphawarranty.com（DR 38）是低 DR 站点的首页排名，小站靠首页就能排进来。（-7）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "本次有 7/10 个域名按纯 DR 模式估算（无流量数据）。DR 与流量相关性高，结果整体可用；但纯 DR 无法识别\"低 DR 高流量\"的新锐竞争者，新兴热门领域的实际难度可能略高于估算值。",
+        "进入前十的链接预算：约 10–20 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 12.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 zoom.alphawarranty.com（DR 38））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 35–80 个。对应的域名权重量级约为 DR 14。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "keyword": "lafufu blind box dress up",
+      "keywordNormalized": "lafufu blind box dress up",
+      "attempts": 3,
+      "error": "SERP 未返回自然结果，无法估算",
+      "errorCode": null,
+      "httpStatus": 502,
+      "fatalGlobal": false
+    }
+  ],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-13T21:37:37",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260713-213155/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 9,
+        "requestCount": 9,
+        "successCount": 8,
+        "successWithScoreCount": 8,
+        "missingScoreCount": 0,
+        "failedCount": 1
+      },
+      "rowCount": 9
+    },
+    "rows": [
+      {
+        "keyword": "om nom run",
+        "correspondingDomain": "https://www.onlinegames.io/om-nom-run",
+        "score": 64.4,
+        "simWindowVolume": 13570.0,
+        "simKd": 59.0,
+        "simCpc": 0.28,
+        "semVolume": 12830.0,
+        "semKd": 59.0,
+        "semCpc": 0.1,
+        "gefeiKD": 60,
+        "group": "om nom run",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "jelly run",
+        "correspondingDomain": "https://www.onlinegames.io/jelly-run-2048",
+        "score": 36.625926,
+        "simWindowVolume": 6380.0,
+        "simKd": 54.0,
+        "simCpc": 0.31,
+        "semVolume": 7300.0,
+        "semKd": 32.0,
+        "semCpc": 0.04,
+        "gefeiKD": 60.5,
+        "group": "jelly run",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "divine clash",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/divine-clash\nhttps://www.crazygames.com/br/game/divine-clash\nhttps://www.crazygames.com/cz/game/divine-clash\nhttps://www.crazygames.com/de/game/divine-clash\nhttps://www.crazygames.com/dk/game/divine-clash\nhttps://www.crazygames.com/es/game/divine-clash\nhttps://www.crazygames.com/fi/game/divine-clash\nhttps://www.crazygames.com/fr/game/divine-clash\nhttps://www.crazygames.com/game/divine-clash\nhttps://www.crazygames.com/gr/game/divine-clash\nhttps://www.crazygames.com/hu/game/divine-clash\nhttps://www.crazygames.com/id/game/divine-clash\nhttps://www.crazygames.com/it/game/divine-clash\nhttps://www.crazygames.com/jp/game/divine-clash\nhttps://www.crazygames.com/kr/game/divine-clash\nhttps://www.crazygames.com/nl/game/divine-clash\nhttps://www.crazygames.com/no/game/divine-clash\nhttps://www.crazygames.com/pl/game/divine-clash\nhttps://www.crazygames.com/ro/game/divine-clash\nhttps://www.crazygames.com/ru/game/divine-clash\nhttps://www.crazygames.com/se/game/divine-clash\nhttps://www.crazygames.com/th/game/divine-clash\nhttps://www.crazygames.com/tr/game/divine-clash\nhttps://www.crazygames.com/ua/game/divine-clash\nhttps://www.crazygames.com/vn/game/divine-clash",
+        "score": null,
+        "simWindowVolume": 1330.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 10.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 65.5,
+        "group": "divine clash",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "alphablitz wty",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/alphablitz-wty\nhttps://www.crazygames.com/br/game/alphablitz-wty\nhttps://www.crazygames.com/cz/game/alphablitz-wty\nhttps://www.crazygames.com/de/game/alphablitz-wty\nhttps://www.crazygames.com/dk/game/alphablitz-wty\nhttps://www.crazygames.com/es/game/alphablitz-wty\nhttps://www.crazygames.com/fi/game/alphablitz-wty\nhttps://www.crazygames.com/fr/game/alphablitz-wty\nhttps://www.crazygames.com/game/alphablitz-wty\nhttps://www.crazygames.com/gr/game/alphablitz-wty\nhttps://www.crazygames.com/hu/game/alphablitz-wty\nhttps://www.crazygames.com/id/game/alphablitz-wty\nhttps://www.crazygames.com/it/game/alphablitz-wty\nhttps://www.crazygames.com/jp/game/alphablitz-wty\nhttps://www.crazygames.com/kr/game/alphablitz-wty\nhttps://www.crazygames.com/nl/game/alphablitz-wty\nhttps://www.crazygames.com/no/game/alphablitz-wty\nhttps://www.crazygames.com/pl/game/alphablitz-wty\nhttps://www.crazygames.com/ro/game/alphablitz-wty\nhttps://www.crazygames.com/ru/game/alphablitz-wty\nhttps://www.crazygames.com/se/game/alphablitz-wty\nhttps://www.crazygames.com/th/game/alphablitz-wty\nhttps://www.crazygames.com/tr/game/alphablitz-wty\nhttps://www.crazygames.com/ua/game/alphablitz-wty\nhttps://www.crazygames.com/vn/game/alphablitz-wty",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 12.8,
+        "group": "alphablitz wty",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "farm mayhem merge",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/farm-mayhem-merge\nhttps://www.crazygames.com/br/game/farm-mayhem-merge\nhttps://www.crazygames.com/cz/game/farm-mayhem-merge\nhttps://www.crazygames.com/de/game/farm-mayhem-merge\nhttps://www.crazygames.com/dk/game/farm-mayhem-merge\nhttps://www.crazygames.com/es/game/farm-mayhem-merge\nhttps://www.crazygames.com/fi/game/farm-mayhem-merge\nhttps://www.crazygames.com/fr/game/farm-mayhem-merge\nhttps://www.crazygames.com/game/farm-mayhem-merge\nhttps://www.crazygames.com/gr/game/farm-mayhem-merge\nhttps://www.crazygames.com/hu/game/farm-mayhem-merge\nhttps://www.crazygames.com/id/game/farm-mayhem-merge\nhttps://www.crazygames.com/it/game/farm-mayhem-merge\nhttps://www.crazygames.com/jp/game/farm-mayhem-merge\nhttps://www.crazygames.com/kr/game/farm-mayhem-merge\nhttps://www.crazygames.com/nl/game/farm-mayhem-merge\nhttps://www.crazygames.com/no/game/farm-mayhem-merge\nhttps://www.crazygames.com/pl/game/farm-mayhem-merge\nhttps://www.crazygames.com/ro/game/farm-mayhem-merge\nhttps://www.crazygames.com/ru/game/farm-mayhem-merge\nhttps://www.crazygames.com/se/game/farm-mayhem-merge\nhttps://www.crazygames.com/th/game/farm-mayhem-merge\nhttps://www.crazygames.com/tr/game/farm-mayhem-merge\nhttps://www.crazygames.com/ua/game/farm-mayhem-merge\nhttps://www.crazygames.com/vn/game/farm-mayhem-merge",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 56.2,
+        "group": "farm mayhem merge",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "lafufu blind box dress up",
+        "correspondingDomain": "https://poki.com/en/g/lafufu-blind-box-dress-up",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": null,
+        "group": "lafufu blind box dress up",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "orecrusher",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/orecrusher-2\nhttps://www.crazygames.com/br/game/orecrusher-2\nhttps://www.crazygames.com/cz/game/orecrusher-2\nhttps://www.crazygames.com/de/game/orecrusher-2\nhttps://www.crazygames.com/dk/game/orecrusher-2\nhttps://www.crazygames.com/es/game/orecrusher-2\nhttps://www.crazygames.com/fi/game/orecrusher-2\nhttps://www.crazygames.com/fr/game/orecrusher-2\nhttps://www.crazygames.com/game/orecrusher-2\nhttps://www.crazygames.com/gr/game/orecrusher-2\nhttps://www.crazygames.com/hu/game/orecrusher-2\nhttps://www.crazygames.com/id/game/orecrusher-2\nhttps://www.crazygames.com/it/game/orecrusher-2\nhttps://www.crazygames.com/jp/game/orecrusher-2\nhttps://www.crazygames.com/kr/game/orecrusher-2\nhttps://www.crazygames.com/nl/game/orecrusher-2\nhttps://www.crazygames.com/no/game/orecrusher-2\nhttps://www.crazygames.com/pl/game/orecrusher-2\nhttps://www.crazygames.com/ro/game/orecrusher-2\nhttps://www.crazygames.com/ru/game/orecrusher-2\nhttps://www.crazygames.com/se/game/orecrusher-2\nhttps://www.crazygames.com/th/game/orecrusher-2\nhttps://www.crazygames.com/tr/game/orecrusher-2\nhttps://www.crazygames.com/ua/game/orecrusher-2\nhttps://www.crazygames.com/vn/game/orecrusher-2",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 34.6,
+        "group": "orecrusher",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "panic patrol",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/panic-patrol\nhttps://www.crazygames.com/br/game/panic-patrol\nhttps://www.crazygames.com/cz/game/panic-patrol\nhttps://www.crazygames.com/de/game/panic-patrol\nhttps://www.crazygames.com/dk/game/panic-patrol\nhttps://www.crazygames.com/es/game/panic-patrol\nhttps://www.crazygames.com/fi/game/panic-patrol\nhttps://www.crazygames.com/fr/game/panic-patrol\nhttps://www.crazygames.com/game/panic-patrol\nhttps://www.crazygames.com/gr/game/panic-patrol\nhttps://www.crazygames.com/hu/game/panic-patrol\nhttps://www.crazygames.com/id/game/panic-patrol\nhttps://www.crazygames.com/it/game/panic-patrol\nhttps://www.crazygames.com/jp/game/panic-patrol\nhttps://www.crazygames.com/kr/game/panic-patrol\nhttps://www.crazygames.com/nl/game/panic-patrol\nhttps://www.crazygames.com/no/game/panic-patrol\nhttps://www.crazygames.com/pl/game/panic-patrol\nhttps://www.crazygames.com/ro/game/panic-patrol\nhttps://www.crazygames.com/ru/game/panic-patrol\nhttps://www.crazygames.com/se/game/panic-patrol\nhttps://www.crazygames.com/th/game/panic-patrol\nhttps://www.crazygames.com/tr/game/panic-patrol\nhttps://www.crazygames.com/ua/game/panic-patrol\nhttps://www.crazygames.com/vn/game/panic-patrol",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 67.1,
+        "group": "panic patrol",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "recoil rumble knp",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/recoil-rumble-knp\nhttps://www.crazygames.com/br/game/recoil-rumble-knp\nhttps://www.crazygames.com/cz/game/recoil-rumble-knp\nhttps://www.crazygames.com/de/game/recoil-rumble-knp\nhttps://www.crazygames.com/dk/game/recoil-rumble-knp\nhttps://www.crazygames.com/es/game/recoil-rumble-knp\nhttps://www.crazygames.com/fi/game/recoil-rumble-knp\nhttps://www.crazygames.com/fr/game/recoil-rumble-knp\nhttps://www.crazygames.com/game/recoil-rumble-knp\nhttps://www.crazygames.com/gr/game/recoil-rumble-knp\nhttps://www.crazygames.com/hu/game/recoil-rumble-knp\nhttps://www.crazygames.com/id/game/recoil-rumble-knp\nhttps://www.crazygames.com/it/game/recoil-rumble-knp\nhttps://www.crazygames.com/jp/game/recoil-rumble-knp\nhttps://www.crazygames.com/kr/game/recoil-rumble-knp\nhttps://www.crazygames.com/nl/game/recoil-rumble-knp\nhttps://www.crazygames.com/no/game/recoil-rumble-knp\nhttps://www.crazygames.com/pl/game/recoil-rumble-knp\nhttps://www.crazygames.com/ro/game/recoil-rumble-knp\nhttps://www.crazygames.com/ru/game/recoil-rumble-knp\nhttps://www.crazygames.com/se/game/recoil-rumble-knp\nhttps://www.crazygames.com/th/game/recoil-rumble-knp\nhttps://www.crazygames.com/tr/game/recoil-rumble-knp\nhttps://www.crazygames.com/ua/game/recoil-rumble-knp\nhttps://www.crazygames.com/vn/game/recoil-rumble-knp",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 16.2,
+        "group": "recoil rumble knp",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}
