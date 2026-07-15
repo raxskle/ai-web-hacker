@@ -12562,7 +12562,18 @@
     "standardWordSummary": {
       "rowCount": 0,
       "newPageKeywordRows": 0,
-      "newSubdomainKeywordRows": 0
+      "newSubdomainKeywordRows": 0,
+      "risingSubdomainKeywordRows": 0,
+      "qualifiedRisingSubdomainCount": 0
+    },
+    "subdomainRisingMeta": {
+      "requiredComparisons": 2,
+      "availableComparisons": 2,
+      "currentPassCount": 0,
+      "previousPassCount": 136,
+      "qualifiedCount": 0,
+      "baselineStamp": "20260713-174447",
+      "previousBaselineStamp": "20260712-200758"
     },
     "gefeiKD": {
       "summary": {
@@ -12574,11 +12585,7 @@
         "failedCount": 0
       },
       "failures": [],
-      "api": {
-        "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
-        "authMode": "header",
-        "apiKeySource": null
-      }
+      "api": {}
     }
   }
 }

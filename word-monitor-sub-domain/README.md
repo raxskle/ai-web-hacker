@@ -9,9 +9,9 @@
 1. 调用本地服务抓取 `page=1..8`
 2. 标准化并去重页面数据
 3. 归档抓取结果与快照
-4. 与最近一次历史快照对比
+4. 与最近两次历史快照对比（用于判断子域名连续上涨）
 5. 生成 Markdown 报告（单表合并展示页面与子域名结果）
-6. 生成初始标准词表 Excel（仅输出新增页面/子域名的 top keywords）
+6. 生成初始标准词表 Excel（输出新增页面/新增子域名/连续上涨子域名的 top keywords）
 7. 串联 `analyze-words` 补全 SIM/SEM
 8. 串联 `check-gefei-kd` 回填/刷新 `gefeiKD`
 9. 发布最终完整标准词表到 `words/sub-domain-YYYYMMDD-HHMMSS.xlsx`
@@ -89,7 +89,11 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 ### 对比基线
 
-- 使用最近一次历史快照（同 `key/country/latest/sourceType/startPage/endPage`）
+- 页面 / 新增子域名：基线取最近一次历史快照（同 `key/country/latest/sourceType/startPage/endPage`）
+- 子域名上涨：同时检查最近两次历史快照，仅当
+  - `(today vs t-1)` 满足上涨阈值，且
+  - `(t-1 vs t-2)` 也满足上涨阈值
+  才计入“上涨子域名”
 - 首次运行仅建立基线，不输出新增/上涨结论
 
 ### 判定阈值
@@ -103,16 +107,16 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 子域名级：
 - `newlyObservedSubdomain`：今天有、基线无，且 `observedSubdomainClicks >= 150`
-- 子域名上涨：今天和基线都有，且
-  - `today.observedSubdomainClicks >= 150`
-  - `deltaClicks >= 50`
-  - `growthRate > 5%`
+- 子域名上涨：必须连续 2 次比较都满足上涨阈值
+  - `(today vs t-1)`：`today.observedSubdomainClicks >= 150`、`deltaClicks >= 50`、`growthRate > 5%`
+  - `(t-1 vs t-2)`：`t-1.observedSubdomainClicks >= 150`、`deltaClicks >= 50`、`growthRate > 5%`
+  - 仅当同一 `subdomain` 两段都达标，才在报告中标记为 `上涨`
 
 ### 报告与标准词表输出
 
 - 页面和子域名结果合并为同一个 Markdown 表格
 - Markdown 仍仅区分 `新增` 与 `上涨`
-- 标准词表种子先导出 `新增` 页面/子域名的 top keywords
+- 标准词表种子先导出 `新增` 页面/子域名 + `连续上涨子域名` 的 top keywords
 - 标准词表表头对齐 `standard-word-analysis/spec/standard-word-table.v1.json`
 - 相同 `keyword` 按词去重，仅保留一行
 - `对应域名` 聚合同词命中的全部域名 / 页面上下文，使用 ` | ` 连接；若同 host 已存在完整 URL（无论来自 `host url` 组合项还是独立 URL 项），则移除该 host 的裸子域名项

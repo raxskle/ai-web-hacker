@@ -9,6 +9,8 @@
 - `crazygames_com`（https://www.crazygames.com/）
 - `coolmathgames_com`（https://www.coolmathgames.com/）
 - `poki_com`（https://poki.com/）
+- `dragganaitool_com`（https://dragganaitool.com/）
+- `higgsfield_ai`（https://higgsfield.ai/）
 
 已预置但默认关闭：
 - `gamejolt_com`（https://gamejolt.com/）

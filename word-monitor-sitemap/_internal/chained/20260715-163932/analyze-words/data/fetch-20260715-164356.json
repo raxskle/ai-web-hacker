@@ -1,0 +1,929 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-15T16:43:56",
+    "stamp": "20260715-164356",
+    "summary": {
+      "inputCount": 5,
+      "successCount": 5,
+      "failureCount": 0,
+      "simMatchedCount": 1,
+      "simNoMatchCount": 4,
+      "simFailureCount": 0,
+      "totalGlobalVolume": 0,
+      "avgGlobalCpc": 0.0,
+      "avgGlobalDifficulty": null
+    },
+    "request": {
+      "semApiUrl": "http://127.0.0.1:17311/sem/kwogw/v2/webapi/keywords.GetInfo",
+      "simApiUrl": "http://127.0.0.1:17311/sim/api/KeywordGenerator/google/suggest",
+      "simRowsPerPage": 5,
+      "simType": "Related",
+      "simSort": "score",
+      "simAsc": false,
+      "simCountry": "999",
+      "simLatest": "28d",
+      "simWebSource": "Total",
+      "simIsWindow": true,
+      "simPage": 1,
+      "maxRetries": 2
+    },
+    "inputOverview": {
+      "rawKeywordCount": 0,
+      "tableRowCount": 5,
+      "dedupedKeywordCount": 5,
+      "inputSources": [
+        "input-table"
+      ]
+    }
+  },
+  "requests": [
+    {
+      "keyword": "craft 4eva",
+      "keywordNormalized": "craft 4eva",
+      "sem": {
+        "ok": true,
+        "keyword": "craft 4eva",
+        "keywordNormalized": "craft 4eva",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 33,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "craft 4eva",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a1b77acbaabcce3b-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Wed, 15 Jul 2026 08:43:28 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=71C%2FTfJEw5TwZ4rJp5NkhyiKZ0%2Bqvv2aWW2j671z9ygVYP66FB7r7AdPYAgeXOE%2B64nqmcJegqzUrwwDH3pslrDddHgvRNKWuoOP2ei1c3y2SJQt4pq7ol12Py2c\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-e2dab9db5b05a6518cb620145ce8670f",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":33,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "6b623805-b32b-482f-95d3-4196665ea85c"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 33,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "craft 4eva",
+        "keywordNormalized": "craft 4eva",
+        "requestPayload": {
+          "keyword": "craft 4eva",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a1b77ade1fc87d10-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Wed, 15 Jul 2026 08:43:31 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZD2seVNSN%2BE28vEIxmc0f%2FqTqZ4lPNvDC9g5AywyD%2BmJmqVoBgCRRBsjmutcepntsWVcFVIIqldhBef9Alqd6qFKBq1LANrC8rbt6A1JGDtj9A5Zqmqd06oaN3So\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 8ad8f4a696cff63b05bd7c71c41bed6c.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "FO-pX9P-b6Ay777iAt3a48_wkFetKvIcheCS-dcytUY1aSwhNFKfVA==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=craft+4eva&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "c36cbc02-52f8-4b1a-a937-3e0bce8e68e5"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "escape from school runaway",
+      "keywordNormalized": "escape from school runaway",
+      "sem": {
+        "ok": true,
+        "keyword": "escape from school runaway",
+        "keywordNormalized": "escape from school runaway",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 34,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "escape from school runaway",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a1b77af0c952ce3b-SIN",
+                  "content-encoding": "br",
+                  "content-length": "219",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Wed, 15 Jul 2026 08:43:34 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Kft1d5FZLY11y10gTT6eIyKJrkcydrKrd%2Fu3zS4QXQSPSe6S7z7rT0mQjwylUchVyT%2B8En%2FpeZ4cupF641JvBOvvZMwAzUdA0KH%2Fy7UgklFz1a2B2evsW%2F5fXIGg\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-ffef261d4021d3e148d85aa426799cc8",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":34,\"result\":{\"keywords\":[{\"phrase\":\"escape from school runaway\",\"database\":\"es\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"escape from school runaway\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"escape from school runaway\",\"database\":\"uk\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"escape from school runaway\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"escape from school runaway\",\"database\":\"us\",\"locati0n\":0,\"volume\":0,\"cpc\":0,\"competition_level\":0,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":[0,100,0,0],\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"escape from school runaway\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0,\"rserp\":false}]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "c3754929-3c47-42c6-b930-8f440aa2aff0"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 34,
+              "result": {
+                "keywords": [
+                  {
+                    "phrase": "escape from school runaway",
+                    "database": "es",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "escape from school runaway",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "escape from school runaway",
+                    "database": "uk",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "escape from school runaway",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "escape from school runaway",
+                    "database": "us",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": 0,
+                    "competition_level": 0,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": [
+                      0,
+                      100,
+                      0,
+                      0
+                    ],
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "escape from school runaway",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0,
+                    "rserp": false
+                  }
+                ]
+              }
+            },
+            "rowsCount": 3
+          }
+        ],
+        "keywordsRows": [
+          {
+            "phrase": "escape from school runaway",
+            "database": "es",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "escape from school runaway",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "escape from school runaway",
+            "database": "uk",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "escape from school runaway",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "escape from school runaway",
+            "database": "us",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": 0,
+            "competition_level": 0,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": [
+              0,
+              100,
+              0,
+              0
+            ],
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "escape from school runaway",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0,
+            "rserp": false
+          }
+        ]
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "escape from school runaway",
+        "keywordNormalized": "escape from school runaway",
+        "requestPayload": {
+          "keyword": "escape from school runaway",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a1b77afcbc7f7d10-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Wed, 15 Jul 2026 08:43:36 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=a1cDZgbIgxmRACYTpamw1Q3l11MIiqI4TXd5DmD4MS7DntA0oXFrHj6dKQ7J%2FGamSsqO7V3xnVofxlYVeKzdMYzWv%2B64HGa8p5LscbFkuq3FZPf75V1Ph5ukam2U\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 5ff556e6172c3832dcf6bf262fd42e86.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "SKCeBXReucyv56TJgZkxQKc3UP3ku3yDVJl2hXoK2OCE9iPtfQN7mg==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=escape+from+school+runaway&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "2e681e5d-7413-417e-8102-c9397d1e7418"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "home makeover cleaning game",
+      "keywordNormalized": "home makeover cleaning game",
+      "sem": {
+        "ok": true,
+        "keyword": "home makeover cleaning game",
+        "keywordNormalized": "home makeover cleaning game",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 35,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "home makeover cleaning game",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a1b77b0b5bb8ce3b-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Wed, 15 Jul 2026 08:43:39 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=izdqkrznMOGSfyj5PWk5Qndh4xFjTsJkza1NGDyJzdGBXqChoJBp2LbITk3kshYwhMs%2FZx1ZBEE6zpsIfxPLu4sSzuaUifc8h2dgnVbwR9A4bNl3ybNWDxVTUjAj\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-707dd58d5f795fb19c52fb44d078e799",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":35,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "f83262aa-b2f9-4e76-9bb1-22618efcbaf0"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 35,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "home makeover cleaning game",
+        "keywordNormalized": "home makeover cleaning game",
+        "requestPayload": {
+          "keyword": "home makeover cleaning game",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a1b77b1d0b847d10-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Wed, 15 Jul 2026 08:43:41 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=N6so75Jl6Ml0ZEdOCbWBO9oKLEJG0xeG3ifM%2Fqbc5gLstvMkIoWeWBOIipIAFrt6s1QOIqbjF8P5xXRDSZ5jpGuh7mLJHSSRqPlsEvbicYbExYwNvqjmnEuVQ9n2\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 8ad8f4a696cff63b05bd7c71c41bed6c.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "gOzJix0QxUgVbHgSG6N5Z1FO1YGpt1YSbsm1Ob6kbrs5Z4At0EEa7w==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=home+makeover+cleaning+game&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "cb8c8022-c935-4b69-be66-9bcb6eeaea95"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "strange mazes",
+      "keywordNormalized": "strange mazes",
+      "sem": {
+        "ok": true,
+        "keyword": "strange mazes",
+        "keywordNormalized": "strange mazes",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 36,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "strange mazes",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a1b77b31ec88ce3b-SIN",
+                  "content-encoding": "br",
+                  "content-length": "182",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Wed, 15 Jul 2026 08:43:45 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=LrcDuk8hLAddLHbBV0Vz32vawtCDE5lLQR4Kf79vYSlVjbzdtvOTZHRxEDYmW60EaRX1IqwyQ6mvVF50%2Bb616boUowJpToVvXrlJApVStiqiqB7kjGjbj1LtIcWe\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-1215cc36e4a04d5fe801c02573e2b62d",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":36,\"result\":{\"keywords\":[{\"phrase\":\"strange mazes\",\"database\":\"uk\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"strange mazes\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0}]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "4f110e17-90c7-4cfd-82d5-088ab47c94a9"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 36,
+              "result": {
+                "keywords": [
+                  {
+                    "phrase": "strange mazes",
+                    "database": "uk",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "strange mazes",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  }
+                ]
+              }
+            },
+            "rowsCount": 1
+          }
+        ],
+        "keywordsRows": [
+          {
+            "phrase": "strange mazes",
+            "database": "uk",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "strange mazes",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          }
+        ]
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "strange mazes",
+        "keywordNormalized": "strange mazes",
+        "requestPayload": {
+          "keyword": "strange mazes",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a1b77b484b6d7d10-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Wed, 15 Jul 2026 08:43:48 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nAz%2Fo5OH3xa0%2BIYS0br1CVfyojotvhr%2BBkkMCqRgerJo7WO7eDZJwRohV11NgDOjB7yoQn6aL1DgFgoDl1NkbS%2BXs7ND32HiU9nGCbsjo3kTKKqvueH73hLThO6S\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 5ff556e6172c3832dcf6bf262fd42e86.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "dKhG8BN6y21KWLfpyxFn--YB4_zfacsHw5D-X5YwndorzTy4Qg3Bwg==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=strange+mazes&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "004d772f-742f-401a-9290-560191754ff5"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "zombie lab escape",
+      "keywordNormalized": "zombie lab escape",
+      "sem": {
+        "ok": true,
+        "keyword": "zombie lab escape",
+        "keywordNormalized": "zombie lab escape",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 37,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "zombie lab escape",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a1b77b5cdfa5ce3b-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Wed, 15 Jul 2026 08:43:52 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BqeTOni9oIlaLcGpFyO2lB%2Bbsu6%2FbWFRKihzuxlRR46%2FoZMhEoKlHhp6%2F8K3B1YfnyMvWZK9uTi%2F1WfdRaIBdkUVWZmEyfsLGYleCBqsctwO%2FySQSQHlKvVyTX3P\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-02d7b4e03ae4667eea3dd86745c72f11",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":37,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "c4414113-cd72-4327-8e4e-85a985f27879"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 37,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "matched",
+        "keyword": "zombie lab escape",
+        "keywordNormalized": "zombie lab escape",
+        "requestPayload": {
+          "keyword": "zombie lab escape",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a1b77b79a9227d10-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Wed, 15 Jul 2026 08:43:56 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PcVrzRhoWr87XDdql%2BCc%2B54RSLV%2FHzQeAsWfPzieQvvkz3tyyZQe5OD28uOQhWeK5y23YD9AuLsXnbfJcgwavsS3SJivZgkKoVMTSmpv46qDj1HEMk1ZD43iRNzf\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 8ad8f4a696cff63b05bd7c71c41bed6c.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "DgD-b8QwmlS68ukLLIbSuww0MgZYK8uJSbQHuXVBX-rLF-5jk06pQg==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[{\"keyword\":\"zombie lab escape\",\"prevVolume\":0.0,\"volumeChangeState\":\"New\",\"volumeChangePresentation\":\"New\",\"clicks\":120.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"leadingSite\":\"bubblebox.com\",\"difficulty\":0,\"latestZeroClicks\":0.0,\"primaryIntent\":\"\",\"secondaryIntent\":\"\",\"favicon\":\"https://site-images.similarcdn.com/image?url=bubblebox.com&t=2&s=1&h=0c254a087244bf7a5de71b1054be3cf190615ed2a504e5f6e91a9c34175c3694\",\"windowVolume\":430.0,\"score\":1.0}],\"totalRecords\":1,\"totalClicks\":124.73853605560608,\"totalVolume\":430.0,\"maxScore\":1.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=zombie+lab+escape&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "c2d5ac5a-8cb0-48e5-bc83-8b5fbca2019a"
+          }
+        },
+        "upstream": {
+          "records": [
+            {
+              "keyword": "zombie lab escape",
+              "prevVolume": 0.0,
+              "volumeChangeState": "New",
+              "volumeChangePresentation": "New",
+              "clicks": 120.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "leadingSite": "bubblebox.com",
+              "difficulty": 0,
+              "latestZeroClicks": 0.0,
+              "primaryIntent": "",
+              "secondaryIntent": "",
+              "favicon": "https://site-images.similarcdn.com/image?url=bubblebox.com&t=2&s=1&h=0c254a087244bf7a5de71b1054be3cf190615ed2a504e5f6e91a9c34175c3694",
+              "windowVolume": 430.0,
+              "score": 1.0
+            }
+          ],
+          "totalRecords": 1,
+          "totalClicks": 124.73853605560608,
+          "totalVolume": 430.0,
+          "maxScore": 1.0
+        },
+        "recordsCount": 1,
+        "simWindowVolume": 430.0,
+        "simCpc": 0.0,
+        "simKd": 0.0,
+        "matchedKeyword": "zombie lab escape"
+      }
+    }
+  ]
+}

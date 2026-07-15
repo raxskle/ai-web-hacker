@@ -12496,7 +12496,18 @@
     "standardWordSummary": {
       "rowCount": 0,
       "newPageKeywordRows": 0,
-      "newSubdomainKeywordRows": 0
+      "newSubdomainKeywordRows": 0,
+      "risingSubdomainKeywordRows": 0,
+      "qualifiedRisingSubdomainCount": 0
+    },
+    "subdomainRisingMeta": {
+      "requiredComparisons": 2,
+      "availableComparisons": 2,
+      "currentPassCount": 0,
+      "previousPassCount": 0,
+      "qualifiedCount": 0,
+      "baselineStamp": "20260709-144038",
+      "previousBaselineStamp": "20260709-124819"
     },
     "gefeiKD": {
       "summary": {

@@ -658,8 +658,18 @@ def snapshot_matches_target(snapshot: dict, target: dict) -> bool:
     )
 
 
-def find_latest_baseline(snapshot_dir: Path, target: dict, current_stamp: str) -> Tuple[Optional[dict], Optional[Path]]:
+def find_recent_baselines(
+    snapshot_dir: Path,
+    target: dict,
+    current_stamp: str,
+    *,
+    limit: int = 2,
+) -> List[Tuple[dict, Path]]:
+    if limit <= 0:
+        return []
+
     candidates = list_snapshot_files(snapshot_dir)
+    baselines: List[Tuple[dict, Path]] = []
     for path in reversed(candidates):
         m = SNAPSHOT_RE.match(path.name)
         if not m:
@@ -669,8 +679,24 @@ def find_latest_baseline(snapshot_dir: Path, target: dict, current_stamp: str) -
             continue
         snapshot = load_json(path)
         if snapshot_matches_target(snapshot, target):
-            return snapshot, path
+            baselines.append((snapshot, path))
+            if len(baselines) >= limit:
+                break
+
+    return baselines
+
+
+def find_latest_baseline(snapshot_dir: Path, target: dict, current_stamp: str) -> Tuple[Optional[dict], Optional[Path]]:
+    baselines = find_recent_baselines(
+        snapshot_dir,
+        target,
+        current_stamp,
+        limit=1,
+    )
+    if baselines:
+        return baselines[0]
     return None, None
+
 
 
 def build_page_comparison(today_rows: List[dict], baseline_rows: List[dict]) -> Tuple[List[dict], List[dict]]:
@@ -714,6 +740,20 @@ def build_page_comparison(today_rows: List[dict], baseline_rows: List[dict]) -> 
     return newly, rising
 
 
+def _is_subdomain_rising_by_threshold(today_clicks: float, old_clicks: float) -> Tuple[bool, float, float]:
+    delta = today_clicks - old_clicks
+    if old_clicks <= 0:
+        return False, delta, 0.0
+
+    growth = delta / old_clicks
+    is_rising = (
+        today_clicks >= SUBDOMAIN_RISING_MIN_CLICKS
+        and delta >= SUBDOMAIN_RISING_MIN_DELTA
+        and growth > SUBDOMAIN_RISING_MIN_GROWTH
+    )
+    return is_rising, delta, growth
+
+
 def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains: List[dict]) -> Tuple[List[dict], List[dict]]:
     baseline_map = {row["subdomain"]: row for row in baseline_subdomains}
     newly: List[dict] = []
@@ -730,16 +770,8 @@ def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains
             continue
 
         old_clicks = safe_float(old.get("observedSubdomainClicks"))
-        delta = today_clicks - old_clicks
-        if old_clicks <= 0:
-            continue
-        growth = delta / old_clicks
-
-        if (
-            today_clicks >= SUBDOMAIN_RISING_MIN_CLICKS
-            and delta >= SUBDOMAIN_RISING_MIN_DELTA
-            and growth > SUBDOMAIN_RISING_MIN_GROWTH
-        ):
+        is_rising, delta, growth = _is_subdomain_rising_by_threshold(today_clicks, old_clicks)
+        if is_rising:
             item = dict(row)
             item.update(
                 {
@@ -753,6 +785,40 @@ def build_subdomain_comparison(today_subdomains: List[dict], baseline_subdomains
     newly.sort(key=lambda x: (-safe_float(x.get("observedSubdomainClicks")), x.get("subdomain", "")))
     rising.sort(key=lambda x: (-safe_float(x.get("deltaClicks")), x.get("subdomain", "")))
     return newly, rising
+
+
+def filter_consecutive_rising_subdomains(
+    *,
+    rising_subdomains_current: List[dict],
+    baseline_subdomains: List[dict],
+    prev_baseline_subdomains: Optional[List[dict]],
+) -> Tuple[List[dict], dict]:
+    available_comparisons = 2 if prev_baseline_subdomains else 1
+    if not prev_baseline_subdomains:
+        return [], {
+            "requiredComparisons": 2,
+            "availableComparisons": available_comparisons,
+            "currentPassCount": len(rising_subdomains_current),
+            "previousPassCount": 0,
+            "qualifiedCount": 0,
+        }
+
+    _new_prev, rising_previous = build_subdomain_comparison(baseline_subdomains, prev_baseline_subdomains)
+    previous_set = {str(row.get("subdomain") or "") for row in rising_previous if str(row.get("subdomain") or "")}
+
+    qualified = [
+        row for row in rising_subdomains_current if str(row.get("subdomain") or "") in previous_set
+    ]
+    qualified.sort(key=lambda x: (-safe_float(x.get("deltaClicks")), x.get("subdomain", "")))
+
+    return qualified, {
+        "requiredComparisons": 2,
+        "availableComparisons": available_comparisons,
+        "currentPassCount": len(rising_subdomains_current),
+        "previousPassCount": len(rising_previous),
+        "qualifiedCount": len(qualified),
+    }
+
 
 
 def _path_from_url(raw_url: str) -> str:
@@ -864,6 +930,7 @@ def build_standard_word_rows(
     *,
     new_page_rows: List[dict],
     new_subdomain_rows: List[dict],
+    rising_subdomain_rows: List[dict],
     subdomain_keyword_entries: Dict[str, List[dict]],
     all_today_rows: List[dict],
 ) -> Tuple[List[dict], dict]:
@@ -871,6 +938,7 @@ def build_standard_word_rows(
     keyword_map: Dict[str, dict] = {}
     new_page_keyword_rows = 0
     new_subdomain_keyword_rows = 0
+    rising_subdomain_keyword_rows = 0
 
     rows_by_keyword: Dict[str, List[dict]] = {}
     for item in all_today_rows:
@@ -900,6 +968,12 @@ def build_standard_word_rows(
             if add_keyword(str(entry.get("keyword") or "")):
                 new_subdomain_keyword_rows += 1
 
+    for row in rising_subdomain_rows:
+        subdomain = str(row.get("subdomain") or "").strip()
+        for entry in subdomain_keyword_entries.get(subdomain, []):
+            if add_keyword(str(entry.get("keyword") or "")):
+                rising_subdomain_keyword_rows += 1
+
     for row in new_page_rows:
         if add_keyword(str(row.get("topKeyword") or "")):
             new_page_keyword_rows += 1
@@ -908,6 +982,8 @@ def build_standard_word_rows(
         "rowCount": len(rows),
         "newPageKeywordRows": new_page_keyword_rows,
         "newSubdomainKeywordRows": new_subdomain_keyword_rows,
+        "risingSubdomainKeywordRows": rising_subdomain_keyword_rows,
+        "qualifiedRisingSubdomainCount": len(rising_subdomain_rows),
     }
 
 
@@ -918,15 +994,26 @@ def build_comparison(
     baseline_rows: List[dict],
     baseline_subdomains: List[dict],
     baseline_stamp: Optional[str],
+    prev_baseline_subdomains: Optional[List[dict]] = None,
+    prev_baseline_stamp: Optional[str] = None,
     enrich_gefei_kd: bool = True,
 ) -> dict:
     new_page, rising_page = build_page_comparison(today_rows, baseline_rows)
-    new_sub, rising_sub = build_subdomain_comparison(today_subdomains, baseline_subdomains)
+    new_sub, rising_sub_current = build_subdomain_comparison(today_subdomains, baseline_subdomains)
+    rising_sub, subdomain_rising_meta = filter_consecutive_rising_subdomains(
+        rising_subdomains_current=rising_sub_current,
+        baseline_subdomains=baseline_subdomains,
+        prev_baseline_subdomains=prev_baseline_subdomains,
+    )
+    subdomain_rising_meta["baselineStamp"] = baseline_stamp
+    subdomain_rising_meta["previousBaselineStamp"] = prev_baseline_stamp
+
     subdomain_keyword_entries = build_subdomain_keyword_entries(today_rows)
     subdomain_keywords = build_subdomain_keywords_map(subdomain_keyword_entries)
     standard_word_rows, standard_word_summary = build_standard_word_rows(
         new_page_rows=new_page,
         new_subdomain_rows=new_sub,
+        rising_subdomain_rows=rising_sub,
         subdomain_keyword_entries=subdomain_keyword_entries,
         all_today_rows=today_rows,
     )
@@ -966,6 +1053,7 @@ def build_comparison(
         "reportRows": report_rows,
         "standardWordRows": standard_word_rows,
         "standardWordSummary": standard_word_summary,
+        "subdomainRisingMeta": subdomain_rising_meta,
         "gefeiKD": {
             "summary": gefei_kd_fetch.get("summary") or {},
             "failures": gefei_kd_fetch.get("failures") or [],
@@ -1570,9 +1658,13 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "startPage": args.start_page,
         "endPage": args.end_page,
     }
-    baseline_snapshot, baseline_path = find_latest_baseline(snapshot_dir, target, current_stamp=stamp)
+    recent_baselines = find_recent_baselines(snapshot_dir, target, current_stamp=stamp, limit=2)
+    baseline_snapshot, baseline_path = recent_baselines[0] if recent_baselines else (None, None)
+    prev_baseline_snapshot, _prev_baseline_path = recent_baselines[1] if len(recent_baselines) > 1 else (None, None)
+
     baseline_rows = baseline_snapshot.get("rows", []) if baseline_snapshot else []
     baseline_subs = baseline_snapshot.get("subdomains", []) if baseline_snapshot else []
+    prev_baseline_subs = prev_baseline_snapshot.get("subdomains", []) if prev_baseline_snapshot else []
 
     token = read_token(token_path)
 
@@ -1593,6 +1685,17 @@ def run_pipeline(args: argparse.Namespace) -> int:
                 "rowCount": 0,
                 "newPageKeywordRows": 0,
                 "newSubdomainKeywordRows": 0,
+                "risingSubdomainKeywordRows": 0,
+                "qualifiedRisingSubdomainCount": 0,
+            },
+            "subdomainRisingMeta": {
+                "requiredComparisons": 2,
+                "availableComparisons": 0,
+                "currentPassCount": 0,
+                "previousPassCount": 0,
+                "qualifiedCount": 0,
+                "baselineStamp": None,
+                "previousBaselineStamp": None,
             },
         }
     else:
@@ -1602,6 +1705,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
             baseline_rows=baseline_rows,
             baseline_subdomains=baseline_subs,
             baseline_stamp=((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None),
+            prev_baseline_subdomains=prev_baseline_subs,
+            prev_baseline_stamp=((prev_baseline_snapshot.get("meta") or {}).get("stamp") if prev_baseline_snapshot else None),
         )
 
     snapshot = build_snapshot(
@@ -1745,7 +1850,7 @@ def rebuild_reports(args: argparse.Namespace) -> int:
 
     latest_report_text = ""
     latest_excel_path: Optional[Path] = None
-    last_for_target: Dict[str, dict] = {}
+    history_for_target: Dict[str, List[dict]] = {}
 
     for path in files:
         snapshot = load_json(path)
@@ -1765,7 +1870,9 @@ def rebuild_reports(args: argparse.Namespace) -> int:
             ensure_ascii=False,
         )
 
-        baseline = last_for_target.get(target_key)
+        target_history = history_for_target.setdefault(target_key, [])
+        baseline = target_history[-1] if target_history else None
+        prev_baseline = target_history[-2] if len(target_history) >= 2 else None
         if baseline is None:
             comparison = {
                 "baselineStamp": None,
@@ -1775,6 +1882,17 @@ def rebuild_reports(args: argparse.Namespace) -> int:
                     "rowCount": 0,
                     "newPageKeywordRows": 0,
                     "newSubdomainKeywordRows": 0,
+                    "risingSubdomainKeywordRows": 0,
+                    "qualifiedRisingSubdomainCount": 0,
+                },
+                "subdomainRisingMeta": {
+                    "requiredComparisons": 2,
+                    "availableComparisons": 0,
+                    "currentPassCount": 0,
+                    "previousPassCount": 0,
+                    "qualifiedCount": 0,
+                    "baselineStamp": None,
+                    "previousBaselineStamp": None,
                 },
                 "gefeiKD": {
                     "summary": {
@@ -1797,6 +1915,8 @@ def rebuild_reports(args: argparse.Namespace) -> int:
                 baseline_rows=baseline.get("rows", []),
                 baseline_subdomains=baseline.get("subdomains", []),
                 baseline_stamp=(baseline.get("meta") or {}).get("stamp"),
+                prev_baseline_subdomains=(prev_baseline.get("subdomains", []) if prev_baseline else None),
+                prev_baseline_stamp=((prev_baseline.get("meta") or {}).get("stamp") if prev_baseline else None),
                 enrich_gefei_kd=False,
             )
             meta["baselineMode"] = False
@@ -1815,7 +1935,10 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         latest_excel_path = excel_history_path
         print(f"[rebuild] report: {report_history_path}")
         print(f"[rebuild] excel : {excel_history_path}")
-        last_for_target[target_key] = snapshot
+
+        target_history.append(snapshot)
+        if len(target_history) > 2:
+            del target_history[0]
 
     latest_report_path.write_text(latest_report_text, encoding="utf-8")
     if latest_excel_path is not None:

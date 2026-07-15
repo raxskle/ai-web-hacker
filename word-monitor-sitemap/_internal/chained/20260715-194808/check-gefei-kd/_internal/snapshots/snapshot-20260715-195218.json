@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-15T19:52:18",
+    "stamp": "20260715-195218",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 6,
+      "keywordCountBeforeLimit": 6,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "chicken hell",
+        "zombie lab escape",
+        "craft 4eva",
+        "escape from school runaway",
+        "home makeover cleaning game",
+        "strange mazes"
+      ],
+      "keywordCount": 6
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 6,
+      "successCount": 6,
+      "failureCount": 0,
+      "avgScore": 27.1,
+      "cachedHitRate": 0.833333,
+      "levelDistribution": {
+        "容易": 4,
+        "极易": 2
+      },
+      "keywordTypeDistribution": {
+        "generic": 5,
+        "brand": 1
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/history/report-20260715-195218.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/history/keyword-table-20260715-195218.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/history/keyword-table-20260715-195218.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "escape from school runaway",
+      "score": 39.5,
+      "gefeiKD": 39.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 55,
+          "high": 85
+        },
+        "directory": {
+          "low": 140,
+          "mid": 220,
+          "high": 330
+        },
+        "low": 40,
+        "mid": 55,
+        "high": 85,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 39.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 viverse.com（DR 63，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784105063,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 39.5/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 6 名 viverse.com，难度贡献仅 28.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6 个高 DR 大站（apps.apple.com、crazygames.com、youtube.com、play.google.com、youtube.com、nagitk.itch.io）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 7 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 40–85 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 39.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 viverse.com（DR 63，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 140–330 个。对应的域名权重量级约为 DR 28。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "home makeover cleaning game",
+      "score": 35.1,
+      "gefeiKD": 35.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "directory": {
+          "low": 120,
+          "mid": 180,
+          "high": 280
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 35.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 girlsgogames.com（DR 46，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784105251,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 35.1/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 girlsgogames.com，难度贡献仅 24.1）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7 个高 DR 大站（play.google.com、play.google.com、house-makeover-cleaning-games.en.uptodown.com、house-makeover-cleaning-games.en.softonic.com、youtube.com、play.google.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–70 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 35.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 girlsgogames.com（DR 46，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 120–280 个。对应的域名权重量级约为 DR 26。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "chicken hell",
+      "score": 28.8,
+      "gefeiKD": 28.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 39.6,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 50
+        },
+        "directory": {
+          "low": 85,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 50,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hellshotchicken.com（DR 1）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784116311,
+      "reasons": [
+        "品牌词口径：难度估算为 28.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 39.6/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、facebook.com、instagram.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 2 名 hellshotchicken.com（DR 1，首页）、第 3 名 thisishellchicken.com（DR 5，首页）、第 5 名 eater.com（DR 90，内页）、第 8 名 cheekychicken.itch.io（DR 92，内页）、第 9 名 nytimes.com（DR 94，内页，域名 32.5 年，月流量 5.9 亿、搜索占比 30%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–50 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hellshotchicken.com（DR 1））；目录/收录型外链为主时约 85–210 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "zombie lab escape",
+      "score": 23.5,
+      "gefeiKD": 23.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 65,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 infinityescape.com（DR 3，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784105050,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 23.5/100（容易）【纯 DR 模式】。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 infinityescape.com，难度贡献仅 2.2）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "9/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 1 名 horrorescapesla.com DR 仅 10，弱站已能进前十。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "本次有 8/10 个域名按纯 DR 模式估算（无流量数据）。DR 与流量相关性高，结果整体可用；但纯 DR 无法识别\"低 DR 高流量\"的新锐竞争者，新兴热门领域的实际难度可能略高于估算值。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 infinityescape.com（DR 3，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 65–160 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "strange mazes",
+      "score": 18.2,
+      "gefeiKD": 18.2,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 18,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 30
+        },
+        "directory": {
+          "low": 50,
+          "mid": 80,
+          "high": 120
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 30,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 18.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 flebpuzzles.com（DR 12）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784105255,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 18.2/100（极易）。",
+        "内容真空信号：第 5 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 10 名中有 1 个首页排名（flebpuzzles.com），首页平均站点强度 12/100。",
+        "首页打内页：第 1 名 flebpuzzles.com（DR 12，首页）排在了 DR 更高的内页第 3 名 fleb.itch.io（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "7 个高 DR 大站（fleb.itch.io、youtube.com、reddit.com、store.steampowered.com、youtube.com、atlasobscura.com、note.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 1 名 flebpuzzles.com（DR 12，首页排名）证明弱站可进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–30 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 18.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 flebpuzzles.com（DR 12））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 50–120 个。对应的域名权重量级约为 DR 18。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "craft 4eva",
+      "score": 17.5,
+      "gefeiKD": 17.5,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 17,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 30
+        },
+        "directory": {
+          "low": 50,
+          "mid": 75,
+          "high": 110
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 30,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 17.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 4evacrafts.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784105057,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 17.5/100（极易）【纯 DR 模式】。",
+        "前 10 名中有 3 个首页排名（4evacrafts.com、craftefamily.com、craftandfoster.com），首页平均站点强度 18/100。",
+        "首页打内页：第 1 名 4evacrafts.com（DR 0，首页）排在了 DR 更高的内页第 6 名 amazon.com（DR 96）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "5 个高 DR 大站（instagram.com、offbeat.com、amazon.com、facebook.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 1 名 4evacrafts.com（DR 0，首页排名）证明弱站可进前十。（-8）",
+        "前十中 5 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "本次有 5/10 个域名按纯 DR 模式估算（无流量数据）。DR 与流量相关性高，结果整体可用；但纯 DR 无法识别\"低 DR 高流量\"的新锐竞争者，新兴热门领域的实际难度可能略高于估算值。",
+        "进入前十的链接预算：约 15–30 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 17.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 4evacrafts.com（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 50–110 个。对应的域名权重量级约为 DR 17。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-15T19:52:18",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260715-194808/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 6,
+        "requestCount": 6,
+        "successCount": 6,
+        "successWithScoreCount": 6,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 6
+    },
+    "rows": [
+      {
+        "keyword": "chicken hell",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/chicken-hell\nhttps://www.crazygames.com/br/game/chicken-hell\nhttps://www.crazygames.com/cz/game/chicken-hell\nhttps://www.crazygames.com/de/game/chicken-hell\nhttps://www.crazygames.com/fi/game/chicken-hell\nhttps://www.crazygames.com/gr/game/chicken-hell\nhttps://www.crazygames.com/pl/game/chicken-hell\nhttps://www.crazygames.com/ru/game/chicken-hell\nhttps://www.crazygames.com/se/game/chicken-hell\nhttps://www.crazygames.com/th/game/chicken-hell\nhttps://www.crazygames.com/tr/game/chicken-hell\nhttps://www.crazygames.com/ua/game/chicken-hell",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 280.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 28.8,
+        "group": "chicken hell",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "zombie lab escape",
+        "correspondingDomain": "https://www.crazygames.com/es/game/zombie-lab-escape\nhttps://www.crazygames.com/fr/game/zombie-lab-escape\nhttps://www.crazygames.com/game/zombie-lab-escape\nhttps://www.crazygames.com/hu/game/zombie-lab-escape\nhttps://www.crazygames.com/id/game/zombie-lab-escape\nhttps://www.crazygames.com/jp/game/zombie-lab-escape\nhttps://www.crazygames.com/kr/game/zombie-lab-escape\nhttps://www.crazygames.com/no/game/zombie-lab-escape",
+        "score": null,
+        "simWindowVolume": 430.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 23.5,
+        "group": "zombie lab escape",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "craft 4eva",
+        "correspondingDomain": "https://www.crazygames.com/no/game/craft-4eva",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 17.5,
+        "group": "craft 4eva",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "escape from school runaway",
+        "correspondingDomain": "https://www.crazygames.com/fr/game/escape-from-school-runaway\nhttps://www.crazygames.com/hu/game/escape-from-school-runaway\nhttps://www.crazygames.com/no/game/escape-from-school-runaway",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 39.5,
+        "group": "escape from school runaway",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "home makeover cleaning game",
+        "correspondingDomain": "https://www.crazygames.com/no/game/home-makeover-cleaning-game",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 35.1,
+        "group": "home makeover cleaning game",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "strange mazes",
+        "correspondingDomain": "https://www.crazygames.com/no/game/strange-mazes",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 18.2,
+        "group": "strange mazes",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}

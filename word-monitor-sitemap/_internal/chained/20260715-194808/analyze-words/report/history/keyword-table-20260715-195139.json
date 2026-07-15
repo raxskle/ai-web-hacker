@@ -1,0 +1,95 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-15T19:51:39",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260715-195139"
+  },
+  "rows": [
+    {
+      "keyword": "chicken hell",
+      "correspondingDomain": "https://www.crazygames.com/ar/game/chicken-hell\nhttps://www.crazygames.com/br/game/chicken-hell\nhttps://www.crazygames.com/cz/game/chicken-hell\nhttps://www.crazygames.com/de/game/chicken-hell\nhttps://www.crazygames.com/fi/game/chicken-hell\nhttps://www.crazygames.com/gr/game/chicken-hell\nhttps://www.crazygames.com/pl/game/chicken-hell\nhttps://www.crazygames.com/ru/game/chicken-hell\nhttps://www.crazygames.com/se/game/chicken-hell\nhttps://www.crazygames.com/th/game/chicken-hell\nhttps://www.crazygames.com/tr/game/chicken-hell\nhttps://www.crazygames.com/ua/game/chicken-hell",
+      "group": "chicken hell",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 280.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "zombie lab escape",
+      "correspondingDomain": "https://www.crazygames.com/es/game/zombie-lab-escape\nhttps://www.crazygames.com/fr/game/zombie-lab-escape\nhttps://www.crazygames.com/game/zombie-lab-escape\nhttps://www.crazygames.com/hu/game/zombie-lab-escape\nhttps://www.crazygames.com/id/game/zombie-lab-escape\nhttps://www.crazygames.com/jp/game/zombie-lab-escape\nhttps://www.crazygames.com/kr/game/zombie-lab-escape\nhttps://www.crazygames.com/no/game/zombie-lab-escape",
+      "group": "zombie lab escape",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 430.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "craft 4eva",
+      "correspondingDomain": "https://www.crazygames.com/no/game/craft-4eva",
+      "group": "craft 4eva",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "escape from school runaway",
+      "correspondingDomain": "https://www.crazygames.com/fr/game/escape-from-school-runaway\nhttps://www.crazygames.com/hu/game/escape-from-school-runaway\nhttps://www.crazygames.com/no/game/escape-from-school-runaway",
+      "group": "escape from school runaway",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "home makeover cleaning game",
+      "correspondingDomain": "https://www.crazygames.com/no/game/home-makeover-cleaning-game",
+      "group": "home makeover cleaning game",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "strange mazes",
+      "correspondingDomain": "https://www.crazygames.com/no/game/strange-mazes",
+      "group": "strange mazes",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    }
+  ]
+}

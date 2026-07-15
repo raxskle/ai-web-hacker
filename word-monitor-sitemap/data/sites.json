@@ -189,6 +189,97 @@
       }
     },
     {
+      "id": "dragganaitool_com",
+      "enabled": true,
+      "displayName": "dragganaitool",
+      "sitemapUrls": [
+        "https://dragganaitool.com/sitemap_index.xml"
+      ],
+      "includeHosts": [
+        "dragganaitool.com",
+        "www.dragganaitool.com"
+      ],
+      "excludePathRegexes": [
+        "^/$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "draggan",
+          "ai",
+          "tool",
+          "tools",
+          "game",
+          "games",
+          "play",
+          "online",
+          "free",
+          "the",
+          "and",
+          "com"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "higgsfield_ai",
+      "enabled": true,
+      "displayName": "higgsfield",
+      "sitemapUrls": [
+        "https://higgsfield.ai/sitemap-marketing.xml",
+        "https://higgsfield.ai/blog/sitemap.xml",
+        "https://higgsfield.ai/apps/sitemap.xml",
+        "https://higgsfield.ai/motion/sitemap.xml",
+        "https://higgsfield.ai/mixed-media-presets/sitemap.xml",
+        "https://higgsfield.ai/contests/sitemap.xml",
+        "https://higgsfield.ai/original-series/sitemap.xml"
+      ],
+      "includeHosts": [
+        "higgsfield.ai",
+        "www.higgsfield.ai"
+      ],
+      "excludePathRegexes": [
+        "^/$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "higgsfield",
+          "ai",
+          "the",
+          "and"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
+      "id": "huntifyai_com",
+      "enabled": true,
+      "displayName": "huntifyai",
+      "sitemapUrls": [
+        "https://huntifyai.com/sitemap.xml"
+      ],
+      "includeHosts": [
+        "huntifyai.com",
+        "www.huntifyai.com"
+      ],
+      "excludePathRegexes": [
+        "^/$"
+      ],
+      "keywordRules": {
+        "stopTokens": [
+          "huntify",
+          "huntifyai",
+          "ai",
+          "the",
+          "and",
+          "com"
+        ],
+        "minTokenLength": 2,
+        "dropNumericOnlyToken": true
+      }
+    },
+    {
       "id": "gamejolt_com",
       "enabled": false,
       "displayName": "gamejolt",

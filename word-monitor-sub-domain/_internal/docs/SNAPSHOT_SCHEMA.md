@@ -135,7 +135,18 @@
     "standardWordSummary": {
       "rowCount": 1,
       "newPageKeywordRows": 1,
-      "newSubdomainKeywordRows": 0
+      "newSubdomainKeywordRows": 0,
+      "risingSubdomainKeywordRows": 0,
+      "qualifiedRisingSubdomainCount": 0
+    },
+    "subdomainRisingMeta": {
+      "requiredComparisons": 2,
+      "availableComparisons": 2,
+      "currentPassCount": 3,
+      "previousPassCount": 2,
+      "qualifiedCount": 1,
+      "baselineStamp": "20260707-210001",
+      "previousBaselineStamp": "20260706-210001"
     },
     "gefeiKD": {
       "summary": {
@@ -194,11 +205,20 @@
 - `sourcePresence`
 
 其中：
-- 当前仅导出新增页面 / 新增子域名对应的 top keywords
+- 当前导出来源包含：新增页面 / 新增子域名 / 连续上涨子域名 的 top keywords
 - 相同 `keyword` 只保留一行
 - `correspondingDomain` 聚合该 keyword 命中的全部域名 / 页面上下文，使用 ` | ` 连接；若同 host 已存在完整 URL（无论来自 `host url` 组合项还是独立 URL 项），则移除该 host 的裸子域名项
 - 其余指标列允许为空，以兼容标准词表统一结构
 - `gefeiKD` 为哥飞 KD API 返回的 `score`；查不到时允许为空
+
+`comparison.subdomainRisingMeta`（子域名上涨连续判定元信息）包含：
+- `requiredComparisons`：固定为 2（要求连续两次比较）
+- `availableComparisons`：当前可用比较段数量（0/1/2）
+- `currentPassCount`：`today vs baseline` 达阈值的子域名数
+- `previousPassCount`：`baseline vs previousBaseline` 达阈值的子域名数
+- `qualifiedCount`：两段都达阈值、最终纳入上涨的子域名数
+- `baselineStamp`：最近一次基线快照 stamp
+- `previousBaselineStamp`：上一次基线快照 stamp
 
 额外元信息：
 - `comparison.gefeiKD.summary`：本次标准词表 enrichment 的输入量 / 成功量 / 失败量
@@ -213,7 +233,10 @@
 - 页面新增：today 有、baseline 无、`clicks>=100`
 - 页面上涨：两边都有，且 `today.clicks>=100`、`delta>=30`、`growthRate>5%`
 - 子域名新增：today 有、baseline 无、`observedSubdomainClicks>=150`
-- 子域名上涨：两边都有，且 `today.observedSubdomainClicks>=150`、`delta>=50`、`growthRate>5%`
+- 子域名上涨：必须连续两次都达标
+  - `today vs baseline`：`today.observedSubdomainClicks>=150`、`delta>=50`、`growthRate>5%`
+  - `baseline vs previousBaseline`：`baseline.observedSubdomainClicks>=150`、`delta>=50`、`growthRate>5%`
+  - 仅同一 subdomain 在两段比较均达标时，才写入 `comparison.reportRows` 的 `trend=上涨`
 
 首次运行（`baselineMode=true`）：
 - `comparison.reportRows` 为空

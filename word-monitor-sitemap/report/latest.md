@@ -1,59 +1,64 @@
-# Sitemap 合并监控报告（20260714-115015）
+# Sitemap 合并监控报告（20260715-194808）
 
 ## 摘要
 
-- 站点数：6
-- 站点列表：onlinegames_io, playhop_com, suikagame_io, crazygames_com, coolmathgames_com, poki_com
-- 有效内页总数：131622
-- 新增内页总数：25
-- 移除内页总数：6
+- 站点数：9
+- 站点列表：onlinegames_io, playhop_com, suikagame_io, crazygames_com, coolmathgames_com, poki_com, dragganaitool_com, higgsfield_ai, huntifyai_com
+- 有效内页总数：135353
+- 新增内页总数：27
+- 移除内页总数：5
 - 新增路由模式总数：0
-- 新关键词候选总数：5
-- 标准词表行数：5（最终完整词表）
-- SIM 指标完整行数：1
-- SEM 指标完整行数：2
-- gefeiKD 已回填行数：5
+- 新关键词候选总数：6
+- 标准词表行数：6（最终完整词表）
+- SIM 指标完整行数：0
+- SEM 指标完整行数：0
+- gefeiKD 已回填行数：6
 
 ## Sitemap 概览
 
 | siteId | effectiveUrls | patterns | baseline |
 | --- | --- | --- | --- |
-| onlinegames_<wbr>io | 1271 | 16 | 20260713-<wbr>213155 |
-| playhop_<wbr>com | 1 | 1 | 20260713-<wbr>213155 |
-| suikagame_<wbr>io | 2530 | 14 | 20260713-<wbr>213155 |
-| crazygames_<wbr>com | 122581 | 30 | 20260713-<wbr>213155 |
-| coolmathgames_<wbr>com | 3611 | 37 | 20260713-<wbr>213155 |
-| poki_<wbr>com | 1628 | 10 | 20260713-<wbr>213155 |
+| onlinegames_<wbr>io | 1271 | 16 | 20260715-<wbr>163932 |
+| playhop_<wbr>com | 1 | 1 | 20260715-<wbr>163932 |
+| suikagame_<wbr>io | 2530 | 14 | 20260715-<wbr>163932 |
+| crazygames_<wbr>com | 122956 | 30 | 20260715-<wbr>163932 |
+| coolmathgames_<wbr>com | 3612 | 37 | 20260715-<wbr>163932 |
+| poki_<wbr>com | 1629 | 10 | 20260715-<wbr>163932 |
+| dragganaitool_<wbr>com | 1476 | 25 | 20260715-<wbr>163932 |
+| higgsfield_<wbr>ai | 769 | 27 | 20260715-<wbr>171945 |
+| huntifyai_<wbr>com | 1109 | 15 | yes |
 
 ## 新增内页
 
 | siteId | url | path | slug | depth |
 | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>digworm-<wbr>io | /<wbr>es/<wbr>game/<wbr>digworm-<wbr>io | digworm-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>fishing-<wbr>anomaly | /<wbr>es/<wbr>game/<wbr>fishing-<wbr>anomaly | fishing-<wbr>anomaly | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>es/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>es/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>t/<wbr>avoid/<wbr>6 | /<wbr>es/<wbr>t/<wbr>avoid/<wbr>6 | 6 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>es/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>digworm-<wbr>io | /<wbr>hu/<wbr>game/<wbr>digworm-<wbr>io | digworm-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>fishing-<wbr>anomaly | /<wbr>hu/<wbr>game/<wbr>fishing-<wbr>anomaly | fishing-<wbr>anomaly | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>hu/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>hu/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>t/<wbr>avoid/<wbr>6 | /<wbr>hu/<wbr>t/<wbr>avoid/<wbr>6 | 6 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>hu/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>kr/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>kr/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>kr/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>no/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>no/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>no/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>pl/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>pl/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>pl/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>merge-<wbr>clash | /<wbr>tr/<wbr>game/<wbr>merge-<wbr>clash | merge-<wbr>clash | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>voxiom-<wbr>io | /<wbr>tr/<wbr>game/<wbr>voxiom-<wbr>io | voxiom-<wbr>io | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>t/<wbr>relaxing/<wbr>5 | /<wbr>tr/<wbr>t/<wbr>relaxing/<wbr>5 | 5 | 4 |
-| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>noob-<wbr>archer-<wbr>2 | /<wbr>en/<wbr>g/<wbr>noob-<wbr>archer-<wbr>2 | noob-<wbr>archer-<wbr>2 | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>ar/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>br/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>cz/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>de/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>es/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>fi/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | /<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | escape-<wbr>from-<wbr>school-<wbr>runaway | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>fr/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>gr/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | /<wbr>hu/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | escape-<wbr>from-<wbr>school-<wbr>runaway | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>hu/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>id/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>jp/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>kr/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>craft-<wbr>4eva | /<wbr>no/<wbr>game/<wbr>craft-<wbr>4eva | craft-<wbr>4eva | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | /<wbr>no/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway | escape-<wbr>from-<wbr>school-<wbr>runaway | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>home-<wbr>makeover-<wbr>cleaning-<wbr>game | /<wbr>no/<wbr>game/<wbr>home-<wbr>makeover-<wbr>cleaning-<wbr>game | home-<wbr>makeover-<wbr>cleaning-<wbr>game | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>strange-<wbr>mazes | /<wbr>no/<wbr>game/<wbr>strange-<wbr>mazes | strange-<wbr>mazes | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | /<wbr>no/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape | zombie-<wbr>lab-<wbr>escape | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>t/<wbr>mobile/<wbr>39 | /<wbr>no/<wbr>t/<wbr>mobile/<wbr>39 | 39 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>pl/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>ru/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>se/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>th/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>th/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>tr/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ua/<wbr>game/<wbr>chicken-<wbr>hell | /<wbr>ua/<wbr>game/<wbr>chicken-<wbr>hell | chicken-<wbr>hell | 3 |
 
 ## 新增路由模式
 
@@ -63,21 +68,23 @@
 
 | siteId | type | keyword | score | urlCount | examples |
 | --- | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | phrase | merge clash | 9.00 | 6 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>merge-<wbr>clash<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>merge-<wbr>clash<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>merge-<wbr>clash |
-| crazygames_<wbr>com | phrase | voxiom io | 9.00 | 6 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>voxiom-<wbr>io<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>voxiom-<wbr>io<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>voxiom-<wbr>io |
-| crazygames_<wbr>com | phrase | digworm io | 3.00 | 2 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>digworm-<wbr>io<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>digworm-<wbr>io |
-| crazygames_<wbr>com | phrase | fishing anomaly | 3.00 | 2 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>fishing-<wbr>anomaly<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>fishing-<wbr>anomaly |
-| poki_<wbr>com | phrase | noob archer | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>noob-<wbr>archer-<wbr>2 |
+| crazygames_<wbr>com | phrase | chicken hell | 18.00 | 12 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>chicken-<wbr>hell<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>chicken-<wbr>hell<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>chicken-<wbr>hell |
+| crazygames_<wbr>com | phrase | zombie lab escape | 12.00 | 8 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>zombie-<wbr>lab-<wbr>escape |
+| crazygames_<wbr>com | phrase | escape from school runaway | 4.50 | 3 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>escape-<wbr>from-<wbr>school-<wbr>runaway |
+| crazygames_<wbr>com | phrase | craft 4eva | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>craft-<wbr>4eva |
+| crazygames_<wbr>com | phrase | home makeover cleaning game | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>home-<wbr>makeover-<wbr>cleaning-<wbr>game |
+| crazygames_<wbr>com | phrase | strange mazes | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>strange-<wbr>mazes |
 
 ## 最终标准词表摘要
 
 | keyword | simVolume | semVolume | gefeiKD | score(sim) |
 | --- | --- | --- | --- | --- |
-| voxiom io | 9870 | 11400 | 49.50 | 339.28 |
-| noob archer | 120 | 500 | 38.30 | -<wbr> |
-| merge clash | 1570 | 150 | 65.20 | -<wbr> |
-| fishing anomaly | -<wbr> | 50 | 45.90 | -<wbr> |
-| digworm io | 450 | 40 | 42.60 | -<wbr> |
+| chicken hell | -<wbr> | 280 | 28.80 | -<wbr> |
+| zombie lab escape | 430 | 0 | 23.50 | -<wbr> |
+| craft 4eva | -<wbr> | 0 | 17.50 | -<wbr> |
+| escape from school runaway | -<wbr> | 0 | 39.50 | -<wbr> |
+| home makeover cleaning game | -<wbr> | 0 | 35.10 | -<wbr> |
+| strange mazes | -<wbr> | 0 | 18.20 | -<wbr> |
 
 ## 备注
 

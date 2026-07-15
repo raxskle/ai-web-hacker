@@ -1,7 +1,7 @@
 ---
 name: word-monitor-sitemap
 version: 0.3.3
-description: "抓取多站 sitemap（含 onlinegames/playhop/suikagame/crazygames/coolmathgames/poki），按站点归档快照并输出新增内页与关键词候选；在种子词表后串行调用 analyze-words/check-gefei-kd 补齐指标，输出最终合并报告与标准词表。"
+description: "抓取多站 sitemap（含 onlinegames/playhop/suikagame/crazygames/coolmathgames/poki/dragganaitool/higgsfield），按站点归档快照并输出新增内页与关键词候选；在种子词表后串行调用 analyze-words/check-gefei-kd 补齐指标，输出最终合并报告与标准词表。"
 ---
 
 # word-monitor-sitemap（MVP）
