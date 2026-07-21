@@ -50,6 +50,7 @@ MAX_SITEMAPS_PER_SITE = 300
 TOP_NEW_URLS_IN_REPORT = 80
 TOP_NEW_PATTERNS_IN_REPORT = 40
 TOP_KEYWORDS_IN_REPORT = 60
+KEYWORD_ENRICHMENT_MAX_ROWS = 100
 
 STANDARD_WORD_TABLE_VERSION = "v1"
 STANDARD_WORD_TABLE_SPEC_PATH = REPO_ROOT / "standard-word-analysis" / "spec" / f"standard-word-table.{STANDARD_WORD_TABLE_VERSION}.json"
@@ -1906,7 +1907,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     final_standard_word_rows = merged_standard_word_rows
 
     keyword_row_count = len(merged_standard_word_rows)
-    if keyword_row_count > 0:
+    if 0 < keyword_row_count <= KEYWORD_ENRICHMENT_MAX_ROWS:
         chain_result = run_keyword_enrichment_chain(
             stamp=stamp,
             seed_table_xlsx=excel_history_path,
@@ -1918,6 +1919,11 @@ def run_pipeline(args: argparse.Namespace) -> int:
         if isinstance(candidate_rows, list):
             final_standard_word_rows = candidate_rows
     else:
+        if keyword_row_count > KEYWORD_ENRICHMENT_MAX_ROWS:
+            print(
+                f"[skip] keyword enrichment: row count={keyword_row_count} > {KEYWORD_ENRICHMENT_MAX_ROWS}; "
+                "跳过 analyze-words 与 check-gefei-kd，直接输出最终报告"
+            )
         final_words_xlsx_path = _publish_final_words_xlsx(
             final_xlsx=excel_history_path,
             words_dir=words_dir,
@@ -2104,7 +2110,7 @@ def rebuild_reports(args: argparse.Namespace) -> int:
     final_standard_word_rows = merged_standard_word_rows
 
     keyword_row_count = len(merged_standard_word_rows)
-    if keyword_row_count > 0:
+    if 0 < keyword_row_count <= KEYWORD_ENRICHMENT_MAX_ROWS:
         chain_result = run_keyword_enrichment_chain(
             stamp=merged_stamp,
             seed_table_xlsx=excel_history_path,
@@ -2117,6 +2123,11 @@ def rebuild_reports(args: argparse.Namespace) -> int:
         if isinstance(candidate_rows, list):
             final_standard_word_rows = candidate_rows
     else:
+        if keyword_row_count > KEYWORD_ENRICHMENT_MAX_ROWS:
+            print(
+                f"[skip] keyword enrichment: row count={keyword_row_count} > {KEYWORD_ENRICHMENT_MAX_ROWS}; "
+                "跳过 analyze-words 与 check-gefei-kd，直接输出最终报告"
+            )
         final_words_xlsx_path = _publish_final_words_xlsx(
             final_xlsx=excel_history_path,
             words_dir=words_dir,
