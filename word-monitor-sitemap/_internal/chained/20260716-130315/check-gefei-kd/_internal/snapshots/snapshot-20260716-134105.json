@@ -1,0 +1,725 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-16T13:41:05",
+    "stamp": "20260716-134105",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 12,
+      "keywordCountBeforeLimit": 12,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "smashing bottles",
+        "chicken hell",
+        "ai video from text and url",
+        "carrom stars io",
+        "cinema studio full tutorial",
+        "drone delivery chaos fkw",
+        "how to play lows adventures",
+        "idle car service tycoon",
+        "one of one studio interview",
+        "sandbox of elements",
+        "waddle quest",
+        "whatisthismovie"
+      ],
+      "keywordCount": 12
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 12,
+      "successCount": 12,
+      "failureCount": 0,
+      "avgScore": 31.7667,
+      "cachedHitRate": 0.083333,
+      "levelDistribution": {
+        "中等": 1,
+        "容易": 9,
+        "极易": 2
+      },
+      "keywordTypeDistribution": {
+        "generic": 9,
+        "brand": 3
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/history/report-20260716-134105.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/history/keyword-table-20260716-134105.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/history/keyword-table-20260716-134105.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "cinema studio full tutorial",
+      "score": 43,
+      "gefeiKD": 43,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 260,
+          "high": 390
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 creativepadmedia.com（DR 12，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180049,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 43/100（中等）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 creativepadmedia.com，难度贡献仅 13.7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 7 名 creativepadmedia.com DR 仅 12，弱站已能进前十（位次靠后，信号打折）。（-4）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 creativepadmedia.com（DR 12，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 160–390 个。对应的域名权重量级约为 DR 29。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "idle car service tycoon",
+      "score": 39.3,
+      "gefeiKD": 39.3,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 40,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 140,
+          "mid": 220,
+          "high": 330
+        },
+        "low": 40,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 39.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 games44.com（DR 36，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180248,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 39.3/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 games44.com，难度贡献仅 23.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（apps.apple.com、play.google.com、youtube.com、idle-car-tycoon.en.uptodown.com、apps.apple.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 40–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 39.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 games44.com（DR 36，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 140–330 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "smashing bottles",
+      "score": 37.8,
+      "gefeiKD": 37.8,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 210,
+          "high": 310
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 dependableexpendables.com（DR 25，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784179841,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 37.8/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 dependableexpendables.com，难度贡献仅 11.2）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（youtube.com、youtube.com、snapchat.com、gettyimages.com、en.wikipedia.org）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 dependableexpendables.com（DR 25，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–310 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "carrom stars io",
+      "score": 37.6,
+      "gefeiKD": 37.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 310
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 carrom.com（DR 27）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180046,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 37.6/100（容易）。",
+        "前 10 名中有 1 个首页排名（carrom.com），首页平均站点强度 26/100。",
+        "5 个高 DR 大站（play.google.com、apps.apple.com、poki.com、msn.com、play.google.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 10 名 carrom.com（DR 27）是低 DR 站点的首页排名，小站靠首页就能排进来（位次靠后，信号打折）。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 carrom.com（DR 27））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–310 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "sandbox of elements",
+      "score": 37.2,
+      "gefeiKD": 37.2,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 31.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 sandspiel.club（DR 52）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180445,
+      "reasons": [
+        "品牌词口径：难度估算为 37.2/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 31.8/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、play.google.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 6 个：第 1 名 neal.fun（DR 76，内页，域名 8.9 年，月流量 1131.6 万、搜索占比 36%）、第 4 名 sandspiel.club（DR 52，首页）、第 5 名 dan-ball.jp（DR 49，内页）、第 6 名 littlealchemy.com（DR 59，首页，域名 14.9 年，月流量 46.7 万、搜索占比 60%）、第 7 名 crazygames.com（DR 80，内页，域名 22.1 年，月流量 1.0 亿）、第 8 名 kitkatyj.com（DR 2，内页，域名 5.1 年，月流量 1274） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 sandspiel.club（DR 52））；目录/收录型外链为主时约 130–300 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "ai video from text and url",
+      "score": 36.2,
+      "gefeiKD": 36.2,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 120,
+          "mid": 190,
+          "high": 290
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 36.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 steve.ai（DR 71）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784179852,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 36.2/100（容易）。",
+        "前 10 名中有 1 个首页排名（steve.ai），首页平均站点强度 65/100。",
+        "9 个高 DR 大站（pictory.ai、canva.com、adobe.com、renderforest.com、veed.io、fliki.ai、synthesia.io、leonardo.ai、kapwing.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 36.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 steve.ai（DR 71））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 120–290 个。对应的域名权重量级约为 DR 26。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "waddle quest",
+      "score": 34.5,
+      "gefeiKD": 34.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "directory": {
+          "low": 110,
+          "mid": 180,
+          "high": 270
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 34.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 finalbastion.com（DR 16，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180461,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 34.5/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 2 名 admurin.com，难度贡献仅 12.1）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 7 名 finalbastion.com DR 仅 16，弱站已能进前十（位次靠后，信号打折）。（-4）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–70 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 34.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 finalbastion.com（DR 16，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 110–270 个。对应的域名权重量级约为 DR 26。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "one of one studio interview",
+      "score": 29.7,
+      "gefeiKD": 29.7,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 26.9,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 29.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 youngonestudio.com（DR 15，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180253,
+      "reasons": [
+        "品牌词口径：难度估算为 29.7/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 26.9/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（facebook.com、youtube.com、linkedin.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 4 个：第 2 名 creativechair.org（DR 47，内页，域名 8.8 年，月流量 2949）、第 5 名 15questions.net（DR 66，内页，域名 14.5 年，月流量 8.3 万）、第 6 名 glassdoor.com（DR 91，内页，域名 23.1 年，月流量 2387.2 万）、第 7 名 youngonestudio.com（DR 15，内页，域名 9.9 年，月流量 2278） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 29.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 youngonestudio.com（DR 15，内页））；目录/收录型外链为主时约 90–210 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "chicken hell",
+      "score": 28.8,
+      "gefeiKD": 28.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 39.6,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 50
+        },
+        "directory": {
+          "low": 85,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 50,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hellshotchicken.com（DR 1）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784116311,
+      "reasons": [
+        "品牌词口径：难度估算为 28.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 39.6/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、facebook.com、instagram.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 2 名 hellshotchicken.com（DR 1，首页）、第 3 名 thisishellchicken.com（DR 5，首页）、第 5 名 eater.com（DR 90，内页）、第 8 名 cheekychicken.itch.io（DR 92，内页）、第 9 名 nytimes.com（DR 94，内页，域名 32.5 年，月流量 5.9 亿、搜索占比 30%） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–50 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hellshotchicken.com（DR 1））；目录/收录型外链为主时约 85–210 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "drone delivery chaos fkw",
+      "score": 23.6,
+      "gefeiKD": 23.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 fwlogistics.com（DR 17，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180058,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 23.6/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 9 名 fwlogistics.com，难度贡献仅 7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "8 个高 DR 大站（crazygames.com、facebook.com、foxnews.com、facebook.com、youtube.com、nbcmiami.com、nypost.com、carriermanagement.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 9 名 fwlogistics.com DR 仅 17，弱站已能进前十（位次靠后，信号打折）。（-4）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 fwlogistics.com（DR 17，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–160 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "whatisthismovie",
+      "score": 16.9,
+      "gefeiKD": 16.9,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 17,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 25
+        },
+        "directory": {
+          "low": 45,
+          "mid": 75,
+          "high": 110
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 25,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 16.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 whatsatmovie.com（DR 1）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180465,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 16.9/100（极易）。",
+        "内容真空信号：第 2 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 10 名中有 5 个首页排名（whatismymovie.com、whatsatmovie.com、whatthemovie.com、icheckmovies.com、aimoviefinder.com），首页平均站点强度 32/100。",
+        "首页打内页：第 1 名 whatismymovie.com（DR 45，首页）排在了 DR 更高的内页第 9 名 snapchat.com（DR 93）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "3 个高 DR 大站（reddit.com、snapchat.com、reddit.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中有 2 个注册不满 18 个月的新域名（aimoviefinder.com 13 个月、vidscio.com 7 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 3 名 whatsatmovie.com（DR 1，首页排名）证明弱站可进前十。且其体验分垫底（6/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 5 个位置被专门站点的首页占据，虽然个体都不强，但赛道已经拥挤 —— 新站进场即是第 6 个正面竞争者，需要在内容/产品/外链上至少挤掉其中一个。（+4）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–25 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 16.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 whatsatmovie.com（DR 1））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 45–110 个。对应的域名权重量级约为 DR 17。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "how to play lows adventures",
+      "score": 16.6,
+      "gefeiKD": 16.6,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 17,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 25
+        },
+        "directory": {
+          "low": 45,
+          "mid": 70,
+          "high": 110
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 25,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 16.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 yidflicks.com（DR 16，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784180241,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 16.6/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 yidflicks.com，难度贡献仅 7.2）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7 个高 DR 大站（mathplayground.com、youtube.com、mortgagecalculator.org、mathplayground.com、youtube.com、cbc.ca、previews.customer.envatousercontent.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 3 名 yidflicks.com DR 仅 16，弱站已能进前十。（-8）",
+        "前十中 6 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–25 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 16.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 yidflicks.com（DR 16，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 45–110 个。对应的域名权重量级约为 DR 17。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-16T13:41:05",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260716-130315/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 12,
+        "requestCount": 12,
+        "successCount": 12,
+        "successWithScoreCount": 12,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 12
+    },
+    "rows": [
+      {
+        "keyword": "smashing bottles",
+        "correspondingDomain": "https://www.crazygames.com/cz/game/smashing-bottles\nhttps://www.crazygames.com/gr/game/smashing-bottles\nhttps://www.crazygames.com/pl/game/smashing-bottles\nhttps://www.crazygames.com/ru/game/smashing-bottles\nhttps://www.crazygames.com/se/game/smashing-bottles\nhttps://www.crazygames.com/tr/game/smashing-bottles\nhttps://www.crazygames.com/ua/game/smashing-bottles",
+        "score": null,
+        "simWindowVolume": 30.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 600.0,
+        "semKd": null,
+        "semCpc": 0.5,
+        "gefeiKD": 37.8,
+        "group": "smashing bottles",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "chicken hell",
+        "correspondingDomain": "https://www.crazygames.com/dk/game/chicken-hell\nhttps://www.crazygames.com/es/game/chicken-hell\nhttps://www.crazygames.com/fr/game/chicken-hell\nhttps://www.crazygames.com/game/chicken-hell\nhttps://www.crazygames.com/hu/game/chicken-hell\nhttps://www.crazygames.com/id/game/chicken-hell\nhttps://www.crazygames.com/it/game/chicken-hell\nhttps://www.crazygames.com/jp/game/chicken-hell\nhttps://www.crazygames.com/kr/game/chicken-hell\nhttps://www.crazygames.com/nl/game/chicken-hell\nhttps://www.crazygames.com/no/game/chicken-hell\nhttps://www.crazygames.com/ro/game/chicken-hell\nhttps://www.crazygames.com/vn/game/chicken-hell",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 280.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 28.8,
+        "group": "chicken hell",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "ai video from text and url",
+        "correspondingDomain": "https://higgsfield.ai/blog/ai-video-from-text-and-url",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 36.2,
+        "group": "ai video from text and url",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "carrom stars io",
+        "correspondingDomain": "https://www.crazygames.com/cz/game/carrom-stars-io\nhttps://www.crazygames.com/gr/game/carrom-stars-io\nhttps://www.crazygames.com/pl/game/carrom-stars-io\nhttps://www.crazygames.com/ru/game/carrom-stars-io\nhttps://www.crazygames.com/se/game/carrom-stars-io\nhttps://www.crazygames.com/tr/game/carrom-stars-io\nhttps://www.crazygames.com/ua/game/carrom-stars-io",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 37.6,
+        "group": "carrom stars io",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "cinema studio full tutorial",
+        "correspondingDomain": "https://higgsfield.ai/blog/cinema-studio-3.5-full-tutorial",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 43,
+        "group": "cinema studio full tutorial",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "drone delivery chaos fkw",
+        "correspondingDomain": "https://www.crazygames.com/cz/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/gr/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/pl/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/ru/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/se/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/tr/game/drone-delivery-chaos-fkw\nhttps://www.crazygames.com/ua/game/drone-delivery-chaos-fkw",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 23.6,
+        "group": "drone delivery chaos fkw",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "how to play lows adventures",
+        "correspondingDomain": "https://www.coolmathgames.com/blog/how-to-play-lows-adventures",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 16.6,
+        "group": "how to play lows adventures",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "idle car service tycoon",
+        "correspondingDomain": "https://www.crazygames.com/cz/game/idle-car-service-tycoon\nhttps://www.crazygames.com/gr/game/idle-car-service-tycoon\nhttps://www.crazygames.com/se/game/idle-car-service-tycoon\nhttps://www.crazygames.com/tr/game/idle-car-service-tycoon",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 39.3,
+        "group": "idle car service tycoon",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "one of one studio interview",
+        "correspondingDomain": "https://higgsfield.ai/blog/one-of-one-studio-interview",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 29.7,
+        "group": "one of one studio interview",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "sandbox of elements",
+        "correspondingDomain": "https://poki.com/en/g/sandbox-of-elements",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 37.2,
+        "group": "sandbox of elements",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "waddle quest",
+        "correspondingDomain": "https://www.crazygames.com/cz/game/waddle-s-quest\nhttps://www.crazygames.com/gr/game/waddle-s-quest\nhttps://www.crazygames.com/se/game/waddle-s-quest\nhttps://www.crazygames.com/tr/game/waddle-s-quest",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 34.5,
+        "group": "waddle quest",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "whatisthismovie",
+        "correspondingDomain": "https://huntifyai.com/tools/whatisthismovie\nhttps://huntifyai.com/zh-CN/tools/whatisthismovie",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 16.9,
+        "group": "whatisthismovie",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}
