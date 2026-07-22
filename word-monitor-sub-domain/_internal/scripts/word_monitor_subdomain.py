@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -55,6 +56,8 @@ SUBDOMAIN_RISING_MIN_DELTA = 50.0
 SUBDOMAIN_RISING_MIN_GROWTH = 0.05
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
+REPORT_HISTORY_RE = re.compile(r"^report-(\d{8}-\d{6})\.md$")
+KEYWORD_TABLE_RE = re.compile(r"^keyword-table-(\d{8}-\d{6})\.xlsx$")
 SPACE_RE = re.compile(r"\s+")
 
 DEFAULT_COLUMN_PADDING = 4
@@ -631,6 +634,125 @@ def aggregate_subdomains(rows: List[dict]) -> List[dict]:
     result = list(grouped.values())
     result.sort(key=lambda x: (-safe_float(x.get("observedSubdomainClicks")), x.get("subdomain", "")))
     return result
+
+
+def list_history_run_stamps(report_dir: Path) -> List[str]:
+    if not report_dir.exists():
+        return []
+
+    stamps = set()
+    for p in report_dir.iterdir():
+        if not p.is_file():
+            continue
+        m = REPORT_HISTORY_RE.match(p.name)
+        if m:
+            stamps.add(m.group(1))
+            continue
+        m = KEYWORD_TABLE_RE.match(p.name)
+        if m:
+            stamps.add(m.group(1))
+
+    return sorted(stamps)
+
+
+def _retention_remove_path(*, path: Path, artifact_type: str, stats: dict, is_dir: bool = False) -> None:
+    if not path.exists():
+        stats["missing"] += 1
+        print(f"[retention] missing type={artifact_type} path={path}")
+        return
+
+    try:
+        if is_dir:
+            shutil.rmtree(path)
+        else:
+            path.unlink()
+        stats["removed"] += 1
+        print(f"[retention] removed type={artifact_type} path={path}")
+    except Exception as exc:
+        stats["errors"] += 1
+        print(f"[retention][warn] remove-failed type={artifact_type} path={path} err={exc}")
+
+
+def delete_subdomain_run_artifacts(
+    *,
+    stamp: str,
+    data_dir: Path,
+    snapshot_dir: Path,
+    report_dir: Path,
+    words_dir: Path,
+    chain_work_dir: Path,
+) -> Dict[str, int]:
+    stats: Dict[str, int] = {"removed": 0, "missing": 0, "errors": 0}
+
+    _retention_remove_path(
+        path=data_dir / f"fetch-{stamp}.json",
+        artifact_type="fetch",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=snapshot_dir / f"snapshot-{stamp}.json",
+        artifact_type="snapshot",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=report_dir / f"report-{stamp}.md",
+        artifact_type="report",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=report_dir / f"keyword-table-{stamp}.xlsx",
+        artifact_type="excel",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=chain_work_dir / stamp,
+        artifact_type="chain",
+        stats=stats,
+        is_dir=True,
+    )
+    _retention_remove_path(
+        path=words_dir / f"sub-domain-{stamp}.xlsx",
+        artifact_type="words",
+        stats=stats,
+    )
+
+    return stats
+
+
+def cleanup_oldest_run_after_success_subdomain(
+    *,
+    current_stamp: str,
+    data_dir: Path,
+    snapshot_dir: Path,
+    report_dir: Path,
+    words_dir: Path,
+    chain_work_dir: Path,
+) -> None:
+    try:
+        stamps = list_history_run_stamps(report_dir)
+        if len(stamps) <= 1:
+            print(f"[retention] skip reason=insufficient-history runs={len(stamps)}")
+            return
+
+        oldest_stamp = stamps[0]
+        if oldest_stamp == current_stamp and len(stamps) > 1:
+            oldest_stamp = stamps[1]
+
+        print(f"[retention] target oldest={oldest_stamp} current={current_stamp}")
+        stats = delete_subdomain_run_artifacts(
+            stamp=oldest_stamp,
+            data_dir=data_dir,
+            snapshot_dir=snapshot_dir,
+            report_dir=report_dir,
+            words_dir=words_dir,
+            chain_work_dir=chain_work_dir,
+        )
+        print(
+            "[retention] done "
+            f"oldest={oldest_stamp} removed={stats['removed']} missing={stats['missing']} errors={stats['errors']}"
+        )
+    except Exception as exc:
+        print(f"[retention][warn] cleanup-failed current={current_stamp} err={exc}")
 
 
 def list_snapshot_files(snapshot_dir: Path) -> List[Path]:
@@ -1829,6 +1951,15 @@ def run_pipeline(args: argparse.Namespace) -> int:
         print("[done] baseline      : none (first run)")
     else:
         print(f"[done] baseline      : {baseline_path}")
+
+    cleanup_oldest_run_after_success_subdomain(
+        current_stamp=stamp,
+        data_dir=data_dir,
+        snapshot_dir=snapshot_dir,
+        report_dir=report_dir,
+        words_dir=words_dir,
+        chain_work_dir=chain_work_dir,
+    )
 
     return 0
 

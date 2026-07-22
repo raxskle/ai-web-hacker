@@ -33,6 +33,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 - 最新报告：`word-monitor-sub-domain/report/latest.md`（最终词表口径）
 - 最新 Excel：`word-monitor-sub-domain/report/latest.xlsx`（最终完整词表）
 - **最终标准词表（完整）**：`words/sub-domain-YYYYMMDD-HHMMSS.xlsx`（仓库根目录）
+- 自动清理：每次 `run` 成功后，自动删除最老一次执行（同一 `stamp`）的历史数据/快照/报告/链路产物；`report/latest.md` 与 `report/latest.xlsx` 不删除
 
 ## 规则摘要（MVP）
 

@@ -1,40 +1,119 @@
-# Sitemap 合并监控报告（20260721-163424）
+# Sitemap 合并监控报告（20260722-173451）
 
 ## 摘要
 
-- 站点数：8
-- 站点列表：onlinegames_io, playhop_com, suikagame_io, crazygames_com, poki_com, dragganaitool_com, higgsfield_ai, huntifyai_com
-- 有效内页总数：132233
-- 新增内页总数：34
-- 移除内页总数：14
+- 站点数：10
+- 站点列表：coolmathgames_com, crazygames_com, dragganaitool_com, gamejolt_com, higgsfield_ai, huntifyai_com, onlinegames_io, playhop_com, poki_com, suikagame_io
+- 有效内页总数：136020
+- 新增内页总数：209
+- 移除内页总数：5
 - 新增路由模式总数：0
-- 新关键词候选总数：30
-- 标准词表行数：30（最终完整词表）
+- 新关键词候选总数：39
+- 标准词表行数：39（最终完整词表）
 - SIM 指标完整行数：0
 - SEM 指标完整行数：2
-- gefeiKD 已回填行数：30
+- gefeiKD 已回填行数：39
 
 ## Sitemap 概览
 
 | siteId | effectiveUrls | patterns | baseline |
 | --- | --- | --- | --- |
-| onlinegames_<wbr>io | 1279 | 16 | 20260721-<wbr>162322 |
-| playhop_<wbr>com | 1 | 1 | 20260721-<wbr>162322 |
-| suikagame_<wbr>io | 2530 | 14 | 20260721-<wbr>162322 |
-| crazygames_<wbr>com | 123405 | 30 | 20260721-<wbr>162322 |
-| poki_<wbr>com | 1632 | 10 | 20260716-<wbr>130315 |
+| coolmathgames_<wbr>com | 3613 | 37 | 20260715-<wbr>194808 |
+| crazygames_<wbr>com | 123579 | 30 | 20260721-<wbr>163424 |
 | dragganaitool_<wbr>com | 1489 | 25 | 20260716-<wbr>130315 |
+| gamejolt_<wbr>com | 0 | 0 | yes |
 | higgsfield_<wbr>ai | 778 | 27 | 20260716-<wbr>130315 |
 | huntifyai_<wbr>com | 1119 | 15 | 20260716-<wbr>130315 |
+| onlinegames_<wbr>io | 1281 | 16 | 20260721-<wbr>163424 |
+| playhop_<wbr>com | 1 | 1 | 20260721-<wbr>163424 |
+| poki_<wbr>com | 1632 | 10 | 20260716-<wbr>130315 |
+| suikagame_<wbr>io | 2528 | 14 | 20260721-<wbr>163424 |
 
 ## 新增内页
 
 | siteId | url | path | slug | depth |
 | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | /<wbr>cz/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | /<wbr>cz/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | unmatched-<wbr>ego-<wbr>2 | 3 |
-| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet | /<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet | catch-<wbr>a-<wbr>pet | 3 |
-| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos | /<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos | ragdoll-<wbr>chaos | 3 |
+| coolmathgames_<wbr>com | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>blog/<wbr>how-<wbr>to-<wbr>play-<wbr>lows-<wbr>adventures | /<wbr>blog/<wbr>how-<wbr>to-<wbr>play-<wbr>lows-<wbr>adventures | how-<wbr>to-<wbr>play-<wbr>lows-<wbr>adventures | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | /<wbr>ar/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | dig-<wbr>drop-<wbr>merge | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>ar/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>putt-<wbr>day | /<wbr>ar/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | /<wbr>ar/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>sweetjong | /<wbr>ar/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | /<wbr>ar/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | unmatched-<wbr>ego-<wbr>2 | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>ar/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>ar/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | /<wbr>br/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | dig-<wbr>drop-<wbr>merge | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | /<wbr>br/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | escape-<wbr>from-<wbr>vlogger-<wbr>runaway | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>magnetarrow | /<wbr>br/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>br/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>putt-<wbr>day | /<wbr>br/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | /<wbr>br/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>sweetjong | /<wbr>br/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | /<wbr>br/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | unmatched-<wbr>ego-<wbr>2 | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>br/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>br/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>magnetarrow | /<wbr>cz/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>cz/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>putt-<wbr>day | /<wbr>cz/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>sweetjong | /<wbr>cz/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>cz/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>cz/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>magnetarrow | /<wbr>de/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>de/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>putt-<wbr>day | /<wbr>de/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>sweetjong | /<wbr>de/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>de/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>de/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>magnetarrow | /<wbr>dk/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>dk/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>putt-<wbr>day | /<wbr>dk/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>sweetjong | /<wbr>dk/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>dk/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>dk/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>magnetarrow | /<wbr>es/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>es/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>putt-<wbr>day | /<wbr>es/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>sweetjong | /<wbr>es/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>es/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>es/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>magnetarrow | /<wbr>fi/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>fi/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>putt-<wbr>day | /<wbr>fi/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>sweetjong | /<wbr>fi/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>fi/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>fi/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | /<wbr>fr/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge | dig-<wbr>drop-<wbr>merge | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | /<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | escape-<wbr>from-<wbr>vlogger-<wbr>runaway | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>magnetarrow | /<wbr>fr/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>fr/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>putt-<wbr>day | /<wbr>fr/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | /<wbr>fr/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | scratch-<wbr>card-<wbr>kingdom-<wbr>ufr | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>sweetjong | /<wbr>fr/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | /<wbr>fr/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 | unmatched-<wbr>ego-<wbr>2 | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>fr/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>fr/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | /<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway | escape-<wbr>from-<wbr>vlogger-<wbr>runaway | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>magnetarrow | /<wbr>game/<wbr>magnetarrow | magnetarrow | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>putt-<wbr>day | /<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>sweetjong | /<wbr>game/<wbr>sweetjong | sweetjong | 2 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>magnetarrow | /<wbr>gr/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>gr/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>putt-<wbr>day | /<wbr>gr/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>sweetjong | /<wbr>gr/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>gr/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>gr/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>hu/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>putt-<wbr>day | /<wbr>hu/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>sweetjong | /<wbr>hu/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>hu/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>hu/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>magnetarrow | /<wbr>id/<wbr>game/<wbr>magnetarrow | magnetarrow | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | /<wbr>id/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>putt-<wbr>day | /<wbr>id/<wbr>game/<wbr>putt-<wbr>day | putt-<wbr>day | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>sweetjong | /<wbr>id/<wbr>game/<wbr>sweetjong | sweetjong | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>t/<wbr>ball/<wbr>4 | /<wbr>id/<wbr>t/<wbr>ball/<wbr>4 | 4 | 4 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>t/<wbr>obstacle/<wbr>6 | /<wbr>id/<wbr>t/<wbr>obstacle/<wbr>6 | 6 | 4 |
 | dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>business-<wbr>keywords-<wbr>list-<wbr>for-<wbr>seo-<wbr>marketing-<wbr>and-<wbr>lead-<wbr>generation | /<wbr>business-<wbr>keywords-<wbr>list-<wbr>for-<wbr>seo-<wbr>marketing-<wbr>and-<wbr>lead-<wbr>generation | business-<wbr>keywords-<wbr>list-<wbr>for-<wbr>seo-<wbr>marketing-<wbr>and-<wbr>lead-<wbr>generation | 1 |
 | dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>ecommerce-<wbr>job-<wbr>title-<wbr>taxonomy-<wbr>how-<wbr>to-<wbr>classify-<wbr>ecommerce-<wbr>roles | /<wbr>ecommerce-<wbr>job-<wbr>title-<wbr>taxonomy-<wbr>how-<wbr>to-<wbr>classify-<wbr>ecommerce-<wbr>roles | ecommerce-<wbr>job-<wbr>title-<wbr>taxonomy-<wbr>how-<wbr>to-<wbr>classify-<wbr>ecommerce-<wbr>roles | 1 |
 | dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>key-<wbr>features-<wbr>every-<wbr>user-<wbr>friendly-<wbr>online-<wbr>shopping-<wbr>website-<wbr>should-<wbr>include | /<wbr>key-<wbr>features-<wbr>every-<wbr>user-<wbr>friendly-<wbr>online-<wbr>shopping-<wbr>website-<wbr>should-<wbr>include | key-<wbr>features-<wbr>every-<wbr>user-<wbr>friendly-<wbr>online-<wbr>shopping-<wbr>website-<wbr>should-<wbr>include | 1 |
@@ -65,6 +144,10 @@
 | huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>gzyi-<wbr>top | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>gzyi-<wbr>top | gzyi-<wbr>top | 3 |
 | huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>tranai | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>tranai | tranai | 3 |
 | huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>triple3d | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>triple3d | triple3d | 3 |
+| onlinegames_<wbr>io | https:/<wbr>/<wbr>www.onlinegames.io/<wbr>poppy-<wbr>strike-<wbr>5 | /<wbr>poppy-<wbr>strike-<wbr>5 | poppy-<wbr>strike-<wbr>5 | 1 |
+| onlinegames_<wbr>io | https:/<wbr>/<wbr>www.onlinegames.io/<wbr>world-<wbr>war-<wbr>2-<wbr>shooter | /<wbr>world-<wbr>war-<wbr>2-<wbr>shooter | world-<wbr>war-<wbr>2-<wbr>shooter | 1 |
+| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet | /<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet | catch-<wbr>a-<wbr>pet | 3 |
+| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos | /<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos | ragdoll-<wbr>chaos | 3 |
 
 ## 新增路由模式
 
@@ -74,10 +157,15 @@
 
 | siteId | type | keyword | score | urlCount | examples |
 | --- | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | phrase | scratch card kingdom ufr | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr |
-| crazygames_<wbr>com | phrase | unmatched ego | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 |
-| poki_<wbr>com | phrase | catch pet | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet |
-| poki_<wbr>com | phrase | ragdoll chaos | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos |
+| coolmathgames_<wbr>com | phrase | how to play lows adventures | 1.50 | 1 | https:/<wbr>/<wbr>www.coolmathgames.com/<wbr>blog/<wbr>how-<wbr>to-<wbr>play-<wbr>lows-<wbr>adventures |
+| crazygames_<wbr>com | phrase | obby supercar race on keyboard | 37.50 | 25 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>obby-<wbr>supercar-<wbr>race-<wbr>on-<wbr>keyboard |
+| crazygames_<wbr>com | phrase | putt day | 37.50 | 25 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>putt-<wbr>day<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>putt-<wbr>day<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>putt-<wbr>day |
+| crazygames_<wbr>com | phrase | sweetjong | 37.50 | 25 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>sweetjong<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>sweetjong<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>sweetjong |
+| crazygames_<wbr>com | phrase | magnetarrow | 34.50 | 23 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>magnetarrow<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>magnetarrow<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>magnetarrow |
+| crazygames_<wbr>com | phrase | escape from vlogger runaway | 10.50 | 7 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>escape-<wbr>from-<wbr>vlogger-<wbr>runaway |
+| crazygames_<wbr>com | phrase | scratch card kingdom ufr | 10.50 | 7 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>scratch-<wbr>card-<wbr>kingdom-<wbr>ufr |
+| crazygames_<wbr>com | phrase | unmatched ego | 10.50 | 7 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>unmatched-<wbr>ego-<wbr>2 |
+| crazygames_<wbr>com | phrase | dig drop merge | 7.50 | 5 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>dig-<wbr>drop-<wbr>merge |
 | dragganaitool_<wbr>com | phrase | business keywords list for seo marketing and lead generation | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>business-<wbr>keywords-<wbr>list-<wbr>for-<wbr>seo-<wbr>marketing-<wbr>and-<wbr>lead-<wbr>generation |
 | dragganaitool_<wbr>com | phrase | ecommerce job title taxonomy how to classify ecommerce roles | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>ecommerce-<wbr>job-<wbr>title-<wbr>taxonomy-<wbr>how-<wbr>to-<wbr>classify-<wbr>ecommerce-<wbr>roles |
 | dragganaitool_<wbr>com | phrase | key features every user friendly online shopping website should include | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>key-<wbr>features-<wbr>every-<wbr>user-<wbr>friendly-<wbr>online-<wbr>shopping-<wbr>website-<wbr>should-<wbr>include |
@@ -104,6 +192,10 @@
 | huntifyai_<wbr>com | phrase | triple3d | 3.00 | 2 | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>triple3d<br>https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>triple3d |
 | huntifyai_<wbr>com | phrase | gzyi top | 1.50 | 1 | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>gzyi-<wbr>top |
 | huntifyai_<wbr>com | phrase | tranai | 1.50 | 1 | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>tranai |
+| onlinegames_<wbr>io | phrase | poppy strike | 1.50 | 1 | https:/<wbr>/<wbr>www.onlinegames.io/<wbr>poppy-<wbr>strike-<wbr>5 |
+| onlinegames_<wbr>io | phrase | world war shooter | 1.50 | 1 | https:/<wbr>/<wbr>www.onlinegames.io/<wbr>world-<wbr>war-<wbr>2-<wbr>shooter |
+| poki_<wbr>com | phrase | catch pet | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>catch-<wbr>a-<wbr>pet |
+| poki_<wbr>com | phrase | ragdoll chaos | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>ragdoll-<wbr>chaos |
 
 ## 最终标准词表摘要
 
@@ -112,23 +204,23 @@
 | unmatched ego | 14220 | 14960 | 52 | -<wbr> |
 | tranai | -<wbr> | 270 | 25.40 | -<wbr> |
 | script to storyboard ai | 240 | 200 | 42.10 | -<wbr> |
+| poppy strike | -<wbr> | 200 | 44.10 | -<wbr> |
 | catch pet | -<wbr> | 180 | 69.90 | -<wbr> |
 | triple3d | 540 | 160 | 74.90 | -<wbr> |
+| world war shooter | -<wbr> | 130 | 36.40 | -<wbr> |
 | creator partnership program | -<wbr> | 120 | 15 | -<wbr> |
 | how to make creative ads | -<wbr> | 120 | 47 | -<wbr> |
+| putt day | 6830 | 0 | 16.10 | -<wbr> |
 | codeproxy | 380 | 0 | 39.20 | -<wbr> |
+| escape from vlogger runaway | 110 | 0 | 57.20 | -<wbr> |
 | ai previsualization tools | -<wbr> | 0 | 19.80 | -<wbr> |
 | app builder breakdown | -<wbr> | 0 | 29.20 | -<wbr> |
 | brainrotkit | -<wbr> | 0 | 38.40 | -<wbr> |
 | business keywords list for seo marketing and lead generation | -<wbr> | 0 | 17.40 | -<wbr> |
 | case4k | -<wbr> | 0 | 10.70 | -<wbr> |
+| dig drop merge | -<wbr> | 0 | 42.20 | -<wbr> |
 | ecommerce job title taxonomy how to classify ecommerce roles | -<wbr> | 0 | 29.60 | -<wbr> |
 | gzyi top | -<wbr> | 0 | 0 | -<wbr> |
-| how to avoid distortions ai videos | -<wbr> | 0 | 45.20 | -<wbr> |
-| key features every user friendly online shopping website should include | -<wbr> | 0 | 25.30 | -<wbr> |
-| make creative ads | -<wbr> | 0 | 45 | -<wbr> |
-| planograms explained retail shelf planning best practices | -<wbr> | 0 | 8.90 | -<wbr> |
-| ragdoll chaos | -<wbr> | 0 | 69.90 | -<wbr> |
 
 ## 备注
 

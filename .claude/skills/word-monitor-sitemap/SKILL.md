@@ -54,6 +54,7 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 历史最终词表 Excel：`word-monitor-sitemap/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`
 - 最新最终词表 Excel：`word-monitor-sitemap/report/latest.xlsx`
 - 词表同步副本：`words/sitemap-YYYYMMDD-HHMMSS.xlsx`
+- 自动清理：每次 `run` 成功后，自动删除最老一次执行（同一 `stamp`）的历史数据/快照/报告/链路产物；`report/latest.md` 与 `report/latest.xlsx` 不删除
 
 ## 规则摘要（MVP）
 

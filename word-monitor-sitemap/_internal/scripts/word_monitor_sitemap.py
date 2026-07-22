@@ -68,6 +68,8 @@ MERGED_LATEST_FILE = "latest.md"
 MERGED_LATEST_XLSX = "latest.xlsx"
 
 SNAPSHOT_RE = re.compile(r"^snapshot-(\d{8}-\d{6})\.json$")
+REPORT_HISTORY_RE = re.compile(r"^report-(\d{8}-\d{6})\.md$")
+KEYWORD_TABLE_RE = re.compile(r"^keyword-table-(\d{8}-\d{6})\.xlsx$")
 TOKEN_SPLIT_RE = re.compile(r"[^a-z0-9]+")
 NUMERIC_RE = re.compile(r"^\d+$")
 HEXISH_RE = re.compile(r"^[a-f0-9]{16,}$", re.IGNORECASE)
@@ -1631,6 +1633,129 @@ def purge_per_site_reports(*, site_ids: Sequence[str], report_history_root: Path
         latest_path.unlink(missing_ok=True)
 
 
+def list_history_run_stamps(report_history_root: Path) -> List[str]:
+    if not report_history_root.exists():
+        return []
+
+    stamps = set()
+    for p in report_history_root.iterdir():
+        if not p.is_file():
+            continue
+        m = REPORT_HISTORY_RE.match(p.name)
+        if m:
+            stamps.add(m.group(1))
+            continue
+        m = KEYWORD_TABLE_RE.match(p.name)
+        if m:
+            stamps.add(m.group(1))
+
+    return sorted(stamps)
+
+
+def _retention_remove_path(*, path: Path, artifact_type: str, stats: dict, is_dir: bool = False) -> None:
+    if not path.exists():
+        stats["missing"] += 1
+        print(f"[retention] missing type={artifact_type} path={path}")
+        return
+
+    try:
+        if is_dir:
+            shutil.rmtree(path)
+        else:
+            path.unlink()
+        stats["removed"] += 1
+        print(f"[retention] removed type={artifact_type} path={path}")
+    except Exception as exc:
+        stats["errors"] += 1
+        print(f"[retention][warn] remove-failed type={artifact_type} path={path} err={exc}")
+
+
+def delete_sitemap_run_artifacts(
+    *,
+    stamp: str,
+    data_root: Path,
+    snapshot_root: Path,
+    report_history_root: Path,
+    words_dir: Path,
+    chain_work_dir: Path,
+) -> Dict[str, int]:
+    stats: Dict[str, int] = {"removed": 0, "missing": 0, "errors": 0}
+
+    _retention_remove_path(
+        path=report_history_root / f"report-{stamp}.md",
+        artifact_type="report",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=report_history_root / f"keyword-table-{stamp}.xlsx",
+        artifact_type="excel",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=words_dir / f"sitemap-{stamp}.xlsx",
+        artifact_type="words",
+        stats=stats,
+    )
+    _retention_remove_path(
+        path=chain_work_dir / stamp,
+        artifact_type="chain",
+        stats=stats,
+        is_dir=True,
+    )
+
+    for site_dir in sorted([p for p in data_root.iterdir() if p.is_dir()] if data_root.exists() else []):
+        _retention_remove_path(
+            path=site_dir / f"fetch-{stamp}.json",
+            artifact_type="fetch",
+            stats=stats,
+        )
+
+    for site_dir in sorted([p for p in snapshot_root.iterdir() if p.is_dir()] if snapshot_root.exists() else []):
+        _retention_remove_path(
+            path=site_dir / f"snapshot-{stamp}.json",
+            artifact_type="snapshot",
+            stats=stats,
+        )
+
+    return stats
+
+
+def cleanup_oldest_run_after_success_sitemap(
+    *,
+    current_stamp: str,
+    data_root: Path,
+    snapshot_root: Path,
+    report_history_root: Path,
+    words_dir: Path,
+    chain_work_dir: Path,
+) -> None:
+    try:
+        stamps = list_history_run_stamps(report_history_root)
+        if len(stamps) <= 1:
+            print(f"[retention] skip reason=insufficient-history runs={len(stamps)}")
+            return
+
+        oldest_stamp = stamps[0]
+        if oldest_stamp == current_stamp and len(stamps) > 1:
+            oldest_stamp = stamps[1]
+
+        print(f"[retention] target oldest={oldest_stamp} current={current_stamp}")
+        stats = delete_sitemap_run_artifacts(
+            stamp=oldest_stamp,
+            data_root=data_root,
+            snapshot_root=snapshot_root,
+            report_history_root=report_history_root,
+            words_dir=words_dir,
+            chain_work_dir=chain_work_dir,
+        )
+        print(
+            "[retention] done "
+            f"oldest={oldest_stamp} removed={stats['removed']} missing={stats['missing']} errors={stats['errors']}"
+        )
+    except Exception as exc:
+        print(f"[retention][warn] cleanup-failed current={current_stamp} err={exc}")
+
+
 def list_snapshot_files(snapshot_dir: Path) -> List[Path]:
     if not snapshot_dir.exists():
         return []
@@ -1953,6 +2078,16 @@ def run_pipeline(args: argparse.Namespace) -> int:
     print(f"[done] excel latest  : {excel_latest_path}")
     print(f"[done] words final   : {final_words_xlsx_path}")
     print(f"[done] sites total: {len(results)}")
+
+    cleanup_oldest_run_after_success_sitemap(
+        current_stamp=stamp,
+        data_root=data_root,
+        snapshot_root=snapshot_root,
+        report_history_root=report_history_root,
+        words_dir=words_dir,
+        chain_work_dir=chain_work_dir,
+    )
+
     return 0
 def rebuild_single_site_reports(
     *,
