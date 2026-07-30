@@ -1,0 +1,136 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-24T14:33:11",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142816/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 8,
+      "requestCount": 8,
+      "successCount": 8,
+      "successWithScoreCount": 8,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 8
+  },
+  "rows": [
+    {
+      "keyword": "free unlimited ai video generation",
+      "correspondingDomain": "https://higgsfield.ai/blog/free-unlimited-ai-video-generation-2026",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 80.0,
+      "semKd": null,
+      "semCpc": 1.61,
+      "gefeiKD": 30.5,
+      "group": "free unlimited ai video generation",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "higgsfield after effects",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-after-effects",
+      "score": null,
+      "simWindowVolume": 890.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 10.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 76.5,
+      "group": "higgsfield after effects",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "higgsfield figma plugin",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-figma-plugin",
+      "score": null,
+      "simWindowVolume": 20.0,
+      "simKd": 60.0,
+      "simCpc": 0.0,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 67.8,
+      "group": "higgsfield figma plugin",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "ai batch generation tools",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-batch-generation-tools-2026",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 6.7,
+      "group": "ai batch generation tools",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "ai product videos no studio",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-product-videos-no-studio",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 34.2,
+      "group": "ai product videos no studio",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "best platforms seedream",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-platforms-seedream-5",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 38.1,
+      "group": "best platforms seedream",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "higgsfield all unlimited explained",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-all-unlimited-explained",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 40.9,
+      "group": "higgsfield all unlimited explained",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "most reliable ai video generators",
+      "correspondingDomain": "https://higgsfield.ai/blog/most-reliable-ai-video-generators-2026",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 43.5,
+      "group": "most reliable ai video generators",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

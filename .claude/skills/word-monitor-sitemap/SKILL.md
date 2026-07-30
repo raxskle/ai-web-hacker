@@ -16,6 +16,11 @@ description: "监控多站 sitemap（含 onlinegames/playhop/suikagame/crazygame
 6. 最终标准词表 Excel（`latest.xlsx`）
 7. 同步副本到 `words/sitemap-YYYYMMDD-HHMMSS.xlsx`
 
+> 容错策略：
+> - 若某个站点 sitemap 无法抓取（403/超时/解析失败等），该站会被标记为失败并跳过；
+> - 其余站点继续执行，仍会生成一份最终 `latest.md` + `latest.xlsx` + `words/sitemap-*.xlsx`；
+> - 合并报告会包含 `## 失败站点` 章节，列出失败站点与原因。
+
 ## 执行方式
 
 在仓库根目录执行：
@@ -48,7 +53,7 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 站点配置：`word-monitor-sitemap/data/sites.json`
 - 抓取归档：`word-monitor-sitemap/data/<site-id>/fetch-YYYYMMDD-HHMMSS.json`
 - 快照归档：`word-monitor-sitemap/_internal/snapshots/<site-id>/snapshot-YYYYMMDD-HHMMSS.json`
-- 链式阶段产物：`word-monitor-sitemap/_internal/chained/<stamp>/...`
+- 链式阶段产物：`word-monitor-sitemap/_internal/chained/<stamp>/...`（常见会出现 4 个中间 xlsx：analyze-words 与 check-gefei-kd 两个阶段各自产出 history+latest）
 - 历史合并报告：`word-monitor-sitemap/report/history/report-YYYYMMDD-HHMMSS.md`
 - 最新合并报告：`word-monitor-sitemap/report/latest.md`
 - 历史最终词表 Excel：`word-monitor-sitemap/report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`

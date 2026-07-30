@@ -1,0 +1,459 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-24T14:25:34",
+    "stamp": "20260724-142534",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 7,
+      "keywordCountBeforeLimit": 7,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "clean house",
+        "steal brainrot",
+        "chick flix",
+        "stickman fight ragdoll",
+        "boomy world",
+        "cuboy adventure",
+        "fashion fix studio"
+      ],
+      "keywordCount": 7
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 7,
+      "successCount": 7,
+      "failureCount": 0,
+      "avgScore": 41.4714,
+      "cachedHitRate": 0.857143,
+      "levelDistribution": {
+        "困难": 1,
+        "中等": 3,
+        "容易": 3
+      },
+      "keywordTypeDistribution": {
+        "brand": 2,
+        "generic": 5
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/history/report-20260724-142534.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/history/keyword-table-20260724-142534.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/history/keyword-table-20260724-142534.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "steal brainrot",
+      "score": 60.2,
+      "gefeiKD": 60.2,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 67.6,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 200
+        },
+        "directory": {
+          "low": 330,
+          "mid": 520,
+          "high": 780
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 200,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 60.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 stealabrainrot.fandom.com（DR 92，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1784874305,
+      "reasons": [
+        "品牌词口径：难度估算为 60.2/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 67.6/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、youtube.com、en.wikipedia.org、x.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 1 名 stealabrainrot.fandom.com（DR 92，内页，域名 29.8 年，月流量 89.3 万）、第 5 名 msn.com（DR 92，内页，域名 31.7 年，月流量 4.5 亿）、第 8 名 imdb.com（DR 94，内页，域名 30.5 年，月流量 5.8 亿） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 90–200 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 60.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 stealabrainrot.fandom.com（DR 92，内页））；目录/收录型外链为主时约 330–780 个。对应域名权重量级约 DR 36。"
+      ]
+    },
+    {
+      "keyword": "cuboy adventure",
+      "score": 57.6,
+      "gefeiKD": 57.6,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 35,
+        "quality": {
+          "low": 85,
+          "mid": 120,
+          "high": 180
+        },
+        "directory": {
+          "low": 300,
+          "mid": 470,
+          "high": 710
+        },
+        "low": 85,
+        "mid": 120,
+        "high": 180,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 57.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 elifesimulator.io（DR 42，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784664021,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 57.6/100（中等）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 elifesimulator.io，难度贡献仅 28.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "8/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 85–180 个引用域（中值 120，按 Ahrefs 官方 KD→引用域曲线由难度分 57.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 elifesimulator.io（DR 42，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 300–710 个。对应的域名权重量级约为 DR 35。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "stickman fight ragdoll",
+      "score": 48.8,
+      "gefeiKD": 48.8,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 480
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 seeles.ai（DR 31，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784664006,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 48.8/100（中等）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 seeles.ai，难度贡献仅 25.8）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 seeles.ai（DR 31，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 200–480 个。对应的域名权重量级约为 DR 31。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "clean house",
+      "score": 46.6,
+      "gefeiKD": 46.6,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 190,
+          "mid": 300,
+          "high": 450
+        },
+        "low": 50,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 46.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cleanhouseco.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784750412,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 46.6/100（中等）。",
+        "前 8 名中有 2 个首页排名（cleanhouseofatlanta.com、cleanhouseco.com），首页平均站点强度 0/100。",
+        "首页打内页：第 3 名 cleanhouseofatlanta.com（域名直拼关键词、DR 1，首页）排在了 DR 更高的内页第 7 名 netflix.com（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "同类内部排序：这几个 EMD 首页（第 3 名 cleanhouseofatlanta.com（DR 1）、第 6 名 cleanhouseco.com（DR 0））共享「首页打内页」结构加成，彼此之间基本按 DR 排——第 3 名 cleanhouseofatlanta.com DR 1 领跑，第 6 名 cleanhouseco.com DR 仅 0 靠后。同为聚焦首页时，页面做得更满也顶不过 DR 差距：页面质量是入场门票，DR 与页面级外链才是排位器。",
+        "8/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 3 名 cleanhouseofatlanta.com（DR 1，首页排名）证明弱站可进前十。且其体验分垫底（25/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 50–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 46.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cleanhouseco.com（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 190–450 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "fashion fix studio",
+      "score": 34.8,
+      "gefeiKD": 34.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 14.5,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "directory": {
+          "low": 110,
+          "mid": 180,
+          "high": 270
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 34.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fashionfixmn.com（DR 10）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784836883,
+      "reasons": [
+        "品牌词口径：难度估算为 34.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 14.5/100（极易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（instagram.com、facebook.com），且 fashionfixstudio.com 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 2 名 stitchfix.com（DR 79，首页，域名 15 年，月流量 500.0 万）、第 3 名 paparazziaccessories.com（DR 76，内页，域名 15.7 年，月流量 16.3 万）、第 4 名 fashionfixmn.com（DR 10，首页，域名 13.9 年，月流量 2913）、第 5 名 sparklestudiocollection.com（DR 0，内页，域名 20 个月）、第 8 名 adrianstreasurechestboutique.com（DR 0，内页，域名 4.6 年，月流量 418） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 30–70 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 34.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fashionfixmn.com（DR 10））；目录/收录型外链为主时约 110–270 个。对应域名权重量级约 DR 26。"
+      ]
+    },
+    {
+      "keyword": "chick flix",
+      "score": 21.2,
+      "gefeiKD": 21.2,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 60,
+          "mid": 95,
+          "high": 140
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 21.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 chicklitclub.com（DR 30，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784836849,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 21.2/100（容易）。",
+        "内容真空信号：第 6 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置。（-4）",
+        "前 8 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 chicklitclub.com，难度贡献仅 13.5）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个高 DR 大站（imdb.com、en.wikipedia.org、facebook.com、reddit.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 5 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 21.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 chicklitclub.com（DR 30，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 60–140 个。对应的域名权重量级约为 DR 19。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "boomy world",
+      "score": 21.1,
+      "gefeiKD": 21.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 60,
+          "mid": 95,
+          "high": 140
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 21.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 boomiworld.com（DR 33）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784750423,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 21.1/100（容易）。",
+        "前 9 名中有 2 个首页排名（boomiworld.com、boomi.com），首页平均站点强度 51/100。",
+        "首页打内页：第 1 名 boomiworld.com（DR 33，首页）排在了 DR 更高的内页第 7 名 open.spotify.com（DR 95）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个高 DR 大站（linkedin.com、instagram.com、open.spotify.com、trustpilot.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 6 名 boringbusinessnerd.com DR 仅 24，弱站已能进前十。且其体验分垫底（20/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "第 1 名 boomiworld.com（DR 33）是低 DR 站点的首页排名，小站靠首页就能排进来。且其体验分垫底（27/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-9）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 21.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 boomiworld.com（DR 33））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 60–140 个。对应的域名权重量级约为 DR 19。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-24T14:25:34",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 7,
+        "requestCount": 7,
+        "successCount": 7,
+        "successWithScoreCount": 7,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 7
+    },
+    "rows": [
+      {
+        "keyword": "clean house",
+        "correspondingDomain": "https://poki.com/en/g/clean-house",
+        "score": 1661.997436,
+        "simWindowVolume": 8990.0,
+        "simKd": 39.0,
+        "simCpc": 7.21,
+        "semVolume": 37960.0,
+        "semKd": 59.0,
+        "semCpc": 4.19,
+        "gefeiKD": 46.6,
+        "group": "clean house",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "steal brainrot",
+        "correspondingDomain": "https://poki.com/en/g/steal-a-brainrot",
+        "score": 33.237931,
+        "simWindowVolume": 5670.0,
+        "simKd": 58.0,
+        "simCpc": 0.34,
+        "semVolume": 28540.0,
+        "semKd": 56.0,
+        "semCpc": 0.23,
+        "gefeiKD": 60.2,
+        "group": "steal brainrot",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "chick flix",
+        "correspondingDomain": "https://poki.com/en/g/chick-flix",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 23030.0,
+        "semKd": 26.0,
+        "semCpc": 0.05,
+        "gefeiKD": 21.2,
+        "group": "chick flix",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "stickman fight ragdoll",
+        "correspondingDomain": "https://poki.com/en/g/stickman-fight-ragdoll",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 300.0,
+        "semKd": 23.0,
+        "semCpc": 0.12,
+        "gefeiKD": 48.8,
+        "group": "stickman fight ragdoll",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "boomy world",
+        "correspondingDomain": "https://poki.com/en/g/boomy-world",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 21.1,
+        "group": "boomy world",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "cuboy adventure",
+        "correspondingDomain": "https://poki.com/en/g/cuboy-adventure",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 57.6,
+        "group": "cuboy adventure",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "fashion fix studio",
+        "correspondingDomain": "https://poki.com/en/g/fashion-fix-studio",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 34.8,
+        "group": "fashion fix studio",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}

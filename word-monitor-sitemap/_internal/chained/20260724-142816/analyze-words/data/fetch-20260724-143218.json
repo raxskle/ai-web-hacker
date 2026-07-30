@@ -1,0 +1,1918 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-24T14:32:18",
+    "stamp": "20260724-143218",
+    "summary": {
+      "inputCount": 8,
+      "successCount": 8,
+      "failureCount": 0,
+      "simMatchedCount": 2,
+      "simNoMatchCount": 6,
+      "simFailureCount": 0,
+      "totalGlobalVolume": 90,
+      "avgGlobalCpc": 1.61,
+      "avgGlobalDifficulty": null
+    },
+    "request": {
+      "semApiUrl": "http://127.0.0.1:17311/sem/kwogw/v2/webapi/keywords.GetInfo",
+      "simApiUrl": "http://127.0.0.1:17311/sim/api/KeywordGenerator/google/suggest",
+      "simRowsPerPage": 5,
+      "simType": "Related",
+      "simSort": "score",
+      "simAsc": false,
+      "simCountry": "999",
+      "simLatest": "28d",
+      "simWebSource": "Total",
+      "simIsWindow": true,
+      "simPage": 1,
+      "maxRetries": 2
+    },
+    "inputOverview": {
+      "rawKeywordCount": 0,
+      "tableRowCount": 8,
+      "dedupedKeywordCount": 8,
+      "inputSources": [
+        "input-table"
+      ]
+    }
+  },
+  "requests": [
+    {
+      "keyword": "ai batch generation tools",
+      "keywordNormalized": "ai batch generation tools",
+      "sem": {
+        "ok": true,
+        "keyword": "ai batch generation tools",
+        "keywordNormalized": "ai batch generation tools",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 33,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "ai batch generation tools",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e1ea4c946042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:31:36 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OrYfw1YfPrIyR7NsmDc6AN1muMn87RRTotCEXD3HRfmi6qjPw3QGHG3tJ9MG0WlNjS%2Foql%2FT6F3eA1g86OgBYI0K%2Bg8%2BUSItpb30N%2FAnLxwQlkVG6GS%2Bwq5LxHyK\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-452480b5a42bcee0273b3bc9659e978d",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":33,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "e4c113f9-d5f8-444d-8a2e-0b7fad8274a5"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 33,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "ai batch generation tools",
+        "keywordNormalized": "ai batch generation tools",
+        "requestPayload": {
+          "keyword": "ai batch generation tools",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e20ffd316042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:31:39 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VfDY2M0ozvpzFRaaJMHhmUgUhbw3vKrj3L%2Fjl1dH7MZXK1ysfHu5bRqqdpIGSKb8FpQqqQXa2%2BqPV5rayXr826rBdmOJFUvUBoEXiz8pNpKDB1t2yz6CKmu5WQY0\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "rYLTD4Hrwv5NpEUN7hiM9do5yUVvRC26mw4tIv2Po5elcU3RtNFgSQ==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=ai+batch+generation+tools&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "01c48fd5-e540-42e4-9c18-169d996ddb5e"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "ai product videos no studio",
+      "keywordNormalized": "ai product videos no studio",
+      "sem": {
+        "ok": true,
+        "keyword": "ai product videos no studio",
+        "keywordNormalized": "ai product videos no studio",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 34,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "ai product videos no studio",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e21c592a6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:31:41 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qie0bE%2BeXWPmrMesP8J9WyuiUmA%2BR3%2Bv5PfdXQwvtWUTpo63NGfFHhasNQiOh9VvqOLBTRttyceYxpai1s8BZ883FEnOffUD0hoqQkzvft%2BYDuOG36Hvj1iVAp8%2F\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-77124e693a35eef46497892321d7df18",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":34,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "5b75a55e-d632-460c-b898-18078fb28ab8"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 34,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "ai product videos no studio",
+        "keywordNormalized": "ai product videos no studio",
+        "requestPayload": {
+          "keyword": "ai product videos no studio",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e22e08be6042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:31:43 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=D4aZAmdX1u%2BWJ6QqANIWrobeLJ5NclF3hyT527Fu6uql8oMUv7j9FMlIl9T2xDWA2Zp9RVdfufINcqZGC%2FB7z8aNZvCFV4LXBroIwjGfokV7Aqi34uUy8frow6tn\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "qw4mqfoPzdktjeaPjoHdxxWEZzqkjfNfUobjSEtebKugfhdyRRmAkA==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=ai+product+videos+no+studio&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "9613979a-9f2a-47db-8805-2eec4fbb11f6"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "best platforms seedream",
+      "keywordNormalized": "best platforms seedream",
+      "sem": {
+        "ok": true,
+        "keyword": "best platforms seedream",
+        "keywordNormalized": "best platforms seedream",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 35,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best platforms seedream",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e23bda3c6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:31:46 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RFyARm7%2FcWuZ7fxg8m83W5W6XSG3nmgNaK7WtOyxdJ2hroNaJACaVrH6%2B5tTxw4PZDDThA1O%2FPKD8lbFwN96E6WylrFGCB%2FGyN7dEr4GSexyPrPAHrohAyDj91M0\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-5d977a02d8dd3b3371c5451730b82777",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":35,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "d827a30e-4400-4704-b688-c9ba9f3f1bf3"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 35,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best platforms seedream",
+        "keywordNormalized": "best platforms seedream",
+        "requestPayload": {
+          "keyword": "best platforms seedream",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e24d38036042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:31:48 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=J4kQkIMtep9MTI7Ik%2BhUKqY%2FyT4UDrPHgTfKt0XIav7xSCw0XweL%2BxZq2oWFJ%2BBTAwZ3XGqvsJ8lNWPyK1JIzboYOUpoAevqtKUWk1azQjAZ51D6%2FwF8D7yB4nTw\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "izcZCjLbfLL-ogHakrw_UpmpHsIHIMoFkdn_z34OVdKQlo9A_6O2WA==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+platforms+seedream&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "c5d4c919-c0d1-4a0d-b146-b164641cadfa"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "free unlimited ai video generation",
+      "keywordNormalized": "free unlimited ai video generation",
+      "sem": {
+        "ok": true,
+        "keyword": "free unlimited ai video generation",
+        "keywordNormalized": "free unlimited ai video generation",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 36,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "free unlimited ai video generation",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e259eca26042-SIN",
+                  "content-encoding": "br",
+                  "content-length": "239",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:31:51 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jYymDisBkE34R7uom8PjVV6LPbt7O1CDii6FObWTFMkEJOx%2Bw0kKfK%2FbtuLMfWtHneTAAUIDThOFOKBeX9RDcjZP1AhYIZRPLWWAIxrFg4%2BfTujdUKn1o%2FNtKG4x\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-4845d448d7e8d6be0fa80abd3cc76249",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":36,\"result\":{\"keywords\":[{\"phrase\":\"free unlimited ai video generation\",\"database\":\"de\",\"locati0n\":0,\"volume\":20,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"free unlimited ai video generation\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"free unlimited ai video generation\",\"database\":\"it\",\"locati0n\":0,\"volume\":20,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"free unlimited ai video generation\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"free unlimited ai video generation\",\"database\":\"uk\",\"locati0n\":0,\"volume\":20,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"free unlimited ai video generation\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"free unlimited ai video generation\",\"database\":\"us\",\"locati0n\":0,\"volume\":20,\"cpc\":1.61,\"competition_level\":0.61,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":[0,100,50,50,50,50,50,50,50,50,50,50],\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"free unlimited ai video generation\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0,\"rserp\":false}]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "8539abd9-f10e-4edd-a9c4-6c6daa9bddea"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 36,
+              "result": {
+                "keywords": [
+                  {
+                    "phrase": "free unlimited ai video generation",
+                    "database": "de",
+                    "locati0n": 0,
+                    "volume": 20,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "free unlimited ai video generation",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "free unlimited ai video generation",
+                    "database": "it",
+                    "locati0n": 0,
+                    "volume": 20,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "free unlimited ai video generation",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "free unlimited ai video generation",
+                    "database": "uk",
+                    "locati0n": 0,
+                    "volume": 20,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "free unlimited ai video generation",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "free unlimited ai video generation",
+                    "database": "us",
+                    "locati0n": 0,
+                    "volume": 20,
+                    "cpc": 1.61,
+                    "competition_level": 0.61,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": [
+                      0,
+                      100,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "free unlimited ai video generation",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0,
+                    "rserp": false
+                  }
+                ]
+              }
+            },
+            "rowsCount": 4
+          }
+        ],
+        "keywordsRows": [
+          {
+            "phrase": "free unlimited ai video generation",
+            "database": "de",
+            "locati0n": 0,
+            "volume": 20,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "free unlimited ai video generation",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "free unlimited ai video generation",
+            "database": "it",
+            "locati0n": 0,
+            "volume": 20,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "free unlimited ai video generation",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "free unlimited ai video generation",
+            "database": "uk",
+            "locati0n": 0,
+            "volume": 20,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "free unlimited ai video generation",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "free unlimited ai video generation",
+            "database": "us",
+            "locati0n": 0,
+            "volume": 20,
+            "cpc": 1.61,
+            "competition_level": 0.61,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": [
+              0,
+              100,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50
+            ],
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "free unlimited ai video generation",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0,
+            "rserp": false
+          }
+        ]
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "free unlimited ai video generation",
+        "keywordNormalized": "free unlimited ai video generation",
+        "requestPayload": {
+          "keyword": "free unlimited ai video generation",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e26c8f2d6042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:31:53 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cs6SbEQUjqaDv%2FW4T08n9Nii4yo1GQYFSmum9c3GqjkcA6YVS0Lkm0uFAqIB5hzpiOUeHLYqRcC%2BwqR9l4zTjVAtQolMlMQNsYczw1yFLN%2F7c8PmoNd9MoHS5Nro\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "I9sxoYqPaubV5bYf52qft8M0Us5iS3FwKb-jPe9OWq8sfdbSRmiSQQ==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=free+unlimited+ai+video+generation&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "726a8fee-7829-4ddb-b209-691d073025fa"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "higgsfield after effects",
+      "keywordNormalized": "higgsfield after effects",
+      "sem": {
+        "ok": true,
+        "keyword": "higgsfield after effects",
+        "keywordNormalized": "higgsfield after effects",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 37,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "higgsfield after effects",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e2790a576042-SIN",
+                  "content-encoding": "br",
+                  "content-length": "226",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:31:56 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Ska8PcECXJApt%2FKHVOBfSrO5jNYlmB9KJh%2BBcCP%2B48srA504MKh409ujnjuS8OqyF2WHtY76Yp%2Buwaidpxs4ug0rCzNuYKEogLnqYaNMSbNMn7GYjH8o0kyqcDD5\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-d4df6831cf11c82d1eb1bf76819d5810",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":37,\"result\":{\"keywords\":[{\"phrase\":\"higgsfield after effects\",\"database\":\"au\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"higgsfield after effects\",\"database\":\"be\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"higgsfield after effects\",\"database\":\"de\",\"locati0n\":0,\"volume\":10,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"higgsfield after effects\",\"database\":\"fr\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"higgsfield after effects\",\"database\":\"il\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"higgsfield after effects\",\"database\":\"it\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"higgsfield after effects\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0}]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "1435701b-c0ad-441e-bade-ee7882157064"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 37,
+              "result": {
+                "keywords": [
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "au",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "be",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "de",
+                    "locati0n": 0,
+                    "volume": 10,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "fr",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "il",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "higgsfield after effects",
+                    "database": "it",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "higgsfield after effects",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  }
+                ]
+              }
+            },
+            "rowsCount": 6
+          }
+        ],
+        "keywordsRows": [
+          {
+            "phrase": "higgsfield after effects",
+            "database": "au",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "higgsfield after effects",
+            "database": "be",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "higgsfield after effects",
+            "database": "de",
+            "locati0n": 0,
+            "volume": 10,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "higgsfield after effects",
+            "database": "fr",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "higgsfield after effects",
+            "database": "il",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "higgsfield after effects",
+            "database": "it",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "higgsfield after effects",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          }
+        ]
+      },
+      "sim": {
+        "ok": true,
+        "status": "matched",
+        "keyword": "higgsfield after effects",
+        "keywordNormalized": "higgsfield after effects",
+        "requestPayload": {
+          "keyword": "higgsfield after effects",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e293beb16042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:32:01 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6GlqZgouluWl6jD%2BPST7WE0hQnn4lRVW27DrkEbmRIgAGfErR5MXRuHOVdHMXdE3SD1Ysj456U0mfDzcwgtEDEKrVHJVeDTJ%2FhBJ0%2FCbW1BOh1PcQ%2B3teNBfTQnk\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "ugADvvsSl1yEtCTGJnJ_gRXdU8oyc2BMtwqRwtm6zTyTTAbsbbUW8A==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[{\"keyword\":\"higgsfield after effects\",\"prevVolume\":4090.0,\"volumeChange\":-0.78239608801956,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-78.24 %\",\"clicks\":260.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"leadingSite\":\"higgsfield.ai\",\"difficulty\":0,\"latestZeroClicks\":0.4716,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":3868,\"2026-05\":283,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":345,\"favicon\":\"https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be\",\"windowVolume\":890.0,\"score\":37.0},{\"keyword\":\"higgsfield plugin\",\"prevVolume\":5510.0,\"volumeChange\":-0.26678765880217786,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-26.68 %\",\"clicks\":580.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"leadingSite\":\"higgsfield.ai\",\"difficulty\":58,\"latestZeroClicks\":0.7355,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":4722,\"2026-05\":1326,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":43,\"2025-11\":525,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":551,\"favicon\":\"https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be\",\"windowVolume\":4040.0,\"score\":20.0},{\"keyword\":\"higgsfield after effects plugin\",\"prevVolume\":1540.0,\"volumeChange\":-0.2012987012987013,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-20.13 %\",\"clicks\":310.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"leadingSite\":\"youtube.com\",\"difficulty\":54,\"latestZeroClicks\":0.5404,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":1417,\"2026-05\":257,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":139,\"favicon\":\"https://site-images.similarcdn.com/image?url=youtube.com&t=2&s=1&h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20\",\"windowVolume\":1230.0,\"score\":20.0},{\"keyword\":\"higgsfield adobe\",\"prevVolume\":5940.0,\"volumeChange\":-0.8821548821548821,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-88.22 %\",\"clicks\":140.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"difficulty\":65,\"latestZeroClicks\":0.4509,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":5292,\"2026-05\":1101,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":3,\"2025-12\":298,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":557,\"favicon\":\"\",\"windowVolume\":700.0,\"score\":20.0},{\"keyword\":\"higgsfield script after effects\",\"prevVolume\":440.0,\"volumeChange\":-0.9772727272727273,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-97.73 %\",\"clicks\":10.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"difficulty\":0,\"latestZeroClicks\":0.6917,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":449,\"2026-05\":0,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":37,\"favicon\":\"\",\"windowVolume\":10.0,\"score\":19.0}],\"totalRecords\":6285,\"totalClicks\":4734850.512150434,\"totalVolume\":1683435440.0,\"maxScore\":37.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=higgsfield+after+effects&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "37ec441d-1e5d-460f-ba37-3a03d860874b"
+          }
+        },
+        "upstream": {
+          "records": [
+            {
+              "keyword": "higgsfield after effects",
+              "prevVolume": 4090.0,
+              "volumeChange": -0.78239608801956,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-78.24 %",
+              "clicks": 260.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "leadingSite": "higgsfield.ai",
+              "difficulty": 0,
+              "latestZeroClicks": 0.4716,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 3868,
+                "2026-05": 283,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 345,
+              "favicon": "https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be",
+              "windowVolume": 890.0,
+              "score": 37.0
+            },
+            {
+              "keyword": "higgsfield plugin",
+              "prevVolume": 5510.0,
+              "volumeChange": -0.26678765880217786,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-26.68 %",
+              "clicks": 580.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "leadingSite": "higgsfield.ai",
+              "difficulty": 58,
+              "latestZeroClicks": 0.7355,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 4722,
+                "2026-05": 1326,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 43,
+                "2025-11": 525,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 551,
+              "favicon": "https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be",
+              "windowVolume": 4040.0,
+              "score": 20.0
+            },
+            {
+              "keyword": "higgsfield after effects plugin",
+              "prevVolume": 1540.0,
+              "volumeChange": -0.2012987012987013,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-20.13 %",
+              "clicks": 310.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "leadingSite": "youtube.com",
+              "difficulty": 54,
+              "latestZeroClicks": 0.5404,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 1417,
+                "2026-05": 257,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 139,
+              "favicon": "https://site-images.similarcdn.com/image?url=youtube.com&t=2&s=1&h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20",
+              "windowVolume": 1230.0,
+              "score": 20.0
+            },
+            {
+              "keyword": "higgsfield adobe",
+              "prevVolume": 5940.0,
+              "volumeChange": -0.8821548821548821,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-88.22 %",
+              "clicks": 140.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "difficulty": 65,
+              "latestZeroClicks": 0.4509,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 5292,
+                "2026-05": 1101,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 3,
+                "2025-12": 298,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 557,
+              "favicon": "",
+              "windowVolume": 700.0,
+              "score": 20.0
+            },
+            {
+              "keyword": "higgsfield script after effects",
+              "prevVolume": 440.0,
+              "volumeChange": -0.9772727272727273,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-97.73 %",
+              "clicks": 10.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "difficulty": 0,
+              "latestZeroClicks": 0.6917,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 449,
+                "2026-05": 0,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 37,
+              "favicon": "",
+              "windowVolume": 10.0,
+              "score": 19.0
+            }
+          ],
+          "totalRecords": 6285,
+          "totalClicks": 4734850.512150434,
+          "totalVolume": 1683435440.0,
+          "maxScore": 37.0
+        },
+        "recordsCount": 5,
+        "simWindowVolume": 890.0,
+        "simCpc": 0.0,
+        "simKd": 0.0,
+        "matchedKeyword": "higgsfield after effects"
+      }
+    },
+    {
+      "keyword": "higgsfield all unlimited explained",
+      "keywordNormalized": "higgsfield all unlimited explained",
+      "sem": {
+        "ok": true,
+        "keyword": "higgsfield all unlimited explained",
+        "keywordNormalized": "higgsfield all unlimited explained",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 38,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "higgsfield all unlimited explained",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e2a4dc8e6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:32:03 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rzjbXIwPX94nzoGEWLhBenGVw8DSmAfc3fjR%2BZMqIKjuDcXCj6xU8yBzycDwGjjm4GGCPDVcumDegLQqDa5u1%2Bjs5PhCjXIa%2FxGEDJihEkbM3qsNAyXeB7mbc0C7\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-28cfed926cf3f204bd7b73cf3e7687cb",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":38,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "a70118d5-af24-44d3-8be8-65cb54bef416"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 38,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "higgsfield all unlimited explained",
+        "keywordNormalized": "higgsfield all unlimited explained",
+        "requestPayload": {
+          "keyword": "higgsfield all unlimited explained",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e2b8ef626042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:32:05 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=S28mHhTxMewglEwx%2FXqJMAzOiurfXl5yT873pNFcwMhiTbJD%2Frlxae53fTnf0ErALVFyD0rQVsLLAGVbC%2F8B9Rn1TnKsEfSd1u6ViQeHG2rzYYhbKfbOeGdW15w2\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "J64hlNVZ-T2Qgjtr4akB-bU28bspSawHONPzvNcagi0ipTfpfUgfHg==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=higgsfield+all+unlimited+explained&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "779dc744-a698-42a8-b4e4-3bbac7f73150"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "higgsfield figma plugin",
+      "keywordNormalized": "higgsfield figma plugin",
+      "sem": {
+        "ok": true,
+        "keyword": "higgsfield figma plugin",
+        "keywordNormalized": "higgsfield figma plugin",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 39,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "higgsfield figma plugin",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e2c6e91b6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:32:08 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZN%2FZ5pcw8dX5x6pCiMJZptSlJ0%2Ble4Ks435KhD4rSoD%2FyEJTaskReV6LjPkfmU4nTk6hhOxj4J9bM0LJGNNbn%2FiI3H6yvV%2FdB%2BtJzxOWtn8gJr9ywAdNf74wBLVI\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-01208514fb2e29d3baf70b5259a5a700",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":39,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "d569009f-d084-4350-af8a-95be3d99a605"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 39,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "matched",
+        "keyword": "higgsfield figma plugin",
+        "keywordNormalized": "higgsfield figma plugin",
+        "requestPayload": {
+          "keyword": "higgsfield figma plugin",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e2dd1ba66042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:32:12 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MU6gp01O4rHOQRnFAtLS2Ig2DRJ7ApHWCx%2FknOXtZLZ9eyZYRYZHSz7mfw6eGNcr9kJdj96mwyGAuHys9u2yLLF5dQiRUfUycNl3gANzE2kwMHtu%2FRTQ3huW92G7\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "geN_OpwlEAIYZbTkxx8X6V6RgEvPiBcpG_M4IXKaoGjF1G8eBJ5oZg==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[{\"keyword\":\"higgsfield figma plugin\",\"prevVolume\":880.0,\"volumeChange\":-0.9772727272727273,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-97.73 %\",\"clicks\":10.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"difficulty\":60,\"latestZeroClicks\":0.6366,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":900,\"2026-05\":0,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":75,\"favicon\":\"\",\"windowVolume\":20.0,\"score\":31.0},{\"keyword\":\"hixfield figma\",\"prevVolume\":260.0,\"volumeChange\":-0.3076923076923077,\"volumeChangeState\":\"Negative\",\"volumeChangePresentation\":\"-30.77 %\",\"clicks\":60.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"difficulty\":65,\"latestZeroClicks\":0.6507,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":432,\"2026-05\":0,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":36,\"favicon\":\"\",\"windowVolume\":180.0,\"score\":13.0},{\"keyword\":\"figma image to design higgfield\",\"prevVolume\":440.0,\"volumeChange\":-1.0,\"volumeChangeState\":\"Lost\",\"volumeChangePresentation\":\"Lost\",\"clicks\":0.0,\"cpc\":0.0,\"cpcLowBid\":0,\"cpcHighBid\":0,\"difficulty\":1,\"latestZeroClicks\":0.5012,\"primaryIntent\":\"Informational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":447,\"2026-05\":0,\"2026-04\":0,\"2026-03\":0,\"2026-02\":0,\"2026-01\":0,\"2025-12\":0,\"2025-11\":0,\"2025-10\":0,\"2025-09\":0,\"2025-08\":0,\"2025-07\":0},\"averageVolume\":37,\"favicon\":\"\",\"windowVolume\":0.0,\"score\":10.0},{\"keyword\":\"higgsfield\",\"prevVolume\":6322330.0,\"volumeChange\":0.0771709164184723,\"volumeChangeState\":\"Positive\",\"volumeChangePresentation\":\"7.72 %\",\"clicks\":2834790.0,\"cpc\":0.6,\"cpcLowBid\":0,\"cpcHighBid\":4,\"leadingSite\":\"higgsfield.ai\",\"difficulty\":66,\"latestZeroClicks\":0.183,\"primaryIntent\":\"Navigational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":7051134,\"2026-05\":5514483,\"2026-04\":4487554,\"2026-03\":4314657,\"2026-02\":5892351,\"2026-01\":5181432,\"2025-12\":2417567,\"2025-11\":1950221,\"2025-10\":2039518,\"2025-09\":1305091,\"2025-08\":1239120,\"2025-07\":1079554},\"averageVolume\":3539390,\"favicon\":\"https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be\",\"windowVolume\":6810230.0,\"score\":6.0},{\"keyword\":\"higgsfield ai\",\"prevVolume\":1651990.0,\"volumeChange\":0.001537539573484101,\"volumeChangeState\":\"Positive\",\"volumeChangePresentation\":\"0.15 %\",\"clicks\":702420.0,\"cpc\":0.43,\"cpcLowBid\":0,\"cpcHighBid\":3,\"leadingSite\":\"higgsfield.ai\",\"difficulty\":72,\"latestZeroClicks\":0.2348,\"primaryIntent\":\"Navigational\",\"secondaryIntent\":\"\",\"volumeTrend\":{\"2026-06\":1688764,\"2026-05\":2752644,\"2026-04\":2922377,\"2026-03\":2636010,\"2026-02\":2362013,\"2026-01\":2184489,\"2025-12\":1983359,\"2025-11\":1508931,\"2025-10\":1890964,\"2025-09\":1166858,\"2025-08\":1225154,\"2025-07\":1342632},\"averageVolume\":1972016,\"favicon\":\"https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be\",\"windowVolume\":1654530.0,\"score\":3.0}],\"totalRecords\":6273,\"totalClicks\":4525852.958929924,\"totalVolume\":1684880830.0,\"maxScore\":31.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=higgsfield+figma+plugin&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "0b6402b8-5359-4c38-b81d-5044f402993f"
+          }
+        },
+        "upstream": {
+          "records": [
+            {
+              "keyword": "higgsfield figma plugin",
+              "prevVolume": 880.0,
+              "volumeChange": -0.9772727272727273,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-97.73 %",
+              "clicks": 10.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "difficulty": 60,
+              "latestZeroClicks": 0.6366,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 900,
+                "2026-05": 0,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 75,
+              "favicon": "",
+              "windowVolume": 20.0,
+              "score": 31.0
+            },
+            {
+              "keyword": "hixfield figma",
+              "prevVolume": 260.0,
+              "volumeChange": -0.3076923076923077,
+              "volumeChangeState": "Negative",
+              "volumeChangePresentation": "-30.77 %",
+              "clicks": 60.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "difficulty": 65,
+              "latestZeroClicks": 0.6507,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 432,
+                "2026-05": 0,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 36,
+              "favicon": "",
+              "windowVolume": 180.0,
+              "score": 13.0
+            },
+            {
+              "keyword": "figma image to design higgfield",
+              "prevVolume": 440.0,
+              "volumeChange": -1.0,
+              "volumeChangeState": "Lost",
+              "volumeChangePresentation": "Lost",
+              "clicks": 0.0,
+              "cpc": 0.0,
+              "cpcLowBid": 0,
+              "cpcHighBid": 0,
+              "difficulty": 1,
+              "latestZeroClicks": 0.5012,
+              "primaryIntent": "Informational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 447,
+                "2026-05": 0,
+                "2026-04": 0,
+                "2026-03": 0,
+                "2026-02": 0,
+                "2026-01": 0,
+                "2025-12": 0,
+                "2025-11": 0,
+                "2025-10": 0,
+                "2025-09": 0,
+                "2025-08": 0,
+                "2025-07": 0
+              },
+              "averageVolume": 37,
+              "favicon": "",
+              "windowVolume": 0.0,
+              "score": 10.0
+            },
+            {
+              "keyword": "higgsfield",
+              "prevVolume": 6322330.0,
+              "volumeChange": 0.0771709164184723,
+              "volumeChangeState": "Positive",
+              "volumeChangePresentation": "7.72 %",
+              "clicks": 2834790.0,
+              "cpc": 0.6,
+              "cpcLowBid": 0,
+              "cpcHighBid": 4,
+              "leadingSite": "higgsfield.ai",
+              "difficulty": 66,
+              "latestZeroClicks": 0.183,
+              "primaryIntent": "Navigational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 7051134,
+                "2026-05": 5514483,
+                "2026-04": 4487554,
+                "2026-03": 4314657,
+                "2026-02": 5892351,
+                "2026-01": 5181432,
+                "2025-12": 2417567,
+                "2025-11": 1950221,
+                "2025-10": 2039518,
+                "2025-09": 1305091,
+                "2025-08": 1239120,
+                "2025-07": 1079554
+              },
+              "averageVolume": 3539390,
+              "favicon": "https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be",
+              "windowVolume": 6810230.0,
+              "score": 6.0
+            },
+            {
+              "keyword": "higgsfield ai",
+              "prevVolume": 1651990.0,
+              "volumeChange": 0.001537539573484101,
+              "volumeChangeState": "Positive",
+              "volumeChangePresentation": "0.15 %",
+              "clicks": 702420.0,
+              "cpc": 0.43,
+              "cpcLowBid": 0,
+              "cpcHighBid": 3,
+              "leadingSite": "higgsfield.ai",
+              "difficulty": 72,
+              "latestZeroClicks": 0.2348,
+              "primaryIntent": "Navigational",
+              "secondaryIntent": "",
+              "volumeTrend": {
+                "2026-06": 1688764,
+                "2026-05": 2752644,
+                "2026-04": 2922377,
+                "2026-03": 2636010,
+                "2026-02": 2362013,
+                "2026-01": 2184489,
+                "2025-12": 1983359,
+                "2025-11": 1508931,
+                "2025-10": 1890964,
+                "2025-09": 1166858,
+                "2025-08": 1225154,
+                "2025-07": 1342632
+              },
+              "averageVolume": 1972016,
+              "favicon": "https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=1&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be",
+              "windowVolume": 1654530.0,
+              "score": 3.0
+            }
+          ],
+          "totalRecords": 6273,
+          "totalClicks": 4525852.958929924,
+          "totalVolume": 1684880830.0,
+          "maxScore": 31.0
+        },
+        "recordsCount": 5,
+        "simWindowVolume": 20.0,
+        "simCpc": 0.0,
+        "simKd": 60.0,
+        "matchedKeyword": "higgsfield figma plugin"
+      }
+    },
+    {
+      "keyword": "most reliable ai video generators",
+      "keywordNormalized": "most reliable ai video generators",
+      "sem": {
+        "ok": true,
+        "keyword": "most reliable ai video generators",
+        "keywordNormalized": "most reliable ai video generators",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 40,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "most reliable ai video generators",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200e2f1fa866042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:32:15 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ywJY4i2rbB1d27W95iI3U1IPwlTnxLPgkF9kR7SZxg9IbwauUQTg%2FEXeDgi3mkrRPl2DLZV4PSRlhoDedU2qJ3cQooAgN%2B6P%2BrZZrbezTtuGSPSj6htSF9DA0MC6\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-39ed3503f3479f3be7f3175ae41d7fe9",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":40,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "4ed812b5-ea29-48ac-a6e4-72f6b4602d43"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 40,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "most reliable ai video generators",
+        "keywordNormalized": "most reliable ai video generators",
+        "requestPayload": {
+          "keyword": "most reliable ai video generators",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200e3049e886042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:32:18 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=suHg%2FYT%2BoJqz9dL9JE1U9MfC%2F1f3%2FxzfI9hNuXJt2qSlSEbaZs0phteJMOS0fQEkN%2F0zfIlFac9I%2BdnAmgD%2F3VUtFlzi%2Ft4r8Aypsa%2BPLZ12IBZaipZ4o3S9I%2FEP\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "OYHjMB68LHdXedC0FeYiLB1qQ5MXktWVv6NAjbYh2vNv8Wu8cJBMnw==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=most+reliable+ai+video+generators&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "28cf7657-c2bf-4237-9b64-bf0778275ceb"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    }
+  ]
+}

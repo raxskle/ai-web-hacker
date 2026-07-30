@@ -1,0 +1,1619 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-24T14:26:57",
+    "stamp": "20260724-142657",
+    "summary": {
+      "inputCount": 12,
+      "successCount": 12,
+      "failureCount": 0,
+      "simMatchedCount": 0,
+      "simNoMatchCount": 10,
+      "simFailureCount": 2,
+      "totalGlobalVolume": 0,
+      "avgGlobalCpc": null,
+      "avgGlobalDifficulty": null
+    },
+    "request": {
+      "semApiUrl": "http://127.0.0.1:17311/sem/kwogw/v2/webapi/keywords.GetInfo",
+      "simApiUrl": "http://127.0.0.1:17311/sim/api/KeywordGenerator/google/suggest",
+      "simRowsPerPage": 5,
+      "simType": "Related",
+      "simSort": "score",
+      "simAsc": false,
+      "simCountry": "999",
+      "simLatest": "28d",
+      "simWebSource": "Total",
+      "simIsWindow": true,
+      "simPage": 1,
+      "maxRetries": 2
+    },
+    "inputOverview": {
+      "rawKeywordCount": 0,
+      "tableRowCount": 12,
+      "dedupedKeywordCount": 12,
+      "inputSources": [
+        "input-table"
+      ]
+    }
+  },
+  "requests": [
+    {
+      "keyword": "best web hosting companies in raleigh north carolina",
+      "keywordNormalized": "best web hosting companies in raleigh north carolina",
+      "sem": {
+        "ok": true,
+        "keyword": "best web hosting companies in raleigh north carolina",
+        "keywordNormalized": "best web hosting companies in raleigh north carolina",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 33,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best web hosting companies in raleigh north carolina",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200d9ee09736042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:06 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3jGkQY3hEWtSMoJJ5yMvGm28fXROKkfyPUrSgDBLVeoi5IrW1b0G7fefBoR8y4W08XwCtN9F1y2g875Uxu3VWetmLo3zv71FKhcywVhZbbeZlmAmyBSADeGqG99%2B\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-8814396ef0a7be28a24a24a5797fd868",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":33,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "11870448-6833-486c-8782-33d4a16ce705"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 33,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best web hosting companies in raleigh north carolina",
+        "keywordNormalized": "best web hosting companies in raleigh north carolina",
+        "requestPayload": {
+          "keyword": "best web hosting companies in raleigh north carolina",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200da02cb586042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:09 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AsbXaCt0GEhqDYWgKpArMzRQX72pOicUNR1qCgP6r9auG%2ByOB26DHQEygIYN65as0h20mioPodVUKWyWiR%2FGgeMmtid4BclqxCjgIphzQNIlcmcT0e%2FcwjOiEvyo\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "LAWikVAKXR1SxWIMt-jSumKk2sqeMwntQitnwst-heJ1z8v8HFd6mA==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+web+hosting+companies+in+raleigh+north+carolina&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "95c1fc97-e374-48a5-ba87-3ab67cc0f29d"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "best web hosting providers in sweden compared",
+      "keywordNormalized": "best web hosting providers in sweden compared",
+      "sem": {
+        "ok": true,
+        "keyword": "best web hosting providers in sweden compared",
+        "keywordNormalized": "best web hosting providers in sweden compared",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 34,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best web hosting providers in sweden compared",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da12fcf36042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:12 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xNwyfqsnLmoBo%2BOUkefnoMGn0EmdXhR7ugNvAiEsiYhNtuSEkKjlCSTlV95FbM%2FR2VDD%2FPFxtqbTeDD4ORufheEv4BYD0IhT45TfpUGn%2FkJkM0Tep5ajoMc90nL2\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-6667d4b803de970d24c9a3fd73a68f5f",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":34,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "47b5e077-7fea-4cb0-b7b4-570d07d1b496"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 34,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best web hosting providers in sweden compared",
+        "keywordNormalized": "best web hosting providers in sweden compared",
+        "requestPayload": {
+          "keyword": "best web hosting providers in sweden compared",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200da25ba566042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:14 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=boXNcvOXzyyLCFJz5gbpsfzEffdU7X9i3Yf2NO9t%2BEjOfoie0YQ2YDG4eclRklQsP4ZibiJ6YwtmTFqOatixLxFGH4XJLMMH1TpAN3fYrGFWN5KA6pv5e9VDneto\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "sgzC5Z1NyEVl_Mcoc2SUhhA7jHEluxH0T-N9ABa6BedvF5emVrBFfw==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+web+hosting+providers+in+sweden+compared&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "893b346c-be5c-4140-94e9-fffae6fdd8d6"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "brand name generators that inspire better business ideas",
+      "keywordNormalized": "brand name generators that inspire better business ideas",
+      "sem": {
+        "ok": true,
+        "keyword": "brand name generators that inspire better business ideas",
+        "keywordNormalized": "brand name generators that inspire better business ideas",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 35,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "brand name generators that inspire better business ideas",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da323f8e6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:17 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=eq9oFWMCKFKQvXtEPIhL5YSOW0tCIOnk9lQDBJXMbJo%2B9o3nWsTNwrsymMKoBKY8yLeJ1ZWZNrBZyTVfTJaw6wpGEypuKlewxj0cF%2F51bVDD9NlUxGOKRpkg02Bj\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-790223c35fa4afcdc50199c626d67e02",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":35,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "fa5552d5-3b24-4ec8-b9d2-a4e4044054c8"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 35,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "brand name generators that inspire better business ideas",
+        "keywordNormalized": "brand name generators that inspire better business ideas",
+        "requestPayload": {
+          "keyword": "brand name generators that inspire better business ideas",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200da44f9276042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:19 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=vy%2B0sq2ZIuvNp42MWM7j8yIJynYEB10fje3kHQx30woDFA1ImIR%2ByV1fn6OxMBihh6qK456Y5OUCtrnpNA%2FEHqsmMU7xpXLCoRInBGfWxwH4ZoPW5P7Ah5MRd5Fq\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "TbvEYxfipHL-3CCRe6tUmhUuo9q2ZEaK6ZKwXz-cLWtWPRaRJJ17_w==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=brand+name+generators+that+inspire+better+business+ideas&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "76824849-03e8-4164-9f6c-5f8f0fdb8697"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "design platforms that can replace canva for everyday projects",
+      "keywordNormalized": "design platforms that can replace canva for everyday projects",
+      "sem": {
+        "ok": true,
+        "keyword": "design platforms that can replace canva for everyday projects",
+        "keywordNormalized": "design platforms that can replace canva for everyday projects",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 36,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "design platforms that can replace canva for everyday projects",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da517c3e6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:22 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=l0jLYrJD2pWEuibzDAIqGmiHGU09yyQCpML85hid8T%2BmaLjzdYwFNzx%2FWYhncpqOLOBAMrIAW8AcmP4rsjLowkVD64q95VGee8EACfhtFnjnJNK0iD%2FmRbPrk%2Bgw\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-ef7017cb8f56f77389df944c990ba056",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":36,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "633430e1-58fa-43d1-a663-ce9cfb987050"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 36,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "design platforms that can replace canva for everyday projects",
+        "keywordNormalized": "design platforms that can replace canva for everyday projects",
+        "requestPayload": {
+          "keyword": "design platforms that can replace canva for everyday projects",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200da5dfa5e6042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:23 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jbM9XdQUPsckCazDs5bKFrVuaF5RboB7qTYwzCWQII3DsgILywMySc4vwY54LVgjla9bJRTTZ29A3LU%2B4%2FcrCn4G%2BSe6XgPY8HFHKXvzEG%2BhL5xebdfAmv5JuLYm\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "l1mrehB87FJdAkdvFZRJlAbKqzrvHDGQQGt3-RMfwIKBzSGpg_ZDBw==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=design+platforms+that+can+replace+canva+for+everyday+projects&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "5de36972-5828-44d4-856f-9eb27b6ea075"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "greengeeks black friday deals historical discounts and buying tips",
+      "keywordNormalized": "greengeeks black friday deals historical discounts and buying tips",
+      "sem": {
+        "ok": true,
+        "keyword": "greengeeks black friday deals historical discounts and buying tips",
+        "keywordNormalized": "greengeeks black friday deals historical discounts and buying tips",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 37,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "greengeeks black friday deals historical discounts and buying tips",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da6a7c9a6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:26 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6Mi32UohR4nwThwgMb2C8gMdMwHY7gnt2ukXlIjjze7ZF6HSVnjUBSimq%2BrUEhex8I5jsdrOWCztPEGtyzgBIvA6nCrSIs3tnDN3VMdFmzizIy0qZOhoSK8tWW3j\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-c85353a373fdc824254fe845c79efaca",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":37,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "c5a5e592-7442-45ce-981d-4f89b06b775c"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 37,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "greengeeks black friday deals historical discounts and buying tips",
+        "keywordNormalized": "greengeeks black friday deals historical discounts and buying tips",
+        "requestPayload": {
+          "keyword": "greengeeks black friday deals historical discounts and buying tips",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200da76f8476042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:28 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HIt3D9WL%2B066BRe4o4EEiCHVPKy4T3C1aaRmxPNWJVyKqCuTokGt4EspTbTNqldcKqLoATPbBM7iFiq9vCuXf3ix8rjdk7C1kPD8kchyYPKt3u8nTrDqADjZtcd8\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "2id-oHnHYO2efgjEan_tGRalvR_NTE-weHN1aTS5aTnlmv_0Rs47Lg==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=greengeeks+black+friday+deals+historical+discounts+and+buying+tips&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "06bd3d9d-90db-4cb2-92cf-87cfdbeb5739"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "how to choose business card maker that matches your business needs",
+      "keywordNormalized": "how to choose business card maker that matches your business needs",
+      "sem": {
+        "ok": true,
+        "keyword": "how to choose business card maker that matches your business needs",
+        "keywordNormalized": "how to choose business card maker that matches your business needs",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 38,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "how to choose business card maker that matches your business needs",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da89aa396042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:30 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PUFWFgwEn11wutoeDOyulcqiSZVziVcLWzrGfX2psExoLEaz7bbQqX1OU05KMVD9ly4U4ClqlH%2BmWk1ydskZqyROeHs8vhjFlFJxdgELrFsmUIgujJ6dZkft41bF\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-14e561a6e971e034656ef23657a0199e",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":38,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "598b2b7e-6169-4774-918d-1bcf81755036"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 38,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": false,
+        "status": "request_error",
+        "keyword": "how to choose business card maker that matches your business needs",
+        "keywordNormalized": "how to choose business card maker that matches your business needs",
+        "requestPayload": {
+          "keyword": "how to choose business card maker that matches your business needs",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "error": "上游状态码非 200: 400",
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "online logo makers that help build strong brand identity",
+      "keywordNormalized": "online logo makers that help build strong brand identity",
+      "sem": {
+        "ok": true,
+        "keyword": "online logo makers that help build strong brand identity",
+        "keywordNormalized": "online logo makers that help build strong brand identity",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 39,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "online logo makers that help build strong brand identity",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200da9c69036042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:33 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=sZrTpiK7GnKSDLgntkbpHtJnHsuxiIzPiqomWv2hsFrlqRwx370AeFOgqZU1D%2F%2FXUFH9VrHQURmoI8co0AKJwrf5ATWOtJnhzCpqdlfArj6wt1OcaVBeyf4MfnXO\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-99cceb7a0474658469a8f617fb90644e",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":39,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "2dca7ebe-40c9-4c26-a333-70e9c221c7d0"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 39,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "online logo makers that help build strong brand identity",
+        "keywordNormalized": "online logo makers that help build strong brand identity",
+        "requestPayload": {
+          "keyword": "online logo makers that help build strong brand identity",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200daa8fa136042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:35 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JzYx0F0YmMCexeMPx6VMH3skugoDP57OEpFirr5Bo5VQPVoK6Pe1Hw6YjFIJktCG6LJfkB22fg%2BLsq1vUm0RLWTsOAJpatjUqsWYzJUnPSZFHqEe4pejqWuQxCaj\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "jQGFT7lE_kSFbDqK2t9nrye3YWcTjRAnMGDe5v29JcifviuImSw2xg==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=online+logo+makers+that+help+build+strong+brand+identity&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "1293a072-77d6-480c-b5b3-05feb69898b3"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+      "keywordNormalized": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+      "sem": {
+        "ok": true,
+        "keyword": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+        "keywordNormalized": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 40,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200dab57ee06042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:38 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wkCBp%2BCp%2FN5Jm90pX5XQ87aCR3GU3LO0DwkVcf4OwVVdso8CmGD7KscfGeTxItgN7J%2FXzAweDkd1DB%2F3j2ax9e4VA12AG3KMkyrbmyY2ZlzzuG3F2QZMkfr%2F%2B44n\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-7c9ad5808c3bf482dfca0d4477e73855",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":40,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "86b2f1b2-258a-435f-ad39-e44220c1f57a"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 40,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+        "keywordNormalized": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+        "requestPayload": {
+          "keyword": "pantheon wordpress hosting performance benchmarks speed caching and scalability",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200dac9dd066042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:41 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=badkeYVsOPgRuzVubEV6mZCAG1buJ3rbXR7hpBfDH0eeliIDf0v0pk440iqeV5uRDppsZCmuzpVr9fRWM5mAORm8h2DRCs6yMWwER9FGiCRG5eEV2%2BqVz6hXY0C0\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "hSOZbxdEmGqu_Ek_CjzBJkuPF9GJnPSRKiJume4QWXmQQIB3drgedw==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=pantheon+wordpress+hosting+performance+benchmarks+speed+caching+and+scalability&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "166efb76-40f3-42d6-8fcd-b5c7278a05ed"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "tatango and wordpress hosting evaluating compatibility and performance",
+      "keywordNormalized": "tatango and wordpress hosting evaluating compatibility and performance",
+      "sem": {
+        "ok": true,
+        "keyword": "tatango and wordpress hosting evaluating compatibility and performance",
+        "keywordNormalized": "tatango and wordpress hosting evaluating compatibility and performance",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 41,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "tatango and wordpress hosting evaluating compatibility and performance",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200dadaf9c76042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:44 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nRGZhv7BtuZoQUTZGzdRHYbr%2FEuEGdjvyAUng%2FMz0vtJw1iMqNBnrbh75Mm2VPivkQ5ZRAnbxML6m6zl4fa75ojMNtToi24QG%2Bh%2B7bxzzKSdmScaK8rEESCf%2BkqJ\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-31b04c549296d548aa360a678a9ccf4a",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":41,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "844b1b76-072a-44e7-9566-5185de055bb4"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 41,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "tatango and wordpress hosting evaluating compatibility and performance",
+        "keywordNormalized": "tatango and wordpress hosting evaluating compatibility and performance",
+        "requestPayload": {
+          "keyword": "tatango and wordpress hosting evaluating compatibility and performance",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200dae77fa96042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:45 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rsnvQaM8o7yi9%2FdO%2BInjDACNjXOMvoUc8kzFGpNiERWGwU%2BDDpHGVfkwaM%2Bw74zLi0xSyHHqp4Jfskbbuy7LfE4NnxQxYwv5zJC1d4ccdZIb0gXjP30t%2Bga2MxLt\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "c2CvCROSJdsCMF7Z9vm0fcuIJPow0LQAD6snCF867xefxjaz0rCMAQ==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=tatango+and+wordpress+hosting+evaluating+compatibility+and+performance&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "ffb9a65f-88fa-4325-86a8-d7ce26309008"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "top outsourced affiliate program management agencies",
+      "keywordNormalized": "top outsourced affiliate program management agencies",
+      "sem": {
+        "ok": true,
+        "keyword": "top outsourced affiliate program management agencies",
+        "keywordNormalized": "top outsourced affiliate program management agencies",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 42,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "top outsourced affiliate program management agencies",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200daf46f496042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:48 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ld%2FTXNY9jeLjFN4glpJ1HRj%2BT%2BO3obzDYAp%2FVIU08%2FGHf17cSNMq3dYTt8izqVQsfJMq9ZiIXdcwTx0LLHGFbN1xiVauAdv35%2BoyuLtqxK6FWrInpIKj%2BsaV5nUI\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-6204f8c3efd552f1c2b5e1b95bf32b63",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":42,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "4e55e7b0-c0dc-41d8-b151-25b0fa51db88"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 42,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "top outsourced affiliate program management agencies",
+        "keywordNormalized": "top outsourced affiliate program management agencies",
+        "requestPayload": {
+          "keyword": "top outsourced affiliate program management agencies",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200db007bb36042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:50 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FP5hav2629C2S4j8PX0AKXtCiUJh%2F5OT58uV8xohpXdIYLQzU3APPBCPMzfuUMpqAzuZ3SwFLAHgg1ndnVxmTuQ2WvOEeBqYpdPD4QYLHNxYfGpEC%2BUVI1UWh0Eb\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 f010e00bc6a611db2318e7bbd6bce812.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "pNl--bUi7uxa0OmXejTm8rn6v0F9TpbrEBACrVfrO41XvxCHsxzi_A==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=top+outsourced+affiliate+program+management+agencies&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "4453032e-906d-42e2-ab89-a8ddf25f41da"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "unblur image apps compared which one restores details best",
+      "keywordNormalized": "unblur image apps compared which one restores details best",
+      "sem": {
+        "ok": true,
+        "keyword": "unblur image apps compared which one restores details best",
+        "keywordNormalized": "unblur image apps compared which one restores details best",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 43,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "unblur image apps compared which one restores details best",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200db0cea006042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:52 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uU1AT8ucrXOhjskHsR2Ltu0uGo2DkfToB2UsXeHIsgxmhn2Gva86RallFlkOs96smHY1bYmo6oNuHtGTQiOoJdavDUk9HeQTbWMG%2B5sYGW6480DTpAKqMX0jen0j\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-574686611f4d592e4ebeae8d717b7e03",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":43,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "f63b4f08-ceae-41e9-bebd-bc36e4f1f9cc"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 43,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "unblur image apps compared which one restores details best",
+        "keywordNormalized": "unblur image apps compared which one restores details best",
+        "requestPayload": {
+          "keyword": "unblur image apps compared which one restores details best",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a200db196aa26042-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Fri, 24 Jul 2026 06:26:53 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Oy7nVzG8FbDbWrehvkT58n7urcKq8UrZIIQbWfkHK4UNuPqQ%2BCTI7FMF%2By1zOLItyVaXWNxtRXG53NNeWnNyHuHhf2wBfSmXx1%2BfwM3kP%2FLuoA1MNdm98koyKUEo\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 68bb9b51836b369d6438eb4d9fa82a26.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "Duyu8lQE_iat6qVuOdfWAOpwzDtoxK9P1N7wiVngJ99CFnpSnYym-Q==",
+              "x-amz-cf-pop": "NRT20-P5",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=unblur+image+apps+compared+which+one+restores+details+best&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "8bc2d869-b27d-4f8d-bcf6-9dd535b0752a"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "vacation spots that combine fine dining live shows and luxury hotels",
+      "keywordNormalized": "vacation spots that combine fine dining live shows and luxury hotels",
+      "sem": {
+        "ok": true,
+        "keyword": "vacation spots that combine fine dining live shows and luxury hotels",
+        "keywordNormalized": "vacation spots that combine fine dining live shows and luxury hotels",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 44,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "vacation spots that combine fine dining live shows and luxury hotels",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a200db25fbfd6042-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Fri, 24 Jul 2026 06:26:55 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fLNC%2Bs%2Fnqf8vKKTjhF4NgL%2FZnQRtlh0kgecIX4E3OzeG6%2BMx%2BeT1dKIXV7zbmBZ9LUo8%2B9U%2FrLM4xpNwsUbmIozN8ZbZgqfSCSBOy2fIhDW6XiM%2BZAL25jpNdpqd\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-168cd0b5124d97477162264efbd06ce9",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":44,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "b1a10007-3fae-445b-b2d9-0502972676d8"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 44,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": false,
+        "status": "request_error",
+        "keyword": "vacation spots that combine fine dining live shows and luxury hotels",
+        "keywordNormalized": "vacation spots that combine fine dining live shows and luxury hotels",
+        "requestPayload": {
+          "keyword": "vacation spots that combine fine dining live shows and luxury hotels",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "error": "上游状态码非 200: 400",
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    }
+  ]
+}

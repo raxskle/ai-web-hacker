@@ -77,6 +77,7 @@ UUIDISH_RE = re.compile(r"^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0
 
 REQUIRED_SECTIONS = [
     "## 摘要",
+    "## 失败站点",
     "## Sitemap 概览",
     "## 新增内页",
     "## 新增路由模式",
@@ -158,6 +159,14 @@ def safe_float(value) -> float:
     except (TypeError, ValueError):
         return 0.0
 
+
+def _format_sitemap_urls(site: dict) -> str:
+    values = []
+    for item in (site.get("sitemapUrls") or []):
+        text = str(item).strip()
+        if text:
+            values.append(text)
+    return " | ".join(values) if values else "-"
 
 
 def to_int_if_possible(v: float) -> str:
@@ -1121,7 +1130,20 @@ def render_report(snapshot: dict) -> str:
     return "\n".join(lines)
 
 
-def render_merged_report(*, stamp: str, site_results: List[dict], final_standard_word_rows: Optional[List[dict]] = None) -> str:
+def render_merged_report(
+    *,
+    stamp: str,
+    site_results: List[dict],
+    final_standard_word_rows: Optional[List[dict]] = None,
+    failed_sites: Optional[List[dict]] = None,
+    attempted_site_count: Optional[int] = None,
+) -> str:
+    failed_site_rows = list(failed_sites or [])
+    successful_site_count = len(site_results)
+    attempted_count = attempted_site_count if attempted_site_count is not None else successful_site_count + len(failed_site_rows)
+    attempted_count = max(attempted_count, successful_site_count)
+    failed_site_count = len(failed_site_rows)
+
     total_effective = sum(safe_int(r.get("effectiveUrlCount")) for r in site_results)
     total_new = sum(safe_int(r.get("newlyAddedCount")) for r in site_results)
     total_removed = sum(safe_int(r.get("removedCount")) for r in site_results)
@@ -1137,14 +1159,22 @@ def render_merged_report(*, stamp: str, site_results: List[dict], final_standard
     sem_ready_count = sum(1 for row in merged_standard_word_rows if has_sem_metrics(row))
     gefei_kd_ready_count = sum(1 for row in merged_standard_word_rows if has_gefei_kd(row))
 
+    success_site_ids = [str(r.get("siteId") or "").strip() for r in site_results]
+    success_site_ids = [site_id for site_id in success_site_ids if site_id]
+    failed_site_ids = [str(item.get("siteId") or "").strip() for item in failed_site_rows]
+    failed_site_ids = [site_id for site_id in failed_site_ids if site_id]
+
     lines: List[str] = []
     lines.append(f"# Sitemap 合并监控报告（{stamp}）")
     lines.append("")
 
     lines.append("## 摘要")
     lines.append("")
-    lines.append(f"- 站点数：{len(site_results)}")
-    lines.append("- 站点列表：" + ", ".join([r.get("siteId", "-") for r in site_results]))
+    lines.append(f"- 尝试站点数：{attempted_count}")
+    lines.append(f"- 成功站点数：{successful_site_count}")
+    lines.append(f"- 失败站点数：{failed_site_count}")
+    lines.append("- 成功站点列表：" + (", ".join(success_site_ids) if success_site_ids else "（无）"))
+    lines.append("- 失败站点列表：" + (", ".join(failed_site_ids) if failed_site_ids else "（无）"))
     lines.append(f"- 有效内页总数：{total_effective}")
     lines.append(f"- 新增内页总数：{total_new}")
     lines.append(f"- 移除内页总数：{total_removed}")
@@ -1154,6 +1184,20 @@ def render_merged_report(*, stamp: str, site_results: List[dict], final_standard
     lines.append(f"- SIM 指标完整行数：{sim_ready_count}")
     lines.append(f"- SEM 指标完整行数：{sem_ready_count}")
     lines.append(f"- gefeiKD 已回填行数：{gefei_kd_ready_count}")
+    lines.append("")
+
+    lines.append("## 失败站点")
+    lines.append("")
+    failure_rows = []
+    for item in failed_site_rows:
+        failure_rows.append(
+            [
+                item.get("siteId", "-") or "-",
+                item.get("sitemapUrl", "-") or "-",
+                item.get("error", "-") or "-",
+            ]
+        )
+    lines.extend(_md_table(["siteId", "sitemapUrl", "error"], failure_rows))
     lines.append("")
 
     lines.append("## Sitemap 概览")
@@ -1420,6 +1464,8 @@ def write_merged_report(
     report_history_root: Path,
     report_latest_root: Path,
     final_standard_word_rows: Optional[List[dict]] = None,
+    failed_sites: Optional[List[dict]] = None,
+    attempted_site_count: Optional[int] = None,
 ) -> Tuple[Path, Path]:
     merged_history_dir = report_history_root
     merged_latest_path = report_latest_root / MERGED_LATEST_FILE
@@ -1431,6 +1477,8 @@ def write_merged_report(
         stamp=stamp,
         site_results=site_results,
         final_standard_word_rows=final_standard_word_rows,
+        failed_sites=failed_sites,
+        attempted_site_count=attempted_site_count,
     )
     history_path = merged_history_dir / f"report-{stamp}.md"
 
@@ -1997,16 +2045,31 @@ def run_pipeline(args: argparse.Namespace) -> int:
     stamp = now_stamp()
 
     results = []
+    failed_sites = []
     for site in selected:
         site_id = site["id"]
         print(f"[run] site={site_id} ...")
-        result = run_single_site(
-            site=site,
-            stamp=stamp,
-            data_root=data_root,
-            snapshot_root=snapshot_root,
-            report_latest_root=report_latest_root,
-        )
+        try:
+            result = run_single_site(
+                site=site,
+                stamp=stamp,
+                data_root=data_root,
+                snapshot_root=snapshot_root,
+                report_latest_root=report_latest_root,
+            )
+        except Exception as exc:
+            error_text = str(exc).replace("\n", " ").strip() or repr(exc)
+            failed_entry = {
+                "siteId": site_id,
+                "sitemapUrl": _format_sitemap_urls(site),
+                "error": error_text,
+            }
+            failed_sites.append(failed_entry)
+            print(f"[failed] site       : {site_id}")
+            print(f"[failed] sitemap    : {failed_entry['sitemapUrl']}")
+            print(f"[failed] reason     : {failed_entry['error']}")
+            continue
+
         results.append(result)
 
         print(f"[done] site          : {result['siteId']}")
@@ -2064,10 +2127,12 @@ def run_pipeline(args: argparse.Namespace) -> int:
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
         final_standard_word_rows=final_standard_word_rows,
+        failed_sites=failed_sites,
+        attempted_site_count=len(selected),
     )
 
     purge_per_site_reports(
-        site_ids=[site["id"] for site in selected],
+        site_ids=[item.get("siteId") for item in results if item.get("siteId")],
         report_history_root=report_history_root,
         report_latest_root=report_latest_root,
     )
@@ -2077,7 +2142,15 @@ def run_pipeline(args: argparse.Namespace) -> int:
     print(f"[done] excel history : {excel_history_path}")
     print(f"[done] excel latest  : {excel_latest_path}")
     print(f"[done] words final   : {final_words_xlsx_path}")
-    print(f"[done] sites total: {len(results)}")
+    print(f"[done] sites attempted: {len(selected)}")
+    print(f"[done] sites success  : {len(results)}")
+    print(f"[done] sites failed   : {len(failed_sites)}")
+    if failed_sites:
+        print("[warn] failed sites detail:")
+        for item in failed_sites:
+            print(
+                f"[warn] - {item.get('siteId', '-')} | sitemap={item.get('sitemapUrl', '-')} | reason={item.get('error', '-')}"
+            )
 
     cleanup_oldest_run_after_success_sitemap(
         current_stamp=stamp,
@@ -2088,6 +2161,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
         chain_work_dir=chain_work_dir,
     )
 
+    if failed_sites and not results:
+        return 2
     return 0
 def rebuild_single_site_reports(
     *,

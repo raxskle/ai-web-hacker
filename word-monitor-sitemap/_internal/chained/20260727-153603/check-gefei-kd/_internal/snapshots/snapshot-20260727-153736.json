@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-27T15:37:36",
+    "stamp": "20260727-153736",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 5,
+      "keywordCountBeforeLimit": 5,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "best automated content creation tools",
+        "ai video hands faces",
+        "best ai marketing video generators enterprise",
+        "best creatify alternatives",
+        "terms of use privacy policy update"
+      ],
+      "keywordCount": 5
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 5,
+      "successCount": 5,
+      "failureCount": 0,
+      "avgScore": 27.48,
+      "cachedHitRate": 0.0,
+      "levelDistribution": {
+        "中等": 1,
+        "容易": 2,
+        "极易": 2
+      },
+      "keywordTypeDistribution": {
+        "generic": 5
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/history/report-20260727-153736.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/history/keyword-table-20260727-153736.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/history/keyword-table-20260727-153736.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "terms of use privacy policy update",
+      "score": 42.7,
+      "gefeiKD": 42.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 250,
+          "high": 380
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 42.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 termly.io（DR 92，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785137856,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 42.7/100（中等）。",
+        "内容真空信号：第 2 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 10 名全部是内页排名，但无一弱位 —— 这不是\"没人认真打\"，而是该词的搜索意图被权威平台的文档/内容页锁定（搜索者要的是方案与对比，不是某个产品首页）。无首页在此不构成机会；新站的现实路径是高质量评测/对比内容页，正面对位盘面中外链最薄的内容位。",
+        "8 个高 DR 大站（reddit.com、reddit.com、facebook.com、myaccount.google.com、privacy.x.com、iubenda.com、reddit.com、termsfeed.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 42.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 termly.io（DR 92，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 160–380 个。对应的域名权重量级约为 DR 29。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "ai video hands faces",
+      "score": 37.4,
+      "gefeiKD": 37.4,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 insmind.com（DR 61，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785137834,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 37.4/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 insmind.com，难度贡献仅 28）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6 个高 DR 大站（youtube.com、youtube.com、snapchat.com、tiktok.com、youtube.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 insmind.com（DR 61，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–300 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "best automated content creation tools",
+      "score": 25.1,
+      "gefeiKD": 25.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 75,
+          "mid": 120,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 25.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 orshot.com（DR 44，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785137830,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 25.1/100（容易）。",
+        "前 8 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 orshot.com，难度贡献仅 19）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（getblend.com、activepieces.com、buffer.com、sprinklr.com、akkio.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 25.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 orshot.com（DR 44，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 75–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "best ai marketing video generators enterprise",
+      "score": 18.3,
+      "gefeiKD": 18.3,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 18,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 30
+        },
+        "directory": {
+          "low": 50,
+          "mid": 80,
+          "high": 120
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 30,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 18.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 aiveed.io（DR 17，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785137839,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 18.3/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 6 名 aiveed.io，难度贡献仅 7.7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6 个高 DR 大站（heygen.com、g2.com、cometly.com、superside.com、imagine.art、webfx.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 6 名 aiveed.io DR 仅 17，弱站已能进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–30 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 18.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 aiveed.io（DR 17，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 50–120 个。对应的域名权重量级约为 DR 18。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "best creatify alternatives",
+      "score": 13.9,
+      "gefeiKD": 13.9,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 15,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 20
+        },
+        "directory": {
+          "low": 35,
+          "mid": 60,
+          "high": 90
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 20,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 13.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 vidmetoo.com（DR 23，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785137846,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 13.9/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 1 名 vidmetoo.com，难度贡献仅 15.7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 1 名 vidmetoo.com DR 仅 23，弱站已能进前十。且其体验分垫底（14/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–20 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 13.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 vidmetoo.com（DR 23，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 35–90 个。对应的域名权重量级约为 DR 15。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-27T15:37:36",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 5,
+        "requestCount": 5,
+        "successCount": 5,
+        "successWithScoreCount": 5,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 5
+    },
+    "rows": [
+      {
+        "keyword": "best automated content creation tools",
+        "correspondingDomain": "https://higgsfield.ai/blog/best-automated-content-creation-tools",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 10.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 25.1,
+        "group": "best automated content creation tools",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "ai video hands faces",
+        "correspondingDomain": "https://higgsfield.ai/blog/ai-video-hands-faces",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 37.4,
+        "group": "ai video hands faces",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "best ai marketing video generators enterprise",
+        "correspondingDomain": "https://higgsfield.ai/blog/best-ai-marketing-video-generators-enterprise",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 18.3,
+        "group": "best ai marketing video generators enterprise",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "best creatify alternatives",
+        "correspondingDomain": "https://higgsfield.ai/blog/best-creatify-alternatives",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 13.9,
+        "group": "best creatify alternatives",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "terms of use privacy policy update",
+        "correspondingDomain": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 42.7,
+        "group": "terms of use privacy policy update",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}

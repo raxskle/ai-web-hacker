@@ -1,0 +1,94 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-27T15:37:36",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153603/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 5,
+      "requestCount": 5,
+      "successCount": 5,
+      "successWithScoreCount": 5,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 5
+  },
+  "rows": [
+    {
+      "keyword": "best automated content creation tools",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-automated-content-creation-tools",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 10.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 25.1,
+      "group": "best automated content creation tools",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "ai video hands faces",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-video-hands-faces",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 37.4,
+      "group": "ai video hands faces",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "best ai marketing video generators enterprise",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-ai-marketing-video-generators-enterprise",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 18.3,
+      "group": "best ai marketing video generators enterprise",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "best creatify alternatives",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-creatify-alternatives",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 13.9,
+      "group": "best creatify alternatives",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "terms of use privacy policy update",
+      "correspondingDomain": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 42.7,
+      "group": "terms of use privacy policy update",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

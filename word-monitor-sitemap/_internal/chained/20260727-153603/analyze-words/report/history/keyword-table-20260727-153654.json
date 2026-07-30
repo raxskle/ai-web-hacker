@@ -1,0 +1,81 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-27T15:36:54",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260727-153654"
+  },
+  "rows": [
+    {
+      "keyword": "best automated content creation tools",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-automated-content-creation-tools",
+      "group": "best automated content creation tools",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 10.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "ai video hands faces",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-video-hands-faces",
+      "group": "ai video hands faces",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "best ai marketing video generators enterprise",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-ai-marketing-video-generators-enterprise",
+      "group": "best ai marketing video generators enterprise",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "best creatify alternatives",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-creatify-alternatives",
+      "group": "best creatify alternatives",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "terms of use privacy policy update",
+      "correspondingDomain": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+      "group": "terms of use privacy policy update",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    }
+  ]
+}

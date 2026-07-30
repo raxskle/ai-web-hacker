@@ -1,0 +1,826 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-27T15:36:54",
+    "stamp": "20260727-153654",
+    "summary": {
+      "inputCount": 5,
+      "successCount": 5,
+      "failureCount": 0,
+      "simMatchedCount": 0,
+      "simNoMatchCount": 5,
+      "simFailureCount": 0,
+      "totalGlobalVolume": 10,
+      "avgGlobalCpc": 0.0,
+      "avgGlobalDifficulty": null
+    },
+    "request": {
+      "semApiUrl": "http://127.0.0.1:17311/sem/kwogw/v2/webapi/keywords.GetInfo",
+      "simApiUrl": "http://127.0.0.1:17311/sim/api/KeywordGenerator/google/suggest",
+      "simRowsPerPage": 5,
+      "simType": "Related",
+      "simSort": "score",
+      "simAsc": false,
+      "simCountry": "999",
+      "simLatest": "28d",
+      "simWebSource": "Total",
+      "simIsWindow": true,
+      "simPage": 1,
+      "maxRetries": 2
+    },
+    "inputOverview": {
+      "rawKeywordCount": 0,
+      "tableRowCount": 5,
+      "dedupedKeywordCount": 5,
+      "inputSources": [
+        "input-table"
+      ]
+    }
+  },
+  "requests": [
+    {
+      "keyword": "ai video hands faces",
+      "keywordNormalized": "ai video hands faces",
+      "sem": {
+        "ok": true,
+        "keyword": "ai video hands faces",
+        "keywordNormalized": "ai video hands faces",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 33,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "ai video hands faces",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a219f9243ee9fde4-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Mon, 27 Jul 2026 07:36:29 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=IurttOc%2Bta8SUrPSg25i32eTiYsJA%2FxVGRkcBLLkaguEUw4aobLv3nXNWkaO74vVybt4GtRJb5%2BGBcmjqzbz5gpugO%2Br8xT%2F3o0zo11WOi4F3zrBr8nipEzK%2BcTz\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-c263c6132add0e46f5e8a40b53c7db87",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":33,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "ccd86cf6-9a80-4c71-86cf-684aadf0c1a1"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 33,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "ai video hands faces",
+        "keywordNormalized": "ai video hands faces",
+        "requestPayload": {
+          "keyword": "ai video hands faces",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a219f93d0885fde4-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Mon, 27 Jul 2026 07:36:32 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YnTZyWyEXjNAQKzsW1jr%2FHJOAvzDTZGZ7c%2FOS%2Bq6pSN42iQcjBXF9dUBOs04tFYgF%2BjPldzrgdWxCUMKli%2F%2BB%2B%2FzPBsl8DRhL%2FNgVliY1COUkE7GX%2FahwXvtDwQF\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 489652f4ae963fff84685aa36e7eef30.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "PTrkMjfK6IQueeYbDBZd94TKt-dNoby5aE4bYcck5UrNpEo9uh2WdQ==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=ai+video+hands+faces&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "1809b21c-c8cd-4fdb-9174-6bfde117be8e"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "best ai marketing video generators enterprise",
+      "keywordNormalized": "best ai marketing video generators enterprise",
+      "sem": {
+        "ok": true,
+        "keyword": "best ai marketing video generators enterprise",
+        "keywordNormalized": "best ai marketing video generators enterprise",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 34,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best ai marketing video generators enterprise",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a219f94f4d49fde4-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Mon, 27 Jul 2026 07:36:35 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BO4yKPCP4HaV590I2QRJwSwuaW77OpQT8GaDqxE8mz3d9GsDtXpThpmtLkJGGp%2FsvpLaDiIxm8Pb5vgTvn0RZ6F5uJMHEbUbSflhKNJQCzFoVqL7QKyVkaFQ6KdZ\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-21e1710ce8c676e88b5305224a877da0",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":34,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "19fb52d4-ba8d-431a-8194-b4edd3197357"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 34,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best ai marketing video generators enterprise",
+        "keywordNormalized": "best ai marketing video generators enterprise",
+        "requestPayload": {
+          "keyword": "best ai marketing video generators enterprise",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a219f95c8bc5fde4-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Mon, 27 Jul 2026 07:36:37 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6YHABG4GZB5RrZe2e0QEX%2FWUQYS2SmZVEYk29hpB3xhue%2FRg3dNrAg39tN9%2FaJF0F%2B0Q%2Fk8lGxHH0X4PDz8V06uapoQUTdZ4uahYCHUdnowCMGK6Nmk6aRAuSHr%2F\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 489652f4ae963fff84685aa36e7eef30.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "yzMUiEGmAWT_W9Z6U20T7vTAKlXdupE2kDGMEf19wi1z-qTFtT_oZw==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+ai+marketing+video+generators+enterprise&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "5acb9f89-008f-40ed-ab12-b0ad4c96b676"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "best automated content creation tools",
+      "keywordNormalized": "best automated content creation tools",
+      "sem": {
+        "ok": true,
+        "keyword": "best automated content creation tools",
+        "keywordNormalized": "best automated content creation tools",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 35,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best automated content creation tools",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a219f96e6dc5fde4-SIN",
+                  "content-encoding": "br",
+                  "content-length": "238",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Mon, 27 Jul 2026 07:36:40 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WQy%2BOwfVXp65EGKwo7SleD0zPDGDMSfJYQWTFos481vGiLgu66oWj25x%2BPpELuAt9GZpXf3%2F8zBlE09PAGBvlWimw3E0lmanOT0t7%2Fh132H9Fdv8tO5CRrd%2B0mNl\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-0cbe17d018c689b4ea6915c8c82f063a",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":35,\"result\":{\"keywords\":[{\"phrase\":\"best automated content creation tools\",\"database\":\"br\",\"locati0n\":0,\"volume\":0,\"cpc\":null,\"competition_level\":null,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":null,\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"best automated content creation tools\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0},{\"phrase\":\"best automated content creation tools\",\"database\":\"us\",\"locati0n\":0,\"volume\":10,\"cpc\":0,\"competition_level\":0,\"difficulty\":null,\"rds_median\":null,\"intents\":[],\"results\":null,\"serp_features\":[],\"trend\":[100,100,0,100],\"serp_id\":\"\",\"serp_updated_at\":0,\"cleaned_phrase\":\"best automated content creation tools\",\"exact_match\":true,\"update_status\":0,\"status_updated_at\":0,\"rserp\":false}]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "b9bc415e-81d4-498e-9f9f-1e3828cde818"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 35,
+              "result": {
+                "keywords": [
+                  {
+                    "phrase": "best automated content creation tools",
+                    "database": "br",
+                    "locati0n": 0,
+                    "volume": 0,
+                    "cpc": null,
+                    "competition_level": null,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": null,
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "best automated content creation tools",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0
+                  },
+                  {
+                    "phrase": "best automated content creation tools",
+                    "database": "us",
+                    "locati0n": 0,
+                    "volume": 10,
+                    "cpc": 0,
+                    "competition_level": 0,
+                    "difficulty": null,
+                    "rds_median": null,
+                    "intents": [],
+                    "results": null,
+                    "serp_features": [],
+                    "trend": [
+                      100,
+                      100,
+                      0,
+                      100
+                    ],
+                    "serp_id": "",
+                    "serp_updated_at": 0,
+                    "cleaned_phrase": "best automated content creation tools",
+                    "exact_match": true,
+                    "update_status": 0,
+                    "status_updated_at": 0,
+                    "rserp": false
+                  }
+                ]
+              }
+            },
+            "rowsCount": 2
+          }
+        ],
+        "keywordsRows": [
+          {
+            "phrase": "best automated content creation tools",
+            "database": "br",
+            "locati0n": 0,
+            "volume": 0,
+            "cpc": null,
+            "competition_level": null,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": null,
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "best automated content creation tools",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0
+          },
+          {
+            "phrase": "best automated content creation tools",
+            "database": "us",
+            "locati0n": 0,
+            "volume": 10,
+            "cpc": 0,
+            "competition_level": 0,
+            "difficulty": null,
+            "rds_median": null,
+            "intents": [],
+            "results": null,
+            "serp_features": [],
+            "trend": [
+              100,
+              100,
+              0,
+              100
+            ],
+            "serp_id": "",
+            "serp_updated_at": 0,
+            "cleaned_phrase": "best automated content creation tools",
+            "exact_match": true,
+            "update_status": 0,
+            "status_updated_at": 0,
+            "rserp": false
+          }
+        ]
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best automated content creation tools",
+        "keywordNormalized": "best automated content creation tools",
+        "requestPayload": {
+          "keyword": "best automated content creation tools",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a219f97ae956fde4-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Mon, 27 Jul 2026 07:36:42 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Reu1ZDoJpeV0FNemxZc00thWZ7mnZEsxrIQAm8q3%2BynqcpMX41SRkXbuHXRroyqDhrJSkK6TySA0J2UQQbvSP5ZvycZCtbcvzwaO%2FrtD2aV4DmT%2FISFaj9Hjt1S%2B\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 489652f4ae963fff84685aa36e7eef30.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "-gSCzFc1jK7bQ5edcbXp4U3M_dh94JCxq25PhcvXXEGHjpyCgtse6w==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+automated+content+creation+tools&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "a508efc0-666b-4482-938d-899814152b9d"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "best creatify alternatives",
+      "keywordNormalized": "best creatify alternatives",
+      "sem": {
+        "ok": true,
+        "keyword": "best creatify alternatives",
+        "keywordNormalized": "best creatify alternatives",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 36,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "best creatify alternatives",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a219f98da9bbfde4-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Mon, 27 Jul 2026 07:36:45 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rQRJuXZSvkRg7N7QLMFc3sPSHx4%2F5YGTOSZOCuWhYwH0C3Nh9PaJaTOd1PiguN8S0UxnazjmlZYqwdzCiM3MCGGVVElFd33Y3LdUA9o%2FxDuN%2BhK0iFDuf0ZoKcEf\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-4c231d96db05e92c943e6fc9920ef540",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":36,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "2876b8a7-dbeb-428d-9919-33020d7bf1f3"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 36,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "best creatify alternatives",
+        "keywordNormalized": "best creatify alternatives",
+        "requestPayload": {
+          "keyword": "best creatify alternatives",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a219f9a06a2cfde4-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Mon, 27 Jul 2026 07:36:48 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=oTQTgH%2FcM9nczOjiFMUlOx3AZLKqHcxkD9ms4Liu4TMNU0ZtQiSTRrySa0uR2sRljJthyfjlWT%2FZhRQ4ozCSdbhGdPFRXATELk%2Frik9MPIorbKid2x2xz2vsiMcr\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 489652f4ae963fff84685aa36e7eef30.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "D10TdnlpAeTJhH1JWABiFIMxkKnlIul6WTCSWLsTObNdtKcMPNsoCA==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=best+creatify+alternatives&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "890b81d6-0962-4a33-97af-72c7de44dfd7"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    },
+    {
+      "keyword": "terms of use privacy policy update",
+      "keywordNormalized": "terms of use privacy policy update",
+      "sem": {
+        "ok": true,
+        "keyword": "terms of use privacy policy update",
+        "keywordNormalized": "terms of use privacy policy update",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "requestPayload": {
+              "__gmitm": "ayWzA3*l4EVcTpZei43sW*qRvljSdU",
+              "requestBody": {
+                "id": 37,
+                "jsonrpc": "2.0",
+                "method": "keywords.GetInfo",
+                "params": {
+                  "phrase": "terms of use privacy policy update",
+                  "device": 0,
+                  "currency": "USD",
+                  "database": "us",
+                  "locati0n": 0,
+                  "date": ""
+                }
+              },
+              "timeoutMs": 45000,
+              "waitTimeoutMs": 120000
+            },
+            "wrapper": {
+              "ok": true,
+              "data": {
+                "status": 200,
+                "headers": {
+                  "access-control-allow-credentials": "true",
+                  "access-control-allow-origin": "https://sem.3ue.co",
+                  "cache-control": "max-age=3600, immutable",
+                  "cf-cache-status": "DYNAMIC",
+                  "cf-ray": "a219f9b33887fde4-SIN",
+                  "content-encoding": "br",
+                  "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+                  "content-type": "application/json; charset=utf-8",
+                  "cross-origin-resource-policy": "same-site",
+                  "date": "Mon, 27 Jul 2026 07:36:51 GMT",
+                  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                  "referrer-policy": "unsafe-url",
+                  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iL3MkL317y8Vqo0puEilN567ZQ1YdKPN7GYsu097jF8tucUe5ZK5K5IhCKx6mN4zlus213Qo5IR6vWb%2F4IoAgfjyzpXLQcBMNc0wBgOhuWYSJnQO1VZAqduYsB7v\"}]}",
+                  "server": "cloudflare",
+                  "sm-log-id": "flb-6e24d136884cea5f8bf15c9889610161",
+                  "vary": "Accept-Encoding,Origin",
+                  "via": "1.1 google",
+                  "x-service": "kwogw.v2"
+                },
+                "body": "{\"jsonrpc\":\"2.0\",\"id\":37,\"result\":{\"keywords\":[]}}",
+                "truncated": false,
+                "finalUrl": "https://sem.3ue.co/kwogw/v2/webapi?__gmitm=ayWzA3*l4EVcTpZei43sW*qRvljSdU"
+              },
+              "meta": {
+                "requestId": "ceb23123-29e9-4f16-b382-4699adb53311"
+              }
+            },
+            "upstream": {
+              "jsonrpc": "2.0",
+              "id": 37,
+              "result": {
+                "keywords": []
+              }
+            },
+            "rowsCount": 0
+          }
+        ],
+        "keywordsRows": []
+      },
+      "sim": {
+        "ok": true,
+        "status": "no_match",
+        "keyword": "terms of use privacy policy update",
+        "keywordNormalized": "terms of use privacy policy update",
+        "requestPayload": {
+          "keyword": "terms of use privacy policy update",
+          "country": "999",
+          "latest": "28d",
+          "isWindow": true,
+          "webSource": "Total",
+          "rowsPerPage": 5,
+          "asc": false,
+          "sort": "score",
+          "page": 1,
+          "type": "Related",
+          "timeoutMs": 45000,
+          "waitTimeoutMs": 120000
+        },
+        "wrapper": {
+          "ok": true,
+          "data": {
+            "status": 200,
+            "headers": {
+              "access-control-allow-credentials": "true",
+              "access-control-allow-origin": "https://sim.3ue.co",
+              "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+              "cf-cache-status": "DYNAMIC",
+              "cf-ray": "a219f9c5fd3dfde4-SIN",
+              "content-encoding": "gzip",
+              "content-security-policy": "frame-ancestors https://3ue.co https://*.3ue.co chrome-extension://*; default-src * data: blob: filesystem: about: ws: wss: gap: 'unsafe-inline' 'unsafe-eval'",
+              "content-type": "application/json; charset=utf-8",
+              "cross-origin-resource-policy": "same-site",
+              "date": "Mon, 27 Jul 2026 07:36:54 GMT",
+              "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+              "referrer-policy": "unsafe-url",
+              "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZvQ1dQbzPDDfq5ZHO6vvwhE63EfPQv8ol64J05sj2XfdxZknfHLEmRzKrM5a8rsGpBYenP0pDBgwuaJfPoIf%2BKQPLXjCMN0is2xhg%2B30P4i0qLKsZEAZ%2Ff5tnPvR\"}]}",
+              "server": "cloudflare",
+              "vary": "accept-encoding",
+              "via": "1.1 489652f4ae963fff84685aa36e7eef30.cloudfront.net (CloudFront)",
+              "x-amz-cf-id": "clc8CWOYD03GxYNCYlRfX1XaNbh0J7mx4Q71Mfco68tUfW2nZ_wM3Q==",
+              "x-amz-cf-pop": "HKG61-P1",
+              "x-cache": "Miss from cloudfront"
+            },
+            "body": "{\"records\":[],\"totalRecords\":0,\"totalClicks\":0.0,\"totalVolume\":0.0}",
+            "truncated": false,
+            "finalUrl": "https://sim.3ue.co/api/KeywordGenerator/google/suggest?keyword=terms+of+use+privacy+policy+update&country=999&isWindow=true&websource=Total&sort=score&asc=false&rowsPerPage=5&orderBy=score+desc&page=1&type=Related&latest=28d"
+          },
+          "meta": {
+            "requestId": "73016053-6589-4cd5-a2bc-fc8d364e5157"
+          }
+        },
+        "upstream": {
+          "records": [],
+          "totalRecords": 0,
+          "totalClicks": 0.0,
+          "totalVolume": 0.0
+        },
+        "recordsCount": 0,
+        "simWindowVolume": null,
+        "simCpc": null,
+        "simKd": null,
+        "matchedKeyword": null
+      }
+    }
+  ]
+}

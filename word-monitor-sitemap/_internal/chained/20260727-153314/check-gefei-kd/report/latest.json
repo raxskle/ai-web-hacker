@@ -1,0 +1,52 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-27T15:33:47",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 2,
+      "requestCount": 2,
+      "successCount": 2,
+      "successWithScoreCount": 2,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 2
+  },
+  "rows": [
+    {
+      "keyword": "super dress",
+      "correspondingDomain": "https://poki.com/en/g/super-dress",
+      "score": null,
+      "simWindowVolume": 360.0,
+      "simKd": 77.0,
+      "simCpc": 0.0,
+      "semVolume": 1020.0,
+      "semKd": null,
+      "semCpc": 1.53,
+      "gefeiKD": 38.3,
+      "group": "super dress",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "scary teacher hide seek games",
+      "correspondingDomain": "https://poki.com/en/g/scary-teacher-hide-seek-games",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 56.3,
+      "group": "scary teacher hide seek games",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

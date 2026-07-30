@@ -1,0 +1,122 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-24T14:25:34",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260724-142350/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 7,
+      "requestCount": 7,
+      "successCount": 7,
+      "successWithScoreCount": 7,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 7
+  },
+  "rows": [
+    {
+      "keyword": "clean house",
+      "correspondingDomain": "https://poki.com/en/g/clean-house",
+      "score": 1661.997436,
+      "simWindowVolume": 8990.0,
+      "simKd": 39.0,
+      "simCpc": 7.21,
+      "semVolume": 37960.0,
+      "semKd": 59.0,
+      "semCpc": 4.19,
+      "gefeiKD": 46.6,
+      "group": "clean house",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "steal brainrot",
+      "correspondingDomain": "https://poki.com/en/g/steal-a-brainrot",
+      "score": 33.237931,
+      "simWindowVolume": 5670.0,
+      "simKd": 58.0,
+      "simCpc": 0.34,
+      "semVolume": 28540.0,
+      "semKd": 56.0,
+      "semCpc": 0.23,
+      "gefeiKD": 60.2,
+      "group": "steal brainrot",
+      "sourcePresence": "both（SIM+SEM）"
+    },
+    {
+      "keyword": "chick flix",
+      "correspondingDomain": "https://poki.com/en/g/chick-flix",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 23030.0,
+      "semKd": 26.0,
+      "semCpc": 0.05,
+      "gefeiKD": 21.2,
+      "group": "chick flix",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "stickman fight ragdoll",
+      "correspondingDomain": "https://poki.com/en/g/stickman-fight-ragdoll",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 300.0,
+      "semKd": 23.0,
+      "semCpc": 0.12,
+      "gefeiKD": 48.8,
+      "group": "stickman fight ragdoll",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "boomy world",
+      "correspondingDomain": "https://poki.com/en/g/boomy-world",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 21.1,
+      "group": "boomy world",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "cuboy adventure",
+      "correspondingDomain": "https://poki.com/en/g/cuboy-adventure",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": 0.0,
+      "gefeiKD": 57.6,
+      "group": "cuboy adventure",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "fashion fix studio",
+      "correspondingDomain": "https://poki.com/en/g/fashion-fix-studio",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 34.8,
+      "group": "fashion fix studio",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

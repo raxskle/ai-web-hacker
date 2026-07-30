@@ -1,0 +1,39 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-27T15:33:33",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260727-153333"
+  },
+  "rows": [
+    {
+      "keyword": "super dress",
+      "correspondingDomain": "https://poki.com/en/g/super-dress",
+      "group": "super dress",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 360.0,
+      "simKd": 77.0,
+      "simCpc": 0.0,
+      "semVolume": 1020.0,
+      "semKd": null,
+      "semCpc": 1.53,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "scary teacher hide seek games",
+      "correspondingDomain": "https://poki.com/en/g/scary-teacher-hide-seek-games",
+      "group": "scary teacher hide seek games",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    }
+  ]
+}

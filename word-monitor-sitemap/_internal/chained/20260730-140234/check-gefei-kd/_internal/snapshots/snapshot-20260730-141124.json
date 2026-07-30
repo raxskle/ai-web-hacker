@@ -1,0 +1,1160 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-30T14:11:24",
+    "stamp": "20260730-141124",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 20,
+      "keywordCountBeforeLimit": 20,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "dogs out",
+        "railway bridge",
+        "demolition inc",
+        "ai ad agency",
+        "20f8",
+        "best ai ad generators",
+        "count and bounce bls",
+        "draw one line drawing puzzle",
+        "furriq",
+        "healthcare care management platforms for hospitals payers and community care organizations",
+        "how alltegrios voice ai agent streamlined insurance support",
+        "how to offer payment flexibility without hurting your brand",
+        "idle dairy tycoon",
+        "krea2turbo pro",
+        "merge haven fzh",
+        "road rage hva",
+        "robshoot",
+        "scale labs and paypal what the partnership means",
+        "squarespace vs shopify for paypal payments",
+        "unlimited mcp"
+      ],
+      "keywordCount": 20
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 20,
+      "successCount": 20,
+      "failureCount": 0,
+      "avgScore": 31.505,
+      "cachedHitRate": 0.4,
+      "levelDistribution": {
+        "困难": 1,
+        "中等": 7,
+        "容易": 6,
+        "极易": 6
+      },
+      "keywordTypeDistribution": {
+        "brand": 3,
+        "generic": 17
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/history/report-20260730-141124.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/history/keyword-table-20260730-141124.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/history/keyword-table-20260730-141124.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "dogs out",
+      "score": 65.4,
+      "gefeiKD": 65.4,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 69.6,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 120,
+          "mid": 170,
+          "high": 250
+        },
+        "directory": {
+          "low": 420,
+          "mid": 670,
+          "high": 1000
+        },
+        "low": 120,
+        "mid": 170,
+        "high": 250,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 65.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 rottentomatoes.com（DR 87，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785371463,
+      "reasons": [
+        "品牌词口径：难度估算为 65.4/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 69.6/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com、en.wikipedia.org、instagram.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 2 名 open.spotify.com（DR 95，内页，域名 20.3 年，月流量 4.5 亿）、第 5 名 m.imdb.com（DR 94，内页，域名 30.6 年，月流量 1.7 亿）、第 8 名 rottentomatoes.com（DR 87，内页，域名 27.2 年，月流量 8792.2 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 120–250 个引用域（中值 170，按 Ahrefs 官方 KD→引用域曲线由难度分 65.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 rottentomatoes.com（DR 87，内页））；目录/收录型外链为主时约 420–1000 个。对应域名权重量级约 DR 38。"
+      ]
+    },
+    {
+      "keyword": "railway bridge",
+      "score": 59.5,
+      "gefeiKD": 59.5,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 190
+        },
+        "directory": {
+          "low": 320,
+          "mid": 510,
+          "high": 760
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 190,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 59.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 railworks.com（DR 55，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785390170,
+      "reasons": [
+        "综合 Top7 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 59.5/100（中等）。",
+        "前 7 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 railworks.com，难度贡献仅 29）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7/7 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 7 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 90–190 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 59.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 railworks.com（DR 55，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 320–760 个。对应的域名权重量级约为 DR 36。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "demolition inc",
+      "score": 52.5,
+      "gefeiKD": 52.5,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 65,
+          "mid": 95,
+          "high": 140
+        },
+        "directory": {
+          "low": 240,
+          "mid": 380,
+          "high": 570
+        },
+        "low": 65,
+        "mid": 95,
+        "high": 140,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 52.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 demolitionsinc.com（DR 2）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391740,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 52.5/100（中等）。",
+        "前 10 名中有 1 个首页排名（demolitionsinc.com），首页平均站点强度 2/100。",
+        "首页打内页：第 5 名 demolitionsinc.com（DR 2，首页）排在了 DR 更高的内页第 8 名 steamcommunity.com（DR 91）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 5 名 demolitionsinc.com（DR 2，首页排名）证明弱站可进前十。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 65–140 个引用域（中值 95，按 Ahrefs 官方 KD→引用域曲线由难度分 52.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 demolitionsinc.com（DR 2））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 240–570 个。对应的域名权重量级约为 DR 33。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "best ai ad generators",
+      "score": 51.4,
+      "gefeiKD": 51.4,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 32,
+        "quality": {
+          "low": 65,
+          "mid": 90,
+          "high": 140
+        },
+        "directory": {
+          "low": 230,
+          "mid": 360,
+          "high": 540
+        },
+        "low": 65,
+        "mid": 90,
+        "high": 140,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 51.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 creatify.ai（DR 72）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391755,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 51.4/100（中等）。",
+        "内容真空信号：第 2 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名中有 2 个首页排名（adcreative.ai、creatify.ai），首页平均站点强度 69/100。",
+        "首页打内页：第 1 名 adcreative.ai（DR 77，首页）排在了 DR 更高的内页第 4 名 canva.com（DR 93）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "3 个高 DR 大站（reddit.com、canva.com、hubspot.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "有 2 个强首页（adcreative.ai 强度70、creatify.ai 强度69）占坑，词已被多个专门站点重兵把守。（+4）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 65–140 个引用域（中值 90，按 Ahrefs 官方 KD→引用域曲线由难度分 51.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 creatify.ai（DR 72））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 230–540 个。对应的域名权重量级约为 DR 32。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "robshoot",
+      "score": 48.2,
+      "gefeiKD": 48.2,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 470
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 robshoots.net（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391852,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 48.2/100（中等）。",
+        "前 9 名中有 1 个首页排名（robshoots.net），首页平均站点强度 0/100。",
+        "首页打内页：第 6 名 robshoots.net（域名直拼关键词、DR 0，首页）排在了 DR 更高的内页第 9 名 soundcloud.com（DR 94）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "盘面用户粘性强：前十站点行为中位数达到停留 4分31秒、跳出率仅 40% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "第 6 名 robshoots.net（DR 0，首页排名）证明弱站可进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 robshoots.net（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 200–470 个。对应的域名权重量级约为 DR 31。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "idle dairy tycoon",
+      "score": 44.7,
+      "gefeiKD": 44.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 70,
+          "high": 100
+        },
+        "directory": {
+          "low": 170,
+          "mid": 280,
+          "high": 410
+        },
+        "low": 50,
+        "mid": 70,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 44.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 girlsgogames.com（DR 47，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785329700,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 44.7/100（中等）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 en.onlygames.io，难度贡献仅 30.7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 50–100 个引用域（中值 70，按 Ahrefs 官方 KD→引用域曲线由难度分 44.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 girlsgogames.com（DR 47，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 170–410 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "furriq",
+      "score": 40.6,
+      "gefeiKD": 40.6,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 16.5,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 60,
+          "high": 85
+        },
+        "directory": {
+          "low": 140,
+          "mid": 230,
+          "high": 350
+        },
+        "low": 40,
+        "mid": 60,
+        "high": 85,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 40.6 插值（该口径为进入前十所需）。前十唯一首页 furiq.io（DR 0）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391775,
+      "reasons": [
+        "品牌词口径：难度估算为 40.6/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 16.5/100（极易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（en.wikipedia.org、reddit.com），且 furriq.com 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 6 个：第 1 名 amazon.com（DR 96，内页，域名 31.7 年，月流量 26.9 亿）、第 4 名 furscience.com（DR 48，内页，域名 11.2 年，月流量 9.6 万）、第 5 名 m.facebook.com（DR 100，内页，域名 29.3 年，月流量 43.8 亿）、第 7 名 m.youtube.com（DR 99，内页，域名 21.5 年，月流量 50.1 亿）、第 8 名 them.us（DR 80，内页，域名 11.1 年，月流量 158.6 万）、第 9 名 furiq.io（DR 0，首页，域名 3.1 年） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 40–85 个引用域（中值 60，按 Ahrefs 官方 KD→引用域曲线由难度分 40.6 插值（该口径为进入前十所需）。前十唯一首页 furiq.io（DR 0）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照）；目录/收录型外链为主时约 140–350 个。对应域名权重量级约 DR 28。"
+      ]
+    },
+    {
+      "keyword": "scale labs and paypal what the partnership means",
+      "score": 40.6,
+      "gefeiKD": 40.6,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 34.7,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 60,
+          "high": 85
+        },
+        "directory": {
+          "low": 140,
+          "mid": 230,
+          "high": 350
+        },
+        "low": 40,
+        "mid": 60,
+        "high": 85,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 40.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 scalelab.com（DR 27）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785362561,
+      "reasons": [
+        "品牌词口径：难度估算为 40.6/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 34.7/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（linkedin.com、reddit.com、instagram.com、facebook.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 2 名 scalelab.com（DR 27，首页）、第 5 名 paypal.com（DR 95，内页，域名 27 年，月流量 4.6 亿，此词正是其主力流量词）、第 6 名 scalelab.com（DR 27，内页）、第 9 名 paypal.com（DR 95，内页，域名 27 年，月流量 4.6 亿，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 40–85 个引用域（中值 60，按 Ahrefs 官方 KD→引用域曲线由难度分 40.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 scalelab.com（DR 27））；目录/收录型外链为主时约 140–350 个。对应域名权重量级约 DR 28。"
+      ]
+    },
+    {
+      "keyword": "draw one line drawing puzzle",
+      "score": 36.3,
+      "gefeiKD": 36.3,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 120,
+          "mid": 190,
+          "high": 290
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 36.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 onelinedraw.io（DR 29）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391768,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 36.3/100（容易）。",
+        "前 9 名中有 1 个首页排名（onelinedraw.io），首页平均站点强度 17/100。",
+        "首页打内页：第 4 名 onelinedraw.io（DR 29，首页）排在了 DR 更高的内页第 6 名 crazygames.com（DR 81）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "5 个高 DR 大站（play.google.com、poki.com、youtube.com、crazygames.com、play.google.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 4 名 onelinedraw.io（DR 29）是低 DR 站点的首页排名，小站靠首页就能排进来。它注册仅约 10 个月就排到第 4 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-7）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 36.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 onelinedraw.io（DR 29））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 120–290 个。对应的域名权重量级约为 DR 26。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "krea2turbo pro",
+      "score": 32.2,
+      "gefeiKD": 32.2,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 40,
+          "high": 60
+        },
+        "directory": {
+          "low": 100,
+          "mid": 160,
+          "high": 240
+        },
+        "low": 30,
+        "mid": 40,
+        "high": 60,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 32.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 sogni.ai（DR 53，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391819,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 32.2/100（容易）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 6 名 sogni.ai，难度贡献仅 21）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（huggingface.co、youtube.com、reddit.com、instagram.com、venturebeat.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 30–60 个引用域（中值 40，按 Ahrefs 官方 KD→引用域曲线由难度分 32.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 sogni.ai（DR 53，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 100–240 个。对应的域名权重量级约为 DR 25。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "squarespace vs shopify for paypal payments",
+      "score": 29.4,
+      "gefeiKD": 29.4,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 29.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 brokenrubik.com（DR 29，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785362548,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 29.4/100（容易）。",
+        "内容真空信号：第 3 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 brokenrubik.com，难度贡献仅 12.1）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（youtube.com、forbes.com、reddit.com、zapier.com、printful.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 29.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 brokenrubik.com（DR 29，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 90–210 个。对应的域名权重量级约为 DR 23。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "road rage hva",
+      "score": 24.1,
+      "gefeiKD": 24.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 40
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 24.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 findmytherapist.com（DR 39，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391830,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 24.1/100（容易）。",
+        "内容真空信号：第 4 名是 quora.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 9 名 findmytherapist.com，难度贡献仅 16.3）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6 个高 DR 大站（quora.com、pmc.ncbi.nlm.nih.gov、facebook.com、study.com、apa.org、instagram.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 24.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 findmytherapist.com（DR 39，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "merge haven fzh",
+      "score": 22.1,
+      "gefeiKD": 22.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 20,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 60,
+          "mid": 100,
+          "high": 150
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 22.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 bestallgames.com（DR 5，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391822,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 22.1/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 9 名 bestallgames.com，难度贡献仅 4.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6 个高 DR 大站（play.google.com、msn.com、youtube.com、arkadium.com、yandex.com、crazygames.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 9 名 bestallgames.com DR 仅 5，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（6/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-6）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 22.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 bestallgames.com（DR 5，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 60–150 个。对应的域名权重量级约为 DR 20。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "count and bounce bls",
+      "score": 20.7,
+      "gefeiKD": 20.7,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 55,
+          "mid": 90,
+          "high": 140
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 20.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 hypermonkgames.com（DR 23，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391762,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 20.7/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 hypermonkgames.com，难度贡献仅 9.5）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（play.google.com、apps.apple.com、youtube.com、gamedistribution.com、crazygames.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 8 名 hypermonkgames.com DR 仅 23，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（7/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-6）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 20.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 hypermonkgames.com（DR 23，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 55–140 个。对应的域名权重量级约为 DR 19。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "ai ad agency",
+      "score": 18.6,
+      "gefeiKD": 18.6,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 18,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 30
+        },
+        "directory": {
+          "low": 50,
+          "mid": 80,
+          "high": 120
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 30,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 18.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 adsgency.ai（DR 22）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391744,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 18.6/100（极易）。",
+        "内容真空信号：第 1 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名中有 4 个首页排名（adsgency.ai、thekeenfolks.com、smartly.io、aimediagroup.com），首页平均站点强度 39/100。",
+        "首页打内页：第 2 名 adsgency.ai（DR 22，首页）排在了 DR 更高的内页第 9 名 darkroomagency.com（DR 58）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "第 2 名 adsgency.ai（DR 22，首页排名）证明弱站可进前十。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–30 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 18.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 adsgency.ai（DR 22））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 50–120 个。对应的域名权重量级约为 DR 18。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "how alltegrios voice ai agent streamlined insurance support",
+      "score": 17.2,
+      "gefeiKD": 17.2,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 17,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 30
+        },
+        "directory": {
+          "low": 45,
+          "mid": 75,
+          "high": 110
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 30,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 17.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 voicegain.ai（DR 31，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785362578,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 17.2/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 9 名 fluents.ai，难度贡献仅 11.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "3 个高 DR 大站（youtube.com、ada.cx、cloudtalk.io）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–30 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 17.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 voicegain.ai（DR 31，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 45–110 个。对应的域名权重量级约为 DR 17。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "healthcare care management platforms for hospitals payers and community care organizations",
+      "score": 11.1,
+      "gefeiKD": 11.1,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 12,
+        "quality": {
+          "low": 10,
+          "mid": 10,
+          "high": 15
+        },
+        "directory": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "low": 10,
+        "mid": 10,
+        "high": 15,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 11.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 communitycarelink.com（DR 24，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391781,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 11.1/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 communitycarelink.com，难度贡献仅 10.1）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "第 7 名 communitycarelink.com DR 仅 24，弱站已能进前十（位次靠后，信号打折）。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–15 个引用域（中值 10，按 Ahrefs 官方 KD→引用域曲线由难度分 11.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 communitycarelink.com（DR 24，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 30–70 个。对应的域名权重量级约为 DR 12。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "unlimited mcp",
+      "score": 9.9,
+      "gefeiKD": 9.9,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 11,
+        "quality": {
+          "low": 5,
+          "mid": 10,
+          "high": 15
+        },
+        "directory": {
+          "low": 25,
+          "mid": 40,
+          "high": 60
+        },
+        "low": 5,
+        "mid": 10,
+        "high": 15,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 9.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 mcpner.com（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785391884,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 9.9/100（极易）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 mcpner.com，难度贡献仅 0）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个高 DR 大站（youtube.com、reddit.com、youtube.com、honeycomb.io）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中有 3 个注册不满 18 个月的新域名（mcpbundles.com 11 个月、policylayer.com 8 个月、mcpner.com 8 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 2 名 policylayer.com DR 仅 17，弱站已能进前十。它注册仅约 8 个月就排到第 2 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–15 个引用域（中值 10，按 Ahrefs 官方 KD→引用域曲线由难度分 9.9 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 mcpner.com（DR 0，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 25–60 个。对应的域名权重量级约为 DR 11。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "20f8",
+      "score": 4.3,
+      "gefeiKD": 4.3,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 5,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 5
+        },
+        "directory": {
+          "low": 10,
+          "mid": 15,
+          "high": 25
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 5,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 4.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 apporo-cnc.com（DR 2，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785374142,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 4.3/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 6 名 apporo-cnc.com，难度贡献仅 3.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "3 个高 DR 大站（us.misumi-ec.com、en.wikipedia.org、silvia.malakova.website.tuke.sk）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 1 名 vdwalle.com DR 仅 6，弱站已能进前十。注意它的体验分在前十中排前列（71/100，停留 4分12秒、跳出 26%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–5 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 4.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 apporo-cnc.com（DR 2，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 10–25 个。对应的域名权重量级约为 DR 5。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "how to offer payment flexibility without hurting your brand",
+      "score": 1.3,
+      "gefeiKD": 1.3,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 5,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 5
+        },
+        "directory": {
+          "low": 5,
+          "mid": 5,
+          "high": 10
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 5,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 1.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 billbooks.com（DR 22，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785362595,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 1.3/100（极易）。",
+        "内容真空信号：第 5 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 billbooks.com，难度贡献仅 10.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个高 DR 大站（getrecharge.com、reddit.com、linkedin.com、dynamicweb.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 3 名 billbooks.com DR 仅 22，弱站已能进前十。且其体验分垫底（28/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–5 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 1.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 billbooks.com（DR 22，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 5–10 个。对应的域名权重量级约为 DR 5。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-30T14:11:24",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260730-140234/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 20,
+        "requestCount": 20,
+        "successCount": 20,
+        "successWithScoreCount": 20,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 20
+    },
+    "rows": [
+      {
+        "keyword": "dogs out",
+        "correspondingDomain": "https://www.crazygames.com/fi/game/dogs-out\nhttps://www.crazygames.com/no/game/dogs-out",
+        "score": 2.610526,
+        "simWindowVolume": 40.0,
+        "simKd": 19.0,
+        "simCpc": 1.24,
+        "semVolume": 6900.0,
+        "semKd": 49.0,
+        "semCpc": 0.73,
+        "gefeiKD": 65.4,
+        "group": "dogs out",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "railway bridge",
+        "correspondingDomain": "https://www.crazygames.com/br/game/railway-bridge\nhttps://www.crazygames.com/cz/game/railway-bridge\nhttps://www.crazygames.com/de/game/railway-bridge\nhttps://www.crazygames.com/dk/game/railway-bridge\nhttps://www.crazygames.com/fi/game/railway-bridge\nhttps://www.crazygames.com/game/railway-bridge\nhttps://www.crazygames.com/gr/game/railway-bridge\nhttps://www.crazygames.com/id/game/railway-bridge\nhttps://www.crazygames.com/it/game/railway-bridge\nhttps://www.crazygames.com/jp/game/railway-bridge\nhttps://www.crazygames.com/pl/game/railway-bridge\nhttps://www.crazygames.com/ru/game/railway-bridge\nhttps://www.crazygames.com/se/game/railway-bridge\nhttps://www.crazygames.com/tr/game/railway-bridge\nhttps://www.crazygames.com/ua/game/railway-bridge\nhttps://www.crazygames.com/vn/game/railway-bridge",
+        "score": null,
+        "simWindowVolume": 3610.0,
+        "simKd": 34.0,
+        "simCpc": 0.0,
+        "semVolume": 26650.0,
+        "semKd": 43.0,
+        "semCpc": 0.0,
+        "gefeiKD": 59.5,
+        "group": "railway bridge",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "demolition inc",
+        "correspondingDomain": "https://www.crazygames.com/br/game/demolition-inc\nhttps://www.crazygames.com/cz/game/demolition-inc\nhttps://www.crazygames.com/de/game/demolition-inc\nhttps://www.crazygames.com/dk/game/demolition-inc\nhttps://www.crazygames.com/fi/game/demolition-inc\nhttps://www.crazygames.com/game/demolition-inc\nhttps://www.crazygames.com/gr/game/demolition-inc\nhttps://www.crazygames.com/id/game/demolition-inc\nhttps://www.crazygames.com/it/game/demolition-inc\nhttps://www.crazygames.com/jp/game/demolition-inc\nhttps://www.crazygames.com/pl/game/demolition-inc\nhttps://www.crazygames.com/ru/game/demolition-inc\nhttps://www.crazygames.com/se/game/demolition-inc\nhttps://www.crazygames.com/tr/game/demolition-inc\nhttps://www.crazygames.com/ua/game/demolition-inc\nhttps://www.crazygames.com/vn/game/demolition-inc",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 750.0,
+        "semKd": 32.0,
+        "semCpc": 0.0,
+        "gefeiKD": 52.5,
+        "group": "demolition inc",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "ai ad agency",
+        "correspondingDomain": "https://higgsfield.ai/blog/ai-ad-agency",
+        "score": null,
+        "simWindowVolume": 70.0,
+        "simKd": 55.0,
+        "simCpc": 0.0,
+        "semVolume": 540.0,
+        "semKd": 55.0,
+        "semCpc": 11.1,
+        "gefeiKD": 18.6,
+        "group": "ai ad agency",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "20f8",
+        "correspondingDomain": "https://poki.com/en/g/20f8",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 110.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 4.3,
+        "group": "20f8",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "best ai ad generators",
+        "correspondingDomain": "https://higgsfield.ai/blog/best-ai-ad-generators",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 30.0,
+        "semKd": null,
+        "semCpc": 11.94,
+        "gefeiKD": 51.4,
+        "group": "best ai ad generators",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "count and bounce bls",
+        "correspondingDomain": "https://www.crazygames.com/fi/game/count-and-bounce-bls",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 20.7,
+        "group": "count and bounce bls",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "draw one line drawing puzzle",
+        "correspondingDomain": "https://www.crazygames.com/fi/game/draw-one-line-drawing-puzzle",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 36.3,
+        "group": "draw one line drawing puzzle",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "furriq",
+        "correspondingDomain": "https://huntifyai.com/tools/furriq\nhttps://huntifyai.com/zh-CN/tools/furriq",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 40.6,
+        "group": "furriq",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "healthcare care management platforms for hospitals payers and community care organizations",
+        "correspondingDomain": "https://dragganaitool.com/7-healthcare-care-management-platforms-for-hospitals-payers-and-community-care-organizations",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 11.1,
+        "group": "healthcare care management platforms for hospitals payers and community care organizations",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "how alltegrios voice ai agent streamlined insurance support",
+        "correspondingDomain": "https://dragganaitool.com/how-alltegrios-voice-ai-agent-streamlined-insurance-support",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 17.2,
+        "group": "how alltegrios voice ai agent streamlined insurance support",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "how to offer payment flexibility without hurting your brand",
+        "correspondingDomain": "https://dragganaitool.com/how-to-offer-payment-flexibility-without-hurting-your-brand",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 1.3,
+        "group": "how to offer payment flexibility without hurting your brand",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "idle dairy tycoon",
+        "correspondingDomain": "https://www.crazygames.com/fi/game/idle-dairy-tycoon",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 44.7,
+        "group": "idle dairy tycoon",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "krea2turbo pro",
+        "correspondingDomain": "https://huntifyai.com/tools/krea2turbo-pro\nhttps://huntifyai.com/zh-CN/tools/krea2turbo-pro",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 32.2,
+        "group": "krea2turbo pro",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "merge haven fzh",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/merge-haven-fzh\nhttps://www.crazygames.com/br/game/merge-haven-fzh\nhttps://www.crazygames.com/cz/game/merge-haven-fzh\nhttps://www.crazygames.com/de/game/merge-haven-fzh\nhttps://www.crazygames.com/dk/game/merge-haven-fzh\nhttps://www.crazygames.com/es/game/merge-haven-fzh\nhttps://www.crazygames.com/fi/game/merge-haven-fzh\nhttps://www.crazygames.com/fr/game/merge-haven-fzh\nhttps://www.crazygames.com/game/merge-haven-fzh\nhttps://www.crazygames.com/gr/game/merge-haven-fzh\nhttps://www.crazygames.com/hu/game/merge-haven-fzh\nhttps://www.crazygames.com/id/game/merge-haven-fzh\nhttps://www.crazygames.com/it/game/merge-haven-fzh\nhttps://www.crazygames.com/jp/game/merge-haven-fzh\nhttps://www.crazygames.com/kr/game/merge-haven-fzh\nhttps://www.crazygames.com/nl/game/merge-haven-fzh\nhttps://www.crazygames.com/no/game/merge-haven-fzh\nhttps://www.crazygames.com/pl/game/merge-haven-fzh\nhttps://www.crazygames.com/ru/game/merge-haven-fzh\nhttps://www.crazygames.com/se/game/merge-haven-fzh\nhttps://www.crazygames.com/th/game/merge-haven-fzh\nhttps://www.crazygames.com/tr/game/merge-haven-fzh\nhttps://www.crazygames.com/ua/game/merge-haven-fzh\nhttps://www.crazygames.com/vn/game/merge-haven-fzh",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 22.1,
+        "group": "merge haven fzh",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "road rage hva",
+        "correspondingDomain": "https://www.crazygames.com/br/game/road-rage-hva\nhttps://www.crazygames.com/cz/game/road-rage-hva\nhttps://www.crazygames.com/de/game/road-rage-hva\nhttps://www.crazygames.com/dk/game/road-rage-hva\nhttps://www.crazygames.com/fi/game/road-rage-hva\nhttps://www.crazygames.com/game/road-rage-hva\nhttps://www.crazygames.com/gr/game/road-rage-hva\nhttps://www.crazygames.com/id/game/road-rage-hva\nhttps://www.crazygames.com/it/game/road-rage-hva\nhttps://www.crazygames.com/jp/game/road-rage-hva\nhttps://www.crazygames.com/pl/game/road-rage-hva\nhttps://www.crazygames.com/ru/game/road-rage-hva\nhttps://www.crazygames.com/se/game/road-rage-hva\nhttps://www.crazygames.com/tr/game/road-rage-hva\nhttps://www.crazygames.com/ua/game/road-rage-hva\nhttps://www.crazygames.com/vn/game/road-rage-hva",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 24.1,
+        "group": "road rage hva",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "robshoot",
+        "correspondingDomain": "https://www.crazygames.com/se/game/robshoot\nhttps://www.crazygames.com/tr/game/robshoot",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 48.2,
+        "group": "robshoot",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "scale labs and paypal what the partnership means",
+        "correspondingDomain": "https://dragganaitool.com/scale-labs-and-paypal-what-the-partnership-means",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 40.6,
+        "group": "scale labs and paypal what the partnership means",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "squarespace vs shopify for paypal payments",
+        "correspondingDomain": "https://dragganaitool.com/squarespace-vs-shopify-for-paypal-payments",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 29.4,
+        "group": "squarespace vs shopify for paypal payments",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "unlimited mcp",
+        "correspondingDomain": "https://higgsfield.ai/blog/unlimited-mcp",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 9.9,
+        "group": "unlimited mcp",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}

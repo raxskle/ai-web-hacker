@@ -1,0 +1,136 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-27T15:36:02",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "source": "check-gefei-kd",
+    "inputMode": "standard_word_table",
+    "inputPaths": [
+      "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153348/analyze-words/report/latest.xlsx"
+    ],
+    "gefeiKdSummary": {
+      "inputCount": 8,
+      "requestCount": 8,
+      "successCount": 8,
+      "successWithScoreCount": 8,
+      "missingScoreCount": 0,
+      "failedCount": 0
+    },
+    "rowCount": 8
+  },
+  "rows": [
+    {
+      "keyword": "best monday com ai features for project management",
+      "correspondingDomain": "https://dragganaitool.com/best-monday-com-ai-features-for-project-management",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 55.8,
+      "group": "best monday com ai features for project management",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "best venture capital software for investors",
+      "correspondingDomain": "https://dragganaitool.com/best-venture-capital-software-for-investors",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 19,
+      "group": "best venture capital software for investors",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "how to choose the right social media scheduling tool for your business",
+      "correspondingDomain": "https://dragganaitool.com/how-to-choose-the-right-social-media-scheduling-tool-for-your-business",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 21.3,
+      "group": "how to choose the right social media scheduling tool for your business",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "lifecycle effects explained with business examples",
+      "correspondingDomain": "https://dragganaitool.com/lifecycle-effects-explained-with-business-examples",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 23.2,
+      "group": "lifecycle effects explained with business examples",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "macro photography vs micro photography whats the difference",
+      "correspondingDomain": "https://dragganaitool.com/macro-photography-vs-micro-photography-whats-the-difference",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 12.4,
+      "group": "macro photography vs micro photography whats the difference",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "manufacturing marketing plan step by step guide",
+      "correspondingDomain": "https://dragganaitool.com/manufacturing-marketing-plan-step-by-step-guide",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 24.6,
+      "group": "manufacturing marketing plan step by step guide",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "monday com ai features explained",
+      "correspondingDomain": "https://dragganaitool.com/monday-com-ai-features-explained",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 47.4,
+      "group": "monday com ai features explained",
+      "sourcePresence": "sem_only（仅 SEM）"
+    },
+    {
+      "keyword": "wordpress plugins for appointment booking you should try",
+      "correspondingDomain": "https://dragganaitool.com/6-wordpress-plugins-for-appointment-booking-you-should-try",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": 32.3,
+      "group": "wordpress plugins for appointment booking you should try",
+      "sourcePresence": "sem_only（仅 SEM）"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-27T15:33:47",
+    "stamp": "20260727-153347",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 2,
+      "keywordCountBeforeLimit": 2,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "super dress",
+        "scary teacher hide seek games"
+      ],
+      "keywordCount": 2
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 2,
+      "successCount": 2,
+      "failureCount": 0,
+      "avgScore": 47.3,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "中等": 1,
+        "容易": 1
+      },
+      "keywordTypeDistribution": {
+        "generic": 2
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/history/report-20260727-153347.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/history/keyword-table-20260727-153347.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/history/keyword-table-20260727-153347.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "scary teacher hide seek games",
+      "score": 56.3,
+      "gefeiKD": 56.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 34,
+        "quality": {
+          "low": 80,
+          "mid": 110,
+          "high": 170
+        },
+        "directory": {
+          "low": 280,
+          "mid": 450,
+          "high": 670
+        },
+        "low": 80,
+        "mid": 110,
+        "high": 170,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 56.3 插值（该口径为进入前十所需）。前十唯一首页 scary-teacher.com（DR 0）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784923205,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 56.3/100（中等）。",
+        "前 9 名中有 1 个首页排名（scary-teacher.com），首页平均站点强度 13/100。",
+        "首页打内页：第 8 名 scary-teacher.com（DR 0，首页）排在了 DR 更高的内页第 9 名 poki.com（DR 79）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "5 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "盘面用户粘性强：前十站点行为中位数达到停留 8分39秒、跳出率仅 28% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "第 8 名 scary-teacher.com（DR 0，首页排名）证明弱站可进前十，但位次靠后、属于高流动区，可能是新站蜜月期的临时排名，信号打折。且其体验分垫底（0/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）（域名注册仅约 12 个月、位次靠后且流量未承接，蜜月期排名风险较高）。（-6）",
+        "5 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 80–170 个引用域（中值 110，按 Ahrefs 官方 KD→引用域曲线由难度分 56.3 插值（该口径为进入前十所需）。前十唯一首页 scary-teacher.com（DR 0）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照）。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 280–670 个。对应的域名权重量级约为 DR 34。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "super dress",
+      "score": 38.3,
+      "gefeiKD": 38.3,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 130,
+          "mid": 210,
+          "high": 320
+        },
+        "low": 35,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 38.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 supercutedresses.com（DR 6）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784923214,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 38.3/100（容易）。",
+        "前 8 名中有 1 个首页排名（supercutedresses.com），首页平均站点强度 17/100。",
+        "首页打内页：第 3 名 supercutedresses.com（DR 6，首页）排在了 DR 更高的内页第 6 名 ebay.com（DR 93）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "6/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 3 名 supercutedresses.com（DR 6，首页排名）证明弱站可进前十。注意它的体验分在前十中排前列（89/100，停留 5分1秒、跳出 28%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 38.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 supercutedresses.com（DR 6））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–320 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-27T15:33:47",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260727-153314/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 2,
+        "requestCount": 2,
+        "successCount": 2,
+        "successWithScoreCount": 2,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 2
+    },
+    "rows": [
+      {
+        "keyword": "super dress",
+        "correspondingDomain": "https://poki.com/en/g/super-dress",
+        "score": null,
+        "simWindowVolume": 360.0,
+        "simKd": 77.0,
+        "simCpc": 0.0,
+        "semVolume": 1020.0,
+        "semKd": null,
+        "semCpc": 1.53,
+        "gefeiKD": 38.3,
+        "group": "super dress",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "scary teacher hide seek games",
+        "correspondingDomain": "https://poki.com/en/g/scary-teacher-hide-seek-games",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 56.3,
+        "group": "scary teacher hide seek games",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "version": "v1",
+  "meta": {
+    "generatedAt": "2026-07-24T14:32:18",
+    "standardWordTableVersion": "v1",
+    "scoreFormula": "simWindowVolume * simCpc / simKd",
+    "stamp": "20260724-143218"
+  },
+  "rows": [
+    {
+      "keyword": "free unlimited ai video generation",
+      "correspondingDomain": "https://higgsfield.ai/blog/free-unlimited-ai-video-generation-2026",
+      "group": "free unlimited ai video generation",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 80.0,
+      "semKd": null,
+      "semCpc": 1.61,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "higgsfield after effects",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-after-effects",
+      "group": "higgsfield after effects",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 890.0,
+      "simKd": 0.0,
+      "simCpc": 0.0,
+      "semVolume": 10.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "higgsfield figma plugin",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-figma-plugin",
+      "group": "higgsfield figma plugin",
+      "sourcePresence": "both",
+      "score": null,
+      "simWindowVolume": 20.0,
+      "simKd": 60.0,
+      "simCpc": 0.0,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "ai batch generation tools",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-batch-generation-tools-2026",
+      "group": "ai batch generation tools",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "ai product videos no studio",
+      "correspondingDomain": "https://higgsfield.ai/blog/ai-product-videos-no-studio",
+      "group": "ai product videos no studio",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "best platforms seedream",
+      "correspondingDomain": "https://higgsfield.ai/blog/best-platforms-seedream-5",
+      "group": "best platforms seedream",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "higgsfield all unlimited explained",
+      "correspondingDomain": "https://higgsfield.ai/blog/higgsfield-all-unlimited-explained",
+      "group": "higgsfield all unlimited explained",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    },
+    {
+      "keyword": "most reliable ai video generators",
+      "correspondingDomain": "https://higgsfield.ai/blog/most-reliable-ai-video-generators-2026",
+      "group": "most reliable ai video generators",
+      "sourcePresence": "sem_only",
+      "score": null,
+      "simWindowVolume": null,
+      "simKd": null,
+      "simCpc": null,
+      "semVolume": 0.0,
+      "semKd": null,
+      "semCpc": null,
+      "gefeiKD": null
+    }
+  ]
+}

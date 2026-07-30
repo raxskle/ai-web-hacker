@@ -28,12 +28,17 @@
 6. 串行调用 `analyze-words`（补齐 SIM/SEM）与 `check-gefei-kd`（补齐 gefeiKD）
 7. 输出最终合并报告（Markdown）与最终标准词表（Excel），并同步一份到 `words/sitemap-YYYYMMDD-HHMMSS.xlsx`
 
+> 容错策略：
+> - 若某个站点 sitemap 不可达（如 403/超时/解析失败），该站会记为失败并跳过；
+> - 其余站点继续执行，仍生成一份最终 `latest.md` + `latest.xlsx` + `words/sitemap-*.xlsx`；
+> - 报告中会新增 `## 失败站点` 章节，明确失败站点与错误原因。
+
 ## 目录说明
 
 - `data/sites.json`：站点配置
 - `data/<site-id>/`：抓取归档（`fetch-YYYYMMDD-HHMMSS.json`）
 - `_internal/snapshots/<site-id>/`：标准化快照（`snapshot-YYYYMMDD-HHMMSS.json`）
-- `_internal/chained/<stamp>/`：链式阶段产物（`analyze-words` / `check-gefei-kd`）
+- `_internal/chained/<stamp>/`：链式阶段产物（`analyze-words` / `check-gefei-kd`，常见会出现 4 个中间 xlsx：两个阶段各自产出 history+latest）
 - `report/history/report-YYYYMMDD-HHMMSS.md`：历史合并报告
 - `report/history/keyword-table-YYYYMMDD-HHMMSS.xlsx`：历史标准词表（最终口径）
 - `report/latest.md`：最新合并报告
@@ -94,7 +99,8 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 ### Markdown 报告
 
 `report/latest.md` 会输出：
-- 站点汇总
+- 站点汇总（含尝试/成功/失败数量）
+- 失败站点清单（`## 失败站点`，含 sitemap URL 与错误原因）
 - 新增内页
 - 新增路由模式
 - 新关键词候选（phrase-only）

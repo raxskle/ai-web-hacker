@@ -125,15 +125,10 @@
     },
     {
       "id": "coolmathgames_com",
-      "enabled": true,
+      "enabled": false,
       "displayName": "coolmathgames",
-      "sitemapUrls": [
-        "https://www.coolmathgames.com/sitemap.xml"
-      ],
-      "includeHosts": [
-        "www.coolmathgames.com",
-        "coolmathgames.com"
-      ],
+      "sitemapUrls": ["https://www.coolmathgames.com/sitemap.xml"],
+      "includeHosts": ["www.coolmathgames.com", "coolmathgames.com"],
       "excludePathRegexes": [
         "^/$",
         "^/(about|contact-us|privacy-policy|terms-of-use|subscription-faq)/?$"
