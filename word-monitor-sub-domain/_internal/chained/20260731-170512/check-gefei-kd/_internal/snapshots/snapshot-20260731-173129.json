@@ -1,0 +1,4602 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-31T17:31:29",
+    "stamp": "20260731-173129",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 82,
+      "keywordCountBeforeLimit": 82,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "biglobe メール",
+        "streamx",
+        "misumi",
+        "moviedex",
+        "cote",
+        "tmdb",
+        "نتيجه الثانويه العامه",
+        "ragnarok origin classic",
+        "connections answers today",
+        "arkos",
+        "karar çarkı",
+        "럭키글라이드",
+        "seneago",
+        "spidey universe",
+        "criterion closet",
+        "enchantment calculator",
+        "vega app",
+        "lunaranime",
+        "spam challenge list",
+        "country draw",
+        "ffxiv weather",
+        "роблокс войти",
+        "watchwave",
+        "paladins tracker",
+        "filmhaven",
+        "作戦室",
+        "amicro",
+        "12axes",
+        "生フェス",
+        "prompt splitter",
+        "oaken tower builds",
+        "弥生給与 ダウンロード",
+        "denouement demon list",
+        "simulador del mundial 2022",
+        "clipforge",
+        "avatar guesser",
+        "hoopheads",
+        "fire emblem wordle",
+        "competence lab",
+        "maganghub tracker",
+        "핀볼 룰렛",
+        "курсоры для роблокс",
+        "bac story",
+        "foto unsa",
+        "сайт для сравнения мышек",
+        "pantauloker",
+        "lums pro planner",
+        "enshrouded wall blocks",
+        "gesture synth weld vercel",
+        "zeroscript",
+        "こえはかる",
+        "learn jh",
+        "나무위키 스피드런",
+        "12axes vercel app",
+        "awsome arcade",
+        "gacha message",
+        "弗一把",
+        "think of you vercel app",
+        "fe guess",
+        "herramientas pokemon idle world",
+        "auto sbc complete multiple sbc's at one time",
+        "osu skillset analyzer",
+        "genius annotation maker",
+        "memento mori calendar fill out",
+        "gifting back to the dawn",
+        "raw-leveldb-viewer",
+        "twitter aura2 vercel",
+        "올림픽공원 실시간",
+        "1с индикатор управляемые формы",
+        "1с ут печатная форма м15",
+        "back to the dawn jailbreak quests",
+        "hero siege page 13",
+        "iom archaeology",
+        "mtproto.ru прокси для телеграм список",
+        "poe dust calc",
+        "pokeidle ferramentas",
+        "wow m  title",
+        "дождь канал твич",
+        "изменение размера изображения онлайн без потери качества",
+        "как скачать видео с сайта озон",
+        "светодиодная лампа освещения вхолодильнике атлант горит в полнакала причины",
+        "熱中症 連絡 体制 表 エクセル"
+      ],
+      "keywordCount": 82
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 82,
+      "successCount": 82,
+      "failureCount": 0,
+      "avgScore": 39.5256,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "极难": 3,
+        "困难": 5,
+        "中等": 34,
+        "容易": 30,
+        "极易": 10
+      },
+      "keywordTypeDistribution": {
+        "generic": 45,
+        "brand": 37
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/history/report-20260731-173129.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/history/keyword-table-20260731-173129.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/history/keyword-table-20260731-173129.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "biglobe メール",
+      "score": 90.7,
+      "gefeiKD": 90.7,
+      "level": "极难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 63830,
+      "keywordTrend": {
+        "ratio": 4.873883753720821,
+        "estimatedValue": 311100,
+        "volume": 63830,
+        "domain": "webmail.biglobe.ne.jp"
+      },
+      "linkBudget": {
+        "targetDr": 54,
+        "quality": {
+          "low": 570,
+          "mid": 820,
+          "high": 1200
+        },
+        "directory": {
+          "low": 2000,
+          "mid": 3300,
+          "high": 4900
+        },
+        "low": 570,
+        "mid": 820,
+        "high": 1200,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 90.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 webmail.biglobe.ne.jp（DR 90）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133633,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 90.7/100（极难）。",
+        "Google 认可信号：第 1 名 webmail.biglobe.ne.jp 带 sitelinks —— 这不构成品牌词证据（mini sitelinks 任何高匹配度结果都可触发），但说明 Google 已认可其与该词的匹配度，这些占位比单看权重数据更稳固。反过来看，这也验证了聚焦经营此词能赢得 Google 认可，对后来者是打法可行性的旁证。（+2）",
+        "前 8 名中有 3 个首页排名（webmail.biglobe.ne.jp、biglobe.ne.jp、email.biglobe.ne.jp），首页平均站点强度 81/100。",
+        "同类内部排序：这几个 EMD 首页（第 1 名 webmail.biglobe.ne.jp（DR 90）、第 4 名 biglobe.ne.jp（DR 90）、第 5 名 email.biglobe.ne.jp（DR 90））DR 相近——它们之间的先后由页面级外链（指向各自首页的引用域数）决定，本工具用免费域级数据看不到这一层。",
+        "8/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "有 3 个强首页（webmail.biglobe.ne.jp 强度79、biglobe.ne.jp 强度92、email.biglobe.ne.jp 强度71）占坑，词已被多个专门站点重兵把守。（+8）",
+        "8 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "趋势信号：webmail.biglobe.ne.jp 当月从该词获得约 31.1 万 流量，超过了该词 12 个月平均搜索量（6.4 万）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 6.4 万（来自排名站点主力词数据），属于中大体量词。（+3）",
+        "进入前十的链接预算：约 570–1200 个引用域（中值 820，按 Ahrefs 官方 KD→引用域曲线由难度分 90.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 webmail.biglobe.ne.jp（DR 90））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 2000–4900 个。对应的域名权重量级约为 DR 54。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "spam challenge list",
+      "score": 87.3,
+      "gefeiKD": 87.3,
+      "level": "极难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 14240,
+      "keywordTrend": {
+        "ratio": 0.8870967741935484,
+        "estimatedValue": 4950,
+        "volume": 5580,
+        "domain": "spamchallenge.pages.dev"
+      },
+      "linkBudget": {
+        "targetDr": 51,
+        "quality": {
+          "low": 450,
+          "mid": 650,
+          "high": 970
+        },
+        "directory": {
+          "low": 1600,
+          "mid": 2600,
+          "high": 3900
+        },
+        "low": 450,
+        "mid": 650,
+        "high": 970,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 87.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 spamchallenge.pages.dev（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785328130,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 87.3/100（极难）。",
+        "第 3 名虽是 reddit.com 的论坛帖，但盘面已有 7 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 8 名中有 3 个首页排名（spamchallenge.pages.dev、thespamchallengelist.pages.dev、scl.vercel.app），首页平均站点强度 70/100。",
+        "7/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "有 3 个强首页（spamchallenge.pages.dev 强度73、thespamchallengelist.pages.dev 强度73、scl.vercel.app 强度63）占坑，词已被多个专门站点重兵把守。（+8）",
+        "3 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "趋势参考：spamchallenge.pages.dev 当月从该词获得约 4950 流量，达到该词 12 个月平均搜索量的 89%，该词可能处于上升期（也可能该站是垄断性第一名）。",
+        "该词月搜索量约 1.4 万（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 450–970 个引用域（中值 650，按 Ahrefs 官方 KD→引用域曲线由难度分 87.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 spamchallenge.pages.dev（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 1600–3900 个。对应的域名权重量级约为 DR 51。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "роблокс войти",
+      "score": 81.2,
+      "gefeiKD": 81.2,
+      "level": "极难",
+      "keywordType": "brand",
+      "genericScore": 73.1,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 47,
+        "quality": {
+          "low": 280,
+          "mid": 400,
+          "high": 600
+        },
+        "directory": {
+          "low": 1000,
+          "mid": 1600,
+          "high": 2400
+        },
+        "low": 280,
+        "mid": 400,
+        "high": 600,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 81.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 roblox.com（DR 90）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389644,
+      "reasons": [
+        "品牌词口径：难度估算为 81.2/100（极难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 73.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 3 个：第 1 名 roblox.com（DR 90，内页，域名 22.5 年，月流量 5.8 亿，此词正是其主力流量词）、第 2 名 roblox.com（DR 90，首页，域名 22.5 年，月流量 5.8 亿，此词正是其主力流量词）、第 5 名 about.roblox.com（DR 90，首页，域名 22.5 年，月流量 199.1 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 280–600 个引用域（中值 400，按 Ahrefs 官方 KD→引用域曲线由难度分 81.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 roblox.com（DR 90））；目录/收录型外链为主时约 1000–2400 个。对应域名权重量级约 DR 47。"
+      ]
+    },
+    {
+      "keyword": "twitter aura2 vercel",
+      "score": 71.6,
+      "gefeiKD": 71.6,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 41,
+        "quality": {
+          "low": 160,
+          "mid": 230,
+          "high": 340
+        },
+        "directory": {
+          "low": 570,
+          "mid": 900,
+          "high": 1400
+        },
+        "low": 160,
+        "mid": 230,
+        "high": 340,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 71.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 twitter-aura2.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313065,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 71.6/100（困难）。",
+        "前 9 名中有 1 个首页排名（twitter-aura2.vercel.app），首页平均站点强度 56/100。",
+        "8/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "5 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 160–340 个引用域（中值 230，按 Ahrefs 官方 KD→引用域曲线由难度分 71.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 twitter-aura2.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 570–1400 个。对应的域名权重量级约为 DR 41。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "tmdb",
+      "score": 68.4,
+      "gefeiKD": 68.4,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 78.8,
+      "keywordVolume": 365360,
+      "keywordTrend": {
+        "ratio": 1.6407652726078388,
+        "estimatedValue": 599470,
+        "volume": 365360,
+        "domain": "themoviedb.org"
+      },
+      "linkBudget": {
+        "targetDr": 40,
+        "quality": {
+          "low": 130,
+          "mid": 190,
+          "high": 290
+        },
+        "directory": {
+          "low": 480,
+          "mid": 760,
+          "high": 1100
+        },
+        "low": 130,
+        "mid": 190,
+        "high": 290,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 68.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 themoviedb.org（DR 87）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313296,
+      "reasons": [
+        "品牌词口径：难度估算为 68.4/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 78.8/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、reddit.com、facebook.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 4 个：第 1 名 themoviedb.org（DR 87，首页，域名 17.9 年，月流量 2112.8 万，此词正是其主力流量词）、第 3 名 ca.linkedin.com（DR 99，内页，域名 23.7 年，月流量 945.9 万）、第 5 名 adamayoung.github.io（DR 94，内页）、第 6 名 kaggle.com（DR 90，内页，域名 16.9 年，月流量 1199.2 万） —— 这些才是衍生内容真正要对位的对手。",
+        "趋势信号：themoviedb.org 当月从该词获得约 59.9 万 流量，超过该词 12 个月平均搜索量（36.5 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 36.5 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 130–290 个引用域（中值 190，按 Ahrefs 官方 KD→引用域曲线由难度分 68.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 themoviedb.org（DR 87））；目录/收录型外链为主时约 480–1100 个。对应域名权重量级约 DR 40。"
+      ]
+    },
+    {
+      "keyword": "дождь канал твич",
+      "score": 64.7,
+      "gefeiKD": 64.7,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 110,
+          "mid": 160,
+          "high": 240
+        },
+        "directory": {
+          "low": 410,
+          "mid": 650,
+          "high": 980
+        },
+        "low": 110,
+        "mid": 160,
+        "high": 240,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 64.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 tvrain.tv（DR 70，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488775,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 64.7/100（困难）。",
+        "前 9 名全部是内页排名，但无一弱位 —— 这不是\"没人认真打\"，而是该词的搜索意图被权威平台的文档/内容页锁定（搜索者要的是方案与对比，不是某个产品首页）。无首页在此不构成机会；新站的现实路径是高质量评测/对比内容页，正面对位盘面中外链最薄的内容位。",
+        "5 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "5 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 110–240 个引用域（中值 160，按 Ahrefs 官方 KD→引用域曲线由难度分 64.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 tvrain.tv（DR 70，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 410–980 个。对应的域名权重量级约为 DR 38。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "나무위키 스피드런",
+      "score": 62.5,
+      "gefeiKD": 62.5,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 73.4,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 37,
+        "quality": {
+          "low": 100,
+          "mid": 150,
+          "high": 220
+        },
+        "directory": {
+          "low": 370,
+          "mid": 590,
+          "high": 880
+        },
+        "low": 100,
+        "mid": 150,
+        "high": 220,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 62.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 tree-speed.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313291,
+      "reasons": [
+        "品牌词口径：难度估算为 62.5/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 73.4/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、youtube.com、apps.apple.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 1 名 tree-speed.vercel.app（DR 93，首页，域名 6.5 年，月流量 650，此词正是其主力流量词）、第 2 名 chromewebstore.google.com（DR 99，内页，域名 28.9 年，月流量 2.0 亿）、第 3 名 namu.wiki（DR 84，内页，域名 11.3 年，月流量 3.2 亿，此词正是其主力流量词）、第 6 名 namu.wiki（DR 84，内页，域名 11.3 年，月流量 3.2 亿，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 100–220 个引用域（中值 150，按 Ahrefs 官方 KD→引用域曲线由难度分 62.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 tree-speed.vercel.app（DR 93））；目录/收录型外链为主时约 370–880 个。对应域名权重量级约 DR 37。"
+      ]
+    },
+    {
+      "keyword": "criterion closet",
+      "score": 60.6,
+      "gefeiKD": 60.6,
+      "level": "困难",
+      "keywordType": "brand",
+      "genericScore": 68.3,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 95,
+          "mid": 130,
+          "high": 200
+        },
+        "directory": {
+          "low": 330,
+          "mid": 530,
+          "high": 800
+        },
+        "low": 95,
+        "mid": 130,
+        "high": 200,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 60.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 the-criterion-closet.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134215,
+      "reasons": [
+        "品牌词口径：难度估算为 60.6/100（困难）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 68.3/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com、en.wikipedia.org、instagram.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 1 名 criterion.com（DR 78，内页，域名 32.8 年，月流量 196.6 万，此词正是其主力流量词）、第 4 名 the-criterion-closet.vercel.app（DR 93，首页，域名 6.5 年，月流量 13.9 万，此词正是其主力流量词）、第 7 名 criterion.com（DR 78，内页，域名 32.8 年，月流量 196.6 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 95–200 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 60.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 the-criterion-closet.vercel.app（DR 93））；目录/收录型外链为主时约 330–800 个。对应域名权重量级约 DR 36。"
+      ]
+    },
+    {
+      "keyword": "vega app",
+      "score": 59.7,
+      "gefeiKD": 59.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 190
+        },
+        "directory": {
+          "low": 320,
+          "mid": 510,
+          "high": 770
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 190,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 59.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 vegaapp.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134077,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 59.7/100（中等）。",
+        "前 10 名中有 2 个首页排名（vegaapp.vercel.app、vega-app.net），首页平均站点强度 35/100。",
+        "同类内部排序：这几个 EMD 首页（第 1 名 vegaapp.vercel.app（DR 93）、第 10 名 vega-app.net（DR 3））共享「首页打内页」结构加成，彼此之间基本按 DR 排——第 1 名 vegaapp.vercel.app DR 93 领跑，第 10 名 vega-app.net DR 仅 3 靠后。同为聚焦首页时，页面做得更满也顶不过 DR 差距：页面质量是入场门票，DR 与页面级外链才是排位器。",
+        "7/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 10 名 vega-app.net（DR 3，首页排名）证明弱站可进前十，但位次靠后、属于高流动区，可能是新站蜜月期的临时排名，信号打折。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 90–190 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 59.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 vegaapp.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 320–770 个。对应的域名权重量级约为 DR 36。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "럭키글라이드",
+      "score": 59.4,
+      "gefeiKD": 59.4,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 1240,
+      "keywordTrend": {
+        "ratio": 2.5543478260869565,
+        "estimatedValue": 2350,
+        "volume": 920,
+        "domain": "luckyglide.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 190
+        },
+        "directory": {
+          "low": 320,
+          "mid": 510,
+          "high": 760
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 190,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 59.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 luckyglide.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313227,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 59.4/100（中等）。",
+        "前 9 名中有 1 个首页排名（luckyglide.vercel.app），首页平均站点强度 66/100。",
+        "7/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "趋势信号：luckyglide.vercel.app 当月从该词获得约 2350 流量，超过了该词 12 个月平均搜索量（920）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 1240（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 90–190 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 59.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 luckyglide.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 320–760 个。对应的域名权重量级约为 DR 36。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "cote",
+      "score": 58.2,
+      "gefeiKD": 58.2,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 67.1,
+      "keywordVolume": 41650,
+      "keywordTrend": {
+        "ratio": 0.5277310924369748,
+        "estimatedValue": 21980,
+        "volume": 41650,
+        "domain": "cotekoreansteakhouse.com"
+      },
+      "linkBudget": {
+        "targetDr": 35,
+        "quality": {
+          "low": 85,
+          "mid": 120,
+          "high": 180
+        },
+        "directory": {
+          "low": 300,
+          "mid": 480,
+          "high": 730
+        },
+        "low": 85,
+        "mid": 120,
+        "high": 180,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 58.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cotekoreansteakhouse.com（DR 62）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488782,
+      "reasons": [
+        "品牌词口径：难度估算为 58.2/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 67.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（en.wikipedia.org）。",
+        "剔除品牌本尊与平台生态页（共 1 个固定位）后，可竞争位仅 4 个：第 1 名 cotekoreansteakhouse.com（DR 62，首页，域名 3.2 年，月流量 8.3 万，此词正是其主力流量词）、第 2 名 merriam-webster.com（DR 91，内页，域名 27.5 年，月流量 5962.8 万）、第 3 名 resy.com（DR 90，内页，域名 24.7 年，月流量 1730.5 万）、第 5 名 dictionary.com（DR 90，内页，域名 31.2 年，月流量 838.2 万） —— 这些才是衍生内容真正要对位的对手。",
+        "该词月搜索量约 4.2 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 85–180 个引用域（中值 120，按 Ahrefs 官方 KD→引用域曲线由难度分 58.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cotekoreansteakhouse.com（DR 62））；目录/收录型外链为主时约 300–730 个。对应域名权重量级约 DR 35。"
+      ]
+    },
+    {
+      "keyword": "karar çarkı",
+      "score": 58.1,
+      "gefeiKD": 58.1,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 1880,
+      "keywordTrend": {
+        "ratio": 0.1702127659574468,
+        "estimatedValue": 320,
+        "volume": 1880,
+        "domain": "karar-carki.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 35,
+        "quality": {
+          "low": 85,
+          "mid": 120,
+          "high": 180
+        },
+        "directory": {
+          "low": 300,
+          "mid": 480,
+          "high": 720
+        },
+        "low": 85,
+        "mid": 120,
+        "high": 180,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 58.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 carkcevir.com.tr（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134365,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 58.1/100（中等）。",
+        "前 10 名中有 4 个首页排名（carkcevirme.com、karar-carki.vercel.app、carkcevir.com.tr、carkolustur.com），首页平均站点强度 32/100。",
+        "首页打内页：第 1 名 carkcevirme.com（DR 8，首页）排在了 DR 更高的内页第 7 名 wordwall.net（DR 80）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 1分54秒、跳出率 62% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "第 1 名 carkcevirme.com（DR 8，首页排名）证明弱站可进前十；但盘面是多站正面争夺的红海，弱站只是最脆弱的占位者，易做信号大幅打折。（-3）",
+        "前十中有 4 个站点把整个首页押在这个词上（carkcevirme.com、karar-carki.vercel.app、carkcevir.com.tr、carkolustur.com）—— 词已被多个专做站正面经营。（+5）",
+        "3 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "该词月搜索量约 1880（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 85–180 个引用域（中值 120，按 Ahrefs 官方 KD→引用域曲线由难度分 58.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 carkcevir.com.tr（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 300–720 个。对应的域名权重量级约为 DR 35。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "connections answers today",
+      "score": 57.3,
+      "gefeiKD": 57.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 35,
+        "quality": {
+          "low": 80,
+          "mid": 120,
+          "high": 180
+        },
+        "directory": {
+          "low": 290,
+          "mid": 470,
+          "high": 700
+        },
+        "low": 80,
+        "mid": 120,
+        "high": 180,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 57.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 thewordfinder.com（DR 53，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389745,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 57.3/100（中等）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 thewordfinder.com，难度贡献仅 29.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "6/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 80–180 个引用域（中值 120，按 Ahrefs 官方 KD→引用域曲线由难度分 57.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 thewordfinder.com（DR 53，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 290–700 个。对应的域名权重量级约为 DR 35。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "think of you vercel app",
+      "score": 54.9,
+      "gefeiKD": 54.9,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 58.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 34,
+        "quality": {
+          "low": 75,
+          "mid": 110,
+          "high": 160
+        },
+        "directory": {
+          "low": 270,
+          "mid": 420,
+          "high": 640
+        },
+        "low": 75,
+        "mid": 110,
+        "high": 160,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 54.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 think-of-you.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389768,
+      "reasons": [
+        "品牌词口径：难度估算为 54.9/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 58.8/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（instagram.com、tiktok.com、youtube.com、play.google.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 1 名 think-of-you.vercel.app（DR 93，首页，域名 6.5 年，月流量 1.1 万、搜索占比 25%，此词正是其主力流量词）、第 2 名 community.vercel.com（DR 92，内页，域名 26.8 年，月流量 7.7 万）、第 6 名 vercel.com（DR 92，内页，域名 26.8 年，月流量 2872.7 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 75–160 个引用域（中值 110，按 Ahrefs 官方 KD→引用域曲线由难度分 54.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 think-of-you.vercel.app（DR 93））；目录/收录型外链为主时约 270–640 个。对应域名权重量级约 DR 34。"
+      ]
+    },
+    {
+      "keyword": "gacha message",
+      "score": 53.6,
+      "gefeiKD": 53.6,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 52.1,
+      "keywordVolume": 200,
+      "keywordTrend": {
+        "ratio": 0.7,
+        "estimatedValue": 140,
+        "volume": 200,
+        "domain": "gacha-message.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 70,
+          "mid": 100,
+          "high": 150
+        },
+        "directory": {
+          "low": 250,
+          "mid": 400,
+          "high": 600
+        },
+        "low": 70,
+        "mid": 100,
+        "high": 150,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 53.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 gacha-message.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488752,
+      "reasons": [
+        "品牌词口径：难度估算为 53.6/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 52.1/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com、play.google.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 1 名 gacha-message.vercel.app（DR 93，首页，域名 6.5 年，月流量 7117，此词正是其主力流量词）、第 3 名 pinterest.com（DR 97，内页，域名 16.7 年，月流量 14.6 亿）、第 5 名 pinterest.com（DR 97，内页，域名 16.7 年，月流量 14.6 亿）、第 6 名 talkie-ai.com（DR 60，内页，域名 3.2 年，月流量 642.2 万）、第 7 名 lunime.fandom.com（DR 92，内页，域名 29.8 年，月流量 19.5 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 200，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 70–150 个引用域（中值 100，按 Ahrefs 官方 KD→引用域曲线由难度分 53.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 gacha-message.vercel.app（DR 93））；目录/收录型外链为主时约 250–600 个。对应域名权重量级约 DR 33。"
+      ]
+    },
+    {
+      "keyword": "fire emblem wordle",
+      "score": 53.5,
+      "gefeiKD": 53.5,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 64.1,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 70,
+          "mid": 100,
+          "high": 150
+        },
+        "directory": {
+          "low": 250,
+          "mid": 400,
+          "high": 600
+        },
+        "low": 70,
+        "mid": 100,
+        "high": 150,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 53.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fire-guesser.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1784979255,
+      "reasons": [
+        "品牌词口径：难度估算为 53.5/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 64.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 6 个：第 2 名 fire-guesser.vercel.app（DR 93，首页，域名 6.5 年，月流量 8636，此词正是其主力流量词）、第 4 名 fe-guess.vercel.app（DR 93，首页，域名 6.5 年，月流量 3758）、第 5 名 feuniverse.us（DR 28，内页，域名 12.2 年，月流量 40.8 万）、第 6 名 doopu.github.io（DR 94，内页，域名 13.4 年，月流量 2572，此词正是其主力流量词）、第 8 名 tenor.com（DR 86，内页，域名 31 年，月流量 3472.1 万）、第 10 名 sporcle.com（DR 74，内页，域名 19.5 年，月流量 1297.6 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 70–150 个引用域（中值 100，按 Ahrefs 官方 KD→引用域曲线由难度分 53.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fire-guesser.vercel.app（DR 93））；目录/收录型外链为主时约 250–600 个。对应域名权重量级约 DR 33。"
+      ]
+    },
+    {
+      "keyword": "osu skillset analyzer",
+      "score": 52.3,
+      "gefeiKD": 52.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 65,
+          "mid": 95,
+          "high": 140
+        },
+        "directory": {
+          "low": 240,
+          "mid": 380,
+          "high": 570
+        },
+        "low": 65,
+        "mid": 95,
+        "high": 140,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 52.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 osuskills.com（DR 11）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488764,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 52.3/100（中等）。",
+        "Google 认可信号：第 3 名 osu.ppy.sh 带 sitelinks —— 这不构成品牌词证据（mini sitelinks 任何高匹配度结果都可触发），但说明 Google 已认可其与该词的匹配度，这些占位比单看权重数据更稳固。反过来看，这也验证了聚焦经营此词能赢得 Google 认可，对后来者是打法可行性的旁证。（+2）",
+        "第 5 名虽是 reddit.com 的论坛帖，但盘面已有 4 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 9 名中有 4 个首页排名（osu-skillset-analyzer.vercel.app、osuskills.com、tools.osuck.net、osuskills.com.atlaq.com），首页平均站点强度 47/100。",
+        "首页打内页：第 2 名 osuskills.com（DR 11，首页）排在了 DR 更高的内页第 3 名 osu.ppy.sh（DR 79）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 2 名 osuskills.com（DR 11，首页排名）证明弱站可进前十。（-8）",
+        "4 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 65–140 个引用域（中值 95，按 Ahrefs 官方 KD→引用域曲线由难度分 52.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 osuskills.com（DR 11））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 240–570 个。对应的域名权重量级约为 DR 33。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "foto unsa",
+      "score": 52.1,
+      "gefeiKD": 52.1,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 56.4,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 65,
+          "mid": 95,
+          "high": 140
+        },
+        "directory": {
+          "low": 230,
+          "mid": 370,
+          "high": 560
+        },
+        "low": 65,
+        "mid": 95,
+        "high": 140,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 52.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 iloveunsa.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488786,
+      "reasons": [
+        "品牌词口径：难度估算为 52.1/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 56.4/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（facebook.com、tiktok.com、instagram.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 1 名 iloveunsa.vercel.app（DR 93，首页，域名 6.5 年）、第 2 名 fcb.unsa.edu.pe（DR 58，内页，月流量 3903）、第 6 名 fips.unsa.edu.pe（DR 58，内页，月流量 1.7 万）、第 7 名 unsa.edu.ar（DR 64，内页，月流量 65.5 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 65–140 个引用域（中值 95，按 Ahrefs 官方 KD→引用域曲线由难度分 52.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 iloveunsa.vercel.app（DR 93））；目录/收录型外链为主时约 230–560 个。对应域名权重量级约 DR 33。"
+      ]
+    },
+    {
+      "keyword": "弗一把",
+      "score": 51.3,
+      "gefeiKD": 51.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 32,
+        "quality": {
+          "low": 65,
+          "mid": 90,
+          "high": 130
+        },
+        "directory": {
+          "low": 220,
+          "mid": 360,
+          "high": 540
+        },
+        "low": 65,
+        "mid": 90,
+        "high": 130,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 51.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 shnlfriberg.online（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313050,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 51.3/100（中等）。",
+        "前 9 名中有 1 个首页排名（shnlfriberg.online），首页平均站点强度 0/100。",
+        "首页打内页：第 1 名 shnlfriberg.online（DR 0，首页）排在了 DR 更高的内页第 2 名 bilibili.com（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "9/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面用户粘性强：前十站点行为中位数达到停留 18分33秒、跳出率仅 15% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "第 1 名 shnlfriberg.online（DR 0，首页排名）证明弱站可进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 65–130 个引用域（中值 90，按 Ahrefs 官方 KD→引用域曲线由难度分 51.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 shnlfriberg.online（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 220–540 个。对应的域名权重量级约为 DR 32。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "wow m  title",
+      "score": 50.3,
+      "gefeiKD": 50.3,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 32,
+        "quality": {
+          "low": 60,
+          "mid": 85,
+          "high": 130
+        },
+        "directory": {
+          "low": 210,
+          "mid": 340,
+          "high": 510
+        },
+        "low": 60,
+        "mid": 85,
+        "high": 130,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 50.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 mplus-title.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313230,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 50.3/100（中等）。",
+        "Google 认可信号：第 2 名 us.forums.blizzard.com 带 sitelinks —— 这不构成品牌词证据（mini sitelinks 任何高匹配度结果都可触发），但说明 Google 已认可其与该词的匹配度，这些占位比单看权重数据更稳固。反过来看，这也验证了聚焦经营此词能赢得 Google 认可，对后来者是打法可行性的旁证。（+2）",
+        "内容真空信号：第 1 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 8 名中有 1 个首页排名（mplus-title.vercel.app），首页平均站点强度 66/100。",
+        "6 个高 DR 大站（us.forums.blizzard.com、raider.io、youtube.com、wowhead.com、youtube.com、raider.io）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "盘面用户粘性强：前十站点行为中位数达到停留 4分25秒、跳出率仅 28% —— 占位者的用户体验本身构成 DR 之外的第二道护城河。（+4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 60–130 个引用域（中值 85，按 Ahrefs 官方 KD→引用域曲线由难度分 50.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 mplus-title.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 210–510 个。对应的域名权重量级约为 DR 32。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "arkos",
+      "score": 48.7,
+      "gefeiKD": 48.7,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 63.8,
+      "keywordVolume": 11150,
+      "keywordTrend": {
+        "ratio": 0.04663677130044843,
+        "estimatedValue": 520,
+        "volume": 11150,
+        "domain": "retrogamecorps.com"
+      },
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 480
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 retrogamecorps.com（DR 49，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313094,
+      "reasons": [
+        "品牌词口径：难度估算为 48.7/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 63.8/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（github.com、reddit.com、youtube.com、en.wikipedia.org、play.google.com）。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 3 个：第 2 名 retrogamecorps.com（DR 49，内页，域名 6 年，月流量 35.2 万，此词正是其主力流量词）、第 7 名 sourceforge.net（DR 92，内页，域名 27 年，月流量 2136.2 万）、第 9 名 aeolusux.github.io（DR 94，内页，域名 13.4 年，月流量 6.0 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "该词月搜索量约 1.1 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 retrogamecorps.com（DR 49，内页））；目录/收录型外链为主时约 200–480 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "misumi",
+      "score": 48.5,
+      "gefeiKD": 48.5,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 69.3,
+      "keywordVolume": 226390,
+      "keywordTrend": {
+        "ratio": 0.0624585891602986,
+        "estimatedValue": 14140,
+        "volume": 226390,
+        "domain": "us.misumi-ec.com"
+      },
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 480
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 us.misumi-ec.com（DR 75）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313682,
+      "reasons": [
+        "品牌词口径：难度估算为 48.5/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 69.3/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：us.misumi-ec.com 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 3 个平台型结果（youtube.com、linkedin.com、en.wikipedia.org）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 4 个：第 1 名 us.misumi-ec.com（DR 75，首页，域名 18.7 年，月流量 67.3 万，此词正是其主力流量词）、第 2 名 misumi.co.jp（DR 60，内页，域名 31.8 年，月流量 6.4 万，此词正是其主力流量词）、第 4 名 automateshow.com（DR 73，内页，域名 13.6 年，月流量 13.0 万、搜索占比 24%）、第 6 名 fictiv.com（DR 72，内页，域名 19 年，月流量 17.5 万） —— 这些才是衍生内容真正要对位的对手。",
+        "该词月搜索量约 22.6 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 us.misumi-ec.com（DR 75））；目录/收录型外链为主时约 200–480 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "12axes vercel app",
+      "score": 48.4,
+      "gefeiKD": 48.4,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 480
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 vercel.com（DR 92）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389610,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 48.4/100（中等）。",
+        "第 8 名虽是 reddit.com 的论坛帖，但盘面已有 5 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 9 名中有 1 个首页排名（vercel.com），首页平均站点强度 95/100。",
+        "5 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "3 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 vercel.com（DR 92））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 200–480 个。对应的域名权重量级约为 DR 31。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "denouement demon list",
+      "score": 47.8,
+      "gefeiKD": 47.8,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 61,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 190,
+          "mid": 310,
+          "high": 470
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 denouementdl.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313458,
+      "reasons": [
+        "品牌词口径：难度估算为 47.8/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 61/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com、tiktok.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 5 个：第 1 名 denouementdl.vercel.app（DR 93，首页，域名 6.5 年，月流量 1.7 万）、第 3 名 aredl.net（DR 42，内页，域名 2.8 年，月流量 185.1 万，此词正是其主力流量词）、第 5 名 communityone.io（DR 34，内页，域名 3.6 年，月流量 24.7 万）、第 9 名 pointercrate.com（DR 41，内页，域名 9.3 年，月流量 303.7 万，此词正是其主力流量词）、第 10 名 geometry-dash-fan.fandom.com（DR 92，内页，域名 29.8 年，月流量 39.2 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 47.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 denouementdl.vercel.app（DR 93））；目录/收录型外链为主时约 190–470 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "bac story",
+      "score": 47.4,
+      "gefeiKD": 47.4,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 75,
+          "high": 120
+        },
+        "directory": {
+          "low": 190,
+          "mid": 310,
+          "high": 460
+        },
+        "low": 55,
+        "mid": 75,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bac-story.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785125491,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 47.4/100（中等）。",
+        "前 9 名中有 1 个首页排名（bac-story.com），首页平均站点强度 0/100。",
+        "首页打内页：第 1 名 bac-story.com（域名直拼关键词、DR 0，首页）排在了 DR 更高的内页第 5 名 t.me（DR 97）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "7/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 1 名 bac-story.com（DR 0，首页排名）证明弱站可进前十。它注册仅约 1 个月就排到第 1 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 55–120 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 47.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bac-story.com（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 190–460 个。对应的域名权重量级约为 DR 31。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "filmhaven",
+      "score": 47,
+      "gefeiKD": 47,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 54.2,
+      "keywordVolume": 450,
+      "keywordTrend": {
+        "ratio": 1,
+        "estimatedValue": 450,
+        "volume": 450,
+        "domain": "film-haven.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 190,
+          "mid": 300,
+          "high": 450
+        },
+        "low": 55,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 film-haven.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313025,
+      "reasons": [
+        "品牌词口径：难度估算为 47/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 54.2/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（tiktok.com、youtube.com、en.wikipedia.org、facebook.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 6 个：第 2 名 movieinsider.com（DR 58，内页，域名 26 年，月流量 118.4 万）、第 3 名 open.spotify.com（DR 95，内页，域名 20.3 年，月流量 4.5 亿）、第 4 名 film-haven.vercel.app（DR 93，首页，域名 6.5 年，月流量 14.7 万，此词正是其主力流量词）、第 5 名 podcasts.apple.com（DR 97，内页，域名 39.4 年，月流量 1729.2 万）、第 7 名 productionhub.com（DR 73，内页，域名 28.1 年，月流量 25.5 万）、第 10 名 imdb.com（DR 94，内页，域名 30.6 年，月流量 5.8 亿） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "趋势信号：film-haven.vercel.app 当月从该词获得约 450 流量，超过该词 12 个月平均搜索量（450）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 450，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 55–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 47 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 film-haven.vercel.app（DR 93））；目录/收录型外链为主时约 190–450 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "lums pro planner",
+      "score": 47,
+      "gefeiKD": 47,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 30,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 190,
+          "mid": 300,
+          "high": 450
+        },
+        "low": 55,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 47 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 collegeplannerpro.com（DR 51）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134045,
+      "reasons": [
+        "品牌词口径：难度估算为 47/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 30/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（github.com、facebook.com），且 lumsproplanner.com 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 7 个：第 2 名 lums-course-scheduler.vercel.app（DR 93，首页）、第 4 名 notion.com（DR 88，内页，域名 28.8 年，月流量 1.6 亿）、第 5 名 redc.lums.edu.pk（DR 71，内页，月流量 2.6 万）、第 6 名 collegeplannerpro.com（DR 51，首页，域名 16.1 年，月流量 3.6 万）、第 7 名 ces.lums.edu.pk（DR 71，内页，月流量 3.8 万，此词正是其主力流量词）、第 8 名 plumpaper.com（DR 49，内页，域名 13.5 年，月流量 10.6 万）、第 9 名 ariadesign.studio（DR 0，内页） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 55–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 47 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 collegeplannerpro.com（DR 51））；目录/收录型外链为主时约 190–450 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "prompt splitter",
+      "score": 46.4,
+      "gefeiKD": 46.4,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 75,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 300,
+          "high": 440
+        },
+        "low": 50,
+        "mid": 75,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 46.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 chatgpt-prompt-splitter.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489085,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 46.4/100（中等）。",
+        "第 7 名虽是 reddit.com 的论坛帖，但盘面已有 6 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 10 名中有 1 个首页排名（chatgpt-prompt-splitter.vercel.app），首页平均站点强度 93/100。",
+        "6/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 5 名 nogpt.net DR 仅 2，弱站已能进前十。（-8）",
+        "前十中 6 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 50–110 个引用域（中值 75，按 Ahrefs 官方 KD→引用域曲线由难度分 46.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 chatgpt-prompt-splitter.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 180–440 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "genius annotation maker",
+      "score": 45.8,
+      "gefeiKD": 45.8,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 50.3,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 70,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 290,
+          "high": 430
+        },
+        "low": 50,
+        "mid": 70,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 45.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lyricscard.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488832,
+      "reasons": [
+        "品牌词口径：难度估算为 45.8/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 50.3/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 7 个：第 1 名 genius.com（DR 87，内页，域名 32 年，月流量 1.9 亿，此词正是其主力流量词）、第 3 名 ehmorris.com（DR 28，内页，域名 18.8 年，月流量 3.8 万）、第 4 名 genius.com（DR 87，内页，域名 32 年，月流量 1.9 亿，此词正是其主力流量词）、第 6 名 genius.com（DR 87，内页，域名 32 年，月流量 1.9 亿，此词正是其主力流量词）、第 7 名 figma.com（DR 92，内页，域名 27.3 年，月流量 8240.9 万）、第 8 名 lyricscard.vercel.app（DR 93，首页，域名 6.5 年，月流量 7102）、第 9 名 ehmorris.com（DR 28，内页，域名 18.8 年，月流量 3.8 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 50–110 个引用域（中值 70，按 Ahrefs 官方 KD→引用域曲线由难度分 45.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lyricscard.vercel.app（DR 93））；目录/收录型外链为主时约 180–430 个。对应域名权重量级约 DR 30。"
+      ]
+    },
+    {
+      "keyword": "watchwave",
+      "score": 45.8,
+      "gefeiKD": 45.8,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 44,
+      "keywordVolume": 100,
+      "keywordTrend": {
+        "ratio": 0.2,
+        "estimatedValue": 20,
+        "volume": 100,
+        "domain": "watchwave.live"
+      },
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 70,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 290,
+          "high": 430
+        },
+        "low": 50,
+        "mid": 70,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 45.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 watch-wave.com（DR 2）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312951,
+      "reasons": [
+        "品牌词口径：难度估算为 45.8/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 44/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（github.com、instagram.com、reddit.com），且 watchwave.live 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 3 名 watch-wave.com（DR 2，首页，域名 3.3 年，月流量 6493）、第 4 名 codesandbox.io（DR 86，内页，域名 9.7 年，月流量 132.0 万）、第 5 名 ebay.com（DR 93，内页，域名 31 年，月流量 6.3 亿）、第 6 名 watchwave-radio-signal-sync-ios.soft112.com（DR 68，首页，域名 19 年，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 100，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 50–110 个引用域（中值 70，按 Ahrefs 官方 KD→引用域曲线由难度分 45.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 watch-wave.com（DR 2））；目录/收录型外链为主时约 180–430 个。对应域名权重量级约 DR 30。"
+      ]
+    },
+    {
+      "keyword": "نتيجه الثانويه العامه",
+      "score": 45.5,
+      "gefeiKD": 45.5,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 890,
+      "keywordTrend": {
+        "ratio": 1.1235955056179776,
+        "estimatedValue": 1000,
+        "volume": 890,
+        "domain": "natiga.egymoe.com"
+      },
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 70,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 290,
+          "high": 430
+        },
+        "low": 50,
+        "mid": 70,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 45.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 than.nezakr.net（DR 30）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389758,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 45.5/100（中等）。",
+        "前 9 名中有 5 个首页排名（g12.emis.gov.eg、natega.elwatannews.com、natega.dostor.org、than.nezakr.net、natiga.codemz.com），首页平均站点强度 45/100。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 9 名 natiga.codemz.com DR 仅 18，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（22/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）（域名注册仅约 17 个月、位次靠后且流量未承接，蜜月期排名风险较高）。（-6）",
+        "第 8 名 than.nezakr.net（DR 30）是低 DR 站点的首页排名，小站靠首页就能排进来（位次靠后，信号打折）。注意它的体验分在前十中排前列（94/100，停留 4分21秒、跳出 31%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-4）",
+        "前十中 5 个位置被专门站点的首页占据，虽然个体都不强，但赛道已经拥挤 —— 新站进场即是第 6 个正面竞争者，需要在内容/产品/外链上至少挤掉其中一个。（+4）",
+        "4 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "趋势信号：natiga.egymoe.com 当月从该词获得约 1000 流量，超过了该词 12 个月平均搜索量（890）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 890（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 50–110 个引用域（中值 70，按 Ahrefs 官方 KD→引用域曲线由难度分 45.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 than.nezakr.net（DR 30））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 180–430 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "生フェス",
+      "score": 45,
+      "gefeiKD": 45,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 30,
+      "keywordTrend": {
+        "ratio": 1,
+        "estimatedValue": 30,
+        "volume": 30,
+        "domain": "namafes2026.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 50,
+          "mid": 70,
+          "high": 110
+        },
+        "directory": {
+          "low": 180,
+          "mid": 280,
+          "high": 420
+        },
+        "low": 50,
+        "mid": 70,
+        "high": 110,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 45 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 namafes2026.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134293,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 45/100（中等）。",
+        "前 10 名中有 1 个首页排名（namafes2026.vercel.app），首页平均站点强度 56/100。",
+        "8/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 1分39秒、跳出率 58% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "第 10 名 event-ia.com DR 仅 10，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（6/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）（域名注册仅约 10 个月、位次靠后且流量未承接，蜜月期排名风险较高）。（-6）",
+        "趋势信号：namafes2026.vercel.app 当月从该词获得约 30 流量，超过了该词 12 个月平均搜索量（30）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 30（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 50–110 个引用域（中值 70，按 Ahrefs 官方 KD→引用域曲线由难度分 45 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 namafes2026.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 180–420 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "12axes",
+      "score": 44.1,
+      "gefeiKD": 44.1,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 44.4,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 100
+        },
+        "directory": {
+          "low": 170,
+          "mid": 270,
+          "high": 400
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 44.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 twelveaxes.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133623,
+      "reasons": [
+        "品牌词口径：难度估算为 44.1/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 44.4/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、quora.com、tiktok.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 1 名 politicaltests.github.io（DR 94，内页，域名 13.4 年，月流量 3.0 万，此词正是其主力流量词）、第 2 名 politicaltests.github.io（DR 94，首页，域名 13.4 年，月流量 3.0 万，此词正是其主力流量词）、第 3 名 twelveaxes.com（DR 0，首页，域名 16 个月，月流量 1283）、第 7 名 scribd.com（DR 91，内页，域名 19.8 年，月流量 2.8 亿）、第 9 名 12manage.com（DR 54，首页，域名 21.5 年，月流量 5.3 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 45–100 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 44.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 twelveaxes.com（DR 0））；目录/收录型外链为主时约 170–400 个。对应域名权重量级约 DR 30。"
+      ]
+    },
+    {
+      "keyword": "enchantment calculator",
+      "score": 44.1,
+      "gefeiKD": 44.1,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 6990,
+      "keywordTrend": {
+        "ratio": 0.2632331902718169,
+        "estimatedValue": 1840,
+        "volume": 6990,
+        "domain": "minecraft-enchantment-order.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 30,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 100
+        },
+        "directory": {
+          "low": 170,
+          "mid": 270,
+          "high": 400
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 44.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 minecraft-enchantment-order.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488893,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 44.1/100（中等）。",
+        "第 3 名虽是 reddit.com 的论坛帖，但盘面已有 8 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 9 名中有 2 个首页排名（minecraft-enchantment-order.vercel.app、mcenchant.com），首页平均站点强度 40/100。",
+        "8/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 4 名 chapmanofficial.com DR 仅 0，弱站已能进前十。且其体验分垫底（20/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "第 8 名 mcenchant.com（DR 0）是低 DR 站点的首页排名，小站靠首页就能排进来（位次靠后，信号打折）。注意它的体验分在前十中排前列（80/100，停留 1分19秒、跳出 32%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量（域名注册仅约 7 个月、位次靠后且流量未承接，蜜月期排名风险较高）。（-4）",
+        "3 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "该词月搜索量约 6990（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 45–100 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 44.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 minecraft-enchantment-order.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 170–400 个。对应的域名权重量级约为 DR 30。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "learn jh",
+      "score": 43.7,
+      "gefeiKD": 43.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 100
+        },
+        "directory": {
+          "low": 170,
+          "mid": 270,
+          "high": 400
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 my.jh.edu（DR 73）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134538,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 43.7/100（中等）。",
+        "前 10 名中有 6 个首页排名（learnjh.vercel.app、jh0536.graphy.com、my.jh.edu、learn.ja.org、mphjh.com、link.learnwithj.com），首页平均站点强度 45/100。",
+        "3 个高 DR 大站（play.google.com、youtube.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 5 名 languageexchangejh.org DR 仅 1，弱站已能进前十。（-8）",
+        "第 8 名 mphjh.com（DR 0）是低 DR 站点的首页排名，小站靠首页就能排进来（位次靠后，信号打折）。（-4）",
+        "有 3 个强首页（learnjh.vercel.app 强度64、jh0536.graphy.com 强度78、my.jh.edu 强度70）占坑，词已被多个专门站点重兵把守。（+8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 45–100 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 my.jh.edu（DR 73））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 170–400 个。对应的域名权重量级约为 DR 29。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "作戦室",
+      "score": 43.7,
+      "gefeiKD": 43.7,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 51.9,
+      "keywordVolume": 250,
+      "keywordTrend": {
+        "ratio": 1.44,
+        "estimatedValue": 360,
+        "volume": 250,
+        "domain": "jervis.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 100
+        },
+        "directory": {
+          "low": 170,
+          "mid": 270,
+          "high": 400
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 ffxiv.phone.exdreams.net（DR 39）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134299,
+      "reasons": [
+        "品牌词口径：难度估算为 43.7/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 51.9/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（x.com）。",
+        "剔除品牌本尊与平台生态页（共 1 个固定位）后，可竞争位仅 7 个：第 1 名 jervis.vercel.app（DR 93，首页，域名 6.5 年，月流量 2.5 万，此词正是其主力流量词）、第 2 名 ffxiv.phone.exdreams.net（DR 39，首页，域名 16.8 年，此词正是其主力流量词）、第 3 名 kcjervis.github.io（DR 94，内页，域名 13.4 年，月流量 977，此词正是其主力流量词）、第 5 名 ja.wikipedia.org（DR 97，内页，域名 25.5 年，月流量 8500.6 万）、第 6 名 zekamashi.net（DR 33，内页，域名 12.9 年，月流量 236.3 万）、第 7 名 starwars.fandom.com（DR 92，内页，域名 29.8 年，月流量 1117.9 万）、第 8 名 niwaka-13jc.net（DR 2，内页，域名 2.5 年，月流量 2951） —— 这些才是衍生内容真正要对位的对手。",
+        "趋势信号：jervis.vercel.app 当月从该词获得约 360 流量，超过该词 12 个月平均搜索量（250）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 250，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 45–100 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 ffxiv.phone.exdreams.net（DR 39））；目录/收录型外链为主时约 170–400 个。对应域名权重量级约 DR 29。"
+      ]
+    },
+    {
+      "keyword": "oaken tower builds",
+      "score": 43.3,
+      "gefeiKD": 43.3,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 39.6,
+      "keywordVolume": 5310,
+      "keywordTrend": {
+        "ratio": 0.5969868173258004,
+        "estimatedValue": 3170,
+        "volume": 5310,
+        "domain": "whisperofthehouse.com"
+      },
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 100
+        },
+        "directory": {
+          "low": 160,
+          "mid": 260,
+          "high": 390
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 100,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 43.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 oaken.gg（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313630,
+      "reasons": [
+        "品牌词口径：难度估算为 43.3/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 39.6/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 4 个：第 2 名 oakentower.wiki.gg（DR 78，内页，月流量 4.8 万，此词正是其主力流量词）、第 5 名 steamcommunity.com（DR 91，内页，域名 20.2 年，月流量 2.0 亿）、第 8 名 whisperofthehouse.com（DR 8，内页，域名 11 个月，月流量 63.0 万，此词正是其主力流量词）、第 9 名 oaken.gg（DR 0，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "关键证据：whisperofthehouse.com 注册仅约 11 个月，每月已从此词获得约 3170 搜索流量（主力词数据，精确口径） —— 品牌词截流打法在这个词上确实可行、路径已被验证。",
+        "该词月搜索量约 5310，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 45–100 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 43.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 oaken.gg（DR 0，内页））；目录/收录型外链为主时约 160–390 个。对应域名权重量级约 DR 29。"
+      ]
+    },
+    {
+      "keyword": "enshrouded wall blocks",
+      "score": 42.7,
+      "gefeiKD": 42.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 65,
+          "high": 95
+        },
+        "directory": {
+          "low": 160,
+          "mid": 250,
+          "high": 380
+        },
+        "low": 45,
+        "mid": 65,
+        "high": 95,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 42.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 enshrouded-blocks.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488980,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 42.7/100（中等）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名中有 1 个首页排名（enshrouded-blocks.vercel.app），首页平均站点强度 63/100。",
+        "5 个高 DR 大站（youtube.com、reddit.com、youtube.com、steamcommunity.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 45–95 个引用域（中值 65，按 Ahrefs 官方 KD→引用域曲线由难度分 42.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 enshrouded-blocks.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 160–380 个。对应的域名权重量级约为 DR 29。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "сайт для сравнения мышек",
+      "score": 41.8,
+      "gefeiKD": 41.8,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 25.1,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 60,
+          "high": 90
+        },
+        "directory": {
+          "low": 150,
+          "mid": 240,
+          "high": 370
+        },
+        "low": 45,
+        "mid": 60,
+        "high": 90,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 41.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 eloshapes.com（DR 39）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488899,
+      "reasons": [
+        "品牌词口径：难度估算为 41.8/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 25.1/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 1 个固定位）后，可竞争位仅 9 个：第 2 名 eloshapes.com（DR 39，首页，域名 4.1 年，月流量 83.3 万）、第 3 名 vk.com（DR 95，内页，域名 29.1 年，月流量 9.7 亿）、第 4 名 avshop.ru（DR 5，内页，域名 3.9 年，月流量 11.4 万）、第 5 名 ek.ua（DR 61，内页，域名 15.6 年，月流量 222.4 万，此词正是其主力流量词）、第 6 名 rtings.com（DR 78，内页，域名 14.7 年，月流量 701.8 万）、第 7 名 otvet.mail.ru（DR 92，内页，域名 28.8 年，月流量 5798.5 万）、第 8 名 zowie.benq.com（DR 79，内页）、第 9 名 eloshapes.com（DR 39，内页，域名 4.1 年，月流量 83.3 万）、第 10 名 versus.com（DR 70，内页，域名 32.9 年，月流量 901.1 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 45–90 个引用域（中值 60，按 Ahrefs 官方 KD→引用域曲线由难度分 41.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 eloshapes.com（DR 39））；目录/收录型外链为主时约 150–370 个。对应域名权重量级约 DR 29。"
+      ]
+    },
+    {
+      "keyword": "올림픽공원 실시간",
+      "score": 41.7,
+      "gefeiKD": 41.7,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 1210,
+      "keywordTrend": {
+        "ratio": 1.4793388429752066,
+        "estimatedValue": 1790,
+        "volume": 1210,
+        "domain": "k-official.net"
+      },
+      "linkBudget": {
+        "targetDr": 29,
+        "quality": {
+          "low": 45,
+          "mid": 60,
+          "high": 90
+        },
+        "directory": {
+          "low": 150,
+          "mid": 240,
+          "high": 360
+        },
+        "low": 45,
+        "mid": 60,
+        "high": 90,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 41.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 k-official.net（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488828,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 41.7/100（中等）。",
+        "前 10 名中有 3 个首页排名（k-official.net、vote-watch-omega.vercel.app、crowd-safety-map.vercel.app），首页平均站点强度 41/100。",
+        "首页打内页：第 1 名 k-official.net（DR 0，首页）排在了 DR 更高的内页第 9 名 ksponco.or.kr（DR 39）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "8/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 9秒、跳出率 59% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "第 1 名 k-official.net（DR 0，首页排名）证明弱站可进前十。（-8）",
+        "3 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "趋势信号：k-official.net 当月从该词获得约 1790 流量，超过了该词 12 个月平均搜索量（1210）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 1210（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 45–90 个引用域（中值 60，按 Ahrefs 官方 KD→引用域曲线由难度分 41.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 k-official.net（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 150–360 个。对应的域名权重量级约为 DR 29。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "ragnarok origin classic",
+      "score": 40.5,
+      "gefeiKD": 40.5,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 68.1,
+      "keywordVolume": 52240,
+      "keywordTrend": {
+        "ratio": 0.722052067381317,
+        "estimatedValue": 37720,
+        "volume": 52240,
+        "domain": "roocasia.com"
+      },
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 55,
+          "high": 85
+        },
+        "directory": {
+          "low": 140,
+          "mid": 230,
+          "high": 340
+        },
+        "low": 40,
+        "mid": 55,
+        "high": 85,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 40.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 roglobal.com（DR 42）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133772,
+      "reasons": [
+        "品牌词口径：难度估算为 40.5/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 68.1/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、facebook.com、youtube.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 3 个：第 1 名 roocasia.com（DR 35，内页，域名 10 个月，月流量 46.3 万，此词正是其主力流量词）、第 3 名 gravity.co.kr（DR 56，内页，域名 28 年，月流量 14.6 万，此词正是其主力流量词）、第 5 名 roglobal.com（DR 42，首页，域名 14.6 年，月流量 16.0 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "关键证据：roocasia.com 注册仅约 10 个月，每月已从此词获得约 3.8 万 搜索流量（主力词数据，精确口径） —— 品牌词截流打法在这个词上确实可行、路径已被验证。",
+        "该词月搜索量约 5.2 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 40–85 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 40.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 roglobal.com（DR 42））；目录/收录型外链为主时约 140–340 个。对应域名权重量级约 DR 28。"
+      ]
+    },
+    {
+      "keyword": "pokeidle ferramentas",
+      "score": 40.2,
+      "gefeiKD": 40.2,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 55,
+          "high": 85
+        },
+        "directory": {
+          "low": 140,
+          "mid": 230,
+          "high": 340
+        },
+        "low": 40,
+        "mid": 55,
+        "high": 85,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 40.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 pokeidle.net（DR 2）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488925,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 40.2/100（中等）。",
+        "第 3 名虽是 reddit.com 的论坛帖，但盘面已有 4 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 9 名中有 4 个首页排名（pokeidle.net、pokeidle.com、pokaidle.fandom.com、pokeidle.neocities.org），首页平均站点强度 32/100。",
+        "首页打内页：第 2 名 pokeidle.net（DR 2，首页）排在了 DR 更高的内页第 9 名 chromewebstore.google.com（DR 99）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 2 名 pokeidle.net（DR 2，首页排名）证明弱站可进前十。（-8）",
+        "4 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 40–85 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 40.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 pokeidle.net（DR 2））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 140–340 个。对应的域名权重量级约为 DR 28。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "avatar guesser",
+      "score": 38.4,
+      "gefeiKD": 38.4,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 42.1,
+      "keywordVolume": 180,
+      "keywordTrend": {
+        "ratio": 0.6111111111111112,
+        "estimatedValue": 110,
+        "volume": 180,
+        "domain": "avatarguesser.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 130,
+          "mid": 210,
+          "high": 320
+        },
+        "low": 35,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 38.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 avatardle.com（DR 34）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313370,
+      "reasons": [
+        "品牌词口径：难度估算为 38.4/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 42.1/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 7 个：第 1 名 avatarguesser.vercel.app（DR 93，内页，域名 6.5 年，月流量 2198，此词正是其主力流量词）、第 3 名 avatardle.com（DR 34，首页，域名 22 个月，月流量 1.1 万，此词正是其主力流量词）、第 4 名 avatarguesser.vercel.app（DR 93，首页，域名 6.5 年，月流量 2198，此词正是其主力流量词）、第 6 名 akinator.com（DR 71，首页，域名 18.9 年，月流量 408.8 万）、第 7 名 avatarguessr.lol（DR 0，首页，月流量 1199，此词正是其主力流量词）、第 8 名 sporcle.com（DR 75，内页，域名 19.5 年，月流量 1297.6 万）、第 9 名 chardle.com（DR 4，内页，域名 17 个月，月流量 18.2 万） —— 这些才是衍生内容真正要对位的对手。",
+        "关键证据：chardle.com 注册仅约 17 个月，已月获 18.2 万 流量 —— 品牌词截流打法在这个词上确实可行、路径已被验证。",
+        "该词月搜索量约 180，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 35–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 38.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 avatardle.com（DR 34））；目录/收录型外链为主时约 130–320 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "paladins tracker",
+      "score": 38.4,
+      "gefeiKD": 38.4,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 200,
+      "keywordTrend": {
+        "ratio": 1.95,
+        "estimatedValue": 390,
+        "volume": 200,
+        "domain": "paladins-data.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 130,
+          "mid": 210,
+          "high": 320
+        },
+        "low": 35,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 38.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 paladins-data.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489106,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 38.4/100（容易）。",
+        "内容真空信号：第 3 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名中有 1 个首页排名（paladins-data.vercel.app），首页平均站点强度 64/100。",
+        "6 个高 DR 大站（reddit.com、youtube.com、steamdb.info、youtube.com、steamcharts.com、play.google.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "趋势信号：paladins-data.vercel.app 当月从该词获得约 390 流量，超过了该词 12 个月平均搜索量（200）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 200（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 35–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 38.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 paladins-data.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–320 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "spidey universe",
+      "score": 37.4,
+      "gefeiKD": 37.4,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 35.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 spiderfan.org（DR 39，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313187,
+      "reasons": [
+        "品牌词口径：难度估算为 37.4/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 35.8/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、en.wikipedia.org、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 5 个：第 1 名 imdb.com（DR 94，内页，域名 30.6 年，月流量 5.8 亿）、第 4 名 spiderfan.org（DR 39，内页，域名 26.4 年，月流量 5.0 万）、第 6 名 marvelcinematicuniverse.fandom.com（DR 92，内页，域名 29.8 年，月流量 286.9 万）、第 7 名 rottentomatoes.com（DR 87，内页，域名 27.2 年，月流量 8792.2 万）、第 8 名 marvel.com（DR 84，内页，域名 29.4 年，月流量 384.3 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 spiderfan.org（DR 39，内页））；目录/收录型外链为主时约 130–300 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "fe guess",
+      "score": 37,
+      "gefeiKD": 37,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 47.7,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fe-guess.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133628,
+      "reasons": [
+        "品牌词口径：难度估算为 37/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 47.7/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、x.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 6 个：第 1 名 fe-guess.vercel.app（DR 93，首页，域名 6.5 年，月流量 3758）、第 3 名 feuniverse.us（DR 28，内页，域名 12.2 年，月流量 40.8 万）、第 5 名 guess.com（DR 73，内页，域名 30.9 年，月流量 186.3 万，此词正是其主力流量词）、第 7 名 motivs.eu（DR 9，内页，月流量 1.7 万）、第 8 名 cattus.itch.io（DR 92，内页，域名 14.7 年）、第 9 名 mytrendyphone.ie（DR 21，内页，域名 5.2 年，月流量 1.6 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 fe-guess.vercel.app（DR 93））；目录/收录型外链为主时约 130–300 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "streamx",
+      "score": 36.8,
+      "gefeiKD": 36.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 53.8,
+      "keywordVolume": 438690,
+      "keywordTrend": {
+        "ratio": 1.1771182383915748,
+        "estimatedValue": 516390,
+        "volume": 438690,
+        "domain": "streamxtv.net"
+      },
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 120,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 36.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 streamxtv.net（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312995,
+      "reasons": [
+        "品牌词口径：难度估算为 36.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 53.8/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（play.google.com、linkedin.com、reddit.com、trustpilot.com、instagram.com），且 streamx.com 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 7 个固定位）后，可竞争位仅 2 个：第 1 名 streamxtv.net（DR 0，首页，域名 5 个月，月流量 154.4 万、搜索占比 80%，此词正是其主力流量词）、第 9 名 streamx-ultra.en.uptodown.com（DR 83，内页） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "关键证据：streamxtv.net 注册仅约 5 个月，每月已从此词获得约 51.6 万 搜索流量（主力词数据，精确口径） —— 品牌词截流打法在这个词上确实可行、路径已被验证。",
+        "趋势信号：streamxtv.net 当月从该词获得约 51.6 万 流量，超过该词 12 个月平均搜索量（43.9 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 43.9 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 36.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 streamxtv.net（DR 0））；目录/收录型外链为主时约 120–300 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "memento mori calendar fill out",
+      "score": 36.1,
+      "gefeiKD": 36.1,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 22.4,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 70
+        },
+        "directory": {
+          "low": 120,
+          "mid": 190,
+          "high": 290
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 36.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 memento-mori-calendar.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488747,
+      "reasons": [
+        "品牌词口径：难度估算为 36.1/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 22.4/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 7 个：第 2 名 memento-mori-calendar.vercel.app（DR 93，首页）、第 3 名 maritimesupplyco.com（DR 7，内页）、第 4 名 lovelyplanner.com（DR 30，内页，域名 10.4 年，月流量 10.0 万）、第 6 名 store.dailystoic.com（DR 74，内页）、第 7 名 onlinetools.com（DR 63，内页，域名 30.7 年，月流量 30.3 万）、第 8 名 pinterest.com（DR 97，内页，域名 16.7 年，月流量 14.6 亿）、第 9 名 memento-countdown.com（DR 0，首页） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 35–70 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 36.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 memento-mori-calendar.vercel.app（DR 93））；目录/收录型外链为主时约 120–290 个。对应域名权重量级约 DR 26。"
+      ]
+    },
+    {
+      "keyword": "clipforge",
+      "score": 34.8,
+      "gefeiKD": 34.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 53.4,
+      "keywordVolume": 870,
+      "keywordTrend": {
+        "ratio": 0.5862068965517241,
+        "estimatedValue": 510,
+        "volume": 870,
+        "domain": "clipforgevideos.com"
+      },
+      "linkBudget": {
+        "targetDr": 26,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 70
+        },
+        "directory": {
+          "low": 110,
+          "mid": 180,
+          "high": 270
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 70,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 34.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 clipforgevideos.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312931,
+      "reasons": [
+        "品牌词口径：难度估算为 34.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 53.4/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（github.com、youtube.com、reddit.com、instagram.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 1 名 clipforgevideos.com（DR 0，首页，域名 7 个月，月流量 2625，此词正是其主力流量词）、第 6 名 turbostarter.dev（DR 55，内页）、第 7 名 whop.com（DR 89，内页，域名 23.4 年，月流量 1179.2 万）、第 9 名 clipforge.webflow.io（DR 92，首页，域名 13.2 年，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 870，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 30–70 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 34.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 clipforgevideos.com（DR 0））；目录/收录型外链为主时约 110–270 个。对应域名权重量级约 DR 26。"
+      ]
+    },
+    {
+      "keyword": "moviedex",
+      "score": 34,
+      "gefeiKD": 34,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 63.4,
+      "keywordVolume": 170790,
+      "keywordTrend": {
+        "ratio": 0.010832015925990984,
+        "estimatedValue": 1850,
+        "volume": 170790,
+        "domain": "moviedex-client.vercel.app"
+      },
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 65
+        },
+        "directory": {
+          "low": 110,
+          "mid": 180,
+          "high": 260
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 34 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 moviedex.me（DR 25）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134190,
+      "reasons": [
+        "品牌词口径：难度估算为 34/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 63.4/100（困难），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 moviedex.net 是与关键词同名的官方域名首页，且前十出现 3 个平台型结果（play.google.com、youtube.com、instagram.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 6 名 moviedex-client.vercel.app（DR 93，首页，域名 6.5 年，月流量 1812，此词正是其主力流量词）、第 7 名 moviedex.me（DR 25，首页，域名 2 个月，月流量 8022，此词正是其主力流量词）、第 8 名 moviedex.lat（DR 4，首页，月流量 121，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 17.1 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 30–65 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 34 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 moviedex.me（DR 25））；目录/收录型外链为主时约 110–260 个。对应域名权重量级约 DR 25。"
+      ]
+    },
+    {
+      "keyword": "gifting back to the dawn",
+      "score": 33.7,
+      "gefeiKD": 33.7,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 22.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 65
+        },
+        "directory": {
+          "low": 110,
+          "mid": 170,
+          "high": 260
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 33.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 raiderking.com（DR 18，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489054,
+      "reasons": [
+        "品牌词口径：难度估算为 33.7/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 22.8/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 7 个：第 2 名 back-to-the-dawn-data.vercel.app（DR 93，内页，域名 6.5 年，月流量 12.1 万）、第 3 名 steamcommunity.com（DR 91，内页，域名 20.2 年，月流量 2.0 亿）、第 4 名 steamcommunity.com（DR 91，内页，域名 20.2 年，月流量 2.0 亿）、第 5 名 back-to-the-dawn.fandom.com（DR 92，内页，域名 29.8 年，月流量 4633）、第 7 名 backtothedawn.wiki.gg（DR 78，内页，月流量 2322）、第 8 名 back-to-the-dawn-data.vercel.app（DR 93，内页，域名 6.5 年，月流量 12.1 万）、第 9 名 raiderking.com（DR 18，内页，域名 4.1 年，月流量 45.3 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 30–65 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 33.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 raiderking.com（DR 18，内页））；目录/收录型外链为主时约 110–260 个。对应域名权重量级约 DR 25。"
+      ]
+    },
+    {
+      "keyword": "back to the dawn jailbreak quests",
+      "score": 33.5,
+      "gefeiKD": 33.5,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 30.6,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 45,
+          "high": 65
+        },
+        "directory": {
+          "low": 110,
+          "mid": 170,
+          "high": 260
+        },
+        "low": 30,
+        "mid": 45,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 33.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 neoseeker.com（DR 66，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389977,
+      "reasons": [
+        "品牌词口径：难度估算为 33.5/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 30.6/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com、reddit.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 6 个：第 1 名 steamcommunity.com（DR 91，内页，域名 20.2 年，月流量 2.0 亿）、第 2 名 back-to-the-dawn.fandom.com（DR 92，内页，域名 29.8 年，月流量 4633）、第 3 名 neoseeker.com（DR 66，内页，域名 27.1 年，月流量 404.8 万）、第 6 名 backtothedawn.wiki.gg（DR 78，内页，月流量 2322）、第 7 名 back-to-the-dawn-data.vercel.app（DR 93，内页，域名 6.5 年，月流量 12.1 万）、第 9 名 store.steampowered.com（DR 92，内页，域名 26 年，月流量 2.4 亿） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 30–65 个引用域（中值 45，按 Ahrefs 官方 KD→引用域曲线由难度分 33.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 neoseeker.com（DR 66，内页））；目录/收录型外链为主时约 110–260 个。对应域名权重量级约 DR 25。"
+      ]
+    },
+    {
+      "keyword": "ffxiv weather",
+      "score": 32.9,
+      "gefeiKD": 32.9,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 25,
+        "quality": {
+          "low": 30,
+          "mid": 40,
+          "high": 65
+        },
+        "directory": {
+          "low": 100,
+          "mid": 170,
+          "high": 250
+        },
+        "low": 30,
+        "mid": 40,
+        "high": 65,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 32.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 eorzea-weather.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134311,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 32.9/100（容易）【纯 DR 模式】。",
+        "第 6 名虽是 reddit.com 的论坛帖，但盘面已有 4 个专门为此词制作的页面在正面争夺 —— 论坛/视频结果属于搜索意图的多样性（部分用户想看讨论或演示），并非内容真空，不构成易做信号。",
+        "前 10 名中有 1 个首页排名（eorzea-weather.vercel.app），首页平均站点强度 93/100。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "第 2 名 nekobot.io DR 仅 1，弱站已能进前十。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "本次有 6/10 个域名按纯 DR 模式估算（无流量数据）。DR 与流量相关性高，结果整体可用；但纯 DR 无法识别\"低 DR 高流量\"的新锐竞争者，新兴热门领域的实际难度可能略高于估算值。",
+        "进入前十的链接预算：约 30–65 个引用域（中值 40，按 Ahrefs 官方 KD→引用域曲线由难度分 32.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 eorzea-weather.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 100–250 个。对应的域名权重量级约为 DR 25。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "mtproto.ru прокси для телеграм список",
+      "score": 31.2,
+      "gefeiKD": 31.2,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 24,
+        "quality": {
+          "low": 25,
+          "mid": 40,
+          "high": 60
+        },
+        "directory": {
+          "low": 95,
+          "mid": 150,
+          "high": 230
+        },
+        "low": 25,
+        "mid": 40,
+        "high": 60,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 31.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 mtproto.ru（DR 28）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133664,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 31.2/100（容易）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名中有 2 个首页排名（mtproto.ru、mtproto.cloud），首页平均站点强度 44/100。",
+        "首页打内页：第 1 名 mtproto.ru（域名直拼关键词、DR 28，首页）排在了 DR 更高的内页第 8 名 habr.com（DR 88）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "6 个高 DR 大站（github.com、play.google.com、reddit.com、tgstat.ru、habr.com、play.google.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 1 名 mtproto.ru（DR 28）是低 DR 站点的首页排名，小站靠首页就能排进来。（-7）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–60 个引用域（中值 40，按 Ahrefs 官方 KD→引用域曲线由难度分 31.2 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 mtproto.ru（DR 28））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 95–230 个。对应的域名权重量级约为 DR 24。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "auto sbc complete multiple sbc's at one time",
+      "score": 30.7,
+      "gefeiKD": 30.7,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 34.9,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 24,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 95,
+          "mid": 150,
+          "high": 220
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 30.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 sbcmonkey.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389957,
+      "reasons": [
+        "品牌词口径：难度估算为 30.7/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 34.9/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com、tiktok.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 4 个：第 3 名 autosbc.app（DR 2，首页，域名 23 个月，月流量 16.3 万，此词正是其主力流量词）、第 5 名 autopilotsbc.vercel.app（DR 93，首页，域名 6.5 年，月流量 1153，此词正是其主力流量词）、第 6 名 sbcmonkey.com（DR 0，首页，域名 2.9 年，月流量 3.6 万）、第 9 名 autosbc.app（DR 2，内页，域名 23 个月，月流量 16.3 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 30.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 sbcmonkey.com（DR 0））；目录/收录型外链为主时约 95–220 个。对应域名权重量级约 DR 24。"
+      ]
+    },
+    {
+      "keyword": "raw-leveldb-viewer",
+      "score": 30.5,
+      "gefeiKD": 30.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 24,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 95,
+          "mid": 150,
+          "high": 220
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 30.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 dbdb.io（DR 51，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489245,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 30.5/100（容易）。",
+        "内容真空信号：第 8 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 bebinary4n6.blogspot.com，难度贡献仅 25.7）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "8 个高 DR 大站（magnetforensics.com、github.com、youtube.com、marketplace.visualstudio.com、sourceforge.net、github.com、bebinary4n6.blogspot.com、reddit.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 30.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 dbdb.io（DR 51，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 95–220 个。对应的域名权重量级约为 DR 24。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "amicro",
+      "score": 30,
+      "gefeiKD": 30,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 49,
+      "keywordVolume": 160,
+      "keywordTrend": {
+        "ratio": 0,
+        "estimatedValue": 0,
+        "volume": 160,
+        "domain": "amicroempresa.com"
+      },
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 220
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 30 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 amicroempresa.com（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312961,
+      "reasons": [
+        "品牌词口径：难度估算为 30/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 49/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 2 名 amicro.com 是与关键词同名的官方域名首页，且前十出现 4 个平台型结果（linkedin.com、facebook.com、instagram.com、tiktok.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 5 名 amicroempresa.com（DR 0，内页，域名 7.1 年，月流量 436，此词正是其主力流量词）、第 7 名 udger.com（DR 59，内页）、第 8 名 find-and-update.company-information.service.gov.uk（DR 92，内页，域名 13.4 年） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 160，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 30 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 amicroempresa.com（DR 0，内页））；目录/收录型外链为主时约 90–220 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "как скачать видео с сайта озон",
+      "score": 30,
+      "gefeiKD": 30,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 220
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 30 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 infograffer.com（DR 14，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489288,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 30/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 8 名 infograffer.com，难度贡献仅 6.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7 个高 DR 大站（qna.habr.com、rutube.ru、seller-edu.ozon.ru、otvet.mail.ru、youtube.com、rutube.ru、t.me）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 8 名 infograffer.com DR 仅 14，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（24/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-6）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 30 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 infograffer.com（DR 14，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 90–220 个。对应的域名权重量级约为 DR 23。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "gesture synth weld vercel",
+      "score": 29.8,
+      "gefeiKD": 29.8,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 29.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 gesturesynth.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785308567,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 29.8/100（容易）。",
+        "前 10 名中有 2 个首页排名（gesture-synth-weld.vercel.app、gesturesynth.com），首页平均站点强度 47/100。",
+        "首页打内页：第 3 名 gesturesynth.com（DR 0，首页）排在了 DR 更高的内页第 4 名 higgsfield.ai（DR 78）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "5 个高 DR 大站（instagram.com、higgsfield.ai、instagram.com、instagram.com、instagram.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中有 2 个注册不满 18 个月的新域名（gesturesynth.com 1 个月、lovableapp.org 11 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 3 名 gesturesynth.com（DR 0，首页排名）证明弱站可进前十。它注册仅约 1 个月就排到第 3 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 29.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 gesturesynth.com（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 90–210 个。对应的域名权重量级约为 DR 23。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "maganghub tracker",
+      "score": 29.8,
+      "gefeiKD": 29.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 36.7,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 29.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lokerai.web.id（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489038,
+      "reasons": [
+        "品牌词口径：难度估算为 29.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 36.7/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（instagram.com、facebook.com）。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 3 个：第 1 名 lokerai.web.id（DR 0，首页，域名 8 个月，月流量 2430，此词正是其主力流量词）、第 4 名 kemnaker.go.id（DR 78，内页，域名 10.5 年，月流量 630.6 万，此词正是其主力流量词）、第 7 名 bantuan.kemnaker.go.id（DR 78，内页，域名 10.5 年，月流量 25.8 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 29.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lokerai.web.id（DR 0））；目录/收录型外链为主时约 90–210 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "poe dust calc",
+      "score": 28.8,
+      "gefeiKD": 28.8,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 25.8,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 50
+        },
+        "directory": {
+          "low": 85,
+          "mid": 140,
+          "high": 210
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 50,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 faustus.shop（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488744,
+      "reasons": [
+        "品牌词口径：难度估算为 28.8/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 25.8/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、facebook.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 7 个：第 2 名 aoeah.com（DR 53，内页，域名 9.3 年，月流量 153.1 万）、第 3 名 poe-disenchant-tool.vercel.app（DR 93，内页，域名 6.5 年，月流量 4010，此词正是其主力流量词）、第 4 名 faustus.shop（DR 0，内页，月流量 1666）、第 5 名 gist.github.com（DR 97，内页，域名 18.8 年，月流量 1378.0 万）、第 8 名 poestash.com（DR 0，内页，域名 2 年，月流量 2.3 万）、第 9 名 topstone.webflow.io（DR 92，内页）、第 10 名 pathofexile.com（DR 75，内页，域名 18.9 年，月流量 4302.8 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 25–50 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 28.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 faustus.shop（DR 0，内页））；目录/收录型外链为主时约 85–210 个。对应域名权重量级约 DR 23。"
+      ]
+    },
+    {
+      "keyword": "hero siege page 13",
+      "score": 28.1,
+      "gefeiKD": 28.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 23,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 50
+        },
+        "directory": {
+          "low": 85,
+          "mid": 130,
+          "high": 200
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 50,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 28.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 fandomwire.com（DR 71，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489267,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 28.1/100（容易）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 fandomwire.com，难度贡献仅 32.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "8 个高 DR 大站（youtube.com、hero-siege-helper.vercel.app、steamcommunity.com、reddit.com、youtube.com、herosiege.fandom.com、fandomwire.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 57秒、跳出率 64% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 25–50 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 28.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 fandomwire.com（DR 71，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 85–200 个。对应的域名权重量级约为 DR 23。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "弥生給与 ダウンロード",
+      "score": 27.2,
+      "gefeiKD": 27.2,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 22,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 50
+        },
+        "directory": {
+          "low": 80,
+          "mid": 130,
+          "high": 190
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 50,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 27.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 nice-system.co.jp（DR 16，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785389953,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 27.2/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 nice-system.co.jp，难度贡献仅 8）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "5 个高 DR 大站（support.yayoi-kk.co.jp、yayoi-kk.co.jp、youtube.com、yayoi-kk.co.jp、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 7 名 nice-system.co.jp DR 仅 16，弱站已能进前十（位次靠后，信号打折）。注意它的体验分在前十中排前列（67/100，停留 4分46秒、跳出 45%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-4）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–50 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 27.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 nice-system.co.jp（DR 16，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 80–190 个。对应的域名权重量级约为 DR 22。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "pantauloker",
+      "score": 26.5,
+      "gefeiKD": 26.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 22,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 80,
+          "mid": 120,
+          "high": 190
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 26.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bantukerja.com（DR 3）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313160,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 26.5/100（容易）。",
+        "前 9 名中有 4 个首页排名（bantukerja.com、tallo.com、toptal.com、talenthub.swagelok.co.id），首页平均站点强度 36/100。",
+        "4 个高 DR 大站（instagram.com、x.com、instagram.com、instagram.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 5 名 bantukerja.com（DR 3，首页排名）证明弱站可进前十。注意它的体验分在前十中排前列（67/100，停留 1分57秒、跳出 32%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 26.5 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 bantukerja.com（DR 3））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 80–190 个。对应的域名权重量级约为 DR 22。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "competence lab",
+      "score": 26.3,
+      "gefeiKD": 26.3,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 37.1,
+      "keywordVolume": 0,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 22,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 75,
+          "mid": 120,
+          "high": 180
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 26.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 competencelab.co.za（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313412,
+      "reasons": [
+        "品牌词口径：难度估算为 26.3/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 37.1/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 2 个固定位）后，可竞争位仅 7 个：第 1 名 competencelab.co.za（DR 0，首页，域名 15.2 年，月流量 219，此词正是其主力流量词）、第 3 名 za.linkedin.com（DR 99，内页，域名 23.7 年，月流量 313.4 万）、第 4 名 competencylab.ca（DR 7，首页，域名 3.9 年，此词正是其主力流量词）、第 5 名 extranet.who.int（DR 93，内页，域名 28.1 年，月流量 22.5 万）、第 6 名 sites.google.com（DR 99，内页，域名 28.9 年，月流量 2.2 亿）、第 7 名 neas.com.au（DR 11，内页，月流量 3728）、第 9 名 vastian.com（DR 51，内页，域名 8.4 年，月流量 4.6 万） —— 这些才是衍生内容真正要对位的对手。",
+        "该词月搜索量约 无数据，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 26.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 competencelab.co.za（DR 0））；目录/收录型外链为主时约 75–180 个。对应域名权重量级约 DR 22。"
+      ]
+    },
+    {
+      "keyword": "hoopheads",
+      "score": 26,
+      "gefeiKD": 26,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 22,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 75,
+          "mid": 120,
+          "high": 180
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 26 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hoopheadspod.com（DR 30）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312920,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 26/100（容易）。",
+        "内容真空信号：第 3 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 10 名中有 3 个首页排名（hoopheads.vercel.app、hoopheadspod.com、hoop-heads.captivate.fm），首页平均站点强度 58/100。",
+        "首页打内页：第 2 名 hoopheadspod.com（域名直拼关键词、DR 30，首页）排在了 DR 更高的内页第 4 名 podcasts.apple.com（DR 97）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "同类内部排序：这几个 EMD 首页（第 1 名 hoopheads.vercel.app（DR 93）、第 2 名 hoopheadspod.com（DR 30）、第 8 名 hoop-heads.captivate.fm（DR 85））共享「首页打内页」结构加成，彼此之间基本按 DR 排——第 1 名 hoopheads.vercel.app DR 93 领跑，第 8 名 hoop-heads.captivate.fm DR 仅 85 靠后。同为聚焦首页时，页面做得更满也顶不过 DR 差距：页面质量是入场门票，DR 与页面级外链才是排位器。",
+        "3 个高 DR 大站（podcasts.apple.com、facebook.com、open.spotify.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 7 名 givewithhoops.com DR 仅 2，弱站已能进前十（位次靠后，信号打折）。且其体验分垫底（28/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）（域名注册仅约 10 个月、位次靠后且流量未承接，蜜月期排名风险较高）。（-6）",
+        "第 2 名 hoopheadspod.com（DR 30）是低 DR 站点的首页排名，小站靠首页就能排进来。（-7）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 26 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 hoopheadspod.com（DR 30））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 75–180 个。对应的域名权重量级约为 DR 22。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "herramientas pokemon idle world",
+      "score": 24.7,
+      "gefeiKD": 24.7,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 24.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 poke.idleworld.online（DR 20）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313150,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 24.7/100（容易）。",
+        "内容真空信号：第 6 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置。（-4）",
+        "前 9 名中有 1 个首页排名（poke.idleworld.online），首页平均站点强度 21/100。",
+        "首页打内页：第 4 名 poke.idleworld.online（DR 20，首页）排在了 DR 更高的内页第 7 名 0xunivers.itch.io（DR 92）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "8 个高 DR 大站（youtube.com、youtube.com、youtube.com、youtube.com、reddit.com、0xunivers.itch.io、youtube.com、play.google.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 4 名 poke.idleworld.online（DR 20，首页排名）证明弱站可进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 24.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 poke.idleworld.online（DR 20））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "seneago",
+      "score": 24.6,
+      "gefeiKD": 24.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 24.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 ri.saneago.com.br（DR 49）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312989,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 24.6/100（容易）。",
+        "前 9 名中有 2 个首页排名（ri.saneago.com.br、gosaneago2025.vercel.app），首页平均站点强度 65/100。",
+        "首页打内页：第 2 名 ri.saneago.com.br（DR 49，首页）排在了 DR 更高的内页第 3 名 fitchratings.com（DR 84）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个高 DR 大站（play.google.com、fitchratings.com、facebook.com、apps.apple.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 4 名 go.gov.br DR 仅 15，弱站已能进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 24.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 ri.saneago.com.br（DR 49））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "핀볼 룰렛",
+      "score": 24.6,
+      "gefeiKD": 24.6,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 24.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 bluedell.com（DR 4，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488769,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 24.6/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 edubeige.com，难度贡献仅 7.6）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7 个高 DR 大站（lazygyu.github.io、blog.naver.com、namu.wiki、brunch.co.kr、jooji815.tistory.com、blog.naver.com、lecos.tistory.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 4 名 bluedell.com DR 仅 4，弱站已能进前十。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 24.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 bluedell.com（DR 4，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "simulador del mundial 2022",
+      "score": 23.7,
+      "gefeiKD": 23.7,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 qatar-worldcup-simulator.vercel.app（DR 93）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488863,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 23.7/100（容易）。",
+        "前 10 名中有 1 个首页排名（qatar-worldcup-simulator.vercel.app），首页平均站点强度 60/100。",
+        "4 个高 DR 大站（especiales2.cooperativa.cl、play.fifa.com、play.google.com、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中有 2 个注册不满 18 个月的新域名（zonamundial.app 5 个月、dataredonda.com 16 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 6 名 zonamundial.app DR 仅 4，弱站已能进前十。它注册仅约 5 个月就排到第 6 名、月流量已达 43.0 万—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.7 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 qatar-worldcup-simulator.vercel.app（DR 93））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–160 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "zeroscript",
+      "score": 23.1,
+      "gefeiKD": 23.1,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 36.4,
+      "keywordVolume": 450,
+      "keywordTrend": {
+        "ratio": 0.5333333333333333,
+        "estimatedValue": 240,
+        "volume": 450,
+        "domain": "zeroscript.org"
+      },
+      "linkBudget": {
+        "targetDr": 20,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 65,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 zero-script.tebex.io（DR 86）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313070,
+      "reasons": [
+        "品牌词口径：难度估算为 23.1/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 36.4/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（github.com、youtube.com），且 zeroscript.org 与关键词同名。",
+        "剔除品牌本尊与平台生态页（共 5 个固定位）后，可竞争位仅 5 个：第 4 名 rylan.io（DR 10，内页，域名 9.7 年）、第 6 名 zero-script.tebex.io（DR 86，首页，域名 10.1 年，月流量 1274）、第 8 名 zerclaim.com（DR 0，首页，域名 2 个月）、第 9 名 patreon.com（DR 93，内页，域名 13.4 年，月流量 1.4 亿）、第 10 名 zeroscriptz.com（DR 1，首页，域名 7 个月） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "该词月搜索量约 450，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 zero-script.tebex.io（DR 86））；目录/收录型外链为主时约 65–160 个。对应域名权重量级约 DR 20。"
+      ]
+    },
+    {
+      "keyword": "изменение размера изображения онлайн без потери качества",
+      "score": 22.3,
+      "gefeiKD": 22.3,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 20,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 65,
+          "mid": 100,
+          "high": 150
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 22.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 batchtools.pro（DR 31，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313478,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 22.3/100（容易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 5 名 bootstraptema.ru，难度贡献仅 18）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 22.3 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 batchtools.pro（DR 31，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 65–150 个。对应的域名权重量级约为 DR 20。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "iom archaeology",
+      "score": 19.8,
+      "gefeiKD": 19.8,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 20,
+          "high": 35
+        },
+        "directory": {
+          "low": 55,
+          "mid": 85,
+          "high": 130
+        },
+        "low": 15,
+        "mid": 20,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 19.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 iaoceania.com（DR 13）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785488814,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 19.8/100（极易）。",
+        "Google 认可信号：第 1 名 shminer.miraheze.org 带 sitelinks —— 这不构成品牌词证据（mini sitelinks 任何高匹配度结果都可触发），但说明 Google 已认可其与该词的匹配度，这些占位比单看权重数据更稳固。反过来看，这也验证了聚焦经营此词能赢得 Google 认可，对后来者是打法可行性的旁证。（+2）",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 8 名中有 5 个首页排名（archaeological.org、isleofmanher.im、iaoceania.com、nauticalarch.org、issarchaeology.org），首页平均站点强度 28/100。",
+        "首页打内页：第 3 名 isleofmanher.im（DR 19，首页）排在了 DR 更高的内页第 8 名 manxnationalheritage.im（DR 60）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "第 3 名 isleofmanher.im（DR 19，首页排名）证明弱站可进前十。且其体验分垫底（28/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 5 个位置被专门站点的首页占据，虽然个体都不强，但赛道已经拥挤 —— 新站进场即是第 6 个正面竞争者，需要在内容/产品/外链上至少挤掉其中一个。（+4）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 20，按 Ahrefs 官方 KD→引用域曲线由难度分 19.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 iaoceania.com（DR 13））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 55–130 个。对应的域名权重量级约为 DR 19。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "awsome arcade",
+      "score": 14.3,
+      "gefeiKD": 14.3,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 15,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 25
+        },
+        "directory": {
+          "low": 40,
+          "mid": 60,
+          "high": 90
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 25,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 14.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 awesomearcades.com（DR 10）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785312985,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 14.3/100（极易）。",
+        "前 9 名中有 2 个首页排名（awesome-arcade.vercel.app、awesomearcades.com），首页平均站点强度 37/100。",
+        "首页打内页：第 2 名 awesomearcades.com（DR 10，首页）排在了 DR 更高的内页第 9 名 yelp.com（DR 94）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个高 DR 大站（youtube.com、facebook.com、youtube.com、yelp.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 55秒、跳出率 64% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "第 2 名 awesomearcades.com（DR 10，首页排名）证明弱站可进前十。且其体验分垫底（7/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–25 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 14.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 awesomearcades.com（DR 10））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 40–90 个。对应的域名权重量级约为 DR 15。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "курсоры для роблокс",
+      "score": 14.3,
+      "gefeiKD": 14.3,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 15,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 25
+        },
+        "directory": {
+          "low": 40,
+          "mid": 60,
+          "high": 90
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 25,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 14.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cursors.dev（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134173,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 14.3/100（极易）。",
+        "内容真空信号：第 8 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置。（-4）",
+        "前 9 名中有 1 个首页排名（cursors.dev），首页平均站点强度 16/100。",
+        "首页打内页：第 3 名 cursors.dev（DR 0，首页）排在了 DR 更高的内页第 4 名 streamlinehq.com（DR 79）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "5 个高 DR 大站（youtube.com、streamlinehq.com、tiktok.com、youtube.com、reddit.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 3 名 cursors.dev（DR 0，首页排名）证明弱站可进前十。且其体验分垫底（8/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。它注册仅约 5 个月就排到第 3 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–25 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 14.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 cursors.dev（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 40–90 个。对应的域名权重量级约为 DR 15。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "こえはかる",
+      "score": 12.6,
+      "gefeiKD": 12.6,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 14,
+        "quality": {
+          "low": 10,
+          "mid": 15,
+          "high": 20
+        },
+        "directory": {
+          "low": 35,
+          "mid": 50,
+          "high": 80
+        },
+        "low": 10,
+        "mid": 15,
+        "high": 20,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 12.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 geq.onl.jp（DR 44）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785133616,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 12.6/100（极易）。",
+        "前 9 名中有 2 个首页排名（geq.onl.jp、noise-level-eight.vercel.app），首页平均站点强度 48/100。",
+        "首页打内页：第 1 名 geq.onl.jp（DR 44，首页）排在了 DR 更高的内页第 5 名 amazon.co.jp（DR 93）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "3 个高 DR 大站（play.google.com、amazon.co.jp、search.rakuten.co.jp）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 1分17秒、跳出率 59% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "前十中有 2 个注册不满 18 个月的新域名（sounddecibelmeter.com 16 个月、sounddecibel.com 5 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 3 名 sounddecibelmeter.com DR 仅 3，弱站已能进前十。它注册仅约 16 个月就排到第 3 名、月流量已达 20.9 万—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 10–20 个引用域（中值 15，按 Ahrefs 官方 KD→引用域曲线由难度分 12.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 geq.onl.jp（DR 44））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 35–80 个。对应的域名权重量级约为 DR 14。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "lunaranime",
+      "score": 8,
+      "gefeiKD": 8,
+      "level": "极易",
+      "keywordType": "brand",
+      "genericScore": 23.1,
+      "keywordVolume": 13340,
+      "keywordTrend": {
+        "ratio": 1.787856071964018,
+        "estimatedValue": 23850,
+        "volume": 13340,
+        "domain": "lunaranime.ru"
+      },
+      "linkBudget": {
+        "targetDr": 9,
+        "quality": {
+          "low": 5,
+          "mid": 10,
+          "high": 10
+        },
+        "directory": {
+          "low": 20,
+          "mid": 30,
+          "high": 50
+        },
+        "low": 5,
+        "mid": 10,
+        "high": 10,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lunaranime.lat（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785134423,
+      "reasons": [
+        "品牌词口径：难度估算为 8/100（极易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 23.1/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 lunaranime.ru 是与关键词同名的官方域名首页，lunaranime.ru 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 2 个平台型结果（youtube.com、reddit.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 1 个：第 4 名 lunaranime.lat（DR 0，首页，月流量 1658，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。",
+        "趋势信号：lunaranime.ru 当月从该词获得约 2.4 万 流量，超过该词 12 个月平均搜索量（1.3 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 1.3 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 5–10 个引用域（中值 10，按 Ahrefs 官方 KD→引用域曲线由难度分 8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 lunaranime.lat（DR 0））；目录/收录型外链为主时约 20–50 个。对应域名权重量级约 DR 9。"
+      ]
+    },
+    {
+      "keyword": "country draw",
+      "score": 7.8,
+      "gefeiKD": 7.8,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 9,
+        "quality": {
+          "low": 5,
+          "mid": 10,
+          "high": 10
+        },
+        "directory": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "low": 5,
+        "mid": 10,
+        "high": 10,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 7.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 drawtheflag.com（DR 0）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785079343,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 7.8/100（极易）。",
+        "前 8 名中有 3 个首页排名（drawthecountry.app、mapster.teuteuf.fr、drawtheflag.com），首页平均站点强度 32/100。",
+        "首页打内页：第 1 名 drawthecountry.app（DR 36，首页）排在了 DR 更高的内页第 2 名 mapchart.net（DR 67）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个结果是专门为这个词制作的页面（标题或主力流量词命中），存在明显正面争夺。（+6）",
+        "前十中有 3 个注册不满 18 个月的新域名（drawthecountry.app 10 个月、drawtheflag.com 8 个月、playlin.io 12 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 3 名 geographygames.net DR 仅 8，弱站已能进前十。且其体验分垫底（28/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "第 1 名 drawthecountry.app（DR 36）是低 DR 站点的首页排名，小站靠首页就能排进来。且其体验分垫底（17/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。它注册仅约 10 个月就排到第 1 名—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-9）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–10 个引用域（中值 10，按 Ahrefs 官方 KD→引用域曲线由难度分 7.8 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 drawtheflag.com（DR 0））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 20–45 个。对应的域名权重量级约为 DR 9。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "светодиодная лампа освещения вхолодильнике атлант горит в полнакала причины",
+      "score": 6.2,
+      "gefeiKD": 6.2,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 6,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 10
+        },
+        "directory": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 10,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 6.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 pinsk.remont-holodilnik.by（DR 1，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489276,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 6.2/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 pinsk.remont-holodilnik.by，难度贡献仅 0.2）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "第 3 名 pinsk.remont-holodilnik.by DR 仅 1，弱站已能进前十。（-8）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–10 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 6.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 pinsk.remont-holodilnik.by（DR 1，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 15–35 个。对应的域名权重量级约为 DR 6。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "1с ут печатная форма м15",
+      "score": 4.7,
+      "gefeiKD": 4.7,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 5,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 5
+        },
+        "directory": {
+          "low": 10,
+          "mid": 20,
+          "high": 30
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 5,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 4.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 1cget.ru（DR 0，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489256,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 4.7/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 3 名 specportal.pro，难度贡献仅 3.9）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "第 2 名 1cget.ru DR 仅 0，弱站已能进前十。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–5 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 4.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 1cget.ru（DR 0，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 10–30 个。对应的域名权重量级约为 DR 5。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "1с индикатор управляемые формы",
+      "score": 3.1,
+      "gefeiKD": 3.1,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 5,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 5
+        },
+        "directory": {
+          "low": 10,
+          "mid": 10,
+          "high": 20
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 5,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 3.1 插值（该口径为进入前十所需）。前十唯一首页 forum-baza.ru（DR 9）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785489284,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 3.1/100（极易）。",
+        "前 10 名中有 2 个首页排名（forum-baza.ru、pro1c.org.ua），首页平均站点强度 24/100。",
+        "首页打内页：第 7 名 forum-baza.ru（DR 9，首页）排在了 DR 更高的内页第 8 名 infostart.ru（DR 70）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "4 个高 DR 大站（forum.infostart.ru、youtube.com、infostart.ru、youtube.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "盘面体验脆弱：前十站点的用户行为中位数仅为停留 33秒、跳出率 57% —— 占位者普遍没有满足用户，体验过硬的产品可以凭行为数据反超，即使 DR 更低、域名更年轻。（-4）",
+        "第 4 名 xn--90acbu5aj5f.xn--p1ai DR 仅 14，弱站已能进前十。注意它的体验分在前十中排前列（62/100，停留 33秒、跳出 38%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-8）",
+        "第 7 名 forum-baza.ru（DR 9）是低 DR 站点的首页排名，小站靠首页就能排进来（位次靠后，信号打折）。且其体验分垫底（19/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-6）",
+        "前十中 10 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–5 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 3.1 插值（该口径为进入前十所需）。前十唯一首页 forum-baza.ru（DR 9）位次靠后且 DR 极低，疑似蜜月期临时排名，不作为门槛参照）。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 10–20 个。对应的域名权重量级约为 DR 5。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "熱中症 連絡 体制 表 エクセル",
+      "score": 2.6,
+      "gefeiKD": 2.6,
+      "level": "极易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 5,
+        "quality": {
+          "low": 5,
+          "mid": 5,
+          "high": 5
+        },
+        "directory": {
+          "low": 5,
+          "mid": 10,
+          "high": 15
+        },
+        "low": 5,
+        "mid": 5,
+        "high": 5,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 2.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 kasetsuzai.com（DR 1，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785313242,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 2.6/100（极易）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 4 名 kasetsuzai.com，难度贡献仅 3.5）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "第 1 名 akita-rouki.jp DR 仅 19，弱站已能进前十。注意它的体验分在前十中排前列（83/100，停留 3分31秒、跳出 35%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-8）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 5–5 个引用域（中值 5，按 Ahrefs 官方 KD→引用域曲线由难度分 2.6 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 kasetsuzai.com（DR 1，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 5–15 个。对应的域名权重量级约为 DR 5。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-07-31T17:31:29",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sub-domain/_internal/chained/20260731-170512/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 82,
+        "requestCount": 82,
+        "successCount": 82,
+        "successWithScoreCount": 82,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 82
+    },
+    "rows": [
+      {
+        "keyword": "biglobe メール",
+        "correspondingDomain": "https://biglobemailsjp.vercel.app/",
+        "score": 16701.894737,
+        "simWindowVolume": 396670.0,
+        "simKd": 38.0,
+        "simCpc": 1.6,
+        "semVolume": 135710.0,
+        "semKd": 50.0,
+        "semCpc": 0.0,
+        "gefeiKD": 90.7,
+        "group": "biglobe メール",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "streamx",
+        "correspondingDomain": "https://streamx-xi.vercel.app/?category=tv",
+        "score": 14199.649123,
+        "simWindowVolume": 809380.0,
+        "simKd": 57.0,
+        "simCpc": 1.0,
+        "semVolume": 94060.0,
+        "semKd": 45.0,
+        "semCpc": 0.57,
+        "gefeiKD": 36.8,
+        "group": "streamx",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "misumi",
+        "correspondingDomain": "https://order-web-jp.vercel.app/",
+        "score": 8745.788235,
+        "simWindowVolume": 232310.0,
+        "simKd": 34.0,
+        "simCpc": 1.28,
+        "semVolume": 344890.0,
+        "semKd": 58.0,
+        "semCpc": 3.86,
+        "gefeiKD": 48.5,
+        "group": "misumi",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "moviedex",
+        "correspondingDomain": "https://moviedex-client.vercel.app/",
+        "score": 4200.763636,
+        "simWindowVolume": 330060.0,
+        "simKd": 55.0,
+        "simCpc": 0.7,
+        "semVolume": 21130.0,
+        "semKd": 30.0,
+        "semCpc": 0.88,
+        "gefeiKD": 34,
+        "group": "moviedex",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "cote",
+        "correspondingDomain": "https://cote-nyc.vercel.app/",
+        "score": 4181.192593,
+        "simWindowVolume": 131270.0,
+        "simKd": 54.0,
+        "simCpc": 1.72,
+        "semVolume": 139130.0,
+        "semKd": 65.0,
+        "semCpc": 3.22,
+        "gefeiKD": 58.2,
+        "group": "cote",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "tmdb",
+        "correspondingDomain": "https://tmdb-pearl.vercel.app/\nhttps://tmdb-clone-sk.vercel.app/",
+        "score": 3906.28,
+        "simWindowVolume": 637760.0,
+        "simKd": 80.0,
+        "simCpc": 0.49,
+        "semVolume": 182910.0,
+        "semKd": 38.0,
+        "semCpc": 0.0,
+        "gefeiKD": 68.4,
+        "group": "tmdb",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "نتيجه الثانويه العامه",
+        "correspondingDomain": "https://nategaeg.vercel.app/",
+        "score": 1742.433333,
+        "simWindowVolume": 80420.0,
+        "simKd": 30.0,
+        "simCpc": 0.65,
+        "semVolume": 77720.0,
+        "semKd": 31.0,
+        "semCpc": 0.0,
+        "gefeiKD": 45.5,
+        "group": "نتيجه الثانويه العامه",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "ragnarok origin classic",
+        "correspondingDomain": "https://ragnarok-origin-classic-fan-blog.vercel.app/",
+        "score": 1557.818182,
+        "simWindowVolume": 244800.0,
+        "simKd": 55.0,
+        "simCpc": 0.35,
+        "semVolume": 22180.0,
+        "semKd": 31.0,
+        "semCpc": 5.7,
+        "gefeiKD": 40.5,
+        "group": "ragnarok origin classic",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "connections answers today",
+        "correspondingDomain": "https://connectionsanswer.vercel.app/",
+        "score": 839.17551,
+        "simWindowVolume": 120940.0,
+        "simKd": 49.0,
+        "simCpc": 0.34,
+        "semVolume": 165380.0,
+        "semKd": 72.0,
+        "semCpc": 0.01,
+        "gefeiKD": 57.3,
+        "group": "connections answers today",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "arkos",
+        "correspondingDomain": "https://arkos-studio.vercel.app/",
+        "score": 436.268182,
+        "simWindowVolume": 24610.0,
+        "simKd": 44.0,
+        "simCpc": 0.78,
+        "semVolume": 29110.0,
+        "semKd": 58.0,
+        "semCpc": 0.0,
+        "gefeiKD": 48.7,
+        "group": "arkos",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "karar çarkı",
+        "correspondingDomain": "https://karar-carki.vercel.app/",
+        "score": 80.07619,
+        "simWindowVolume": 21020.0,
+        "simKd": 63.0,
+        "simCpc": 0.24,
+        "semVolume": 28170.0,
+        "semKd": 22.0,
+        "semCpc": 0.0,
+        "gefeiKD": 58.1,
+        "group": "karar çarkı",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "럭키글라이드",
+        "correspondingDomain": "https://luckyglide.vercel.app/",
+        "score": 40.32,
+        "simWindowVolume": 3080.0,
+        "simKd": 55.0,
+        "simCpc": 0.72,
+        "semVolume": 160.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 59.4,
+        "group": "럭키글라이드",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "seneago",
+        "correspondingDomain": "https://gosaneago2025.vercel.app/",
+        "score": 4.946809,
+        "simWindowVolume": 250.0,
+        "simKd": 47.0,
+        "simCpc": 0.93,
+        "semVolume": 2480.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 24.6,
+        "group": "seneago",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "spidey universe",
+        "correspondingDomain": "https://spidyuniverserwa.vercel.app/\nhttps://spidyway.vercel.app/",
+        "score": null,
+        "simWindowVolume": 16740.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 35950.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 37.4,
+        "group": "spidey universe",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "criterion closet",
+        "correspondingDomain": "https://the-criterion-closet.vercel.app/",
+        "score": null,
+        "simWindowVolume": 45100.0,
+        "simKd": 35.0,
+        "simCpc": 0.0,
+        "semVolume": 11560.0,
+        "semKd": 64.0,
+        "semCpc": 0.0,
+        "gefeiKD": 60.6,
+        "group": "criterion closet",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "enchantment calculator",
+        "correspondingDomain": "https://minecraft-enchantment-order.vercel.app/",
+        "score": null,
+        "simWindowVolume": 13900.0,
+        "simKd": 38.0,
+        "simCpc": 0.0,
+        "semVolume": 6660.0,
+        "semKd": 30.0,
+        "semCpc": 0.0,
+        "gefeiKD": 44.1,
+        "group": "enchantment calculator",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "vega app",
+        "correspondingDomain": "https://vegaapp.vercel.app/",
+        "score": null,
+        "simWindowVolume": 11530.0,
+        "simKd": 51.0,
+        "simCpc": 0.0,
+        "semVolume": 3370.0,
+        "semKd": 39.0,
+        "semCpc": 0.0,
+        "gefeiKD": 59.7,
+        "group": "vega app",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "lunaranime",
+        "correspondingDomain": "https://lunar-zeta.vercel.app/",
+        "score": null,
+        "simWindowVolume": 35510.0,
+        "simKd": 0.0,
+        "simCpc": 0.43,
+        "semVolume": 2020.0,
+        "semKd": 20.0,
+        "semCpc": 0.0,
+        "gefeiKD": 8,
+        "group": "lunaranime",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "spam challenge list",
+        "correspondingDomain": "https://scl.vercel.app/",
+        "score": null,
+        "simWindowVolume": 6770.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 1850.0,
+        "semKd": 25.0,
+        "semCpc": 0.0,
+        "gefeiKD": 87.3,
+        "group": "spam challenge list",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "country draw",
+        "correspondingDomain": "https://country-draw.vercel.app/",
+        "score": null,
+        "simWindowVolume": 43080.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 1820.0,
+        "semKd": 42.0,
+        "semCpc": 0.0,
+        "gefeiKD": 7.8,
+        "group": "country draw",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "ffxiv weather",
+        "correspondingDomain": "https://eorzea-weather.vercel.app/",
+        "score": null,
+        "simWindowVolume": 830.0,
+        "simKd": 3.0,
+        "simCpc": 0.0,
+        "semVolume": 1790.0,
+        "semKd": 15.0,
+        "semCpc": 0.0,
+        "gefeiKD": 32.9,
+        "group": "ffxiv weather",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "роблокс войти",
+        "correspondingDomain": "https://roblox-login-orpin.vercel.app/",
+        "score": null,
+        "simWindowVolume": 720.0,
+        "simKd": 88.0,
+        "simCpc": 0.0,
+        "semVolume": 1710.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 81.2,
+        "group": "роблокс войти",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "watchwave",
+        "correspondingDomain": "https://watch-wave-beta.vercel.app/",
+        "score": null,
+        "simWindowVolume": 5800.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 1420.0,
+        "semKd": 21.0,
+        "semCpc": 0.0,
+        "gefeiKD": 45.8,
+        "group": "watchwave",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "paladins tracker",
+        "correspondingDomain": "https://paladins-data.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1270.0,
+        "simKd": 5.0,
+        "simCpc": 0.0,
+        "semVolume": 1110.0,
+        "semKd": 21.0,
+        "semCpc": 0.0,
+        "gefeiKD": 38.4,
+        "group": "paladins tracker",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "filmhaven",
+        "correspondingDomain": "https://film-haven.vercel.app/",
+        "score": null,
+        "simWindowVolume": 3050.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 950.0,
+        "semKd": 12.0,
+        "semCpc": 0.0,
+        "gefeiKD": 47,
+        "group": "filmhaven",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "作戦室",
+        "correspondingDomain": "https://jervis.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1310.0,
+        "simKd": 25.0,
+        "simCpc": 0.0,
+        "semVolume": 880.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 43.7,
+        "group": "作戦室",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "amicro",
+        "correspondingDomain": "https://amicro.vercel.app/",
+        "score": null,
+        "simWindowVolume": 3010.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 760.0,
+        "semKd": 18.0,
+        "semCpc": 0.0,
+        "gefeiKD": 30,
+        "group": "amicro",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "12axes",
+        "correspondingDomain": "https://12axes.vercel.app/en",
+        "score": null,
+        "simWindowVolume": 8900.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 560.0,
+        "semKd": 28.0,
+        "semCpc": 0.0,
+        "gefeiKD": 44.1,
+        "group": "12axes",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "生フェス",
+        "correspondingDomain": "https://namafes2026.vercel.app/",
+        "score": null,
+        "simWindowVolume": 5810.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 480.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 45,
+        "group": "生フェス",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "prompt splitter",
+        "correspondingDomain": "https://chatgpt-prompt-splitter.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1300.0,
+        "simKd": 10.0,
+        "simCpc": 0.0,
+        "semVolume": 450.0,
+        "semKd": 12.0,
+        "semCpc": 0.0,
+        "gefeiKD": 46.4,
+        "group": "prompt splitter",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "oaken tower builds",
+        "correspondingDomain": "https://oaken-tower-builders-hub.vercel.app/",
+        "score": null,
+        "simWindowVolume": 3640.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 390.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 43.3,
+        "group": "oaken tower builds",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "弥生給与 ダウンロード",
+        "correspondingDomain": "https://yayoi-migration-checker.vercel.app/guide",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 390.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 27.2,
+        "group": "弥生給与 ダウンロード",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "denouement demon list",
+        "correspondingDomain": "https://denouementdl.vercel.app/",
+        "score": null,
+        "simWindowVolume": 800.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 380.0,
+        "semKd": 24.0,
+        "semCpc": 0.0,
+        "gefeiKD": 47.8,
+        "group": "denouement demon list",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "simulador del mundial 2022",
+        "correspondingDomain": "https://qatar-worldcup-simulator.vercel.app/",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 340.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 23.7,
+        "group": "simulador del mundial 2022",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "clipforge",
+        "correspondingDomain": "https://clipforge.vercel.app/",
+        "score": null,
+        "simWindowVolume": 15180.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 300.0,
+        "semKd": null,
+        "semCpc": 1.21,
+        "gefeiKD": 34.8,
+        "group": "clipforge",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "avatar guesser",
+        "correspondingDomain": "https://avatarguesser.vercel.app/avatar",
+        "score": null,
+        "simWindowVolume": 2520.0,
+        "simKd": 21.0,
+        "simCpc": 0.0,
+        "semVolume": 280.0,
+        "semKd": 15.0,
+        "semCpc": 0.0,
+        "gefeiKD": 38.4,
+        "group": "avatar guesser",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "hoopheads",
+        "correspondingDomain": "https://hoopheads.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1250.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 230.0,
+        "semKd": 28.0,
+        "semCpc": 0.0,
+        "gefeiKD": 26,
+        "group": "hoopheads",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "fire emblem wordle",
+        "correspondingDomain": "https://fire-guesser.vercel.app/",
+        "score": null,
+        "simWindowVolume": 3880.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 210.0,
+        "semKd": 19.0,
+        "semCpc": 0.0,
+        "gefeiKD": 53.5,
+        "group": "fire emblem wordle",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "competence lab",
+        "correspondingDomain": "https://eva-rouge-zeta.vercel.app/login",
+        "score": null,
+        "simWindowVolume": 2580.0,
+        "simKd": 0.0,
+        "simCpc": 0.55,
+        "semVolume": 110.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 26.3,
+        "group": "competence lab",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "maganghub tracker",
+        "correspondingDomain": "https://maganghub-tracker-tau.vercel.app/",
+        "score": null,
+        "simWindowVolume": 14770.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 90.0,
+        "semKd": 18.0,
+        "semCpc": 0.0,
+        "gefeiKD": 29.8,
+        "group": "maganghub tracker",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "핀볼 룰렛",
+        "correspondingDomain": "https://soop-pinball.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1190.0,
+        "simKd": 0.0,
+        "simCpc": 1.14,
+        "semVolume": 80.0,
+        "semKd": 60.0,
+        "semCpc": 0.0,
+        "gefeiKD": 24.6,
+        "group": "핀볼 룰렛",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "курсоры для роблокс",
+        "correspondingDomain": "https://cursor-x.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1060.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 60.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 14.3,
+        "group": "курсоры для роблокс",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "bac story",
+        "correspondingDomain": "https://bacstory.vercel.app/\nhttps://bacstory.vercel.app/oqba\nhttps://bacstory.vercel.app/simulation\nhttps://bacstory.vercel.app/orientation\nhttps://bacstory.vercel.app/university/speciality/ensc\nhttps://bacstory.vercel.app/resources\nhttps://bacstory.vercel.app/tools\nhttps://bacstory.vercel.app/advertise\nhttps://bacstory.vercel.app/bac-topics",
+        "score": null,
+        "simWindowVolume": 81450.0,
+        "simKd": 56.0,
+        "simCpc": 0.0,
+        "semVolume": 50.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 47.4,
+        "group": "bac story",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "foto unsa",
+        "correspondingDomain": "https://iloveunsa.vercel.app/",
+        "score": null,
+        "simWindowVolume": 920.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 50.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 52.1,
+        "group": "foto unsa",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "сайт для сравнения мышек",
+        "correspondingDomain": "https://eloshapes.vercel.app/mouse/compare",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 50.0,
+        "semKd": 14.0,
+        "semCpc": 0.0,
+        "gefeiKD": 41.8,
+        "group": "сайт для сравнения мышек",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "pantauloker",
+        "correspondingDomain": "https://pantauloker.vercel.app/",
+        "score": null,
+        "simWindowVolume": 14420.0,
+        "simKd": 0.0,
+        "simCpc": 0.46,
+        "semVolume": 40.0,
+        "semKd": 19.0,
+        "semCpc": 0.0,
+        "gefeiKD": 26.5,
+        "group": "pantauloker",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "lums pro planner",
+        "correspondingDomain": "https://lums-course-scheduler.vercel.app/",
+        "score": null,
+        "simWindowVolume": 22400.0,
+        "simKd": 18.0,
+        "simCpc": 0.0,
+        "semVolume": 30.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 47,
+        "group": "lums pro planner",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "enshrouded wall blocks",
+        "correspondingDomain": "https://enshrouded-blocks.vercel.app/",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 20.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 42.7,
+        "group": "enshrouded wall blocks",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "gesture synth weld vercel",
+        "correspondingDomain": "https://gesture-synth-weld.vercel.app/",
+        "score": null,
+        "simWindowVolume": 41180.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 29.8,
+        "group": "gesture synth weld vercel",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "zeroscript",
+        "correspondingDomain": "https://zeroscript-five.vercel.app/",
+        "score": null,
+        "simWindowVolume": 12310.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 23.1,
+        "group": "zeroscript",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "こえはかる",
+        "correspondingDomain": "https://voice-impression-checker.vercel.app/",
+        "score": null,
+        "simWindowVolume": 10820.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 12.6,
+        "group": "こえはかる",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "learn jh",
+        "correspondingDomain": "https://learnjh.vercel.app/",
+        "score": null,
+        "simWindowVolume": 5900.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 43.7,
+        "group": "learn jh",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "나무위키 스피드런",
+        "correspondingDomain": "https://tree-speed.vercel.app/",
+        "score": null,
+        "simWindowVolume": 4520.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 62.5,
+        "group": "나무위키 스피드런",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "12axes vercel app",
+        "correspondingDomain": "https://12axes.vercel.app/",
+        "score": null,
+        "simWindowVolume": 4170.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 48.4,
+        "group": "12axes vercel app",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "awsome arcade",
+        "correspondingDomain": "https://awesome-arcade.vercel.app/",
+        "score": null,
+        "simWindowVolume": 3300.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 14.3,
+        "group": "awsome arcade",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "gacha message",
+        "correspondingDomain": "https://gacha-message.vercel.app/",
+        "score": null,
+        "simWindowVolume": 2160.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 53.6,
+        "group": "gacha message",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "弗一把",
+        "correspondingDomain": "https://guess-cspro.vercel.app/",
+        "score": null,
+        "simWindowVolume": 2040.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 51.3,
+        "group": "弗一把",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "think of you vercel app",
+        "correspondingDomain": "https://think-of-you.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1640.0,
+        "simKd": 98.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 54.9,
+        "group": "think of you vercel app",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "fe guess",
+        "correspondingDomain": "https://fe-guess.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1440.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 37,
+        "group": "fe guess",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "herramientas pokemon idle world",
+        "correspondingDomain": "https://piwtools.vercel.app/hunt",
+        "score": null,
+        "simWindowVolume": 1310.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 24.7,
+        "group": "herramientas pokemon idle world",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "auto sbc complete multiple sbc's at one time",
+        "correspondingDomain": "https://autopilotsbc.vercel.app/",
+        "score": null,
+        "simWindowVolume": 1170.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 30.7,
+        "group": "auto sbc complete multiple sbc's at one time",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "osu skillset analyzer",
+        "correspondingDomain": "https://osu-skillset-analyzer.vercel.app/",
+        "score": null,
+        "simWindowVolume": 880.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 52.3,
+        "group": "osu skillset analyzer",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "genius annotation maker",
+        "correspondingDomain": "https://lyricscard.vercel.app/",
+        "score": null,
+        "simWindowVolume": 820.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 45.8,
+        "group": "genius annotation maker",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "memento mori calendar fill out",
+        "correspondingDomain": "https://memento-mori-calendar.vercel.app/",
+        "score": null,
+        "simWindowVolume": 690.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 36.1,
+        "group": "memento mori calendar fill out",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "gifting back to the dawn",
+        "correspondingDomain": "https://back-to-the-dawn-data.vercel.app/en/gift",
+        "score": null,
+        "simWindowVolume": 500.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 33.7,
+        "group": "gifting back to the dawn",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "raw-leveldb-viewer",
+        "correspondingDomain": "https://ldb-viewer.vercel.app/",
+        "score": null,
+        "simWindowVolume": 410.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 30.5,
+        "group": "raw-leveldb-viewer",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "twitter aura2 vercel",
+        "correspondingDomain": "https://twitter-aura2.vercel.app/",
+        "score": null,
+        "simWindowVolume": 410.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 71.6,
+        "group": "twitter aura2 vercel",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "올림픽공원 실시간",
+        "correspondingDomain": "https://jamsil.vercel.app/",
+        "score": null,
+        "simWindowVolume": 270.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 41.7,
+        "group": "올림픽공원 실시간",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "1с индикатор управляемые формы",
+        "correspondingDomain": "https://1c-expert.vercel.app/articles/k/ka/kak-sdelat-progress-bar-v-1s.html",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 3.1,
+        "group": "1с индикатор управляемые формы",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "1с ут печатная форма м15",
+        "correspondingDomain": "https://1c-expert.vercel.app/articles/f/fo/forma-m15-gde-v-1s.html",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 4.7,
+        "group": "1с ут печатная форма м15",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "back to the dawn jailbreak quests",
+        "correspondingDomain": "https://back-to-the-dawn-data.vercel.app/en/walkthrough",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 33.5,
+        "group": "back to the dawn jailbreak quests",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "hero siege page 13",
+        "correspondingDomain": "https://hero-siege-helper.vercel.app/quests",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 28.1,
+        "group": "hero siege page 13",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "iom archaeology",
+        "correspondingDomain": "https://iom-arch-optimizer-web.vercel.app/",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 19.8,
+        "group": "iom archaeology",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "mtproto.ru прокси для телеграм список",
+        "correspondingDomain": "https://mtproto-ru.vercel.app/example-other.php",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 31.2,
+        "group": "mtproto.ru прокси для телеграм список",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "poe dust calc",
+        "correspondingDomain": "https://poe-disenchant-tool.vercel.app/allflame",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 28.8,
+        "group": "poe dust calc",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "pokeidle ferramentas",
+        "correspondingDomain": "https://piwtools.vercel.app/",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 40.2,
+        "group": "pokeidle ferramentas",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "wow m  title",
+        "correspondingDomain": "https://mplus-title.vercel.app/mn-season-1",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": 0.0,
+        "gefeiKD": 50.3,
+        "group": "wow m  title",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "дождь канал твич",
+        "correspondingDomain": "https://tvrain.vercel.app/",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 64.7,
+        "group": "дождь канал твич",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "изменение размера изображения онлайн без потери качества",
+        "correspondingDomain": "https://fastfileconvert.vercel.app/ru/tools/image-resizer",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 22.3,
+        "group": "изменение размера изображения онлайн без потери качества",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "как скачать видео с сайта озон",
+        "correspondingDomain": "https://obozone.vercel.app/articles/k/ka/kak-sokhranit-video-s-ozona.html",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 30,
+        "group": "как скачать видео с сайта озон",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "светодиодная лампа освещения вхолодильнике атлант горит в полнакала причины",
+        "correspondingDomain": "https://holodilnik-info.vercel.app/articles/p/po/pochemu-ne-rabotaet-svet-v-kholodilnike-atlant.html",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 6.2,
+        "group": "светодиодная лампа освещения вхолодильнике атлант горит в полнакала причины",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "熱中症 連絡 体制 表 エクセル",
+        "correspondingDomain": "https://heatstroke-navi.vercel.app/articles/heatstroke-reporting-system-template",
+        "score": null,
+        "simWindowVolume": 0.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 2.6,
+        "group": "熱中症 連絡 体制 表 エクセル",
+        "sourcePresence": "both（SIM+SEM）"
+      }
+    ]
+  }
+}

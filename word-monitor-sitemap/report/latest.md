@@ -1,4 +1,4 @@
-# Sitemap 合并监控报告（20260730-140234）
+# Sitemap 合并监控报告（20260801-154641）
 
 ## 摘要
 
@@ -7,15 +7,15 @@
 - 失败站点数：0
 - 成功站点列表：onlinegames_io, playhop_com, suikagame_io, crazygames_com, poki_com, dragganaitool_com, higgsfield_ai, huntifyai_com
 - 失败站点列表：（无）
-- 有效内页总数：133575
-- 新增内页总数：109
-- 移除内页总数：0
+- 有效内页总数：133083
+- 新增内页总数：43
+- 移除内页总数：22
 - 新增路由模式总数：0
-- 新关键词候选总数：20
-- 标准词表行数：20（最终完整词表）
-- SIM 指标完整行数：1
-- SEM 指标完整行数：2
-- gefeiKD 已回填行数：20
+- 新关键词候选总数：13
+- 标准词表行数：13（最终完整词表）
+- SIM 指标完整行数：4
+- SEM 指标完整行数：3
+- gefeiKD 已回填行数：13
 
 ## 失败站点
 
@@ -25,112 +25,62 @@
 
 | siteId | effectiveUrls | patterns | baseline |
 | --- | --- | --- | --- |
-| onlinegames_<wbr>io | 1287 | 16 | 20260729-<wbr>171127 |
-| playhop_<wbr>com | 1 | 1 | 20260729-<wbr>171127 |
-| suikagame_<wbr>io | 2528 | 14 | 20260729-<wbr>171127 |
-| crazygames_<wbr>com | 124465 | 30 | 20260729-<wbr>171127 |
-| poki_<wbr>com | 1641 | 10 | 20260729-<wbr>171127 |
-| dragganaitool_<wbr>com | 1521 | 25 | 20260729-<wbr>171127 |
-| higgsfield_<wbr>ai | 800 | 27 | 20260729-<wbr>171127 |
-| huntifyai_<wbr>com | 1332 | 29 | 20260729-<wbr>171127 |
+| onlinegames_<wbr>io | 1287 | 16 | 20260731-<wbr>174401 |
+| playhop_<wbr>com | 1 | 1 | 20260731-<wbr>174401 |
+| suikagame_<wbr>io | 2528 | 14 | 20260731-<wbr>174401 |
+| crazygames_<wbr>com | 123949 | 30 | 20260731-<wbr>174401 |
+| poki_<wbr>com | 1642 | 10 | 20260731-<wbr>174401 |
+| dragganaitool_<wbr>com | 1535 | 25 | 20260731-<wbr>174401 |
+| higgsfield_<wbr>ai | 805 | 27 | 20260731-<wbr>174401 |
+| huntifyai_<wbr>com | 1336 | 29 | 20260731-<wbr>174401 |
 
 ## 新增内页
 
 | siteId | url | path | slug | depth |
 | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>ar/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>br/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>br/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>br/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>br/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>br/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>cz/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>cz/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>cz/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>cz/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>cz/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>de/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>de/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>de/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>de/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>de/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>dk/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>dk/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>dk/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>dk/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>dk/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>dk/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>es/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>c/<wbr>clicker/<wbr>7 | /<wbr>fi/<wbr>c/<wbr>clicker/<wbr>7 | 7 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>count-<wbr>and-<wbr>bounce-<wbr>bls | /<wbr>fi/<wbr>game/<wbr>count-<wbr>and-<wbr>bounce-<wbr>bls | count-<wbr>and-<wbr>bounce-<wbr>bls | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>fi/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>dogs-<wbr>out | /<wbr>fi/<wbr>game/<wbr>dogs-<wbr>out | dogs-<wbr>out | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>draw-<wbr>one-<wbr>line-<wbr>drawing-<wbr>puzzle | /<wbr>fi/<wbr>game/<wbr>draw-<wbr>one-<wbr>line-<wbr>drawing-<wbr>puzzle | draw-<wbr>one-<wbr>line-<wbr>drawing-<wbr>puzzle | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>idle-<wbr>dairy-<wbr>tycoon | /<wbr>fi/<wbr>game/<wbr>idle-<wbr>dairy-<wbr>tycoon | idle-<wbr>dairy-<wbr>tycoon | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>fi/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>fi/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>fi/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>fi/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>fr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 2 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 2 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 2 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 2 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>gr/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>gr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>gr/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>gr/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>gr/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>hu/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>id/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>id/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>id/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>id/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>id/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>it/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>it/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>it/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>it/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>it/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>jp/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>jp/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>jp/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>jp/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>jp/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>kr/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>nl/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>nl/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>dogs-<wbr>out | /<wbr>no/<wbr>game/<wbr>dogs-<wbr>out | dogs-<wbr>out | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>no/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>pl/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>pl/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>pl/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>pl/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>pl/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>ru/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>ru/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>ru/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>ru/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>ru/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>demolition-<wbr>inc | /<wbr>se/<wbr>game/<wbr>demolition-<wbr>inc | demolition-<wbr>inc | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>se/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>railway-<wbr>bridge | /<wbr>se/<wbr>game/<wbr>railway-<wbr>bridge | railway-<wbr>bridge | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | /<wbr>se/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva | road-<wbr>rage-<wbr>hva | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>robshoot | /<wbr>se/<wbr>game/<wbr>robshoot | robshoot | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>se/<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 4 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>sitemap/<wbr>games/<wbr>44 | /<wbr>sitemap/<wbr>games/<wbr>44 | 44 | 3 |
-| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>th/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | /<wbr>th/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh | merge-<wbr>haven-<wbr>fzh | 3 |
-| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>20f8 | /<wbr>en/<wbr>g/<wbr>20f8 | 20f8 | 3 |
-| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>7-<wbr>healthcare-<wbr>care-<wbr>management-<wbr>platforms-<wbr>for-<wbr>hospitals-<wbr>payers-<wbr>and-<wbr>community-<wbr>care-<wbr>organizations | /<wbr>7-<wbr>healthcare-<wbr>care-<wbr>management-<wbr>platforms-<wbr>for-<wbr>hospitals-<wbr>payers-<wbr>and-<wbr>community-<wbr>care-<wbr>organizations | 7-<wbr>healthcare-<wbr>care-<wbr>management-<wbr>platforms-<wbr>for-<wbr>hospitals-<wbr>payers-<wbr>and-<wbr>community-<wbr>care-<wbr>organizations | 1 |
-| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>alltegrios-<wbr>voice-<wbr>ai-<wbr>agent-<wbr>streamlined-<wbr>insurance-<wbr>support | /<wbr>how-<wbr>alltegrios-<wbr>voice-<wbr>ai-<wbr>agent-<wbr>streamlined-<wbr>insurance-<wbr>support | how-<wbr>alltegrios-<wbr>voice-<wbr>ai-<wbr>agent-<wbr>streamlined-<wbr>insurance-<wbr>support | 1 |
-| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>to-<wbr>offer-<wbr>payment-<wbr>flexibility-<wbr>without-<wbr>hurting-<wbr>your-<wbr>brand | /<wbr>how-<wbr>to-<wbr>offer-<wbr>payment-<wbr>flexibility-<wbr>without-<wbr>hurting-<wbr>your-<wbr>brand | how-<wbr>to-<wbr>offer-<wbr>payment-<wbr>flexibility-<wbr>without-<wbr>hurting-<wbr>your-<wbr>brand | 1 |
-| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>scale-<wbr>labs-<wbr>and-<wbr>paypal-<wbr>what-<wbr>the-<wbr>partnership-<wbr>means | /<wbr>scale-<wbr>labs-<wbr>and-<wbr>paypal-<wbr>what-<wbr>the-<wbr>partnership-<wbr>means | scale-<wbr>labs-<wbr>and-<wbr>paypal-<wbr>what-<wbr>the-<wbr>partnership-<wbr>means | 1 |
-| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>squarespace-<wbr>vs-<wbr>shopify-<wbr>for-<wbr>paypal-<wbr>payments | /<wbr>squarespace-<wbr>vs-<wbr>shopify-<wbr>for-<wbr>paypal-<wbr>payments | squarespace-<wbr>vs-<wbr>shopify-<wbr>for-<wbr>paypal-<wbr>payments | 1 |
-| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>ai-<wbr>ad-<wbr>agency | /<wbr>blog/<wbr>ai-<wbr>ad-<wbr>agency | ai-<wbr>ad-<wbr>agency | 2 |
-| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>best-<wbr>ai-<wbr>ad-<wbr>generators | /<wbr>blog/<wbr>best-<wbr>ai-<wbr>ad-<wbr>generators | best-<wbr>ai-<wbr>ad-<wbr>generators | 2 |
-| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>unlimited-<wbr>mcp | /<wbr>blog/<wbr>unlimited-<wbr>mcp | unlimited-<wbr>mcp | 2 |
-| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>furriq | /<wbr>tools/<wbr>furriq | furriq | 2 |
-| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>krea2turbo-<wbr>pro | /<wbr>tools/<wbr>krea2turbo-<wbr>pro | krea2turbo-<wbr>pro | 2 |
-| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>furriq | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>furriq | furriq | 3 |
-| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>krea2turbo-<wbr>pro | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>krea2turbo-<wbr>pro | krea2turbo-<wbr>pro | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>ar/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>br/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>br/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>cz/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>cz/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>es/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>es/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>fi/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>fi/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fr/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>fr/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>gr/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>gr/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>gr/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>hu/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>hu/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>id/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>id/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>id/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>it/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>it/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>it/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>jp/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>jp/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>jp/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>kr/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>kr/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>no/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>pl/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>pl/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>pl/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ro/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>ro/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>ru/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ru/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>ru/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>se/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>se/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>th/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>th/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>hexa-<wbr>stack | /<wbr>tr/<wbr>game/<wbr>hexa-<wbr>stack | hexa-<wbr>stack | 3 |
+| crazygames_<wbr>com | https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>swat-<wbr>cats | /<wbr>tr/<wbr>game/<wbr>swat-<wbr>cats | swat-<wbr>cats | 3 |
+| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>flip-<wbr>pounce | /<wbr>en/<wbr>g/<wbr>flip-<wbr>pounce | flip-<wbr>pounce | 3 |
+| poki_<wbr>com | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>perfect-<wbr>shape | /<wbr>en/<wbr>g/<wbr>perfect-<wbr>shape | perfect-<wbr>shape | 3 |
+| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>ai-<wbr>presentation-<wbr>makers-<wbr>compared-<wbr>which-<wbr>one-<wbr>fits-<wbr>your-<wbr>workflow-<wbr>best | /<wbr>ai-<wbr>presentation-<wbr>makers-<wbr>compared-<wbr>which-<wbr>one-<wbr>fits-<wbr>your-<wbr>workflow-<wbr>best | ai-<wbr>presentation-<wbr>makers-<wbr>compared-<wbr>which-<wbr>one-<wbr>fits-<wbr>your-<wbr>workflow-<wbr>best | 1 |
+| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>ai-<wbr>powered-<wbr>promotions-<wbr>help-<wbr>merchants-<wbr>increase-<wbr>sales | /<wbr>how-<wbr>ai-<wbr>powered-<wbr>promotions-<wbr>help-<wbr>merchants-<wbr>increase-<wbr>sales | how-<wbr>ai-<wbr>powered-<wbr>promotions-<wbr>help-<wbr>merchants-<wbr>increase-<wbr>sales | 1 |
+| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>pananto-<wbr>platform-<wbr>review-<wbr>features-<wbr>benefits-<wbr>and-<wbr>alternatives | /<wbr>pananto-<wbr>platform-<wbr>review-<wbr>features-<wbr>benefits-<wbr>and-<wbr>alternatives | pananto-<wbr>platform-<wbr>review-<wbr>features-<wbr>benefits-<wbr>and-<wbr>alternatives | 1 |
+| dragganaitool_<wbr>com | https:/<wbr>/<wbr>dragganaitool.com/<wbr>top-<wbr>salesforce-<wbr>apps-<wbr>that-<wbr>improve-<wbr>sales-<wbr>and-<wbr>productivity | /<wbr>top-<wbr>salesforce-<wbr>apps-<wbr>that-<wbr>improve-<wbr>sales-<wbr>and-<wbr>productivity | top-<wbr>salesforce-<wbr>apps-<wbr>that-<wbr>improve-<wbr>sales-<wbr>and-<wbr>productivity | 1 |
+| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>ai-<wbr>short-<wbr>film-<wbr>pipeline | /<wbr>blog/<wbr>ai-<wbr>short-<wbr>film-<wbr>pipeline | ai-<wbr>short-<wbr>film-<wbr>pipeline | 2 |
+| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>seedance-<wbr>2-<wbr>5 | /<wbr>blog/<wbr>seedance-<wbr>2-<wbr>5 | seedance-<wbr>2-<wbr>5 | 2 |
+| higgsfield_<wbr>ai | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>seedance-<wbr>unlimited-<wbr>14-<wbr>days | /<wbr>blog/<wbr>seedance-<wbr>unlimited-<wbr>14-<wbr>days | seedance-<wbr>unlimited-<wbr>14-<wbr>days | 2 |
+| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>robynn | /<wbr>tools/<wbr>robynn | robynn | 2 |
+| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>videotto | /<wbr>tools/<wbr>videotto | videotto | 2 |
+| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>robynn | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>robynn | robynn | 3 |
+| huntifyai_<wbr>com | https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>videotto | /<wbr>zh-<wbr>CN/<wbr>tools/<wbr>videotto | videotto | 3 |
 
 ## 新增路由模式
 
@@ -140,51 +90,37 @@
 
 | siteId | type | keyword | score | urlCount | examples |
 | --- | --- | --- | --- | --- | --- |
-| crazygames_<wbr>com | phrase | merge haven fzh | 36.00 | 24 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>merge-<wbr>haven-<wbr>fzh |
-| crazygames_<wbr>com | phrase | demolition inc | 24.00 | 16 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>demolition-<wbr>inc<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>demolition-<wbr>inc<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>demolition-<wbr>inc |
-| crazygames_<wbr>com | phrase | railway bridge | 24.00 | 16 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>railway-<wbr>bridge<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>railway-<wbr>bridge<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>railway-<wbr>bridge |
-| crazygames_<wbr>com | phrase | road rage hva | 24.00 | 16 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>de/<wbr>game/<wbr>road-<wbr>rage-<wbr>hva |
-| crazygames_<wbr>com | phrase | dogs out | 3.00 | 2 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>dogs-<wbr>out<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>no/<wbr>game/<wbr>dogs-<wbr>out |
-| crazygames_<wbr>com | phrase | robshoot | 3.00 | 2 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>se/<wbr>game/<wbr>robshoot<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>tr/<wbr>game/<wbr>robshoot |
-| crazygames_<wbr>com | phrase | count and bounce bls | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>count-<wbr>and-<wbr>bounce-<wbr>bls |
-| crazygames_<wbr>com | phrase | draw one line drawing puzzle | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>draw-<wbr>one-<wbr>line-<wbr>drawing-<wbr>puzzle |
-| crazygames_<wbr>com | phrase | idle dairy tycoon | 1.50 | 1 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>idle-<wbr>dairy-<wbr>tycoon |
-| poki_<wbr>com | phrase | 20f8 | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>20f8 |
-| dragganaitool_<wbr>com | phrase | healthcare care management platforms for hospitals payers and community care organizations | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>7-<wbr>healthcare-<wbr>care-<wbr>management-<wbr>platforms-<wbr>for-<wbr>hospitals-<wbr>payers-<wbr>and-<wbr>community-<wbr>care-<wbr>organizations |
-| dragganaitool_<wbr>com | phrase | how alltegrios voice ai agent streamlined insurance support | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>alltegrios-<wbr>voice-<wbr>ai-<wbr>agent-<wbr>streamlined-<wbr>insurance-<wbr>support |
-| dragganaitool_<wbr>com | phrase | how to offer payment flexibility without hurting your brand | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>to-<wbr>offer-<wbr>payment-<wbr>flexibility-<wbr>without-<wbr>hurting-<wbr>your-<wbr>brand |
-| dragganaitool_<wbr>com | phrase | scale labs and paypal what the partnership means | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>scale-<wbr>labs-<wbr>and-<wbr>paypal-<wbr>what-<wbr>the-<wbr>partnership-<wbr>means |
-| dragganaitool_<wbr>com | phrase | squarespace vs shopify for paypal payments | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>squarespace-<wbr>vs-<wbr>shopify-<wbr>for-<wbr>paypal-<wbr>payments |
-| higgsfield_<wbr>ai | phrase | ai ad agency | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>ai-<wbr>ad-<wbr>agency |
-| higgsfield_<wbr>ai | phrase | best ai ad generators | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>best-<wbr>ai-<wbr>ad-<wbr>generators |
-| higgsfield_<wbr>ai | phrase | unlimited mcp | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>unlimited-<wbr>mcp |
-| huntifyai_<wbr>com | phrase | furriq | 3.00 | 2 | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>furriq<br>https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>furriq |
-| huntifyai_<wbr>com | phrase | krea2turbo pro | 3.00 | 2 | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>krea2turbo-<wbr>pro<br>https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>krea2turbo-<wbr>pro |
+| crazygames_<wbr>com | phrase | hexa stack | 28.50 | 19 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>ar/<wbr>game/<wbr>hexa-<wbr>stack<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>hexa-<wbr>stack<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>hexa-<wbr>stack |
+| crazygames_<wbr>com | phrase | swat cats | 16.50 | 11 | https:/<wbr>/<wbr>www.crazygames.com/<wbr>br/<wbr>game/<wbr>swat-<wbr>cats<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>cz/<wbr>game/<wbr>swat-<wbr>cats<br>https:/<wbr>/<wbr>www.crazygames.com/<wbr>fi/<wbr>game/<wbr>swat-<wbr>cats |
+| poki_<wbr>com | phrase | flip pounce | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>flip-<wbr>pounce |
+| poki_<wbr>com | phrase | perfect shape | 1.50 | 1 | https:/<wbr>/<wbr>poki.com/<wbr>en/<wbr>g/<wbr>perfect-<wbr>shape |
+| dragganaitool_<wbr>com | phrase | ai presentation makers compared which one fits your workflow best | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>ai-<wbr>presentation-<wbr>makers-<wbr>compared-<wbr>which-<wbr>one-<wbr>fits-<wbr>your-<wbr>workflow-<wbr>best |
+| dragganaitool_<wbr>com | phrase | how ai powered promotions help merchants increase sales | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>how-<wbr>ai-<wbr>powered-<wbr>promotions-<wbr>help-<wbr>merchants-<wbr>increase-<wbr>sales |
+| dragganaitool_<wbr>com | phrase | pananto platform review features benefits and alternatives | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>pananto-<wbr>platform-<wbr>review-<wbr>features-<wbr>benefits-<wbr>and-<wbr>alternatives |
+| dragganaitool_<wbr>com | phrase | top salesforce apps that improve sales and productivity | 1.50 | 1 | https:/<wbr>/<wbr>dragganaitool.com/<wbr>top-<wbr>salesforce-<wbr>apps-<wbr>that-<wbr>improve-<wbr>sales-<wbr>and-<wbr>productivity |
+| higgsfield_<wbr>ai | phrase | ai short film pipeline | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>ai-<wbr>short-<wbr>film-<wbr>pipeline |
+| higgsfield_<wbr>ai | phrase | seedance | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>seedance-<wbr>2-<wbr>5 |
+| higgsfield_<wbr>ai | phrase | seedance unlimited days | 1.50 | 1 | https:/<wbr>/<wbr>higgsfield.ai/<wbr>blog/<wbr>seedance-<wbr>unlimited-<wbr>14-<wbr>days |
+| huntifyai_<wbr>com | phrase | robynn | 3.00 | 2 | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>robynn<br>https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>robynn |
+| huntifyai_<wbr>com | phrase | videotto | 3.00 | 2 | https:/<wbr>/<wbr>huntifyai.com/<wbr>tools/<wbr>videotto<br>https:/<wbr>/<wbr>huntifyai.com/<wbr>zh-<wbr>CN/<wbr>tools/<wbr>videotto |
 
 ## 最终标准词表摘要
 
 | keyword | simVolume | semVolume | gefeiKD | score(sim) |
 | --- | --- | --- | --- | --- |
-| dogs out | 40 | 6900 | 65.40 | 2.61 |
-| railway bridge | 3610 | 26650 | 59.50 | -<wbr> |
-| demolition inc | -<wbr> | 750 | 52.50 | -<wbr> |
-| ai ad agency | 70 | 540 | 18.60 | -<wbr> |
-| 20f8 | -<wbr> | 110 | 4.30 | -<wbr> |
-| best ai ad generators | -<wbr> | 30 | 51.40 | -<wbr> |
-| count and bounce bls | -<wbr> | 0 | 20.70 | -<wbr> |
-| draw one line drawing puzzle | -<wbr> | 0 | 36.30 | -<wbr> |
-| furriq | -<wbr> | 0 | 40.60 | -<wbr> |
-| healthcare care management platforms for hospitals payers and community care organizations | -<wbr> | 0 | 11.10 | -<wbr> |
-| how alltegrios voice ai agent streamlined insurance support | -<wbr> | 0 | 17.20 | -<wbr> |
-| how to offer payment flexibility without hurting your brand | -<wbr> | 0 | 1.30 | -<wbr> |
-| idle dairy tycoon | -<wbr> | 0 | 44.70 | -<wbr> |
-| krea2turbo pro | -<wbr> | 0 | 32.20 | -<wbr> |
-| merge haven fzh | -<wbr> | 0 | 22.10 | -<wbr> |
-| road rage hva | -<wbr> | 0 | 24.10 | -<wbr> |
-| robshoot | -<wbr> | 0 | 48.20 | -<wbr> |
-| scale labs and paypal what the partnership means | -<wbr> | 0 | 40.60 | -<wbr> |
-| squarespace vs shopify for paypal payments | -<wbr> | 0 | 29.40 | -<wbr> |
-| unlimited mcp | -<wbr> | 0 | 9.90 | -<wbr> |
+| seedance | 1181140 | 106180 | 70.90 | 17532.55 |
+| swat cats | 2520 | 16940 | 23.90 | 509.04 |
+| videotto | 22930 | 50 | 48.40 | 128.25 |
+| hexa stack | 3010 | 4360 | 57.20 | 69.58 |
+| perfect shape | 1520 | 2260 | 41.60 | -<wbr> |
+| robynn | 140 | 590 | 59.80 | -<wbr> |
+| ai presentation makers compared which one fits your workflow best | -<wbr> | 0 | 20.70 | -<wbr> |
+| ai short film pipeline | -<wbr> | 0 | 30.30 | -<wbr> |
+| flip pounce | -<wbr> | 0 | 65.50 | -<wbr> |
+| how ai powered promotions help merchants increase sales | -<wbr> | 0 | 24.50 | -<wbr> |
+| pananto platform review features benefits and alternatives | -<wbr> | 0 | 37.10 | -<wbr> |
+| seedance unlimited days | -<wbr> | 0 | 39.10 | -<wbr> |
+| top salesforce apps that improve sales and productivity | -<wbr> | 0 | 26.40 | -<wbr> |
 
 ## 备注
 

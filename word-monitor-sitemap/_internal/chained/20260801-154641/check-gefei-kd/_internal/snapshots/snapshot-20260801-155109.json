@@ -1,0 +1,795 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-01T15:51:09",
+    "stamp": "20260801-155109",
+    "input": {
+      "mode": "standard_word_table",
+      "paths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/analyze-words/report/latest.xlsx"
+      ],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 13,
+      "keywordCountBeforeLimit": 13,
+      "maxKeywords": 0
+    },
+    "target": {
+      "keywords": [
+        "seedance",
+        "swat cats",
+        "videotto",
+        "hexa stack",
+        "perfect shape",
+        "robynn",
+        "ai presentation makers compared which one fits your workflow best",
+        "ai short film pipeline",
+        "flip pounce",
+        "how ai powered promotions help merchants increase sales",
+        "pananto platform review features benefits and alternatives",
+        "seedance unlimited days",
+        "top salesforce apps that improve sales and productivity"
+      ],
+      "keywordCount": 13
+    },
+    "request": {
+      "apiBase": "https://seo.web.cafe",
+      "endpoint": "/kd/api/v1/kd",
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 2,
+      "timeoutSeconds": 60
+    },
+    "summary": {
+      "inputCount": 13,
+      "successCount": 13,
+      "failureCount": 0,
+      "avgScore": 41.9538,
+      "cachedHitRate": 0.692308,
+      "levelDistribution": {
+        "困难": 2,
+        "中等": 4,
+        "容易": 7
+      },
+      "keywordTypeDistribution": {
+        "generic": 9,
+        "brand": 4
+      }
+    },
+    "globalError": null,
+    "output": {
+      "reportHistoryPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/history/report-20260801-155109.md",
+      "standardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/history/keyword-table-20260801-155109.json",
+      "standardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/history/keyword-table-20260801-155109.xlsx"
+    },
+    "latestReportPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/latest.md",
+    "latestStandardWordTableJsonPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/latest.json",
+    "latestStandardWordTableXlsxPath": "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/check-gefei-kd/report/latest.xlsx"
+  },
+  "rows": [
+    {
+      "keyword": "seedance",
+      "score": 70.9,
+      "gefeiKD": 70.9,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 678800,
+      "keywordTrend": {
+        "ratio": 0.1305391868002357,
+        "estimatedValue": 88610,
+        "volume": 678800,
+        "domain": "seed.bytedance.com"
+      },
+      "linkBudget": {
+        "targetDr": 41,
+        "quality": {
+          "low": 150,
+          "mid": 220,
+          "high": 320
+        },
+        "directory": {
+          "low": 540,
+          "mid": 860,
+          "high": 1300
+        },
+        "low": 150,
+        "mid": 220,
+        "high": 320,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 70.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 seedanceai.net（DR 28）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785310842,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 70.9/100（困难）。",
+        "前 10 名中有 4 个首页排名（seedance2.ai、seedance2.so、seedanceai.net、seedance2.app），首页平均站点强度 42/100。",
+        "首页打内页：第 1 名 seedance2.ai（域名直拼关键词、DR 46，首页）排在了 DR 更高的内页第 2 名 seed.bytedance.com（DR 83）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "同类内部排序：这几个 EMD 首页（第 1 名 seedance2.ai（DR 46）、第 5 名 seedance2.so（DR 37）、第 7 名 seedanceai.net（DR 28）、第 10 名 seedance2.app（DR 28））共享「首页打内页」结构加成，彼此之间基本按 DR 排——第 1 名 seedance2.ai DR 46 领跑，第 10 名 seedance2.app DR 仅 28 靠后。同为聚焦首页时，页面做得更满也顶不过 DR 差距：页面质量是入场门票，DR 与页面级外链才是排位器。其中 DR 相同的第 7、10 名，再往下的先后由页面级外链（指向各自首页的引用域数）细分，本工具用免费域级数据看不到这一层。",
+        "10/10 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中有 4 个注册不满 18 个月的新域名（seedance2.ai 12 个月、seedance2.so 6 个月、seedanceai.net 13 个月、seedance2.app 12 个月）已站稳排名 —— 赛道对新站友好。（-3）",
+        "第 5 名 seedance2.so（DR 37）是低 DR 站点的首页排名，小站靠首页就能排进来；但盘面是多站正面争夺的红海，易做信号大幅打折。它注册仅约 6 个月就排到第 5 名、月流量已达 15.3 万—— 这不是蜜月期侥幸，而是新站正在赢下这个词，是\"此词可做\"的最强证据；入场门票是做出与它同等水平的产品。（-3）",
+        "前十中有 4 个站点把整个首页押在这个词上（seedance2.ai、seedance2.so、seedanceai.net、seedance2.app）—— 词已被多个专做站正面经营。（+5）",
+        "7 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "该词月搜索量约 67.9 万（来自排名站点主力词数据）—— 头部大词，体量本身带来额外的竞争烈度与商业关注。（+6）",
+        "进入前十的链接预算：约 150–320 个引用域（中值 220，按 Ahrefs 官方 KD→引用域曲线由难度分 70.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 seedanceai.net（DR 28））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 540–1300 个。对应的域名权重量级约为 DR 41。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "flip pounce",
+      "score": 65.5,
+      "gefeiKD": 65.5,
+      "level": "困难",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 38,
+        "quality": {
+          "low": 120,
+          "mid": 170,
+          "high": 250
+        },
+        "directory": {
+          "low": 420,
+          "mid": 680,
+          "high": 1000
+        },
+        "low": 120,
+        "mid": 170,
+        "high": 250,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 65.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 appbrain.com（DR 75，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785546749,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 65.5/100（困难）。",
+        "前 9 名全部是内页排名，但无一弱位 —— 这不是\"没人认真打\"，而是该词的搜索意图被权威平台的文档/内容页锁定（搜索者要的是方案与对比，不是某个产品首页）。无首页在此不构成机会；新站的现实路径是高质量评测/对比内容页，正面对位盘面中外链最薄的内容位。",
+        "9/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 120–250 个引用域（中值 170，按 Ahrefs 官方 KD→引用域曲线由难度分 65.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 appbrain.com（DR 75，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 420–1000 个。对应的域名权重量级约为 DR 38。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "robynn",
+      "score": 59.8,
+      "gefeiKD": 59.8,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 50.9,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 36,
+        "quality": {
+          "low": 90,
+          "mid": 130,
+          "high": 190
+        },
+        "directory": {
+          "low": 320,
+          "mid": 510,
+          "high": 770
+        },
+        "low": 90,
+        "mid": 130,
+        "high": 190,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 59.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 viberate.com（DR 65，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785570627,
+      "reasons": [
+        "品牌词口径：难度估算为 59.8/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 50.9/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 robynn.ai 是与关键词同名的官方域名首页，且前十出现 5 个平台型结果（en.wikipedia.org、instagram.com、facebook.com、linkedin.com、youtube.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 6 个固定位）后，可竞争位仅 2 个：第 6 名 open.spotify.com（DR 95，内页，域名 20.3 年，月流量 4.5 亿）、第 8 名 viberate.com（DR 65，内页，域名 12.8 年，月流量 48.1 万） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+6）。",
+        "衍生内容进入此 SERP 的链接预算：约 90–190 个引用域（中值 130，按 Ahrefs 官方 KD→引用域曲线由难度分 59.8 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 viberate.com（DR 65，内页））；目录/收录型外链为主时约 320–770 个。对应域名权重量级约 DR 36。"
+      ]
+    },
+    {
+      "keyword": "hexa stack",
+      "score": 57.2,
+      "gefeiKD": 57.2,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 35,
+        "quality": {
+          "low": 80,
+          "mid": 120,
+          "high": 170
+        },
+        "directory": {
+          "low": 290,
+          "mid": 470,
+          "high": 700
+        },
+        "low": 80,
+        "mid": 120,
+        "high": 170,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 57.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 wellgames.com（DR 36，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785491532,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 57.2/100（中等）。",
+        "前 9 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 7 名 wellgames.com，难度贡献仅 28.8）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "7/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 80–170 个引用域（中值 120，按 Ahrefs 官方 KD→引用域曲线由难度分 57.2 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 wellgames.com（DR 36，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 290–700 个。对应的域名权重量级约为 DR 35。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "videotto",
+      "score": 48.4,
+      "gefeiKD": 48.4,
+      "level": "中等",
+      "keywordType": "brand",
+      "genericScore": 50.1,
+      "keywordVolume": 12140,
+      "keywordTrend": {
+        "ratio": 1.088138385502471,
+        "estimatedValue": 13210,
+        "volume": 12140,
+        "domain": "videotto.com"
+      },
+      "linkBudget": {
+        "targetDr": 31,
+        "quality": {
+          "low": 55,
+          "mid": 80,
+          "high": 120
+        },
+        "directory": {
+          "low": 200,
+          "mid": 320,
+          "high": 480
+        },
+        "low": 55,
+        "mid": 80,
+        "high": 120,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 48.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 east.vc（DR 63，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785570609,
+      "reasons": [
+        "品牌词口径：难度估算为 48.4/100（中等）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 50.1/100（中等），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "品牌词判定：第 1 名 videotto.com 是与关键词同名的官方域名首页，videotto.com 是全 SERP 唯一带 Sitelinks 的头部结果（多个结果同时带的是 mini sitelinks、不算数；唯一且居首的站点链接组是较强的导航意图信号），且前十出现 2 个平台型结果（instagram.com、g2.com）—— 典型的品牌/导航词 SERP：品牌本尊受导航意图保护几乎不可撼动，平台页（应用商店/评测/视频）也不是可正面竞争的对手。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 2 个：第 2 名 sg.linkedin.com（DR 99，内页，域名 23.7 年，月流量 283.5 万）、第 4 名 east.vc（DR 63，内页，域名 16.8 年，月流量 4.7 万，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "趋势信号：videotto.com 当月从该词获得约 1.3 万 流量，超过该词 12 个月平均搜索量（1.2 万）—— 品牌处于快速上升期，衍生词流量水位还在上涨，越早布局价值越大。（-3）",
+        "该词月搜索量约 1.2 万，衍生词（alternative / review / vs 竞品 / coupon）的流量天花板随品牌热度同步抬升。",
+        "衍生内容进入此 SERP 的链接预算：约 55–120 个引用域（中值 80，按 Ahrefs 官方 KD→引用域曲线由难度分 48.4 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 east.vc（DR 63，内页））；目录/收录型外链为主时约 200–480 个。对应域名权重量级约 DR 31。"
+      ]
+    },
+    {
+      "keyword": "perfect shape",
+      "score": 41.6,
+      "gefeiKD": 41.6,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 150,
+      "keywordTrend": {
+        "ratio": 0,
+        "estimatedValue": 0,
+        "volume": 150,
+        "domain": "perfectshapeco.com"
+      },
+      "linkBudget": {
+        "targetDr": 28,
+        "quality": {
+          "low": 40,
+          "mid": 60,
+          "high": 90
+        },
+        "directory": {
+          "low": 150,
+          "mid": 240,
+          "high": 360
+        },
+        "low": 40,
+        "mid": 60,
+        "high": 90,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 41.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 herperfectshape.com（DR 4）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785546771,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 41.6/100（中等）。",
+        "前 8 名中有 2 个首页排名（herperfectshape.com、perfectshapeco.com），首页平均站点强度 5/100。",
+        "首页打内页：第 1 名 herperfectshape.com（域名直拼关键词、DR 4，首页）排在了 DR 更高的内页第 6 名 amazon.com（DR 96）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "同类内部排序：这几个 EMD 首页（第 1 名 herperfectshape.com（DR 4）、第 2 名 perfectshapeco.com（DR 10））DR 相近——它们之间的先后由页面级外链（指向各自首页的引用域数）决定，本工具用免费域级数据看不到这一层。",
+        "7/8 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 1 名 herperfectshape.com（DR 4，首页排名）证明弱站可进前十。（-8）",
+        "该词月搜索量约 150（来自排名站点主力词数据）。",
+        "进入前十的链接预算：约 40–90 个引用域（中值 60，按 Ahrefs 官方 KD→引用域曲线由难度分 41.6 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 herperfectshape.com（DR 4））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 150–360 个。对应的域名权重量级约为 DR 28。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "seedance unlimited days",
+      "score": 39.1,
+      "gefeiKD": 39.1,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 29.2,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 40,
+          "mid": 55,
+          "high": 80
+        },
+        "directory": {
+          "low": 140,
+          "mid": 220,
+          "high": 330
+        },
+        "low": 40,
+        "mid": 55,
+        "high": 80,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 39.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 creaa.ai（DR 2，内页）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785570665,
+      "reasons": [
+        "品牌词口径：难度估算为 39.1/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 29.2/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（reddit.com、youtube.com）。",
+        "剔除品牌本尊与平台生态页（共 3 个固定位）后，可竞争位仅 6 个：第 1 名 higgsfield.ai（DR 78，内页，域名 3.2 年，月流量 2681.5 万）、第 4 名 creaa.ai（DR 2，内页，域名 11 个月，月流量 2.2 万）、第 5 名 skool.com（DR 91，内页，域名 29.4 年，月流量 3365.0 万）、第 7 名 imastudio.com（DR 23，内页，域名 18.9 年，月流量 20.6 万）、第 8 名 runwayml.com（DR 85，内页，域名 8.4 年，月流量 651.5 万）、第 9 名 higgsfield.ai（DR 78，内页，域名 3.2 年，月流量 2681.5 万） —— 这些才是衍生内容真正要对位的对手。",
+        "衍生内容进入此 SERP 的链接预算：约 40–80 个引用域（中值 55，按 Ahrefs 官方 KD→引用域曲线由难度分 39.1 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 creaa.ai（DR 2，内页））；目录/收录型外链为主时约 140–330 个。对应域名权重量级约 DR 27。"
+      ]
+    },
+    {
+      "keyword": "pananto platform review features benefits and alternatives",
+      "score": 37.1,
+      "gefeiKD": 37.1,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 27,
+        "quality": {
+          "low": 35,
+          "mid": 50,
+          "high": 75
+        },
+        "directory": {
+          "low": 130,
+          "mid": 200,
+          "high": 300
+        },
+        "low": 35,
+        "mid": 50,
+        "high": 75,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 37.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 panopto.com（DR 82）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785535410,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 37.1/100（容易）。",
+        "前 9 名中有 1 个首页排名（panopto.com），首页平均站点强度 82/100。",
+        "7 个高 DR 大站（g2.com、capterra.com、scholarworks.sfasu.edu、softwareadvice.com、trustradius.com、gartner.com、corp.kaltura.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 35–75 个引用域（中值 50，按 Ahrefs 官方 KD→引用域曲线由难度分 37.1 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 panopto.com（DR 82））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 130–300 个。对应的域名权重量级约为 DR 27。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "ai short film pipeline",
+      "score": 30.3,
+      "gefeiKD": 30.3,
+      "level": "容易",
+      "keywordType": "brand",
+      "genericScore": 28.3,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 24,
+        "quality": {
+          "low": 25,
+          "mid": 35,
+          "high": 55
+        },
+        "directory": {
+          "low": 90,
+          "mid": 150,
+          "high": 220
+        },
+        "low": 25,
+        "mid": 35,
+        "high": 55,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 30.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 filmpipeline.com（DR 26）"
+      },
+      "detailsCount": 0,
+      "cached": false,
+      "computedAt": 1785570641,
+      "reasons": [
+        "品牌词口径：难度估算为 30.3/100（容易）。该分数衡量的是第三方以衍生内容（alternative / review / vs / 教程等）进入此 SERP 的难度，而非与品牌正面争夺主词 —— 常规口径下此词为 28.3/100（容易），但那是一场不该打也打不赢的仗，仅列作对照。",
+        "疑似品牌/导航词：前十平台型结果密集（youtube.com、reddit.com、medium.com）。",
+        "剔除品牌本尊与平台生态页（共 4 个固定位）后，可竞争位仅 5 个：第 3 名 dimensionstudio.co（DR 53，内页，域名 9.3 年，月流量 6708）、第 5 名 higgsfield.ai（DR 78，内页，域名 3.2 年，月流量 2681.5 万）、第 6 名 creativepossible.substack.com（DR 94，内页，域名 16.3 年，月流量 327）、第 7 名 filmpipeline.com（DR 26，首页，域名 24 年，月流量 9814，此词正是其主力流量词）、第 9 名 videodraft.ai（DR 3，内页，域名 2.5 年，月流量 3815，此词正是其主力流量词） —— 这些才是衍生内容真正要对位的对手。固定位占比高、空位稀少（+3）。",
+        "衍生内容进入此 SERP 的链接预算：约 25–55 个引用域（中值 35，按 Ahrefs 官方 KD→引用域曲线由难度分 30.3 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 filmpipeline.com（DR 26））；目录/收录型外链为主时约 90–220 个。对应域名权重量级约 DR 24。"
+      ]
+    },
+    {
+      "keyword": "top salesforce apps that improve sales and productivity",
+      "score": 26.4,
+      "gefeiKD": 26.4,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 22,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 45
+        },
+        "directory": {
+          "low": 75,
+          "mid": 120,
+          "high": 190
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 45,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 26.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 appexchange.salesforce.com（DR 92）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785535386,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 26.4/100（容易）。",
+        "前 10 名中有 1 个首页排名（appexchange.salesforce.com），首页平均站点强度 80/100。",
+        "4 个高 DR 大站（cirrusinsight.com、appexchange.salesforce.com、ringover.com、salesforceben.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 6 名 thesalesforcefirst.com DR 仅 4，弱站已能进前十。且其体验分垫底（26/100），属于脆弱占位者，更容易被好产品挤掉（额外 -2）。（-10）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–45 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 26.4 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 appexchange.salesforce.com（DR 92））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 75–190 个。对应的域名权重量级约为 DR 22。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "how ai powered promotions help merchants increase sales",
+      "score": 24.5,
+      "gefeiKD": 24.5,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 30,
+          "high": 40
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 170
+        },
+        "low": 20,
+        "mid": 30,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 24.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 citrincooperman.com（DR 65，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785535372,
+      "reasons": [
+        "综合 Top10 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 24.5/100（容易）。",
+        "前 10 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 4 名 software.strategy.com，难度贡献仅 25.4）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "9 个高 DR 大站（oliverwyman.com、professional.dce.harvard.edu、software.strategy.com、salesgenie.com、sps.wfu.edu、salesforce.com、monday.com、stackadapt.com、improvado.io）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 9 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 30，按 Ahrefs 官方 KD→引用域曲线由难度分 24.5 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 citrincooperman.com（DR 65，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–170 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "swat cats",
+      "score": 23.9,
+      "gefeiKD": 23.9,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 21,
+        "quality": {
+          "low": 20,
+          "mid": 25,
+          "high": 40
+        },
+        "directory": {
+          "low": 70,
+          "mid": 110,
+          "high": 160
+        },
+        "low": 20,
+        "mid": 25,
+        "high": 40,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 23.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 swatkats.info（DR 12）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785491525,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 23.9/100（容易）。",
+        "内容真空信号：第 4 名是 reddit.com 的帖子 —— Google 在用论坛内容填补这个词的内容空缺，说明现存结果没有充分满足搜索意图。论坛帖通常外链极少、纯靠平台权威站位，是一篇高质量专业内容最容易取代的位置（且位置靠前，取代后的流量回报更直接）。（-4）",
+        "前 8 名中有 1 个首页排名（swatkats.info），首页平均站点强度 18/100。",
+        "首页打内页：第 3 名 swatkats.info（DR 12，首页）排在了 DR 更高的内页第 5 名 tv.apple.com（DR 97）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "7 个高 DR 大站（en.wikipedia.org、youtube.com、reddit.com、tv.apple.com、youtube.com、imdb.com、rottentomatoes.com）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "第 3 名 swatkats.info（DR 12，首页排名）证明弱站可进前十。（-8）",
+        "前十中 8 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 20–40 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 23.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 swatkats.info（DR 12））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 70–160 个。对应的域名权重量级约为 DR 21。此为量级参考，非精确值。"
+      ]
+    },
+    {
+      "keyword": "ai presentation makers compared which one fits your workflow best",
+      "score": 20.7,
+      "gefeiKD": 20.7,
+      "level": "容易",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": null,
+      "keywordTrend": null,
+      "linkBudget": {
+        "targetDr": 19,
+        "quality": {
+          "low": 15,
+          "mid": 25,
+          "high": 35
+        },
+        "directory": {
+          "low": 55,
+          "mid": 90,
+          "high": 140
+        },
+        "low": 15,
+        "mid": 25,
+        "high": 35,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 20.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 nutsandboltsspeedtraining.com（DR 45，内页）"
+      },
+      "detailsCount": 0,
+      "cached": true,
+      "computedAt": 1785535396,
+      "reasons": [
+        "综合 Top8 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 20.7/100（容易）。",
+        "前 8 名全部是内页排名，且盘面存在外链与权重相对薄弱的内容页占位（如第 6 名 nutsandboltsspeedtraining.com，难度贡献仅 20.3）—— 没有人押上首页经营这个词，用专业内容页（或聚焦型首页）有结构性的进入机会。（-4）",
+        "4 个高 DR 大站（plusai.com、zapier.com、youtube.com、lindy.ai）仅以非定制内页参与排名，大站并未专门优化此词，聚焦型站点有机会反超。",
+        "前十中 7 个有关键词数据的域名，主力流量词均不包含此词，占位者都不是专门为这个词而来。（-4）",
+        "提示：未能从排名站点的主力流量词中取得该词搜索量，无法做体量判断 —— 评估性价比前请自行核对月搜索量（难度合适但体量过小的词同样不值得做）。",
+        "进入前十的链接预算：约 15–35 个引用域（中值 25，按 Ahrefs 官方 KD→引用域曲线由难度分 20.7 插值（该口径为进入前十所需）。现实对照：盘面最弱结果为 nutsandboltsspeedtraining.com（DR 45，内页））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 55–140 个。对应的域名权重量级约为 DR 19。此为量级参考，非精确值。"
+      ]
+    }
+  ],
+  "failures": [],
+  "standardWordTable": {
+    "version": "v1",
+    "meta": {
+      "generatedAt": "2026-08-01T15:51:09",
+      "standardWordTableVersion": "v1",
+      "scoreFormula": "simWindowVolume * simCpc / simKd",
+      "source": "check-gefei-kd",
+      "inputMode": "standard_word_table",
+      "inputPaths": [
+        "/Users/bytedance/work/raxskle/sitte/ai/word-monitor-sitemap/_internal/chained/20260801-154641/analyze-words/report/latest.xlsx"
+      ],
+      "gefeiKdSummary": {
+        "inputCount": 13,
+        "requestCount": 13,
+        "successCount": 13,
+        "successWithScoreCount": 13,
+        "missingScoreCount": 0,
+        "failedCount": 0
+      },
+      "rowCount": 13
+    },
+    "rows": [
+      {
+        "keyword": "seedance",
+        "correspondingDomain": "https://higgsfield.ai/blog/seedance-2-5",
+        "score": 17532.546875,
+        "simWindowVolume": 1181140.0,
+        "simKd": 64.0,
+        "simCpc": 0.95,
+        "semVolume": 106180.0,
+        "semKd": 78.0,
+        "semCpc": 1.48,
+        "gefeiKD": 70.9,
+        "group": "seedance",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "swat cats",
+        "correspondingDomain": "https://www.crazygames.com/br/game/swat-cats\nhttps://www.crazygames.com/cz/game/swat-cats\nhttps://www.crazygames.com/fi/game/swat-cats\nhttps://www.crazygames.com/gr/game/swat-cats\nhttps://www.crazygames.com/id/game/swat-cats\nhttps://www.crazygames.com/it/game/swat-cats\nhttps://www.crazygames.com/jp/game/swat-cats\nhttps://www.crazygames.com/pl/game/swat-cats\nhttps://www.crazygames.com/ru/game/swat-cats\nhttps://www.crazygames.com/se/game/swat-cats\nhttps://www.crazygames.com/tr/game/swat-cats",
+        "score": 509.04,
+        "simWindowVolume": 2520.0,
+        "simKd": 20.0,
+        "simCpc": 4.04,
+        "semVolume": 16940.0,
+        "semKd": 39.0,
+        "semCpc": 0.0,
+        "gefeiKD": 23.9,
+        "group": "swat cats",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "videotto",
+        "correspondingDomain": "https://huntifyai.com/tools/videotto\nhttps://huntifyai.com/zh-CN/tools/videotto",
+        "score": 128.252542,
+        "simWindowVolume": 22930.0,
+        "simKd": 59.0,
+        "simCpc": 0.33,
+        "semVolume": 50.0,
+        "semKd": null,
+        "semCpc": 0.03,
+        "gefeiKD": 48.4,
+        "group": "videotto",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "hexa stack",
+        "correspondingDomain": "https://www.crazygames.com/ar/game/hexa-stack\nhttps://www.crazygames.com/br/game/hexa-stack\nhttps://www.crazygames.com/cz/game/hexa-stack\nhttps://www.crazygames.com/es/game/hexa-stack\nhttps://www.crazygames.com/fi/game/hexa-stack\nhttps://www.crazygames.com/fr/game/hexa-stack\nhttps://www.crazygames.com/gr/game/hexa-stack\nhttps://www.crazygames.com/hu/game/hexa-stack\nhttps://www.crazygames.com/id/game/hexa-stack\nhttps://www.crazygames.com/it/game/hexa-stack\nhttps://www.crazygames.com/jp/game/hexa-stack\nhttps://www.crazygames.com/kr/game/hexa-stack\nhttps://www.crazygames.com/no/game/hexa-stack\nhttps://www.crazygames.com/pl/game/hexa-stack\nhttps://www.crazygames.com/ro/game/hexa-stack\nhttps://www.crazygames.com/ru/game/hexa-stack\nhttps://www.crazygames.com/se/game/hexa-stack\nhttps://www.crazygames.com/th/game/hexa-stack\nhttps://www.crazygames.com/tr/game/hexa-stack",
+        "score": 69.57541,
+        "simWindowVolume": 3010.0,
+        "simKd": 61.0,
+        "simCpc": 1.41,
+        "semVolume": 4360.0,
+        "semKd": 39.0,
+        "semCpc": 0.63,
+        "gefeiKD": 57.2,
+        "group": "hexa stack",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "perfect shape",
+        "correspondingDomain": "https://poki.com/en/g/perfect-shape",
+        "score": null,
+        "simWindowVolume": 1520.0,
+        "simKd": 0.0,
+        "simCpc": 0.0,
+        "semVolume": 2260.0,
+        "semKd": 34.0,
+        "semCpc": 2.04,
+        "gefeiKD": 41.6,
+        "group": "perfect shape",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "robynn",
+        "correspondingDomain": "https://huntifyai.com/tools/robynn\nhttps://huntifyai.com/zh-CN/tools/robynn",
+        "score": null,
+        "simWindowVolume": 140.0,
+        "simKd": 47.0,
+        "simCpc": 0.0,
+        "semVolume": 590.0,
+        "semKd": 39.0,
+        "semCpc": 0.0,
+        "gefeiKD": 59.8,
+        "group": "robynn",
+        "sourcePresence": "both（SIM+SEM）"
+      },
+      {
+        "keyword": "ai presentation makers compared which one fits your workflow best",
+        "correspondingDomain": "https://dragganaitool.com/ai-presentation-makers-compared-which-one-fits-your-workflow-best",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 20.7,
+        "group": "ai presentation makers compared which one fits your workflow best",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "ai short film pipeline",
+        "correspondingDomain": "https://higgsfield.ai/blog/ai-short-film-pipeline",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 30.3,
+        "group": "ai short film pipeline",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "flip pounce",
+        "correspondingDomain": "https://poki.com/en/g/flip-pounce",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 65.5,
+        "group": "flip pounce",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "how ai powered promotions help merchants increase sales",
+        "correspondingDomain": "https://dragganaitool.com/how-ai-powered-promotions-help-merchants-increase-sales",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 24.5,
+        "group": "how ai powered promotions help merchants increase sales",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "pananto platform review features benefits and alternatives",
+        "correspondingDomain": "https://dragganaitool.com/pananto-platform-review-features-benefits-and-alternatives",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 37.1,
+        "group": "pananto platform review features benefits and alternatives",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "seedance unlimited days",
+        "correspondingDomain": "https://higgsfield.ai/blog/seedance-unlimited-14-days",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 39.1,
+        "group": "seedance unlimited days",
+        "sourcePresence": "sem_only（仅 SEM）"
+      },
+      {
+        "keyword": "top salesforce apps that improve sales and productivity",
+        "correspondingDomain": "https://dragganaitool.com/top-salesforce-apps-that-improve-sales-and-productivity",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": 0.0,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": 26.4,
+        "group": "top salesforce apps that improve sales and productivity",
+        "sourcePresence": "sem_only（仅 SEM）"
+      }
+    ]
+  }
+}
