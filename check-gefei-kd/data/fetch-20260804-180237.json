@@ -1,0 +1,631 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-04T18:02:37",
+    "stamp": "20260804-180237",
+    "input": {
+      "mode": "free_keywords",
+      "paths": [],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 27,
+      "keywordCountBeforeLimit": 27,
+      "maxKeywords": 0
+    },
+    "summary": {
+      "inputCount": 27,
+      "successCount": 0,
+      "failureCount": 27,
+      "avgScore": null,
+      "cachedHitRate": null,
+      "levelDistribution": {},
+      "keywordTypeDistribution": {}
+    },
+    "request": {
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 6.2,
+      "maxRetries": 0,
+      "timeoutSeconds": 15
+    }
+  },
+  "requests": [
+    {
+      "keyword": "personality test",
+      "keywordNormalized": "personality test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 5.916,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "personality assessment",
+      "keywordNormalized": "personality assessment",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.114,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "personality quiz",
+      "keywordNormalized": "personality quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.192,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "personality questionnaire",
+      "keywordNormalized": "personality questionnaire",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.195,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "IQ test",
+      "keywordNormalized": "iq test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "EQ test",
+      "keywordNormalized": "eq test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "emotional intelligence test",
+      "keywordNormalized": "emotional intelligence test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.187,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "aptitude test",
+      "keywordNormalized": "aptitude test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "career test",
+      "keywordNormalized": "career test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.187,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "career aptitude test",
+      "keywordNormalized": "career aptitude test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "strengths assessment",
+      "keywordNormalized": "strengths assessment",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "learning style quiz",
+      "keywordNormalized": "learning style quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.19,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "attachment style quiz",
+      "keywordNormalized": "attachment style quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.192,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "love language quiz",
+      "keywordNormalized": "love language quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.192,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "relationship compatibility quiz",
+      "keywordNormalized": "relationship compatibility quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "mental health screening",
+      "keywordNormalized": "mental health screening",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.195,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "political quiz",
+      "keywordNormalized": "political quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.193,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "political compass test",
+      "keywordNormalized": "political compass test",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "values quiz",
+      "keywordNormalized": "values quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "financial personality quiz",
+      "keywordNormalized": "financial personality quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.195,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "parenting style quiz",
+      "keywordNormalized": "parenting style quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.195,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "sleep quiz",
+      "keywordNormalized": "sleep quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.152,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "fitness quiz",
+      "keywordNormalized": "fitness quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "body type quiz",
+      "keywordNormalized": "body type quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.19,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "trivia quiz",
+      "keywordNormalized": "trivia quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "which character are you quiz",
+      "keywordNormalized": "which character are you quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.189,
+          "rawBody": null
+        }
+      ]
+    },
+    {
+      "keyword": "buzzfeed quiz",
+      "keywordNormalized": "buzzfeed quiz",
+      "gefeiKD": null,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "errorCode": null,
+      "httpStatus": null,
+      "fatalGlobal": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "error",
+          "httpStatus": null,
+          "errorCode": null,
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "retryable": true,
+          "fatalGlobal": false,
+          "waitedSeconds": 6.194,
+          "rawBody": null
+        }
+      ]
+    }
+  ]
+}

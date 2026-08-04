@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-04T19:10:21",
+    "stamp": "20260804-191021",
+    "input": {
+      "mode": "free_keywords",
+      "paths": [],
+      "standardWordTableVersion": "v1",
+      "keywordCount": 1,
+      "keywordCountBeforeLimit": 1,
+      "maxKeywords": 0
+    },
+    "summary": {
+      "inputCount": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "avgScore": 52.9,
+      "cachedHitRate": 1.0,
+      "levelDistribution": {
+        "中等": 1
+      },
+      "keywordTypeDistribution": {
+        "generic": 1
+      }
+    },
+    "request": {
+      "apiUrl": "https://seo.web.cafe/kd/api/v1/kd",
+      "gl": "us",
+      "hl": "en",
+      "force": 0,
+      "responseFormat": "json",
+      "authMode": "header",
+      "apiKeySource": "/Users/bytedance/work/raxskle/sitte/ai/check-gefei-kd/api_key.txt",
+      "minIntervalSeconds": 0.0,
+      "maxRetries": 0,
+      "timeoutSeconds": 25
+    }
+  },
+  "requests": [
+    {
+      "keyword": "personality test",
+      "keywordNormalized": "personality test",
+      "gefeiKD": 52.9,
+      "level": "中等",
+      "keywordType": "generic",
+      "genericScore": null,
+      "keywordVolume": 156460,
+      "keywordTrend": {
+        "ratio": 1.0154672120669819,
+        "estimatedValue": 158880,
+        "volume": 156460,
+        "domain": "16personalities.com"
+      },
+      "linkBudget": {
+        "targetDr": 33,
+        "quality": {
+          "low": 70,
+          "mid": 95,
+          "high": 150
+        },
+        "directory": {
+          "low": 240,
+          "mid": 390,
+          "high": 580
+        },
+        "low": 70,
+        "mid": 95,
+        "high": 150,
+        "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 52.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 personalityassessor.com（DR 33）"
+      },
+      "cached": true,
+      "computedAt": 1785835986,
+      "reasons": [
+        "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 52.9/100（中等）。",
+        "前 9 名中有 2 个首页排名（seemypersonality.com、personalityassessor.com），首页平均站点强度 38/100。",
+        "首页打内页：第 2 名 seemypersonality.com（DR 35，首页）排在了 DR 更高的内页第 5 名 psychcentral.com（DR 87）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+        "9/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+        "第 2 名 seemypersonality.com（DR 35）是低 DR 站点的首页排名，小站靠首页就能排进来。注意它的体验分在前十中排前列（75/100，停留 3分46秒、跳出 39%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-7）",
+        "6 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+        "趋势信号：16personalities.com 当月从该词获得约 15.9 万 流量，超过了该词 12 个月平均搜索量（15.6 万）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+        "该词月搜索量约 15.6 万（来自排名站点主力词数据），属于中大体量词。（+3）",
+        "进入前十的链接预算：约 70–150 个引用域（中值 95，按 Ahrefs 官方 KD→引用域曲线由难度分 52.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 personalityassessor.com（DR 33））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 240–580 个。对应的域名权重量级约为 DR 33。此为量级参考，非精确值。"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "ok",
+          "httpStatus": 200,
+          "waitedSeconds": 0.0,
+          "response": {
+            "score": 52.9,
+            "level": "中等",
+            "reasons": [
+              "综合 Top9 结果的位置加权竞争强度（首页全额、普通内页 45% 折算、专门经营页面 65% 折算），关键词难度估算为 52.9/100（中等）。",
+              "前 9 名中有 2 个首页排名（seemypersonality.com、personalityassessor.com），首页平均站点强度 38/100。",
+              "首页打内页：第 2 名 seemypersonality.com（DR 35，首页）排在了 DR 更高的内页第 5 名 psychcentral.com（DR 87）前面 —— 首页汇集全站内链权重、用户行为与外链锚文本，域名/主题高度聚焦，是新站/小 DR 站反超老站内页的经典结构，而非靠外链体量取胜。这既解释了低 DR 首页为何能靠前，也是后来者可复制的打法：用聚焦首页（最好域名直拼该词）正面对位它们的内页。",
+              "9/9 个结果是专门为这个词制作的页面（标题或主力流量词直接命中），多个站点重兵正面争夺 —— 这不是\"大站顺路排名\"的机会盘面，而是被正面争夺的红海词。（+10）",
+              "第 2 名 seemypersonality.com（DR 35）是低 DR 站点的首页排名，小站靠首页就能排进来。注意它的体验分在前十中排前列（75/100，停留 3分46秒、跳出 39%）—— 它是靠产品力站住的，复制这个位置需要同等的产品质量。（-7）",
+              "6 个排名域名的主力流量词中直接包含此词，这些站点就是为这个词而来。（+5）",
+              "趋势信号：16personalities.com 当月从该词获得约 15.9 万 流量，超过了该词 12 个月平均搜索量（15.6 万）。单站流量不可能超过总搜索量，说明当前真实搜索量远高于年均值 —— 词处于快速上升期，格局未固化，是新站入场的窗口期。（-3）",
+              "该词月搜索量约 15.6 万（来自排名站点主力词数据），属于中大体量词。（+3）",
+              "进入前十的链接预算：约 70–150 个引用域（中值 95，按 Ahrefs 官方 KD→引用域曲线由难度分 52.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 personalityassessor.com（DR 33））。若以目录/收录型外链为主（dofollow 占比低，AI 工具站常见打法），需放大到约 240–580 个。对应的域名权重量级约为 DR 33。此为量级参考，非精确值。"
+            ],
+            "details": [
+              {
+                "position": 1,
+                "domain": "16personalities.com",
+                "url": "https://www.16personalities.com/free-personality-test",
+                "title": "Free Personality Test",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 85,
+                "visits": 13594885,
+                "visitsLabel": "1359.5 万",
+                "strength": 87.7,
+                "contribution": 57,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 158880,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 14.7,
+                "ageLabel": "14.7 年",
+                "eng": {
+                  "timeOnSite": 305.0396973766127,
+                  "pagePerVisit": 3.3322376012389308,
+                  "bounceRate": 0.5124108399067043,
+                  "pct": 46
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 2,
+                "domain": "seemypersonality.com",
+                "url": "https://www.seemypersonality.com/",
+                "title": "Free Personality Test | Instant Results | No Signup",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 35,
+                "visits": 99824,
+                "visitsLabel": "10.0 万",
+                "strength": 38.8,
+                "contribution": 38.8,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 2360,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 12.2,
+                "ageLabel": "12.2 年",
+                "eng": {
+                  "timeOnSite": 225.65381909730445,
+                  "pagePerVisit": 7.649846410613048,
+                  "bounceRate": 0.38864096310507446,
+                  "pct": 75
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 3,
+                "domain": "truity.com",
+                "url": "https://www.truity.com/test/type-finder-personality-test-new",
+                "title": "Personality Test of Myers & Briggs' 16 Types | TypeFinder®",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 77,
+                "visits": 1507035,
+                "visitsLabel": "150.7 万",
+                "strength": 74.4,
+                "contribution": 48.4,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 9980,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 23.6,
+                "ageLabel": "23.6 年",
+                "eng": {
+                  "timeOnSite": 179.21657981655173,
+                  "pagePerVisit": 2.954408703258945,
+                  "bounceRate": 0.46240303551624323,
+                  "pct": 25
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 4,
+                "domain": "programs.clearerthinking.org",
+                "url": "https://programs.clearerthinking.org/personality-test.html",
+                "title": "Ultimate Personality Test",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 62,
+                "visits": 83757,
+                "visitsLabel": "8.4 万",
+                "strength": 54.3,
+                "contribution": 35.3,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 3790,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 13.4,
+                "ageLabel": "13.4 年",
+                "eng": {
+                  "timeOnSite": 383.8894076883095,
+                  "pagePerVisit": 4.058858633403548,
+                  "bounceRate": 0.14984256057860798,
+                  "pct": 92
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 5,
+                "domain": "psychcentral.com",
+                "url": "https://psychcentral.com/quizzes/personality-quiz",
+                "title": "Personality Test - How Do Others See You?",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 87,
+                "visits": 1113955,
+                "visitsLabel": "111.4 万",
+                "strength": 79.3,
+                "contribution": 51.5,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 2750,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 28.4,
+                "ageLabel": "28.4 年",
+                "eng": {
+                  "timeOnSite": 70.2471037843914,
+                  "pagePerVisit": 2.857910191451728,
+                  "bounceRate": 0.39236890392109935,
+                  "pct": 21
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 6,
+                "domain": "personalityassessor.com",
+                "url": "https://www.personalityassessor.com/",
+                "title": "Personality Assessor | Free online personality tests, quizzes ...",
+                "pageType": "首页",
+                "isHomepage": true,
+                "dr": 33,
+                "visits": 114104,
+                "visitsLabel": "11.4 万",
+                "strength": 38.1,
+                "contribution": 38.1,
+                "kwHit": true,
+                "kwHitTerm": "personality test",
+                "kwDataKnown": true,
+                "kwHitTraffic": 680,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 15.1,
+                "ageLabel": "15.1 年",
+                "eng": {
+                  "timeOnSite": 272.00221987944724,
+                  "pagePerVisit": 4.916349670720681,
+                  "bounceRate": 0.35532108796128986,
+                  "pct": 83
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 7,
+                "domain": "personalityjunkie.com",
+                "url": "https://personalityjunkie.com/free-online-personality-test-3/",
+                "title": "Free Online Personality Test",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 46,
+                "visits": 261717,
+                "visitsLabel": "26.2 万",
+                "strength": 49.1,
+                "contribution": 31.9,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 16.7,
+                "ageLabel": "16.7 年",
+                "eng": {
+                  "timeOnSite": 128.679610612889,
+                  "pagePerVisit": 2.868976040434463,
+                  "bounceRate": 0.4442769990270776,
+                  "pct": 21
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 8,
+                "domain": "idrlabs.com",
+                "url": "https://www.idrlabs.com/personality-style/test.php?srsltid=AfmBOopD6fNcClrsNr6K3oF6npL_W9yCxsyTMLK-R2E26xHk1bZuGDE_",
+                "title": "Personality Style Test",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 71,
+                "visits": 5148030,
+                "visitsLabel": "514.8 万",
+                "strength": 75.6,
+                "contribution": 49.1,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 9.2,
+                "ageLabel": "9.2 年",
+                "eng": {
+                  "timeOnSite": 245.42023917665242,
+                  "pagePerVisit": 3.667636677167319,
+                  "bounceRate": 0.45751768709861446,
+                  "pct": 50
+                },
+                "dataNote": ""
+              },
+              {
+                "position": 9,
+                "domain": "crystalknows.com",
+                "url": "https://www.crystalknows.com/personality-test",
+                "title": "Free Personality Test: 4 Frameworks, One Profile | Crystal",
+                "pageType": "内页",
+                "isHomepage": false,
+                "dr": 73,
+                "visits": 399280,
+                "visitsLabel": "39.9 万",
+                "strength": 66.9,
+                "contribution": 43.5,
+                "kwHit": false,
+                "kwHitTerm": null,
+                "kwDataKnown": true,
+                "kwHitTraffic": null,
+                "searchShare": null,
+                "titleHit": true,
+                "dedicated": true,
+                "sitelinks": false,
+                "ageYears": 11.9,
+                "ageLabel": "11.9 年",
+                "eng": {
+                  "timeOnSite": 130.5437060798979,
+                  "pagePerVisit": 3.0528667372089378,
+                  "bounceRate": 0.44394281692749993,
+                  "pct": 38
+                },
+                "dataNote": ""
+              }
+            ],
+            "linkBudget": {
+              "targetDr": 33,
+              "quality": {
+                "low": 70,
+                "mid": 95,
+                "high": 150
+              },
+              "directory": {
+                "low": 240,
+                "mid": 390,
+                "high": 580
+              },
+              "low": 70,
+              "mid": 95,
+              "high": 150,
+              "basis": "按 Ahrefs 官方 KD→引用域曲线由难度分 52.9 插值（该口径为进入前十所需）。现实对照：前十中最弱的稳定首页为 personalityassessor.com（DR 33）"
+            },
+            "keywordVolume": 156460,
+            "keywordTrend": {
+              "ratio": 1.0154672120669819,
+              "estimatedValue": 158880,
+              "volume": 156460,
+              "domain": "16personalities.com"
+            },
+            "keywordType": "generic",
+            "genericScore": null,
+            "computedAt": 1785835986,
+            "keyword": "personality test",
+            "gl": "us",
+            "hl": "en",
+            "cached": true
+          }
+        }
+      ]
+    }
+  ]
+}

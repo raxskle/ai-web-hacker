@@ -30,7 +30,7 @@
     },
     "effectiveUrlCount": 1271,
     "patternCount": 16,
-    "baselineStamp": "20260715-163932",
+    "baselineStamp": "20260708-225714",
     "standardWordTableVersion": "v1"
   },
   "urls": [
@@ -13258,23 +13258,116 @@
     }
   ],
   "comparison": {
-    "baselineStamp": "20260715-163932",
-    "newlyAddedUrls": [],
+    "baselineStamp": "20260708-225714",
+    "newlyAddedUrls": [
+      {
+        "url": "https://www.onlinegames.io/jelly-run-2048",
+        "host": "www.onlinegames.io",
+        "path": "/jelly-run-2048",
+        "segments": [
+          "jelly-run-2048"
+        ],
+        "slug": "jelly-run-2048",
+        "depth": 1
+      },
+      {
+        "url": "https://www.onlinegames.io/om-nom-run",
+        "host": "www.onlinegames.io",
+        "path": "/om-nom-run",
+        "segments": [
+          "om-nom-run"
+        ],
+        "slug": "om-nom-run",
+        "depth": 1
+      },
+      {
+        "url": "https://www.onlinegames.io/t/avoid/page/3",
+        "host": "www.onlinegames.io",
+        "path": "/t/avoid/page/3",
+        "segments": [
+          "t",
+          "avoid",
+          "page",
+          "3"
+        ],
+        "slug": "3",
+        "depth": 4
+      }
+    ],
     "removedUrls": [],
     "newPatterns": []
   },
   "keywords": {
-    "topKeywordsFromNewUrls": [],
+    "topKeywordsFromNewUrls": [
+      {
+        "type": "phrase",
+        "keyword": "jelly run",
+        "count": 1,
+        "urlCount": 1,
+        "score": 1.5,
+        "exampleUrls": [
+          "https://www.onlinegames.io/jelly-run-2048"
+        ]
+      },
+      {
+        "type": "phrase",
+        "keyword": "om nom run",
+        "count": 1,
+        "urlCount": 1,
+        "score": 1.5,
+        "exampleUrls": [
+          "https://www.onlinegames.io/om-nom-run"
+        ]
+      }
+    ],
     "counters": {
-      "phrase": [],
+      "phrase": [
+        [
+          "jelly run",
+          1
+        ],
+        [
+          "om nom run",
+          1
+        ]
+      ],
       "bigram": [],
       "token": []
     }
   },
   "standardWord": {
-    "rows": [],
+    "rows": [
+      {
+        "keyword": "jelly run",
+        "correspondingDomain": "https://www.onlinegames.io/jelly-run-2048",
+        "group": "",
+        "sourcePresence": "",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": null,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": null
+      },
+      {
+        "keyword": "om nom run",
+        "correspondingDomain": "https://www.onlinegames.io/om-nom-run",
+        "group": "",
+        "sourcePresence": "",
+        "score": null,
+        "simWindowVolume": null,
+        "simKd": null,
+        "simCpc": null,
+        "semVolume": null,
+        "semKd": null,
+        "semCpc": null,
+        "gefeiKD": null
+      }
+    ],
     "summary": {
-      "rowCount": 0
+      "rowCount": 2
     }
   }
 }

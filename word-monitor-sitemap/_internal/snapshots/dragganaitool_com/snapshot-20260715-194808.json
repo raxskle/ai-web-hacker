@@ -2,7 +2,7 @@
   "meta": {
     "generatedAt": "2026-07-15T19:50:59",
     "stamp": "20260715-194808",
-    "baselineMode": false,
+    "baselineMode": true,
     "site": {
       "id": "dragganaitool_com",
       "displayName": "dragganaitool",
@@ -30,7 +30,7 @@
     },
     "effectiveUrlCount": 1476,
     "patternCount": 25,
-    "baselineStamp": "20260715-163932",
+    "baselineStamp": null,
     "standardWordTableVersion": "v1"
   },
   "urls": [
@@ -15018,7 +15018,7 @@
     }
   ],
   "comparison": {
-    "baselineStamp": "20260715-163932",
+    "baselineStamp": null,
     "newlyAddedUrls": [],
     "removedUrls": [],
     "newPatterns": []

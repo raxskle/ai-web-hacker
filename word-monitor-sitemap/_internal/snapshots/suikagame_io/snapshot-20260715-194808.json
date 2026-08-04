@@ -2,7 +2,7 @@
   "meta": {
     "generatedAt": "2026-07-15T19:48:18",
     "stamp": "20260715-194808",
-    "baselineMode": false,
+    "baselineMode": true,
     "site": {
       "id": "suikagame_io",
       "displayName": "suikagame",
@@ -30,7 +30,7 @@
     },
     "effectiveUrlCount": 2530,
     "patternCount": 14,
-    "baselineStamp": "20260715-163932",
+    "baselineStamp": null,
     "standardWordTableVersion": "v1"
   },
   "urls": [
@@ -25526,7 +25526,7 @@
     }
   ],
   "comparison": {
-    "baselineStamp": "20260715-163932",
+    "baselineStamp": null,
     "newlyAddedUrls": [],
     "removedUrls": [],
     "newPatterns": []
