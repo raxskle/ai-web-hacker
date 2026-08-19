@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import socket
 import os
 import re
 import time
@@ -221,7 +222,7 @@ def _request_once(
             message=message,
             raw_body=body,
         ) from exc
-    except URLError as exc:
+    except (URLError, socket.timeout, TimeoutError) as exc:
         raise RequestError(str(exc), retryable=True) from exc
     except json.JSONDecodeError as exc:
         raise RequestError("哥飞 KD 返回非合法 JSON", retryable=False) from exc

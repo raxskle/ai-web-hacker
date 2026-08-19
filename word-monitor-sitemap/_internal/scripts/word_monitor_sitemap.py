@@ -963,6 +963,7 @@ def build_snapshot(
         "meta": {
             "generatedAt": datetime.now().isoformat(timespec="seconds"),
             "stamp": stamp,
+            "runStatus": "in_progress",
             "baselineMode": baseline_mode,
             "site": {
                 "id": site.get("id"),
@@ -1453,7 +1454,8 @@ def write_merged_standard_word_table(*, stamp: str, site_results: List[dict], re
     ensure_dir(history_path.parent)
     ensure_dir(latest_path.parent)
     write_standard_word_excel(stamp=stamp, site_results=site_results, output_path=history_path)
-    shutil.copyfile(history_path, latest_path)
+    # The history table is a provisional seed until the enrichment chain and
+    # merged report both finish.  Do not publish it as latest prematurely.
     return history_path, latest_path
 
 
@@ -1825,8 +1827,34 @@ def find_latest_baseline(snapshot_dir: Path, current_stamp: str) -> Tuple[Option
         if stamp >= current_stamp:
             continue
         snapshot = load_json(path)
-        return snapshot, path
+        if snapshot_is_completed(snapshot):
+            return snapshot, path
     return None, None
+
+
+def snapshot_is_completed(snapshot: dict) -> bool:
+    """Whether a snapshot is eligible to be used as a future baseline.
+
+    Lifecycle-aware snapshots are promoted only after the merged report and
+    final word table are published.  Snapshots without a status are legacy
+    snapshots created before lifecycle tracking and are retained as baselines.
+    """
+    run_status = (snapshot.get("meta") or {}).get("runStatus")
+    return run_status is None or run_status == "completed"
+
+
+def mark_site_snapshots_completed(site_results: List[dict]) -> None:
+    """Promote successful site snapshots after the whole run is published."""
+    completed_at = datetime.now().isoformat(timespec="seconds")
+    for result in site_results:
+        snapshot_path = Path(result.get("snapshot") or "")
+        if not snapshot_path.exists():
+            raise RuntimeError(f"成功站点快照不存在，无法完成发布: {snapshot_path}")
+        snapshot = load_json(snapshot_path)
+        meta = snapshot.setdefault("meta", {})
+        meta["runStatus"] = "completed"
+        meta["completedAt"] = completed_at
+        dump_json(snapshot_path, snapshot)
 
 
 def build_site_result_from_snapshot(site_id: str, site: Optional[dict], snapshot: Optional[dict]) -> dict:
@@ -1887,14 +1915,17 @@ def load_latest_snapshot_for_site(snapshot_root: Path, site_id: str) -> Tuple[Op
     if not files:
         return None, None
 
-    path = files[-1]
-    snapshot = load_json(path)
-    meta = snapshot.get("meta") or {}
-    stamp = meta.get("stamp")
-    if not isinstance(stamp, str) or not stamp:
-        m = SNAPSHOT_RE.match(path.name)
-        stamp = m.group(1) if m else None
-    return snapshot, stamp
+    for path in reversed(files):
+        snapshot = load_json(path)
+        if not snapshot_is_completed(snapshot):
+            continue
+        meta = snapshot.get("meta") or {}
+        stamp = meta.get("stamp")
+        if not isinstance(stamp, str) or not stamp:
+            m = SNAPSHOT_RE.match(path.name)
+            stamp = m.group(1) if m else None
+        return snapshot, stamp
+    return None, None
 
 
 def run_single_site(
@@ -2131,6 +2162,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
         attempted_site_count=len(selected),
     )
 
+    # Only a fully published run may influence a subsequent comparison.
+    mark_site_snapshots_completed(results)
+
     purge_per_site_reports(
         site_ids=[item.get("siteId") for item in results if item.get("siteId")],
         report_history_root=report_history_root,
@@ -2193,6 +2227,9 @@ def rebuild_single_site_reports(
 
     for path in files:
         snapshot = load_json(path)
+        if not snapshot_is_completed(snapshot):
+            print(f"[rebuild] skip incomplete snapshot: {path}")
+            continue
 
         today_rows = snapshot.get("urls") or []
         today_patterns = snapshot.get("patterns") or []

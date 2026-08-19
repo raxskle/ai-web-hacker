@@ -67,6 +67,7 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 仅保留站点配置内 `includeHosts` 的 URL
 - 通过 `excludePathRegexes` 过滤工具页/聚合页
 - 首次运行仅建立基线，不输出新增与关键词结论
+- 仅完整成功并发布合并报告/最终词表的快照可作为下一次基线；补全链路失败或中断的快照会被标记为未完成并忽略
 - 关键词候选来自新增 URL slug 的清洗 phrase（保留完整 slug 词序，不再拆分单词/bigram；相同 keyword 去重后保留一行）
 - 合并词表会在 sitemap 阶段先产出“种子表”，再通过 analyze/check 链路补齐 SIM/SEM/gefeiKD，最终回写到 report 与 words 目录
 - 最终 `keywords` sheet 列顺序：`keyword -> 对应域名 -> score -> volume(sim) -> kd(sim) -> cpc(sim) -> volume(sem) -> kd(sem) -> cpc(sem) -> gefeiKD -> group -> sourcePresence(SIM/SEM)`

@@ -39,7 +39,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 - 固定抓取参数：`key=vercel.app`，`page=1..8`，`sort=ClicksShare` 等
 - 每页失败重试 2 次；仍失败则整次失败，不落快照/报告/Excel
-- 基线取最近一次历史快照（同 key/country/latest/sourceType/startPage/endPage）；子域名上涨需连续两段比较均达阈值
+- 基线只取最近一次**完整成功**的历史快照（同 key/country/latest/sourceType/startPage/endPage）；补全链路未完成的快照不会作为下一次基线；子域名上涨需连续两段比较均达阈值
 - 首次运行仅建立基线，不输出新增/上涨结论
 - 页面和子域名结果合并为一个 Markdown 表格，只区分 `新增` 与 `上涨`
 - 标准词表种子先导出新增页面/新增子域名/连续上涨子域名对应的 top keywords，再经 `analyze-words` + `check-gefei-kd` 补全为最终完整词表

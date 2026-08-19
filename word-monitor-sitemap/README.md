@@ -82,6 +82,7 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 - 路由模式由 path segment 结构推断（例如 `/{token}/`, `/{token}-{token}/`）
 - 新增关键词只基于新增 URL，避免把历史存量页重复作为“新机会”
 - 首次运行不输出新增结论，仅建立对比基线
+- 仅完整成功并发布合并报告和最终词表的快照会成为后续基线；补全链路失败或中断的快照不会参与后续比较
 - `sitemapindex` 遇到嵌套会持续递归跟随，保留 sitemap 总数上限保护
 - 关键词候选只保留**清洗后的完整 slug phrase**，不再拆分单词或 bigram
   - 例如：`nightfall-survivors-imo -> nightfall survivors imo`
@@ -122,4 +123,3 @@ python3 word-monitor-sitemap/_internal/scripts/word_monitor_sitemap.py validate-
 ```bash
 pip3 install openpyxl
 ```
-

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SPD V2 Quality"
+  short_description: "Quality-first directory qualification and submission"
+  default_prompt: "Use $submit-product-directories-v2-quality to deeply qualify and process a small, authorized product-directory batch with auditable evidence."

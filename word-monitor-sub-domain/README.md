@@ -89,7 +89,7 @@ python3 word-monitor-sub-domain/_internal/scripts/word_monitor_subdomain.py vali
 
 ### 对比基线
 
-- 页面 / 新增子域名：基线取最近一次历史快照（同 `key/country/latest/sourceType/startPage/endPage`）
+- 页面 / 新增子域名：基线只取最近一次完整成功的历史快照（同 `key/country/latest/sourceType/startPage/endPage`）；补全链路失败或中断的快照不会作为基线
 - 子域名上涨：同时检查最近两次历史快照，仅当
   - `(today vs t-1)` 满足上涨阈值，且
   - `(t-1 vs t-2)` 也满足上涨阈值

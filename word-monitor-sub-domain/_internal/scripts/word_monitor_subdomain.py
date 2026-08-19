@@ -103,6 +103,11 @@ def parse_args() -> argparse.Namespace:
     run_parser.add_argument("--latest-xlsx-path", default=str(PROJECT_DIR / "report" / "latest.xlsx"))
     run_parser.add_argument("--words-dir", default=str(REPO_ROOT / "words"))
     run_parser.add_argument("--chain-work-dir", default=str(PROJECT_DIR / "_internal" / "chained"))
+    run_parser.add_argument(
+        "--skip-gefei-kd",
+        action="store_true",
+        help="跳过哥飞 KD 回填；仍执行 SIM/SEM 补全并生成报告与词表",
+    )
 
     rebuild_parser = subparsers.add_parser("rebuild-reports", help="根据快照重建历史报告")
     rebuild_parser.add_argument("--snapshot-dir", default=str(PROJECT_DIR / "_internal" / "snapshots"))
@@ -780,6 +785,18 @@ def snapshot_matches_target(snapshot: dict, target: dict) -> bool:
     )
 
 
+def snapshot_is_completed(snapshot: dict) -> bool:
+    """Return whether a snapshot is eligible to act as a comparison baseline.
+
+    Snapshots written by current versions begin as ``in_progress`` and are
+    promoted to ``completed`` only after the report and the full keyword-table
+    chain have succeeded.  Snapshots without this field are legacy artifacts
+    produced before lifecycle tracking; retain them as historical baselines.
+    """
+    run_status = (snapshot.get("meta") or {}).get("runStatus")
+    return run_status is None or run_status == "completed"
+
+
 def find_recent_baselines(
     snapshot_dir: Path,
     target: dict,
@@ -800,7 +817,7 @@ def find_recent_baselines(
         if stamp >= current_stamp:
             continue
         snapshot = load_json(path)
-        if snapshot_matches_target(snapshot, target):
+        if snapshot_is_completed(snapshot) and snapshot_matches_target(snapshot, target):
             baselines.append((snapshot, path))
             if len(baselines) >= limit:
                 break
@@ -1348,6 +1365,7 @@ def build_snapshot(
         "meta": {
             "generatedAt": datetime.now().isoformat(timespec="seconds"),
             "stamp": stamp,
+            "runStatus": "in_progress",
             "baselineMode": baseline_mode,
             "target": {
                 "key": args.key,
@@ -1606,10 +1624,10 @@ def write_artifacts(
     report_text = render_report(snapshot)
     dump_json(fetch_archive_path, fetch_archive)
     dump_json(snapshot_path, snapshot)
+    # History artifacts are intentionally provisional until the chained
+    # enrichment completes.  Do not publish them as the latest report yet.
     report_history_path.write_text(report_text, encoding="utf-8")
-    latest_report_path.write_text(report_text, encoding="utf-8")
     write_excel(snapshot, excel_history_path)
-    copyfile(excel_history_path, latest_xlsx_path)
 
     return {
         "fetchArchivePath": fetch_archive_path,
@@ -1829,6 +1847,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
             baseline_stamp=((baseline_snapshot.get("meta") or {}).get("stamp") if baseline_snapshot else None),
             prev_baseline_subdomains=prev_baseline_subs,
             prev_baseline_stamp=((prev_baseline_snapshot.get("meta") or {}).get("stamp") if prev_baseline_snapshot else None),
+            enrich_gefei_kd=not args.skip_gefei_kd,
         )
 
     snapshot = build_snapshot(
@@ -1880,18 +1899,32 @@ def run_pipeline(args: argparse.Namespace) -> int:
             seed_table_xlsx=Path(artifact_paths["excelHistoryPath"]),
             chain_root=chain_root,
         )
-        check_outputs = _run_check_gefei_kd_stage(
-            input_table_xlsx=Path(analyze_outputs["latestXlsxPath"]),
-            chain_root=chain_root,
-        )
+        if args.skip_gefei_kd:
+            final_xlsx_path = Path(analyze_outputs["latestXlsxPath"])
+            final_json_path = Path(analyze_outputs["latestJsonPath"])
+            check_stage_metadata = {
+                "status": "skipped",
+                "reason": "--skip-gefei-kd",
+            }
+        else:
+            check_outputs = _run_check_gefei_kd_stage(
+                input_table_xlsx=Path(analyze_outputs["latestXlsxPath"]),
+                chain_root=chain_root,
+            )
+            final_xlsx_path = Path(check_outputs["latestXlsxPath"])
+            final_json_path = Path(check_outputs["latestJsonPath"])
+            check_stage_metadata = {
+                "latestXlsxPath": str(final_xlsx_path),
+                "latestJsonPath": str(final_json_path),
+            }
 
         final_words_xlsx_path = _publish_final_words_xlsx(
-            final_xlsx=Path(check_outputs["latestXlsxPath"]),
+            final_xlsx=final_xlsx_path,
             words_dir=words_dir,
             stamp=stamp,
         )
 
-        final_table_payload = load_json(Path(check_outputs["latestJsonPath"]))
+        final_table_payload = load_json(final_json_path)
         final_rows = final_table_payload.get("rows") if isinstance(final_table_payload, dict) else None
         if isinstance(final_rows, list):
             comparison.setdefault("standardWordSummary", {})["rowCount"] = len(final_rows)
@@ -1904,10 +1937,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
                 "latestXlsxPath": str(analyze_outputs["latestXlsxPath"]),
                 "latestJsonPath": str(analyze_outputs["latestJsonPath"]),
             },
-            "checkGefeiKd": {
-                "latestXlsxPath": str(check_outputs["latestXlsxPath"]),
-                "latestJsonPath": str(check_outputs["latestJsonPath"]),
-            },
+            "checkGefeiKd": check_stage_metadata,
         }
     else:
         final_words_xlsx_path = _publish_final_words_xlsx(
@@ -1929,6 +1959,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
     output_meta["excelHistoryPath"] = str(report_excel_history_path)
     output_meta["finalWordsXlsxPath"] = str(final_words_xlsx_path)
     output_meta["chainStages"] = chain_stage_outputs
+    snapshot_meta["runStatus"] = "completed"
+    snapshot_meta["completedAt"] = datetime.now().isoformat(timespec="seconds")
 
     report_history_path = Path(artifact_paths["reportHistoryPath"])
     final_report_text = render_report(snapshot)
@@ -1986,6 +2018,9 @@ def rebuild_reports(args: argparse.Namespace) -> int:
     for path in files:
         snapshot = load_json(path)
         meta = snapshot.setdefault("meta", {})
+        if not snapshot_is_completed(snapshot):
+            print(f"[rebuild] skip incomplete snapshot: {path}")
+            continue
         target = meta.get("target") or {}
         request_meta = meta.setdefault("request", {})
         target_key = json.dumps(
