@@ -1,0 +1,20 @@
+name: example-site
+display_name: Example Site
+base_url: https://example.com/
+description: Truthful one or two sentence description of the product.
+short_description: Short directory description.
+categories:
+  - relevant-category
+language: en
+contact:
+  name: Your name
+  email: you@example.com
+  organization: Optional organization
+links:
+  homepage: https://example.com/
+  canonical: https://example.com/
+  privacy: https://example.com/privacy
+assets:
+  logo: ./logo.png
+  og_image: ./og-image.png
+submission_notes: Notes about truthful fields, supported categories, and editorial constraints.

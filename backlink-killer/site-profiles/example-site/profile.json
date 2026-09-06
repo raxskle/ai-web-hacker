@@ -1,0 +1,8 @@
+{
+  "name": "example-site",
+  "display_name": "Example Site",
+  "description": "A truthful one or two sentence description of the product.",
+  "short_description": "A short directory description.",
+  "contact": { "name": "Your name", "email": "you@example.com" },
+  "links": { "homepage": "https://example.com/" }
+}

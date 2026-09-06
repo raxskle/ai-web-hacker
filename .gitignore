@@ -1,3 +1,18 @@
 # macOS Finder metadata
 .DS_Store
 **/.DS_Store
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Local browser sessions and private site-profile material
+backlink-killer/.playwright/
+backlink-killer/site-profiles/**/storage-state.json
+backlink-killer/site-profiles/**/.env
+backlink-killer/site-profiles/**/secrets.*
+.env
+backlink-killer/.playwright/
+backlink-killer/node_modules/
+backlink-killer/site-profiles/*/storage-state.json
